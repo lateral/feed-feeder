@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+  <script type="text/javascript" src="//use.typekit.net/gbh5liz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <script>
+    // sorry about polluting global namespace.
+    // TODO - figure out a way to incorporate this into the 'labs' namespace
+    var labsPath = "https://labs.ideo.com/wp-content/themes/labsTheme";
+  </script>
+
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width" /> -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Food for Thought: A programming language that speaks to designers | IDEO Labs</title>
+
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="pingback" href="https://labs.ideo.com/xmlrpc.php" />
+
+  <link rel="stylesheet" type="text/css" media="all" href="https://labs.ideo.com/wp-content/themes/labsTheme/css/normalize.css" />
+
+  <!-- Favicon section -->
+  <link rel="shortcut icon" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/favicon.ico"/>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-precomposed.png">
+  <!-- For the iPad mini and the first- and second-generation iPad on iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-72x72-precomposed.png">
+  <!-- For the iPad mini and the first- and second-generation iPad on iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-76x76-precomposed.png">
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-114x114-precomposed.png">
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-120x120-precomposed.png">
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-144x144-precomposed.png">
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://labs.ideo.com/wp-content/themes/labsTheme/images/favicon/apple-touch-icon-152x152-precomposed.png">
+
+  <!-- Foundation 3 for IE 8 and earlier -->
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" media="all" href="https://labs.ideo.com/wp-content/themes/labsTheme/css/foundation3.min.css" />
+  <![endif]-->
+  <!-- Foundation 4 for IE 9 and earlier -->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" type="text/css" media="all" href="https://labs.ideo.com/wp-content/themes/labsTheme/css/foundation.min.css" />
+  <!--<![endif]-->
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+  <script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <link rel="alternate" type="application/rss+xml" title="IDEO Labs &raquo; Feed" href="https://labs.ideo.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="IDEO Labs &raquo; Comments Feed" href="https://labs.ideo.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="IDEO Labs &raquo; Food for Thought: A programming language that speaks to designers Comments Feed" href="https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/feed/" />
+<!-- This site is powered by Shareaholic - https://shareaholic.com -->
+<script type='text/javascript' data-cfasync='false'>
+  //<![CDATA[
+    _SHR_SETTINGS = {"endpoints":{"local_recs_url":"https:\/\/labs.ideo.com\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","share_counts_url":"https:\/\/labs.ideo.com\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"}};
+
+    (function() {
+      var shr = document.createElement('script');
+      shr.setAttribute('data-cfasync', 'false');
+      shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+      shr.type = 'text/javascript'; shr.async = 'true';
+      shr.onload = shr.onreadystatechange = function() {
+        var rs = this.readyState;
+        if (rs && rs != 'complete' && rs != 'loaded') return;
+        var site_id = 'ae176195b16e5d688aef5f405149a340';
+        var page_config = {};
+        try { Shareaholic.init(site_id, page_config); } catch (e) {}
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(shr, s);
+    })();
+  //]]>
+</script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='IDEO Labs' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/' />
+<meta name='shareaholic:keywords' content='processing, scott murray, coding, food for thought, open source, prototyping, serious play' />
+<meta name='shareaholic:article_published_time' content='2015-03-16T23:07:47+00:00' />
+<meta name='shareaholic:article_modified_time' content='2015-03-26T21:21:08+00:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Sara Breselor' />
+<meta name='shareaholic:site_id' content='ae176195b16e5d688aef5f405149a340' />
+<meta name='shareaholic:wp_version' content='7.6.1.1' />
+<meta name='shareaholic:image' content='https://labs.ideo.com/wp-content/uploads/2015/03/hny_1-1024x630.png' />
+<!-- Shareaholic Content Tags End -->
+
+<!-- Shareaholic Open Graph Tags -->
+<meta property='og:image' content='https://labs.ideo.com/wp-content/uploads/2015/03/hny_1-1024x630.png' />
+<!-- Shareaholic Open Graph Tags End -->
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='https://labs.ideo.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='IDEO Labs style-css'  href='https://labs.ideo.com/wp-content/themes/labsTheme/style.css?ver=4.1.1' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.3.3 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-2724619-35', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://labs.ideo.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://labs.ideo.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Just Skeu It' href='https://labs.ideo.com/2015/02/12/just-skeu-it/' />
+<link rel='next' title='Beachsand and the Talking Bell' href='https://labs.ideo.com/2015/03/25/beachsand-and-the-talking-bell/' />
+<meta name="generator" content="WordPress 4.1.1" />
+<link rel='canonical' href='https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/' />
+<link rel='shortlink' href='https://labs.ideo.com/?p=4501' />
+<!-- Graceful Pull-Quotes plugin v2.5 -->
+	<link rel="stylesheet" href="https://labs.ideo.com/wp-content/plugins/graceful-pull-quotes/resources/jspullquotes-core.css" type="text/css" />
+	<link rel="stylesheet" href="https://labs.ideo.com/wp-content/plugins/graceful-pull-quotes/styles/Default.css" type="text/css" />
+	<script type="text/javascript" src="https://labs.ideo.com/wp-content/plugins/graceful-pull-quotes/resources/jspullquotes.js"></script>
+	<script type="text/javascript">
+		var jspq_options = new Array("1", "1", "right", "1", "1", "blockquote", "pullquote", "pullquote pqRight");
+		pullQuoteOpts(jspq_options);
+	</script>
+<!-- end pull-quote additions -->
+<style type="text/css">	.ssba {
+											
+											
+											
+											
+										}
+										.ssba img		
+										{ 	
+											width: 44px !important;
+											padding: 6px;
+											border:  0;
+											box-shadow: none !important;
+											display: inline !important;
+											vertical-align: middle;
+										}
+										.ssba, .ssba a		
+										{
+											text-decoration:none;
+											background: none;
+											font-family: Indie Flower;
+											font-size: 	20px;
+											
+											
+										}</style><style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="single single-post postid-4501 single-format-standard custom-font-enabled">
+      <div class="top_bar"></div>
+<div id="page" class="hfeed site">
+	<div id="main" class="wrapper">
+    <!-- Top search experiment -->
+    <div class="top_search">
+      <div class="row">
+        <div class="small-12 small-centered twelve columns">
+
+          <div class="logo_container">
+            <a class="logo" href="/">
+              <!-- <img class="logo" src="https://labs.ideo.com/wp-content/themes/labsTheme/images/labs_logo_animated.gif" /> -->
+              <img class="logo" src="https://labs.ideo.com/wp-content/themes/labsTheme/images/labs_logo_med.png" />         
+            </a>
+            <div class="filler"></div>
+          </div>
+
+          <form role="search" method="get" id="searchform" action="https://labs.ideo.com/">
+    <div><label for="s"><h3>Search</h3></label>
+      <div class="footer_search_instance">
+        <input type="text" value="" name="s" id="search_form" placeholder="" />
+      </div>
+    </div>
+</form>        </div>
+      </div>
+    </div>
+  <div id="primary" class="site-content">
+    <div id="content" role="main">
+              <div class="single_image_container imgLiquid imgLiquidFill" data-imgLiquid-verticalAlign="0%">
+                      <div class="hero_image_overlay"></div>
+            <img class="single_img hidden" src="https://labs.ideo.com/wp-content/uploads/2015/03/hny_1.png" />
+                  </div>
+        
+	 
+		<article data-link="https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/" id="post-4501" class="post-4501 post type-post status-publish format-standard has-post-thumbnail hentry category-coding category-food-for-thought category-open-source category-prototyping category-serious-play tag-processing tag-scott-murray">
+    							        <ul class="post-nav">
+              <li class="post-nav-link post_nav_previous_link" data-url="https://labs.ideo.com/2015/02/12/just-skeu-it/">
+          <div class="post-nav-hover post-nav-hidden">
+            <div class="hover_content">
+              <a href="https://labs.ideo.com/2015/02/12/just-skeu-it/" rel="prev">Just Skeu It</a>            </div>
+          </div>
+          <div class="post-nav-before">
+            <a class="center post-nav-left"><a class="center icons-post-nav-left post_nav_left"></a>
+          </div>
+        </li>
+        <li class="nav_spacer"></li>
+      
+              <li class="post-nav-link post_nav_next_link" data-url="https://labs.ideo.com/2015/03/25/beachsand-and-the-talking-bell/">
+          <div class="post-nav-hover post-nav-hidden">
+            <div class="hover_content">
+              <a href="https://labs.ideo.com/2015/03/25/beachsand-and-the-talking-bell/" rel="next">Beachsand and the Talking Bell</a>            </div>
+          </div>
+          <div class="post-nav-before">
+            <a class="center post-nav-right"><a class="center icons-post-nav-right post_nav_right"></a>
+          </div>
+        </li>
+        <li class="nav_spacer"></li>
+      
+
+	<li class="post-nav-link">
+          <div class="post-nav-hover post-nav-hidden">
+            <div class="hover_content">
+<!-- Simple Share Buttons Adder (5.6) simplesharebuttons.com --><div class="ssba"><div style="text-align:left"><a class="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/"  target="_blank" ><img src="https://labs.ideo.com/wp-content/uploads/2014/06/facebook.png" title="Facebook" class="ssba" alt="Share on Facebook" /></a><a class="ssba_linkedin_share ssba_share_link" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/"  target="_blank" ><img src="https://labs.ideo.com/wp-content/uploads/2014/06/linkedin.png" alt="Share on LinkedIn" title="LinkedIn" class="ssba" /></a><a class="ssba_twitter_share" href="http://twitter.com/share?url=https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/&amp;text=Food+for+Thought%3A+A+programming+language+that+speaks+to+designers+"  target="_blank" ><img src="https://labs.ideo.com/wp-content/uploads/2014/06/twitter.png" title="Twitter" class="ssba" alt="Tweet about this on Twitter" /></a><a class="ssba_email_share" href="mailto:?subject=Food for Thought: A programming language that speaks to designers&amp;body=%20https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/"><img src="https://labs.ideo.com/wp-content/uploads/2014/06/email1.png" title="Email" class="ssba" alt="Email to someone" /></a></div></div>            </div>
+          </div>
+          <div class="post-nav-before">
+            <a class="center social-nav-center"><a class="center social_share_icon post_nav_share"></a>
+          </div>
+        </li>
+        <li class="nav_spacer"></li>
+
+
+    </ul>
+    		<div class="grid_text">
+			<header class="entry-header">
+								<div class="single_header_wrapper">
+					<div class="single_header row">
+						<div class="small-12 medium-10 large-7 seven large-centered columns">
+							<h1>Food for Thought: A programming language that speaks to designers</h1>
+                						</div>
+					</div>
+					<div class="single_meta row">
+						<div class="small-12 medium-10 large-7 seven large-centered columns">
+							<div class="row">
+								<div class="small-12 large-4 four columns single_meta_info">Author<br/><span class="post-details"><a href="https://labs.ideo.com/author/sara-breselor/" title="Posts by Sara Breselor" class="url fn" rel="author">Sara Breselor</a></span></div>
+								<div class="small-12 large-4 four columns single_meta_info">Published<br/><span class="post-details">March 16, 2015</span></div>
+								<div class="small-12 large-4 four columns single_meta_info">Reading Time<br/>
+
+
+<span class="post-details" > 2 minutes</span>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+							</header><!-- .entry-header -->
+
+							<div class="single-content row">
+
+  				<div class="small-12 medium-10 large-7  large-centered columns">
+            <p>Every Thursday in Palo Alto, IDEO’s Digital Shop hosts an informal lunchtime presentation by someone who is using code to create something surprising, useful, or generally awesome. Colleagues from all around IDEO gather for a meal and leave with a week&#8217;s worth of ideas to chew on. For Labs, we’ve asked some recent speakers to highlight a quick insight or tool they’d like to share.</p>
+<p><strong>Guest:</strong> <a href="http://alignedleft.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://alignedleft.com/', 'Scott Murray');"  target="_blank">Scott Murray</a><br />
+<strong>Specs:</strong> Assistant professor of design at the University of San Francisco, <a href="http://alignedleft.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://alignedleft.com/', 'code artist');"  target="_blank">code artist</a>, <a href="http://chimera.labs.oreilly.com/books/1230000000345" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://chimera.labs.oreilly.com/books/1230000000345', 'D3 expert');"  target="_blank">D3 expert</a>, and contributor to the <a href="https://processing.org/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://processing.org/', 'Processing');"  target="_blank">Processing</a> language.</p>
+<p>Scott Murray is endlessly excited about using code as a tool for visual explorations of all kinds, from fine art to interactive data visualizations, but his students aren’t always quite so jazzed about the idea of programming. “They’re used to Photoshop and Illustrator, chopping up pictures and vectors,” he says. “Coding moves them into a totally different working environment.”</p>
+<p>It’s Murray’s job to pry open students’ minds to not only the languages of code but also to a new way of thinking—a developer’s approach to solving problems and building things. To this end, he’s helping to continue the development of Processing language, which is tailored specifically to the task of teaching designers and artists to code. “There are pedagogical tools embedded in the language itself,” he says, like the use of familiar terms such as “stroke” and “fill” as well as processes that help students think like developers when approaching the craft of design. “For me, design is all about systems—not creating an image, but a system that, when applied, results in an effective solution,” Murray says. “<span class="pullquote">Processing, as a teaching tool, forces students to think beyond the output or image they want to create and describe the system they’re making</span> and what it needs to do.”</p>
+<p>Processing gives designers new tools and expands their design thinking. It’s free, open source, and available to all at processing.org.</p>
+<p><iframe width="720" height="396" src="https://player.vimeo.com/video/77109691?portrait=0" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe></p>
+<p>To see some examples of what experts are doing with Processing, check out this <a href="https://processing.org/exhibition/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://processing.org/exhibition/', 'exhibition site');"  target="_blank">exhibition site</a>. (Murray particularly likes “<a href="http://cmuems.com/2013/a/miles/10/17/keyfleas/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://cmuems.com/2013/a/miles/10/17/keyfleas/', 'Keyfleas');"  target="_blank">Keyfleas</a>” — above.)</p>
+<p>To get a sense of what beginners can do with the language, visit <a href="http://openprocessing.org" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://openprocessing.org', 'openprocessing.org');"  target="_blank">openprocessing.org</a> and browse through the sketches.</p>
+<p>If you’re itching to get your hands dirty, go straight to <a href="https://processing.org/examples/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://processing.org/examples/', 'this collection');"  target="_blank">this collection</a> of short, prototypical online programs that explore the basics of programming with Processing.</p>
+<p><em>Check out the complete version of Scott Murray&#8217;s New Year greeting card pictured in the header to this post <a href="http://alignedleft.com/work/happy-new-near-2012" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://alignedleft.com/work/happy-new-near-2012', 'here');"  target="_blank">here</a>. </em></p>
+
+<div class='shareaholic-canvas' data-app-id='7016739' data-app='share_buttons' data-title='Food for Thought: A programming language that speaks to designers' data-link='https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/' data-summary=''></div>
+<div class="contributors-section">
+	  	  
+	
+
+		<!--If editor-->
+		
+		<!--If illustrator-->
+		
+
+</div>
+
+		  <div class="author-bio-container">
+		<a href="https://labs.ideo.com/author/sara-breselor/">
+		<div class="author-thumb"><img src="https://labs.ideo.com/wp-content/uploads/2015/03/sara_b-150x150.jpg" width="80" height="80" alt="Sara Breselor" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" /></div>
+		</a>
+
+		<div class="author-bio">
+			<a href="https://labs.ideo.com/author/sara-breselor/">
+			<span class = "author-name">Sara Breselor</br> </span>
+			<p class="author-description line-clamp single_meta_info">I am a writer and editor based in San Francisco. I’m a regular contributor to Wired, Make, Communication Arts, and the Harper’s Weekly Review, and I’m the editor of the IDEO Labs website. I have worked as associate editor at Communication Arts, assistant editor at Harper’s, and researcher at Wired. I’m always looking for new projects involving culture, books, technology, and cool people. Please contact me at sara.breselor@gmail.com.</p>
+			</a>
+			<p class="author-posts-link single_meta_info">More articles by: <a href="https://labs.ideo.com/author/sara-breselor/" title="Posts by Sara Breselor" class="url fn" rel="author">Sara Breselor</a></p>
+		</div>
+	  </div>
+
+	
+
+
+          </div>
+
+				</div>
+					</div><!-- .grid_text -->
+
+	</article><!-- #post -->        <!-- <nav class="nav-single">
+          STUFF
+          <h3 class="assistive-text">Post navigation</h3>
+          <span class="nav-previous"><a href="https://labs.ideo.com/2015/02/12/just-skeu-it/" rel="prev"><span class="meta-nav">&larr;</span> Just Skeu It</a></span>
+          <span class="nav-next"><a href="https://labs.ideo.com/2015/03/25/beachsand-and-the-talking-bell/" rel="next">Beachsand and the Talking Bell <span class="meta-nav">&rarr;</span></a></span>
+        </nav> -->
+        <div id="comments_container"></div>
+        
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			2 thoughts on &ldquo;<span>Food for Thought: A programming language that speaks to designers</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-114614">
+		<article id="comment-114614" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img src="https://secure.gravatar.com/avatar/205427b5d7aac1aec76196bf0a3b12c3?s=44&amp;d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D44&amp;r=G" width="44" height="44" alt="" class="avatar avatar-44wp-user-avatar wp-user-avatar-44 alignnone photo avatar-default" /><cite class="fn">Dominique Kenens </cite><a href="https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/comment-page-1/#comment-114614"><time datetime="2015-03-27T03:28:11+00:00">March 27, 2015 at 3:28 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Problem remains: Processing, while being a cool implement to create imagery, is basically JavaScript with the serial numbers filed off.</p>
+<p>If one really wants to bridge the gap between artist and coder, we need an interface to manipulate code as if it were blocks of wood, dashes of paint, or leaves of paper.</p>
+<p>An objectified view of logic structures, as readable as a painting (instead of a book), close to how the better WYSIWYG web editors handle certain code.</p>
+<p>Meanwhile, coding has remained at nearly a standstill, compared to f.i. the graphical user interfaces of art apps.</p>
+<p>Coding apps rely upon syntax coloring, code collapsing, line numbering, hyperlinks and indents, while the languages themselves rely upon antiquated concepts as &#8220;closing braces&#8221;, parentheses and obtuse vocabulary (ask an English major about the meaning of &#8220;obtuse&#8221; and &#8220;void&#8221;, and chances are &#8220;void&#8221; will give you a definition far removed from its &#8220;code vocabulary&#8221;).</p>
+<p>Todays 3D/HD/interactive/graphical possibilities could be applied so code cantruly be &#8220;nested&#8221; inside eachother, variables are &#8220;fed&#8221; into subroutines, and results are &#8220;collected&#8221; and passed on to other blocks of code, in a fashion that gives code architecture a new meaning.</p>
+<p>Until then, true coding will remain too daunting a task to the truly visual thinker, or (as is my case) necessitates a costly, lengthy and slow devotion to multiple fields at once, which is not that simple a feat…</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-114773">
+		<article id="comment-114773" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img src="https://secure.gravatar.com/avatar/a358c859e33043b4c3b95cd148562cb4?s=44&amp;d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D44&amp;r=G" width="44" height="44" alt="" class="avatar avatar-44wp-user-avatar wp-user-avatar-44 alignnone photo avatar-default" /><cite class="fn"><a href='http://optipop.com' rel='external nofollow' class='url'>Mark Edwards</a> </cite><a href="https://labs.ideo.com/2015/03/16/food-for-thought-programming-designers/comment-page-1/#comment-114773"><time datetime="2015-03-27T08:04:25+00:00">March 27, 2015 at 8:04 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Totally agree with you Dominique. I&#8217;ve been learning to program for ~25 years and have only produced one small application I am proud of (in Director). </p>
+<p>Adobe&#8217;s GoLive used a &#8220;rope&#8221; to connect objects. Why isn&#8217;t this wonderful UI object used in every IDE? Inputs and outputs, is programming anything beyond this?</p>
+<p>Apple&#8217;s Quartz Composer is helpful (especially for the visual thinker), but still requires Xcode/Interface Builder to build an app with an interface.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+
+		
+		
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/03/16/food-for-thought-programming-designers/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=food-for-thought-programming-designers#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://labs.ideo.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true"></textarea></p>												<p class="form-submit">
+							<input name="submit" type="submit" id="submit" class="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='4501' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+											</form>
+							</div><!-- #respond -->
+			</div><!-- #comments .comments-area -->
+
+
+    </div><!-- #content -->
+  </div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="row footer_row">
+      <div class="small-12 large-4 four columns">
+        <div class="footer_content">
+          <h3>About IDEO Labs</h3>
+          <p class="entry-content">IDEO Labs is for our stories of experimentation and prototyping. Themes include design, culture, science, and technology. We share opinions, processes, tools and resources. We ponder failures and celebrate successes.</p>
+	<a href="http://www.ideo.com">
+	    <img src="https://labs.ideo.com/wp-content/uploads/2014/06/IDEO_LOGO_2014_RGB_FINAL.png"/>     
+	</a>
+  
+        </div>
+      </div>
+      <div class="small-12 large-4 four columns">
+        <div class="footer_content">
+          <h3>Links</h3>
+          <div class="footer_spacing">
+            <a href="http://labs.ideo.com/about">About</a><br/>
+            <a href="http://www.ideo.com">ideo.com</a><br/>
+            <a href="http://www.ideo.org">ideo.org</a><br/>
+            <a href="http://www.github.com/ideo">github.com/ideo</a></br/>
+            <a href="https://labs.ideo.com/index.php?feed=rss2">IDEO Labs RSS</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-12 large-4 four columns">
+        <div class="footer_content">
+            <form role="search" method="get" id="searchform" action="https://labs.ideo.com/">
+    <div><label for="s"><h3>Search</h3></label>
+      <div class="footer_search_instance">
+        <input type="text" value="" name="s" id="search_form" placeholder="" />
+      </div>
+    </div>
+</form>        </div>
+      </div>
+    </div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+
+
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/jquery-1.10.2.min.js"></script>
+
+<!-- Foundation 3 for IE 8 and earlier -->
+<!--[if lt IE 9]>
+  <script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/foundation3.min.js"></script>
+<![endif]-->
+
+<!-- Foundation 4 for IE 9 and later -->
+<!--[if gt IE 8]><!-->
+    <script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/foundation.min.js"></script>
+    <script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/enquire.min.js"></script>
+<!--<![endif]-->
+
+
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/imgLiquid-min.js"></script>
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/main.js"></script>
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/respondmore.min.js"></script>
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/jquery.fitvids.js"></script>
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/jquery.sticky.js"></script>
+<script src="https://labs.ideo.com/wp-content/themes/labsTheme/js/vendor/retina2.js"></script>
+
+</body>
+</html>

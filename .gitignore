@@ -1,0 +1,15 @@
+/.bundle
+/coverage/
+/log
+/public/system
+/spec/tmp
+/tmp
+/vendor/bundle
+capybara-*.html
+.elasticbeanstalk/
+.env.production
+newrelic.yml
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal

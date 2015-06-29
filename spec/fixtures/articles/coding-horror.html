@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>The &quot;Just In Time&quot; Theory of User Behavior</title>
+<meta name="description" content=""/>
+<meta name="HandheldFriendly" content="True"/>
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="/assets/images/favicon.ico?v=205ada7bc2">
+<link rel="apple-touch-icon" href="/assets/images/codinghorror-app-icon.png?v=205ada7bc2">
+<meta name="google-site-verification" content="sl0m9SU_4V0JcvjWlOX4dUFBR6VS2P4tlxjJMo0gphU"/>
+<link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=205ada7bc2"/>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"/>
+<link rel="alternate" type="application/rss+xml" title="Coding Horror" href="http://feeds.feedburner.com/codinghorror">
+</head>
+<body class="post-template">
+<header class="site-head">
+<div class="site-head-content">
+<a class="blog-logo" href="http://blog.codinghorror.com"><img src="/assets/images/codinghorror-app-icon.png?v=205ada7bc2" alt="Coding Horror Logo" width="158" height="158"/></a>
+<h1 class="blog-title"><a href="http://blog.codinghorror.com">Coding Horror</a></h1>
+<h2 class="blog-description">programming and human factors</h2>
+<div class="site-search">
+<script>
+                  (function() {
+                    var cx = '016956275695630057531:lqveu9tah7y';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+<gcse:search></gcse:search>
+</div>
+</div>
+</header>
+<div class="wrap clearfix">
+<div class="clearfix"></div>
+<main class="content" role="main">
+<article class="post">
+<span class="post-meta"><time datetime="2014-07-18">18 Jul 2014</time> </span>
+<h1 class="post-title">The &quot;Just In Time&quot; Theory of User Behavior</h1>
+<section class="post-content">
+<p>I've long believed that the design of your software has a profound impact on how users <em>behave</em> within your software. But there are two sides to this story:</p>
+<ul>
+<li><p>Encouraging the "right" things by making those things intentionally easy to do.</p></li>
+<li><p>Discouraging the "wrong" things by making those things intentionally difficult, complex, and awkward to do.</p></li>
+</ul>
+<p>Whether the software is doing this intentionally, or completely accidentally, it's a fact of life: <a href="http://blog.codinghorror.com/training-your-users/">the path of least resistance is everyone's best friend</a>. Learn to master this path, or others will master it for you.</p>
+<p>For proof, consider Dan Ariely's new and amazing book, <a href="http://www.amazon.com/dp/0062183613?tag=codihorr-20">The (Honest) Truth About Dishonesty: How We Lie to Everyone &ndash; Especially Ourselves</a>.</p>
+<p><a href="http://www.amazon.com/dp/0062183613?tag=codihorr-20"><img src="/content/images/2014/Jul/the-honest-truth-about-dishonesty-cover.png" alt="" title=""/></a></p>
+<p>Indeed, let's be honest: <a href="http://blog.codinghorror.com/every-user-lies/">we all lie, all the time</a>. Not because we're bad people, mind you, but because we <em>have</em> to regularly lie to ourselves as <a href="http://blog.codinghorror.com/the-trap-you-set-for-yourself/">a survival mechanism</a>. You think we should be completely honest all the time? Yeah. <a href="http://blog.codinghorror.com/trust-me-im-lying/">Good luck with that</a>.</p>
+<p>But these healthy little white lies we learn to tell ourselves have a darker side. Have you ever heard <a href="http://online.wsj.com/news/articles/SB10001424052702304840904577422090013997320?mod=wsj_share_tweet">this old adage?</a></p>
+<blockquote>
+<p>One day, Peter locked himself out of his house. After a spell, the locksmith pulled up in his truck and picked the lock in about a minute.</p>
+<p>“I was amazed at how quickly and easily this guy was able to open the door,” Peter said. The locksmith told him that locks are on doors only to keep honest people honest. One percent of people will always be honest and never steal. Another 1% will always be dishonest and always try to pick your lock and steal your television; locks won’t do much to protect you from the hardened thieves, who can get into your house if they really want to.</p>
+<p><strong>The purpose of locks, the locksmith said, is to protect you from the 98% of mostly honest people who might be tempted to try your door if it had no lock.</strong></p>
+</blockquote>
+<p>I had heard this expressed less optimistically before as</p>
+<blockquote>
+<p>10% of people will <em>never</em> steal, 10% of people will <em>always</em> steal, and for everyone else &hellip; it depends.</p>
+</blockquote>
+<p>The "it depends" part is crucial to understanding human nature, and that's what Ariely spends most of the book examining in various tests. If for most people, honesty depends, what exactly does it depend on? The experiments Ariely conducts prove again and again that <strong>most people will consistently and reliably cheat "just a little", to the extent that they can still consider themselves honest people.</strong> The gating factor isn't laws, penalties, or ethics. Surprisingly, that stuff has virtually no effect on behavior. What does, though, is whether they can personally still <em>feel</em> like they are honest people.</p>
+<p>This is because they don't even consider it cheating &ndash; they're just taking a little extra, giving themselves a tiny break, enjoying a minor boost, because well, haven't they been working extra specially hard lately and earned it? Don't they of all people deserve something nice once in a while, and who would even miss this tiny amount? There's so much!</p>
+<p>These little white lies are the path of least resistance. They are everywhere. If laws don't work, if ethics classes don't work, if severe penalties don't work, how do you encourage people to behave in a way that "feels" honest that is actually, you know, <em>honest?</em> Feelings are some pretty squishy stuff.</p>
+<p>It's <a href="http://online.wsj.com/news/articles/SB10001424052702304840904577422090013997320?mod=wsj_share_tweet">easier than you think</a>.</p>
+<blockquote>
+<p>My colleagues and I ran an experiment at the University of California, Los Angeles. We took a group of 450 participants, split them into two groups and set them loose on our usual matrix task. We asked half of them to recall the Ten Commandments and the other half to recall 10 books that they had read in high school.</p>
+<p>Among the group who recalled the 10 books, we saw the typical widespread but moderate cheating. But in the group that was asked to recall the Ten Commandments, we observed no cheating whatsoever. We reran the experiment, reminding students of their schools' honor codes instead of the Ten Commandments, and we got the same result. We even reran the experiment on a group of self-declared atheists, asking them to swear on a Bible, and got the same no-cheating results yet again.</p>
+</blockquote>
+<p>That's the good news: <strong>a simple reminder <em>at the time of the temptation</em></strong> is usually all it takes for people to suddenly "remember" their honesty.</p>
+<p>The bad news is Clippy was right.</p>
+<p><img src="/content/images/2014/Jul/clippy-suicide.png" alt=""/></p>
+<p>In my experience, nobody reads manuals, nobody reads FAQs, and nobody reads tutorials. I am exaggerating a little here for effect, of course. Some A+ students will go out of their way to read these things. That's how they became A+ students, by naturally going the extra mile, and generally being the kind of users who teach themselves perfectly well without needing special resources to get there. When I say "nobody" I mean the vast overwhelming massive majority of people you would really, <em>really</em> want to <a href="http://blog.codinghorror.com/treating-user-myopia/">read things like that</a>. People who don't have the time or inclination to expend any effort at all other than the absolute minimum required, people who are most definitely <em>not</em> going to go the extra mile.</p>
+<p>In other words, the whole world.</p>
+<p>So how do you help people who, like us, just never seem to have the time to figure this stuff out becase they're, like, <em>suuuuper</em> busy and stuff?</p>
+<p>You do it by showing them &hellip;</p>
+<ul>
+<li>the minumum helpful reminder</li>
+<li>at exactly the right time</li>
+</ul>
+<p>This is what I've called the "Just In Time" theory of user behavior for years. Sure, FAQs and tutorials and help centers are great and all, but who has the time for that? We're <a href="http://blog.codinghorror.com/defending-perpetual-intermediacy/">all perpetual intermediates here</a>, at best. </p>
+<p>The closer you can get your software to practical, useful "Just In Time" reminders, the better you can help the users who are most in need. Not the A+ students who already read the FAQ, and studied the help center intently, but those users who <em>never read anything</em>. And now, thanks to Dan Ariely, I have the science to back this up. Even something as simple as putting your name on the top of a form to report auto insurance milage, rather than the bottom, resulted in a mysterious 10% increase in average miles reported. Having that little reminder <em>right at the start</em> that hey, your name is here on this form, inspired additional honesty. It works.</p>
+<p>Did we use this technique on Stack Overflow and Stack Exchange? Indeed we did. Do I use this technique on <a href="http://www.discourse.org">Discourse</a>? You bet, in even more places, because this is social discussion, not technical Q&amp;A. We are rather <a href="http://blog.discourse.org/2013/03/the-universal-rules-of-civilized-discourse/">big on civility</a>, so we like to remind people when they post on Discourse they aren't talking to a computer or a robot, but <a href="http://sivers.org/real">a real person, a lot like you</a>. </p>
+<p>When's the natural time to remind someone of this? Not when they sign up, not when they're reading, but <em>at the very moment they begin typing their first words in their first post</em>. This is the moment of temptation when you might be super mega convinced that <a href="http://xkcd.com/386/">someone is Wrong on the Internet</a>. So we put up a gentle little reminder Just In Time, right above where they are typing:</p>
+<p><a href="http://discourse.soylent.me/"><img src="/content/images/2014/Jul/discourse-new-user-civility-reminder.png" alt="" title=""/></a></p>
+<p>Then hopefully, as Dan Ariely showed us with honesty, this little reminder will tap into people's natural reserves of friendliness and civility, so cooler heads will prevail &ndash; and a few people are inspired to get along a little better than they did yesterday. Just because you're on the Internet doesn't mean you need to be yelling at folks 24/7.</p>
+<p>We use this same technique a bunch of other places: if you are posting a lot but haven't set an avatar, if you are adding a new post to a particularly old conversation, if you are replying a bunch of times in the same topic, and so forth. Wherever we feel a gentle nudge might help, at the exact time the behavior is occurring.</p>
+<p>It's important to understand that we use these reminders in <a href="http://www.discourse.org">Discourse</a> not because we believe people are dumb; quite the contrary, we use them because <strong>we believe people are smart, civil, and interesting.</strong> Turns out everyone just needs to be reminded of that once in a while for it to continue to be true.</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> matches the best developers (you!) with the best employers. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and even let employers find you.
+</td></tr>
+</table>
+</section>
+<footer class="post-footer">
+<section class="author">
+<h4>Written by Jeff Atwood</h4>
+<p>Indoor enthusiast. Co-founder of Stack Exchange and Discourse. Disclaimer: I have no idea what I&#x27;m talking about. Find me here: <a href="http://twitter.com/codinghorror">http://twitter.com/codinghorror</a></p>
+</section>
+</footer>
+</article>
+<div id="discourse-comments"></div>
+<script type="text/javascript">
+      var discourseUrl = "http://discourse.codinghorror.com/",
+          discourseEmbedUrl = 'http://blog.codinghorror.com/the-just-in-time-theory/';
+
+      (function() {
+        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+          d.src = discourseUrl + 'javascripts/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+      })();
+    </script>
+</main>
+<aside class="sidebar">
+ 
+<div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/56742/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+<div id="hireme" class="hireme codinghorror" style="min-height: 220px; margin-bottom: 15px;"></div>
+<script>
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName('script')[0];
+            a.src = "//clc.stackoverflow.com/j/p?d=hireme";
+            a.async = true; 
+            a.type = "text/javascript"; 
+            b.parentNode.insertBefore(a, b);
+        }, 5);
+    </script>
+<div class="welovecodinghorror" style="margin-bottom:15px">
+[ad] Enjoy the blog? Read <b><a href="http://www.hyperink.com/Effective-Programming-More-Than-Writing-Code-b1559">Effective Programming: More than Writing Code</a></b> and <b><a href="http://www.hyperink.com/How-To-Stop-Sucking-And-Be-Awesome-Instead-b9A74B5CBA6">How to Stop Sucking and Be Awesome Instead</a></b> on your Kindle, iPad, Nook, or as a PDF.
+</div>
+<h3>Resources</h3>
+<ul>
+<li><a href="/about-me/">About Me</a></li>
+<li><a href="http://twitter.com/codinghorror">@codinghorror</a></li>
+<li><a href="http://www.discourse.org/">discourse.org</a></li>
+<li><a href="http://stackexchange.com/">stackexchange.com</a></li>
+<li><a href="/recommended-reading-for-developers/">Recommended Reading</a></li>
+</ul>
+<ul>
+<li><a href="http://feeds.feedburner.com/codinghorror" class="icon-feed">&nbsp;Subscribe in a reader</a></li>
+<li><a href="http://feedburner.google.com/fb/a/mailverify?uri=codinghorror&amp;loc=en_US" class="icon-email">&nbsp;Subscribe via email</a></li>
+</ul>
+<p>Coding Horror has been continuously published since 2004</p>
+<ul>
+<li><img src="http://feeds.feedburner.com/~fc/codinghorror?bg=EEEEEE&amp;fg=111111&amp;anim=0" height="26" width="88" style="border:0" alt="Count of RSS readers"></li>
+<li><a href="http://my.statcounter.com/project/standard/stats.php?project_id=2600027&amp;guest=1">Traffic Stats</a></li>
+</ul>
+<footer class="site-footer">
+<section class="copyright">Copyright <a rel="author" href="https://profiles.google.com/codinghorror1">Jeff Atwood</a> &copy; 2015<br/>
+Logo image &copy; 1993 Steven C. McConnell <br/>
+Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+</footer></aside>
+</div>
+<script src="/public/jquery.min.js?v=205ada7bc2"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=205ada7bc2"></script>
+<script type="text/javascript" src="/assets/js/index.js?v=205ada7bc2"></script>
+<script async src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><a href="http://www.statcounter.com/"><img src="http://c26.statcounter.com/counter.php?sc_project=2600027&amp;java=0&amp;security=dcff5548&amp;invisible=0" alt="web metrics"></a> </noscript>
+ 
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'%3E%3C/script%3E"));
+    </script>
+<script>
+    COMSCORE.beacon({
+      c1: 2,
+      c2: "6035669",
+      c3: "",
+      c4: "http://www.codinghorror.com/blog/",
+      c5: "",
+      c6: "",
+      c15: ""
+    });
+    </script>
+<noscript>
+<img src="http://b.scorecardresearch.com/b?c1=2&amp;c2=6035669&amp;c3=&amp;c4=http%3A%2F%2Fwww.codinghorror.com%2Fblog%2F&amp;c5=&amp;c6=&amp;c15=&amp;cv=1.3&amp;cj=1" style="display:none" width="0" height="0" alt=""/>
+</noscript>
+<img src="/view.gif?page=/the-just-in-time-theory/" alt="" style="display:none" hidden />
+</body>
+</html>

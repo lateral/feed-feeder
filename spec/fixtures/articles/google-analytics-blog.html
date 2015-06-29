@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,f="chrome",g="tick",k="jstiming";(function(){function d(a){this.t={};this.tick=function(a,d,c){var e=void 0!=c?c:(new Date).getTime();this.t[a]=[e,d];if(void 0==c)try{b.console.timeStamp("CSI/"+a)}catch(h){}};this[g]("start",null,a)}var a;b.performance&&(a=b.performance.timing);var n=a?new d(a.responseStart):new d;b.jstiming={Timer:d,load:n};if(a){var c=a.navigationStart,h=a.responseStart;0<c&&h>=c&&(b[k].srt=h-c)}if(a){var e=b[k].load;0<c&&h>=c&&(e[g]("_wtsrt",void 0,c),e[g]("wtsrt_","_wtsrt",h),e[g]("tbsd_","wtsrt_"))}try{a=null,
+b[f]&&b[f].csi&&(a=Math.floor(b[f].csi().pageT),e&&0<c&&(e[g]("_tbnd",void 0,b[f].csi().startE),e[g]("tbnd_","_tbnd",c))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,e&&0<c&&(e[g]("_tbnd",void 0,b.external.startE),e[g]("tbnd_","_tbnd",c))),a&&(b[k].pt=a)}catch(p){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[k].load[g]("aft")};var l=!1;function m(){l||(l=!0,b[k].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",m,!1):b.attachEvent("onscroll",m);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://analytics.blogspot.de/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://analytics.blogspot.com/2015/01/start-remarketing-with-google-analytics.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Analytics Blog - Atom" href="http://analytics.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Analytics Blog - RSS" href="http://analytics.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Analytics Blog - Atom" href="http://www.blogger.com/feeds/3580069/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Analytics Blog - Atom" href="http://analytics.blogspot.com/feeds/2499760162558665134/comments/default" />
+<link href='http://2.bp.blogspot.com/-pkf3nU6U5LM/VMflvWxWAxI/AAAAAAAACVY/Q-ilRUQQZKM/s1600/RMKT%2B1.png' rel='image_src'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Start Remarketing with Google Analytics Instant Activation - Analytics Blog</title>
+<link href='http://www.google.com/uds/css/gsearch.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/css/gooey.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/googleblogs/css/template_styles.css' rel='stylesheet' type='text/css'/>
+<link href='http://www.google.com/help/hc/images/help/nelson_header_for_live_product_blogs_10_2012.css' rel='stylesheet' type='text/css'/>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/728935430-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='//www.google.com/uds/css/gsearch.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3580069&zx=4efea41d-e32d-4e8a-8d6c-1d40e4f37ba0' />
+<style id='page-skin-1' type='text/css'><!--
+.extra-link a, .extra-link a:visited{
+text-decoration:none;
+color:#E68915;
+}
+.extra-link a:hover{
+text-decoration:underline;
+color:#E68915;
+}
+.header-inner .widget {
+margin: 0;
+}
+.content-inner {
+padding: 0;
+}
+#navbar {
+display: none !important;
+}
+#template_fixed #main-wrapper {
+width:978px;
+}
+.sidebar h2 {
+font-size: 11pt;
+}
+.sidebar  {
+font-size: 8pt;
+}
+.main h3 {
+font-size: 14pt;
+}
+.main {
+font-size: 9pt;
+}
+.main i {
+font-weight:normal;
+font-style:italic;
+}
+#sidebar {
+width: 340px;
+}
+#Header1 {
+display: none;
+}
+#template_fixed #main-content {
+width: 580px;
+}
+.template_white h2,
+.template_white .post h3 a {
+color: #444;
+}
+.template_white .post h3 a:hover {
+color: #9d9d9d;
+}
+.template_white #footer-graphic {
+background: none;
+border: none;
+}
+/*
+--></style>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10005-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href='//www.google.com/css/maia.experimental.css' rel='stylesheet'/>
+<script type="text/javascript">var a="indexOf",b="&m=1",e="(^|&)m=",f="?",g="?m=1";function h(){var c=window.location.href,d=c.split(f);switch(d.length){case 1:return c+g;case 2:return 0<=d[1].search(e)?null:c+b;default:return null}}var k=navigator.userAgent;if(-1!=k[a]("Mobile")&&-1!=k[a]("WebKit")&&-1==k[a]("iPad")||-1!=k[a]("Opera Mini")||-1!=k[a]("IEMobile")){var l=h();l&&window.location.replace(l)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='maia-header' id='maia-header' role='banner'>
+<div class='maia-aux'>
+<h1>
+<a href='//www.google.com/analytics/'><img alt='Google' src='//www.google.com/images/logos/google_logo_41.png'/> Analytics</a>
+</h1>
+<h2>
+<a href='http://analytics.blogspot.com/'>Blog</a>
+</h2>
+</div>
+</div>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+          if (gapi.iframes && gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: 'https://www.blogger.com/navbar.g?targetBlogID\0753580069\46blogName\75Analytics+Blog\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75BLUE\46layoutType\75LAYOUTS\46searchRoot\75http://analytics.blogspot.com/search\46blogLocale\75en\46v\0752\46homepageUrl\75http://analytics.blogspot.com/\46targetPostID\0752499760162558665134\46blogPostOrPageUrl\75http://analytics.blogspot.com/2015/01/start-remarketing-with-google-analytics.html\46blogFollowUrl\75https://plus.google.com/111224383669619377607\46vt\75-8206742113051880040',
+                where: document.getElementById("navbar-iframe-container"),
+                id: "navbar-iframe"
+            });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='template_white' id='template_fixed'>
+<div id='main-wrapper'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+<a href='#sidebar'>skip to sidebar</a>
+</span>
+<!-- HEADER-->
+<header>
+<div class='gcd-header-outer'>
+<div class='header-outer gcd-header-inner'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner gcd-header-logo'>
+<div class='header section' id='header'><div class='widget HTML' id='HTML5'>
+<div class='widget-content'>
+<p></p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=HTML&widgetId=HTML5&action=editWidget&sectionId=header' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target='configHTML5' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Analytics Blog
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>Official blog for Google Analytics tips, tricks and news</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<!-- HEADER END-->
+<br style='clear:both;'/>
+<div id='content-wrapper'>
+<div id='sidebar'>
+<div class='sidebar section' id='sidebar'><div class='widget CustomSearch' id='CustomSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='CustomSearch1_form'>
+<span class='cse-status'>Loading...</span>
+</div>
+</div>
+<style type='text/css'>
+      #uds-searchControl .gs-result .gs-title,
+      #uds-searchControl .gs-result .gs-title *,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results * {
+        color:#00c;
+      }
+
+      #uds-searchControl .gs-result .gs-title a:visited,
+      #uds-searchControl .gs-result .gs-title a:visited * {
+        color:#00c;
+      }
+
+      #uds-searchControl .gs-relativePublishedDate,
+      #uds-searchControl .gs-publishedDate {
+        color: #6f6f6f;
+      }
+
+      #uds-searchControl .gs-result a.gs-visibleUrl,
+      #uds-searchControl .gs-result .gs-visibleUrl {
+        color: #00c;
+      }
+
+      #uds-searchControl .gsc-results {
+        border-color: #6f6f6f;
+        background-color: #fff;
+      }
+
+      #uds-searchControl .gsc-tabhActive {
+        border-color: #6f6f6f;
+        border-top-color: #6f6f6f;
+        background-color: #fff;
+        color: #000;
+      }
+
+      #uds-searchControl .gsc-tabhInactive {
+        border-color: #6f6f6f;
+        background-color: transparent;
+        color: #00c;
+      }
+
+      #uds-searchClearResults {
+        border-color: #6f6f6f;
+      }
+
+      #uds-searchClearResults:hover {
+        border-color: #6f6f6f;
+      }
+
+      #uds-searchControl .gsc-cursor-page {
+        color: #00c;
+      }
+
+      #uds-searchControl .gsc-cursor-current-page {
+        color: #000;
+      }
+    </style>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("CustomSearch1"));' target='configCustomSearch1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML29'>
+<h2 class='title'>Subscribe</h2>
+<div class='widget-content'>
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-width="305" data-href="https://plus.google.com/111224383669619377607" data-rel="publisher"></div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<a href="http://twitter.com/GoogleAnalytics" class="twitter-follow-button" data-size="large">Follow @GoogleAnalytics</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<br/><br/>
+
+<div style="width: 270px;">
+<div style="float: left;"><a href="http://analytics.blogspot.com/feeds/posts/default"><img border="0" width="16" alt="Site Feed" src="http://www.google.com/images/feed-icon.gif" height="16" align="left"/></a>&nbsp;<a href="http://analytics.blogspot.com/feeds/posts/default">Subscribe to RSS Feed</a></div>
+<div style="float: right; text-align: right;"><a href="http://feeds.feedburner.com/blogspot/tRaA"><img width="88" style="border:0" alt="" src="http://feeds.feedburner.com/~fc/blogspot/tRaA?bg=000099&amp;fg=FFFFFF&amp;anim=1" height="26"/></a></div> 
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=HTML&widgetId=HTML29&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML29"));' target='configHTML29' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2 class='small'>Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<select id='BlogArchive1_ArchiveMenu'>
+<option value='http://analytics.blogspot.de/search?updated-min=2015-01-01T00:00:00-08:00&amp;updated-max=2016-01-01T00:00:00-08:00&amp;max-results=11'>2015 (11)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2014-01-01T00:00:00-08:00&amp;updated-max=2015-01-01T00:00:00-08:00&amp;max-results=50'>2014 (58)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2013-01-01T00:00:00-08:00&amp;updated-max=2014-01-01T00:00:00-08:00&amp;max-results=50'>2013 (127)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2012-01-01T00:00:00-08:00&amp;updated-max=2013-01-01T00:00:00-08:00&amp;max-results=50'>2012 (121)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2011-01-01T00:00:00-08:00&amp;updated-max=2012-01-01T00:00:00-08:00&amp;max-results=50'>2011 (89)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2010-01-01T00:00:00-08:00&amp;updated-max=2011-01-01T00:00:00-08:00&amp;max-results=50'>2010 (116)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2009-01-01T00:00:00-08:00&amp;updated-max=2010-01-01T00:00:00-08:00&amp;max-results=50'>2009 (159)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2008-01-01T00:00:00-08:00&amp;updated-max=2009-01-01T00:00:00-08:00&amp;max-results=50'>2008 (66)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2007-01-01T00:00:00-08:00&amp;updated-max=2008-01-01T00:00:00-08:00&amp;max-results=50'>2007 (53)</option>
+<option value='http://analytics.blogspot.de/search?updated-min=2006-01-01T00:00:00-08:00&amp;updated-max=2007-01-01T00:00:00-08:00&amp;max-results=29'>2006 (29)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' id='Label1'>
+<h2>Labels</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Advanced%20Topics'>Advanced Topics</a>
+<span dir='ltr'>(82)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/AdWords'>AdWords</a>
+<span dir='ltr'>(23)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Analytics%20API'>Analytics API</a>
+<span dir='ltr'>(68)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Announcements'>Announcements</a>
+<span dir='ltr'>(186)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Beginner%20Topics'>Beginner Topics</a>
+<span dir='ltr'>(52)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Business%20Insights'>Business Insights</a>
+<span dir='ltr'>(64)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Case%20Study'>Case Study</a>
+<span dir='ltr'>(37)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Content'>Content</a>
+<span dir='ltr'>(13)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Conversion'>Conversion</a>
+<span dir='ltr'>(15)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Developer'>Developer</a>
+<span dir='ltr'>(32)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Ecommerce'>Ecommerce</a>
+<span dir='ltr'>(11)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Features'>Features</a>
+<span dir='ltr'>(87)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/googlenew'>googlenew</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Mobile'>Mobile</a>
+<span dir='ltr'>(32)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Related%20Products'>Related Products</a>
+<span dir='ltr'>(41)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Social'>Social</a>
+<span dir='ltr'>(15)</span>
+</li>
+<li>
+<a dir='ltr' href='http://analytics.blogspot.de/search/label/Training%20and%20Events'>Training and Events</a>
+<span dir='ltr'>(97)</span>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+<div class='widget HTML' id='HTML27'>
+<div class='widget-content'>
+<h1 class='subheader'></h1>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<h2 class='title'>Learning Center</h2>
+<div class='widget-content'>
+<ul>
+<li><a href="https://analyticsacademy.withgoogle.com">Analytics Academy</a>
+</li><a href="http://www.youtube.com/googleanalytics">YouTube Channel</a><li><a href="http://www.google.com/support/conversionuniversity/?hl=en" onclick="javascript:urchinTracker('/exitlink_ConversionUniversity');">Conversion University</a></li><li><a href="http://google.starttest.com/">GA IQ Test</a></li><li><a href="http://services.google.com/ads_inquiry/awseminars">Seminars for Success</a>
+</li>  <li><a href="http://www.google.com/support/forum/p/Google+Analytics?hl=en" onclick="javascript:urchinTracker('/exitlink_GAGroupForum');">User to User Forum</a></li><li><a href="http://www.google.com/support/analytics" onclick="javascript:urchinTracker('/exitlink_GAHelpCenter');">Help Center</a></li>  </ul>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget LinkList' id='LinkList1'>
+<h2>Books</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://online-behavior.com/ebooks/google-analytics-integrations'>Google Analytics Integrations (2012)</a></li>
+<li><a href='http://www.amazon.com/Advanced-Web-Metrics-Google-Analytics/dp/1118168445/'>Advanced Web Metrics (2012)</a></li>
+<li><a href='http://www.amazon.com/Web-Analytics-2-0-Accountability-Centricity/dp/0470529393'>Web Analytics 2.0 (2009)</a></li>
+<li><a href='http://www.amazon.com/Landing-Page-Optimization-Definitive-Conversions/dp/0470174625/ref=sr_1_9?ie=UTF8&s=books&qid=1245784700&sr=8-9'>Landing Page Optimizati... (2008)</a></li>
+<li><a href='http://www.amazon.com/Web-Analytics-Hour-Avinash-Kaushik/dp/0470130652/ref=sr_1_3?ie=UTF8&s=books&qid=1245784700&sr=8-3'>Web Analytics: An Hour a... (2007)</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' id='LinkList20'>
+<h2>Related Google Products</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.google.com/adsense?hl=en&sourceid=aso&subid=na-en-et-AnalyticsET_EnBlog_Q111&medium=et'>AdSense</a></li>
+<li><a href='http://www.google.com/adwords'>AdWords</a></li>
+<li><a href='http://www.google.com/trends'>Google Trends</a></li>
+<li><a href='http://www.google.com/insights/search/'>Insights for Search</a></li>
+<li><a href='http://www.google.com/sktool/#'>Search Based Keyword Tool</a></li>
+<li><a href='https://www.google.com/webmasters/tools/home?hl=en'>Webmaster Tools</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=LinkList&widgetId=LinkList20&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList20"));' target='configLinkList20' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML2'>
+<h2 class='title'>Feedback</h2>
+<div class='widget-content'>
+<a href="http://www.google.com/support/analytics/bin/request.py" onclick="javascript:urchinTracker('/exitlink_EmailForm');">Send us feedback</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML3'>
+<div class='widget-content'>
+<!-- start Mixpanel --><script type="text/javascript">var mpq=[];mpq.push(["init","3704842f27d11bbb0f34f575f2573c17"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+</script><!-- end Mixpanel -->
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+<div id='main-content'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div id='post-wrapper'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start -->
+<div class='post'>
+<a name='2499760162558665134'></a>
+<h3>
+<a href='http://analytics.blogspot.de/2015/01/start-remarketing-with-google-analytics.html'>Start Remarketing with Google Analytics Instant Activation</a>
+</h3>
+<p class='post-subhead'>
+Wednesday, January 28, 2015 | 2:10 PM
+</p>
+<p class='post-subhead'>
+Labels:
+<a href='http://analytics.blogspot.de/search/label/AdWords' rel='tag'>AdWords</a>,
+<a href='http://analytics.blogspot.de/search/label/Announcements' rel='tag'>Announcements</a>,
+<a href='http://analytics.blogspot.de/search/label/Case%20Study' rel='tag'>Case Study</a>,
+<a href='http://analytics.blogspot.de/search/label/Google%20Integrations' rel='tag'>Google Integrations</a>
+</p>
+<div class='post-body' style='font-size:10pt; line-height:12pt;'>
+<p><div dir="ltr" style="text-align: left;" trbidi="on">
+For many advertisers, remarketing is an essential tactic. But remarketing can be a difficult journey, even for the savviest digital marketer. We repeatedly see marketers struggle with tagging hurdles and complex implementation challenges, with the result that only 1 in 5 remarketers successfully completes their setup.<br />
+<br />
+To help make it easier for advertisers to reach their most qualified customers, we&#8217;ve enabled remarketing with a single toggle. <u>Instead of manually updating all of your site tags, simply use <a href="https://support.google.com/analytics/answer/2444872#propsettings">Instant Activation</a> and get started with remarketing in four easy steps.</u><br />
+<br />
+<b>Identifying quality visitors and maximizing conversions</b><br />
+<br />
+GlobalTechLED.com is a producer of LED lighting. Thanks to Instant Activation, John Burns, Director of Marketing, was able to start remarketing quickly. Without waiting for IT to re-tag his site, John successfully launched Global Tech LED&#8217;s first remarketing campaign and saw fast results by reaching their highest potential customers.<br />
+<br />
+After enabling remarketing, Global Tech LED leveraged Google&#8217;s powerful machine-learning technology in two ways for their online campaigns: <a href="https://support.google.com/analytics/answer/4628577">Smart Lists</a> for remarketing automatically created lists of visitors who were most likely to engage in a subsequent session on GlobalTechLED.com. Then, <a href="https://support.google.com/adwords/answer/2471188">Conversion Optimizer</a> instantly adjusted the campaigns&#8217; bids get more conversions at a lower cost, eventually freeing up more time and resources for the company.<br />
+<br />
+As a result, GlobalTechLED.com is currently reaching their performance and outreach goals. To date they&#8217;ve doubled their display campaigns&#8217; CTRs and have almost five times more clicks on their remarketing campaign compared to their other campaigns. Website traffic increased by over 100% in the first 30 days of the campaign, and international traffic skyrocketed. They&#8217;ve also seen a 75% decrease in CPA for their campaigns.<br />
+<br />
+These kind of results were exactly what the company was looking for. According to John, "We&#8217;ve been trying to hit these specific numbers in the account for a couple of months, and Google Analytics Remarketing helped us achieve these in only a couple of days." Read the full case study <a href="https://services.google.com/fh/files/blogs/globaltechledcasestudy.pdf">here</a>. <br />
+<br />
+<b>Four easy steps to get started</b><br />
+<b><br /></b>
+Ready to get started with remarketing? You can, with just four steps.<br />
+<br />
+1. In your Google Analytics Property&#8217;s settings, choose &#8216;Audiences&#8217; under the &#8216;Remarketing&#8217; section.<br />
+<br />
+<center>
+<a href="http://2.bp.blogspot.com/-pkf3nU6U5LM/VMflvWxWAxI/AAAAAAAACVY/Q-ilRUQQZKM/s1600/RMKT%2B1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-pkf3nU6U5LM/VMflvWxWAxI/AAAAAAAACVY/Q-ilRUQQZKM/s1600/RMKT%2B1.png" height="226" width="400" /></a></center>
+<br />
+2. Choose the AdWords account where you&#8217;d like to share your Audience and click &#8216;Next Step&#8217;.<br />
+<br />
+<center>
+</center>
+<center>
+<a href="http://2.bp.blogspot.com/-1SwHWQqbMrc/VMfl23gQs7I/AAAAAAAACVk/SLLEwoFNgAQ/s1600/RMKT%2B2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-1SwHWQqbMrc/VMfl23gQs7I/AAAAAAAACVk/SLLEwoFNgAQ/s1600/RMKT%2B2.png" height="226" width="400" /></a></center>
+<br />
+3. Click &#8220;Enable&#8221; to create your first audience of All Users. &nbsp;You can also come back later and create more complex audiences, like &#8216;visitors who have spent more than six minutes on site&#8217;, &#8216;visitors who visited more than five pages&#8217;, or &#8216;abandoned cart&#8217;.<br />
+<br />
+This step automatically activates Advertiser Features if you haven&#8217;t done so already, which also enables <a href="https://support.google.com/analytics/answer/2799357">Audience Demographics and Interests Reporting</a>. You can manage this setting at any time in the Admin tab, under the &#8216;Advertiser Features&#8217; section in your Property Settings.<br />
+<br />
+<center>
+<a href="http://3.bp.blogspot.com/-d-j96vZKPIc/VMfl2gn4AaI/AAAAAAAACVg/wyoeqtPgEEU/s1600/RMKT%2B3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-d-j96vZKPIc/VMfl2gn4AaI/AAAAAAAACVg/wyoeqtPgEEU/s1600/RMKT%2B3.png" height="226" width="400" /></a></center>
+<br />
+4. Click &#8216;Create Campaign&#8217; and complete the remarketing campaign creation process in AdWords. Congratulations, you are now a Remarketer!<br />
+<br />
+<center>
+<a href="http://1.bp.blogspot.com/-9m1i6Ri368U/VMfl3tGfK1I/AAAAAAAACVw/VFtbnekQg3g/s1600/RMKT%2B4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-9m1i6Ri368U/VMfl3tGfK1I/AAAAAAAACVw/VFtbnekQg3g/s1600/RMKT%2B4.png" height="226" width="400" /></a></center>
+<br />
+We&#8217;re really excited to make Advertiser Features in Google Analytics simpler and enable all Google Analytics users to be more successful across all their marketing channels. Stay tuned for future improvements!<br />
+<br />
+Happy Analyzing!<br />
+<br />
+Posted by Avi Mehta and Rosanne Borja, Google Analytics Team</div>
+</p>
+</div>
+<div class='post-footer'>
+<p>
+<span class='post-footer-link'>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=3580069&postID=2499760162558665134&target=email' target='_blank' title='Email This'>
+<span class='share-button-link-text'>Email This</span>
+</a>
+<a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=3580069&postID=2499760162558665134&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'>
+<span class='share-button-link-text'>BlogThis!</span>
+</a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=3580069&postID=2499760162558665134&target=twitter' target='_blank' title='Share to Twitter'>
+<span class='share-button-link-text'>Share to Twitter</span>
+</a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=3580069&postID=2499760162558665134&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'>
+<span class='share-button-link-text'>Share to Facebook</span>
+</a>
+<div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://analytics.blogspot.com/2015/01/start-remarketing-with-google-analytics.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</span>
+<span class='post-footer-link'>
+</span>
+<span class='post-footer-link'>
+</span></p>
+</div>
+</div>
+<script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
+<div class='cmt_iframe_holder' data-href='http://analytics.blogspot.com/2015/01/start-remarketing-with-google-analytics.html' data-viewtype='FILTERED_POSTMOD'></div>
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'><p>
+<a class='blog-pager-newer-link' href='http://analytics.blogspot.de/2015/02/best-practices-combine-adwords-with.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+<a class='blog-pager-older-link' href='http://analytics.blogspot.de/2015/01/introducing-trash-can-data-recovery-in.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+<a class='home-link' href='http://analytics.blogspot.de/'>Home</a>
+</p>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://analytics.blogspot.com/feeds/2499760162558665134/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div>
+</div><div class='widget HTML' id='HTML24'>
+</div></div>
+</div>
+</div>
+<!-- end content-wrapper -->
+</div>
+<!-- end outer-wrapper -->
+<div id='footer-graphic'>
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Powered by <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3580069&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<div class='footer section' id='footer'><div class='widget HTML' id='HTML25'>
+<p class='widget-content'>
+<p class='widget-content'>
+  &copy;  Google -   <a href='http://www.google.com/analytics/index.html'>Analytics Home</a> - 
+    <a href='http://www.google.com/analytics/tos.html'>Terms of Service</a> - 
+    <a href='http://www.google.com/intl/en_ALL/privacy.html'>Privacy Policy</a> - 
+    <a href='http://www.google.com/support/googleanalytics/bin/request.py?contact_type=landing&hl=en'>Contact Us</a>
+</p>
+</p>
+</div></div>
+</div></div>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/707158982-widgets.js"></script>
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '3580069';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d3580069','//analytics.blogspot.de/2015/01/start-remarketing-with-google-analytics.html','3580069');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3580069', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Analytics Blog', 'pageType': 'item', 'postId': '2499760162558665134', 'url': 'http://analytics.blogspot.de/2015/01/start-remarketing-with-google-analytics.html', 'canonicalUrl': 'http://analytics.blogspot.com/2015/01/start-remarketing-with-google-analytics.html', 'canonicalHomepageUrl': 'http://analytics.blogspot.com/', 'homepageUrl': 'http://analytics.blogspot.de/', 'blogspotFaviconUrl': 'http://analytics.blogspot.de/favicon.ico', 'enabledCommentProfileImages': false, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Start Remarketing with Google Analytics Instant Activation', 'pageTitle': 'Analytics Blog: Start Remarketing with Google Analytics Instant Activation', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Analytics Blog - Atom\42 href\75\42http://analytics.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Analytics Blog - RSS\42 href\75\42http://analytics.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Analytics Blog - Atom\42 href\75\42http://www.blogger.com/feeds/3580069/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Analytics Blog - Atom\42 href\75\42http://analytics.blogspot.com/feeds/2499760162558665134/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://2.bp.blogspot.com/-pkf3nU6U5LM/VMflvWxWAxI/AAAAAAAACVY/Q-ilRUQQZKM/s72-c/RMKT%2B1.png', 'postImageUrl': 'http://2.bp.blogspot.com/-pkf3nU6U5LM/VMflvWxWAxI/AAAAAAAACVY/Q-ilRUQQZKM/s1600/RMKT%2B1.png', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,f\75\42chrome\42,g\75\42tick\42,k\75\42jstiming\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){var e\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[e,d];if(void 0\75\75c)try{b.console.timeStamp(\42CSI/\42+a)}catch(h){}};this[g](\42start\42,null,a)}var a;b.performance\46\46(a\75b.performance.timing);var n\75a?new d(a.responseStart):new d;b.jstiming\75{Timer:d,load:n};if(a){var c\75a.navigationStart,h\75a.responseStart;0\74c\46\46h\76\75c\46\46(b[k].srt\75h-c)}if(a){var e\75b[k].load;0\74c\46\46h\76\75c\46\46(e[g](\42_wtsrt\42,void 0,c),e[g](\42wtsrt_\42,\42_wtsrt\42,h),e[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,\nb[f]\46\46b[f].csi\46\46(a\75Math.floor(b[f].csi().pageT),e\46\0460\74c\46\46(e[g](\42_tbnd\42,void 0,b[f].csi().startE),e[g](\42tbnd_\42,\42_tbnd\42,c))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,e\46\0460\74c\46\46(e[g](\42_tbnd\42,void 0,b.external.startE),e[g](\42tbnd_\42,\42_tbnd\42,c))),a\46\46(b[k].pt\75a)}catch(p){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[k].load[g](\42aft\42)};var l\75!1;function m(){l||(l\75!0,b[k].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,m,!1):b.attachEvent(\42onscroll\42,m);\n })();\74/script\076', 'mobileHeadScript': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/cda3ddef07a85452', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'header', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_CustomSearchView', new _WidgetInfo('CustomSearch1', 'sidebar', null, document.getElementById('CustomSearch1'), {'title': 'Search This Blog', 'includeBlog': true, 'includePostLinks': false, 'includeWeb': false, 'linkLists': [], 'blogUrl': 'http://analytics.blogspot.com/', 'loadingMsg': 'Loading...', 'thisBlogMsg': 'This Blog', 'linkedFromHereMsg': 'Linked From Here', 'theWebMsg': 'The Web', 'backgroundColor': '#fff', 'textColor': '#000', 'dateColor': '#6f6f6f', 'linkColor': '#00c', 'urlColor': '#00c', 'visitedLinkColor': '#00c', 'borderColor': '#6f6f6f', 'activeBorderColor': '#6f6f6f', 'cse_ua': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML29', 'sidebar', null, document.getElementById('HTML29'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML27', 'sidebar', null, document.getElementById('HTML27'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList20', 'sidebar', null, document.getElementById('LinkList20'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'legacyCommentModerationUrl': 'https://www.blogger.com/moderate-legacy-comment.g?blogID\0753580069', 'iframeCommentsId': 'gpluscomments', 'viewType': 'FILTERED_POSTMOD', 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2899692079-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/2392111094-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML24', 'main', null, document.getElementById('HTML24'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML25', 'footer', null, document.getElementById('HTML25'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

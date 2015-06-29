@@ -1,0 +1,1 @@
+--color --fail-fast --tty --require spec_helper

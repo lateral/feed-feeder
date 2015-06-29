@@ -1,0 +1,7 @@
+[]
+# update_bots:
+#   cron: "*/15 * * * *"
+#   class: StoriesQueue
+#   args:
+#   queue: stories_queue
+#   description: Queues all stories for update

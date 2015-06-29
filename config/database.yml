@@ -1,0 +1,24 @@
+development: &default
+  adapter: postgresql
+  database: feed-feeder_development
+  username: lateral
+  password: lateral
+  encoding: utf8
+  min_messages: warning
+  pool: 8
+  timeout: 5000
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  database: feed-feeder_test
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  host: ec2-54-171-84-122.eu-west-1.compute.amazonaws.com
+  database: rssdocs
+  username: postgres
+  password: <%= ENV['DB_PW'] %>
