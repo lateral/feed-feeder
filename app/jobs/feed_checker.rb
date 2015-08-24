@@ -63,7 +63,7 @@ class FeedChecker
         unless feed.save
           # log an error
         end
-        feed.process_feed_contents( feed_url )
+        feed.process_feed_contents( open(feed_url) )
       end
     end
   end

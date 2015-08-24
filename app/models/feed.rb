@@ -5,15 +5,18 @@ class Feed < ActiveRecord::Base
 
   enum status: [:unsubscribed, :manually_processed, :subscription_requested, :subscribed, :error]
 
-  def process_feed_contents( feed_url )
+  def process_feed_contents( html_contents )
   
-    rss = SimpleRSS.parse open(feed_url)
+    rss = SimpleRSS.parse html_contents
 
     # check each entry
     rss.entries.each do |entry|
 
-      add_feed_item(entry.link)
+      # check if the item is new or has already been processed
+      url = entry.link
 
+      add_feed_item(url) if Feed.find_by_url(url).nil?
+      
       # manage rate limiting
       sleep 5
     end

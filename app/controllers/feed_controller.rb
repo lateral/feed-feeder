@@ -40,6 +40,13 @@ class FeedsController < ApplicationController
   def create
     # process pushed entries
     feed = Feed.find_by_id( params[:id] )
-    feed.process_feed_contents( request.raw_post )
+    # differentiate between Standard notifications and fat pings
+    if requests.body.nil?
+      # Standard Notification (must be processed manually)
+      feed.process_feed_contents( open(feed.url) )
+    else
+      # fat ping
+      feed.process_feed_contents( request.raw_post )
+    end
   end
 end
