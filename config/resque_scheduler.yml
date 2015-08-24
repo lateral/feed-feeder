@@ -1,7 +1,6 @@
-[]
-# update_bots:
-#   cron: "*/15 * * * *"
-#   class: StoriesQueue
-#   args:
-#   queue: stories_queue
-#   description: Queues all stories for update
+check_feeds:
+  cron: "*/15 * * * *"
+  class: FeedChecker
+  args:
+  queue: feed_checker
+  description: "This job checks all the feeds every 15 minutes"

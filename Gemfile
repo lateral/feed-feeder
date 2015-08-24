@@ -13,10 +13,13 @@ gem 'jbuilder'
 gem 'jquery-rails'
 gem 'lateral_recommender'
 gem 'newrelic_rpm'
+gem 'nokogiri'
+gem 'push-client'
 gem 'resque'
 gem 'resque-loner'
 gem 'resque-scheduler'
 gem 'sass-rails'
+gem 'simple-rss'
 gem 'therubyracer', platforms: :ruby
 gem 'uglifier'
 
