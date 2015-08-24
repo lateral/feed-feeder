@@ -11,15 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150824030324) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "feed_sources", force: :cascade do |t|
     t.string "name", limit: 255
-    t.text   "urls",             default: [], array: true
     t.text   "url"
+    t.string "slug"
+  end
+
+  create_table "feeds", force: :cascade do |t|
+    t.integer  "feed_source_id"
+    t.string   "url"
+    t.integer  "status"
+    t.datetime "expiration_date"
+    t.string   "error_msg"
+    t.boolean  "is_pubsubhubbub_supported"
   end
 
   create_table "items", force: :cascade do |t|
@@ -36,7 +45,6 @@ ActiveRecord::Schema.define(version: 0) do
     t.datetime "updated_at"
     t.boolean  "rejected_from_api", default: false
     t.json     "api_response"
-    t.text     "body"
     t.boolean  "image_thumbnail",   default: false, null: false
   end
 

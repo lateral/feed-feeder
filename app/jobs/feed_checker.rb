@@ -26,10 +26,10 @@ class FeedChecker
          )
 
         feed.is_pubsubhubbub_supported = true unless feed.is_pubsubhubbub_supported
-        unless feed.expiration_date.nil? || feed.expiration_date < DateTime.now
+        if feed.expiration_date.nil? || feed.expiration_date < DateTime.now
 
           # resubscribe
-          webhook_url = FEED_FEEDER_DOMAIN_NAME + "feed/" + feed.id.to_s
+          webhook_url = FEED_FEEDER_DOMAIN_NAME + "feeds/" + feed.id.to_s
 
           # get feed self url
           feed_hub_url = doc.xpath('//feed/link[@rel="hub"]').first.attributes["href"].value
@@ -43,8 +43,8 @@ class FeedChecker
             'hub.callback' => webhook_url,
             'hub.verify' => 'sync'
           }
-          url = URI.parse(feed_hub_url)
-          resp, data = Net::HTTP.post_form(url, params)
+
+          resp = Net::HTTP.post_form URI(feed_hub_url), params
 
           # verify that the subscription call has been accepted
           if resp.status == 202
@@ -60,6 +60,7 @@ class FeedChecker
         end
       else
         feed.status = "manually_processed" unless feed.status == "manually_processed"
+        feed.is_pubsubhubbub_supported = false unless feed.is_pubsubhubbub_supported == false
         unless feed.save
           # log an error
         end
