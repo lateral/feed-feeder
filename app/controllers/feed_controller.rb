@@ -11,21 +11,10 @@ class FeedsController < ApplicationController
 
     # verify the string parameters
     if params["hub.mode"] == "subscribe" && 
-       params["hub.topic"] == feed.url &&
-       !params["hub.challenge"].empty?
+      params["hub.topic"] == feed.url &&
+      !params["hub.challenge"].empty?
        
-      uri = URI(feed.url)
-      req = Net::HTTP::Post.new(uri)
-      req.content_type = 'text/plain'
-      req.body = params["hub.challenge"]
-      # "you will need to reply with 200 OK" <- Not sure how to do this
-      # From another webpage: To confirm, the webhook needs to serve a 200 status 
-      # and output the hub.challenge in the response body.
-      
-      # req.code = 200 ???
-      res = Net::HTTP.start(uri.hostname, uri.port) do |http|
-        http.request(req)
-      end
+      render status: 200, plain: params["hub.challenge"]
 
       if res.is_a?(Net::HTTPNoContent)
         # ok subscribed
@@ -33,15 +22,16 @@ class FeedsController < ApplicationController
         if !params["hub.lease_seconds"].nil? && params["hub.lease_seconds"].to_i > 0
           feed.expiration_date = DateTime.now + Rational(params["hub.lease_seconds"].to_i, 86400)
         end
-        unless feed.save
-          # report error
-        end
-
       else
         # log error (failed to subscribe)
         feed.status = "error"
         feed.error_msg = res.body
       end
+      unless feed.save
+        # log an error
+      end
+    else 
+      render status: 422, plain: "Invalid parameters"
     end  
 
   end

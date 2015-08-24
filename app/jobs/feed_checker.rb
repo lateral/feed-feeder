@@ -45,14 +45,24 @@ class FeedChecker
           }
           url = URI.parse(feed_hub_url)
           resp, data = Net::HTTP.post_form(url, params)
+
+          # verify that the subscription call has been accepted
+          if resp.status == 202
+            feed.status = "subscription_requested"
+          else
+            # there might be errors
+            feed.status = "error"
+            feed.error_msg = resp.body
+          end
         end
-        feed.status = "subscription_requested"
         unless feed.save
-          # return an error
+          # log an error
         end
       else
         feed.status = "manually_processed" unless feed.status == "manually_processed"
-        feed.save
+        unless feed.save
+          # log an error
+        end
         feed.process_feed_contents( feed_url )
       end
     end
