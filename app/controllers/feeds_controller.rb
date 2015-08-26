@@ -2,6 +2,8 @@ require 'date'
 
 class FeedsController < ApplicationController
   def index
+    @foo = {yo: 'dude'}
+    render json: @foo
   end
 
   # GET PubSubHubbub callback after you subscribe 
@@ -16,7 +18,7 @@ class FeedsController < ApplicationController
        
       render status: 200, plain: params["hub.challenge"]
 
-      if res.is_a?(Net::HTTPNoContent)
+      if response.response_code == 204
         # ok subscribed
         feed.status = "subscribed"
         if !params["hub.lease_seconds"].nil? && params["hub.lease_seconds"].to_i > 0
@@ -25,7 +27,7 @@ class FeedsController < ApplicationController
       else
         # log error (failed to subscribe)
         feed.status = "error"
-        feed.error_msg = res.body
+        feed.error_msg = response.body
       end
       unless feed.save
         # log an error

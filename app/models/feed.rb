@@ -15,15 +15,17 @@ class Feed < ActiveRecord::Base
       # check if the item is new or has already been processed
       url = entry.link
 
-      add_feed_item(url) if Feed.find_by_url(url).nil?
-      
-      # manage rate limiting
-      sleep 5
+      if Item.find_by_url(url).nil?
+        add_feed_item(url) 
+        # manage rate limiting
+        sleep 5
+      end
     end
 
   end
 
   def add_feed_item(entry_url)
+    byebug
     entry_hash = run_python('recommend-by-url.py', entry_url)
     item_hash = {
       feed_source_id: self.feed_source_id,
@@ -43,14 +45,13 @@ class Feed < ActiveRecord::Base
   private
 
   def run_python(script, arg)
-    script = Rails.root.join('lib', script)
-    output = `PYTHONIOENCODING=utf-8 python #{script} '#{arg}' 2>&1`
-    JSON.parse(output, symbolize_names: true)
-  rescue JSON::ParserError => e
-    if Rails.env.production?
-      error! 'Error getting URL contents', 500
-    else
-      error! e.message, 500
+    begin
+      script = Rails.root.join('lib', script)
+      output = `PYTHONIOENCODING=utf-8 python #{script} '#{arg}' 2>&1`
+      JSON.parse(output, symbolize_names: true)
+    rescue
+      # return empty metadata hash
+      {}
     end
   end
 end
