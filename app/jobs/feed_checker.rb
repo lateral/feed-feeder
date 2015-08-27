@@ -47,7 +47,7 @@ class FeedChecker
           resp = Net::HTTP.post_form URI(feed_hub_url), params
 
           # verify that the subscription call has been accepted
-          if resp.status == 202
+          if resp.class == Net::HTTPNoContent
             feed.status = "subscription_requested"
           else
             # there might be errors
