@@ -7,14 +7,12 @@ class Feed < ActiveRecord::Base
 
   def process_feed_contents( html_contents )
   
-    rss = SimpleRSS.parse html_contents
+    urls = SimpleRSS.parse( html_contents ).entries.map{|e| e.link }
 
-    # check each entry
-    rss.entries.each do |entry|
+    # check each url
+    urls.each do |url|
 
-      # check if the item is new or has already been processed
-      url = entry.link
-
+      # check if the link is new or has already been processed
       if Item.find_by_url(url).nil?
         add_feed_item(url) 
         # manage rate limiting
@@ -25,7 +23,6 @@ class Feed < ActiveRecord::Base
   end
 
   def add_feed_item(entry_url)
-    byebug
     entry_hash = run_python('recommend-by-url.py', entry_url)
     item_hash = {
       feed_source_id: self.feed_source_id,
@@ -36,7 +33,7 @@ class Feed < ActiveRecord::Base
       image: entry_hash[:image],
       published: entry_hash[:published]
     }
-    item = Item.first_or_create(item_hash)
+    item = Item.new(item_hash)
     unless item.save
       # raise an error
     end

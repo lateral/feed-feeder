@@ -15,7 +15,7 @@ class FeedChecker
 
       doc = Nokogiri::HTML( open(feed_url) )
       # check if feed supports pubsubhubbub
-      if feed.is_pubsubhubbub_supported || (
+      if feed.status != "manually_processed" || feed.is_pubsubhubbub_supported || (
          !doc.xpath('//feed/link[@rel="hub"]').empty? &&
          !doc.xpath('//feed/link[@rel="self"]').first.attributes["href"].value.empty? &&
          !doc.xpath('//feed/link[@rel="self"]').first.attributes["href"].value.empty? &&
