@@ -1,15 +1,26 @@
 require 'date'
 
 class FeedsController < ApplicationController
+
+
   # GET PubSubHubbub callback after you subscribe 
   def show
     # confirm the subscription
-    feed = Feed.find_by_id(params[:id])
+    feed = get_feed
 
     # verify the string parameters
     if params["hub.mode"] == "subscribe" && 
       params["hub.topic"] == feed.url &&
       !params["hub.challenge"].empty?
+
+      feed.status = "subscription_requested" # 17 mins
+      if !params["hub.lease_seconds"].nil? && params["hub.lease_seconds"].to_i > 0
+        feed.expiration_date = DateTime.now + Rational(params["hub.lease_seconds"].to_i, 86400)
+        unless feed.save
+          # log error
+          logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}"
+        end
+      end
 
       render status: 200, plain: params["hub.challenge"]
     else 
@@ -20,28 +31,15 @@ class FeedsController < ApplicationController
   # POST PubSubHubbub - newly pushed entries
   # also used for subscription confirmation
   def create
-    if response.response_code == 204
-      # ok subscribed
-      feed.status = "subscribed"
-      if !params["hub.lease_seconds"].nil? && params["hub.lease_seconds"].to_i > 0
-        feed.expiration_date = DateTime.now + Rational(params["hub.lease_seconds"].to_i, 86400)
-        unless feed.save
-          # log error
-        end
-      end
+    # process pushed entries
+    feed = get_feed
+    # differentiate between Standard notifications and fat pings
+    if requests.body.nil?
+      # Standard Notification (must be processed manually)
+      feed.process_feed_contents( open(feed.url) )
     else
-      # process pushed entries
-      feed = Feed.find_by_id( params[:id] )
-      # differentiate between Standard notifications and fat pings
-      if requests.body.nil?
-        # Standard Notification (must be processed manually)
-        feed.process_feed_contents( open(feed.url) )
-      else
-        # check if is pubsubhubbub's empty confirmation response
-
-        # fat ping
-        feed.process_feed_contents( request.raw_post )
-      end
+      # fat ping
+      feed.process_feed_contents( request.raw_post )
     end
   end
 end

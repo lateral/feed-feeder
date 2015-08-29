@@ -35,7 +35,8 @@ class Feed < ActiveRecord::Base
     }
     item = Item.new(item_hash)
     unless item.save
-      # raise an error
+      # log an error
+      logger.error "ITEM SAVE TO DB ERROR:#{item.inspect}"
     end
   end
 

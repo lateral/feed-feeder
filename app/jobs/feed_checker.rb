@@ -48,8 +48,8 @@ class FeedChecker
 
           # verify that the subscription call has been accepted
           if resp.class == Net::HTTPNoContent
-            feed.status = "subscription_requested"
-          else
+            feed.status = "subscribed"
+          elsif resp.class = Net::HTTPUnprocessableEntity
             # there might be errors
             feed.status = "error"
             feed.error_msg = resp.body
@@ -57,12 +57,14 @@ class FeedChecker
         end
         unless feed.save
           # log an error
+          logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}"
         end
       else
         feed.status = "manually_processed" unless feed.status == "manually_processed"
         feed.is_pubsubhubbub_supported = false unless feed.is_pubsubhubbub_supported == false
         unless feed.save
           # log an error
+          logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}"
         end
         feed.process_feed_contents( open(feed_url) )
       end
