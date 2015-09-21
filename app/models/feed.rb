@@ -5,13 +5,17 @@ class Feed < ActiveRecord::Base
 
   enum status: [:unsubscribed, :manually_processed, :subscription_requested, :subscribed, :error]
 
-  def process_feed_contents( html_contents )
-  
-    urls = SimpleRSS.parse( html_contents ).entries.map{|e| e.link }
+  def process_feed_contents(object)
+    if object.class == Feed
+      urls = SimpleRSS.parse(open(object.url))
+    else
+      urls = SimpleRSS.parse(object.raw_post)
+    end
+
+    urls = urls.entries.map{|e| e.link }
 
     # check each url
     urls.each do |url|
-
       # check if the link is new or has already been processed
       if Item.find_by_url(url).nil?
         add_feed_item(url) 

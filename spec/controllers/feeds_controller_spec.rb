@@ -1,20 +1,45 @@
 require 'rails_helper'
 
 RSpec.describe FeedsController, type: :controller do
-  it "should render a 200 status and the hub.challenge if the subscription params are valid" do
-    feed = FactoryGirl.create(:feed)
 
-    params = {
-      "hub.mode" => "subscribe",
-      "hub.topic" => feed.url,
-      "hub.challenge" => "abc123",
-      "hub.lease_seconds" => "86400"
-    }
-    get :show, id: feed.id
-
-    expect(response).to be_success
-    expect(feed.expiration_date).should_not be_nil
+  before (:each) do
+    feed_source = FactoryGirl.create(:feed_source)
+    @feed = FactoryGirl.create(:feed)
+    @feed.feed_source_id = feed_source.id
+    @feed.save
   end
-  xit "should render a 422 status if the subscription params are invalid" do
+  describe "FeedController GET method" do
+    it "should render a 200 status and the hub.challenge if the subscription params are valid" do
+      params = {
+        "id" => @feed.id,
+        "hub.mode" => "subscribe",
+        "hub.topic" => @feed.url,
+        "hub.challenge" => "abc123",
+        "hub.lease_seconds" => "86400"
+      }
+      get :show, params
+      expect(response.status).to eq(200)
+      expect(response.body).to eq("abc123")
+      f = Feed.find(@feed.id)
+      expect(f.expiration_date).to_not be_nil
+    end
+    it "should render a 422 status if the subscription params are invalid" do
+      params = {
+        "id" => @feed.id,
+        "hub.mode" => "cause_a_422",
+        "hub.topic" => "foo"
+      }
+      get :show, params
+      expect(response.status).to eq(422)
+    end
+  end
+  describe "FeedController POST method" do
+    it "should process contents of feed to database" do
+      post :create, { id: @feed.id }
+      fs = FeedSource.find(@feed.feed_source_id)
+      items = fs.items
+      expect(items.size).should > 0
+      expect(item.first.title.class).to eq(String)
+    end
   end
 end

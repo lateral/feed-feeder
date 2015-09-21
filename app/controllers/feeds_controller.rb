@@ -1,15 +1,14 @@
 require 'date'
-
 class FeedsController < ApplicationController
+  include FeedHelper
 
-
-  # GET PubSubHubbub callback after you subscribe 
+  # GET PubSubHubbub callback after you subscribe
   def show
     # confirm the subscription
     feed = get_feed
 
     # verify the string parameters
-    if params["hub.mode"] == "subscribe" && 
+    if params["hub.mode"] == "subscribe" &&
       params["hub.topic"] == feed.url &&
       !params["hub.challenge"].empty?
 
@@ -31,15 +30,15 @@ class FeedsController < ApplicationController
   # POST PubSubHubbub - newly pushed entries
   # also used for subscription confirmation
   def create
-    # process pushed entries
     feed = get_feed
     # differentiate between Standard notifications and fat pings
-    if requests.body.nil?
+    if request.raw_post =~ /^id=\d+$/
       # Standard Notification (must be processed manually)
-      feed.process_feed_contents( open(feed.url) )
+      feed.process_feed_contents( feed )
     else
       # fat ping
-      feed.process_feed_contents( request.raw_post )
+      feed.process_feed_contents( request )
     end
+    render status: 200, plain: ""
   end
 end
