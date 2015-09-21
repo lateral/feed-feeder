@@ -2,14 +2,15 @@ require 'date'
 
 class FeedsController < ApplicationController
 
+  include FeedHelper
 
-  # GET PubSubHubbub callback after you subscribe 
+  # GET PubSubHubbub callback after you subscribe
   def show
     # confirm the subscription
     feed = get_feed
 
     # verify the string parameters
-    if params["hub.mode"] == "subscribe" && 
+    if params["hub.mode"] == "subscribe" &&
       params["hub.topic"] == feed.url &&
       !params["hub.challenge"].empty?
 
@@ -23,9 +24,9 @@ class FeedsController < ApplicationController
       end
 
       render status: 200, plain: params["hub.challenge"]
-    else 
+    else
       render status: 422, plain: "Invalid parameters"
-    end  
+    end
   end
 
   # POST PubSubHubbub - newly pushed entries
