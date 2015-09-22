@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 RSpec.describe FeedsController, type: :controller do
 
   before (:each) do
@@ -34,12 +33,14 @@ RSpec.describe FeedsController, type: :controller do
     end
   end
   describe "FeedController POST method" do
-    it "should process contents of feed to database" do
-      post :create, { id: @feed.id }
-      fs = FeedSource.find(@feed.feed_source_id)
-      items = fs.items
-      expect(items.size).should > 0
-      expect(item.first.title.class).to eq(String)
+    VCR.use_cassette('feed_controller_post') do
+      it "should process contents of feed to database" do
+        post :create, { id: @feed.id }
+        fs = FeedSource.find(@feed.feed_source_id)
+        items = fs.items
+        expect(items.size).to be > 0
+        expect(items.first.title.class).to eq(String)
+      end
     end
   end
 end
