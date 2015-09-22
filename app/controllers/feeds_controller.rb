@@ -22,9 +22,9 @@ class FeedsController < ApplicationController
       end
 
       render status: 200, plain: params["hub.challenge"]
-    else 
+    else
       render status: 422, plain: "Invalid parameters"
-    end  
+    end
   end
 
   # POST PubSubHubbub - newly pushed entries
