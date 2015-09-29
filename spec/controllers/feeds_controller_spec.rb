@@ -33,8 +33,8 @@ RSpec.describe FeedsController, type: :controller do
     end
   end
   describe "FeedController POST method" do
-    VCR.use_cassette('feed_controller_post') do
-      it "should process contents of feed to database" do
+    it "should process contents of feed to database" do
+      VCR.use_cassette('feed_controller_post') do
         post :create, { id: @feed.id }
         fs = FeedSource.find(@feed.feed_source_id)
         items = fs.items
