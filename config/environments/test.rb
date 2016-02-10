@@ -32,9 +32,6 @@ Rails.application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
-  # Don't send emails
-  config.action_mailer.delivery_method = :test
-
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end

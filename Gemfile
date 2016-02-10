@@ -2,26 +2,27 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.5'
 gem 'pg'
 
-gem 'coffee-rails'
-gem 'compass-rails'
-gem 'flutie'
+# gem 'coffee-rails'
+# gem 'compass-rails'
+# gem 'flutie'
+# gem 'jbuilder'
+# gem 'jquery-rails'
+# gem 'push-client'
+# gem 'sass-rails'
+# gem 'therubyracer', platforms: :ruby
+# gem 'uglifier'
 gem 'god'
-gem 'jbuilder'
-gem 'jquery-rails'
 gem 'lateral_recommender'
 gem 'newrelic_rpm'
 gem 'nokogiri'
-gem 'push-client'
 gem 'resque'
 gem 'resque-loner'
 gem 'resque-scheduler'
-gem 'sass-rails'
+gem 'rest-client'
 gem 'simple-rss'
-gem 'therubyracer', platforms: :ruby
-gem 'uglifier'
 
 group :development do
   gem 'awesome_print'
@@ -45,6 +46,6 @@ group :test do
   gem 'resque_spec'
   gem 'thin'
   gem 'vcr'
-  gem 'web-console'
+  # gem 'web-console'
   gem 'webmock'
 end

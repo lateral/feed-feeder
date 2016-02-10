@@ -1,11 +1,11 @@
 linters:
- SelectorDepth:
-   max_depth: 8
- SingleLinePerSelector:
-   enabled: false
- ColorVariable:
-   enabled: false
- IdSelector:
-   enabled: false
- NestingDepth:
-   enabled: false
+  SelectorDepth:
+    max_depth: 8
+  SingleLinePerSelector:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  IdSelector:
+    enabled: false
+  NestingDepth:
+    enabled: false

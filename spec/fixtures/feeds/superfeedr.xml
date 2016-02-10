@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Superfeedr Blog</title>
+    <link href="https://superfeedr-blog-feed.herokuapp.com/" rel="self" type="application/atom+xml"/>
+    <link href="http://blog.superfeedr.com/" rel="alternate" type="text/html"/>
+    <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
+    <updated>2016-02-03T14:41:11+01:00</updated>
+    <id>http://blog.superfeedr.com/</id>
+
+
+    <entry>
+        <title>Full Text RSS</title>
+
+        <link href="http://blog.superfeedr.com/full-text-rss/"/>
+        <published>2016-01-28T00:00:00+01:00</published>
+        <updated>2016-01-28T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/full-text-rss</id>
+        <summary>Truncating RSS feeds is probably the worse a publisher can do: it degrades the experience of savvy users who chose to follow the RSS feed.</summary>
+        <content type="html">&lt;p&gt;Of course, if your website publishes content, you should &lt;strong&gt;absolutely publish RSS feeds&lt;/strong&gt; (or Atom feeds, &lt;a href=&quot;http://blog.superfeedr.com/gospel/feeds/atom-or-rss-not-both/&quot;&gt;but not both&lt;/a&gt;!). Luckily, a lot of publishers eventually do, even if they sometimes have trouble dealing with &lt;a href=&quot;http://blog.superfeedr.com/rss-autodiscovery/&quot;&gt;auto-discovery&lt;/a&gt;. However, a lot of these publishers will publish &lt;em&gt;truncated&lt;/em&gt; RSS feeds, and that’s generally a bad idea.&lt;/p&gt;
+
+&lt;p&gt;The main reason publishers truncate their feeds is that they expect the subscribers want to visit the “original” site and then view its ads or interact with the content more… Other publishers fear that full text RSS feeds can be used by scrapers to duplicate content and rank better in search engine. Let’s face it: if somebody wants to duplicate content, there are many more ways than using the RSS feeds.&lt;/p&gt;
+
+&lt;h2 id=&quot;who-uses-rss-feeds&quot;&gt;Who uses RSS feeds?&lt;/h2&gt;
+
+&lt;p&gt;These days, it’s clear that &lt;strong&gt;RSS is mostly used by advanced users&lt;/strong&gt;: &lt;a href=&quot;http://www.businessinsider.com/feedly-2014-2?IR=T&quot;&gt;millions of of them&lt;/a&gt;, but still a small fraction of the &lt;a href=&quot;http://www.internetlivestats.com/internet-users/&quot;&gt;web’s 3+ Bn users&lt;/a&gt;. Given the relative complexity of most feed readers when compared to the social web applications, it’s also safe to assume that these users are at least savvy.&lt;/p&gt;
+
+&lt;p&gt;When it comes to ads, the most savvy web users are often the ones who use ad-blockers. Even when they don’t, they also tend to click less on these banners. So, chances are that &lt;em&gt;even if they clicked&lt;/em&gt; in their readers to view the rest of the truncated content, they &lt;strong&gt;won’t even see or click on the ads&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s also important to remember that feed reader users &lt;strong&gt;chose&lt;/strong&gt; to use a feed reader (many of them actually pay to use the feed reader of their choice). They understand their limitations as well as their benefits. It’s certainly much harder than expected to entice them to click on links &lt;em&gt;away&lt;/em&gt; from their readers.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-feed-readers-are-good&quot;&gt;The feed readers are good!&lt;/h2&gt;
+
+&lt;p&gt;Often, feed readers are &lt;strong&gt;offline first&lt;/strong&gt; experiences: they aggregate content from multiple sources so that the data can be consumed while commuting, on planes… but more importantly (and more often), the feed reader users &lt;em&gt;don’t have to wait for the data to load&lt;/em&gt; for each entry that they’re reading. Generally, feed readers will be able to load all recent stories at once, allowing for a much faster experience when reading story after story.&lt;/p&gt;
+
+&lt;p&gt;These days, modern feed readers &lt;em&gt;also include a lot of social web features&lt;/em&gt; which let their users share the feed’s content, favorite the stories they like the most, and more. By doing this, the feed readers can drive a lot of traffic back to the publisher’s site.&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;strong&gt;degrading the experience can sometimes be worse than not providing any RSS feed at all&lt;/strong&gt;. These advanced users are certainly very experienced and are also influential. If their experience interacting with the publisher’s content is great, they’re more likely to more of consume it and share it even more.&lt;/p&gt;
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Hijacking API requests with Service Workers</title>
+
+        <link href="http://blog.superfeedr.com/hijacking-api-requests-service-worker/"/>
+        <published>2016-01-20T00:00:00+01:00</published>
+        <updated>2016-01-20T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/hijacking-api-requests-service-worker</id>
+        <summary>The data consumed in a feed reader is updated often. Yet, for the best experience, we want to also serve the cached data.</summary>
+        <content type="html">&lt;p&gt;&lt;a href=&quot;http://blog.superfeedr.com/service-workers/&quot;&gt;Last week&lt;/a&gt;, we’ve seen how to add a Service Worker to &lt;a href=&quot;https://river.news/&quot;&gt;our feed reader&lt;/a&gt; so that it loads faster by caching its &lt;em&gt;shell&lt;/em&gt;. One of the direct benefits of this is that our application shell is now also &lt;strong&gt;available offline&lt;/strong&gt;, even when the browser is not connected to the web.&lt;/p&gt;
+
+&lt;p&gt;This week, we’ll see how we should also use the Service Worker API to cache the dynamic data coming from the &lt;a href=&quot;https://superfeedr.com/&quot;&gt;Superfeedr Feed API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;service-worker-toolbox&quot;&gt;Service Worker Toolbox&lt;/h2&gt;
+
+&lt;p&gt;Our shell is now cached immediately after the first visit to &lt;a href=&quot;https://river.news&quot;&gt;River.news&lt;/a&gt;. After this, the content of the shell (static HTML, CSS and javascript) are &lt;em&gt;always&lt;/em&gt; loaded only from the cache. (until of course we update the service worker).
+The RSS feeds’ content will be updated more often, so we can’t use the same approach for the calls to Superfeedr’s API. Yet, we still want the best experience so we have to cache the content and show it to the user immediately. In a way, for each call to the API, we want to achieve 2 things at &lt;strong&gt;concurrently&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If there is any data in the cache, show that to the user&lt;/li&gt;
+  &lt;li&gt;Make a request to Superfeedr’s API and fail silently if the application is offline.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s a pretty common scenario in the &lt;a href=&quot;https://jakearchibald.com/2014/offline-cookbook/&quot;&gt;Offline Cookbook&lt;/a&gt; published by &lt;a href=&quot;https://twitter.com/jaffathecake&quot;&gt;Jake Archibald&lt;/a&gt;. As a consequence, Google implemented it in its &lt;a href=&quot;https://github.com/GoogleChrome/sw-toolbox&quot;&gt;sw-toolbox&lt;/a&gt; (&lt;code&gt;sw-toolbox&lt;/code&gt; is syntactic sugar on top of Service Workers, exactly like &lt;a href=&quot;https://github.com/GoogleChrome/sw-precache&quot;&gt;sw-precache&lt;/a&gt;. The scenario we described above is called &lt;code&gt;fastest&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sw-toolbox&lt;/code&gt; provides a routing mechanism which hijacks all HTTP requests performed by the browser and applies any of the predefined recipes in the toolbox. Here’s the code we’re using for River.news:&lt;/p&gt;
+
+&lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;toolbox.router.get(/^https:\/\/push.superfeedr.com\//, toolbox.fastest);
+toolbox.router.get(/^https:\/\/www.google.com\/s2\/favicons/, toolbox.fastest);
+toolbox.router.get(/^https:\/\/river.news\/up.html/, toolbox.networkOnly);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We see that for any request which matches the &lt;code&gt;/^https:\/\/push.superfeedr.com\//,&lt;/code&gt; regular expression, we apply the &lt;code&gt;toolbox.fastest&lt;/code&gt; recipe. We use the exact same approach for requests to &lt;code&gt;google.com/s2/favicons&lt;/code&gt; that we use to load the icons for each story.&lt;/p&gt;
+
+&lt;p&gt;The last line is a bit different. We &lt;em&gt;only&lt;/em&gt; want to load this last resource using the network and never cache it.&lt;/p&gt;
+
+&lt;h2 id=&quot;assessing-connectivity&quot;&gt;Assessing connectivity&lt;/h2&gt;
+
+&lt;p&gt;Caching data is extremely useful when the application &lt;strong&gt;only has to display&lt;/strong&gt; information. However, if the local application needs to alter the data, caching can quickly turn into an engineering nightmare with race conditions, lost updates and more. Luckily for us, a feed reader is mostly about &lt;em&gt;consuming&lt;/em&gt; data and rarely about &lt;em&gt;altering&lt;/em&gt; it. The notable exception being that one might want to update their subscription list. To make things simpler, at this point, we want to disable any change to the subscription list while the application is offline.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;HTML5 has its own &lt;a href=&quot;http://w3c.github.io/netinfo/&quot;&gt;Network Information API&lt;/a&gt;. Not only is it &lt;a href=&quot;http://caniuse.com/#feat=netinfo&quot;&gt;barely implemented&lt;/a&gt;, it also fails to detect when the device on which our application is connected to a network, but not to the web.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In order to check if we can update our subscription list, the River.news application will just make a simple &lt;code&gt;HEAD&lt;/code&gt; request to &lt;a href=&quot;http://river.news/up.html&quot;&gt;&lt;code&gt;http://river.news/up.html&lt;/code&gt;&lt;/a&gt;. If the request fails, we assume that we’re offline and then disable the form fields. If it succeeds we can let the user add or remove feeds.&lt;/p&gt;
+
+&lt;p&gt;The latest rule of our &lt;code&gt;sw-toolbox&lt;/code&gt; should now make sense: we cannot afford to cache the responses if we want to reliably detect when we are offline!&lt;/p&gt;
+
+&lt;p&gt;There are &lt;em&gt;many&lt;/em&gt; other use cases to Service Workers. For example, in our feed reader, we could use Service Workers to white-list a set of 3rd party javascript script.&lt;/p&gt;
+
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Adding Offline Support to a feed reader with Service Workers</title>
+
+        <link href="http://blog.superfeedr.com/service-workers/"/>
+        <published>2016-01-12T00:00:00+01:00</published>
+        <updated>2016-01-12T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/service-workers</id>
+        <summary>Feed readers are more useful when they work offline. Unfortunately, up until a couple months ago, the web’s technologies were not compatible with this requirement. Yet, the introduction of Service Workers is slowly changing this game and, at Superfeedr, we’re excited to see open web technologies catch up with capabilities of installable native apps.</summary>
+        <content type="html">&lt;p&gt;Feed readers are more useful when they &lt;strong&gt;work offline&lt;/strong&gt;. Unfortunately, up until a couple months ago, the web’s technologies were not compatible with this requirement. Yet, the introduction of &lt;a href=&quot;http://www.w3.org/TR/service-workers/&quot;&gt;Service Workers&lt;/a&gt; is slowly changing this game and, at &lt;a href=&quot;https://superfeedr.com&quot;&gt;Superfeedr&lt;/a&gt;, we’re excited to see open web technologies catch up with capabilities of installable native apps.&lt;/p&gt;
+
+&lt;p&gt;We have our very own RSS reader built on top of Superfeedr’s API: &lt;a href=&quot;https://superfeedr.com&quot;&gt;river.news&lt;/a&gt;. Let’s see what Service Workers can do for it and improve our code. As a reminder, this is a &lt;strong&gt;static single page application&lt;/strong&gt;: there’s no application server which computes a different response for each request. Check the &lt;a href=&quot;https://github.com/superfeedr/river.news&quot;&gt;source code&lt;/a&gt; on Github.&lt;/p&gt;
+
+&lt;h2 id=&quot;service-workers&quot;&gt;Service Workers&lt;/h2&gt;
+
+&lt;p&gt;Dozens of &lt;a href=&quot;https://changelog.com/must-watch-videos-service-workers/&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://changelog.com/essential-reading-list-for-getting-started-with-service-workers/&quot;&gt;resources&lt;/a&gt; online provide excellent definitions and introductions to Service Workers. To us, it’s a &lt;em&gt;very significant upgrade to the web’s core philosophy&lt;/em&gt;. The web’s center is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol&quot;&gt;HTTP protocol&lt;/a&gt; which stands for &lt;strong&gt;H&lt;/strong&gt;yper&lt;strong&gt;T&lt;/strong&gt;ext &lt;strong&gt;T&lt;/strong&gt;ransfer &lt;strong&gt;P&lt;/strong&gt;rotocol. Literally, this means our browsers are communicating with servers to receive &lt;strong&gt;hyper-text document&lt;/strong&gt;: the web pages. Later, these documents may load Javascript code which is finally executed. With ServiceWorkers, the &lt;strong&gt;order changes&lt;/strong&gt;: some javascript code can be executed &lt;em&gt;before&lt;/em&gt; anything else happens. These workers can then hijack HTTP request (and more) and provide alternative (or fallback) responses.&lt;/p&gt;
+
+&lt;p&gt;Adding support to river.news would be very interesting on 2 levels:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Since the code is static, there’s &lt;em&gt;no need&lt;/em&gt; to load it from the file server after its first load. &lt;a href=&quot;https://subtome.com&quot;&gt;SubToMe&lt;/a&gt; used AppCache for this…. but AppCache &lt;a href=&quot;http://alistapart.com/article/application-cache-is-a-douchebag&quot;&gt;is so messy&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;When loading past stories from Superfeedr, we should keep them in the cache so that the user can read them even when they go offline or have a spotty connection.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;an-application-shell&quot;&gt;An application shell&lt;/h2&gt;
+
+&lt;p&gt;Most web applications have a &lt;strong&gt;base template&lt;/strong&gt; which is made of some HTML, CSS and Javascript used all across the application, even if there are multiple HTML pages. This &lt;strong&gt;application shell&lt;/strong&gt; should absolutely be cached by the browser so that it stays in memory. There should be no latency spent downloading it because it rarely changes.&lt;/p&gt;
+
+&lt;p&gt;In the case of &lt;a href=&quot;https://river.news&quot;&gt;river.news&lt;/a&gt;, it’s actually fairly simple: there’s just a &lt;em&gt;single HTML page&lt;/em&gt;. There’s also a single javascript file for the application’s specific code. Since we use React and Jquery as dependencies, we consider them as part of the basic shell for our application. We also use Bootstrap’s CSS, so we’ll add it to the shell, as well as a bunch of icons.&lt;/p&gt;
+
+&lt;p&gt;The application’s shell must immediately be cached the first time the page is loaded and we should only invalidate the cache for the files that have changed (incremental updates are much better than native apps!). Even though the Service Worker API is fairly simple, the Chrome team provides some syntactic sugar in the form of &lt;a href=&quot;https://github.com/GoogleChrome/sw-precache&quot;&gt;&lt;code&gt;sw-precache&lt;/code&gt;&lt;/a&gt;. This script lets anyone quickly define the files required for the shell and handles invalidation without &lt;strong&gt;any significant code change&lt;/strong&gt; to your own code!&lt;/p&gt;
+
+&lt;p&gt;That was the easy part. Next week, we’ll see how we can also cache the API calls to Superfeedr for offline usage!&lt;/p&gt;
+
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Happy New Year</title>
+
+        <link href="http://blog.superfeedr.com/happy-new-year/"/>
+        <published>2016-01-05T00:00:00+01:00</published>
+        <updated>2016-01-05T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/happy-new-year</id>
+        <summary>Onward! Superfeedr had a fantastic 2015... 2016 will surprise you!</summary>
+        <content type="html">&lt;p&gt;We wish you a &lt;strong&gt;wonderful 2016&lt;/strong&gt;! May it be filled with &lt;em&gt;joy, happiness and success&lt;/em&gt;! We’re already incredibly excited by what 2016 is promising, but more on this in the coming weeks :)&lt;/p&gt;
+
+&lt;p&gt;For those who missed them, here are some of the &lt;a href=&quot;http://blog.superfeedr.com/archive.html#2015&quot;&gt;important posts of 2015&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Superfeedr does &lt;a href=&quot;http://blog.superfeedr.com/language-detection/&quot;&gt;language detection&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/howto-pubsubhubbub/&quot;&gt;How to implement PubSubHubbub&lt;/a&gt; as a subscriber (and see how to access the &lt;a href=&quot;http://blog.superfeedr.com/http-raw-body/&quot;&gt;raw body of POST requests&lt;/a&gt; in notifications )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/retrieve-multiple-feeds/&quot;&gt;Retrieving multiple feeds at once&lt;/a&gt; with the &lt;a href=&quot;null-device/&quot;&gt;null device&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A simple API for our &lt;a href=&quot;http://blog.superfeedr.com/tracking-feeds/&quot;&gt;tracking feeds&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/consuming-rss-feeds-rails/&quot;&gt;Consuming RSS feeds with Rails&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Adding &lt;a href=&quot;http://blog.superfeedr.com/drupal-pubsubhubbub-multiping/&quot;&gt;PubSubHubbub support to your Drupal site&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Converting &lt;a href=&quot;http://blog.superfeedr.com/convert-rss-to-json&quot;&gt;RSS into JSON&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s also a good time to remind you that if you’d like us to cover any topic related to RSS, Superfeedr, the open web, feel free to &lt;a href=&quot;https://superfeedr.com/about&quot;&gt;drop us a line&lt;/a&gt;!&lt;/p&gt;
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Brand Monitoring</title>
+
+        <link href="http://blog.superfeedr.com/brand-monitoring/"/>
+        <published>2015-12-22T00:00:00+01:00</published>
+        <updated>2015-12-22T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/brand-monitoring</id>
+        <summary>Brand monitoring is one of the most common applications for people using Superfeedr.</summary>
+        <content type="html">&lt;p&gt;&lt;strong&gt;Brand monitoring&lt;/strong&gt; is one of the most common applications for people using Superfeedr. Most of our customers in this field are agencies and firms who specialise in identifying influencers, conversations… etc.&lt;/p&gt;
+
+&lt;p&gt;Too often though, companies focus on a few obvious social networks (Twitter and Facebook) when the web offers a much larger set of documents with richer news stories, blog posts, forum messages… The web also lets brands and individual &lt;a href=&quot;http://blog.superfeedr.com/subscribe-backlinks/&quot;&gt;track backlinks&lt;/a&gt; which are key to a great Search Engine Optimisation strategy.&lt;/p&gt;
+
+&lt;p&gt;Of course, in this field, it’s crucial to find about any mention or conversation &lt;strong&gt;as soon as they happen&lt;/strong&gt;. There are two ways people use Superfeedr for this:&lt;/p&gt;
+
+&lt;h2 id=&quot;as-trackers&quot;&gt;As Trackers&lt;/h2&gt;
+
+&lt;p&gt;Our &lt;a href=&quot;https://superfeedr.com/tracker&quot;&gt;trackings feeds&lt;/a&gt; let you build complex queries which are &lt;strong&gt;matched in real-time&lt;/strong&gt; against hundreds of new web pages per second. This is an &lt;strong&gt;horizontal approach&lt;/strong&gt; to the work of brand monitoring&lt;/p&gt;
+
+&lt;p&gt;With them, it’s easy to add or exclude keywords, combine them, filter by source (using the &lt;code&gt;site:&lt;/code&gt; operator), or match only pages with links to a certain domain or page. We also provide &lt;em&gt;language filtering&lt;/em&gt; (and extraction), as well as &lt;em&gt;popularity filters&lt;/em&gt;. This is a great way to limit matches only to the most &lt;a href=&quot;http://blog.superfeedr.com/feed-popularity/&quot;&gt;popular news sources&lt;/a&gt; for example.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://documentation.superfeedr.com/trackers.html&quot;&gt;tracker API&lt;/a&gt; is realtime, which means that we are able to forward mentions and matches as soon as they happen.&lt;/p&gt;
+
+&lt;h2 id=&quot;as-subscribers&quot;&gt;As Subscribers&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;vertical approach&lt;/strong&gt; is different. Rather than building search queries across all the web’s content, &lt;a href=&quot;http://superfeedr.com/subscriber/&quot;&gt;subscribers&lt;/a&gt; have &lt;strong&gt;curated lists of relevant sources&lt;/strong&gt; to their market or their field of research for example.&lt;/p&gt;
+
+&lt;p&gt;They then subscribe to the data and we propagate new stories in these feeds in realtime. They are then able to extract trends, patterns very early.&lt;/p&gt;
+
+&lt;p&gt;Of course, the most efficient approach is to &lt;strong&gt;combine both&lt;/strong&gt;. With tracking feeds, one can identify a set of important sources which can then be subscribed to make sure that even stories which did not match the queries are monitored an analysed.&lt;/p&gt;
+
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Grep.io needs testers!</title>
+
+        <link href="http://blog.superfeedr.com/testing-grep/"/>
+        <published>2015-12-15T00:00:00+01:00</published>
+        <updated>2015-12-15T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/testing-grep</id>
+        <summary>Grep is an email application which sends you email when things you care about are mentioned on the web. We need testers!</summary>
+        <content type="html">&lt;p&gt;There is not a week where we are not amazed by the possibilities offered by our &lt;a href=&quot;https://superfeedr.com/tracker&quot;&gt;Tracker feeds&lt;/a&gt;. For example, by tracking mentions of &lt;em&gt;“superfeedr”&lt;/em&gt; and links to &lt;a href=&quot;https://superfeedr.com/&quot;&gt;superfeedr.com&lt;/a&gt;, we found &lt;a href=&quot;http://sdtimes.com/google-releases-cloud-vision-api-eff-makes-complaint-about-google-tracking-student-info-patent-shows-amazon-wants-to-do-something-with-ar-sd-times-news-digest-dec-3-2015/&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;http://stackoverflow.com/questions/34229340/superfeedr-wont-reach-parse-com-callback-url&quot;&gt;this&lt;/a&gt; within minutes of their publications.&lt;/p&gt;
+
+&lt;p&gt;This is an &lt;strong&gt;incredibly powerful API&lt;/strong&gt; which lets you filter the web in realtime for mentions and links by languages, popularity and more!&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, like most APIs, it’s not easily consumed by humans and will require some engineering and development work to integrate in a user workflow. This is the reason why we created &lt;a href=&quot;https://grep.io/&quot;&gt;grep.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;Grep emails you when your &lt;span class=&quot;things&quot;&gt;&lt;span class=&quot;things__spacer&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span id=&quot;typed&quot;&gt;business&lt;/span&gt;&lt;span class=&quot;things__spacer&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt; is mentioned online.&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://grep.io&quot;&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/grep-logo.png&quot; style=&quot;float:left; width: 200px; margin-right: 10px&quot; /&gt;&lt;/a&gt;
+Grep is an &lt;strong&gt;email application&lt;/strong&gt; which sends you email when things you care about are mentioned on the web. We’d love to get your feedback, so head to &lt;a href=&quot;https://grep.io/&quot;&gt;https://grep.io/&lt;/a&gt;, and use the &lt;code&gt;03-HAPPINESS&lt;/code&gt; invite code. Beware, it expires in less than 3 days, so be quick!&lt;/p&gt;
+
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Welcoming Google Feeds API users</title>
+
+        <link href="http://blog.superfeedr.com/google-feeds-api-welcome/"/>
+        <published>2015-12-02T00:00:00+01:00</published>
+        <updated>2015-12-02T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/google-feeds-api-welcome</id>
+        <summary></summary>
+        <content type="html">&lt;p&gt;It finally happened, Google shutdown their feed API after 6 months of deprecation. Many many websites are now broken and yours may be too.
+Superfeedr is an alternative and we’d love to see you move over.&lt;/p&gt;
+
+&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Superfeedr is &lt;em&gt;not exactly&lt;/em&gt; like Google. Yet, what you achieved with their API can &lt;strong&gt;also be achieved with Superfeedr&lt;/strong&gt;…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://superfeedr.com/pricing#subscribers&quot;&gt;We charge&lt;/a&gt; for our services. There is a free tier but you may go beyond it.&lt;/li&gt;
+  &lt;li&gt;Each RSS/Atom feed you’ll be polling from us has to be &lt;strong&gt;previously subscribed to&lt;/strong&gt; (we need to know about the feed)&lt;/li&gt;
+  &lt;li&gt;Think about the &lt;a href=&quot;http://blog.superfeedr.com/ways-to-use-superfeedr/&quot;&gt;other way to use Superfeedr: push&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;loading-feeds-using-javascript-and-jquery&quot;&gt;Loading feeds using Javascript and Jquery&lt;/h2&gt;
+
+&lt;p&gt;This is, by far, the most common request we’re getting, so we’re diving into this as an example and a detailed tutorial.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-a-subscriber-account&quot;&gt;Open a &lt;em&gt;subscriber&lt;/em&gt; account&lt;/h3&gt;
+
+&lt;p&gt;We provide 3 types of account. For our use case, we need a &lt;a href=&quot;http://superfeedr.com/subscriber/&quot;&gt;subscriber account&lt;/a&gt;. This should be simple and straight forward.&lt;/p&gt;
+
+&lt;p&gt;Subscribers can retrieve content from 3rd party feeds, as well as be notified when these feeds changed. We are also able to convert these feeds to JSON for the subscribers.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-an-authentication-token&quot;&gt;Create an authentication token&lt;/h3&gt;
+
+&lt;p&gt;When interacting with Superfeedr’s API, you should use tokens. Each token has different &lt;em&gt;rights&lt;/em&gt; and you can create and delete an unlimited number of tokens.&lt;/p&gt;
+
+&lt;p&gt;Here, we want to &lt;a href=&quot;http://superfeedr.com/tokens/new&quot;&gt;create a token&lt;/a&gt; to &lt;strong&gt;retrieve&lt;/strong&gt;, so we only check that box. We also give a name to the token.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/create-token.png&quot; style=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the token has been created, click on its name and you should see its value.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/token-created.png&quot; style=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;subscribe&quot;&gt;Subscribe&lt;/h3&gt;
+
+&lt;p&gt;It’s now time to tell Superfeedr &lt;em&gt;which feed(s)&lt;/em&gt; you want to retrieve from Superfeedr. We call this &lt;em&gt;subscribing&lt;/em&gt;. Here, we assume that the list of feeds is already known, so we can do it using the Superfeedr website… but you could also do it programatically by sending &lt;a href=&quot;http://documentation.superfeedr.com/subscribers.html#adding-feeds-with-pubsubhubbub&quot;&gt;API requests to subscribe&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;From the Superfeedr dashboard, click on &lt;a href=&quot;https://superfeedr.com/subscriptions&quot;&gt;Manage Subscriptions&lt;/a&gt;. If you’re just starting, you should see an empty table with the mention &lt;em&gt;There are no matching subscription.&lt;/em&gt;. Click on the “New Subscription” button in the bottom right corner. This should open a modal like this one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/new-subscription.png&quot; style=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;hub.topic&lt;/code&gt; is the url of the feed to which you want to subscribe&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;format&lt;/code&gt; : pick &lt;code&gt;json&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;hub.callback&lt;/code&gt;: put &lt;code&gt;https://push.superfeedr.com/dev/null&lt;/code&gt;. This tells us that you &lt;a href=&quot;http://blog.superfeedr.com/null-device/&quot;&gt;don’t want us to send you notifications&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;You can leave the last field empty.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Repeat this step for &lt;em&gt;any feed you want to retrieve from us later&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;retrieve-the-content&quot;&gt;Retrieve the content&lt;/h3&gt;
+
+&lt;p&gt;Now comes the most important part: the API request. The content is directly accessible from a &lt;strong&gt;single URL&lt;/strong&gt;. The Superfeedr PuSH console can help us build this url which can later integrate in our Javascript application. From the dashboard, click on “&lt;a href=&quot;https://superfeedr.com/push_console&quot;&gt;Debug PuSH API requests&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The console lets you build requests and test them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/push-console-retrieve.png&quot; style=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Step 1: in the dropdown, pick the token you created earlier.&lt;/li&gt;
+  &lt;li&gt;Step 2: in the dropdown, select the &lt;code&gt;retrieve&lt;/code&gt; mode.&lt;/li&gt;
+  &lt;li&gt;Step 3: add the right values to each parameter:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;hub.topic&lt;/code&gt; should be the feed URL.&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;count&lt;/code&gt; is the number of items you want to retrieve&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;format&lt;/code&gt; use &lt;code&gt;json&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;You can leave the other fields empty.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The rightmost column shows you the request being built for the &lt;a href=&quot;http://curl.haxx.se/docs/manpage.html&quot;&gt;command line tool curl&lt;/a&gt;. However, if you click on the &lt;em&gt;Open in new tab&lt;/em&gt; button, you can also see the result in your browser directly, and you can of course copy the URL to use it in your application.&lt;/p&gt;
+
+&lt;p&gt;For my example, the &lt;a href=&quot;https://push.superfeedr.com/?hub.mode=retrieve&amp;amp;hub.topic=http%3A%2F%2Ffeeds.gawker.com%2Fgizmodo%2Ffull&amp;amp;count=10&amp;amp;format=json&amp;amp;authorization=ZGVtbzo0ZjdlMThjNDYyYjI0MzU0NmRlODUzMzljOWFhMDcwYQ%3D%3D&amp;amp;&quot;&gt;URL I get is this one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;implementing-in-your-javascript-application&quot;&gt;Implementing in your javascript application&lt;/h3&gt;
+
+&lt;p&gt;This part is not specific to Superfeedr at all… but it should still be helpful if you’re integrating the RSS feed in your pages. Here’s how to invoke the API from jquery:&lt;/p&gt;
+
+&lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;var url =
+&amp;quot;https://push.superfeedr.com/?hub.mode=retrieve&amp;amp;hub.topic=http%3A%2F%2Ffeeds.gawker.com%2Fgizmodo%2Ffull&amp;amp;count=10&amp;amp;format=json&amp;amp;authorization=ZGVtbzo0ZjdlMThjNDYyYjI0MzU0NmRlODUzMzljOWFhMDcwYQ%3D%3D&amp;amp;&amp;quot;; // See above!
+
+$.ajax({
+  url: url,
+  dataType: &amp;#39;json&amp;#39;,
+  success: function(data) {
+    // Data now contains the feed data!
+    // Check our schema for details: http://documentation.superfeedr.com/schema.html#json
+    console.log(data);
+    // This will log the content to your browser&amp;#39;s console.
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;final-note&quot;&gt;Final note&lt;/h3&gt;
+
+&lt;p&gt;Of course, there are many other things which you can do with Superfeedr like these&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/retrieve-multiple-feeds/&quot;&gt;retrieving multiple feeds&lt;/a&gt; in one single call&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/combining-feeds/&quot;&gt;combining feeds&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/server-sent-events/&quot;&gt;get realtime update in javascript&lt;/a&gt;, using Server Sent Events&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/angularjs-superfeedr/&quot;&gt;integrate with angular&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.superfeedr.com/river-news/&quot;&gt;add a feed reader to any page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please, get in touch with any question or comment!&lt;/p&gt;
+
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Converting RSS to JSON</title>
+
+        <link href="http://blog.superfeedr.com/convert-rss-to-json/"/>
+        <published>2015-12-01T00:00:00+01:00</published>
+        <updated>2015-12-01T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/convert-rss-to-json</id>
+        <summary>Converting RSS to JSON is one of the most frequent tasks for anyone implementing an RSS application. Using Superfeedr can do it for you so you don&#39;t have to worry about the original format</summary>
+        <content type="html">&lt;p&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/json-logo.png&quot; style=&quot;float:right; width: 160px; margin-left: 10px; margin-bottom:5px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Every year which passes makes it more obvious that &lt;strong&gt;JSON is the format of choice when it comes APIs&lt;/strong&gt;. Yet, the web is based on HTML and RSS feeds also use XML-like formats. JSON is also often how mobile or web application share data between the backend and the frontend. As such, consuming RSS feeds means that your application has to be ready to consume XML, and usually immediately translate it into JSON.&lt;/p&gt;
+
+&lt;p&gt;Luckily, when using Superfeedr as a &lt;a href=&quot;http://superfeedr.com/subscriber/&quot;&gt;subscriber&lt;/a&gt;, you can &lt;strong&gt;safely ignore the original format&lt;/strong&gt; of the feed. Whether it’s Atom, RSS, any flavour of the two, and even broken syntaxes, you can use Superfeedr to retrieve and be notified of changes in the feed using our &lt;a href=&quot;http://documentation.superfeedr.com/schema.html#json&quot;&gt;RSS to JSON schema&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, here’s what this very blog’s previous entry looks like, &lt;em&gt;converted to JSON&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;{
+  &amp;quot;id&amp;quot;: &amp;quot;blog.superfeedr.com:/null-device&amp;quot;,
+  &amp;quot;title&amp;quot;: &amp;quot;Superfeedr&amp;#39;s null device&amp;quot;,
+  &amp;quot;summary&amp;quot;: &amp;quot;When subscribing to a feed, you should use https://push.superfeedr.com/dev/null if you want notifications to be ignored.&amp;quot;,
+  &amp;quot;content&amp;quot;: &amp;quot;&amp;lt;p&amp;gt;Many people, us included, see the web being a complex &amp;lt;em&amp;gt;operating system&amp;lt;/em&amp;gt;. A consequence of this is that we embrace the &amp;lt;a href=\&amp;quot;https://en.wikipedia.org/wiki/Unix_philosophy\&amp;quot;&amp;gt;Unix philosophy&amp;lt;/a&amp;gt; of small components loosely coupled using streams for data in and out.&amp;lt;/p&amp;gt;\n\n&amp;lt;p&amp;gt;With that in mind, for subscribers, Superfeedr is mostly a piece of code which takes a feed URL as input, and a webhook URL as output to create &amp;lt;strong&amp;gt;subscriptions&amp;lt;/strong&amp;gt; which triggers &amp;lt;strong&amp;gt;notifications&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;\n\n&amp;lt;p&amp;gt;As &amp;lt;a href=\&amp;quot;http://blog.superfeedr.com/ways-to-use-superfeedr/\&amp;quot;&amp;gt;we’ve seen recently&amp;lt;/a&amp;gt;, once a subscription has been created, a user can then &amp;lt;a href=\&amp;quot;http://documentation.superfeedr.com/subscribers.html#retrieving-entries-with-pubsubhubbub\&amp;quot;&amp;gt;retrieve&amp;lt;/a&amp;gt; the content of the feed directly from us&amp;lt;sup id=\&amp;quot;fnref:1\&amp;quot;&amp;gt;&amp;lt;a href=\&amp;quot;#fn:1\&amp;quot; class=\&amp;quot;footnote\&amp;quot;&amp;gt;1&amp;lt;/a&amp;gt;&amp;lt;/sup&amp;gt;.&amp;lt;/p&amp;gt;\n\n&amp;lt;p&amp;gt;Now, if you go even further, there are cases where the user subscribes to a feed, but actually does not care about the notifications at all, because they just want to &amp;lt;em&amp;gt;retrieve&amp;lt;/em&amp;gt; it from us. What happens to the callback url (webhook) then?&amp;lt;/p&amp;gt;\n\n&amp;lt;p&amp;gt;On Unix systems, when you have an output that you want to ignore, your typically redirect it to the &amp;lt;a href=\&amp;quot;https://en.wikipedia.org/wiki/Null_device\&amp;quot;&amp;gt;null device&amp;lt;/a&amp;gt;: &amp;lt;code&amp;gt;/dev/null&amp;lt;/code&amp;gt;:&amp;lt;/p&amp;gt;\n\n&amp;lt;blockquote&amp;gt;\n  &amp;lt;p&amp;gt;The null device is typically used for disposing of unwanted output streams of a process, or as a convenient empty file for input streams. This is usually done by redirection.&amp;lt;/p&amp;gt;\n&amp;lt;/blockquote&amp;gt;\n\n&amp;lt;p&amp;gt;For example, if you wanted to fetch the home page of this blog to just get latency and bandwidth you would do something like&amp;lt;sup id=\&amp;quot;fnref:2\&amp;quot;&amp;gt;&amp;lt;a href=\&amp;quot;#fn:2\&amp;quot; class=\&amp;quot;footnote\&amp;quot;&amp;gt;2&amp;lt;/a&amp;gt;&amp;lt;/sup&amp;gt;:&amp;lt;/p&amp;gt;\n\n&amp;lt;pre data-line=\&amp;quot;\&amp;quot;&amp;gt;&amp;lt;code class=\&amp;quot;language-bash\&amp;quot;&amp;gt;$ curl &amp;amp;quot;http://blog.superfeedr.com/&amp;amp;quot; &amp;amp;gt; /dev/null\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n100  4871  100  4871    0     0  20901      0 --:--:-- --:--:-- --:--:-- 20905&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;\n\n&amp;lt;p&amp;gt;The last part of this command tells the OS to send the content it’s downloading to &amp;lt;code&amp;gt;/dev/null/&amp;lt;/code&amp;gt; which is another way to tell “just ignore it!”.&amp;lt;/p&amp;gt;\n\n&amp;lt;p&amp;gt;So, using an identical approach, if you need to &amp;lt;strong&amp;gt;subscribe to a feed with Superfeedr but you actually do not care about the notifications&amp;lt;/strong&amp;gt;, you can subscribe using this webhook URL: &amp;lt;a href=\&amp;quot;http://push.superfeedr.com/dev/null\&amp;quot;&amp;gt;&amp;lt;code&amp;gt;https://push.superfeedr.com/dev/null&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt; which is Superfeedr’s null device!&amp;lt;/p&amp;gt;\n\n&amp;lt;div class=\&amp;quot;footnotes\&amp;quot;&amp;gt;\n  &amp;lt;ol&amp;gt;\n    &amp;lt;li id=\&amp;quot;fn:1\&amp;quot;&amp;gt;\n      &amp;lt;p&amp;gt;It’s important to create the subscription &amp;lt;em&amp;gt;before&amp;lt;/em&amp;gt; so we keep polling the feed on the user’s behalf. &amp;lt;a href=\&amp;quot;#fnref:1\&amp;quot; class=\&amp;quot;reversefootnote\&amp;quot;&amp;gt;&amp;amp;#8617;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;\n    &amp;lt;/li&amp;gt;\n    &amp;lt;li id=\&amp;quot;fn:2\&amp;quot;&amp;gt;\n      &amp;lt;p&amp;gt;Yes, there are better ways to do so… and yes, &amp;lt;code&amp;gt;curl&amp;lt;/code&amp;gt; as a &amp;lt;code&amp;gt;-o&amp;lt;/code&amp;gt; option… but for the sake of using Unix approaches I wanted to show &amp;lt;code&amp;gt;&amp;amp;gt;&amp;lt;/code&amp;gt;! &amp;lt;a href=\&amp;quot;#fnref:2\&amp;quot; class=\&amp;quot;reversefootnote\&amp;quot;&amp;gt;&amp;amp;#8617;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;\n    &amp;lt;/li&amp;gt;\n  &amp;lt;/ol&amp;gt;\n&amp;lt;/div&amp;gt;&amp;quot;,
+  &amp;quot;language&amp;quot;: &amp;quot;en&amp;quot;,
+  &amp;quot;published&amp;quot;: 1448352000,
+  &amp;quot;updated&amp;quot;: 1448352000,
+  &amp;quot;permalinkUrl&amp;quot;: &amp;quot;http://blog.superfeedr.com/null-device/&amp;quot;,
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the sake of this post, we removed a lot of the meta-data (all converted to JSON), such as the author’s information, all the source &lt;a href=&quot;http://blog.superfeedr.com/more-metadata/&quot;&gt;related info&lt;/a&gt;, such as &lt;a href=&quot;http://blog.superfeedr.com/feed-popularity/&quot;&gt;popularity&lt;/a&gt;, velocity… and &lt;a href=&quot;https://gist.github.com/julien51/d0613d6b352206cfab2a&quot;&gt;much more&lt;/a&gt;.&lt;/p&gt;
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>Superfeedr&#39;s null device</title>
+
+        <link href="http://blog.superfeedr.com/null-device/"/>
+        <published>2015-11-24T00:00:00+01:00</published>
+        <updated>2015-11-24T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/null-device</id>
+        <summary>When subscribing to a feed, you should use https://push.superfeedr.com/dev/null if you want notifications to be ignored.</summary>
+        <content type="html">&lt;p&gt;Many people, us included, see the web being a complex &lt;em&gt;operating system&lt;/em&gt;. A consequence of this is that we embrace the &lt;a href=&quot;https://en.wikipedia.org/wiki/Unix_philosophy&quot;&gt;Unix philosophy&lt;/a&gt; of small components loosely coupled using streams for data in and out.&lt;/p&gt;
+
+&lt;p&gt;With that in mind, for subscribers, Superfeedr is mostly a piece of code which takes a feed URL as input, and a webhook URL as output to create &lt;strong&gt;subscriptions&lt;/strong&gt; which triggers &lt;strong&gt;notifications&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;As &lt;a href=&quot;http://blog.superfeedr.com/ways-to-use-superfeedr/&quot;&gt;we’ve seen recently&lt;/a&gt;, once a subscription has been created, a user can then &lt;a href=&quot;http://documentation.superfeedr.com/subscribers.html#retrieving-entries-with-pubsubhubbub&quot;&gt;retrieve&lt;/a&gt; the content of the feed directly from us&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, if you go even further, there are cases where the user subscribes to a feed, but actually does not care about the notifications at all, because they just want to &lt;em&gt;retrieve&lt;/em&gt; it from us. What happens to the callback url (webhook) then?&lt;/p&gt;
+
+&lt;p&gt;On Unix systems, when you have an output that you want to ignore, your typically redirect it to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Null_device&quot;&gt;null device&lt;/a&gt;: &lt;code&gt;/dev/null&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The null device is typically used for disposing of unwanted output streams of a process, or as a convenient empty file for input streams. This is usually done by redirection.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, if you wanted to fetch the home page of this blog to just get latency and bandwidth you would do something like&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ curl &amp;quot;http://blog.superfeedr.com/&amp;quot; &amp;gt; /dev/null
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  4871  100  4871    0     0  20901      0 --:--:-- --:--:-- --:--:-- 20905&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last part of this command tells the OS to send the content it’s downloading to &lt;code&gt;/dev/null/&lt;/code&gt; which is another way to tell “just ignore it!”.&lt;/p&gt;
+
+&lt;p&gt;So, using an identical approach, if you need to &lt;strong&gt;subscribe to a feed with Superfeedr but you actually do not care about the notifications&lt;/strong&gt;, you can subscribe using this webhook URL: &lt;a href=&quot;http://push.superfeedr.com/dev/null&quot;&gt;&lt;code&gt;https://push.superfeedr.com/dev/null&lt;/code&gt;&lt;/a&gt; which is Superfeedr’s null device!&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;It’s important to create the subscription &lt;em&gt;before&lt;/em&gt; so we keep polling the feed on the user’s behalf. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Yes, there are better ways to do so… and yes, &lt;code&gt;curl&lt;/code&gt; as a &lt;code&gt;-o&lt;/code&gt; option… but for the sake of using Unix approaches I wanted to show &lt;code&gt;&amp;gt;&lt;/code&gt;! &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+        <author>
+            <name>Julien</name>
+            <uri>http://ouvre-boite.com</uri>
+        </author>
+    </entry>
+
+    <entry>
+        <title>PubSubHubbub for Drupal with multiping</title>
+
+        <link href="http://blog.superfeedr.com/drupal-pubsubhubbub-multiping/"/>
+        <published>2015-11-17T00:00:00+01:00</published>
+        <updated>2015-11-17T00:00:00+01:00</updated>
+        <id>blog.superfeedr.com:/drupal-pubsubhubbub-multiping</id>
+        <summary>Multiping is a Drupal module which enables PubSubHubbub on any Drupal site.</summary>
+        <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.drupal.org/&quot;&gt;Drupal&lt;/a&gt; has many strengths. You can build pretty powerful websites through very little custom code. So far though, if you’ve wanted that pretty powerful website to not be all alone in its own corner of the internet but instead be a bit more chatty with the rest of the web, then your options have been slim.&lt;/p&gt;
+
+&lt;p&gt;This hasn’t always been the case. Back in the day Drupal 6 even came with a built in module to send pings to notify the outside world about what happened inside of it. But it was very basic and the Ping module was removed in Drupal 7, partly because other more capable modules was on the rise. In the end though – none of those modules ever matured, so Drupal has been pingless for many years now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.superfeedr.com/images/drupal-8.png&quot; style=&quot;float:left; width: 200px; margin-right: 10px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But that’s about to change. One of the modules from the past is now making a reappearance. &lt;a href=&quot;https://www.drupal.org/project/multiping&quot;&gt;Multiping&lt;/a&gt; is back, and as you can imagine from the context of this blog post – it’s bringing new shining &lt;strong&gt;Pubsubhubbub&lt;/strong&gt;-backed pinging technology to the table, along with other sparkling new features.&lt;/p&gt;
+
+&lt;p&gt;Drupal, by the nature of being a &lt;em&gt;build-pretty-powerful-websites-through-very-little-custom-code&lt;/em&gt; system, makes it a bit harder to make a powerful pinging solution for it than it is to do the same for eg. a blog engine that has a more limited and predetermined number of feeds to ping for. In Drupal even there are a few feeds provided by default, most sites override them with their own to get a fully custom solutions. Any pinging solution for Drupal therefore needs to support pinging for not just a predetermined set of feeds, but for any feed.&lt;/p&gt;
+
+&lt;p&gt;Therefore the new version of Multiping doesn’t just come with exciting new &lt;a href=&quot;https://en.wikipedia.org/wiki/PubSubHubbub&quot;&gt;Pubsubhubbub&lt;/a&gt; pinging capabilities – it also comes with a &lt;em&gt;new advanced&lt;/em&gt; &lt;a href=&quot;https://www.drupal.org/project/views&quot;&gt;Views&lt;/a&gt; integration that aims to make Views more realtime. Ever wanted consumers of your news to be notified as soon as you post a new story? Simple. Just activate the new Ping setting in your your Views News Feed display, point it to a Pubsubhubbub &lt;strong&gt;hub&lt;/strong&gt; (feel free to use a &lt;a href=&quot;http://superfeedr.com/publisher/&quot;&gt;Superfeedr hosted hub&lt;/a&gt; !) and you’re done.&lt;/p&gt;
+
+&lt;p&gt;On top of the new Views features and Pubsubhubbub pinging the new version also provides exportable configurations and plenty of ways to extend it – so it’s an allround new fresh take on pinging for Drupal, that provides plenty of things for others to leverage to their liking.&lt;/p&gt;
+
+&lt;p&gt;So – exciting stuff and hopefully something that will make it easier for Drupal sites to start chatting with the rest web and tell them, in realtime, that something has happened that they someone else should take notice of. Realtimeness and notifications has become essential parts of our day to day life and bringing Drupal closer to that day to day reality will make already powerful sites even more powerful.&lt;/p&gt;
+
+&lt;p&gt;If you want to try out these new features, then &lt;a href=&quot;https://www.drupal.org/project/multiping&quot;&gt;download the new fresh Multiping 7.x-2.0-alpha1 release&lt;/a&gt; and leave feedback and input in the issue queue to let us know what you think!&lt;/p&gt;
+</content>
+        <author>
+            <name>Pelle</name>
+            <uri>http://voxpelli.com/</uri>
+        </author>
+    </entry>
+
+</feed>

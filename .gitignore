@@ -1,15 +1,20 @@
+# Ignore bundler files and cache
 /.bundle
-/coverage/
-/log
-/public/system
-/spec/tmp
-/tmp
 /vendor/bundle
-capybara-*.html
-.elasticbeanstalk/
-.env.production
+/vendor/cache
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/restart.txt
+
+# New Relic
 newrelic.yml
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+# Ignore front-end
+.sass-cache
+node_modules
+
+# Deployment
+bin/deploy

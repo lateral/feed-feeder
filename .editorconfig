@@ -19,9 +19,13 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
+indent_style = tab
 
 [*.config]
 indent_style = space
 
 [*.yml]
 indent_style = space
+
+[*.py]
+indent_size = 4

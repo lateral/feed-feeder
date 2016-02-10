@@ -8,22 +8,22 @@ class FeedsController < ApplicationController
     feed = get_feed
 
     # verify the string parameters
-    if params["hub.mode"] == "subscribe" &&
-      params["hub.topic"] == feed.url &&
-      !params["hub.challenge"].empty?
+    if params['hub.mode'] == 'subscribe' &&
+       params['hub.topic'] == feed.url &&
+       !params['hub.challenge'].empty?
 
-      feed.status = "subscription_requested" # 17 mins
-      if !params["hub.lease_seconds"].nil? && params["hub.lease_seconds"].to_i > 0
-        feed.expiration_date = DateTime.now + Rational(params["hub.lease_seconds"].to_i, 86400)
+      feed.status = 'subscription_requested' # 17 mins
+      if !params['hub.lease_seconds'].nil? && params['hub.lease_seconds'].to_i > 0
+        feed.expiration_date = DateTime.now + Rational(params['hub.lease_seconds'].to_i, 86_400)
         unless feed.save
           # log error
           logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}"
         end
       end
 
-      render status: 200, plain: params["hub.challenge"]
+      render status: 200, plain: params['hub.challenge']
     else
-      render status: 422, plain: "Invalid parameters"
+      render status: 422, plain: 'Invalid parameters'
     end
   end
 
@@ -34,11 +34,11 @@ class FeedsController < ApplicationController
     # differentiate between Standard notifications and fat pings
     if request.raw_post =~ /^id=\d+$/
       # Standard Notification (must be processed manually)
-      feed.process_feed_contents( feed )
+      feed.process_feed_contents(feed)
     else
       # fat ping
-      feed.process_feed_contents( request )
+      feed.process_feed_contents(request)
     end
-    render status: 200, plain: ""
+    render status: 200, plain: ''
   end
 end
