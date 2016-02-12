@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marc Jenkins</title>
+	<atom:link href="https://marcjenkins.co.uk/feed/" rel="self" type="application/rss+xml" />
+	<link>https://marcjenkins.co.uk</link>
+	<description>The blog of Marc Jenkins. Topics include web design, development, freelancing and business, and more.</description>
+	<lastBuildDate>Fri, 05 Feb 2016 17:10:12 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Reading more intentionally</title>
+		<link>https://marcjenkins.co.uk/2016/02/reading-more-intentionally/</link>
+		<comments>https://marcjenkins.co.uk/2016/02/reading-more-intentionally/#respond</comments>
+		<pubDate>Mon, 01 Feb 2016 09:40:13 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[journal]]></category>
+
+		<guid isPermaLink="false">https://marcjenkins.co.uk/?p=426</guid>
+		<description><![CDATA[Last year, I read a total of 26 books, more than any other year of my life. I’m a relatively slow reader, but I felt I could easily double that number this year if I read more consistently. As I was considering my goals for 2016, I set 50 books as the target. It felt [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Last year, I read a total of 26 books, more than any other year of my life. I’m a relatively slow reader, but I felt I could easily double that number this year if I read more consistently.</p>
+<p>As I was considering my goals for 2016, I set 50 books as the target. It felt like an attainable target and would double my previous best.</p>
+<p>I’m currently reading mostly business and self-improvement books. When I read a book, I’m looking for new perspectives to see the world and/or for actionable tactics/strategies that I can apply to my life.</p>
+<p>It then occurred to me that, because I’m not reading <em>just</em> for fun, the number of books I read per year isn’t an important metric.</p>
+<p>How many things I have put into place or changed because of the books I read last year? I have no idea. I have a few scribbled notes and a bunch of Kindle highlights but that’s about it. There’s nothing I refer to regularly.</p>
+<p>I realised that in my haste to read a book and move on to the next, I was denying myself the opportunity to think deeply about each book. Reading slowly, making meticulous notes, and thinking deeply is absolutely needed to allow myself to internalise ideas and figure out if or how I should apply those ideas to my life.</p>
+<p>So I scribbled out the goal of reading 50 books this year and replaced it with 10, with the caveat that I make notes and publish them <a href="https://marcjenkins.co.uk/books/">here</a> on my blog. This idea was inspired by Derek Sivers who has done the same for <a href="https://sivers.org/book">hundreds of books</a>.</p>
+<p>I couldn&#8217;t have picked a better book to start the project than Cal Newport&#8217;s latest book <a href="https://marcjenkins.co.uk/books/deep-work-rules-for-focused-success-in-a-distracted-world/">Deep Work</a>. It really resonated with me partly because of the great stories and anecdotes, partly because it had plenty of actionable advice, and partly because I agree with the core concept so completely (that deep work is both increasingly rare and valuable in today’s economy). My notes are <a href="https://marcjenkins.co.uk/books/deep-work-rules-for-focused-success-in-a-distracted-world/">here</a>.</p>
+<p>Over the past 18 months (since starting my own business), the theme that ties together my thinking and writing has been living a more intentional life. And this project is a natural extension to that idea: <em>reading more intentionally</em>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2016/02/reading-more-intentionally/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Useful plugin: Page Analytics by Google</title>
+		<link>https://marcjenkins.co.uk/2016/01/useful-plugin-page-analytics-by-google/</link>
+		<comments>https://marcjenkins.co.uk/2016/01/useful-plugin-page-analytics-by-google/#respond</comments>
+		<pubDate>Thu, 21 Jan 2016 06:34:51 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[tools]]></category>
+		<category><![CDATA[web development]]></category>
+
+		<guid isPermaLink="false">https://marcjenkins.co.uk/?p=406</guid>
+		<description><![CDATA[I use Google Analytics on all the sites that I build. On a monthly basis, I jump in to Analytics to review how things are doing. Yesterday I stumbled on a really useful Chrome plugin called Page Analytics by Google that will help speed up this process. Once installed, it adds an icon to the toolbar in [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I use Google Analytics on all the sites that I build. On a monthly basis, I jump in to Analytics to review how things are doing.</p>
+<p>Yesterday I stumbled on a really useful Chrome plugin called <a href="https://chrome.google.com/webstore/detail/page-analytics-by-google/fnbdnhhicmebfgdgglcdacdapkcihcoh">Page Analytics by Google</a> that will help speed up this process.</p>
+<p>Once installed, it adds an icon to the toolbar in Chrome. Clicking on the icon shows a toolbar at the top page with relevant statistics for the page you&#8217;re on. You need to be logged into your Google account and have access to the site you&#8217;re viewing first.</p>
+<p>It shows page views, unique page views, avg. time on page, bounce rate and % exit. You can customise these and show for example organic traffic or mobile traffic. You can also change the date range.</p>
+<p>It also shows you how visitors interact with your page by showing what they&#8217;ve clicked on. I&#8217;m still going to use Crazy Egg for more detailed reports but this seems like a good option for quick check-ins to help optimise page layouts and improve user experience/conversions.</p>
+<p><img src="https://marcjenkins.co.uk/assets/uploads/page-analytics-plugin-1024x705.png" alt="A screenshot of the page analytics plugin"/></p>
+<p>You can download the plugin for free <a href="https://chrome.google.com/webstore/detail/page-analytics-by-google/fnbdnhhicmebfgdgglcdacdapkcihcoh">here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2016/01/useful-plugin-page-analytics-by-google/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>2015 in review</title>
+		<link>https://marcjenkins.co.uk/2015/12/2015-in-review/</link>
+		<comments>https://marcjenkins.co.uk/2015/12/2015-in-review/#respond</comments>
+		<pubDate>Thu, 31 Dec 2015 17:21:07 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[journal]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=373</guid>
+		<description><![CDATA[2015 marked the end of my first year of self-employment (I went freelance in November 2014). It&#8217;s been a fun and, at times, challenging journey so far. My year in review is split into 3 parts: What went well What went badly My goals for 2016 What went well Business was better than expected Money was [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>2015 marked the end of my first year of self-employment (I went freelance in November 2014). It&#8217;s been a fun and, at times, challenging journey so far.</p>
+<p>My year in review is split into 3 parts:</p>
+<ul>
+<li><a href="#well">What went well</a></li>
+<li><a href="#badly">What went badly</a></li>
+<li><a href="#goals">My goals for 2016</a></li>
+</ul>
+<h2 id="well">What went well</h2>
+<h3>Business was better than expected</h3>
+<p>Money was my biggest worry before going self-employed. I’ve been incredibly lucky that a lot of good work has come my way. Financially, I&#8217;m better off now than I was in full-time employment and that has certainly alleviated a lot of stress.</p>
+<h3>Worked on some great projects</h3>
+<p>Over the year, I&#8217;ve had the opportunity to work with several different teams on projects of various sizes. It’s been a real joy to work with smart and talented teams, solving interesting and difficult problems.</p>
+<h3>Working with modmore</h3>
+<p>It’s funny how things work out. I never expected to be doing paid content/marketing work, but that&#8217;s exactly what I&#8217;ve been doing with <a href="https://www.modmore.com/">modmore</a>. Mark, modmore&#8217;s <abbr title="Chief Executive of Awesomeness">CEA</abbr>, was kind enough to send the team to Munich for MODXpo 2015 and that was one of the highlights of the year. I look forward to seeing what we can achieve together next year.</p>
+<h3>Consumption</h3>
+<p>I consumed a <em>lot</em> of content this year. I read around 2-5 articles on Instapaper per day, read 25 books (and started a bunch more that I didn’t finish), and listened to hours and hours of really great podcasts. A couple of highlights: <a href="http://www.amazon.co.uk/dp/B013XUNUAA/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">Anything You Want</a> by Derek Sivers, <a href="http://www.amazon.co.uk/dp/B00K7ED54M/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">Sapiens: A Brief History of Humankind</a> by Yuval Noah Harari, and <a href="http://fourhourworkweek.com/2015/12/06/jamie-foxx/" target="_blank">Jamie Foxx&#8217;s interview on The Tim Ferriss Show</a> (although I could have linked to any number of interviews by Tim Ferriss &#8211; that has been a really outstanding resource this year). And of course, we got a great Star Wars film!</p>
+<h3>Newsletter</h3>
+<p>While I haven’t kept a really consistent schedule (I fell off the wagon towards the end of the year), I’m going to consider this a success. The feedback has been overwhelmingly positive. Personal highlight: an unexpected email from Derek Sivers saying &#8220;just what I needed tonight&#8221; after reading <a href="http://marcjenkins.co.uk/newsletter/must-avoid-at-all-costs/">this article</a>.</p>
+<h3>Travel</h3>
+<p>It&#8217;s hard for Ju and I to do a lot of travelling with Ju in a full-time job so although we didn&#8217;t visit many places, I still put this in the &#8216;success&#8217; category. We had a great start to the year with a trip to Mexico: sun, beautiful beaches, cocktails, and lots of reading. We also had a short break to Edinburgh, one of my favourite cities, where we ate some wonderful food and got to explore the city on foot. Personal highlight: eating at <a href="http://www.thehandandflowers.co.uk/">The Hand and Flowers</a> in Marlow.</p>
+<h3>Detaching myself from work</h3>
+<p>My wife may disagree with me on this one but overall I feel like I&#8217;ve been able to switch off from work reasonably well. I don&#8217;t work most weekends. Occasionally I&#8217;ll be in the home office working late but that&#8217;s the exception, not the rule. It&#8217;s easy for me to work all the time, especially when I just need a laptop and an internet connection, so the fact I&#8217;ve not worked all the hours is a success in my mind.</p>
+<h2 id="badly">What went badly</h2>
+<h3>Writing</h3>
+<p>Although I’m calling my newsletter a success, I’ve not blogged or written as much as I’d like to.</p>
+<h3>Working from home</h3>
+<p>Out of all of things that went badly, this was the one I didn&#8217;t expect. I enjoy working in solitude so I thought working at home would be perfect. Turns out that I quickly became lonely, with no one to talk to other than the dog (Slack doesn&#8217;t count). Next year I plan to mix it up by spending half my time at home and half my time in a coffee shop or shared office.</p>
+<h3>Not attending local events</h3>
+<p>I&#8217;ve not really attended any local events all year. It&#8217;s something I need to make more of an effort with next year.</p>
+<h3>Health</h3>
+<p>I lost a little weight at the beginning of the year and then my weight plateaued. I signed up to a local squash club and played on a weekly basis which was good fun. But overall, I’d consider this a bad year for my overall health and something to work on next year.</p>
+<h3>Photography</h3>
+<p>For a couple of years now, I’ve not taken many photos. My camera gear is feeling old and I’m just not excited to use it. Again, something to fix next year.</p>
+<h3>Home improvements</h3>
+<p>Our home hasn’t had the time or attention it needs this year, partly because I was focused on my business. We managed to get the bathroom finished but that was about it. We also got plot of land at our local allotment but I haven’t spent nearly as much time as I’d like down there.</p>
+<h2 id="goals">Goals for 2016</h2>
+<h3>Grow business</h3>
+<p>My revenue goal is to grow my business by 15%. This should be attainable but I want to do that while being <em>more</em> selective with the clients that I work with. That will be the challenge. Charge more and do better work for a smaller group of clients.</p>
+<p><em>Goal:</em> Grow company revenue by 15%.</p>
+<h3>Writing</h3>
+<p>Next year I want to get back into regularly blogging. I want to get better at documenting and teaching the things I’m working on as I go. And of course, I want to keep writing for my newsletter.</p>
+<p><em>Goal:</em> A blog post per week and a newsletter every other week taking December off &#8211; a total of around 76 articles. No specific length required, they can be as short or as long as required.</p>
+<h3>Find a place to work away from home</h3>
+<p><em>Goal:</em> Find somewhere away from home to work a couple of times a week.</p>
+<h3>Reading</h3>
+<p>In 2016, I want to read <em>less</em>. I want to read slower, make better notes, and really absorb the information rather than racing from one book to the next. I’d like to publish the notes I take, <a href="https://sivers.org/book">Sivers style</a>. And I plan to read more fiction.</p>
+<p><em>Goal:</em> Read 12 non-fiction books and publish notes on this blog.</p>
+<h3>Mastermind group</h3>
+<p>In the closing stages of this year, I put together a small mastermind group consisting of 5 people so that we can share ideas and hold each other accountable. Next year, I hope to build this into a core part of my business.</p>
+<p><em>Goal:</em> Meet in-person with group, hold twice-monthly meetings.</p>
+<h3>Health</h3>
+<p>I want to lose around a stone to get to a more natural body weight. I’d also like to improve my fitness, play more squash, get out on my bike more, and do more walking.</p>
+<p><em>Goal:</em> Reach 11st (70kg) by the end of year.</p>
+<h3>Cooking</h3>
+<p>I was pleased this year to have cooked more than ever, which made sense working from home. I must have cooked over 100 meals but I’ve only made the same 10 or so dishes, rarely experimenting or trying something new. As a result, I really haven’t improved much. This year I’d like to get better at cooking, try some new dishes, and cook more for friends.</p>
+<p><em>Goal:</em> Cook at least 12 new dishes.</p>
+<h3>Photography</h3>
+<p>I want to get back into taking photos this year. The first step is to upgrade my camera (most likely to a Canon 760D), and then get back out taking photos.</p>
+<p><em>Goal:</em> Upload 52 photos to Flickr, approx 1 per week. (I’m super selective when it comes to uploading photos, so 1 upload is easily 50-100 shots).</p>
+<h3>House</h3>
+<p>The big house goal for this year is a new kitchen. I’d also like to spend more time on the house and get some of the smaller jobs out of the way.</p>
+<p><em>Goal:</em> Finish kitchen and hallway.</p>
+<hr />
+<p><em>In summary:</em> 2015 was a year of being more intentional about what I do with my life. 2016 is about getting even more intentional.</p>
+<p>Wishing you and yours all the best for 2016.</p>
+<p>— Marc</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/12/2015-in-review/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>3 simple ideas</title>
+		<link>https://marcjenkins.co.uk/2015/10/3-simple-ideas/</link>
+		<comments>https://marcjenkins.co.uk/2015/10/3-simple-ideas/#respond</comments>
+		<pubDate>Wed, 28 Oct 2015 16:30:42 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[freelance]]></category>
+		<category><![CDATA[newsletter]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=308</guid>
+		<description><![CDATA[There’s 1.4 million freelancers in Britain, up 14% in the past decade. There’s 53 million freelancers in the US, 34% of the national workforce. In Europe, freelancers are the fastest growing group in the labour market1. There’s clearly a shift happening here. We’re soon going to be in a world dominated by people who are self-employed. The [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>There’s 1.4 million freelancers in Britain, up 14% in the past decade. There’s 53 million freelancers in the US, 34% of the national workforce. In Europe, freelancers are the fastest growing group in the labour market<sup id="fnref:1"><a class="footnote" href="#fn:1">1</a></sup>.</p>
+<p>There’s clearly a shift happening here. We’re soon going to be in a world dominated by people who are self-employed.</p>
+<p>The industrial age created factories and production lines. You got a job, you did what you were told, and then you retired.</p>
+<p>But we’re not meant to be on production lines. We’re not meant to be working 9-5. We’re not meant to be told what to do. Those things are imposed on us by social norms. Times are changing.</p>
+<p>Which brings me to the point of this article.</p>
+<p>I know many of you are thinking of going freelance one day. Perhaps you’re not ready to quit in the next year or two but one day you’ll know it’ll happen.</p>
+<p>How can you prepare? What are the skills and attributes you can work on that will help you when the time comes?</p>
+<p>I’m going to talk about 3 things:</p>
+<ul>
+<li>The ability to learn, unlearn, and relearn</li>
+<li>Start creating and sharing</li>
+<li>And why you should be patient</li>
+</ul>
+<p>Go on, grab yourself a coffee and get comfortable.</p>
+<p>Ready? Let’s jump in.</p>
+<h2>Learn, unlearn, and relearn</h2>
+<p>When I starting building websites well over a decade ago (man, that makes me feel old), it was standard to build layouts using HTML tables. I’d code these fancy websites with complicated table layouts and it was great. The web began to slowly transition away from table-based layouts to using divs. I had to throw away everything I’d learnt about HTML tables and start learning something new.</p>
+<p>The work we’re doing today won’t be the same work we’re doing in 10 years. I’ll probably still be building websites, but the way I’ll be building them will be completely different.</p>
+<p>10 years ago, responsive design wasn’t a thing. The iPhone wasn’t a thing. Nor the Kindle or iPad. Twitter didn’t exist, and YouTube had just started.</p>
+<p>And that’s why it has never been more important to become a world-class learner.</p>
+<p>When Kevin Kelly, co-founder of Wired magazine (and a ton of other things), was asked what advice he’d give to young people today, he said that they should read at least 10 books a year. Books, and audio books count too, are perhaps one of the most underrated tools for improving yourself.</p>
+<p>Read books <a href="http://ryanholiday.net/read-to-lead-how-to-digest-books-above-your-level/" target="_blank">above your level</a>, or read a <a href="http://www.amazon.co.uk/gp/product/B0082XJGRK/ref=as_li_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B0082XJGRK&amp;linkCode=as2&amp;tag=plausthogu-21" target="_blank">Roman Emperor’s private notes to himself on stoic philosophy</a>, or <a href="http://www.amazon.co.uk/gp/product/B00COQFUNU/ref=as_li_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B00COQFUNU&amp;linkCode=as2&amp;tag=plausthogu-21" target="_blank">why people buy and why they don’t</a>, or about <a href="http://www.amazon.co.uk/gp/product/B013XUNUAA/ref=as_li_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B013XUNUAA&amp;linkCode=as2&amp;tag=plausthogu-21" target="_blank">the guy who sold his company for $22 million and gave it all to charity</a>. Read as much as you can and you’ll get smarter.</p>
+<p>Try new things. Learn photography, or how to code, or how to draw cartoons, or how to play golf. Don’t be worried that you need to specialise. It doesn’t matter if you <a href="https://www.ted.com/talks/emilie_wapnick_why_some_of_us_don_t_have_one_true_calling?language=en" target="_blank">don’t have one true calling</a>. The cross pollination of different hobbies can lead to unique insights and new ideas.</p>
+<p>And don’t worry about making mistakes. The education system is floored in many ways but one of its biggest problem is that it teaches us that making mistakes are a bad thing. What’s bad is not making mistakes. That shows you’re not pushing hard enough. The quicker you can get over making mistakes, the quicker you can move on and learn.</p>
+<p>I concur with Alvil Toffler when he says: “The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.”</p>
+<p>The best way to learn, of course, is by doing. Which leads us nicely on to our second point.</p>
+<h2>Start creating and sharing</h2>
+<p>The next thing you need to do it start putting your art out into the world. It doesn’t matter if that’s writing a blog post or a book, drawing cartoons, creating music, or releasing open-source code. Start creating and sharing.</p>
+<p>As you start to create, you’ll come up against mental blocks. Things like imposter syndrome (feeling like a fraud and that you don’t deserve success despite doing good work) or writer’s block (being unable to think of what to write or how to proceed with writing) are both natural and common. Overcoming these hurdles is important and you’ll only do that by creating every day.</p>
+<p>You’ll also find your canvas, the medium that fits you. For Gary Vaynerchuk, that’s video. For Marc Maron, that’s audio. For Stephen King, that’s writing. You won’t know your medium until you experiment and see what fits.</p>
+<p>Sharing what you create also helps you build an audience. And why is an audience important? Because it’s really hard to convince people to give you money. An audience is a way of selling things without the need to sell. Perhaps my favourite article on this is <a href="http://kk.org/thetechnium/1000-true-fans/" target="_blank">1,000 true fans</a> (definitely worth 10 minutes of your time).</p>
+<p>Finding your voice is important, too. When we first start out, we copy those whom we admire. We sound a lot like them. It takes a while to find our voice and what’s unique about us. The only way to do that is to create every day.</p>
+<p>Putting things out into the world is scary. Not everything you do will be a success. But you’ll get real feedback and you’ll learn from it.</p>
+<h2>Be patient</h2>
+<p>I encouraged a friend to start blogging (I encourage everyone to blog). He published a handful of posts and then after 3 months he said he wasn’t getting any traffic, should he just give up?</p>
+<p>I wasn’t getting traffic after 3 months. Nor was anyone.</p>
+<p>It takes years to build an audience, to find your voice, and to gather the skills required to be a “successful” freelancer. That’s why it’s so important to be patient.</p>
+<p>Learn, create, share, and do it over and over and over. You need to look years into the future for the payoff. Nothing happens overnight.</p>
+<p>So that’s my best advice: become a world-class learner, start creating and sharing, and be patient.</p>
+<div class="footnotes">
+<ol>
+<li id="fn:1">Statistics are taken from the post <a href="http://benrmatthews.com/freelance-statistics-2015/">Freelance Statistics 2015: The Freelance Economy in Numbers</a>. <a class="reversefootnote" href="#fnref:1">↩</a></li>
+</ol>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/10/3-simple-ideas/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The /now page</title>
+		<link>https://marcjenkins.co.uk/2015/10/the-now-page/</link>
+		<comments>https://marcjenkins.co.uk/2015/10/the-now-page/#respond</comments>
+		<pubDate>Mon, 26 Oct 2015 16:34:15 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[journal]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=301</guid>
+		<description><![CDATA[The /now page as explained by Derek Sivers: People often ask me what I’m doing now. Each time I would type out a reply, describing where I’m at, what I’m focused on, and what I’m not. So earlier this year I added a /now page to my site: sivers.org/now A simple link. Easy to remember. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The /now page as explained by <a href="https://sivers.org/nowff">Derek Sivers</a>:</p>
+<blockquote><p>People often ask me what I’m doing now.</p>
+<p>Each time I would type out a reply, describing where I’m at, what I’m focused on, and what I’m not.</p>
+<p>So earlier this year I added a /now page to my site: <a href="https://sivers.org/now">sivers.org/now</a></p>
+<p>A simple link. Easy to remember. Easy to type.</p>
+<p>It’s a nice reminder for myself, when I’m feeling unfocused. A public declaration of priorities.</p></blockquote>
+<p>And it’s that last bit—the public declaration of priorities—that I really love about this idea.</p>
+<p>Just writing the page got me thinking. Am I working on the right stuff? Am I focusing my energy on the right areas?</p>
+<p>So here’s my <a href="http://marcjenkins.co.uk/now/">/now</a> page. <a href="https://twitter.com/marcjenkins">Let me know</a> if you create one!</p>
+<p><strong>Update (01/11/15):</strong> <a href="http://nownownow.com/">nownownow.com</a> is a directory of sites with a /now page. Makes for interesting reading.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/10/the-now-page/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Your internal compass</title>
+		<link>https://marcjenkins.co.uk/2015/10/your-internal-compass/</link>
+		<comments>https://marcjenkins.co.uk/2015/10/your-internal-compass/#respond</comments>
+		<pubDate>Fri, 09 Oct 2015 14:10:06 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[freelance]]></category>
+		<category><![CDATA[newsletter]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=270</guid>
+		<description><![CDATA[I wrote an 18 page business plan before starting my business. Guess how many times I’ve referred to it? Not once. The problem with writing a business plan is that it’s all guess work. As Al Ries, in The 22 Immutable Laws Of Marketing, says: “With hundreds of computers and an army of meteorologists, no [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I wrote an 18 page business plan before starting my business. Guess how many times I’ve referred to it?</p>
+<p>Not once.</p>
+<p>The problem with writing a business plan is that it’s all guess work.</p>
+<p>As Al Ries, in The 22 Immutable Laws Of Marketing, says: “With hundreds of computers and an army of meteorologists, no one can predict the weather three days in advance, so how do you expect to predict your market three years in advance?”</p>
+<p>A friend recently asked me “what’s your long-term plan for 16by9?”</p>
+<p>“I don’t have one”, was my reply.</p>
+<p>I thought about that for a while. Should I have some long-term vision? Should I have my future all planned out?</p>
+<p>Perhaps. But then I think back to my business plan and how I’ve never looked at it. <a href="https://signalvnoise.com/posts/1805-lets-just-call-plans-what-they-are-guesses" target="_blank">Planning is guessing</a>. Things change. Things that you can’t predict.</p>
+<p>Instead of planning and guessing, I&#8217;ve been working on my internal compass (a term I’ve borrowed from the fantastic book <a href="https://sivers.org/a" target="_blank">Anything You Want</a>).</p>
+<p>Your internal compass is built on your values, your morals, and your personal philosophies for how you want to live life. These become the guiding principles for how you make decisions.</p>
+<p>It doesn’t have to be complicated. I ask myself these questions:</p>
+<p>Am I helping people?<br />
+Am I happy?<br />
+Am I profitable?<br />
+Am I learning?<br />
+Am I pushing myself to try new things?<br />
+Am I improving myself?<br />
+Am I in a better place than I was 6 months ago?</p>
+<p>If I can answer yes to all or most of those questions, I know I’m heading in the right direction.</p>
+<p>If I’m stronger, smarter, and happier tomorrow, my business will be all the better for it.</p>
+<p>Cultivating my internal compass is something I can control. Unlike those guesses in my business plan.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/10/your-internal-compass/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>A new home</title>
+		<link>https://marcjenkins.co.uk/2015/10/new-home/</link>
+		<comments>https://marcjenkins.co.uk/2015/10/new-home/#respond</comments>
+		<pubDate>Thu, 08 Oct 2015 15:32:12 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[journal]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=265</guid>
+		<description><![CDATA[Back in 2011, after many failed attempts at starting a blog, I launched Plausible Thought. I’ve blogged on a semi-regular basis since then about web development, running a business, and even the occasional interview. But as of today, Plausible Thought is no more. I’ve moved everything over to my own domain—something I’ve been meaning to [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Back in 2011, after many failed attempts at starting a blog, I launched Plausible Thought. I’ve blogged on a semi-regular basis since then about <a href="https://marcjenkins.co.uk/tag/web-development/">web development</a>, <a href="https://marcjenkins.co.uk/tag/business/">running a business</a>, and even the occasional <a href="https://marcjenkins.co.uk/tag/interview/">interview</a>.</p>
+<p>But as of today, Plausible Thought is no more. I’ve moved everything over to my own domain—something I’ve been meaning to do for a year or so.</p>
+<p>I feel better now I’ve sharpened things up. I now just have two websites: this one and <a href="https://16by9.uk/">16by9</a> (my web consulting business).</p>
+<p>Here’s to many more years blogging.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/10/new-home/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>You&#8217;re not unique</title>
+		<link>https://marcjenkins.co.uk/2015/08/youre-not-unique/</link>
+		<comments>https://marcjenkins.co.uk/2015/08/youre-not-unique/#respond</comments>
+		<pubDate>Wed, 12 Aug 2015 19:13:24 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[freelance]]></category>
+		<category><![CDATA[journal]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=114</guid>
+		<description><![CDATA[I’ve spent this week working on the new 16by9 website. Most of my attention has been on the content. I’ve been trying to figure out what I want to say and how I want to say it, rather than focusing on how it looks. This has naturally lead me to ask fundamental questions about my [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I’ve spent this week working on the new <a href="https://16by9.uk">16by9</a> website. Most of my attention has been on the content. I’ve been trying to figure out what I want to say and how I want to say it, rather than focusing on how it looks.</p>
+<p>This has naturally lead me to ask fundamental questions about my business. How should I position myself? What makes me different and unique? How do I stand out from the crowd?</p>
+<p>There’s new agencies popping into existence all the time and it seems like every other day someone is leaving their full-time role to go freelance. There’s more competition than ever so figuring out how be different and memorable is important.</p>
+<p>I feel like I’m not alone in struggling to find something that’s truly unique about what I do or the way I do it. Someone, somewhere, will have the same thoughts, the same ideas, and the same unique selling proposition.</p>
+<p>But, and there is a but. If you can communicate clearly what makes you different, then you’re already ahead of most of your competitors. Sure, there will be others with the same USP, but how many clearly and succinctly tell the world?</p>
+<p>My guess: not many.</p>
+<p>That’s what this week is about. Figuring out what sets my business apart and then talking about it.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/08/youre-not-unique/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Journaling: day one</title>
+		<link>https://marcjenkins.co.uk/2015/08/journaling-day-one/</link>
+		<comments>https://marcjenkins.co.uk/2015/08/journaling-day-one/#respond</comments>
+		<pubDate>Tue, 11 Aug 2015 19:12:37 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[journal]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=112</guid>
+		<description><![CDATA[I screwed up. I didn’t send out my newsletter last time around. Since November last year, I’ve been writing and sending my newsletter every 2 weeks and I broke the chain for the first time. I could make excuses. I was too busy. Life got in the way. I had writer’s block. But those are [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I screwed up. I didn’t send out my newsletter last time around. Since November last year, I’ve been writing and sending my newsletter every 2 weeks and I broke the chain for the first time.</p>
+<p>I could make excuses. I was too busy. Life got in the way. I had writer’s block. But those are just that, excuses. The truth is I didn’t prioritise my writing.</p>
+<p>I’d sit down and stare at the blank canvas that was my screen and wonder what to write. Sometimes I’d write a sentence or two, other times I wouldn’t even get that far.</p>
+<p>That might sound like “writer’s block” but it wasn’t. I wasn’t putting myself in the right environment to be creative. I wanted something to magically appear, my fingers to automatically type out the perfect newsletter.</p>
+<p>Writing, or any creative endeavour, isn’t magic. It’s hard work. And you need to create the right conditions for that hard work to take place.</p>
+<p>When I don’t write for a while, a few things happen:</p>
+<ol>
+<li>I lose confidence in my writing and The Fear sets in. Does anyone care about what I write? Does my writing suck?</li>
+<li>I have less ideas. The less I create, the less creative I am.</li>
+<li>The longer I leave it, the harder it becomes to start.</li>
+<li>It becomes easier not to write at all.</li>
+</ol>
+<p>I’ve talked about the <a href="http://us7.campaign-archive2.com/?u=c876b3946a33ca2da09e8468b&amp;id=8fe8893747&amp;e=[UNIQID]">benefits of writing</a> before and it’s something I truly believe: writing makes you better at what you do.</p>
+<p>My aim is get back into the habit of writing and to do that this blog is going to become my journal. Most entries will be a few hundred words, and I hope to publish something most days.</p>
+<p>I want the blank canvas to be enticing and full of opportunity again.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/08/journaling-day-one/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Thoughts on freelancing as an introvert</title>
+		<link>https://marcjenkins.co.uk/2015/06/thoughts-on-freelancing-as-an-introvert/</link>
+		<comments>https://marcjenkins.co.uk/2015/06/thoughts-on-freelancing-as-an-introvert/#respond</comments>
+		<pubDate>Mon, 15 Jun 2015 19:11:54 +0000</pubDate>
+		<dc:creator><![CDATA[marcdl]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[freelance]]></category>
+		<category><![CDATA[newsletter]]></category>
+
+		<guid isPermaLink="false">http://marcjenkins.co.uk/?p=110</guid>
+		<description><![CDATA[Self-employment was something I had dreamed about for years. It took me a long time to find the courage to quit my job. I was scared. What if I don’t earn enough to pay the bills? What if I’m just sat around while my wife is at work? What if I’m just not built to [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Self-employment was something I had dreamed about for years. It took me a long time to find the courage to quit my job.</p>
+<p>I was scared. What if I don’t earn enough to pay the bills? What if I’m just sat around while my wife is at work? What if I’m just not built to run my own business? What if I’m not good enough?</p>
+<p>There was another fear I had at the back of my mind that I haven’t talked about. I’m an introvert. I’m shy and I like my own space. Space for thinking, reading, and being alone.</p>
+<p>I regularly asked myself: <em>as an introvert, how will I cope?</em></p>
+<p>I’ve pitched for work in the past but I was always part of a team. I could let someone else take the lead until it was my turn, say my piece, and then back out. On my own, I’d need to take up the mantle.</p>
+<p>I think there’s a misunderstanding of what introversion and extroversion is, so let’s start there.</p>
+<p>Introverts can be just as sociable, just as good friends, and just as fun at parties. The difference isn’t necessarily in those things. The difference comes from how they gain and use energy.</p>
+<p>An introvert will likely feel exhausted after a social event and will need to recharge their batteries by being alone. Extroverts, on the other hand, recharge their batteries in social environments (and need to recharge when they don’t socialise enough).</p>
+<p>We all fall somewhere on the introversion/extroversion spectrum; we are neither one or the other. As Carl Jung put it, “There is no such thing as a pure extrovert or a pure introvert. Such a man would be in the lunatic asylum.”</p>
+<p>It’s easy to stereotype too. Many introverts love partying and socialising, while many extroverts enjoy time to themselves.</p>
+<p>The most important thing is to know yourself. You’ll probably already have some idea of where you are on the introvert/extrovert spectrum. Building a business with that in mind will help you leverage your own tendencies.</p>
+<p>It’s possible, even encouraged, to act out of character: for introverts to act in an extroverted way and vice versa. But only for short periods of time.</p>
+<p>I’ve blocked out time into my schedule to allow myself to ‘recharge’. I spend a lot of time thinking, planning, or ‘being in my own head’ as some would say. Giving myself space to do that is important.</p>
+<p>I work mostly from home and that helps. But I also work in some of my client’s offices and have face-to-face meetings. I’ve learnt that I need to allow myself time to prepare. I focus on minimising stressful situations. Simple things like allowing plenty of time to get there, making sure the car has petrol, making sure I have directions ready, and knowing what I need to talk about. If it’s an important meeting, I’ll try to fit a half hour walk in first to clear my head. I’ll try to avoid too many consecutive meetings. Preparation, at least for me, is key. These little things all help reserve my energy for what matters: being present and attentive with the person I’m meeting with.</p>
+<p>Of course, extroverts don’t need to do this. Perhaps they’d want to arrange consecutive meetings. Or perhaps they’d rather work in a shared workspace. It’s important to know where you get your energy from and build a business around that.</p>
+<p>We live in a golden age. Unlike generations before us, we have everything at our fingertips. It’s easier than ever before to build a business around who you really are. If you never want to leave the house or speak on the phone, I still think it’s possible to build a sustainable business that supports that lifestyle.</p>
+<p>In the excellent book “<a href="http://www.amazon.co.uk/Quiet-power-introverts-world-talking/dp/0141029196">Quiet: The power of introverts in a world that can’t stop talking</a>”, Susan Cain encourages you to stay true to your own nature:</p>
+<blockquote class="large"><p>“If you like to do things in a slow and steady way, don’t let others make you feel as if you have to race. If you enjoy depth, don’t force yourself to seek breadth. If you prefer single-tasking to multitasking, stick to your guns. Being relatively unmoved by rewards gives you the incalculable power to go your own way. It’s up to you to use that independence to good effect.”</p></blockquote>
+<p>There are many introverts who I admire; perhaps none more so than Elon Musk, CEO of SpaceX and Tesla. When he was younger, before starting his own businesses, he wanted to work at Netscape (who were big at the time). He didn’t get a reply to his job application &#8211; probably because he has a background in Physics, not Computer Science &#8211; so he hung around the lobby. Despite making his way to the lobby, he was too shy and too scared to talk to anyone so he left. Here’s a guy who is an introvert and, without a doubt, is changing the world.</p>
+<p>If you’re an introvert, take heart from these wise words from Gandhi: “In a gentle way, you can shake the world.”</p>
+]]></content:encoded>
+			<wfw:commentRss>https://marcjenkins.co.uk/2015/06/thoughts-on-freelancing-as-an-introvert/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.373 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-02-11 10:48:48 -->

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Schneier on Security</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/" />
+    <link rel="self" type="application/atom+xml" href="https://www.schneier.com/blog/atom.xml" />
+    <id>tag:www.schneier.com,2014-06-11:/blog//2</id>
+  	
+  	
+	  <updated>2016-02-11T04:53:53Z</updated>
+    <subtitle>A blog covering security and security technology.</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro</generator>
+
+<entry>
+    <title>AT&amp;T Does Not Care about Your Privacy</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/att_does_not_ca.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7807</id>
+
+  	
+  	
+  	<published>2016-02-10T19:59:32Z</published>
+  	<updated>2016-02-10T19:59:32Z</updated>
+    <summary>AT&amp;T&apos;s CEO believes that the company should not offer robust security to its customers: But tech company leaders aren&apos;t all joining the fight against the deliberate weakening of encryption. AT&amp;T CEO Randall Stephenson said this week that AT&amp;T, Apple, and other tech companies shouldn&apos;t have any say in the debate. &quot;I don&apos;t think it is Silicon Valley&apos;s decision to make...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="att" label="AT&amp;T" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="encryption" label="encryption" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nationalsecuritypolicy" label="national security policy" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="privacy" label="privacy" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>AT&T's CEO <a href="http://arstechnica.com/tech-policy/2016/01/att-ceo-wont-join-tim-cook-in-fight-against-encryption-backdoors/">believes</a> that the company should not offer robust security to its customers:</p>
+
+<blockquote><p>But tech company leaders aren't all joining the fight against the deliberate weakening of encryption. AT&T CEO Randall Stephenson said this week that AT&T, Apple, and other tech companies shouldn't have any say in the debate.
+
+<p>"I don't think it is Silicon Valley's decision to make about whether encryption is the right thing to do," Stephenson said in an <a href="http://www.wsj.com/articles/at-t-ceo-says-congress-should-determine-encryption-policy-not-companies-1453294093">interview</a> with <i>The Wall Street Journal</i>. "I understand [Apple CEO] Tim Cook's decision, but I don't think it's his decision to make."</p></blockquote>
+
+<p>His position is extreme in its disregard for the privacy of his customers. If he doesn't believe that companies should have any say in what levels of privacy they offer their customers, you can be sure that AT&T won't offer any robust privacy or security to you.</p>
+
+<p>Does he have any clue what an anti-market position this is? He says that it is not the business of Silicon Valley companies to offer product features that might annoy the government. The "debate" about what features commercial products should have should happen elsewhere -- presumably within the government. I thought we all agreed that state-controlled economies just don't work.</p>
+
+<p>My guess is that he doesn't realize what an extreme position he's taking by saying that product design isn't the decision of companies to make. My guess is that AT&T is <a href="https://www.propublica.org/article/nsa-spying-relies-on-atts-extreme-willingness-to-help">so deep in bed</a> with the NSA and FBI that he's just saying things he believes justifies his position.</p>
+
+<p>Here's the <a href="http://www.wsj.com/articles/at-t-ceo-says-congress-should-determine-encryption-policy-not-companies-1453294093">original</a>, behind a paywall.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>10,000-Year-Old Warfare</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/10000-year-old_.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7805</id>
+
+  	
+  	
+  	<published>2016-02-10T11:29:00Z</published>
+  	<updated>2016-02-10T11:29:00Z</updated>
+    <summary>Evidence of primitive warfare from Kenya&apos;s Rift Valley....</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="historyofsecurity" label="history of security" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="war" label="war" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>Evidence of <a href="http://www.theguardian.com/science/2016/jan/20/stone-age-massacre-offers-earliest-evidence-human-warfare-kenya">primitive warfare</a> from Kenya's Rift Valley.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>The 2016 National Threat Assessment</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/the_2016_nation.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7833</id>
+
+  	
+  	
+  	<published>2016-02-09T21:25:27Z</published>
+  	<updated>2016-02-09T21:25:27Z</updated>
+    <summary>It&apos;s National Threat Assessment Day. Published annually by the Director of National Intelligence, the &quot;Worldwide Threat Assessment of the US Intelligence Community&quot; is the US intelligence community&apos;s one time to publicly talk about the threats in general. The document is the results of weeks of work and input from lots of people. For Clapper, it&apos;s his chance to shape the...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="china" label="China" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="cyberterrorism" label="cyberterrorism" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="cyberwar" label="cyberwar" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="cyberweapons" label="cyberweapons" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="intelligence" label="intelligence" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="internetofthings" label="Internet of things" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nationalsecuritypolicy" label="national security policy" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>It's National Threat Assessment Day. Published annually by the Director of National Intelligence, the "<a href="http://www.dni.gov/files/documents/SASC_Unclassified_2016_ATA_SFR_FINAL.pdf">Worldwide Threat Assessment of the US Intelligence Community</a>" is the US intelligence community's one time to publicly talk about the threats in general. The document is the results of weeks of work and input from lots of people. For Clapper, it's his chance to shape the dialog, set up priorities, and prepare Congress for budget requests. The document is an unclassified summary of a much longer classified document. And the day also includes Clapper testifying before the Senate Armed Service Committee. (You'll remember his now-famous <a href="http://www.politifact.com/truth-o-meter/article/2014/mar/11/james-clappers-testimony-one-year-later/">lie to the committee</a> in 2013.) </p>
+
+<p>The document covers a wide variety of threats, from terrorism to organized crime, from energy politics to climate change. Although the document clearly says "The order of the topics presented in this statement does not necessarily indicate the relative importance or magnitude of the threat in the view of the Intelligence Community," it does. And like <a href="http://www.dni.gov/files/documents/Unclassified_2015_ATA_SFR_-_SASC_FINAL.pdf">2015</a> and <a href="http://www.dni.gov/files/documents/Intelligence%20Reports/2014%20WWTA%20%20SFR_SSCI_29_Jan.pdf">2014</a>, cyber threats are #1 -- although this year it's called "Cyber and Technology."</p>
+
+<blockquote><p>The consequences of innovation and increased reliance on information technology in the next few years on both our society's way of life in general and how we in the Intelligence Community specifically perform our mission will probably be far greater in scope and impact than ever. Devices, designed and fielded with minimal security requirements and testing, and an ever -- increasing complexity of networks could lead to widespread vulnerabilities in civilian infrastructures and US Government systems. These developments will pose challenges to our cyber defenses and operational tradecraft but also create new opportunities for our own intelligence collectors.</p></blockquote>
+
+<p>Especially note that last clause. The FBI might <a href="https://www.fbi.gov/news/testimony/going-dark-encryption-technology-and-the-balances-between-public-safety-and-privacy">hate encryption</a>, but the intelligence community <a href="https://lawfareblog.com/there-national-security-law-enforcement-divide-going-dark">is not</a> going dark.</p>
+
+<p>The document then calls out a few specifics like the Internet of Things and Artificial Intelligence -- so surprise, considering other <a href="http://www.scmagazine.com/intelligence-committee-hosts-cybersecurity-hearing/article/438202">recent</a> <a href="http://thehill.com/policy/cybersecurity/254977-officials-worried-hackers-will-change-your-data-not-steal-it">statements</a> from government officials. This is the "...and Technology" part of the category.</p>
+
+<p>More specifically:</p>
+
+<blockquote><p>Future cyber operations will almost certainly include an increased emphasis on changing or manipulating data to compromise its integrity (i.e., accuracy and reliability) to affect decisionmaking, reduce trust in systems, or cause adverse physical effects. Broader adoption of IoT devices and AI ­-- in settings such as public utilities and health care -- will only exacerbate these potential effects. Russian cyber actors, who post disinformation on commercial websites, might seek to alter online media as a means to influence public discourse and create confusion. Chinese military doctrine outlines the use of cyber deception operations to conceal intentions, modify stored data, transmit false data, manipulate the flow of information, or influence public sentiments -­ all to induce errors and miscalculation in decisionmaking.</p></blockquote>
+
+<p>Russia is the number one threat, followed by China, Iran, North Korea, and non-state actors:</p>
+
+<blockquote><p>Russia is assuming a more assertive cyber posture based on its willingness to target critical infrastructure systems and conduct espionage operations even when detected and under increased public scrutiny. Russian cyber operations are likely to target US interests to support several strategic objectives: intelligence gathering to support Russian decisionmaking in the Ukraine and Syrian crises, influence operations to support military and political objectives, and continuing preparation of the cyber environment for future contingencies.</p></blockquote>
+
+<p>Comments on China refer to the <a href="http://www.cnbc.com/2015/09/25/us-china-agree-to-not-conduct-cybertheft-of-intellectual-property-white-house.html">cybersecurity</a> <a href="http://www.theverge.com/2015/9/25/9399187/obama-china-cyber-security-agreement">agreement</a> from last September:</p>
+
+<blockquote><p>China continues to have success in cyber espionage against the US Government, our allies, and US companies. Beijing also selectively uses cyberattacks against targets it believes threaten Chinese domestic stability or regime legitimacy. We will monitor compliance with China's September 2015 commitment to refrain from conducting or knowingly supporting cyber -- enabled theft of intellectual property with the intent of providing competitive advantage to companies or commercial sectors. Private -- sector security experts have identified limited ongoing cyber activity from China but have not verified state sponsorship or the use of exfiltrated data for commercial gain.</p></blockquote>
+
+<p>Also interesting are the comments on non-state actors, which discuss both propaganda campaigns from ISIL, criminal ransomware, and hacker tools.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>Large-Scale FBI Hacking</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/large-scale_fbi.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7804</id>
+
+  	
+  	
+  	<published>2016-02-09T12:25:51Z</published>
+  	<updated>2016-02-09T12:25:51Z</updated>
+    <summary>As part of a child pornography investigation, the FBI hacked into over 1,300 computers. But after Playpen was seized, it wasn&apos;t immediately closed down, unlike previous dark web sites that have been shuttered&quot; by law enforcement. Instead, the FBI ran Playpen from its own servers in Newington, Virginia, from February 20 to March 4, reads a complaint filed against a...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="childpornography" label="child pornography" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="fbi" label="FBI" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="hacking" label="hacking" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="lawenforcement" label="law enforcement" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>As part of a child pornography investigation, the FBI <a href="https://motherboard.vice.com/read/the-fbis-unprecedented-hacking-campaign-targeted-over-a-thousand-computers">hacked into</a> over 1,300 computers.</p>
+
+<blockquote><p>But after Playpen was seized, it wasn't immediately closed down, unlike previous dark web sites that <a href="https://motherboard.vice.com/read/the-silk-road-is-shut-down-and-the-owner-is-in-custody">have been shuttered"</a> by law enforcement. Instead, the FBI ran Playpen from its own servers in Newington, Virginia, from February 20 to March 4, reads a complaint filed against a defendant in Utah. During this time, the FBI deployed what is known as a network investigative technique (NIT), the agency's term for a hacking tool.
+
+<p>While Playpen was being run out of a server in Virginia, and the hacking tool was infecting targets, "approximately 1300 true internet protocol (IP) addresses were identified during this time," according to the same complaint.</p></blockquote>
+
+<p>The FBI seems to have obtained a single warrant, but it's hard to believe that a legal warrant could allow the police to hack 1,300 different computers. We do know that the FBI is very vague about the extent of its operations in warrant applications. And surely we need actual public debate about this sort of technique.</p>
+
+<p>Also, "Playpen" is a super-creepy name for a child porn site. I feel icky just typing it.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>Data and Goliath Published in Paperback</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/data_and_goliat_7.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7831</id>
+
+  	
+  	
+  	<published>2016-02-08T20:11:54Z</published>
+  	<updated>2016-02-08T20:11:54Z</updated>
+    <summary>Today, Data and Goliath is being published in paperback. Everyone tells me that the paperback version sells better than the hardcover, even though it&apos;s a year later. I can&apos;t really imagine that there are tens of thousands of people who wouldn&apos;t spend $28 on a hardcover but are happy to spend $18 on the paperback, but we&apos;ll see. (Amazon has...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="books" label="books" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="dataandgoliath" label="Data and Goliath" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="schneiernews" label="Schneier news" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>Today, <a  href="https://www.schneier.com/books/data_and_goliath/"><i>Data and Goliath</i></a> is being published in paperback.</p>
+
+<p>Everyone tells me that the paperback version sells better than the hardcover, even though it's a year later. I can't really imagine that there are tens of thousands of people who wouldn't spend $28 on a hardcover but are happy to spend $18 on the paperback, but we'll see. (Amazon has the <a href="http://www.amazon.com/Data-Goliath-Battles-Collect-Control/dp/0393244814/ref=mt_hardcover">hardcover for $19</a>, the <a href="http://www.amazon.com/Data-Goliath-Battles-Collect-Control/dp/039335217X/ref=mt_paperback">paperback for $11.70</a>, and the <a href="http://www.amazon.com/Data-Goliath-Battles-Collect-Control-ebook/dp/B00L3KQ1LI/ref=mt_kindle">Kindle edition for $14.60</a>, plus shipping, if any. I am still <a href="https://www.schneier.com/books/data_and_goliath/order.html">selling signed hardcovers for $28</a> including domestic shipping -- more for international.)</p>
+
+<p>I got a box of paperbacks from my publisher last week. They look good. Not as good as the hardcover, but good for a trade paperback.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>Exploiting Google Maps for Fraud</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/exploiting_goog.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7830</id>
+
+  	
+  	
+  	<published>2016-02-08T12:52:21Z</published>
+  	<updated>2016-02-08T12:52:21Z</updated>
+    <summary>The New York Times has a long article on fraudulent locksmiths. The scam is a basic one: quote a low price on the phone, but charge much more once you show up and do the work. But the method by which the scammers get victims is new. They exploit Google&apos;s crowdsourced system for identifying businesses on their maps. The scammers...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="fraud" label="fraud" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="google" label="Google" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="locks" label="locks" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="scams" label="scams" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>The <i>New York Times</i> has a <a href="http://www.nytimes.com/2016/01/31/business/fake-online-locksmiths-may-be-out-to-pick-your-pocket-too.html">long article</a> on fraudulent locksmiths. The scam is a basic one: quote a low price on the phone, but charge much more once you show up and do the work. But the method by which the scammers get victims is new. They exploit Google's crowdsourced system for identifying businesses on their maps. The scammers convince Google that they have a local address, which Google displays to its users who are searching for local businesses.</p>
+
+<blockquote><p>But they involve chicanery with two platforms: <a href="https://www.google.com/business/">Google My Business</a>, essentially the company's version of the Yellow Pages, and Map Maker, which is Google's crowdsourced online map of the world. The latter allows people around the planet to log in to the system and input data about streets, companies and points of interest.
+
+<p>Both Google My Business and Map Maker are a bit like Wikipedia, insofar as they are largely built and maintained by millions of contributors. Keeping the system open, with verification, gives countless businesses an invaluable online presence. Google officials say that the system is so good that many local companies do not bother building their own websites. Anyone who has ever navigated using Google Maps knows the service is a technological wonder.</p>
+
+<p>But the very quality that makes Google's systems accessible to companies that want to be listed makes them vulnerable to pernicious meddling.</p>
+
+<p>"This is what you get when you rely on crowdsourcing for all your 'up to date' and 'relevant' local business content," Mr. Seely said. "You get people who contribute meaningful content, and you get people who abuse the system."</p></blockquote>
+
+<p>The scam is growing:</p>
+
+<blockquote><p>Lead gens have their deepest roots in locksmithing, but the model has migrated to an array of services, including garage door repair, carpet cleaning, moving and home security. Basically, they surface in any business where consumers need someone in the vicinity to swing by and clean, fix, relocate or install something.</p></blockquote>
+
+<p>What's interesting to me are the economic incentives involved:</p>
+
+<blockquote><p>Only Google, it seems, can fix Google. The company is trying, its representatives say, by, among other things, removing fake information quickly and providing a "Report a Problem" tool on the maps. After looking over the fake Locksmith Force building, a bunch of other lead-gen advertisers in Phoenix and that Mountain View operation with more than 800 websites, Google took action.
+
+<p>Not only has the fake Locksmith Force building vanished from Google Maps, but the company no longer turns up in a "locksmith Phoenix" search. At least not in the first 20 pages. Nearly all the other spammy locksmiths pointed out to Google have disappeared from results, too.</p>
+
+<p>"We're in a constant arms race with local business spammers who, unfortunately, use all sorts of tricks to try to game our system and who've been a thorn in the Internet's side for over a decade," a Google spokesman wrote in an email. "As spammers change their techniques, we're continually working on new, better ways to keep them off Google Search and Maps. There's work to do, and we want to keep doing better."</p>
+
+<p>There was no mention of a stronger verification system or a beefed-up spam team at Google. Without such systemic solutions, Google's critics say, the change to local results will not rise even to the level of superficial.</p></blockquote>
+
+<p>And that's Google's best option, really. It's not the one losing money from these scammers, so it's not motivated to fix the problem. Unless the problem rises to the level of affecting user trust in the entire system, it's just going to do superficial things.</p>
+
+<p>This is exactly the sort of market failure that government regulation needs to fix.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>Friday Squid Blogging: Squid Knitting Pattern</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/friday_squid_bl_512.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7815</id>
+
+  	
+  	
+  	<published>2016-02-05T22:55:53Z</published>
+  	<updated>2016-02-07T07:11:52Z</updated>
+    <summary>Surprisingly realistic for a knitted stuffed animal....</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="squid" label="squid" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>Surprisingly <a href="http://www.ravelry.com/patterns/library/squidikins">realistic</a> for a knitted stuffed animal.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>NSA Reorganizing</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/nsa_reorganizin.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7822</id>
+
+  	
+  	
+  	<published>2016-02-05T21:15:21Z</published>
+  	<updated>2016-02-05T21:15:21Z</updated>
+    <summary>The NSA is undergoing a major reorganization, combining its attack and defense sides into a single organization: In place of the Signals Intelligence and Information Assurance directorates ­ the organizations that historically have spied on foreign targets and defended classified networks against spying, respectively ­ the NSA is creating a Directorate of Operations that combines the operational elements of each....</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="exploits" label="exploits" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nationalsecuritypolicy" label="national security policy" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nsa" label="NSA" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="trust" label="trust" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="vulnerabilities" label="vulnerabilities" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>The NSA is undergoing a <a href="https://www.washingtonpost.com/world/national-security/national-security-agency-plans-major-reorganization/2016/02/02/2a66555e-c960-11e5-a7b2-5a2f824b02c9_story.html?hpid=hp_local-news_no-name%3Ahomepage%2Fstory">major reorganization</a>, combining its attack and defense sides into a single organization:</p>
+
+<blockquote><p>In place of the Signals Intelligence and Information Assurance directorates ­ the organizations that historically have spied on foreign targets and defended classified networks against spying, respectively ­ the NSA is creating a Directorate of Operations that combines the operational elements of each.</p></blockquote>
+
+<p>It's going to be difficult, since their missions and culture are so different.</p>
+
+<blockquote><p>The Information Assurance Directorate (IAD) seeks to build relationships with private-sector companies and help find vulnerabilities in software ­ most of which officials say wind up being disclosed. It issues software guidance and tests the security of systems to help strengthen their defenses.
+
+<p>But the other side of the NSA house, which looks for vulnerabilities that can be exploited to hack a foreign network, is much more secretive.</p>
+
+<p>"You have this kind of clash between the closed environment of the sigint mission and the need of the information-assurance team to be out there in the public and be seen as part of the solution," said a second former official. "I think that's going to be a hard trick to pull off."</p></blockquote>
+
+<p>I think this will make it even harder to trust the NSA. In my book <a href="https://www.schneier.com/books/data_and_goliath/"><i>Data and Goliath</i></a>, I recommended separating the attack and defense missions of the NSA even further, breaking up the agency. (I also wrote about that idea <a href="https://www.schneier.com/blog/archives/2014/02/breaking_up_the.html">here</a>.)</p>
+
+<p>And missing in their reorg is how US CyberCommmand's offensive and defensive capabilities relate to the NSA's. That seems pretty important, too.</p>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>Tracking Anonymous Web Users</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/tracking_anonym.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7821</id>
+
+  	
+  	
+  	<published>2016-02-05T12:56:58Z</published>
+  	<updated>2016-02-05T12:56:58Z</updated>
+    <summary>This research shows how to track e-commerce users better across multiple sessions, even when they do not provide unique identifiers such as user IDs or cookies. Abstract: Targeting individual consumers has become a hallmark of direct and digital marketing, particularly as it has become easier to identify customers as they interact repeatedly with a company. However, across a wide variety...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="academicpapers" label="academic papers" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="adware" label="adware" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="anonymity" label="anonymity" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="deanonymization" label="de-anonymization" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="tracking" label="tracking" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p><a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2700347">This research</a> shows how to track e-commerce users better across multiple sessions, even when they do not provide unique identifiers such as user IDs or cookies.</p>
+
+<blockquote><p><b>Abstract</b>: Targeting individual consumers has become a hallmark of direct and digital marketing, particularly as it has become easier to identify customers as they interact repeatedly with a company. However, across a wide variety of contexts and tracking technologies, companies find that customers can not be consistently identified which leads to a substantial fraction of anonymous visits in any CRM database. We develop a Bayesian imputation approach that allows us to probabilistically assign anonymous sessions to users, while ac- counting for a customer's demographic information, frequency of interaction with the firm, and activities the customer engages in. Our approach simultaneously estimates a hierarchical model of customer behavior while probabilistically imputing which customers made the anonymous visits. We present both synthetic and real data studies that demonstrate our approach makes more accurate inference about individual customers' preferences and responsiveness to marketing, relative to common approaches to anonymous visits: nearest- neighbor matching or ignoring the anonymous visits. We show how companies who use the proposed method will be better able to target individual customers, as well as infer how many of the anonymous visits are made by new customers.</p></blockquote>]]>
+			
+		
+    </content>
+</entry>
+
+<entry>
+    <title>The Internet of Things Will Be the World&apos;s Biggest Robot</title>
+    <link rel="alternate" type="text/html" href="https://www.schneier.com/blog/archives/2016/02/the_internet_of_1.html" />
+    <id>tag:www.schneier.com,2016:/blog//2.7820</id>
+
+  	
+  	
+  	<published>2016-02-04T12:18:27Z</published>
+  	<updated>2016-02-04T17:01:23Z</updated>
+    <summary>The Internet of Things is the name given to the computerization of everything in our lives. Already you can buy Internet-enabled thermostats, light bulbs, refrigerators, and cars. Soon everything will be on the Internet: the things we own, the things we interact with in public, autonomous things that interact with each other. These &quot;things&quot; will have two separate parts. One...</summary>
+    <author>
+        <name>Bruce Schneier</name>
+    </author>
+    
+    <category term="drones" label="drones" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="essays" label="essays" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="internetofthings" label="Internet of things" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nationalsecuritypolicy" label="national security policy" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="robotics" label="robotics" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="https://www.schneier.com/blog/">
+    
+			<![CDATA[<p>The Internet of Things is the name given to the computerization of everything in our lives. Already you can buy Internet-enabled thermostats, light bulbs, refrigerators, and cars. Soon everything will be on the Internet: the things we own, the things we interact with in public, autonomous things that interact with each other.</p>
+
+<p>These "things" will have two separate parts. One part will be sensors that collect data about us and our environment. Already our smartphones know our location and, with their onboard accelerometers, track our movements. Things like our thermostats and light bulbs will know who is in the room. Internet-enabled street and highway sensors will know how many people are out and about­ -- and eventually who they are. Sensors will collect environmental data from all over the world.</p>
+
+<p>The other part will be actuators. They'll affect our environment. Our smart thermostats aren't collecting information about ambient temperature and who's in the room for nothing; they set the temperature accordingly. Phones already know our location, and send that information back to Google Maps and Waze to determine where traffic congestion is; when they're linked to driverless cars, they'll automatically route us around that congestion. Amazon already wants autonomous drones to deliver packages. The Internet of Things will increasingly perform actions for us and in our name.</p>
+
+<p>Increasingly, human intervention will be unnecessary. The sensors will collect data. The system's smarts will interpret the data and figure out what to do. And the actuators will do things in our world. You can think of the sensors as the eyes and ears of the Internet, the actuators as the hands and feet of the Internet, and the stuff in the middle as the brain. This makes the future clearer. The Internet now senses, thinks, and acts.</p>
+
+<p>We're building a world-sized robot, and we don't even realize it.</p>
+
+<p>I've started calling this robot the World-Sized Web.</p>
+
+<p>The World-Sized Web -- can I call it WSW? -- is more than just the Internet of Things. Much of the WSW's brains will be in the cloud, on servers connected via cellular, Wi-Fi, or short-range data networks. It's mobile, of course, because many of these things will move around with us, like our smartphones. And it's persistent. You might be able to turn off small pieces of it here and there, but in the main the WSW will always be on, and always be there.</p>
+
+<p>None of these technologies are new, but they're all becoming more prevalent. I believe that we're at the brink of a phase change around information and networks. The difference in degree will become a difference in kind. That's the robot that is the WSW.</p>
+
+<p>This robot will increasingly be autonomous, at first simply and increasingly using the capabilities of artificial intelligence. Drones with sensors will fly to places that the WSW needs to collect data. Vehicles with actuators will drive to places that the WSW needs to affect. Other parts of the robots will "decide" where to go, what data to collect, and what to do.</p>
+
+<p>We're already seeing this kind of thing in warfare; drones are surveilling the battlefield and firing weapons at targets. Humans are still in the loop, but how long will that last? And when both the data collection and resultant actions are more benign than a missile strike, autonomy will be an easier sell.</p>
+
+<p>By and large, the WSW will be a benign robot. It will collect data and do things in our interests; that's why we're building it. But it will change our society in ways we can't predict, some of them good and some of them bad. It will maximize profits for the people who control the components. It will enable totalitarian governments. It will empower criminals and hackers in <a href="https://www.schneier.com/essays/archives/2016/01/when_hacking_could_e.html">new and different ways</a>. It will cause power balances to shift and societies to change.</p>
+
+<p>These changes are inherently unpredictable, because they're based on the emergent properties of these new technologies interacting with each other, us, and the world. In general, it's easy to predict technological changes due to scientific advances, but much harder to predict social changes due to those technological changes. For example, it was easy to predict that better engines would mean that cars could go faster. It was much harder to predict that the result would be a demographic shift into suburbs. Driverless cars and smart roads will again transform our cities in new ways, as will autonomous drones, cheap and ubiquitous environmental sensors, and a network that can anticipate our needs.</p>
+
+<p>Maybe the WSW is more like an organism. It won't have a single mind. Parts of it will be controlled by large corporations and governments. Small parts of it will be controlled by us. But writ large its behavior will be unpredictable, the result of millions of tiny goals and billions of interactions between parts of itself.</p>
+
+<p>We need to start thinking seriously about our new world-spanning robot. The market will not sort this out all by itself. By nature, it is short-term and profit-motivated­ -- and these issues require broader thinking. University of Washington law professor Ryan Calo has proposed a <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2529151">Federal Robotics Commission</a> as a place where robotics expertise and advice can be centralized within the government. <a href="http://japan.kantei.go.jp/97_abe/actions/201505/15article3.html">Japan</a> and <a href="http://www.roboticsbusinessreview.com/article/the_quiet_giant_of_asian_robotics_korea">Korea</a> are already moving in this direction.</p>
+
+<p>Speaking as someone with a healthy skepticism for  another government agency, I think we need to go further. We need to create agency, a Department of Technology Policy, that can deal with the WSW in all its complexities. It needs the power to aggregate expertise and advice other agencies, and probably the authority to regulate when appropriate. We can argue the details, but there is no existing government entity that has the either the expertise or authority to tackle something this broad and far reaching. And the question is not about whether government will start regulating these technologies, it's about how smart they'll be when they do it.</p>
+
+<p>The WSW is being built right now, without anyone noticing, and it'll be here before we know it. Whatever changes it means for society, we don't want it to take us by surprise.</p>
+
+<p>This essay <a href="http://www.forbes.com/sites/bruceschneier/2016/02/02/the-internet-of-things-will-be-the-worlds-biggest-robot/#678f2e763162">originally appeared</a> on Forbes.com, which annoyingly blocks browsers using ad blockers.</p>
+
+<p>EDITED TO ADD: Kevin Kelly has also <a href="http://longnow.org/seminars/02014/nov/12/technium-unbound/">thought along these lines</a>, calling the robot "Holos."</p>
+
+<p>EDITED TO ADD: <a href="https://resilient.com/bruce-schneiers-notion-of-the-world-sized-web/">Commentary</a>.</p>]]>
+			
+		
+    </content>
+</entry>
+
+</feed>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+			xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+		>
+
+<channel>
+	<title>Gigaom</title>
+	<atom:link href="https://gigaom.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://gigaom.com</link>
+	<description>The industry leader in emerging technology research</description>
+	<lastBuildDate>Wed, 10 Feb 2016 15:02:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Corporations can be people, and now, cars can be their own drivers</title>
+		<link>https://gigaom.com/2016/02/10/corporations-can-be-people-and-now-cars-can-be-their-own-drivers/</link>
+		<comments>https://gigaom.com/2016/02/10/corporations-can-be-people-and-now-cars-can-be-their-own-drivers/#respond</comments>
+		<pubDate>Wed, 10 Feb 2016 15:02:52 +0000</pubDate>
+		<dc:creator><![CDATA[Stowe Boyd]]></dc:creator>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Google]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Internet of Things]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[smart cars]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[US National Highway Traffic Safety Agency]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949605</guid>
+		<description><![CDATA[The US National Highway Traffic Safety Agency may have adroitly resolved the notion of driver accountability for the coming smart car future.&#8230;]]></description>
+				<content:encoded><![CDATA[<h3>The US National Highway Traffic Safety Agency may have adroitly resolved the notion of driver accountability for the coming smart car future.</h3>
+<hr />
+<p id="bd9f" class="graf--p graf--first">It may sound like a ‘through the looking glass’ paradox, but the US National Highway Traffic Safety Agency (NHTSA) has decided — in the face of relentless innovation in driverless vehicles — that cars can be their own drivers. This has enormous implications, and was motivated by the design issues of future AI-driven cars.</p>
+<p id="e62e" class="graf--p graf-after--p">Google’s Chris Urmson, the director of Google’s driverless car initiative, raised the issue with NHTSA, asking how the agency intreprets Federal Motor Vehicle Safety Standards (FMVSS) vis-à-vis smart cars:</p>
+<blockquote id="8547" class="graf--blockquote graf-after--p"><p><em class="markup--em markup--blockquote-em">Wayne Cunningham, </em><a class="markup--anchor markup--blockquote-anchor" href="http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.cnet.com%2Froadshow%2Fnews%2Ffeds-declare-that-googles-self-driving-car-is-its-own-driver%2F&amp;t=OGJmODc1ZDQzZTY4ODBjNzI1Y2QyYWQ0NWRmNGVjMDRkZTg4MDdiYyxISnFnOVhoaQ%3D%3D" rel="nofollow" data-href="http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.cnet.com%2Froadshow%2Fnews%2Ffeds-declare-that-googles-self-driving-car-is-its-own-driver%2F&amp;t=OGJmODc1ZDQzZTY4ODBjNzI1Y2QyYWQ0NWRmNGVjMDRkZTg4MDdiYyxISnFnOVhoaQ%3D%3D"><em class="markup--em markup--blockquote-em">Feds declare that Google’s self-driving car is its own driver</em></a></p></blockquote>
+<blockquote id="edd5" class="graf--blockquote graf-after--blockquote"><p><em class="markup--em markup--blockquote-em">NHTSA </em><a class="markup--anchor markup--blockquote-anchor" href="http://t.umblr.com/redirect?z=http%3A%2F%2Fisearch.nhtsa.gov%2Ffiles%2FGoogle+--+compiled+response+to+12+Nov++15+interp+request+--+4+Feb+16+final.htm&amp;t=MTJiYWRhZWFiNzExOTVjY2E1NGE5MjQ0NzgwMzYxOWE2OGY0MzE2NixISnFnOVhoaQ%3D%3D" rel="nofollow" data-href="http://t.umblr.com/redirect?z=http%3A%2F%2Fisearch.nhtsa.gov%2Ffiles%2FGoogle+--+compiled+response+to+12+Nov++15+interp+request+--+4+Feb+16+final.htm&amp;t=MTJiYWRhZWFiNzExOTVjY2E1NGE5MjQ0NzgwMzYxOWE2OGY0MzE2NixISnFnOVhoaQ%3D%3D"><em class="markup--em markup--blockquote-em">posted a detailed response</em></a><em class="markup--em markup--blockquote-em"> on its Web site. The response shows that Google was concerned how the FMVSS could be applied to a computer-controlled car lacking steering wheel or any other traditional driver controls. Urmson suggested that NHTSA could interpret the FMVSS as not to apply to Google’s cars at all, or that it require a traditional interpretation, assuming a driver in the left front seat, or that the system controlling the car could be considered the driver.</em></p></blockquote>
+<blockquote id="65cc" class="graf--blockquote graf-after--blockquote"><p><em class="markup--em markup--blockquote-em">In NHTSA’s letter, it chose the latter solution, determining that the self-driving system is the driver for purposes of the FMVSS.</em></p></blockquote>
+<p id="0191" class="graf--p graf-after--blockquote graf--last">So, this in principle means that Google (and others) can design cars that have no requirement for human-oriented driver’s controls, like steering wheels, accelerators, brakes, or rear-view mirrors, for example.</p>
+<hr />
+<h3>If an AI-driven car is its own driver and no person riding in the car is playing that role, then in the case of an accident there is no human responsible since the car is the driver.</h3>
+<hr />
+<p id="a184" class="graf--p graf--first graf--last">But secondly, this might open the door to something perhaps just as important. If an AI-driven car is its own driver and no person riding in the car is playing that role, then in the case of an accident there is no human responsible since the car is the driver. The NHTSA may have adroitly resolved the notion of driver accountability for the coming smart car future.</p>
+<hr />
+<p id="5523" class="graf--p graf--first graf--last"><em class="markup--em markup--p-em">Originally published at </em><a class="markup--anchor markup--p-anchor" href="http://stoweboyd.com/post/139052242877/corporations-can-be-people-and-now-cars-can-be" rel="nofollow" data-href="http://stoweboyd.com/post/139052242877/corporations-can-be-people-and-now-cars-can-be"><em class="markup--em markup--p-em">stoweboyd.com</em></a><em class="markup--em markup--p-em"> and <a href="https://workfutures.io/corporations-can-be-people-and-now-cars-can-be-their-own-drivers-eb4b751e57a#.6xw9qc7n7">workfutures.io</a> on 10 February 2016.</em></p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/02/10/corporations-can-be-people-and-now-cars-can-be-their-own-drivers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Q&#038;A about Enterprise Social Networks with IBM</title>
+		<link>https://gigaom.com/2016/02/08/qa-about-enterprise-social-networks-with-ibm/</link>
+		<comments>https://gigaom.com/2016/02/08/qa-about-enterprise-social-networks-with-ibm/#respond</comments>
+		<pubDate>Mon, 08 Feb 2016 17:23:28 +0000</pubDate>
+		<dc:creator><![CDATA[Stowe Boyd]]></dc:creator>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Email]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[enterprise social networks]]></category>
+		<category domain="https://gigaom.com/person/"><![CDATA[Ev Rogers]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[IBM]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Social]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[social business]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Social enterprise]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[work chat]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949602</guid>
+		<description><![CDATA[IBM sent some questions following the recent IBM Connect conference. They are based on some unwritten assumptions that I disagree with, which&#8230;]]></description>
+				<content:encoded><![CDATA[<section class=" section--body section--first">
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">IBM sent some questions following the recent IBM Connect conference. They are based on some unwritten assumptions that I disagree with, which will become evident in my response.</div>
+</div>
+</section>
+<section class=" section--body">
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">
+<p id="8221" class="graf--p graf-after--p">Here’s the questions:</p>
+<ol class="postList">
+<li id="fd8e" class="graf--li graf-after--p">What is your definition of a successful social enterprise?</li>
+<li id="f6d5" class="graf--li graf-after--li">Why do companies consider forming an enterprise-wide social network and what are the biggest benefits?</li>
+<li id="61ac" class="graf--li graf-after--li">How are enterprise social networks used to share knowledge and increase innovation?</li>
+<li id="e966" class="graf--li graf-after--li">What hurdles do organizations face when implementing an enterprise social network? How can you overcome these hurdles?</li>
+<li id="4653" class="graf--li graf-after--li">How do you see enterprise social networks evolving over the next 5 years?</li>
+</ol>
+<section class=" section--body">
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">
+<p id="86a9" class="graf--p graf-after--li">Some answers:</p>
+<p id="3792" class="graf--p graf-after--p">Q1: What is your definition of a successful social enterprise?</p>
+<p id="51c8" class="graf--p graf-after--p graf--last">A1. The idea of a ‘successful social enterprise’ is simple if you approach it superficially. In that case you simply define ‘success’ as some degree of adoption of social tools, and the harvesting of their purported benefits based on the network effects of social integration. A richer, and more nuanced definition requires a deep dive into significant changes in people’s aspirations, corporate values, and dispersal of tech platforms that underwrite new ways of work, not just new ways to communicate. (But this is not the place for that book to be written.)</p>
+</div>
+</div>
+</section>
+<section class=" section--body">
+<div class="section-divider layoutSingleColumn">
+<hr class="section-divider" />
+</div>
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">
+<blockquote id="8339" class="graf--pullquote pullquote graf--first graf--last"><p><strong class="markup--strong markup--pullquote-strong"><em class="markup--em markup--pullquote-em">A sense that the promise of social collaboration has failed is the backdrop for many companies and teams moving to try work chat-based solutions, and the resurgence in the use of email. — Stowe Boyd</em></strong></p></blockquote>
+</div>
+</div>
+</section>
+<section class=" section--body">
+<div class="section-divider layoutSingleColumn">
+<hr class="section-divider" />
+</div>
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">
+<p id="3b02" class="graf--p graf--first">Q2: Why do companies consider forming an enterprise-wide social network and what are the biggest benefits?</p>
+<p id="73c3" class="graf--p graf-after--p">A2. There is actually a large-scale migration away from the now-mainstream model of ‘social business = a company using enterprise social network as platform for communication, collaboration, and coordination’. A sense that the promise of social collaboration has failed is the backdrop for many companies and teams moving to try work chat-based solutions, and the resurgence in the use of email, now somewhat socialized (like IBM Verse and Microsoft Office 365).</p>
+<p id="34d8" class="graf--p graf-after--p">Q3: How are enterprise social networks used to share knowledge and increase innovation?</p>
+<p id="4d77" class="graf--p graf-after--p graf--last">A3. Information sharing (mistakenly called ‘knowledge sharing’) is one of the most direct benefits of social platforms, of whatever kind. They decrease the costs involved, and the social motifs — like following, @mentions, and topical activity streams — have revolutionized how we think about working together. I think increasing innovation is a separate, but immensely important issue. Tools need to stand out of the way, drop into the near background, so that innovation can happen: they don’t engender creativity, per se.</p>
+</div>
+</div>
+</section>
+<section class=" section--body">
+<div class="section-divider layoutSingleColumn">
+<hr class="section-divider" />
+</div>
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">
+<blockquote id="58de" class="graf--pullquote pullquote graf--first graf--last"><p><strong class="markup--strong markup--pullquote-strong"><em class="markup--em markup--pullquote-em">In a few years the inroads made by touch, voice, gesture, and surreality will have profound impacts on how people at work choose to communicate. — Stowe Boyd</em></strong></p></blockquote>
+</div>
+</div>
+</section>
+<section class=" section--body">
+<div class="section-divider layoutSingleColumn">
+<hr class="section-divider" />
+</div>
+<div class="section-content">
+<div class="section-inner layoutSingleColumn">
+<p id="8fe6" class="graf--p graf--first">Q4: What hurdles do organizations face when implementing an enterprise social network? How can you overcome these hurdles?</p>
+<p id="bfab" class="graf--p graf-after--p">A4. The hurdles of adopting any innovation — like a new communications or information platform for business — are consistently the same. First, people differ to the degree they are psychologically disposed toward adoption of new technologies and techniques (and the values that come along with them). So-called <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">innovators</em></strong> — Ed Rogers’ term — are quick to adopt, and the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">laggards</em></strong> are most averse, and the rest of us are distributed in between in other groups: <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">early adopters</em></strong>, <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">early majority</em></strong>, and <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">late majority</em></strong>. That’s the nature of people. Each group has its own set of concerns and considerations that slow adoption to a greater or lesser extent. This is independent of the specifics of any technology or the dynamics of any company, and dominates <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">The Diffusion of Innovations</em></strong>, which is why Everett Rogers named his magisterial book that.</p>
+<p id="9c42" class="graf--p graf-after--p">In the case of ESNs, adoption has been problematic because the benefits are difficult to quantify, are slow to be realized (if at all), and the established alternatives (like email) are deeply embedded in business practices and processes. This has been so slow a process that innovators and early adopters are jumping the curve and moving onto new approaches before the majority has adopted the old ones. So ESNs are already a lap behind in the communications platform foot race.</p>
+<p id="96b2" class="graf--p graf-after--p">Q5. How do you see enterprise social networks evolving over the next 5 years?</p>
+<p id="c046" class="graf--p graf-after--p graf--last">A5. The continued acceleration toward mobile, wearables, and augmented and virtual reality (or <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">surreality</em></strong>, as I call it) will mean even more of a migration away from desktop/laptop use and the decline of ‘desktop’ motifs. In a few years the inroads made by touch, voice, gesture, and surreality will have profound impacts on how people at work choose to communicate. Added to the rapid rise of AI assistants (or assistance, depending on your view), the premises of ‘working together’ will change as much as the Web has done, already. So, while we will still be working in social networks in five years — we are human beings after all — we will be unlikely to be using platforms based on the design and organizing principles of what we call ESNs, today.</p>
+</div>
+</div>
+</section>
+<section class=" section--body section--last">
+<div class="section-divider layoutSingleColumn">
+<hr class="section-divider" />
+</div>
+<div class="section-content"> <em>Cross-posted from <a href="https://socialogy.io/q-a-about-enterprise-social-networks-with-ibm-8f32e3a6a69e#.rib1j3uip">medium</a> and</em><em class="markup--em markup--p-em"> </em><a class="markup--anchor markup--p-anchor" href="http://stoweboyd.com/post/138931973382/qa-about-enterprise-social-networks-with-ibm" rel="nofollow" data-href="http://stoweboyd.com/post/138931973382/qa-about-enterprise-social-networks-with-ibm"><em class="markup--em markup--p-em">stoweboyd.com</em></a><em class="markup--em markup--p-em"> on 8 February 2016.</em><br />
+<footer class="postArticle-footer">
+<div class="postActionsFooter container u-size740"></div>
+</footer>
+</div>
+</section>
+</div>
+</div>
+</section>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/02/08/qa-about-enterprise-social-networks-with-ibm/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Have we seen peak tech? Is it becoming a game only giants can play?</title>
+		<link>https://gigaom.com/2016/02/06/have-we-seen-peak-tech/</link>
+		<comments>https://gigaom.com/2016/02/06/have-we-seen-peak-tech/#comments</comments>
+		<pubDate>Sat, 06 Feb 2016 18:14:22 +0000</pubDate>
+		<dc:creator><![CDATA[Stowe Boyd]]></dc:creator>
+		<category domain="https://gigaom.com/company/"><![CDATA[Amazon]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Apple]]></category>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[competition]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Facebook]]></category>
+		<category domain="https://gigaom.com/person/"><![CDATA[Jessica Lessin]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[LinkedIn]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Microsoft]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[tableau]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Technology]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Twitter]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[valuation]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949599</guid>
+		<description><![CDATA[On Thursday, LinkedIn posted some very disappointing numbers, and the result was a massive bailout on the stock. The companies reported losses&#8230;]]></description>
+				<content:encoded><![CDATA[<p>On Thursday, LinkedIn posted some very disappointing numbers, and the result was a massive bailout on the stock. The companies reported losses and slowing growth led to erasing nearly $11 billion in the professional networking site’s market value. Combined with lowered forecasts for the year, this translated into about 40% drop in the company&#8217;s valuation.</p>
+<p>Another major collapse in confidence seems to be <a href="http://www.forbes.com/sites/briansolomon/2016/02/04/tableau-plummets-nearly-50-as-hypergrowth-ends/#60cc27983ca9">hitting Tableau</a>, which dropped 45% in after hour trading on Thursday, after announcing higher than projected revenue and earnings per share, but a real slowdown in licensing revenue.</p>
+<p>Twitter continues to stumble, losing 5%. Facebook likewise took a 5% drop. The tech selloff with Apple (2.67% drop) and Amazon (6.36% down). Box fell 7.44%.</p>
+<p>The tech market appears to be getting whipsawed by the uncertainties in the world economy, with those showing the most significant drop off in past and projected revenues getting hammered.</p>
+<p>But is there something larger at work? I read a great analysis by Jessica Lessin at The Information, suggesting that there may be. In <em><a href="https://www.theinformation.com/the-end-of-tech-startups?unlock=677a9e&amp;token=eed2b15628f0d9fe619eaff16ce07ea767a27559">The End of Tech Startups</a></em> she writes,</p>
+<blockquote><p>[&#8230;] the period where tech startups can readily disrupt larger tech companies is ending for a simple reason: Today’s tech behemoths aren’t the lumbering giants of yesteryear. They are leaner and meaner and more competitive precisely because they have co-opted the same technologies startups used to attack them.</p>
+<p>Take cloud computing. Sure, AWS makes it dead simple for two developers in a garage to spin up a company. But Microsoft, Facebook and Google have massive cloud infrastructure advantages of their own. In fact, they’re the ones powering some of these startups. Anything startups have access to, big tech companies have access to in a much deeper way. So they can operate faster—and test faster. And because they can test faster, they can build faster.</p>
+<p>Then consider internal communications. One of the biggest advantages any startup has is the ability to make decisions and communicate quickly without layers of bureaucracy. Often they do so by adopting the latest sort of collaboration method quickly.</p>
+<p>[&#8230;]</p>
+<p>To all you aspiring tech entrepreneurs out there, it’s time to get creative if you want to take on a tech company. And if you don’t, there’s still plenty of opportunity going after non-tech incumbents in everything from media to education and health, which is probably why we’re seeing so many startups turn their attention outside of tech these days.</p></blockquote>
+<p>Lessin suggests we&#8217;re moving to an era where the Internet giants simply will have too much juice for startups to prevail against them. I think this borne out in many sectors, like the melting away of the valuations (and opportunities) for file sync-and-share companies, like Dropbox and Box, as the monsters move in and drop the price point to zero.</p>
+<p>So, as the bull market grinds on in the coming months, note the difference in the losses that the market will deal to larger and smaller players. The LinkedIns and Tableaus will lose much more than the giants, and the giants will continue to turn the screws, leveraging their positional, financial, and operational advantages. They will continue to win even as investors lose.</p>
+<p>And startups will face the worst conditions: less capital, worse valuations, very strong entrenched Internet giants dominating in all important markets.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/02/06/have-we-seen-peak-tech/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>A Curved Screen Skeptic Takes a Closer Look</title>
+		<link>https://gigaom.com/2016/02/02/a-curved-screen-skeptic-takes-a-closer-look/</link>
+		<comments>https://gigaom.com/2016/02/02/a-curved-screen-skeptic-takes-a-closer-look/#comments</comments>
+		<pubDate>Tue, 02 Feb 2016 15:55:26 +0000</pubDate>
+		<dc:creator><![CDATA[Elena Perez]]></dc:creator>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[curved display]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[curved display technology]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[curved screens]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[curved televisions]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[devices]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[mobile phones]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[monitors]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Samsung]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[screens]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[televisions]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949582</guid>
+		<description><![CDATA[Sometimes it can be helpful to make a snap judgement on a particular innovation, just to keep from getting overwhelmed in today’s&#8230;]]></description>
+				<content:encoded><![CDATA[<p><span style="line-height: 1.5">Sometimes it can be helpful to make a snap judgement on a particular innovation, just to keep from getting overwhelmed in today’s tech frenzy. For me, it was the curved screen that earned my instant skepticism. Cool? Sure. But I didn’t see the urgency; the flat screen still felt modern, delivered a wonderful picture and the joy of extra space gained from tossing the old box was still reasonably fresh in my mind. The curved screen struck me more as innovation for innovation’s sake, an upgrade designed for the upgrade-obsessed, and left me pondering if it was possible to run out of great ideas.</span></p>
+<p><span style="font-weight: 400">Then, when I realized the natural moment for my next phone upgrade was approaching, I found myself face-to-face with the Samsung Galaxy Edge. Lo, the curved screen was calling! But, before I could answer, I had to take a step back and look at the bigger picture. (And, yes, drop a few puns.) </span></p>
+<p><span style="font-weight: 400">This modern innovation—gimmick? innovation?—went beyond mobile phones, so I decided to start with large screens. When it came to curved televisions, it was easy to see that I wasn’t alone in my skepticism. Numerous reviews panned the “immersive” curved television display as a gimmick, while others pointed out that the curve could compromise viewing from certain angles. It’s not hard to imagine that if your reclining chair is over in that far corner, to the side of the TV, that curve is going to get in the way, but </span><a href="http://arstechnica.com/gadgets/2014/01/whats-the-deal-with-curved-tvs/"><span style="font-weight: 400">Casey Johnston of Ars Technica</span></a><span style="font-weight: 400"> offered a rather detailed analysis of the field of view. It seemed that the curve most benefited from theater-style seating and, according to fellow skeptic </span><a href="http://www.forbes.com/sites/scottkramer/2015/06/25/curve-appeal-why-curved-screen-monitors-make-more-sense-than-curved-tvs/#3c2be9b8332d"><span style="font-weight: 400">Scott Kramer of Forbes</span></a><span style="font-weight: 400">, “You’d need a very large model — at least 70 inches — to really make the concept even work. Anything smaller and the vibrancy and immersion just aren’t compelling factors.” Cue Roy Schieder: </span><i><span style="font-weight: 400">“We’re going to need a bigger apartment.”</span></i></p>
+<p><span style="font-weight: 400">So my initial doubts about the curve seemed validated where TVs were concerned. Monitors, however, were a different story. The “immersive” benefits of curved screens fared better in the one-person-per-screen scenario, where you were less likely to be sitting off to the side while playing games and streaming.  As noted in this </span><a href="http://smbz.us/1VvXyMp"><span style="font-weight: 400">article</span></a><span style="font-weight: 400">, “</span><span style="font-weight: 400">the natural presentation and field of view supplied by these devices reduce neck and eye strain”, so there would be productivity benefits for the business environment as well. </span><span style="font-weight: 400">(Though both points make sense to me, as someone who is attached to the web for the better part of her waking hours, the thought of the telltale screen curving in closer and closer struck me as horror movie material.) But general receptivity to curved monitors aside, the fact that </span><a href="http://www.idc.com/getdoc.jsp?containerId=prUS25636815"><span style="font-weight: 400">monitor sales, in general, are dipping along with PC sales</span></a><span style="font-weight: 400"> means that they won’t likely be the driving force behind the curved revolution. </span></p>
+<p><span style="font-weight: 400">That led me back to mobile devices. Despite the buzz, curved mobile phones aren’t actually that common. Samsung was (ahem) ahead of the curve, with LG not far behind. And sure, it was a clear differentiator in a sea of iPhones, but could the curve </span><i><span style="font-weight: 400">do</span></i><span style="font-weight: 400"> anything? Early curvers, Samsung Galaxy Round and LG Flex, opted for opposite approaches (side to side and head to toe body curves, respectively) and promised &#8211; yes &#8211; an </span><i><span style="font-weight: 400">immersive</span></i><span style="font-weight: 400"> experience. The curved body also performed better in pocket, because it aligned better with the curve of the human form. The Edge had a different approach, with the display wrapping around the sides of the device. My first (skeptical) take was that the Edge chose style over function, but then I discovered that the extra real estate served a few functions beyond aesthetics, including a colored light indicator that could tell you who is calling when the phone is face down. Meanwhile, Cool? Sure. Urgent? Well&#8230;</span></p>
+<p><span style="font-weight: 400">At this point, I had reached the limits of online product research. The claim of the curve clearly went beyond specs, so I brought my skepticism to in-store, imagining the satisfaction of telling the Best Buy clerk that I was only doing research—I wasn’t someone who was taken in by innovation for innovation’s sake. Except that, when I reached the curved screen TVs and stood in front of their promotional solar system graphics, I couldn’t help myself: I nodded my head and my lips formed the word: “Immersive.” I was getting sucked in. By the time I reached the mobile section and plucked the Samsung Edge from its display podium, it struck me as mobile’s equivalent of an infinity pool. Cool. Serene. Desirable. </span></p>
+<p><span style="font-weight: 400">And this is where the aforementioned snap judgements come in handy. There is, simply, an incredible range of products to pine over today but, if you decide out of the gate that a particular innovation is a gimmick, it’s a lot easier to avoid that whispering want. As of the writing of this article, I have not (yet) upgraded my phone, and my television is still flat. But, I confess, I do</span> <span style="font-weight: 400">see the appeal for the curved screen. Features and functions aside, its real strength is that it is a delight to view. And while “delight” doesn’t necessarily translate to urgency, that ever-important factor needed to drive up sales right this minute, isn’t that exactly what you want from something that’s designed to be viewed?</span></p>
+<p><!-- bitly link for social promotion: http://bit.ly/1o2BX3N --></p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/02/02/a-curved-screen-skeptic-takes-a-closer-look/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Cut into the present</title>
+		<link>https://gigaom.com/2016/02/02/cut-into-the-present/</link>
+		<comments>https://gigaom.com/2016/02/02/cut-into-the-present/#respond</comments>
+		<pubDate>Tue, 02 Feb 2016 14:57:00 +0000</pubDate>
+		<dc:creator><![CDATA[Stowe Boyd]]></dc:creator>
+		<category domain="https://gigaom.com/company/"><![CDATA[IBM]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Social]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949585</guid>
+		<description><![CDATA[I’m attending IBM Connect 2016 in Orlando as an IBM-selected Futurist, which is a first of a sort. While I have long&#8230;]]></description>
+				<content:encoded><![CDATA[<p>I’m attending IBM Connect 2016 in Orlando as an IBM-selected Futurist, which is a first of a sort. While I have long been considered as a futurist — personally and professionally — this is the first time the characterization has appeared on a conference badge.</p>
+<img src="https://cdn-images-2.medium.com/max/800/1*01HnE3F9tt7NUJUyyUsYqg.jpeg" alt="" />
+<p style="font-size: 80%;">Note that I am not only a futurist, but a prospect!</p>
+<p id="e5ab" class="graf--p graf-after--figure">As you might expect, I am singularly interested in learning more about IBM’s thinking about the future of work. But, I haven’t heard nearly as much about the future of work and #newwaytowork as I had hoped.</p>
+<p id="c1ac" class="graf--p graf-after--p">The opening sessions were strongly oriented toward IBM Verse, and its instrumentation of a mocked-up company. While I appreciated the illustration of Verse’s many well-considered affordances, I came away with the strong impression of a fictionalized but very conventional organization behind the play acting. However, this is mostly reading between the lines of the script, because the company wasn’t really described, aside from being a maker and marketer of sporting goods.</p>
+<p id="c8a2" class="graf--p graf-after--p">What would have been much better — at least for me — would have been to take some of the trends that are inarguably transforming businesses today, and to surface them explicitly as part of the story. What about the rise of freelancers, and the uberization of work, or the pressure to adapt to a new digital markets and economics? Or consider any of a dozen other themes that impact us all, as individuals, companies, and as a society. If things aren’t changing, why are companies adopting new tools?</p>
+<p id="c8e0" class="graf--p graf-after--p">Or even better, how about if IBM had presented a (slightly rosy) projection of a hypothetical near-term future, and lent some guidance to its customers about how to thrive there, how to transition to better adapt to that just-over-the-horizon world, and (yes) how IBM can help in the colonization of that new day.</p>
+<p id="5e9a" class="graf--p graf-after--p">Without that vision, I think any vendors’ demonstrations of tools fall a bit flat, because we are left only to imagine how we might use them today. Or more pragmatically, how we would use them in the company of last week or last month or last year. Your company today has already changed in ways that its management and employees have not realized.</p>
+<p id="bd8d" class="graf--p graf-after--p">McLuhan said,</p>
+<blockquote id="665b" class="graf--blockquote graf-after--p"><p>We look at the present through a rear-view mirror. We march backwards into the future.</p></blockquote>
+<p id="c285" class="graf--p graf-after--blockquote">We are caught by our ties to the past, and I had hoped that IBM would try to cut into that a little bit. Because, as Willim S. Burroughs wrote,</p>
+<blockquote id="8a0f" class="graf--blockquote graf-after--p"><p>When you cut into the present, the future leaks out.</p></blockquote>
+<p id="0946" class="graf--p graf-after--blockquote graf--last">Maybe next year.</p>
+<hr />
+<p>Originally posted on <a href="https://medium.com/@stoweboyd/cutting-into-the-present-370c175f4645#.bus57vowu">medium.com/@stoweboyd</a> on 2 February 2016</p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/02/02/cut-into-the-present/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Data security, the future of work and the consumerisation dilemma</title>
+		<link>https://gigaom.com/2016/02/01/data-security-the-future-of-work-and-the-consumerisation-dilemma/</link>
+		<comments>https://gigaom.com/2016/02/01/data-security-the-future-of-work-and-the-consumerisation-dilemma/#comments</comments>
+		<pubDate>Mon, 01 Feb 2016 17:05:46 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Collins]]></dc:creator>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[consumerisation]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Data security]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Internet of Things]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[it-security]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Mobile]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Technology]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949584</guid>
+		<description><![CDATA[This post is sponsored by Samsung. All thoughts and opinions are my own. Data security has never been as hard as it is today. And&#8230;]]></description>
+				<content:encoded><![CDATA[<div style="background: #eeeeee">
+<p><strong><em>This post is sponsored by </em><a href="http://smbz.us/Insights"><em>Samsung</em></a><em>. All thoughts and opinions are my own.</em></strong></p>
+<p>Data security has never been as hard as it is today. And it is going to get harder. Why? Because it is becoming more embedded in everything we do; and because we, not technology, hold the key to the future.</p>
+<p>The protective walls of the corporation came tumbling down a long time ago. This is not about erosion &#8211; they are already gone. <a href="http://techland.time.com/2013/12/19/the-target-credit-card-breach-what-you-should-know/">Target</a>, <a href="http://time.com/money/4196058/wendys-hack-fraudulent-charges/">Wendy’s</a>, <a href="http://uk.reuters.com/article/us-sony-stoldendata-idUSTRE73P6WB20110427">Playstation</a>, all have suffered massive losses of customer data. <a href="http://www.darkreading.com/attacks-breaches/infographic-70-percent-of-worlds-critical-utilities-breached/a/d-id/1298006">Utilities</a>, <a href="http://www.bankrate.com/finance/banking/us-data-breaches-1.aspx">banks</a>, <a href="http://www.computing.co.uk/ctg/feature/2423476/the-10-worst-ever-government-data-breaches">public institutions</a> have been compromised, and will continue to be so.</p>
+<p>Not only are a significant number of computer systems connected to, or indeed, run from the internet, but also the ways we access corporate data have fragmented beyond recognition. Within the past decade, <a href="https://insights.samsung.com/2015/12/30/assessing-the-top-mobile-security-trends-of-2015/">mobile devices</a> have gone from being exceptional to the norm. And millions of potentially insecure devices are now being connected, in the <a href="https://insights.samsung.com/2016/01/15/staying-on-task-with-wearables-in-the-workplace-infographic/">guise</a> of the Internet of Things.</p>
+<p>So, is all lost? Not necessarily. There is still a place for a robust security architecture, built on the principle of the ’separation of concerns’ — that is, limiting risk by considering how and where business data needs to flow, and putting appropriate safeguards in place. Indeed, I wrote a <a href="http://www.amazon.com/gp/product/1780172206/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1780172206&amp;linkCode=as2&amp;tag=separatedoutp-20&amp;linkId=YUEA4K26NEZK2IDC">book</a> about it.</p>
+<p>We can talk about technical features and governance mechanisms to be built into such an architecture, as is good and proper. But data security is never, ever going to work without taking on board the most important, yet least predictable variable in the triumvirate of people, process and technology — the people.</p>
+<p>In technology industry parlance, the term ‘consumerisation’ has been used to describe our increasing propensity to use our own tech in the workplace. But the principle goes much deeper. Consider, for example, how people expect to take their phone number with them when they move companies.</p>
+<p>In general, employees will follow the rules, particularly if their contract says they have to. Acceptable Use Policies are a useful tool against direct abuses of computer systems, software and services. But you don’t need to be a behavioural psychologist to know that people hate to be told what to do if it appears pointless or indeed, counterproductive.</p>
+<p>This goes right to the top. Gone are the days when senior executives expected their emails to be printed out for them, so they could dictate a response. Today, they are as tech-enabled as the rest of us, and expect to make full use of what is available — even if it means using their own devices, due to perceived inadequacies of corporate IT.</p>
+<p>Is there an answer? Well, yes there is, but it requires looking way beyond current environments and towards the workplaces, and work forces, of the future. Not only are people becoming more tech-savvy, they are also more transient. Companies hire less and subcontract more. Where once they built, today they partner. And offices are replacing cubes with collaborative spaces.</p>
+<p>This brave new world of work is built upon a spirit of trust and collaboration, with smarter organisations drawing on the broadest pool of stakeholders — co-creating with customers, suppliers and even competitors. While this approach puts people first, it nonetheless requires boundaries to be set and enforced — but without getting in the way.</p>
+<p>Agility is key to the future, in data security as in business. For security to succeed in such a flexible environment, it needs to consider the role of data as an enabler to collaboration, as well as offering service provisioning mechanisms that are considerably more straightforward than today.</p>
+<p>If you create an environment which hinders, rather than help people to deliver on the needs of the business, you will increase, not decrease strategic business risk. While this creates a dilemma for any security professional, that does not make it wrong. As organisations evolve over the next decade, we shall see this point proven again and again.</p>
+<p><em>For more content like this, follow Samsung Business on </em><a href="http://smbz.us/Insights"><em>Insights</em></a><em>, </em><a href="http://smbz.us/Twitter"><em>Twitter</em></a><em>, </em><a href="http://smbz.us/LinkedIn"><em>LinkedIn</em></a><em> , </em><a href="http://smbz.us/YouTube"><em>YouTube</em></a><em> and </em><a href="http://smbz.us/SlideShare"><em>SlideShare</em></a><em>. </em></p>
+</div>
+<p><!-- Bitly link here --></p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/02/01/data-security-the-future-of-work-and-the-consumerisation-dilemma/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Sony making a bet on IoT</title>
+		<link>https://gigaom.com/2016/01/26/sony-making-a-bet-on-iot/</link>
+		<comments>https://gigaom.com/2016/01/26/sony-making-a-bet-on-iot/#respond</comments>
+		<pubDate>Tue, 26 Jan 2016 15:08:30 +0000</pubDate>
+		<dc:creator><![CDATA[Stowe Boyd]]></dc:creator>
+		<category domain="https://gigaom.com/company/"><![CDATA[Altair]]></category>
+		<category domain="https://gigaom.com/person/"><![CDATA[Andrew House]]></category>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/technology/"><![CDATA[camera sensors]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Internet of Things]]></category>
+		<category domain="https://gigaom.com/technology/"><![CDATA[Smart phones]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Sony]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949568</guid>
+		<description><![CDATA[Two stories in the news at the same time about Sony that draws a picture of the company&#8217;s plans. The first is&#8230;]]></description>
+				<content:encoded><![CDATA[<p>Two stories in the news at the same time about Sony that draws a picture of the company&#8217;s plans.</p>
+<p>The first is that Sony is <a href="http://www.theverge.com/2016/1/26/10832006/sony-interactive-entertainment-playstation-merger-sce-snei">forming Sony Interactive Entertainment</a> (SIE) from all the units contributing to Playstation, hardware, software, and network, effective April 1. Sony has set the new company up with a US headquarters &#8212; San Mateo, CA &#8212; with a single CEO, Andrew House. Notably, console sales are way down in Japan, <a href="http://arstechnica.com/gaming/2016/01/sony-moves-playstation-to-the-us-with-new-company-sony-interactive-entertainment/">to the lowest level in 24 years</a>, and the future looks to be mobile and handheld gaming there. But Playstation is still huge in the US, so the move makes sense.</p>
+<p>The second is that Sony is <a href="http://www.bloomberg.com/news/articles/2016-01-26/sony-agrees-to-buy-chipmaker-altair-in-internet-of-things-push">buying Altair</a>, a chip manufacturer for IoT smart appliances. This is a $212 million investment, taking the company way out of its niche in smartphone camera chips. Last year, Sony bought Toshiba&#8217;s image sensor operations, which is part of the same strategic plan: to grow into a major IoT manufacturer of chips and sensors.</p>
+<p>So, Sony continues to operate SIE, but has positioned it as a separate operating unit, so it can be spun all the way out or sold off, as the presumed decline in console games ripples through the rest of the world. In parallel, Sony is increasing its bets on IoT, and a world crammed full of smart devices, sensors, and networks to link them together.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/01/26/sony-making-a-bet-on-iot/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Sponsored post: The Road to Cloud Is a Hybrid One</title>
+		<link>https://gigaom.com/2016/01/25/the-road-to-cloud-is-a-hybrid-one/</link>
+		<comments>https://gigaom.com/2016/01/25/the-road-to-cloud-is-a-hybrid-one/#comments</comments>
+		<pubDate>Mon, 25 Jan 2016 19:58:17 +0000</pubDate>
+		<dc:creator><![CDATA[Splunk]]></dc:creator>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Blog]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Cloud]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Cloud]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Technology]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=949565</guid>
+		<description><![CDATA[The benefits of using the cloud are undeniable—from reduced infrastructure costs and license fees to increased scalability and agility. But, while every&#8230;]]></description>
+				<content:encoded><![CDATA[<p>The benefits of using the cloud are undeniable—from reduced infrastructure costs and license fees to increased scalability and agility. But, while every company has some variation of a cloud strategy on their roadmap, the move to the cloud is a journey that doesn’t happen overnight. Most often, it’s a gradual implementation because some processes must still run on-premises or in a private cloud, while others can more easily and compliantly be supported in the public cloud. </p>
+<p>Organizations are becoming more and more comfortable with a hybrid model because it makes good business sense—combining the flexibility and cost savings of the cloud with the option to keep more complex applications on-premises. There are many reasons why businesses may want to combine on-premises and cloud instances, from specific policies relating to where data can be stored, to having previously purchased on-premises solutions, to a future-focused strategy that integrates more and more cloud opportunities. In fact, a 2014 report by Infonetics Research confirms that hybrid cloud is becoming the “new normal” as adoption among enterprises was expected to more than double by 2015. </p>
+<p><strong>Hybrid Is the New Normal</strong><br />
+This new normal is your new challenge: managing a hybrid environment that consists of private and public clouds and on-premises IT infrastructures. No longer are you responsible for just managing on-premises solutions within your own borders. Now you have to manage applications across the cloud as well. To effectively meet this challenge, you’ll need visibility into all of the pieces of this increasingly diverse environment.  </p>
+<p><strong>Visibility Into the Hybrid Environment</strong><br />
+Visibility across on-premises and cloud deployments is the key to navigating the shifting tide of IT management in the hybrid world because you cannot manage what you cannot see. You’ll need visibility across the environment to gain an understanding of cloud workloads and to ensure service levels, security and compliance. </p>
+<p>In addition, you’ll need this visibility into what’s happening and why so that you can determine whether your hybrid environment is functioning as you had intended. If any of the applications that have moved to cloud aren’t performing as expected, you need to know so that you can modify your strategy. When you have refined your strategy and the workloads you’re running in the cloud are as reliable and secure as they were on-premises, you’ll want visibility into that as well, so you’ll feel ready to begin transitioning more and more workloads to the cloud.</p>
+<p><strong>Hybrid In the Real World: Gatwick Airport </strong><br />
+One organization that maintains visibility and compliance through a hybrid model is <a href="http://blogs.splunk.com/2015/11/13/gatwick-at-conf2015/" rel="nofollow">Gatwick Airport</a>. Among its other cloud solutions, Gatwick integrated Splunk Cloud into its operations to supplement its existing on-premises solution. In doing so, the team realized that combining ops data in this cloud solution gave them the agility and scalability they needed, while providing insight into airport performance. The world’s busiest single-runway airport now benefits from a seamless hybrid environment that allows them to better monitor on-time performance, optimize gates and terminals, improve predictability, manage security wait lines, reduce rail and road incidents, and more. </p>
+<p>Like other major changes in business and technology, embracing the new normal of hybrid will require a shift in mindset and corporate culture. The good news is that on-premises and cloud solutions can operate at full capacity and very much in hybrid harmony—as long as there is the right level of visibility, monitoring and insight. </p>
+<p>Find out more about how <a href="http://www.splunk.com/en_us/products/splunk-cloud/hybrid.html" rel="nofollow">Splunk solutions</a> can give you visibility across your hybrid environment. </p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/01/25/the-road-to-cloud-is-a-hybrid-one/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>IBM buys Ustream: is it a workforce communication play?</title>
+		<link>https://gigaom.com/2016/01/22/ibm-buys-ustream-is-it-a-workforce-communication-play/</link>
+		<comments>https://gigaom.com/2016/01/22/ibm-buys-ustream-is-it-a-workforce-communication-play/#respond</comments>
+		<pubDate>Fri, 22 Jan 2016 16:04:16 +0000</pubDate>
+		<dc:creator><![CDATA[Stowe Boyd]]></dc:creator>
+		<category domain="https://gigaom.com/go-type/"><![CDATA[Analyst Blog]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Cisco]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Google]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[IBM]]></category>
+		<category domain="https://gigaom.com/person/"><![CDATA[marcia connor]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Microsoft]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Social]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[streaming video]]></category>
+		<category domain="https://gigaom.com/company/"><![CDATA[Unify]]></category>
+		<category domain="https://gigaom.com/technology/"><![CDATA[Ustream Align]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[workforce communications]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=939382</guid>
+		<description><![CDATA[IBM has added Ustream to a long list of video technology company acquisitions in the recent past &#8212; like Clearleap acquired last month &#8212;&#8230;]]></description>
+				<content:encoded><![CDATA[<p>IBM has added Ustream to a long list of video technology company acquisitions in the recent past &#8212; like Clearleap acquired last month &#8212; buying the streaming video vendor for around $130 million (according to <a href="http://fortune.com/2016/01/20/ibm-ustream/">Fortune</a>). The company had raised $50 million in venture funding, and was the sole video partner involved in the launch of IBM&#8217;s cloud marketplace in 2014.</p>
+<p>The typical analysis is that this rounds out a spectrum of technologies that now make IBM a player in corporate streaming video, particularly targeting customer contact and marketing activities.</p>
+<p>But I&#8217;m betting that IBM&#8217;s primary focus will be &#8212; although not be limited to &#8212; workforce communications.</p>
+<p>Marcia Conner makes my case in a tweet.</p>
+<blockquote id="quote-ibm-acquired-video-s" class="twitter-tweet" lang="en">
+<p dir="ltr" lang="en">.<a href="https://twitter.com/IBM">@IBM</a> acquired video streamer <a href="https://twitter.com/Ustream">@Ustream</a>? Excellent! Video options usually a mess for work <a href="https://t.co/gHLuZz5L8h">https://t.co/gHLuZz5L8h</a></p>
+<p>— Marcia Conner (@marciamarcia) <a href="https://twitter.com/marciamarcia/status/690211347578101760">January 21, 2016</a></p></blockquote>
+<p><script src="//platform.twitter.com/widgets.js" async="" charset="utf-8"></script></p>
+<p>Ustream <a href="https://www.ustream.tv/product/align-secure-streaming-video">Align</a> is an inside-the-company video &#8216;collaboration&#8217; &#8212; or &#8216;workforce communication&#8217; &#8212; product built on the Ustream platform.</p>
+<p>Even though there&#8217;s a broad market of offerings from companies like Google, Microsoft, Unify, Cisco, and so on, no one has become the dominant player in video-based workforce communication, which may be the most natural solution for an increasingly mobile world.</p>
+<p>The Ustream acquisition is another indication of the rapid transition to video in workforce communications, where it is destined to be the major medium for work communications.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://gigaom.com/2016/01/22/ibm-buys-ustream-is-it-a-workforce-communication-play/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Sponsored post: Building For Success on AWS: Five Best Practice Tips</title>
+		<link>https://gigaom.com/2016/01/19/building-for-success-on-aws-five-best-practice-tips/</link>
+		<pubDate>Tue, 19 Jan 2016 19:06:55 +0000</pubDate>
+		<dc:creator><![CDATA[Splunk]]></dc:creator>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Amazon Web Services (AWS)]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[Cloud]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Cloud]]></category>
+		<category domain="https://gigaom.com/tag/"><![CDATA[saas]]></category>
+		<category domain="https://gigaom.com/topic/"><![CDATA[Technology]]></category>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=938041</guid>
+		<description><![CDATA[As AWS increasingly becomes the preferred deployment model for enterprise applications and services, it&#8217;s never been more important for a software or&#8230;]]></description>
+				<content:encoded><![CDATA[<p>As AWS increasingly becomes the preferred deployment model for enterprise applications and services, it&#8217;s never been more important for a software or AWS SaaS provider to work effectively with AWS. Many leading technology providers are therefore optimizing their software to run on AWS as well as building globally available cloud services delivered through AWS&#8217; worldwide regions. </p>
+<p>Splunk has been very pleased with the success of our SaaS business on AWS, so we thought we&#8217;d share what we&#8217;ve learned in the form of best practices for you to keep in mind when developing your software or SaaS business on AWS.</p>
+<p><strong>1.	Embrace the change</strong></p>
+<p>If you&#8217;ve attended the keynote at any recent AWS Summit, you&#8217;ve heard the message &#8220;cloud is the new normal.&#8221; Our advice is to take this to heart, and invest in your business knowing the momentum behind cloud will only continue to accelerate.</p>
+<p>This is a boon to businesses of every size and in every location around the world—cloud makes it easier than ever before to innovate, rapidly bring an offering to market and serve your customer.</p>
+<p><strong>2.	Relentlessly focus on the customer experience</strong></p>
+<p>Focusing your business on customer success is a must when building a business on AWS.</p>
+<p>Why? Because the number one driving factor behind everything AWS does is to help its customers be successful and innovative. Tactically, this can mean many things for a SaaS Partner, but the one that stands out is building technology integrations that can provide additional value to AWS customers. </p>
+<p>A good example of this involves AWS CloudTrail and AWS Config, services that deliver log data on AWS API calls around user activity and resource changes. When properly harnessed, these services help enable enterprises ensure security and compliance of their AWS deployments. A handful of SaaS Partners deliver integrations for these AWS services. The importance of these integrations is clear when you think of the importance of security and compliance for any successful AWS deployment.</p>
+<p><strong>3.	Leverage your customers in your go-to-market strategy</strong></p>
+<p>When it comes to building your software or SaaS business on AWS, nothing beats customer validation. One of the most compelling stories is when a customer fully integrates your technology into their AWS strategy.</p>
+<p>A great example of this is the Federal Industry Regulatory Authority (FINRA). FINRA is an independent regulator that examines all securities firms and their registered persons and monitors trading on U.S. markets. To respond to rapidly changing market dynamics, FINRA is moving its platform to Amazon Web Services (AWS) to analyze and store approximately 30 billion market events every day. FINRA uses <a href="http://www.splunk.com/en_us/solutions/solution-areas/cloud.html" rel="nofollow">Splunk Cloud</a> to ensure security and compliance in their AWS deployment.</p>
+<p><strong>4.	Choose AWS and go &#8220;all-in&#8221;</strong></p>
+<p>When building out your cloud strategy, you have to make choices. Our advice: When two roads diverge in the cloud, choose AWS.</p>
+<p>This is a best practice because AWS has the richest and broadest set of services in the market. If your offering is storage intensive, there are specific solutions for that; if it&#8217;s compute intensive, there are specific solutions for that; if it&#8217;s I/O intensive, there are specific solutions for that as well. Regardless of what you need on the infrastructure stack—whether it&#8217;s automated provisioning, configuration or management, AWS has a mature solution that fits the bill.</p>
+<p>In addition, business today is global. To successfully grow your business you need the ability to rapidly expand around the world. AWS offers that through their 11 worldwide regions.</p>
+<p><strong>5.	Leverage the ecosystem</strong></p>
+<p>If you&#8217;re building on AWS, chances are that other folks building on AWS will find it useful. This is what makes the AWS announcement of its SaaS Partner Program so exciting. If you&#8217;re building a SaaS storage solution, odds are we could use it for our SaaS operational and security monitoring solution. Since we&#8217;re building a SaaS operational and security monitoring solution, odds are you could use it for your SaaS storage solution.</p>
+<p>We have the opportunity to be better together on AWS for the benefit of all of our customers.</p>
+<p>To learn more about our cloud solutions, visit us <a href="http://www.splunk.com/en_us/solutions/solution-areas/cloud.html" rel="nofollow">here</a>. </p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

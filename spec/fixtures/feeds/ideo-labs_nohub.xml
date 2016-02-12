@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IDEO Labs</title>
+	<atom:link href="https://labs.ideo.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://labs.ideo.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 04 Feb 2016 17:54:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.1</generator>
+	<item>
+		<title>How We Did It: GIF Dance Party</title>
+		<link>https://labs.ideo.com/2016/02/04/how-we-did-it-gif-dance-party/</link>
+		<comments>https://labs.ideo.com/2016/02/04/how-we-did-it-gif-dance-party/#comments</comments>
+		<pubDate>Thu, 04 Feb 2016 17:45:30 +0000</pubDate>
+		<dc:creator><![CDATA[Alex S.]]></dc:creator>
+				<category><![CDATA[coding]]></category>
+		<category><![CDATA[How We Did It]]></category>
+		<category><![CDATA[animated gif]]></category>
+		<category><![CDATA[GIF]]></category>
+		<category><![CDATA[gif dance party]]></category>
+		<category><![CDATA[reddit]]></category>
+
+		<guid isPermaLink="false">https://labs.ideo.com/?p=5048</guid>
+		<description><![CDATA[I remember my first introduction to the web back in the mid &#8217;90s. It was a place of mad discovery. There was a great deal of uncertainty when clicking a link—where you would end and up and what you would see. The Internet was not a serious place. It was more of a playground, full [&#8230;]]]></description>
+		<wfw:commentRss>https://labs.ideo.com/2016/02/04/how-we-did-it-gif-dance-party/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>XX+UX</title>
+		<link>https://labs.ideo.com/2016/01/27/xxux/</link>
+		<comments>https://labs.ideo.com/2016/01/27/xxux/#comments</comments>
+		<pubDate>Thu, 28 Jan 2016 02:04:26 +0000</pubDate>
+		<dc:creator><![CDATA[Sara Breselor]]></dc:creator>
+				<category><![CDATA[coding]]></category>
+		<category><![CDATA[Hardware Sketches]]></category>
+		<category><![CDATA[Make]]></category>
+		<category><![CDATA[multi-touch]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[prototyping]]></category>
+		<category><![CDATA[serious play]]></category>
+
+		<guid isPermaLink="false">https://labs.ideo.com/?p=5007</guid>
+		<description><![CDATA[XX+UX is a series of monthly meetups for women in user experience design. Google started the series in 2013 and hosted the first event at HQ, and now, different companies have hosted more than 20 events all over the world. IDEO took its first turn as host in Palo Alto at the tail end of [&#8230;]]]></description>
+		<wfw:commentRss>https://labs.ideo.com/2016/01/27/xxux/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The Yonder Lamp</title>
+		<link>https://labs.ideo.com/2015/12/18/the-yonder-lamp/</link>
+		<comments>https://labs.ideo.com/2015/12/18/the-yonder-lamp/#comments</comments>
+		<pubDate>Fri, 18 Dec 2015 23:50:28 +0000</pubDate>
+		<dc:creator><![CDATA[Sara Breselor]]></dc:creator>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[coding]]></category>
+		<category><![CDATA[Hack]]></category>
+		<category><![CDATA[Hardware Sketches]]></category>
+		<category><![CDATA[IFTTT]]></category>
+		<category><![CDATA[internet of things]]></category>
+
+		<guid isPermaLink="false">https://labs.ideo.com/?p=4979</guid>
+		<description><![CDATA[“But soft! what light through yonder window breaks?” In Shakespeare’s Romeo and Juliet, it’s the east, but the Yonder lamp at IDEO Tokyo (which takes its name from this famous quote) brings in the light from the west—way west. The lamp projects the daylight outside IDEO’s London studio, like a digital window to the sky [&#8230;]]]></description>
+		<wfw:commentRss>https://labs.ideo.com/2015/12/18/the-yonder-lamp/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How to Hack Your Next Circuit Board Project</title>
+		<link>https://labs.ideo.com/2015/11/23/how-to-hack-your-next-circuit-board-project/</link>
+		<comments>https://labs.ideo.com/2015/11/23/how-to-hack-your-next-circuit-board-project/#comments</comments>
+		<pubDate>Mon, 23 Nov 2015 22:49:39 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Rehrig]]></dc:creator>
+				<category><![CDATA[Hack]]></category>
+		<category><![CDATA[Hardware Sketches]]></category>
+		<category><![CDATA[Tools We Like]]></category>
+
+		<guid isPermaLink="false">https://labs.ideo.com/?p=4948</guid>
+		<description><![CDATA[Here at Labs, we notice that IDEOers tend to return again and again to a few favorite themes: kitchens, snacking, and hacking. So it’s no surprise that one of our all-time favorite hacks involves a toaster oven. Here, Rob Rehrig from our Chicago office provides a step-by-step guide to cooking circuit boards. I’m always on the lookout [&#8230;]]]></description>
+		<wfw:commentRss>https://labs.ideo.com/2015/11/23/how-to-hack-your-next-circuit-board-project/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Tools We Like: Spotlight on IDEO&#8217;s EE Lab</title>
+		<link>https://labs.ideo.com/2015/11/02/tools-we-like-spotlight-on-ideos-ee-lab/</link>
+		<comments>https://labs.ideo.com/2015/11/02/tools-we-like-spotlight-on-ideos-ee-lab/#comments</comments>
+		<pubDate>Mon, 02 Nov 2015 19:00:48 +0000</pubDate>
+		<dc:creator><![CDATA[Sara Breselor]]></dc:creator>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[Hardware Sketches]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[prototyping]]></category>
+		<category><![CDATA[Tools We Like]]></category>
+		<category><![CDATA[breadboards]]></category>
+		<category><![CDATA[IDEO Palo Alto]]></category>
+		<category><![CDATA[soldering]]></category>
+
+		<guid isPermaLink="false">https://labs.ideo.com/?p=4903</guid>
+		<description><![CDATA[Mark Harrison has been building stuff at IDEO for more than 15 years (see Mark&#8217;s post on his all-time favorite workarounds). He’s one of the most knowledgeable tinkerers around, and he’s just finished putting together an electrical engineering lab at IDEO Palo Alto, stocked with every useful tool and device he could get his hands on. [&#8230;]]]></description>
+		<wfw:commentRss>https://labs.ideo.com/2015/11/02/tools-we-like-spotlight-on-ideos-ee-lab/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -9,19 +9,18 @@ class FeedChecker
     Feed.find_each do |feed|
       next if feed.status == 'error'
 
-      feed_url = feed.url
-      # feed_source_id = feed.feed_source_id
-
       # Get the feeds content
-      doc = Nokogiri::HTML(open(feed_url))
+      feed_content = open(feed.url)
 
-      # Check if feed was previously detected as pubsubhubbub
-      if feed.status != 'manually_processed' || feed.is_pubsubhubbub_supported || (
-         # Otherwise check for required hub and self fields in the feed
-         !doc.xpath('//feed/link[@rel="hub"]').empty? &&
-         !doc.xpath('//feed/link[@rel="hub"]').first.attributes['href'].value.empty? &&
-         !doc.xpath('//feed/link[@rel="self"]').empty? &&
-         !doc.xpath('//feed/link[@rel="self"]').first.attributes['href'].value.empty?)
+      # Detect the hub and rel="self" nodes
+      doc = Nokogiri::XML feed_content
+      hub = doc.xpath("//*[@rel='hub']/@href")
+      rel_self = doc.xpath("//*[@rel='self']/@href")
+
+      # Check if feed was previously detected as pubsubhubbub or if it supports it
+      if feed.is_pubsubhubbub_supported ||
+         (feed.status.present? && feed.status != 'manually_processed') ||
+         (hub[0] && hub[0].value.present? && rel_self[0] && rel_self[0].value.present?)
 
         # Update the feeds PubSubHubbub status
         feed.is_pubsubhubbub_supported = true unless feed.is_pubsubhubbub_supported
@@ -29,34 +28,26 @@ class FeedChecker
         # Update feed hub if needed
         if feed.expiration_date.nil? || feed.expiration_date < DateTime.now
 
-          webhook_url = ENV['FEED_FEEDER_DOMAIN'] + 'feeds/' + feed.id.to_s
-
-          # get feed self url
-          feed_hub_url = doc.xpath('//feed/link[@rel="hub"]').first.attributes['href'].value
-          feed_self_url = doc.xpath('//feed/link[@rel="self"]').first.attributes['href'].value
-
-          feed.url = feed_self_url
+          # Set the feed URL to the rel="self" href
+          feed.url = rel_self[0].value
 
           params = {
             'hub.mode' => 'subscribe',
-            'hub.topic' => feed_self_url,
-            'hub.callback' => webhook_url,
+            'hub.topic' => feed.url,
+            'hub.callback' => ENV['FEED_FEEDER_DOMAIN'] + 'feeds/' + feed.id.to_s,
             'hub.verify' => 'sync'
           }
 
           # verify that the subscription call has been accepted
           begin
-            RestClient.post feed_hub_url, params
+            RestClient.post hub[0].value, params
+            feed.status = 'subscribed'
 
           # there might be errors
-          rescue RestClient::UnprocessableEntity => e
+          rescue RestClient::Exception => e
             feed.status = 'error'
             feed.error_msg = e.response
-            feed.save
           end
-
-          # No exceptions, was OK
-          feed.status = 'subscribed'
         end
 
         # Save the feed, log error if there is one
@@ -71,7 +62,7 @@ class FeedChecker
         logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}" unless feed.save
 
         # Process the feeds contents
-        feed.process_feed_contents(open(feed_url))
+        feed.process_feed_contents(feed_content)
       end
     end
   end

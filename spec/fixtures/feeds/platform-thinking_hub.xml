@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Platform Thinking Blog</title>
+	
+	<link>http://platformed.info</link>
+	<description>The New Rules of Business in a Networked World</description>
+	<lastBuildDate>Wed, 27 Jan 2016 14:15:44 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.11</generator>
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/platformed" /><feedburner:info uri="platformed" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><item>
+		<title>Ten questions to answer while managing a platform, network or marketplace</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/u_iwjTM7JyY/</link>
+		<comments>http://platformed.info/ten-questions-to-answer-while-managing-a-platform-network-or-marketplace/#comments</comments>
+		<pubDate>Tue, 26 Jan 2016 13:12:26 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Strategy]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5347</guid>
+		<description><![CDATA[<p>A sneak peek into my next book (and how to get pre-launch copies) </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/ten-questions-to-answer-while-managing-a-platform-network-or-marketplace/">Ten questions to answer while managing a platform, network or marketplace</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Managing platforms involves much more than just getting the orchestration of supply and demand right. It involves much more than just getting to critical mass. There’s a whole range of issues that managers of successful platforms must constantly think about.</p>
+<p>Last year, I wrote a book ‘<a title="Platform Scale" href="http://www.amazon.com/Platform-Scale-emerging-business-investment-ebook/dp/B015FAOKJ6/" target="_blank">Platform Scale</a>’ which focused on the first part: How to build a business model that can orchestrate supply and demand and get to network effects. Much of my blog has also focused on answering some of those questions.</p>
+<p>However, over the past two years, I’ve focused my research and advisory on a much broader and more comprehensive range of platform management issues, which I will increasingly start writing more about in the coming days. This article is a first step towards laying out a set of these issues that platform builders should constantly seek to address.</p>
+<p>My next book, ‘<a title="Platform Revolution" href="http://www.amazon.com/Platform-Revolution-Networked-Transforming-Economy--/dp/0393249131/" target="_blank">Platform Revolution</a>’, lays out a comprehensive analysis of all these issues involved in running and managing platforms. Co-authored with my research partners Marshall Van Alstyne and Geoff Parker at MIT, it lays out a detailed framework for understanding all factors involved in platform strategy.</p>
+<p>I’ve written this article to share a summary of much of our work in this field, packaged as a checklist for startups as well as incumbents building platforms. These are issues explored in detail in ‘<a title="Platform Revolution" href="http://www.amazon.com/Platform-Revolution-Networked-Transforming-Economy--/dp/0393249131/" target="_blank">Platform Revolution</a>’, and the checklist below is composed of 10 questions that you should constantly seek to answer while building platforms and marketplaces.</p>
+<p><strong>1. Building network effects:</strong></p>
+<p><em>What factors create network effects on the platform?</em></p>
+<p>This is, by far, the most important question that platform builders should look to answer. The answers are much more nuanced than they appear to be. Platform growth is much more about careful design of value proposition and structuring feedback loops than it is about growth hacking.<br />
+Another key issue is management of negative network effects, where users coming on board may reduce value for certain other users on the platform. Identifying and mitigating causes of negative network effects should be an equally important part of any platform’s growth strategy.</p>
+<p><strong>2. Openness, access and immigration</strong></p>
+<p><em>Who should get access and who should not?</em></p>
+<p>Platforms work like countries; they need an immigration policy. More users isn’t necessarily always good. As mentioned above, some users can kickstart negative network effects. The platform needs to ensure that it has clear policies on who can come in and what they can do. This should also be baked into the architecture (and the algorithms) of the platform.</p>
+<p><strong>3. Governance issues</strong></p>
+<p><em>How do you govern user behavior and ensure fair distribution of incentives across all parties?</em></p>
+<p>Stretching the platform-as-country metaphor further, platforms need to be governed. They need to be governed much like countries and this is where extremely tech-focused entrepreneurs may underestimate the importance of community management and education. Airbnb and Uber, for example, have vastly different approaches to community management. One nurtures the producers, the other treats them as substitutable commodities.<br />
+Governance extends beyond community management and even moves into the realms of behavior design where certain platforms may actively manipulate user behavior to maximize network effects. Such design decisions need to be taken carefully to balance individual outcomes with network ouctome.<br />
+Much of platform governance will benefit from the many improvements in machine learning that have been achieved over the last 3 years. The best governed platforms are the ones that learn fastest from their data. The more a platform learns about its ecosystem, the more resilient it becomes.</p>
+<p><strong>4. Policy and regulation</strong></p>
+<p><em> What regulatory aspects must you factor in while governing distributed producer bases and their data?</em></p>
+<p>Policy and regulation can be tricky with platform business models. Labor and production paradigms are different. The lines between employee and ecosystem producer are often blurred. On-demand platforms are facing the heat of such regulatory issues currently. Creation of new producers can impact adjacent markets the way Airbnb has impacted the regular rental market in many US cities. Platforms also introduce new taxation issues when they start centralizing commerce and taking commerce away from local players. Finally, governing data businesses involves its own set of complications. Data residency is a contentious issue. Companies in the US arguably know more about people in India than the Indian government because of the data that several US-based platforms have about users.</p>
+<p><strong>5. Managing enemies</strong></p>
+<p><em>How can you compete and emerge the winner?</em></p>
+<p>Like all firms, platforms also face competition. But here’s the interesting thing: Just like growth, competition also works exponentially on platforms. When a competitor takes users away from a platform, the platform’s ability to compete decreases because those users were creating value on the platform. Hence, the platform becomes even more susceptible to future competition. As a result, market leading platforms may fall rapidly if a competitor starts siphoning users away.<br />
+Competitive strategy should always focus on the preservation of your own network effects and on attacking the factors that lead to network effects for competitors.</p>
+<p><strong>6. Managing friends</strong></p>
+<p><em>When can your ecosystem be a threat and how do you monitor for such occurrences?</em></p>
+<p>The uniqueness of the platform business model brings with itself the added challenge of managing friends: partners in your ecosystem who may be helping your cause today but may turn against you tomorrow. Samsung helps Google but remains an ongoing threat and did try to fork Android and create its own little ecosystem.<br />
+Managing friends &#8211; partners in your ecosystem &#8211; can often be more challenging than managing enemies. Managing friends follows from good governance and should ensure that the platform constantly monitors activity in its ecosystem. The more the platform learns about how its ecosystem behaves (from activity data), the more resilient it becomes.</p>
+<p><strong>7. Monetization</strong></p>
+<p><em> Most importantly, how do you monetize in a manner that strengthens network effects?</em></p>
+<p>Platform monetization is probably the most mind-bending of the changes that come in the shift from pipes to platforms. Monetizing pipes was simple and straightforward. “How much should we charge?” &#8211; was the key question on pipes. Platforms need to struggle with the “how much?”, “who?” and “for what?” questions. Knowing who to charge and for what value must be determined based on whether these choices strengthen or weaken network effects. Very few platforms, with extremely strong network effects, &#8211; Facebook, for example &#8211; can afford to employ monetization strategies that have a negative impact on network effects.</p>
+<p>‘<a title="Platform Revolution" href="http://www.amazon.com/Platform-Revolution-Networked-Transforming-Economy--/dp/0393249131/" target="_blank">Platform Revolution</a>’ takes a long hard look at the various nuances involved in answering all these questions, and lays out a comprehensive management framework for all platforms &#8211; new or mature, run by startups or incumbents.</p>
+<p>Additionally, there are three higher-level questions that are equally important for every platform builder to consider, that are explored in detail in ‘<a title="Platform Revolution" href="http://www.amazon.com/Platform-Revolution-Networked-Transforming-Economy--/dp/0393249131/" target="_blank">Platform Revolution</a>’:</p>
+<p><strong>8. Platforms: Good idea or bad idea?</strong></p>
+<p><em> When is a platform business model a good idea? More importantly, is there a way to predict when it might be a bad idea?</em></p>
+<p>Not all platform ideas are good. Many platforms may fail at execution but some platforms are a bad idea to start with. Much of it goes down to insufficient incentives for users to participate. Platforms that seek to internalize an interaction which is already more efficient externally are bound to fail unless they can identify new ways to make the interaction more efficient.</p>
+<p><strong>9. Startups vs. incumbents</strong></p>
+<p><em> Are there industries where startups have a natural advantage with the platform business model? Are there other industries where the incumbents will have a natural advantage?</em></p>
+<p>Are there industries where startups are better positioned to win and others where incumbents may have an advantage? Mining, for example, is an industry where incumbents are rapidly transforming themselves before startups can wrest advantage away. Likewise, an equally important consideration is to evaluate opportunities for startup platforms to collaborate with incumbent pipes in an industry where new platforms are changing dynamics rapidly.</p>
+<p><strong>10. What’s next?</strong></p>
+<p><em> Which industries are ripe for platforms to come in and change the rules of the game?</em></p>
+<p>Question 9 leads us to the final question. When platforms transform an industry, timing plays an important role. Zipcar was launched many years before Uber but failed to have a significant impact on transportation. Understanding the factors that govern timing helps platform builders determine when they should launch.</p>
+<p>‘<a title="Platform Revolution" href="http://www.amazon.com/Platform-Revolution-Networked-Transforming-Economy--/dp/0393249131/" target="_blank">Platform Revolution</a>’ covers a lot of ground on the issues laid out above. It’s all set to launch on March 28th. Over the next few weeks, I will be sharing a lot of material on the blog that addresses many of the issues laid out above.</p>
+<h3><strong>Getting copies of the book before launch</strong></h3>
+<p>My publisher, Norton, is giving out 20 early copies of the book for anyone interested in covering or reviewing the book. If you’re interested in covering or reviewing the book in a media outlet or would like to host one of the three authors on your podcast, please visit the link below and leave your email and my publisher will get back to you with an early pre-launch copy of the book.</p>
+<p style="text-align: center;"><a target="_blank" href="https://www.surveymonkey.com/r/PJR3XQ3" class="btn btn-md style-2" id="custom-id-0" style=""> <span style="color: #ffffff;">Get your pre-launch copy here</span></a>
+<h3><strong>Getting the book</strong></h3>
+<p>It has always been my express desire to freely distribute my work on platforms so that it reaches and impacts a wider audience. While my work on the blog is freely available, I had also distributed my previous book Platform Scale through a limited period free distribution. However, since Platform Revolution is coming out through the traditional publishing model, I will not have the rights to distribute the book freely. However, to provide maximum value to readers, we will be offering bonus material to readers who pre-order the book before the actual launch date of the book. We will also be running a giveaway on Goodreads soon. I will be sharing details on these shortly. Stay tuned!</p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/ten-questions-to-answer-while-managing-a-platform-network-or-marketplace/">Ten questions to answer while managing a platform, network or marketplace</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=u_iwjTM7JyY:HeuItUmGyzQ:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=u_iwjTM7JyY:HeuItUmGyzQ:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=u_iwjTM7JyY:HeuItUmGyzQ:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=u_iwjTM7JyY:HeuItUmGyzQ:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/u_iwjTM7JyY" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/ten-questions-to-answer-while-managing-a-platform-network-or-marketplace/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/ten-questions-to-answer-while-managing-a-platform-network-or-marketplace/</feedburner:origLink></item>
+		<item>
+		<title>Best of #PlatformThinking – 2015</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/-X2DPsTYfK4/</link>
+		<comments>http://platformed.info/best-of-platformthinking-2015/#comments</comments>
+		<pubDate>Wed, 09 Dec 2015 13:01:47 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Concepts]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5088</guid>
+		<description><![CDATA[<p>Holiday longreads from the year gone by </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/best-of-platformthinking-2015/">Best of #PlatformThinking &#8211; 2015</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Every year, I bring out a post in December highlighting the best articles from the year gone by.  </p>
+<p>2015 has been a great year for platforms, in general, and for my work in this space, in particular. Moving on from the activity among startups, the discussion on platforms has taken centrestage at the C-level across Fortune 500 firms. <a href="http://www.gartner.com/newsroom/id/3143018" target="_blank">Gartner declared</a> that it’s annual CIO survey reveals platform thinking as the next big focus. <a href="http://www.economist.com/news/business/21678774-europes-biggest-economy-rightly-worried-digitisation-threat-its-industrial" target="_blank">While being interviewed by The Economist,</a> I was pleasantly surprised to see Germany’s push towards platforms at all levels of the economy. I’ve also had extremely enriching experiences working with leaders across multiple industries looking to move to platform-based business models in Europe, the US and Asia.</p>
+<p>Well, back on the topic, here are the best nuggets of 2015. I usually share the top 10 articles from the year gone by. However, given the different formats launched this year, I’m going to share a combination of books, articles, slideshares and videos that I believe make the best reading at the end of the year. Here you go.</p>
+<h3>Book</h3>
+<p>By far, my most significant contribution to the study of platforms this year was the book, Platform Scale. It’s been running as a #1 bestseller on Amazon consistently since launch. You can:<br />
+1. <a href="http://www.amazon.com/Platform-Scale-emerging-business-investment-ebook/dp/B015FAOKJ6/ref=cm_cr_pr_product_top?ie=UTF8" target="_blank">Purchase the book</a>, or<br />
+2. <a href="http://www.platformscalebook.com/" target="_blank">Get free access to the first three chapters</a>, or<br />
+3. <a href="https://www.goodreads.com/giveaway/show/162893-platform-scale-how-an-emerging-business-model-helps-startups-build-larg" target="_blank">Enter the book giveaway on GoodReads</a> (before Dec 31st, 2015). </p>
+<h3>Slideshares</h3>
+<p><em>The Platform Stack: 10 startup business puzzles demystified</em></p>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/ca3JAMzl7tsiBR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin:0 auto; display:block; max-width: 100%;" allowfullscreen> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/sanguit/10-startup-business-puzzles-visualized-and-explained" title="10 Startup Business Puzzles Visualized and Explained" target="_blank">10 Startup Business Puzzles Visualized and Explained</a> </strong> from <strong><a href="//www.slideshare.net/sanguit" target="_blank">Sangeet Paul Choudary</a></strong> </div>
+<p><em>The Platform Manifesto</em></p>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/FLlwl1hCBGq1Lv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin:0 auto; display:block; max-width: 100%; " allowfullscreen> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/sanguit/the-platform-manifesto-16-principles-for-digital-transformation" title="The Platform Manifesto - 16 principles for digital transformation" target="_blank">The Platform Manifesto &#8211; 16 principles for digital transformation</a> </strong> from <strong><a href="//www.slideshare.net/sanguit" target="_blank">Sangeet Paul Choudary</a></strong> </div>
+<h3>Key articles</h3>
+<p><a href="http://platformed.info/apis-platforms-how-interfaces-access-enable-networked-economy/" target="_blank">APIs and platforms: How interfaces and access enable the networked economy</a><br />
+A detailed article/paper exploring the importance of APIs, the design considerations involved, and their impact on all business communication in a networked world.</p>
+<p><a href="http://platformed.info/uber-lyft-war-teaches-us-building-next-uber-x/" target="_blank">What the Uber-Lyft war teaches us about building the next Uber for X</a><br />
+The underlying economics of why Uber’s network effects aren’t defensible and why Lyft, GrabTaxi and Didi Kuadi are creating an alliance.</p>
+<p><a href="http://platformed.info/marketplaces-stickiness-engagement/" target="_blank">Marketplace 2.0</a><br />
+Emerging design principles for creating high engagement marketplaces.</p>
+<p><a href="http://platformed.info/platform-stack/" target="_blank">The Platform Stack</a><br />
+A simple, yet comprehensive, framework to understand different types of platforms.</p>
+<h3>Videos</h3>
+<p><em>Emerging patterns in disruption and transformation &#8211; Panel from the G20 Summit 2014 events</em></p>
+<p><iframe style="text-align:center;margin:0 auto; display:block;" width="420" height="315" src="https://www.youtube.com/embed/Ph6RQibr0yU" frameborder="0" allowfullscreen></iframe></p>
+<h3>Library</h3>
+<p>Finally, I also launched <a href="http://platformthinkinglabs.com/library/" target="_blank">the Platform Thinking Library</a> this year which has all the articles on this blog available in downloadable PDF format.</p>
+<hr />
+<h3>What’s next</h3>
+<p>Alongside the launch of Platform Revolution, I will be launching the following in the first half of 2016:</p>
+<p>1. A series of 10-12 slide decks during the first four months of the year, capturing the key ideas in every chapter of the upcoming book Platform Revolution.<br />
+2. A series of free ebooks on various themes around platforms.<br />
+3. An educational module going to deep strategic and implementation detail on platform execution. </p>
+<p>Stay tuned as we continue our journey into the world of platforms in 2016. </p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/best-of-platformthinking-2015/">Best of #PlatformThinking &#8211; 2015</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=-X2DPsTYfK4:RJjRZMJBZOQ:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=-X2DPsTYfK4:RJjRZMJBZOQ:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=-X2DPsTYfK4:RJjRZMJBZOQ:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=-X2DPsTYfK4:RJjRZMJBZOQ:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/-X2DPsTYfK4" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/best-of-platformthinking-2015/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/best-of-platformthinking-2015/</feedburner:origLink></item>
+		<item>
+		<title>The Platform Manifesto</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/LvBh4w58hi8/</link>
+		<comments>http://platformed.info/the-platform-manifesto/#comments</comments>
+		<pubDate>Tue, 01 Dec 2015 12:32:11 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Concepts]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5069</guid>
+		<description><![CDATA[<p>The new rules of business in a world of networks and data  </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/the-platform-manifesto/">The Platform Manifesto</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>One of the key themes I explore in my work is the shift from pipes to platforms. I’ve written an entire book dedicated to this theme, Platform Scale, and through this post, I’d like to lay out a set of concepts that are explained in Chapter 1.2 of the book as The Platform Manifesto.</p>
+<p>The Platform Manifesto is a collection of principles that succinctly defines how different aspects of business transform in a world of platforms. The deck below is a comprehensive overview of the contrast between pipe scale and platform scale: the way in which businesses scaled in the world of pipes vs. the way in which businesses scale in a world of platforms.</p>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/FLlwl1hCBGq1Lv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin:0 auto; display:block; max-width: 100%;" allowfullscreen> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/sanguit/the-platform-manifesto-16-principles-for-digital-transformation" title="The Platform Manifesto - 16 principles for digital transformation" target="_blank">The Platform Manifesto &#8211; 16 principles for digital transformation</a> </strong> from <strong><a href="//www.slideshare.net/sanguit" target="_blank">Sangeet Paul Choudary</a></strong> </div>
+<p>The key principles of the platform manifesto are as follows:</p>
+<ol>
+<li>The ecosystem is the new warehouse</li>
+<li>The ecosystem is also the new supply chain</li>
+<li>The network effect is the new driver for scale</li>
+<li>Data is the new dollar</li>
+<li>Community management is the new human resource management</li>
+<li>Liquidity management is the new inventory control</li>
+<li>Curation and repetition are the new quality control</li>
+<li>User journeys are the new sales funnels</li>
+<li>Distribution is the new destination</li>
+<li>Behavior design is the new loyalty program</li>
+<li>Data science is the new business process optimization</li>
+<li>Social feedback is the new sales commission</li>
+<li>Algorithms are the new decision makers</li>
+<li>Real-time customization is the new market research</li>
+<li>Plug-and-play is the new business development</li>
+<li>The invisible hand is the new iron fist</li>
+</ol>
+<p>The deck above explains and illustrates these ideas in great detail.</p>
+<p>If you haven’t seen my work on pipes vs. platforms before, I’ve included key ideas below the deck. If you’re well acquainted with the idea, please feel free to dive directly into the deck above.</p>
+<h3>More on pipes vs. platforms </h3>
+<p>As I explain in my book Platform Scale, an unconnected world encouraged the flow of value predominantly through pipes:  </p>
+<p><em>&#8220;Pipes have long served as the dominant business design for the industrial economy. Firms build products or craft services, push them out, and sell them to customers. Value is produced upstream and consumed downstream, creating a linear flow of value, much like water flowing through a pipe. In effect, pipes were designed to enable the flow of value in a straight line.<br />
+Pipes appear in nearly every area of modern industry. The traditional manufacturing supply chain runs on a pipe model. Every consumer good that finds its way into our hands comes down a pipe that constantly adds value to the product. Our service organizations work like pipes; they aggregate the resources for service provision and deliver those services to clients. Traditional media – television, radio, and newspapers – are pipes pushing content to us. Our education system often works like a pipe where teachers push “knowledge” to receptive students. There is a linear movement of value from a producer to one or many consumers in all examples of pipe businesses.&#8221;</em></p>
+<p>This is in contrast with the platform model of business design that we increasingly see gaining traction around us over the last few years. </p>
+<p><em>&#8220;We are in the midst of transformative shift in business design as business models move from pipes to platforms.<br />
+Three forces today – increasing connectedness, decentralized production, and the rise of artificial intelligence – are driving a whole new design for business.<br />
+The emerging design of business is that of a platform. Some of the fastest-scaling businesses of the last decade – Google, Facebook, Apple, Uber, and Airbnb – leverage the platform business model. These businesses create a plug-and-play infrastructure that enables producers and consumers of value to connect and interact with each other in a manner that wasn’t possible in the past. Facebook provides an infrastructure for users to connect with each other and enables interactions between them. Uber coordinates drivers and passengers toward economic exchanges. Many businesses today act as platforms enabling interactions among their participants.<br />
+Platforms allow participants to co-create and exchange value with each other. External developers can extend platform functionality using its APIs and contribute back to the very infrastructure of the business. Platform users who act as producers can create value on the platform for other users to consume.<br />
+This changes the very design of the business model. While pipes created and pushed value out to consumers, platforms allow external producers and consumers to exchange value with each other.&#8221; </em></p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/the-platform-manifesto/">The Platform Manifesto</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=LvBh4w58hi8:GOLj8r-KMAM:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=LvBh4w58hi8:GOLj8r-KMAM:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=LvBh4w58hi8:GOLj8r-KMAM:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=LvBh4w58hi8:GOLj8r-KMAM:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/LvBh4w58hi8" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/the-platform-manifesto/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/the-platform-manifesto/</feedburner:origLink></item>
+		<item>
+		<title>On execution: Building platforms</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/HiQ5meOa48k/</link>
+		<comments>http://platformed.info/on-execution-building-platforms/#comments</comments>
+		<pubDate>Thu, 05 Nov 2015 13:25:28 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Concepts]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5061</guid>
+		<description><![CDATA[<p>Doing things right vs. doing the right things </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/on-execution-building-platforms/">On execution: Building platforms</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I’m often asked what got me into platforms in the first place.</p>
+<p>There are two ways of stumbling upon a concept/idea, and eventually, you’ll see both these paths intersect.</p>
+<h3>THE ACADEMIC MIND VS. THE ENTREPRENEUR MIND</h3>
+<p>The first way is what I think of as the academic’s way. You’ve got a ton of research that’s been done in the past and you want to build on that. You broadly know the theme that interests you, you don’t yet know the problem.</p>
+<p>The second way is what I’d call the entrepreneur’s way. You start with a problem. You try to figure out a solution that applies to all instances of the problem.</p>
+<p>In the first way, starting with research eventually leads to identifying a problem waiting to be solved. If it doesn’t, you simply regurgitate what’s already been done. But truly great work emerges once a problem is found and connections are made.</p>
+<p>In the second way, unpacking the problem leads you to a point of research which subsequently leads you to making new connections building a model as a solution. Subsequently, you stress-test that model with different cases till a robust solution model is obtained.</p>
+<h3>THE HOW AND THE WHAT OF EXECUTION</h3>
+<p>My journey into platforms has followed the entrepreneur’s way. It started with an obsession with trying to understand why certain startups fail and why others don’t.</p>
+<p>While a lot of failure may simply go back to the ‘how’ of execution, that itself isn’t sufficient to explain failure. Much of failure stems from the ‘what’ of execution.</p>
+<p>The difference between the ‘how’ and the ‘what’ is a difference between ‘Doing things right’ and ‘Doing the right things’.</p>
+<p>The lean startup and other similar ideas try to address the ‘How’ of execution. They focus on doing things right without telling you what to do.</p>
+<p>My journey into platforms started with trying to figure out whether not ‘doing the right things’ was coming in the way of success despite ‘doing things right’. As I dug more into this, I realized that a lot of failure in not ‘doing the right things’ stemmed from the fact that business models were fundamentally changing and the choices that led to success of networked business models were often not intuitive. A few repeated choices of this sort are the following:</p>
+<p>1. Not charging all your users<br />
+2. Using one set of users to attract another set of users<br />
+3. Making users pay with data<br />
+4. Designing for opt-in behavior vs. lock-in behavior<br />
+5. Looking for levers of scarcity in a world where everything seems abundant</p>
+<p>There are may other such choices unique to networks and platforms, and that’s what eventually captured my fancy: understanding these systems and the disparate counter-intuitive choices they present.</p>
+<h3>PLATFORM SCALE</h3>
+<p>I summarize a lot of these choices in Section 1 of my book Platform Scale. If you haven’t already, you can <a href="http://www.amazon.com/Platform-Scale-emerging-business-investment-ebook/dp/B015FAOKJ6/" target="_blank">get the book here</a>. Or <a href="http://www.platformscalebook.com/" target="_blank">download the first 3 chapters here</a>, which highlight several of these choices.</p>
+<p>As I’ve looked through all the counter-intuitive choices that networks and platforms involve and as I’ve implemented these across industries, both with mature firms and with startups, I’ve come to realize that almost all these choices stem from understanding one simple starting point: Platform business models are not built around a user or a process but around an interaction between users.</p>
+<p><img src="http://platformed.info/platformed.info/wp-content/uploads/2015/11/execution-image-1.jpg" alt="execution-image-1" width="1024" height="768" class="aligncenter size-full wp-image-5064" /></p>
+<p>This insight is as powerful as it is simple. It may sound obvious, but it’s repeatedly forsaken in the favor of building technology and seeing what happens. Sometimes, the urgency to keep launching (doing things right) relegates the need for careful design considerations (doing the right things). As a result, I focus a lot of my book on this particular topic. The whole idea of business design is going to be much more important in the days ahead. Our traditional products and services used to inhabit systems and work within them. They would work within the defined roles of stakeholders in that system. Platforms often lead to the creation of entirely new systems and entirely new stakeholders who would never have existed in the past.</p>
+<p style="text-align: center;"><strong>If you want to do the right things, you need to balance the constant innovation, iteration and testing with careful design centered around the core interaction.</strong></p>
+<p>If anything, that should be the main message you take from all my work on this subject. Every other thing I write about centers around this main message. A lot of complex decisions start becoming obvious once you understand this main message. This, of course, involves a lot of detail: the structure of the interaction, the goal of the platform, the balance of openness and governance. We can spiral off into decisions of ever-increasing complexity but all of them come back to the central simple principle:</p>
+<p style="text-align: center;"><strong>Do what increases the quality and the quantity, the repeatability and the efficiency of the core interaction. </strong></p>
+<p>That is the central message of building platforms and achieving <a href="http://www.amazon.com/Platform-Scale-emerging-business-investment-ebook/dp/B015FAOKJ6/" target="_blank">Platform Scale</a>. </p>
+<p><img src="http://platformed.info/platformed.info/wp-content/uploads/2015/11/execution-image-2.jpg" alt="execution-image-2" width="1024" height="768" class="aligncenter size-full wp-image-5063" /></p>
+<p>&nbsp;</p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/on-execution-building-platforms/">On execution: Building platforms</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=HiQ5meOa48k:Wp6IjqZTZaY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=HiQ5meOa48k:Wp6IjqZTZaY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=HiQ5meOa48k:Wp6IjqZTZaY:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=HiQ5meOa48k:Wp6IjqZTZaY:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/HiQ5meOa48k" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/on-execution-building-platforms/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/on-execution-building-platforms/</feedburner:origLink></item>
+		<item>
+		<title>THE PLATFORM THINKING LIBRARY LAUNCH</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/zLwIAg0h3yI/</link>
+		<comments>http://platformed.info/the-platform-thinking-library-launch/#comments</comments>
+		<pubDate>Wed, 07 Oct 2015 14:30:47 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Announcements]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5057</guid>
+		<description><![CDATA[<p>A free and fully downloadable library of every article I have ever written </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/the-platform-thinking-library-launch/">THE PLATFORM THINKING LIBRARY LAUNCH</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve decided to offer all of the articles I have ever written as a <a title="Platform Thinking Library" href="http://platformthinkinglabs.com/library/" target="_blank">fully downloadable library</a>. Every article on this blog and beyond is available as a beautifully designed PDF that can be downloaded to your tablet or printed out for easy reading.</p>
+<p><a title="Platform Thinking Library" href="http://platformthinkinglabs.com/library/" target="_blank">Click here to get to the library</a>.</p>
+<p>The library currently has<br />
+1. The Platform Scale book (<a title="Platform Scale - Amazon" href="http://www.amazon.com/Platform-Scale-emerging-business-investment-ebook/dp/B015FAOKJ6/" target="_blank">free download till 9th October</a>)<br />
+2. The first article collection: Topic &#8211; Disruption<br />
+3. Every blog article ever written in downloadable PDF format</p>
+<p>I hope you find this new format content useful. If you’d like to, feel free to share this with your network on <a title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://platformthinkinglabs.com/library/" target="_blank">Facebook</a> or <a title="Share on Twitter" href="https://twitter.com/home?status=%23PlatformScale%20Library:%20Collection%20of%20best%20essays%20from%20Platform%20Thinking%20Labs%20by%20@sanguit%20-%20http://platformthinkinglabs.com/library%20" target="_blank">Twitter</a>.</p>
+<p>Not everyone wants to consume content on blogs. Some readers prefer carrying their reading material in their tablets. Others may want to share content with colleagues as attachments rather than as links. If anything, this is my way of applying <a title="Destination vs. Distribution: Why your product should be where your users are!" href="http://platformed.info/destination-distribution-product-traction-widget/" target="_blank">the distribution vs. destination</a> principle to my work. Spread, and hence impact, is higher when we move from destination thinking to distribution thinking.</p>
+<p>Moreover, I often work in an advisory capacity with companies that have been following my work and have been implementing many of these concepts. Quite often, when I walk in, I realize that some of these articles are exchanged within the organization as PDFs or stuck on walls as printouts. Noting behavior that was fairly frequent, I felt it made sense to solve for usage that I was already seeing.</p>
+<p>I will be launching a lot more content in the weeks ahead. On the occasion of the launch of my book (and during the free week), I wanted to kick off these new content launches by offering the entire blog in neatly formatted downloadable format. <a title="Platform Thinking Library" href="http://platformthinkinglabs.com/library/" target="_blank">Once again, here&#8217;s the link to the library</a>.</p>
+<p>Stay tuned for more.</p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/the-platform-thinking-library-launch/">THE PLATFORM THINKING LIBRARY LAUNCH</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=zLwIAg0h3yI:9Jfv4zU-bNA:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=zLwIAg0h3yI:9Jfv4zU-bNA:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=zLwIAg0h3yI:9Jfv4zU-bNA:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=zLwIAg0h3yI:9Jfv4zU-bNA:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/zLwIAg0h3yI" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/the-platform-thinking-library-launch/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/the-platform-thinking-library-launch/</feedburner:origLink></item>
+		<item>
+		<title>Announcing the launch of my first book, Platform Scale</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/v62OfL5s9xA/</link>
+		<comments>http://platformed.info/announcing-the-launch-of-my-first-book-platform-scale/#comments</comments>
+		<pubDate>Thu, 01 Oct 2015 15:33:57 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Announcements]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5051</guid>
+		<description><![CDATA[<p>How an emerging business model helps startups build large empires </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/announcing-the-launch-of-my-first-book-platform-scale/">Announcing the launch of my first book, Platform Scale</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve been working on a couple of books this year. The first one, Platform Scale, launched on Amazon a few days back and is currently an Amazon #1 best-seller. The second one, Platform Revolution, co-authored with my research partners Marshall Van Alstyne and Geoffrey Parker, launches early next year and is being published by WW Norton. More on that soon.</p>
+<p></p>
+<p>But first… Platform Scale.</p>
+<p></p>
+<p>Platform Scale is my most comprehensive work yet on the design, execution and growth of platform business models. It brings together years of research and insights gathered from implementation across both startups and large enterprises into one single volume. It lays out a structured approach for designing and growing a platform business model and addresses the key factors leading to the success and failure of these businesses.</p>
+<p></p>
+<div style="margin: 0 auto;display: block;width: 100%;text-align: center;margin-bottom: 20px;"><img src="http://platformed.info/platformed.info/wp-content/uploads/2015/10/platform-scale-book-cover200.png" alt="" /><br />
+<a style="" href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px; text-transform: uppercase;" type="submit" value="Buy on amazon" /></a></div>
+<p></p>
+<p>Ever since launch, I&#8217;ve received quite a few questions from readers. I’m answering  them below in FAQ format for others who may have similar questions.</p>
+<p></p>
+<p><b>What are the core ideas discussed in Platform Scale?</b></p>
+<p>Platform scale is structured around six core concepts (a section covering each) involved in platform design and execution. Here&#8217;s how they stack up.</p>
+<p></p>
+<p><i>1. Understanding factors that drive today&#8217;s successful platforms</i></p>
+<p>This section explores the underlying shifts underway in the economy that lead to the rise of platform scale businesses. It explores how value creation is shifting from Pipes (linear value movement) to Platforms (two or multi-section value movement) and explores five key factors that every business with platform scale benefits from.</p>
+</p>
+<p></p>
+<p><i>2. Designing the Interaction First Platform</i></p>
+<p>The second section lays out a structured approach to building an interaction-first platform. This section describes the key elements of a platform business model and lays out the platform canvas, a one-pager design tool to plan and design complex platform implementations.</p>
+</p>
+<p></p>
+<p><i>3. Counter-intuitive execution factors</i></p>
+<p>The third section is all about execution. It focuses on execution factors that are counter-intuitive to traditional business logic. How can you fail despite being user-focused? When is friction a good idea in design and when is it a bad idea? How do you move users from usage to participation in business? What can the designers of online ecosystems learn from the designers of offline social spaces? How can a business lock-in users in a world of opt-in, open platforms?</p>
+<p></p>
+<p><i>4. Solving the Chicken or the Egg Problem</i></p>
+<p>The fourth section explores the age-old problem of sparking interactions and offers a framework for choosing certain methods over others.</p>
+<p></p>
+<p><i>5. Virality &#8211; Scale in a Networked World</i></p>
+<p>Analyzing the spread of diseases and ideas, this section lays out a framework for baking virality into the core use case of an offering.</p>
+<p></p>
+<p><i>Section 6 &#8211; Reverse Network Effects</i></p>
+<p>This section rounds off with a discussion of some of the problems associated with platform scale business and how to best approach them.</p>
+<p>Platform Scale ends with a framework for applying this thinking in large enterprises, while accounting for the unique challenges such enterprises face. I leverage my experience of having advised several large enterprises on their platform strategy to contrast how platform implementation at a large firm is very different from such implementation at a startup.</p>
+<p></p>
+<p><b>I read your ebook Platform Power. Is this the same thing or is it different?</b></p>
+<p>No, this is an entirely different product covering very different material. Platform Power was a collection of introductory articles on this topic. Platform Scale is the first comprehensive coverage of my work on platforms looking particularly deeply at design and growth issues for platform businesses.</p>
+<p></p>
+<p><b>Thanks for bringing this out. How can I help?</b></p>
+<p>Thanks for your interest. You could help by supporting the Thunderclap campaign as book promotion goes live next week when the book will be available for free for a limited time period. <a href="https://www.thunderclap.it/projects/31948-platform-scale-book-launch" target="_blank"><span>Click here to support the campaign</span></a>.</p>
+<p>Once you&#8217;ve read the book, you could also help by <a href="http://www.amazon.com/Platform-Scale-emerging-business-investment-ebook/dp/B015FAOKJ6/%23customerReviews" target="_blank"><span>sharing a review for the book on Amazon</span></a>.</p>
+<p>Finally, if you believe you could help this message reach a larger audience within your network, <a href="mailto:sangeet@platformthinkinglabs.com" target="_blank"><span>please feel free to reach out and discuss</span></a>.</p>
+<p></p>
+<p><b>Are there other content launches planned going forward? </b></p>
+<p>Platform Scale is the first of many content launches planned in the days ahead.</p>
+<ol>
+<li>In mid-October, I will also be launching the Platform Thinking Library, a compendium of all blog articles in downloadable format for reading on the tablet.</li>
+<li>Many subsequent articles will focus on explaining how to build platforms with the platform canvas.</li>
+<li>Highly curated courses to explore the impact of platforms in specific sectors will also be launched subsequently.</li>
+</ol>
+<p>Hope you enjoy reading the book. I’d love to hear your feedback.</p>
+<div style="margin: 0 auto;display: block;width: 100%;text-align: center;margin-bottom: 20px;"><img src="http://platformed.info/platformed.info/wp-content/uploads/2015/10/platform-scale-book-cover200.png" alt="" /><br />
+<a style="" href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px; text-transform: uppercase;" type="submit" value="Buy on amazon" /></a></div>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/announcing-the-launch-of-my-first-book-platform-scale/">Announcing the launch of my first book, Platform Scale</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=v62OfL5s9xA:F8b-BxJCcDc:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=v62OfL5s9xA:F8b-BxJCcDc:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=v62OfL5s9xA:F8b-BxJCcDc:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=v62OfL5s9xA:F8b-BxJCcDc:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/v62OfL5s9xA" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/announcing-the-launch-of-my-first-book-platform-scale/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/announcing-the-launch-of-my-first-book-platform-scale/</feedburner:origLink></item>
+		<item>
+		<title>Interview: How data helps large enterprises move to platforms</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/ZAwODWrBJHQ/</link>
+		<comments>http://platformed.info/interview-how-data-helps-large-enterprises-move-to-platforms/#comments</comments>
+		<pubDate>Thu, 20 Aug 2015 13:34:01 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Disruption and Transformation]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5044</guid>
+		<description><![CDATA[<p>The importance of data acquisition and data porosity in the shift of large enterprises to platforms </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/interview-how-data-helps-large-enterprises-move-to-platforms/">Interview: How data helps large enterprises move to platforms</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><em>I was recently interviewed by <a href="http://www.businesstoday.in/magazine/features/how-platforms-will-become-critical-for-businesses/story/218895.html">Business Today</a>, a leading business magazine, on the implications of platforms for large enterprises. This interview captures a lot of thinking from my upcoming book Platform Scale whose public launch is scheduled for early September. </em></p>
+<p><strong>BT:</strong> What exactly is platform thinking?</p>
+<p><strong>Choudary:</strong> Traditionally, businesses worked on a very linear model. Firms would assemble and deliver products and services to a market of consumers. Producers and consumers held very distinct roles. And this value creation happened inside a firm and was managed through a hierarchical organization. This was because value creation required the aggregation of resources and processes.<br />
+The real business impact of the Internet is that it now allows this aggregation to happen in a much more distributed manner. They do not need to be aggregated inside a firm any longer. This is giving rise to platform thinking. In India, we&#8217;re seeing companies like Flipkart and Snapdeal bring together an entire ecosystem of merchant partners and companies like Redbus using platform thinking to aggregate a highly inefficient and fragmented transportation market.<br />
+The Internet, today, provides an opportunity for businesses to create a platform and leverage an external ecosystem of producers to create value. This, in turn, allows the businesses to create and own entirely new markets when consumers come on board. It&#8217;s giving rise to a new age of monopolies that do not exercise power through control over physical resources but through orchestration of digital and physical resources using data.</p>
+<p><strong>BT:</strong> Will the platform model overtake all others?</p>
+<p><strong>Choudary:</strong> I believe that as platforms become more popular, the really large plays will be in becoming platforms while a host of smaller companies will co-exist around these platforms and operate in various niches. We already see this with YouTube that has allowed a host of new media houses to spring up that distribute exclusively through YouTube. Or Airbnb, which has allowed anyone with a spare room to run a B&amp;B. Elance-Odesk or Freelancer allow people to turn to freelancing by offering them access to a market.<br />
+So platforms are going to be the really big plays but there is every reason for inventory-owned companies to co-exist. A platform approach helps companies create an infrastructure for all these other companies and benefit from owning all these interactions.</p>
+<p><strong>BT:</strong> How can large enterprises change their linear model and adopt a platform approach?</p>
+<p><strong>Choudary:</strong> The first step a traditional company needs to take is cultural. It needs to create a culture of data acquisition. All companies today have a culture of revenue acquisition. The sales reps who get in revenue are incentivised accordingly. The companies will need to move to creating a culture of data acquisition as well. As companies like LinkedIn demonstrate, the more data you acquire, the more ways you can make money. LinkedIn acquires way more data from its users than Monster ever did, and this helped it create a much larger job market than Monster&#8217;s.<br />
+The second change that the companies need to bring is infrastructural. They need to restructure their internal systems to be more data-porous. Today, most organisations use IT but they work in silos. There is minimal data exchange between units internally, a recipe for disaster. Companies need to move towards adopting internal APIs that allow the exchange of data and information internally between business units.<br />
+A combination of data acquisition and data porosity is the most important step towards moving to platform models. The companies that acquire and leverage data well will find new ways of understanding their users and allowing them to participate in the business in new forms. Toyota, GM and Ford are becoming data acquiring companies. Their cars constantly stream data about usage and this helps them better predict after-sales service and also allows them to monetize this data by selling it to insurance companies.</p>
+<p><strong>BT:</strong> Isn&#8217;t the platform model a bit risky given that it is only as good as the users who gather to use it?</p>
+<p><strong>Choudary:</strong> Yes, and this is why you need to be very careful about the kinds of users and partners you attract. This can be done in various ways. Some platforms restrict who can get access to start creating a culture gradually among its users. Think of Facebook restricting usage to Harvard, and subsequently to other Ivy Leagues, or Quora getting initial traction in Silicon Valley. Platforms also invest in regular user education and culture-creation initiatives. Airbnb trains its hosts regularly on best practices.<br />
+On the flip side, we&#8217;ve seen platforms like Chatroulette being overrun by the wrong kinds of users and dying an early death. It was as anonymous video chatting platform and the anonymity made way for all forms of unpleasant encounters, leading to users leaving the platform.<br />
+To ensure that the right users come on board, platforms need to start with a closely controlled launch, keep curating user access on an ongoing basis and ensure that they invest in user education and culture.</p>
+<p><strong>BT:</strong> How do you scale up platforms?</p>
+<p><strong>Choudary:</strong> Platforms scale very well for a multitude of reasons:</p>
+<p><em>Network effects:</em> This is the most important driver for platform scale. More production activity on the platform attracts more consumption, which, in turn, attracts more production. This is a self-reinforcing virtuous loop that scales the platform. More ride availability on Uber attracts more travellers, which, in turn, attracts more drivers, leading to higher ride availability. We see this with most platform business models.</p>
+<p><em>Near-zero marginal costs:</em> The Internet has always allowed near-zero marginal costs of distribution. That is why the news industry got disrupted because the cost of distributing an extra unit of news (a news article) over the Internet, is nearly zero. This helps digital businesses scale in general. But platforms scale even better because they also benefit from near-zero marginal costs of creation. If a hotel has to add more rooms, it has to create buildings, own rooms and service them regularly. Airbnb can add more rooms at near-zero marginal costs of adding a new room. This is why non-inventory-based models like platforms scale so well.</p>
+<p><em>Virality:</em> A unique phenomenon of networks where users of a product or service help spread that product or service by spreading content about it. Instagram grew viral because new users came to know of it every time someone clicked a photo on Instagram and shared it on Facebook. Platforms benefit from strong virality, and this helps them scale even faster.</p>
+<p><strong>BT:</strong> You have applied rules from gaming in the platform thinking approach. How does that work?</p>
+<p><strong>Choudary:</strong> The platform thinking approach needs to ensure that every individual is appropriately incentivised to create value. As long as every individual user is appropriately incentivised to participate on Facebook, the news feed for all users remains fresh and active.<br />
+In The Wealth of Nations, Adam Smith observes: &#8220;Every individual&#8230; intends only his own gain, and he is&#8230; led by an invisible hand to promote an end which was not part of his intention&#8230; By pursuing his own interest he frequently promotes that of the society more effectually than when he really intends to promote it.&#8221; This is an interesting observation that shows that larger goals of societies and economies can be achieved by ensuring profitable work at the individual level.<br />
+This &#8216;invisible hand&#8217; applies really well in implementing platforms. When you&#8217;re getting millions of users and partners to co-create value for your business, you need to ensure they are appropriately incentivised at an individual level. While society has always worked this way, our firms have been managed by iron-fisted internal control, not by an invisible hand that assures larger goals by ensuring individual incentives.<br />
+In the absence of great business literature on architecting such incentives, I turned to studying game design where the invisible hand phenomenon plays out. Small, seemingly innocent actions, by every individual player in an MMORPG (massively multiplayer online role playing games) are designed in a way that the gaming environment and conditions change in real-time for the good of all participants. Designing games is probably the closest analogy to designing activity on platforms. There are some rules of play, but most outcomes emerge from a combination of rules and carefully incentivized user actions.</p>
+<p style="text-align: left;"><strong>If you did not pre-order Platform Scale, you can still get on the waiting list and be among the first to be informed of the public launch by <a href="http://www.platformscalebook.com/">signing up here</a>.</strong></p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/interview-how-data-helps-large-enterprises-move-to-platforms/">Interview: How data helps large enterprises move to platforms</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=ZAwODWrBJHQ:iBjz-NwYbfU:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=ZAwODWrBJHQ:iBjz-NwYbfU:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=ZAwODWrBJHQ:iBjz-NwYbfU:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=ZAwODWrBJHQ:iBjz-NwYbfU:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/ZAwODWrBJHQ" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/interview-how-data-helps-large-enterprises-move-to-platforms/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/interview-how-data-helps-large-enterprises-move-to-platforms/</feedburner:origLink></item>
+		<item>
+		<title>G20 Summit: Emerging Opportunities in Platform-enabled disruption</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/NkeSMB3OxzY/</link>
+		<comments>http://platformed.info/g20-summit-emerging-opportunities-in-platform-enabled-disruption/#comments</comments>
+		<pubDate>Wed, 10 Jun 2015 12:09:12 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Disruption and Transformation]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5031</guid>
+		<description><![CDATA[<p>The next few sets of disruptive opportunities that aren't readily obvious yet </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/g20-summit-emerging-opportunities-in-platform-enabled-disruption/">G20 Summit: Emerging Opportunities in Platform-enabled disruption</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>The last article posited that <a href="http://platformed.info/how-platforms-reconfigure-industries/" target="_blank">pipe-based business models will continue to exist with platform-based business models</a>. This is an important issue that both, pro-disruption and anti-disruption camps, fail to appreciate entirely. As the world gets more connected, every industry will open up opportunities for platform disruption and digital transformation. As the popular saying goes, in the future (and even now), every industry is a tech industry.</p>
+<p><em><b>I was invited on a panel at the G20 World Summit&#8217;s Global Cafe stage last year in Brisbane to discuss the impact of platform-based business models and the opportunities that will emerge in the coming days. As a follow-up to the previous article, this article lays out key platform opportunities that I see becoming increasingly important in the days ahead. </b></em></p>
+<p>The video from the panel is available below. Following the video, I&#8217;ve listed key insights from the discussion that, I believe, will help us identify the next big platform opportunities.</p>
+<div style="text-align:center">
+<iframe src="https://www.youtube.com/embed/Ph6RQibr0yU" width="640" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
+<h3>Key trends enabled by platforms</h3>
+<p><b>Opportunity for entrepreneurs to create and orchestrate entire markets using digital platforms:</b> By connecting multiple stakeholders and multiple forms of demand and supply, platforms enable the creation and management of entirely new markets.</p>
+<p><b>Platforms as the mechanism for delivering data-enabled services:</b> Nest is just one of many examples of today&#8217;s shift towards data-powered digital services. Companies will increasingly launch data-absorbing products (even physical products, thanks to what we call the internet of things) and the absorbed data will serve as the basis for delivering monetizable services. Increasingly, in these models, the data will subsidize the cost of product ownership. This has a host of attendant privacy issues, as does anything related to data, but there will be several use cases where the benefit received is higher than the perceived cost of sharing data.</p>
+<h3>Less visible forms of disruption that are going to be big in the years ahead</h3>
+<p><b>Reintermediation of information-intensive but highly regulated industries:</b> Banking, healthcare and education are as information-intensive as media and telecom, that have already been disrupted. However, the transaction risks in these categories are way too high for distributed curation to work effectively.</p>
+<p><b>Reorganization of supply chains on networks:</b> Platforms are moving from matchmaking functions to large-scale coordination functions. I believe this is where the most complex problems remain to be solved, and this is where the best opportunities may emerge in the future.</p>
+<p><b>Resource-intensive industries moving to platforms:</b> Traditional resource-intensive industries like mining and oil &amp; gas will also move towards platform approaches. We often fail to understand resource-intensive industries as information-intensive but there are a host of functions in these industries (e.g. prospecting, internal knowledge markets in large distributed organizations, equipment automation and intelligence etc.) that are information-intensive and can vastly benefit from the creation of platforms that integrate these information flows and the consequent movement of goods and services.</p>
+<h3>Job creation in platform-mediated ecosystems</h3>
+<p>Platforms enable the creation of an entire ecosystem around themselves. This leads to more opportunities to solve new business problems and create more jobs. While YouTube allows anyone to run a media company and Airbnb allows anyone to run a B&amp;B, there are a host of service providers that help the producers on these platforms do their job better. This is reminiscent of how Google as a platform spawned an entirely new set of advertising agencies in emerging markets, who no longer needed big brand contacts, but could sell Google&#8217;s advertising solutions to SMEs.</p>
+<p>When platforms organize new ecosystems, they create new adjacent business opportunities.</p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/g20-summit-emerging-opportunities-in-platform-enabled-disruption/">G20 Summit: Emerging Opportunities in Platform-enabled disruption</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=NkeSMB3OxzY:sxEVfcPJR5I:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=NkeSMB3OxzY:sxEVfcPJR5I:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=NkeSMB3OxzY:sxEVfcPJR5I:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=NkeSMB3OxzY:sxEVfcPJR5I:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/NkeSMB3OxzY" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/g20-summit-emerging-opportunities-in-platform-enabled-disruption/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/g20-summit-emerging-opportunities-in-platform-enabled-disruption/</feedburner:origLink></item>
+		<item>
+		<title>How platforms reconfigure industries: A pattern for upcoming platform opportunities</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/HjTQHImq2Yc/</link>
+		<comments>http://platformed.info/how-platforms-reconfigure-industries/#comments</comments>
+		<pubDate>Wed, 20 May 2015 11:33:30 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Disruption and Transformation]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5025</guid>
+		<description><![CDATA[<p>How to spot platform opportunities in your industry </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/how-platforms-reconfigure-industries/">How platforms reconfigure industries: A pattern for upcoming platform opportunities</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Will everything become a platform? Is a platform even the right model in all cases? History shows that <a href="http://platformed.info/why-business-models-fail-pipes-vs-platforms/" target="_blank">platform-based and pipe-based business models</a> will probably co-exist. Business models based on linearity are still going to be very important, but there will be opportunities for platforms to create greater scale than the traditional approach.</p>
+<p>Over the last decade, the media industry has been repeatedly reinvented. Traditionally, the media value chain has been extended across the following parts:</p>
+<ul>
+<li>Content Creation</li>
+<li>Editorial</li>
+<li>Distribution</li>
+<li>Consumption</li>
+</ul>
+<p>The media value chain is a classic pipe spewing content to the consumers. Some companies like <a href="https://www.youtube.com" target="_blank">YouTube</a> choose to take the entire pipe and convert it into a platform. <a href="https://www.youtube.com" target="_blank">YouTube</a> enables all four functions above to be performed on one single platform. Anyone can create videos; the community performs the editorial function and videos are distributed to interested viewers and consumer right on <a href="https://www.youtube.com" target="_blank">YouTube</a>.</p>
+<p>More often, we see platforms attacking different parts of the value chain instead of owning it end-to-end. While a slightly less dramatic reinvention of the end-to-end value chain, I believe that that is the kind of impact that platforms will increasingly have across industries. Most platforms will co-exist with pipes while attacking different parts of the value chain.</p>
+<h3>Content Creation</h3>
+<p>How do platforms reinvent content creation in media while working with the rest of the linear value chain? The following are three examples.</p>
+<p><a href="http://www.helpareporter.com/" target="_blank">HARO</a> (Help A Reporter Out) is a platform approach to sourcing new stories. The platform connects journalists with people they may want to interview. <a href="http://www.helpareporter.com/" target="_blank">HARO</a> has decreased the barriers needed to write a story, by sourcing industry experts who want to be interviewed. Conversely, industry experts use <a href="http://www.helpareporter.com/" target="_blank">Haro</a> to gain more personal exposure. Many journalists use <a href="https://twitter.com/" target="_blank">Twitter</a> in a similar way to change the way they source content.</p>
+<p><a href="http://www.viki.com/" target="_blank">Viki</a> is an open platform working with a closed content supply chain. The company acquires soap operas and movies through the traditional pipe model. But it uses a platform model to create subtitles leveraged through the community, similar to <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>. Users create subtitles for these videos and a community of moderators constantly accepts and rejects user submissions. Once ready, the subtitled content is licensed to TV networks and delivered the traditional way. <a href="http://www.viki.com/" target="_blank">Viki</a> uses the platform model in one section of the pipe and benefits from superior economics.</p>
+<p><a href="http://www.huffingtonpost.in/" target="_blank">Huffington Post</a> is an online news aggregator and blog. The company started out as a pipe with in-house journalists but then opened out the contributor ecosystem to create a distributed, global army of journalists. <a href="http://www.forbes.com/" target="_blank">Forbes</a>, and more recently <a href="http://www.wired.com/" target="_blank">Wired</a>, have also tried a similar model.</p>
+<p>All the companies above are trying to apply platform thinking in various ways to change one function in the value chain.</p>
+<h3>Editorial</h3>
+<p>How does content editorial get reconfigured in a platform world?</p>
+<p><a href="https://medium.com/" target="_blank">Medium</a> is probably the best example. As a publishing platform, the company started with an in-house editing team selecting the content to be featured. During this time, content creation was limited to a few users. Over time, the platform allowed users to build collections of articles and allowed other users to follow these collections. When the platform eventually opened itself to more content creators, it phased out the editorial function from in-house editors to these collection owners. <a href="https://medium.com/" target="_blank">Medium</a> today benefits from a distributed ecosystem of user-editors who control market access of new articles by accepting or rejecting them.</p>
+<p><a href="https://www.quora.com/" target="_blank">Quora</a> started out with employees policing and upvoting/downvoting answers. Over time, the community took over. Employee admins only look at special cases now. The transition from professional editorial to social curation is a natural transition with most platform communities.</p>
+<p><a href="http://reddit.com/" target="_blank">Reddit</a> is a classic case of the ecosystem serving as the editor. Traditionally, on a portal like <a href="https://in.yahoo.com/" target="_blank">Yahoo</a>, an editor would decide the top news of the day. On <a href="http://reddit.com/" target="_blank">Reddit</a>, an ecosystem upvotes/downvotes/discusses a news item to popularity and exposure.</p>
+<h3>Distribution</h3>
+<p>Let&#8217;s look at the third layer of the value chain. Platforms are fundamentally changing how news is distributed. This is most obvious in the rise of a new breed of media businesses that create content almost exclusively for platform-enabled distribution.</p>
+<p><a href="http://www.demandmedia.com/" target="_blank">Demand Media</a> is a media company that optimizes content entirely around leveraging Google&#8217;s algorithms for distribution. This eventually proved to be its undoing as it fell prey to Google&#8217;s shifting algorithm updates. But Buzzfeed seems to be following a similar playbook. It leverages distribution by optimizing content towards Facebook-enabled distribution.</p>
+<p><a href="https://www.spotify.com" target="_blank">Spotify</a> and other music streaming services are trying to create new forms of distribution where listeners power distribution. <a href="https://www.spotify.com" target="_blank">Spotify</a> listeners can create playlists and develop large followings. New users discover music by following playlists of interest. These playlist creators are the new influencers and distributors.</p>
+<h3>Consumption</h3>
+<p>Finally, new consumption models are emerging in a world of platforms. Flipboard&#8217;s tablet-first consumption experience created an alternate destination for existing content. Over time, <a href="https://flipboard.com/" target="_blank">Flipboard</a> has opened itself as a platform where users create magazines (collections) leveraging existing content.</p>
+<h3>Conclusion</h3>
+<p>The media industry demonstrates that the future isn&#8217;t one where platforms completely remove pipes. Instead, it is one where platforms peacefully and credibly co-exist with pipes by ensuring that they add value to specific portions of the traditional value chain and re-imagine specific functions. <a href="https://www.airbnb.com/" target="_blank">Airbnb</a> may be a threat to the hotel industry, but platforms like <a href="https://liquidspace.com/" target="_blank">LiquidSpace</a> are actually helping hotels get more efficient. Likewise, platforms like <a href="http://cohealo.com/" target="_blank">Cohealo</a> don&#8217;t try to replace hospitals but co-exist with the traditional pipe structure of hospitals and make them more efficient.</p>
+<p>In any industry, new platform opportunities will emerge every time a function in the value chain can be better performed by an ecosystem of external users.</p>
+<p><em>Thanks to Griffin Anderson for writing early drafts of this article.</em></p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/how-platforms-reconfigure-industries/">How platforms reconfigure industries: A pattern for upcoming platform opportunities</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=HjTQHImq2Yc:G8sql-rZmdg:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=HjTQHImq2Yc:G8sql-rZmdg:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=HjTQHImq2Yc:G8sql-rZmdg:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=HjTQHImq2Yc:G8sql-rZmdg:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/HjTQHImq2Yc" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/how-platforms-reconfigure-industries/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/how-platforms-reconfigure-industries/</feedburner:origLink></item>
+		<item>
+		<title>Interview: Opportunities in digital transformation and regulation in a platform world</title>
+		<link>http://feedproxy.google.com/~r/platformed/~3/ASwI_FX0Vog/</link>
+		<comments>http://platformed.info/interview-opportunities-in-digital-transformation/#comments</comments>
+		<pubDate>Tue, 28 Apr 2015 12:14:39 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Disruption and Transformation]]></category>
+
+		<guid isPermaLink="false">http://platformed.info/?p=5020</guid>
+		<description><![CDATA[<p>New opportunities for traditional industries with a platform approach </p>
+<p>The post <a rel="nofollow" href="http://platformed.info/interview-opportunities-in-digital-transformation/">Interview: Opportunities in digital transformation and regulation in a platform world</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><em>&#8220;I was recently interviewed by Ansgar Baums, Head of Corporate Affairs and Government Relations at HP Europe. The below is a reproduction of the interview, with takeaways especially relevant to new business models emerging in manufacturing and more industrial sectors.&#8221;</em></p>
+<p><strong>Ansgar:</strong> Sangeet – You are consulting companies worldwide on the questions how digital platforms transform business. On a very general level: Which companies typically do approach you? And what do they want to know?</p>
+<p><strong>Sangeet:</strong> Two types of companies typically approach me. Startups that are building platforms ground-up and traditional enterprises that have strong legacy businesses but understand the need to move to a platform model. Both types of companies have very different contexts and constraints. Consequently, executing on a platform model involves very different strategic and architectural considerations for the two. Companies that have strong legacy businesses need to build out a platform business in a manner that leverages their existing assets and is strategically aligned with their existing business. Also, the very principles that helped them succeed with a legacy business, most often, come in the way of success with their platform business.</p>
+<p>When clients approach me, they do so with a vision of what they want to build. However, most of them do not have a good starting point. They reach out to me to lay out the business architecture of the platform. Platform businesses are complex systems that benefit from positive feedback loops and gain value through network effects. They involve important considerations of openness, curation and governance, which often do not exist in traditional businesses to the same degree. Launch and monetization of platforms is also much more complex than that for a linear business. My engagements help the clients lay out the business architecture and create and execute on a platform roadmap.</p>
+<p><strong>Ansgar:</strong> How are platforms usually created from the point of view of a company? It seems that “cornering” a small market and growing from there is a very successful strategy.</p>
+<p><strong>Sangeet:</strong> Companies win platforms in two broadly different models: Bottom-up and Top-down. A lot of platform implementations that we see today won with a bottom-up model. Airbnb moved from sharing of mattresses to challenging hotels. Youtube moved from home video to challenging movie houses and becoming a compelling channel for them. In these cases, the disruption was bottom-up. The initial use cases would never have served an indication of disruption.</p>
+<p>In contrast, one would argue that Uber’s disruption of the taxi industry has moved top-down. They started at the high end of the market and increased market liquidity in that segment, and gradually, with UberX and UberTaxi, migrated lower.</p>
+<p>We’ve seen both models work fairly well. But I see a lot more bottom-up disruption happening because of platforms. This is because a new and unproven model that benefits from self-serve, gains traction in the lower end first, gradually builds liquidity and then develops the reliability that lets it disrupt the higher end.</p>
+<p><strong>Ansgar:</strong> Germany is one of the strongest-performing economies worldwide. After the financial crisis, there has been an emphasis on the “classical” industry as a solid foundation for an economy and a general mistrust with regard to service-based economies. Platforms shift emphasis from products to service platforms. Do you sense a greater reluctance in Germany to engage in the platform debate?</p>
+<p><strong>Sangeet:</strong> I would expect reluctance because moving from products to outcome-based service models has had very mixed success. Companies like GE have made significant strides in this direction. However, for most companies, I believe that the case for a shift from products to services should be made in a phased out manner.</p>
+<p>A great starting point is to continue leveraging the existing product business but use the usage data collected from the product to provide value-added services, including outcome management and guarantees. As the value-added services gain wider acceptance, companies will improve margins, which will help them drive down initial pricing of products. This is important because in a platform-based model, the company that sells the most products starts benefiting from network effects. Hence, moving pricing from products to usage-based outcomes helps benefit from network effects in the long run. A phased approach like this will likely lead to lower resistance.</p>
+<p>As an example, auto manufacturers today use the data streamed from the car to determine and recommend after-sales services, thereby capturing more from the customer than they did when they only sold products.</p>
+<p><strong>Ansgar:</strong> Imagine you are a highly successful producer of high quality manufacturing tools, which have some “smart” features on the factory floor, but not beyond. You sense that platforms change your business, but you have neither have the strategic expertise in house nor any experience in platform building. What would you look for? Who would be a strategic partner to start with?</p>
+<p><strong>Sangeet:</strong> Smart features are infrastructural improvements but building business models around smart products is more than just an infrastructural change. The very factors that drive the business model change. Moving from selling products to outcome-based service models shifts the core capabilities that drive your business. Data management and data strategy become important. While product design and manufacturing efficiency determine monetizability of a product-based business, data science and management as well as service design capabilities and platform architecture capabilities become important. The first priority would be to build these capabilities internally for executives, through partnerships, carving out or hiring new innovation teams and through executive education.</p>
+<p><strong>Ansgar:</strong> Let’s have a look at governments. Are you aware of a properly defined economic policy program which tries to build on the platformization process? What are the best cases?</p>
+<p><strong>Sangeet:</strong> Governments are taking a few different approaches to leveraging and supporting platformization. The first approach is towards leveraging platformization to manage citizen data and serve them more targeted services, a theme that is often broadly painted with the smart government brush. City-states like Singapore and cities like San Francisco and New York have taken several significant steps in this direction.</p>
+<p>Governments also have a major role to play in enabling platformization by creating favorable regulation. I believe we are still at a very early stage in that journey. The impact of platforms on the economy is being seen in its very initial manifestations. We hear of the Uber and Airbnb crackdowns in different markets but there are many other challenges with regulating platform businesses.</p>
+<p>Global labor platforms that grow the freelancing market potentially take tax dollars away from local markets to more central platform jurisdictions. Country-level marketplaces like Amazon eat into the business of local merchants thereby impacting local taxes again. I expect regulation to change in response to this.</p>
+<p>Data residency is another important issue. As usage data becomes more central to managing platform-enabled markets, countries will want to claim ownership and residency of usage data flowing from their citizens. We haven’t seen a lot of thinking around this yet but I expect these to be critical issues for governments to handle in the coming years.</p>
+<p><strong>Ansgar:</strong> Thank you for the interview!</p>
+<p>The interview was first published at <a href="http://plattform-maerkte.de/interview_choudary/">http://plattform-maerkte.de/interview_choudary/</a></p>
+<div class="">
+<img src="http://platformed.info/platformed.info/wp-content/uploads/2015/09/platform-scale-book-cover.png" style="width: 10%; float: left;">
+<h3 style="padding-left: 134px; font-size: 30px; font-weight: 600; margin-bottom: 10px;">Platform Scale Book</h3>
+<p style="  font-size: 16px;
+  margin-left: 16%;
+  margin-bottom: 10px;">Platform Scale, a #1 Amazon bestselling book, is now available for purchase.</p>
+<a href="http://www.amazon.com/dp/B015FAOKJ6" target="_blank" style="margin-left: 6%;"><input class="newave-button medium outline orange" style="padding: 7px 30px; margin-top: 0px; background: #d54900; border: 1px solid #d54900; border-radius: 3px; color: #fff; font-size: 20px;   text-transform: uppercase;" type="submit" value="Buy on amazon" /></a>
+</div><p>The post <a rel="nofollow" href="http://platformed.info/interview-opportunities-in-digital-transformation/">Interview: Opportunities in digital transformation and regulation in a platform world</a> appeared first on <a rel="nofollow" href="http://platformed.info">Platform Thinking Blog</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/platformed?a=ASwI_FX0Vog:4GnJsr6oAjg:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/platformed?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=ASwI_FX0Vog:4GnJsr6oAjg:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/platformed?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/platformed?a=ASwI_FX0Vog:4GnJsr6oAjg:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/platformed?i=ASwI_FX0Vog:4GnJsr6oAjg:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/platformed/~4/ASwI_FX0Vog" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://platformed.info/interview-opportunities-in-digital-transformation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://platformed.info/interview-opportunities-in-digital-transformation/</feedburner:origLink></item>
+	</channel>
+</rss>

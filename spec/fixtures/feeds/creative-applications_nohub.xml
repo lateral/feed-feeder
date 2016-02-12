@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CreativeApplications.Net</title>
+	<atom:link href="http://www.creativeapplications.net/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.creativeapplications.net</link>
+	<description>Projects, tools and platforms at the intersection of art, media and technology</description>
+	<lastBuildDate>Thu, 11 Feb 2016 00:03:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+
+<image>
+	<url>http://www.creativeapplications.net/wp-content/uploads/2015/03/CAN_sitelogo-55171182v1_site_icon-32x32.png</url>
+	<title>CreativeApplications.Net</title>
+	<link>http://www.creativeapplications.net</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A P P A R E L – Clothing in the age of data accumulation and machine learning</title>
+		<link>http://www.creativeapplications.net/openframeworks/a-p-p-a-r-e-l-clothing-in-the-age-of-data-accumulation-and-machine-learning/</link>
+		<comments>http://www.creativeapplications.net/openframeworks/a-p-p-a-r-e-l-clothing-in-the-age-of-data-accumulation-and-machine-learning/#respond</comments>
+		<pubDate>Wed, 10 Feb 2016 13:20:26 +0000</pubDate>
+		<dc:creator><![CDATA[Greg J. Smith]]></dc:creator>
+				<category><![CDATA[iOS]]></category>
+		<category><![CDATA[openFrameworks]]></category>
+		<category><![CDATA[augmented reality]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[fashion]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[Julien Gachadoat]]></category>
+		<category><![CDATA[normals]]></category>
+		<category><![CDATA[science fiction]]></category>
+		<category><![CDATA[wearables]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53782</guid>
+		<description><![CDATA[<img width="840" height="471" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/APPAREL_Vid1-1600x898.jpg" class="attachment-large size-large wp-post-image" alt="APPAREL_Vid1" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/02/APPAREL_Vid1-768x431.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/02/APPAREL_Vid1.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />A P P A R E L is an augmented reality experimental fashion prototype by the Paris-based anticipatory design studio N O R M A L S. Turning data and network activity into identity and style, the project replaces the details of contemporary couture with jiggly mesh geometry digital overlays.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/openframeworks/a-p-p-a-r-e-l-clothing-in-the-age-of-data-accumulation-and-machine-learning/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Follower – Attention, surveillance and physicality of social media</title>
+		<link>http://www.creativeapplications.net/i-os/follower-attention-surveillance-and-physicality-of-social-media/</link>
+		<comments>http://www.creativeapplications.net/i-os/follower-attention-surveillance-and-physicality-of-social-media/#respond</comments>
+		<pubDate>Tue, 09 Feb 2016 12:42:29 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[iOS]]></category>
+		<category><![CDATA[app]]></category>
+		<category><![CDATA[approval]]></category>
+		<category><![CDATA[AppStore]]></category>
+		<category><![CDATA[download]]></category>
+		<category><![CDATA[follow]]></category>
+		<category><![CDATA[internet]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[Lauren McCarthy]]></category>
+		<category><![CDATA[media]]></category>
+		<category><![CDATA[social media]]></category>
+		<category><![CDATA[surveillance]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53814</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/still-05-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="still-05" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/02/still-05-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/02/still-05-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/02/still-05-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />In the social media age, one’s importance or relevance is typically measured in online followers—as that number goes up, the level of validation we feel does too. But how would a ‘real life follower’ change those dynamics? Created by Lauren McCarthy, ​Follower​ is an uncanny performance project that examines our feelings towards attention and surveillance. ]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/i-os/follower-attention-surveillance-and-physicality-of-social-media/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Facets of ‘New Making’ – Tektonics at ACT Festival</title>
+		<link>http://www.creativeapplications.net/can-events/facets-of-new-making-tektonics-at-act-festival/</link>
+		<comments>http://www.creativeapplications.net/can-events/facets-of-new-making-tektonics-at-act-festival/#comments</comments>
+		<pubDate>Fri, 05 Feb 2016 18:24:42 +0000</pubDate>
+		<dc:creator><![CDATA[Greg J. Smith]]></dc:creator>
+				<category><![CDATA[CAN Events]]></category>
+		<category><![CDATA[Features]]></category>
+		<category><![CDATA[2015]]></category>
+		<category><![CDATA[ACT]]></category>
+		<category><![CDATA[actfestival]]></category>
+		<category><![CDATA[can]]></category>
+		<category><![CDATA[canevents]]></category>
+		<category><![CDATA[canlabs]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[curated]]></category>
+		<category><![CDATA[exhibition]]></category>
+		<category><![CDATA[featured]]></category>
+		<category><![CDATA[forum]]></category>
+		<category><![CDATA[holo]]></category>
+		<category><![CDATA[making]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[workshop]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53630</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/ikeda-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="ikeda" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/02/ikeda-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/02/ikeda-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/02/ikeda-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />Huge stroboscopic datastreams, hypnotic human-machine choreographies, a cacophony of Korean, Japanese, English, German, and French – ten weeks ago, from November 25th to 28th 2015, an unlikely cross-cultural exchange took over the all new ACT Center in Gwangju, South Korea. More than a hundred artists, designers, curators, and educators answered our invitation to add their work and voice to the inaugural edition of ACT Festival, an opening celebration for the center’s monumental facilities.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/can-events/facets-of-new-making-tektonics-at-act-festival/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Weaved. Programmable Textile – Modelling fabrics into three-dimensional structures</title>
+		<link>http://www.creativeapplications.net/processing/weaved-programmable-textile-modelling-fabrics-into-three-dimensional-structures/</link>
+		<comments>http://www.creativeapplications.net/processing/weaved-programmable-textile-modelling-fabrics-into-three-dimensional-structures/#respond</comments>
+		<pubDate>Fri, 05 Feb 2016 16:51:41 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Processing]]></category>
+		<category><![CDATA[computation]]></category>
+		<category><![CDATA[Dana Zelig]]></category>
+		<category><![CDATA[fabric]]></category>
+		<category><![CDATA[material]]></category>
+		<category><![CDATA[physical]]></category>
+		<category><![CDATA[process]]></category>
+		<category><![CDATA[software]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53741</guid>
+		<description><![CDATA[<img width="840" height="560" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/Still_Daniel-Shechter_1.5.jpg" class="attachment-large size-large wp-post-image" alt="Still_Daniel Shechter_1.5" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/02/Still_Daniel-Shechter_1.5-768x512.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/02/Still_Daniel-Shechter_1.5-840x560.jpg 840w, http://www.creativeapplications.net/wp-content/uploads/2016/02/Still_Daniel-Shechter_1.5.jpg 1200w" sizes="(max-width: 840px) 100vw, 840px" />After the experiments in physical programming in the "Traces" project we reported on last year, Dana Zelig decided to examine the possibility of adjusting the plastic to fabrics, by means of pressing them together, allowing the heat to manipulate the plastic, and the manipulated plastic to effect the adjusted fabric.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/processing/weaved-programmable-textile-modelling-fabrics-into-three-dimensional-structures/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Lull – Between order and chaos</title>
+		<link>http://www.creativeapplications.net/derivative-touchdesigner/lull-between-order-and-chaos/</link>
+		<comments>http://www.creativeapplications.net/derivative-touchdesigner/lull-between-order-and-chaos/#respond</comments>
+		<pubDate>Fri, 05 Feb 2016 00:39:39 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[TouchDesigner]]></category>
+		<category><![CDATA[audiovisual]]></category>
+		<category><![CDATA[AV&C]]></category>
+		<category><![CDATA[David Bianciardi]]></category>
+		<category><![CDATA[Day For Night]]></category>
+		<category><![CDATA[generative]]></category>
+		<category><![CDATA[installation]]></category>
+		<category><![CDATA[particles]]></category>
+		<category><![CDATA[realtime]]></category>
+		<category><![CDATA[Stephen Baker]]></category>
+		<category><![CDATA[touch designer]]></category>
+		<category><![CDATA[Vincent Houzé]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53615</guid>
+		<description><![CDATA[<img width="840" height="472" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/LULL_00_ani.gif" class="attachment-large size-large wp-post-image" alt="LULL_00_ani" style="display: block; margin-bottom: 5px; clear:both;" />Created for the inaugural 'Day for Night festival' by AV&#038;C’s Vincent Houzé, Stephen Baker and David Bianciardi, Lull is an immersive and contemplative installation that explores the liminal state between conscious and unconscious.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/derivative-touchdesigner/lull-between-order-and-chaos/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Phantom Power – Exoskeleton analog synthesizer</title>
+		<link>http://www.creativeapplications.net/sound/phantom-power-exoskeleton-analog-synthesizer/</link>
+		<comments>http://www.creativeapplications.net/sound/phantom-power-exoskeleton-analog-synthesizer/#respond</comments>
+		<pubDate>Thu, 04 Feb 2016 23:04:19 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Sound]]></category>
+		<category><![CDATA[curcuit]]></category>
+		<category><![CDATA[itp]]></category>
+		<category><![CDATA[itpnime]]></category>
+		<category><![CDATA[machine]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[Yongjie Bei]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53598</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/brady_phantom_1600_c-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="brady_phantom_1600_c" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/02/brady_phantom_1600_c-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/02/brady_phantom_1600_c-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/02/brady_phantom_1600_c-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />Created and performed by Yingjie Bei, Phantom Power is an exoskeleton analog synthesizer. Built as a man/machine interface instrument, the device is performed with hand gestures / screwdrivers by manipulating the circuit.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/sound/phantom-power-exoskeleton-analog-synthesizer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Deep Web – Christopher Bauder and Robert Henke’s “super-structure” premieres at CTM 2016</title>
+		<link>http://www.creativeapplications.net/news/deep-web/</link>
+		<comments>http://www.creativeapplications.net/news/deep-web/#respond</comments>
+		<pubDate>Tue, 02 Feb 2016 13:36:03 +0000</pubDate>
+		<dc:creator><![CDATA[Alexander Scholz]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[berlin]]></category>
+		<category><![CDATA[Christopher Bauder]]></category>
+		<category><![CDATA[CTM]]></category>
+		<category><![CDATA[CTM Festival]]></category>
+		<category><![CDATA[installation]]></category>
+		<category><![CDATA[laser]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[motor]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[Robert Henke]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53564</guid>
+		<description><![CDATA[<img width="840" height="630" src="http://www.creativeapplications.net/wp-content/uploads/2016/02/12592469_10153929652241248_2264068780025420007_n.jpg" class="attachment-large size-large wp-post-image" alt="12592469_10153929652241248_2264068780025420007_n" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/02/12592469_10153929652241248_2264068780025420007_n-768x576.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/02/12592469_10153929652241248_2264068780025420007_n.jpg 960w" sizes="(max-width: 840px) 100vw, 840px" />A much anticipated collaboration between two Berlin-based greats, Deep Web is a feat of spatial programming that combines the luminous kinetics of Christopher Bauder’s fluidic with the laser orchestra of Robert Henke’s Lumière. Originally commissioned for the Festival of Lights Lyon 2015 (which was postponed after the Paris terror attacks), Deep Web will now see [&#8230;]]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/news/deep-web/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Automatic Orchestra &#8211; Algorithmic sound composition and networked music</title>
+		<link>http://www.creativeapplications.net/processing/automatic-orchestra-algorithmic-sound-composition-and-networked-music/</link>
+		<comments>http://www.creativeapplications.net/processing/automatic-orchestra-algorithmic-sound-composition-and-networked-music/#respond</comments>
+		<pubDate>Thu, 28 Jan 2016 15:38:20 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Processing]]></category>
+		<category><![CDATA[Sound]]></category>
+		<category><![CDATA[ciid]]></category>
+		<category><![CDATA[Dennis P Paul]]></category>
+		<category><![CDATA[generative]]></category>
+		<category><![CDATA[Hendrik Heuer]]></category>
+		<category><![CDATA[Irena Kukric]]></category>
+		<category><![CDATA[Jakob Bak. David Beermann]]></category>
+		<category><![CDATA[Julian Hespenheide]]></category>
+		<category><![CDATA[midi]]></category>
+		<category><![CDATA[reasonate16]]></category>
+		<category><![CDATA[resonate]]></category>
+		<category><![CDATA[spatial sound]]></category>
+		<category><![CDATA[Thomas Hoheisel. sound]]></category>
+		<category><![CDATA[University of the Arts Bremen]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53539</guid>
+		<description><![CDATA[<img width="840" height="560" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/automatic-orchestra-headturner.gif" class="attachment-large size-large wp-post-image" alt="automatic-orchestra-headturner" style="display: block; margin-bottom: 5px; clear:both;" />The Automatic Orchestra is an audio installation exploring algorithmic composition and networked music. A common set of rules distributed among a network of MIDI devices opens up a melodic space orchestrated by automatic logic.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/processing/automatic-orchestra-algorithmic-sound-composition-and-networked-music/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Ethical Machines Podcast</title>
+		<link>http://www.creativeapplications.net/news/ethical-machines-podcast/</link>
+		<comments>http://www.creativeapplications.net/news/ethical-machines-podcast/#respond</comments>
+		<pubDate>Mon, 25 Jan 2016 22:35:12 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53531</guid>
+		<description><![CDATA[<img width="840" height="438" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/samim_2016-Jan-25.jpg" class="attachment-large size-large wp-post-image" alt="samim_2016-Jan-25" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/samim_2016-Jan-25-768x401.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/01/samim_2016-Jan-25.jpg 1023w" sizes="(max-width: 840px) 100vw, 840px" />EthicalMachines is a series of conversations about Humans, Machines &#38; Ethics. It aims at sparking a deeper, better informed debate about the implications of intelligent systems for society and individuals. Hosts, Roelof Pieters &#38; Samim Winiger, explore these important topics with experts and thought leaders in a regular podcast format. For the fifth episode of Ethical [&#8230;]]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/news/ethical-machines-podcast/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Memory Lane – Sand rock and landscape</title>
+		<link>http://www.creativeapplications.net/arduino-2/memory-lane-sand-rock-and-landscape/</link>
+		<comments>http://www.creativeapplications.net/arduino-2/memory-lane-sand-rock-and-landscape/#respond</comments>
+		<pubDate>Thu, 21 Jan 2016 15:57:27 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[arduino]]></category>
+		<category><![CDATA[CNC]]></category>
+		<category><![CDATA[electromagnetic]]></category>
+		<category><![CDATA[Félix Luque Sánchez]]></category>
+		<category><![CDATA[Iñigo Bilbao]]></category>
+		<category><![CDATA[installation]]></category>
+		<category><![CDATA[magnets]]></category>
+		<category><![CDATA[process]]></category>
+		<category><![CDATA[representation]]></category>
+		<category><![CDATA[sculpture]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53506</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/IMG_5170-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="IMG_5170" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/IMG_5170-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/01/IMG_5170-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/01/IMG_5170-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />Created by Félix Luque Sánchez and Iñigo Bilbao, Memory Lane is a sculptural representation and investigation into memory and space by questioning human capacity of generating fiction, either by means of a simple child's game or of a complex technological process.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/arduino-2/memory-lane-sand-rock-and-landscape/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Saturn Submerged – Infinite boxes of infinite space</title>
+		<link>http://www.creativeapplications.net/derivative-touchdesigner/saturn-submerged-infinite-boxes-of-infinite-space/</link>
+		<comments>http://www.creativeapplications.net/derivative-touchdesigner/saturn-submerged-infinite-boxes-of-infinite-space/#respond</comments>
+		<pubDate>Wed, 20 Jan 2016 22:01:54 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[TouchDesigner]]></category>
+		<category><![CDATA[dmx]]></category>
+		<category><![CDATA[Gabriel Pulecio]]></category>
+		<category><![CDATA[leds]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[object]]></category>
+		<category><![CDATA[projection]]></category>
+		<category><![CDATA[reflection]]></category>
+		<category><![CDATA[touch designer]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53490</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/Saturn-Submerged_07-1600x1000.jpeg" class="attachment-large size-large wp-post-image" alt="Saturn Submerged_07" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/Saturn-Submerged_07-640x400.jpeg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/01/Saturn-Submerged_07-800x500.jpeg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/01/Saturn-Submerged_07-1600x1000.jpeg 1600w" sizes="(max-width: 840px) 100vw, 840px" />Created by Gabriel Pulecio, Saturn Submerged is part of an ongoing series of ‘infinity boxes’ that create expanded spaces within themselves. The sculpture is composed of multiple mirrored surfaces and LEDs, which are fused to create the illusion of infinite depth and imagery.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/derivative-touchdesigner/saturn-submerged-infinite-boxes-of-infinite-space/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Spectra-3 by FIELD – Choreographing a physical-digital system</title>
+		<link>http://www.creativeapplications.net/unity-3d/spectra-3-by-field-choreographing-a-physical-digital-system/</link>
+		<comments>http://www.creativeapplications.net/unity-3d/spectra-3-by-field-choreographing-a-physical-digital-system/#respond</comments>
+		<pubDate>Thu, 14 Jan 2016 23:04:31 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Unity]]></category>
+		<category><![CDATA[dmx]]></category>
+		<category><![CDATA[field]]></category>
+		<category><![CDATA[installation]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[logic]]></category>
+		<category><![CDATA[Lumiere]]></category>
+		<category><![CDATA[object]]></category>
+		<category><![CDATA[osc]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[physical]]></category>
+		<category><![CDATA[sculpture]]></category>
+		<category><![CDATA[simulation]]></category>
+		<category><![CDATA[Sound]]></category>
+		<category><![CDATA[unity]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53451</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/FIELD_Spectra-3_web_04-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="FIELD_Spectra-3_web_04" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/FIELD_Spectra-3_web_04-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/01/FIELD_Spectra-3_web_04-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/01/FIELD_Spectra-3_web_04-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />Created by digital design studio FIELD, Spectra-3 is a physical-digital sculpture that tells three stories of communication through a choreography of movement, animated lights and spatialised sound, premiering at London's Lumiere light festival on 14th January 2016.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/unity-3d/spectra-3-by-field-choreographing-a-physical-digital-system/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>11 Executions – Armed violence and modern terrorism meet video games AI</title>
+		<link>http://www.creativeapplications.net/games/11-executions-armed-violence-and-modern-terrorism-meet-video-games-ai/</link>
+		<comments>http://www.creativeapplications.net/games/11-executions-armed-violence-and-modern-terrorism-meet-video-games-ai/#comments</comments>
+		<pubDate>Wed, 13 Jan 2016 23:06:32 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Games]]></category>
+		<category><![CDATA[game engine]]></category>
+		<category><![CDATA[grand theft auto]]></category>
+		<category><![CDATA[Hugo Arcier]]></category>
+		<category><![CDATA[recreation]]></category>
+		<category><![CDATA[terrorism]]></category>
+		<category><![CDATA[violence]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53427</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/11-Executions00004-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="11 Executions00004" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/11-Executions00004-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/01/11-Executions00004-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/01/11-Executions00004-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />Created by Hugo Arcier, 11 Executions is a recreation of scenes of terror and violence within Grand Theft Auto V. Inspired by Alan Clarke's short film Elephant (1989),  Hugo stages, using similar techniques, the scenes of modern terrorism.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/games/11-executions-armed-violence-and-modern-terrorism-meet-video-games-ai/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>HEXPIXELS – &#8220;C++ Punks&#8221;, a unit for realtime visual expression</title>
+		<link>http://www.creativeapplications.net/maxmsp/hexpixels-c-punks-a-unit-for-realtime-visual-expression/</link>
+		<comments>http://www.creativeapplications.net/maxmsp/hexpixels-c-punks-a-unit-for-realtime-visual-expression/#respond</comments>
+		<pubDate>Tue, 12 Jan 2016 21:22:34 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[MaxMSP]]></category>
+		<category><![CDATA[openFrameworks]]></category>
+		<category><![CDATA[audio visual]]></category>
+		<category><![CDATA[Kezzardrix]]></category>
+		<category><![CDATA[meme city]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[Satoru Higa]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53406</guid>
+		<description><![CDATA[<img width="840" height="473" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/hexpixels00001-1600x900.jpg" class="attachment-large size-large wp-post-image" alt="hexpixels00001" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/hexpixels00001-768x432.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/01/hexpixels00001.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />HEXPIXELS is a unit for realtime visual expression by Satoru Higa, an artist/programmer renowned for his contribution to openFrameworks community and sound artist/vj/programmer Kezzardrix whose works range from his own interactive installation to live visuals.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/maxmsp/hexpixels-c-punks-a-unit-for-realtime-visual-expression/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>LAb[au] / calculations, permutations, notations / London – January 2016</title>
+		<link>http://www.creativeapplications.net/news/labau-calculations-permutations-notations-london-january-2016/</link>
+		<comments>http://www.creativeapplications.net/news/labau-calculations-permutations-notations-london-january-2016/#respond</comments>
+		<pubDate>Mon, 11 Jan 2016 21:59:01 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53397</guid>
+		<description><![CDATA[<img width="840" height="558" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/labau.jpg" class="attachment-large size-large wp-post-image" alt="labau" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/labau-768x510.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/01/labau.jpg 900w" sizes="(max-width: 840px) 100vw, 840px" />The Mayor Gallery in London presents an exhibition by Belgium collective LAb[au] at Art Bermondsey Project Space.]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/news/labau-calculations-permutations-notations-london-january-2016/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>&#8216;Big Browser 2016 Test&#8217; by Akihiko Taniguchi</title>
+		<link>http://www.creativeapplications.net/news/big-browser-2016-test-by-akihiko-taniguchi/</link>
+		<comments>http://www.creativeapplications.net/news/big-browser-2016-test-by-akihiko-taniguchi/#respond</comments>
+		<pubDate>Fri, 08 Jan 2016 15:54:57 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53379</guid>
+		<description><![CDATA[<img width="840" height="463" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/bigbrowser.jpg" class="attachment-large size-large wp-post-image" alt="bigbrowser" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/bigbrowser-768x423.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2016/01/bigbrowser.jpg 900w" sizes="(max-width: 840px) 100vw, 840px" />Created by Akihiko Taniguchi, Big Browser 2016 is an experimental study for remake of the Big-Browser created back in 2011. As the video below shows, it&#8217;s a game-scene environment where the protagonist is you, browsing the internet. Here is the view of the Big Browser 2016 on CAN using the Big Browser from 2011. okikata.org]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/news/big-browser-2016-test-by-akihiko-taniguchi/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Vector Festival 2016 – Call for Submissions</title>
+		<link>http://www.creativeapplications.net/news/vector-festival-2016-call-for-submissions/</link>
+		<comments>http://www.creativeapplications.net/news/vector-festival-2016-call-for-submissions/#respond</comments>
+		<pubDate>Thu, 07 Jan 2016 19:24:33 +0000</pubDate>
+		<dc:creator><![CDATA[Greg J. Smith]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[call]]></category>
+		<category><![CDATA[call for submission]]></category>
+		<category><![CDATA[InterAccess]]></category>
+		<category><![CDATA[Martin Zellinger]]></category>
+		<category><![CDATA[Skot Deeming]]></category>
+		<category><![CDATA[toronto]]></category>
+		<category><![CDATA[videogames]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53359</guid>
+		<description><![CDATA[<img width="840" height="525" src="http://www.creativeapplications.net/wp-content/uploads/2016/01/coin-1600x1000.jpg" class="attachment-large size-large wp-post-image" alt="coin" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2016/01/coin-640x400.jpg 640w, http://www.creativeapplications.net/wp-content/uploads/2016/01/coin-800x500.jpg 800w, http://www.creativeapplications.net/wp-content/uploads/2016/01/coin-1600x1000.jpg 1600w" sizes="(max-width: 840px) 100vw, 840px" />The Toronto-based Vector Festival is “dedicated to showcasing digital games and creative media practices,” and its curators are seeking submissions of work to be featured in its fourth edition this summer. ]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/news/vector-festival-2016-call-for-submissions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>10 Most Memorable Projects of 2015</title>
+		<link>http://www.creativeapplications.net/featured/10-most-memorable-projects-of-2015/</link>
+		<comments>http://www.creativeapplications.net/featured/10-most-memorable-projects-of-2015/#comments</comments>
+		<pubDate>Wed, 23 Dec 2015 17:37:43 +0000</pubDate>
+		<dc:creator><![CDATA[Filip Visnjic]]></dc:creator>
+				<category><![CDATA[Featured]]></category>
+		<category><![CDATA[2015]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[best of]]></category>
+		<category><![CDATA[Digital]]></category>
+		<category><![CDATA[interaction]]></category>
+		<category><![CDATA[interaction design]]></category>
+		<category><![CDATA[interactive arts]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[science]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[virtual reality]]></category>
+		<category><![CDATA[vr]]></category>
+
+		<guid isPermaLink="false">http://www.creativeapplications.net/?p=53311</guid>
+		<description><![CDATA[<img width="840" height="473" src="http://www.creativeapplications.net/wp-content/uploads/2015/12/can2015_top2.jpg" class="attachment-large size-large wp-post-image" alt="can2015_top2" style="display: block; margin-bottom: 5px; clear:both;" srcset="http://www.creativeapplications.net/wp-content/uploads/2015/12/can2015_top2-768x432.jpg 768w, http://www.creativeapplications.net/wp-content/uploads/2015/12/can2015_top2.jpg 1280w" sizes="(max-width: 840px) 100vw, 840px" />As 2015 winds down we look back at almost <a href="http://www.creativeapplications.net/2015-archive/">200 extraordinary projects</a> we’ve covered this year on CAN. And as is the case every year, picking the ten ‘best’ is hard if not impossible, as each of them has driven the conversation around the state of art and design in their own unique way. And yet, the following ten works stuck with us and, if anything, make great starting points for reflection and inspiration as we head into the new year. Until we continue our coverage in early January: happy holidays and thank you all for a great 2015!]]></description>
+		<wfw:commentRss>http://www.creativeapplications.net/featured/10-most-memorable-projects-of-2015/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.322 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-02-11 00:03:44 -->

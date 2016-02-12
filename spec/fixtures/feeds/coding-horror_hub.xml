@@ -1,0 +1,1838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title><![CDATA[Coding Horror]]></title><description><![CDATA[programming and human factors]]></description><link>http://blog.codinghorror.com/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 11 Feb 2016 09:19:02 GMT</lastBuildDate><ttl>60</ttl><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/codinghorror" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="codinghorror" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" /><feedburner:emailServiceId xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">codinghorror</feedburner:emailServiceId><feedburner:feedburnerHostname xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">https://feedburner.google.com</feedburner:feedburnerHostname><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="https://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.feedburner.com%2Fcodinghorror" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://feeds.my.aol.com/add.jsp?url=http%3A%2F%2Ffeeds.feedburner.com%2Fcodinghorror" src="http://o.aolcdn.com/favorites.my.aol.com/webmaster/ffclient/webroot/locale/en-US/images/myAOLButtonSmall.gif">Subscribe with My AOL</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.bloglines.com/sub/http://feeds.feedburner.com/codinghorror" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2Fcodinghorror" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.live.com/?add=http%3A%2F%2Ffeeds.feedburner.com%2Fcodinghorror" src="http://tkfiles.storage.msn.com/x1piYkpqHC_35nIp1gLE68-wvzLZO8iXl_JMledmJQXP-XTBOLfmQv4zhj4MhcWEJh_GtoBIiAl1Mjh-ndp9k47If7hTaFno0mxW9_i3p_5qQw">Subscribe with Live.com</feedburner:feedFlare><item><title><![CDATA[The Scooter Computer]]></title><description><![CDATA[<p>When we initially deployed our <a href="http://blog.codinghorror.com/building-servers-for-fun-and-prof-ok-maybe-just-for-fun/">handbuilt colocated servers</a> for Discourse in 2013, I needed a way to provide an isolated VPN channel in for secure remote access and troubleshooting. Rather than dedicate a whole server to this task, I purchased <a href="http://blog.codinghorror.com/because-everyone-still-needs-a-router/">the inexpensive, open source firmware friendly Asus RT-N16 router</a>, flashed</p>]]></description><link>http://blog.codinghorror.com/the-scooter-computer/</link><guid isPermaLink="false">53ed9ae1-5020-485e-bbbe-1b5bfc0e07a7</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Wed, 03 Feb 2016 08:52:36 GMT</pubDate><content:encoded><![CDATA[<p>When we initially deployed our <a href="http://blog.codinghorror.com/building-servers-for-fun-and-prof-ok-maybe-just-for-fun/">handbuilt colocated servers</a> for Discourse in 2013, I needed a way to provide an isolated VPN channel in for secure remote access and troubleshooting. Rather than dedicate a whole server to this task, I purchased <a href="http://blog.codinghorror.com/because-everyone-still-needs-a-router/">the inexpensive, open source firmware friendly Asus RT-N16 router</a>, flashed it with the popular TomatoUSB open source firmware, removed the antennas, turned off the WiFi and dropped it off in our colocated rack to let it act as a dedicated VPN access point.</p>
+
+<p><a href="http://www.amazon.com/dp/B00387G6R8/?tag=codihorr-20"> <br>
+<img alt="Asus RT-N16" title="Asus RT-N16" src="http://blog.codinghorror.com/content/images/uploads/2012/06/6a0120a85dcdae970b016306b1a243970d-800wi.jpg" width="500" height="414"></a></p>
+
+<p>And that box &ndash; which was $100 then and around $70 now &ndash; worked well enough until now. Although the version of OpenSSL in the 2012 era Tomato firmware we used is not vulnerable to Heartbleed, it's still getting out of date in terms of the encryption it supports and allows. And <a href="http://www.polarcloud.com/tomato">Tomato</a> itself is updated sporadically, chaotically at best.</p>
+
+<p>Let's face it: <strong>this is just a little box that runs a chopped up version of Linux</strong>, with a bit of specialized wireless hardware and multiple antennas tacked on &hellip; that we're not even using. So when it came time to upgrade, we wondered:</p>
+
+<blockquote>
+  <p>Why not just go with a small box that can run a real, full Linux distro? Wouldn't that be simpler and easier to keep up to date? </p>
+</blockquote>
+
+<p>After doing some research and asking on Twitter, I discovered there are a ton of amazing little Broadwell "mini-PC" boxes <a href="http://www.aliexpress.com/category/70803003/mini-pcs.html">available on AliExpress</a>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/IMG_2485.JPG" alt=""></p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/IMG_2486.JPG" alt=""></p>
+
+<p>The specs are kind of amazing for the price. I paid <strong>~$350</strong> each for <a href="http://www.aliexpress.com/item/Fanless-i5-Mini-PC-Windows-Barebone-PC-Broadwell-Intell-Core-i5-5200U-2-7GHz-4K-HTPC/32366202925.html">the ones I selected</a>:</p>
+
+<ul>
+<li><a href="http://ark.intel.com/products/85212/Intel-Core-i5-5200U-Processor-3M-Cache-up-to-2_70-GHz">i5-5200</a> Broadwell 2 core / 4 thread CPU at 2.2 Ghz - 2.7 Ghz</li>
+<li>16GB DDR3 RAM</li>
+<li>128GB M.2 SSD</li>
+<li>Dual gigabit Realtek 8168 ethernet</li>
+<li>front 4 USB 3.0 ports / rear 4 USB 2.0 ports</li>
+<li>Dual HDMI out</li>
+</ul>
+
+<p>(There's also optical and analog audio connectors on the front, as well as a SD card reader, which I covered with a sticker since we had no need for audio. I also stripped the WiFi out since we didn't need it, but it was included for the price, too.)</p>
+
+<p>Selecting the <a href="http://ark.intel.com/products/75990/Intel-Core-i5-4258U-Processor-3M-Cache-up-to-2_90-GHz">i5-4258u</a>, 4GB RAM, and 64GB SSD pushes the price down to <strong>$270</strong>. That's still a solid CPU, only a single generation behind Intel's latest and greatest Skylake, and carrying the midrange i5 moniker; it's no pushover. There are also many, many variants of this box from <a href="http://www.aliexpress.com/category/70803003/mini-pcs.html">other AliExpress sellers</a> that have slightly older, cheaper CPUs that are still plenty powerful. You can easily spec a box similar to this one for $200. </p>
+
+<p>That's not a whole lot more than the $200 you'd pay for a high end router these days, and as Ars Technica notes, <a href="http://arstechnica.com/gadgets/2016/01/numbers-dont-lie-its-time-to-build-your-own-router/">the average x86 box is radically faster</a>.</p>
+
+<p><a href="http://arstechnica.com/gadgets/2016/01/numbers-dont-lie-its-time-to-build-your-own-router/"><img src="http://blog.codinghorror.com/content/images/2016/02/homebrew-vs-router-perf-ars.png" alt="" title=""></a></p>
+
+<p>Note that the above graphs, "homebrew" means an <a href="http://ark.intel.com/products/71995/Intel-Celeron-Processor-1037U-2M-Cache-1_80-GHz">old, 1.8 Ghz Ivy Bridge dual core chip</a>, 3 generations behind current CPUs, that doesn't even merit the i3 or i5 designation, and has no hyperthreading. Do bear that in mind as you keep reading.</p>
+
+<p><strong>Meet The Scooter Computer</strong></p>
+
+<p>This box may be small, and only 15 watt TDP, but it is mighty. I spun up a new Digital Ocean droplet and ran a quick benchmark:</p>
+
+<pre><code>sudo apt-get install sysbench
+sysbench --test=cpu --cpu-max-prime=20000 run
+</code></pre>
+
+<table>  
+<tr>  
+<td>Tie Shuttle 6<br>  
+
+
+<pre>total time:           28.0707s
+total num events:     10000
+total time take:      28.0629
+per-request stats:
+     min:             2.77ms
+     avg:             2.81ms
+     max:             3.99ms
+     ~95 percentile:  3.00ms</pre>
+</td>  
+<td>Digital Ocean Droplet<br>  
+
+
+<pre>total time:          35.9541s
+total num events:    10000
+total time taken:    35.9492
+per-request stats:
+     min:             3.50ms
+     avg:             3.59ms
+     max:             13.31ms
+     ~95 percentile:  3.79ms</pre>
+</td>  
+</tr>  
+</table>
+
+<p>Results will of course <a href="https://wiki.mikejung.biz/Sysbench#Cloud_.2F_VPS_CPU_Performance_Test_Results_with_Sysbench">vary by cloud provider</a>, but rest assured this box is just as fast as and possibly even faster than the average cloud box you could spin up right now. Of course it is "only" 2 cores / 4 threads, but the more cores you need, the slower they tend to go because of the overall TDP limits of the core package.</p>
+
+<p>One thing that's not immediately obvious in photos is that this thing is indeed small but <em>hefty</em>, like holding a solid chunk of aluminum in your hand. That's because the box is passively cooled &mdash; the whole case is the heatsink, as the CPU on the bottom of the motherboard mates with the finned top of the case.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/tie-shuttle-top-case.jpg" alt=""></p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/scooter-computer-internals.jpg" alt=""></p>
+
+<p>Opening this box you realize just how simple things are inside it; it's barely more than a highly integrated motherboard strapped to an aluminum block. This isn't a Steve Jobs truck, a Mac Mini car, or even a motorcycle. <strong>This is <a href="http://blog.codinghorror.com/geek-transportation-systems/">a scooter</a>.</strong></p>
+
+<blockquote>
+  <p>Scooters are very primitive machines; it is both their greatest strength and their greatest weakness. It's arguably the simplest personal wheeled vehicle there is. In these short distance scenarios, scooters tend to win over, say, bicycles because there's less setup and teardown necessary – you don't have to lock up a scooter, nor do you have to wear a helmet. Just hop on and go! You get almost all the benefits of gravity and wheeled efficiency with a minimum of fuss and maintenance. And yes, it's fun, too! </p>
+</blockquote>
+
+<p>Passively cooled computers are paragons of simplicity and reliable consumer electronics, but passively cooling a "real" x86 PC is the holy grail. To get serious performance you usually need to feed the CPU at least 10 to 20 watts &ndash; and dissipating that kind of energy with zero fans and ambient airflow alone is not trivial. Let's see how our scooter does overnight running <a href="http://www.mersenne.org/download/">Mersenne Primes</a>, which is the heaviest CPU load possible.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/CZ30-0eWYAAZniT.jpg" alt=""></p>
+
+<p>You can place your hand on the top of the box during this, but it's uncomfortable. And the whole box radiates heat, not just the top. Overall it was completely stable for me during overnight mprime torture testing with the 15w TDP CPU I chose, and I am comfortable with these boxes sitting in our rack in the datacenter, even under extended full load. However, I would be <em>very</em> careful putting a 28w TDP CPU in this box unless you are absolutely sure it won't be at full load very often. Passive cooling is hard.</p>
+
+<p>Power consumption, as measured by my Kill-a-Watt, ranged from <strong>7 watts</strong> at the Ubuntu Server 14.04 text login screen, to 8-10 watts at an idle Ubuntu 15.10 GUI login screen (the default OS it arrived with), to 14-18 watts in memory testing, to <strong>26 watts in mprime</strong>. </p>
+
+<p>I should also mention that even under extreme mprime load, both CPUs stayed at 2.5 Ghz indefinitely, which is unusual in my experience. To achieve 2.7 Ghz you need a single threaded load. Considering the base clock of the i5-5200u is 2.2 Ghz, that's quite good! Many 4-6-8 core CPUs drop all the way down to their base clock pretty fast once they have significant load, which makes the "turbo" moniker a bit of a lie.</p>
+
+<p>(By the way, don't bother using burnP6, it generates way too little heat compared to mprime, which is an absolute <em>monster</em>. If your CPU can survive an overnight run of mprime, I can assure you it's ready for just about anything the real world can throw at it, ever.)</p>
+
+<p><strong>Disk</strong></p>
+
+<p>The machine has M.2 slots for two drives, as well as a SATA port and power cable (not pictured, but was included in the box) if you want to mate a 2.5" drive with the drive mounting holes on the bottom of the case. So if you prefer a mirrored two drive RAID array here for reliability, or a giant honking 2TB 2.5" HDD slapped in there for media storage, all of that is possible!</p>
+
+<p>Be careful, as the internal M.2 slots are <strong>2242</strong>, meaning <a href="http://rog.asus.com/313352014/labels/guides/buying-an-m-2-ssd-how-to-tell-which-is-which/">42mm length</a>. There seem to be mostly (only?) lower cost SSD drives available in this size for whatever reason.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/m-2-length.jpg" alt=""></p>
+
+<p>Don't worry, though, the bundled 128GB <a href="http://mydigitalssd.com/msata-ssd.php">Phison S9</a> M.2 SSD has <a href="http://www.servethehome.com/mydigitalssd-bp4-128gb-msata-benchmarks-review/">decent performance</a>, roughly equal to a good SSD from a few years ago:</p>
+
+<pre><code>dd bs=1M count=512 if=/dev/zero of=test conv=fdatasync
+hdparm -Tt /dev/sda
+
+536870912 bytes (537 MB) copied, 1.52775 s, 351 MB/s
+Timing cached reads:   11434 MB in  2.00 seconds = 5720.61 MB/sec
+Timing buffered disk reads:  760 MB in  3.00 seconds = 253.09 MB/sec
+</code></pre>
+
+<p>That's respectable SSD performance and won't hold you back in most use cases, but it's not a barn-burning disk subsystem, either. I'm not entirely sure retrofitting, say, the state of the art Samsung 950 Pro M.2 2280 drive is possible due to length restrictions.</p>
+
+<p>Of course the Samsung 850 Pro would fit fine as a traditional 2.5" SATA drive mounted to the case cover, and would perform like this:</p>
+
+<pre><code>536870912 bytes (537 MB) copied, 1.20895 s, 444 MB/s
+Timing cached reads:   38608 MB in  2.00 seconds = 19330.61 MB/sec
+Timing buffered disk reads: 1584 MB in  3.00 seconds = 527.92 MB/sec
+</code></pre>
+
+<p><strong>RAM</strong></p>
+
+<p>Intel limits these Broadwell U class CPUs to 16GB RAM total, so maxing the box out is only going to set you back around $70. Still, that's a significant percentage of the ~$350 total cost, and you may not need that much RAM for what you have in mind.</p>
+
+<p>However, do be careful that you get dual-channel RAM for lower RAM configurations; you don't want a single 4GB DIMM, you want two 2GB DIMMs. They ship from the vendor with a single DIMM, so beware. It may not matter <a href="http://www.anandtech.com/show/8672/lenovo-thinkstation-p300-workstation-review-haswell-plus-quadro/6">depending on the task</a>, as noted by AnandTech, but our boxes will be used for OpenSSL, and memory is cheap, so why not?</p>
+
+<p><strong>The Versatile Scooter</strong></p>
+
+<p>When I began looking at this, I was shocked to discover just how low-end the x86 CPUs are in a lot of "dedicated" devices, such as the official <a href="https://www.pfsense.org/products/">pfSense hardware</a>:</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/pfsense-hardware-lineup.png" alt=""></p>
+
+<p>Sure, 2.4 Ghz and 8 cores on that C2758 sounds reasonable &ndash; until you realize those are old Intel Bay Trail Atom cores. Even the <em>current</em> Cherry Trail Atom cores aren't so hot. Furthermore, those are probably the maximum "turbo" frequencies being quoted, which are unlikely to be sustained under any kind of real multi-core load. Also, did I mention this is being sold as a $1,400 device? Except for the lack of more than 2 dedicated gigabit ethernet ports, I'd put our scooter computer up against that C2758 any day of the week. And you know what? It'd win.</p>
+
+<p>I think this logic applies to a lot of dedicated hardware these days &mdash; routers, switches, firewalls, and so on. <strong>You're often better off building up a modern high power, low TDP x86 box and slapping a regular Linux distro on there.</strong></p>
+
+<p>You can even kinda-sorta fit six of them in a 1U rack space. </p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/02/shuttles-vs-1u.jpg" alt=""></p>
+
+<p>(Well, except for the power bricks and cables. Vertical mounting on a 1U shelf works out a bit better, and each conveniently came with a stand for vertical operation.)</p>
+
+<p>Now that I've worked with these boxes, I've become rather enamored of the Scooter Computer concept. Wherever we were thinking that we had to run either:</p>
+
+<ul>
+<li><p>A virtual machine on big iron for some small but important utility function in our rack.</p></li>
+<li><p>Dedicated, purpose built hardware for networking, firewall, or switching with a custom OS.</p></li>
+</ul>
+
+<p>&hellip; we can now take advantage of cheap, reliable, flexible, totally solid state commodity x86 hardware that's spread across many machines and running standard Linux distributions, like all the rest of our 1U servers.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">[advertisement] At Stack Overflow, we put developers first. We already help you find answers to your tough coding questions; now let us help you <a href="http://careers.stackoverflow.com" rel="nofollow">find your next job</a>.</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Zopfli Optimization: Literally Free Bandwidth]]></title><description><![CDATA[<p>In 2007 I wrote about <a href="http://blog.codinghorror.com/getting-the-most-out-of-png/">using PNGout to produce amazingly small PNG images</a>. I still refer to this topic frequently, as seven years later, the average PNG I encounter on the Internet is very unlikely to be optimized. </p>
+
+<p>For example, consider <a href="http://pbfcomics.com/274/">this recent Perry Bible Fellowship cartoon</a>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/01/PBF274-Adam_2-0.png" alt=""></p>
+
+<p>Saved directly from</p>]]></description><link>http://blog.codinghorror.com/zopfli-optimization-literally-free-bandwidth/</link><guid isPermaLink="false">e055f642-96e3-4eba-918d-eff65bacf2be</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Sat, 02 Jan 2016 09:38:24 GMT</pubDate><content:encoded><![CDATA[<p>In 2007 I wrote about <a href="http://blog.codinghorror.com/getting-the-most-out-of-png/">using PNGout to produce amazingly small PNG images</a>. I still refer to this topic frequently, as seven years later, the average PNG I encounter on the Internet is very unlikely to be optimized. </p>
+
+<p>For example, consider <a href="http://pbfcomics.com/274/">this recent Perry Bible Fellowship cartoon</a>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/01/PBF274-Adam_2-0.png" alt=""></p>
+
+<p>Saved directly from the PBF website, this comic is a 800 &times; 1412, 32-bit color PNG image of 671,012 bytes. Let's save it in a few different formats to get an idea of how much space this image could take up:</p>
+
+<table style="width:320px">  
+<tr><td>BMP</td><td>24-bit</td><td>3,388,854</td></tr>  
+<tr><td>BMP</td><td>8-bit</td><td>1,130,678</td></tr>  
+<tr><td>GIF</td><td>8-bit, no dither</td><td>147,290</td></tr>  
+<tr><td>GIF</td><td>8-bit, max dither</td><td>283,162</td></tr>  
+<tr><td>PNG</td><td>32-bit</td><td>671,012</td></tr>  
+</table>
+
+<p>PNG is a win because like GIF, it has built-in compression, but <em>unlike</em> GIF, you aren't limited to cruddy 8-bit, 256 color images. Now what happens when we apply PNGout to this image?</p>
+
+<table style="width:320px">  
+<tr><td>Default PNG</td><td>671,012</td><td></td></tr>  
+<tr><td>PNGout</td><td>623,859</td><td>7%</td></tr>  
+</table>
+
+<p>Take any random PNG of unknown provenance, apply PNGout, and you're likely to see around a 10% file size savings, possibly a lot more. Remember, this is <em>lossless</em> compression. The output is identical. It's a smaller file to send over the wire, and the smaller the file, the faster the decompression. This is <strong>free bandwidth</strong>, people! It doesn't get much better than this!</p>
+
+<p>Except when it does.</p>
+
+<p>In 2013 Google introduced a new, fully backwards compatible method of compression <a href="http://googledevelopers.blogspot.com/2013/02/compress-data-more-densely-with-zopfli.html">they call Zopfli</a>.</p>
+
+<blockquote>
+  <p>The output generated by Zopfli is typically 3–8% smaller compared to <code>zlib</code> at maximum compression, and we believe that Zopfli represents the state of the art in Deflate-compatible compression. Zopfli is written in C for portability. It is a compression-only library; existing software can decompress the data. Zopfli is bit-stream compatible with compression used in gzip, Zip, PNG, HTTP requests, and others.</p>
+</blockquote>
+
+<p>I apologize for being super late to this party, but let's test this bold claim. What happens to our PBF comic?</p>
+
+<table style="width:320px">  
+<tr><td>Default PNG</td><td>671,012</td><td></td></tr>  
+<tr><td>PNGout</td><td>623,859</td><td>7%</td></tr>  
+<tr><td>ZopfliPNG</td><td>585,117</td><td style="color:red">13%</td></tr>  
+</table>
+
+<p>Looking good. But that's just one image. We're <a href="http://blog.discourse.org/2015/12/emoji-and-discourse/">big fans of Emoji at Discourse</a>, let's try it on the original first release of the <a href="http://emojione.com/">Emoji One</a> emoji set &ndash; that's a complete set of 842 64&times;64 PNG files in 32-bit color:</p>
+
+<table style="width:320px">  
+<tr><td>Default PNG</td><td>2,328,243</td><td></td></tr>  
+<tr><td>PNGout</td><td>1,969,973</td><td>15%</td></tr>  
+<tr><td>ZopfliPNG</td><td>1,698,322</td><td style="color:red">27%</td></tr>  
+</table>
+
+<p>Wow. Sign me up for some of that.</p>
+
+<p>In my testing, Zopfli reliably produces 3 to 8 percent smaller PNG images than even the mighty PNGout, which is an incredible feat. Furthermore, any standard gzip compressed resource can benefit from Zopfli's improved deflate, <a href="https://mathiasbynens.be/demo/jquery-size">such as jQuery</a>:</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2016/01/zopfli-vs-gzip.png" alt=""></p>
+
+<p>Or the standard compression corpus tests:</p>
+
+<table style="width:360px">  
+<tr><td></td><td><code>gzip -­9</code></td><td>kzip</td><td>Zopfli</td></tr>  
+<tr><td>Alexa­ 10k</td><td>128mb</td><td>125mb</td><td>124mb</td></tr>  
+<tr><td><a href="https://en.wikipedia.org/wiki/Calgary_corpus">Calgary</a></td><td>1017kb</td><td>979kb</td><td>975kb</td></tr>  
+<tr><td><a href="https://en.wikipedia.org/wiki/Canterbury_corpus">Canterbury</a></td><td>731kb</td><td>674kb</td><td>670kb</td></tr>  
+<tr><td><a href="http://mattmahoney.net/dc/textdata">enwik8</a></td><td>36mb</td><td>35mb</td><td>35mb</td></tr>  
+</table>
+
+<p>(Oddly enough, I had not heard of <a href="http://advsys.net/ken/utils.htm">kzip</a> &ndash; turns out that's our old friend Ken Silverman popping up again, probably using the same compression bag of tricks from his PNGout utility.)</p>
+
+<p>But there is a catch, because <a href="https://en.wikipedia.org/wiki/There_ain%27t_no_such_thing_as_a_free_lunch">there's always a catch</a> &ndash; it's also <strong>80 times slower</strong>. No, that's not a typo. Yes, you read that right.</p>
+
+<table style="width:300px">  
+<tr><td><code>gzip -­9</code></td><td>5.6s</td></tr>  
+<tr><td><code>7­zip ­mm=Deflate ­mx=9</code></td><td>128s</td></tr>  
+<tr><td>kzip</td><td>336s</td></tr>  
+<tr><td>Zopfli</td><td>454s</td></tr>  
+</table>
+
+<p>Gzip compression is faster than it looks in the above comparsion, because level 9 is <a href="http://tukaani.org/lzma/benchmarks.html">a bit slow for what it does</a>:</p>
+
+<table style="width:320px">  
+<tr><td></td><td>Time</td><td>Size</td></tr>  
+<tr><td><code>gzip -1</code></td><td>11.5s</td><td>40.6%</td></tr>  
+<tr><td><code>gzip -2</code></td><td>12.0s</td><td>39.9%</td></tr>  
+<tr><td><code>gzip -3</code></td><td>13.7s</td><td>39.3%</td></tr>  
+<tr><td><code>gzip -4</code></td><td>15.1s</td><td>38.2%</td></tr>  
+<tr><td><code>gzip -5</code></td><td>18.4s</td><td>37.5%</td></tr>  
+<tr><td><code>gzip -6</code></td><td>24.5s</td><td>37.2%</td></tr>  
+<tr><td><code>gzip -7</code></td><td>29.4s</td><td>37.1%</td></tr>  
+<tr><td><code>gzip -8</code></td><td>45.5s</td><td>37.1%</td></tr>  
+<tr><td><code>gzip -9</code></td><td>66.9s</td><td>37.0%</td></tr>  
+</table>
+
+<p>You decide if that whopping 0.1% compression ratio difference between <code>gzip -7</code>and <code>gzip -9</code> is worth the <em>doubling</em> in CPU time. In related news, this is why pretty much every compression tool's so-called "Ultra" compression level or mode is generally a bad idea. You <a href="http://blog.codinghorror.com/compression-and-cliffs/">fall off an algorithmic cliff</a> pretty fast, so stick with the middle or the optimal part of the curve, which tends to be the default compression level. They do pick those defaults for a reason.</p>
+
+<p>PNGout was not exactly <em>fast</em> to begin with, so imagining something that's 80 times slower (at best!) to compress an image or a file is definite cause for concern. You may not notice on small images, but try running either on a larger PNG and it's basically time to go get a sandwich. Or if you have a multi-core CPU, 4 to 16 sandwiches. This is why applying Zopfli to user-uploaded images might not be the greatest idea, because the first server to try Zopfli-ing a 10k &times; 10k PNG image is in for a hell of a surprise.</p>
+
+<p>However, remember that <em>decompression</em> is still the same speed, and totally safe. This means <strong>you probably only want to use Zopfli on pre-compiled resources</strong>, which are designed to be compressed once and downloaded millions of times &ndash; rather than a bunch of PNG images your users uploaded which may only be viewed a few hundred or thousand times at best, regardless of how optimized the images happen to be.</p>
+
+<p>For example, at <a href="http://discourse.org">Discourse</a> we have a default avatar renderer which produces nice looking PNG avatars for users based on the first letter of their username, plus a color scheme selected via the hash of their username. Oh yes, and the very nice <a href="https://www.google.com/fonts/specimen/Roboto">Roboto open source font</a> from Google. </p>
+
+<table style="width:320px">  
+<tr>  
+<td><img src="http://blog.codinghorror.com/content/images/2016/01/discourse-default-avatar-a.png" style="border-radius:50%" width="100">  
+</td><td><img src="http://blog.codinghorror.com/content/images/2016/01/discourse-default-avatar-d.png" style="border-radius:50%" width="100">  
+</td><td><img src="http://blog.codinghorror.com/content/images/2016/01/discourse-default-avatar-s.png" style="border-radius:50%" width="100">  
+</td></tr>  
+</table>
+
+<p>We spent a <em>lot</em> of time optimizing the output avatar images, because these avatars can be served millions of times, and pre-rendering the whole lot of them, given the constraints of &hellip;</p>
+
+<ul>
+<li>10 numbers</li>
+<li>26 letters</li>
+<li>~250 color schemes</li>
+<li>~5 sizes</li>
+</ul>
+
+<p>&hellip; isn't unreasonable at around 45,000 unique files. We also have a centralized https CDN we set up to to serve avatars (if desired) across all Discourse instances, to further reduce load and increase cache hits.</p>
+
+<p>Because these images stick to shades of one color, I reduced the color palette to 8-bit (actually 128 colors) to save space, and of course we run PNGout on the resulting files. They're about as tiny as you can get. When I ran Zopfli on the above avatars, I was super excited to see my expected 3 to 8 percent free file size reduction and after the console commands ran, I saw that saved &hellip; 1 byte, 5 bytes, and 2 bytes respectively. <a href="https://wompwompwomp.com/">Cue sad trombone</a>.</p>
+
+<p>(Yes, it is technically possible <a href="http://pointlessramblings.com/posts/pngquant_vs_pngcrush_vs_optipng_vs_pngnq/">to produce strange "lossy" PNG images</a>, but I think that's counter to the spirit of PNG which is designed for <em>lossless</em> images. If you want lossy images, <a href="http://blog.codinghorror.com/screenshots-jpeg-vs-gif/">go with JPG</a> or another lossy format.)</p>
+
+<p>The great thing about Zopfli is that, assuming you are OK with the extreme up front CPU demands, it is a "set it and forget it" optimization step that can apply anywhere and will never hurt you. Well, other than possibly burning a lot of spare CPU cycles.</p>
+
+<p>If you work on a project that serves compressed assets, take a close look at Zopfli. It's not a silver bullet &ndash; as with all advice, run the tests on <em>your</em> files and see &ndash; but it's about as close as it gets to <strong>literally free bandwidth</strong> in our line of work.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] <a href="http://careers.stackoverflow.com" rel="nofollow">Find a better job the Stack Overflow way</a> - what you need when you need it, no spam, and no scams.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[The Hugging Will Continue Until Morale Improves]]></title><description><![CDATA[<p>I saw in today's news that Apple <a href="https://t.co/KpC9xID5kU">open sourced their Swift language</a>. One of the most influential companies in the world explicitly adopting an open source model &ndash; that's great! I'm a believer. One of the big reasons <a href="http://blog.codinghorror.com/civilized-discourse-construction-kit/">we founded Discourse</a> was to build an open source solution that anyone,</p>]]></description><link>http://blog.codinghorror.com/the-hugging-will-continue-until-morale-improves/</link><guid isPermaLink="false">358ab343-1b4b-496d-a4b0-d1d122690d47</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Fri, 04 Dec 2015 11:17:05 GMT</pubDate><content:encoded><![CDATA[<p>I saw in today's news that Apple <a href="https://t.co/KpC9xID5kU">open sourced their Swift language</a>. One of the most influential companies in the world explicitly adopting an open source model &ndash; that's great! I'm a believer. One of the big reasons <a href="http://blog.codinghorror.com/civilized-discourse-construction-kit/">we founded Discourse</a> was to build an open source solution that anyone, anywhere could use and safely build upon.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">It&#39;s not that Unix won -- just that closed source lost. Big time.</p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/status/616377394253795328">July 1, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>People were also encouraged that Apple was so refreshingly open about this whole process and involving the larger community in the process. They even <a href="https://twitter.com/mcdado/status/672509114476601345">hired from the community</a>, which is something I always urge companies to do.</p>
+
+<p>Also, not many people were, shall we say &hellip; <em>fans</em> &hellip; of Objective C <a href="http://www.antonzherdev.com/post/70064588471/top-13-worst-things-about-objective-c">as a language</a>. There was a lot of community interest in having another viable modern language to write iOS apps in, and to Apple's credit, they produced Swift, and even promised to open source it by the end of the year. And they delivered, in a deliberate, thoughtful way. (Did I mention that <a href="https://github.com/apple/swift-cmark">they use CommonMark</a>? That's kind of awesome, too.)</p>
+
+<p>One of my heroes, Miguel de Icaza, happens to have <em>lots</em> of life experience in open sourcing things that were not exactly open source to start with. He applauded the move, and even made a small change to his Mono project in tribute:</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">When Swift was open sourced today, I saw they had a Code of Conduct. We had to follow suit, Mono has adopted it: <a href="https://t.co/hVO3KL1Dn5">https://t.co/hVO3KL1Dn5</a></p>&mdash; Miguel de Icaza (@migueldeicaza) <a href="https://twitter.com/migueldeicaza/status/672590341757927426">December 4, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Which I also thought was kinda cool.</p>
+
+<p>It surprises me that anyone could ever object to the mere <em>presence</em> of a code of conduct. But <a href="https://medium.com/@jmspool/safe-conferences-are-deliberately-designed-2849b6cd3658">some people do</a>.</p>
+
+<blockquote>
+  <ul>
+  <li><p>A weak Code of Conduct is a placebo label saying a conference is safe, without actually ensuring it’s safe.</p></li>
+  <li><p>Absence of a Code of Conduct does not mean that the organizers will provide an unsafe conference.</p></li>
+  <li><p>Creating safety is not the same as creating a feeling of safety.</p></li>
+  <li><p>Things organizers can do to make events safer: Restructure parties to reduce unsafe intoxication-induced behavior; work with speakers in advance to minimize potentially offensive material; and provide very attentive, mindful customer service consistently through the attendee experience.</p></li>
+  <li><p>Creating a safe conference is more expensive than just publishing a Code of Conduct to the event, but has a better chance of making the event safe.</p></li>
+  <li><p>Safe conferences are the outcome of a deliberate design effort.</p></li>
+  </ul>
+</blockquote>
+
+<p>I have to say, I don't understand this at all. Even if you do believe these things, why would you say them <em>out loud?</em> What possible constructive outcome could result from you saying them? It's a textbook case of honesty <a href="http://blog.codinghorror.com/trust-me-im-lying/">not always being the best policy</a>. If this is all you've got, just say nothing, or wave people off with platitudes, like politicians do. And if you're Jared Spool, notable and <a href="https://en.wikipedia.org/wiki/Jared_Spool">famous within your field</a>, it's even worse &ndash; what does this say to everyone else working in your field?</p>
+
+<p>Mr. Spool's central premise is this:</p>
+
+<blockquote>
+  <p>Creating safety is not the same as creating a feeling of safety.</p>
+</blockquote>
+
+<p>Which, actually &hellip; isn't true, and runs counter to everything I know about empathy. If you've ever watched It's Not About the Nail, you'll understand that <strong>a <em>feeling</em> of safety is, in fact, what many people are looking for</strong>. It's not the whole story by any means, but it's a very important starting point. An anchor.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-4EDhdAHrOg" frameborder="0" allowfullscreen></iframe>
+
+<p>People understand <a href="https://medium.com/@ag_dubs/no-true-conference-organizer-dd0ff11294a">you cannot possibly protect them from every single possible negative outcome at a conference</a>. That's absurd. But they also want to hear you stand up for them, and say out loud that, yes, these are the things we believe in. This is what we know to be true. Here is how we will look out for each other.</p>
+
+<p>I also had a direct flashback to Deborah Tannen's groundbreaking <a href="http://www.amazon.com/dp/0060959622/?tag=codihorr-20">You Just Don't Understand</a>, in which you learn that <strong>men are all about fixing the problem</strong>, so much so that they rush headlong into any remotely plausible solution, without stopping along the way to actually <em>listen</em> and appreciate the depth of the problem, which maybe &hellip; can't really even <em>be</em> fixed?</p>
+
+<blockquote>
+  <p>If women are often frustrated because men do not respond to their troubles by offering matching troubles, men are often frustrated because women do &hellip; he feels she is trying to take something away from him by denying the uniqueness of his experience &hellip; if women resent men's tendency to offer solutions to problems, men complain about women's refusal to take action to solve the problems they complain about.</p>
+  
+  <p>Since many men see themselves as problem solvers, a complaint or a trouble is a challenge &hellip; Trying to solve a problem or fix a trouble focuses on the message level. But for most women who habitually report problems at work or in friendships, the message is not the main point &hellip; trouble talk is intended to reinforce rapport by sending the metamessage "We're the same; you're not alone."</p>
+  
+  <p>Women are frustrated when they not only don’t get this reinforcement but, quite the opposite, feel distanced by the advice, which seems to send the metamessage "We’re not the same. You have the problems; I have the solutions."</p>
+</blockquote>
+
+<p>Having children really underscored this point for me. The quickest way to turn a child's frustration into a screaming, explosive tantrum is to <strong>try to fix their problem for them</strong>. This is such a hard thing for engineers to wrap their heads around, particularly male engineers, because we are <em>all about</em> fixing the problems. That's what we do, right? That's why we exist? We fix problems? </p>
+
+<p>I once wrote this in reply to <a href="https://community.imgur.com">an Imgur discussion topic</a> about navigating an "emotionally charged sitation":</p>
+
+<blockquote>
+  <p>Oh, you want a master class in dealing with emotionally charged situations? Well, why didn't you just say so?</p>
+  
+  <p><strong>Have kids.</strong> Within a few years you will learn to be an expert in dealing with this kind of stuff, because what nobody tells you about having kids is that for the first ~5 years, they are constantly. freaking. the. f**k. out.</p>
+  
+  <p><a href="http://jasongood.net/365/2012/12/46-reasons-why-my-three-year-old-might-be-freaking-out/">46 Reasons My Three Year Old Might Be Freaking Out</a></p>
+  
+  <p>If this seems weird to you, or like some kind of made up exaggerated hilarious absurd brand of humor, oh trust me. It's not. Real talk. <em>This is actually how it is.</em></p>
+  
+  <p>In their defense, it's not their fault: they've never felt fear, anger, hunger, jealousy, love, or any of the dozen other incredibly complex emotions you and I deal with on a daily basis. So they learn. But along the way, there will be many many many manymanymanymany freakouts. And guess who's there to help them navigate said freakouts?</p>
+  
+  <p>You are.</p>
+  
+  <p>What works <a href="http://blog.codinghorror.com/how-to-talk-to-human-beings/">is surprisingly simple</a>:</p>
+  
+  <ul>
+  <li>Be there.</li>
+  <li>Listen.</li>
+  <li>Empathize, hug, and echo back to them. <em>Don't</em> try to solve their problems! DO NOT DO IT! Paradoxically, this only makes it way worse if you do. Let them work through the problem on their own. They always will &ndash; and knowing someone trusts you enough to figure our your own problems is a major psychological boost.</li>
+  </ul>
+  
+  <p>You gotta <a href="http://learn.genetics.utah.edu/content/epigenetics/rats/">lick your rats</a>, man.</p>
+  
+  <p>(protip: this works identically on adults and kids. Turns out most so-called adults aren't fully grown up. Who knew?)</p>
+</blockquote>
+
+<p>I guess my point is that rats aren't so different from people. We all want the same thing. Comfort from someone who can tell us that the world is safe, the world is not out to get you, that bad things can (and might) happen to you but <em>you'll still be OK because we will help you</em>. We're all in this thing together, you're a human being much like myself and we love you. </p>
+
+<p><strong>That's why a visible, public code of conduct is a good idea, not only at an in-person conference, but also on a software project like Swift, or Mono.</strong> But programmers being programmers &ndash; because they spend all day every day mired in the crazy world of infinitely recursive rules from their OS, from their programming language, from their APIs, from their tools &ndash; are rules lawyers <em>par excellence</em>. Nobody on planet Earth is better at arguing to the death over a set of completely arbitrary, made up rules than the average programmer.</p>
+
+<p>I knew in my heart of hearts that someone &ndash; and by someone I mean a programmer &ndash; would inevitably complain about the fact that Mono had added a code of conduct, another "unnecessary" ruleset. So I made a programmer joke.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/migueldeicaza">@migueldeicaza</a> I find these rules offensive and will be fining a complaint</p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/status/672604329627418630">December 4, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>This is the second time in as many days that I made what I <em>thought</em> was an obvious joke on Twitter that was interpreted seriously.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">When someone starts at Discourse, I have the talk with them. &quot;You remember your family? Forget them. Look at me. *We* are your family now.&quot;</p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/status/672142544642248704">December 2, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>OK, maybe sometimes my Twitter jokes aren't very good. Well, you know, that's just, like &hellip; <em>your opinion</em>, man. I should probably switch from Twitter to Myspace or Ello or Google Plus or Snapchat or something.</p>
+
+<p>But it bothered me that people, any people, would think I actually asked new hires to put the company above their family.* Or that I didn't believe in a code of conduct. I guess some of that comes from having ~200k followers; once your audience gets big enough, <a href="https://en.wikipedia.org/wiki/Poe%27s_law">Poe's Law</a> becomes inevitable?</p>
+
+<p>Anyway, I wanted to say I'm sorry. And I'm particularly sorry that <a href="http://eev.ee/">eevee</a>, who wrote that <em>awesome</em> <a href="http://blog.codinghorror.com/the-php-singularity/">PHP is a Fractal of Bad Design article that I once riffed on</a>, thought I was serious, or even worse, that my joke was in bad taste. Even though <a href="http://eev.ee/blog/2015/09/17/the-sad-state-of-web-app-deployment/">the negative article about Discourse</a> eevee wrote did kinda hurt my feelings.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/samsaffron">@samsaffron</a> <a href="https://twitter.com/JakubJirutka">@JakubJirutka</a> programmers should not have feelings that is a liability</p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/status/649743704069029888">October 2, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I know we have our differences, but if we as programmers can't come together through our collective shared horror over PHP, the Nickelback of programming languages, then clearly I have failed.</p>
+
+<p>To show that <strong>I absolutely do believe in the value of a code of conduct</strong>, even as public statements of intent that we may not completely live up to, even if we've never had any incidents or problems that would require formal statements &ndash; I'm also adding a code of conduct as defined by <a href="http://contributor-covenant.org/">contributor-covenant.org</a> to the <a href="https://github.com/discourse/discourse">Discourse project</a>. We're all in this open source thing together, you're a human being <a href="http://blog.codinghorror.com/what-if-we-could-weaponize-empathy/">very much like us</a>, and we vow to treat you with the same respect we'd want you to treat us. This should not be controversial. It should be common. And saying so matters.</p>
+
+<p>If you maintain an open source project, I strongly urge you to consider formally adopting a <a href="http://contributor-covenant.org/">code of conduct</a>, too.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/codinghorror">@codinghorror</a> hugs!</p>&mdash; Miguel de Icaza (@migueldeicaza) <a href="https://twitter.com/migueldeicaza/status/672619657703084033">December 4, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>The hugging will continue until morale improves.</p>
+
+<p><small>*  That's only required of co-founders</small></p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] Building out your tech team? <a href="http://careers.stackoverflow.com/products" rel="nofollow">Stack Overflow Careers</a> helps you hire from the largest community for programmers on the planet. We built our site with developers like you in mind.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[The 2016 HTPC Build]]></title><description><![CDATA[<p>I've <a href="http://blog.codinghorror.com/if-loving-computers-is-wrong-i-dont-want-to-be-right/">loved many computers in my life</a>, but the HTPC has always had a special place in my heart. It's the only always-on workhorse computer in our house, it is utterly silent, totally reliable, sips power, and it's at the center of our home entertainment, networking, storage, and gaming. This</p>]]></description><link>http://blog.codinghorror.com/the-2016-htpc-build/</link><guid isPermaLink="false">6fe27ca7-a24e-40be-9ff3-c9a1b8feb28b</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Mon, 30 Nov 2015 06:42:33 GMT</pubDate><content:encoded><![CDATA[<p>I've <a href="http://blog.codinghorror.com/if-loving-computers-is-wrong-i-dont-want-to-be-right/">loved many computers in my life</a>, but the HTPC has always had a special place in my heart. It's the only always-on workhorse computer in our house, it is utterly silent, totally reliable, sips power, and it's at the center of our home entertainment, networking, storage, and gaming. This handy box does it all, 24/7.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/antec-itx-casejpg.jpg" alt=""></p>
+
+<p>I love this little machine to death; it's always been there for me and my family. The <b>steady march of improvements in my HTPC build</b> over the years lets me look back and see how far the old beige box PC has come in the decade I've been blogging:</p>
+
+<table cellpadding="4" cellspacing="4">  
+<tr>  
+<td><a href="http://blog.codinghorror.com/pentium-m-home-theater-pc/">2005</a></td><td>~$1000</td><td>512MB RAM, 1 CPU</td><td>80w  
+</td></tr>  
+<tr>  
+<td><a href="http://blog.codinghorror.com/building-your-own-home-theater-pc/">2008</a></td><td>~$520</td><td>2GB RAM, 2 CPU</td><td>45w  
+</td></tr>  
+<tr>  
+<td><a href="http://blog.codinghorror.com/revisiting-the-home-theater-pc/">2011</a></td><td>~$420</td><td>4GB RAM, 2/4 CPU + GPU</td><td>22w  
+</td></tr>  
+<tr>  
+<td><a href="http://blog.codinghorror.com/the-2013-htpc-build/">2013</a></td><td>~$300</td><td>8GB RAM, 2/4 CPU + GPU&times;2</td><td>15w  
+</td></tr>  
+<tr>  
+<td><b>2016</b></td><td><b>~$320</b></td><td><b>8GB RAM, 2/4 CPU + GPU&times;4</b></td><td><font color="red"><b>10w</b></font>  
+</td></tr>  
+</table>
+
+<p>As expected, the per-thread performance increase from 2013's Haswell CPU to 2016's Skylake CPU is modest &ndash; 20 percent at best, and that might be rounding up. About all you can do is slap more cores in there, to very limited benefit in most applications. The 6100T I chose is dual-core plus hyperthreading, which I consider the sweet spot, but there are some other <a href="http://ark.intel.com/compare/88200,88183,90734,90725">Skylake 6000 series variants at the same 35w power envelope</a> which offer true quad-core, or quad-core plus hyperthreading &ndash; and, inevitably, a slightly lower base clock rate. So it goes.</p>
+
+<p>The real story is how idle power consumption was <strong>reduced another 33 percent</strong>. Here's what I measured with <a href="http://blog.codinghorror.com/why-estimate-when-you-can-measure/">my trusty kill-a-watt</a>:</p>
+
+<ul>  
+<li><b>10w</b> idle with display off  
+</li><li>11w idle with display on  
+</li><li>13w active standard netflix (720p?) movie playback  
+</li><li>14w multiple torrents, display off  
+</li><li>15w 1080p video playback in MPC-HC x64  
+</li><li>40w Lego Batman 3 high detail 720p gameplay  
+</li><li><b>56w</b> Prime95 full CPU load + Rthdribl full GPU load  
+</li></ul>
+
+<p>These are impressive numbers, much better than I expected. Maybe part of it is the latest Windows 10 update which <a href="http://www.anandtech.com/show/9751/examining-intel-skylake-speed-shift-more-responsive-processors">supports the new Speed Shift technology in Skylake</a>. Speed Shift hands over CPU clockspeed control to the CPU itself, so it can ramp its internal clock up and down dramatically faster than the OS could. A Skylake CPU, with the right OS support, gets up to speed and back to idle faster, resulting in better performance and less overall power draw.</p>
+
+<p>Skylake's on-board <b>HD 530 graphics is about twice as fast as the HD 4400 that it replaces</b>. Haswell offered the first reasonable big screen gaming GPU on an Intel CPU, but only just. 720p was <em>mostly</em> attainable in older games with the HD 4400, but I sometimes had to drop to medium detail settings, or lower. Two generations on, with the HD 530, even recent games like GRID Autosport, Lego Jurassic Park and so on can now be played at 720p with high detail settings at consistently high framerates. It depends on the game, but a few can even be played at 1080p now with medium settings. I did have at least one saved benchmark result on the disk to compare with:</p>
+
+<table>  
+<tr>  
+<td>GRID 2, 1280&times;720, high detail defaults</td><td></td><td></td><td>  
+</td></tr>  
+<tr>  
+<td></td><td>Max</td><td>Min</td><td>Avg  
+</td></tr>  
+<tr>  
+<td>i3-4130T, Intel HD 4400 GPU</td><td>32</td><td>21</td><td>27  
+</td></tr>  
+<tr>  
+<td>i3-6100T, Intel HD 530 GPU</td><td>50</td><td>32</td><td>39  
+</td></tr>  
+</table>
+
+<p>Skylake is a legitimate gaming system on a chip, provided you are OK with 720p. It's tremendous fun to play Lego Batman 3 with my son.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7bsHsp2WXUI" frameborder="0" allowfullscreen></iframe>
+
+<p>At 720p using high detail settings, where there used to be many instances of notable slowdown, particularly in co-op, it now feels very smooth throughout. And since games are much cheaper on PC than consoles, <a href="http://store.steampowered.com/">particularly through Steam</a>, we have access to a complete range of gaming options from new to old, from indie to mainstream &ndash; and an enormous, inexpensive back catalog.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/steam-game-choices.jpg" alt=""></p>
+
+<p>Of course, this is still far from the performance you'd get out of a $300 video card or a $300 console. You'll never be able to play a cutting edge, high end game like GTA V or Witcher 3 on this HTPC box. But <em>you may not need to</em>. <a href="http://store.steampowered.com/streaming/">Steam in-home streaming</a> has truly come into its own in the last year. I tried streaming Batman: Arkham Knight from my beefy home office computer to the HTPC at 1080p, and I was surprised to discover just how effortless it was &ndash; nor could I detect any visual artifacts or input latency.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/steam-streaming.jpg" alt=""></p>
+
+<p>It's <a href="http://www.pcgamer.com/how-to-set-up-steam-in-home-streaming-on-your-pc/#page-1">super easy to set up</a> &ndash; just have the Steam client running on both machines at a logged in Windows desktop (can't be on the lock screen), and press the Stream button on any game that you don't have installed locally. Be careful with WiFi when streaming high resolutions, obviously, but if you're on a wired network, I found the experience is nearly identical to playing the game locally. As long as the game has native console / controller support, like Arkham Knight and Fallout 4, streaming to the big screen works great. Try it! That's how Henry and I are going to play through <a href="http://store.steampowered.com/app/225540/">Just Cause 3</a> this Tuesday and <a href="http://blog.codinghorror.com/my-holiday-in-beautiful-panau/">I can't wait</a>.</p>
+
+<p>As before in 2013, I only upgraded the guts of the system, so the incremental cost is low.</p>
+
+<ul>
+<li><a href="http://www.amazon.com/dp/B015CQ8D9Q/?tag=codihorr-20">GA-H170N-WIFI</a> H170 motherboard &mdash; $120</li>
+<li><a href="http://www.amazon.com/dp/B00MMLUZ2I/?tag=codihorr-20">8GB DDR4</a> RAM &mdash; $46</li>
+<li><a href="http://www.amazon.com/dp/B0161V02ZO/?tag=codihorr-20">Intel i3-6100T</a> 35w, 3.2 GHz dual core CPU &mdash; $155</li>
+</ul>
+
+<p>That's a total of <strong>$321</strong> for this upgrade cycle, about the cost of a new Xbox One or PS4. The i3-6100T should be a bit cheaper; according to Intel it has the same list price as the i3-6100, but suffers from weak availability. The motherboard I chose is a little more expensive, too, perhaps because it <a href="http://www.gigabyte.com/products/product-page.aspx?pid=5552#ov">includes extras like built in WiFi and M.2 support</a>, although I'm not using either quite yet. You might be able to source a cheaper H170 motherboard than mine.</p>
+
+<p>The rest of the system has <a href="http://blog.codinghorror.com/the-2013-htpc-build/">not changed much since 2013</a>:</p>
+
+<ul>
+<li><a href="http://www.amazon.com/gp/product/B0035UETHW/?tag=codihorr-20">PicoPSU 90</a> &mdash; $50</li>
+<li><a href="http://www.amazon.com/gp/product/B0035FIS2O/?tag=codihorr-20">Antec ISK 300-150</a> &mdash; $68</li>
+<li><a href="http://www.amazon.com/dp/B00OBRE5UE/?tag=codihorr-20">512GB SSD boot drive</a> &mdash; $150</li>
+<li><a href="http://www.amazon.com/dp/B00I8O6OQ4/?tag=codihorr-20">2TB 2.5" HDD</a> &times; 2 &mdash; $200</li>
+</ul>
+
+<p>Populate these items to taste, pick whatever drives and mini-ITX case you prefer, but <strong>definitely stick with the PicoPSU</strong>, because removing the large, traditional case power supply makes the setup both a) much more power efficient at low wattage, and b) much roomier inside the case and easier to install, upgrade, and maintain.</p>
+
+<p>I also switched to <a href="http://www.amazon.com/dp/B015IX3X3E/?tag=codihorr-20">Xbox One controllers</a>, for no really good reason other than the Xbox 360 is getting more obsolete every month, and now that my beloved Rock Band 4 is available on next-gen systems, I'm trying to slowly evict the 360s from my house.</p>
+
+<p><a href="http://www.amazon.com/dp/B015IX3X3E/?tag=codihorr-20"><img src="http://blog.codinghorror.com/content/images/2015/11/xbox-one-controller.jpg" alt="" title=""></a></p>
+
+<p>The <a href="http://www.amazon.com/dp/B00ZB7W4QU/?tag=codihorr-20">Windows 10 wireless Xbox One adapter</a> does have some perks. In addition to working with the newer and slightly nicer gamepads from the Xbox One, it supports an audio stream over each controller via the controller's headset connector. But really, for the purposes of Steam gaming, any USB controller will do.</p>
+
+<p>While I've been over the moon in love with my HTPC for years, and I liked the Xbox 360, I have been thoroughly unimpressed with my newly purchased Xbox One. Both the new and old UIs are hard to use, it's quite slow relative to my very snappy HTPC, and it has a ton of useless features that I don't care about, like broadcast TV support. About all the Xbox One lets you do is <em>sometimes</em> play next gen games at 1080p without paying $200 or $300 for a fancy video card, and let's face it &ndash; the PS4 does that slightly better. <strong>If those same games are available on PC, you'll have a better experience streaming them from a gaming PC</strong> to either a cheap Steam streaming box, or a generalist HTPC like this one. </p>
+
+<p>The Xbox One and PS4 are <a href="http://www.extremetech.com/gaming/156273-xbox-720-vs-ps4-vs-pc-how-the-hardware-specs-compare">effectively plain old PCs</a>, built on:</p>
+
+<ul>
+<li>Intel Atom class (aka slow) AMD 8-core x86 CPU</li>
+<li>8 GB RAM</li>
+<li>AMD Radeon 77xx / 78xx GPUs</li>
+<li>cheap commodity 512GB or 1TB hard drives (not SSDs)</li>
+</ul>
+
+<p>The <strong>golden age of x86 gaming</strong> is well upon us. That's why the future of PC gaming is looking brighter every day. We can see it coming true in the solid GPU and idle power improvements in Skylake, riding the inevitable wave of x86 becoming the dominant kind of (non mobile, anyway) gaming for the forseeable future. </p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] At Stack Overflow, we help developers learn, share, and grow. Whether you’re looking for your next dream job or looking to build out your team, <a href="http://careers.stackoverflow.com" rel="nofollow">we've got your back</a>.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[To ECC or Not To ECC]]></title><description><![CDATA[<p>On one of my visits to the <a href="http://www.computerhistory.org/">Computer History Museum</a> &ndash; and by the way this is an absolute <em>must-visit</em> place if you are ever in the San Francisco bay area &ndash; I saw an early Google server rack circa 1999 in the exhibits.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/old-google-server-rack.jpg" alt=""></p>
+
+<p>Not too fancy, right? Maybe even</p>]]></description><link>http://blog.codinghorror.com/to-ecc-or-not-to-ecc/</link><guid isPermaLink="false">5f900a66-ee1b-4184-9add-26c445923c59</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Thu, 19 Nov 2015 23:44:21 GMT</pubDate><content:encoded><![CDATA[<p>On one of my visits to the <a href="http://www.computerhistory.org/">Computer History Museum</a> &ndash; and by the way this is an absolute <em>must-visit</em> place if you are ever in the San Francisco bay area &ndash; I saw an early Google server rack circa 1999 in the exhibits.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/old-google-server-rack.jpg" alt=""></p>
+
+<p>Not too fancy, right? Maybe even &hellip; a little janky? This is <a href="http://blog.codinghorror.com/building-a-computer-the-google-way/">building a computer the Google way</a>:</p>
+
+<blockquote>
+  <p>Instead of buying whatever pre-built rack-mount servers Dell, Compaq, and IBM were selling at the time, <strong>Google opted to hand-build their server infrastructure themselves</strong>. The sagging motherboards and hard drives are literally propped in place on handmade plywood platforms. The power switches are crudely mounted in front, the network cables draped along each side. The poorly routed power connectors snake their way back to generic PC power supplies in the rear.</p>
+  
+  <p>Some people might look at these early Google servers and see an amateurish fire hazard. Not me. I see a prescient understanding of how inexpensive commodity hardware would shape today's internet. I felt right at home when I saw this server; it's exactly what I would have done in the same circumstances. This rack is a perfect example of the commodity x86 market D.I.Y. ethic at work: if you want it done right, and done inexpensively, you build it yourself.</p>
+</blockquote>
+
+<p>This rack is now immortalized in <a href="http://americanhistory.si.edu/press/fact-sheets/google-corkboard-server-1999">the National Museum of American History</a>. Urs Hölzle <a href="https://plus.google.com/+UrsH%C3%B6lzle/posts/VGwMnY3oUSY">posted lots more juicy behind the scenes details</a>, including the exact specifications:</p>
+
+<ul>
+<li>Supermicro P6SMB motherboard</li>
+<li>256MB PC100 memory</li>
+<li>Pentium II 400 CPU</li>
+<li>IBM Deskstar 22GB hard drives (&times;2)</li>
+<li>Intel 10/100 network card</li>
+</ul>
+
+<p>When I <a href="http://blog.codinghorror.com/farewell-stack-exchange/">left Stack Exchange</a> (sorry, <a href="https://blog.stackoverflow.com/2015/09/were-changing-our-name-back-to-stack-overflow/">Stack Overflow</a>) one of the things that excited me most was <strong>embarking on a new project using 100% open source tools.</strong> That project is, of course, <a href="http://discourse.org">Discourse</a>.</p>
+
+<p>Inspired by Google and their use of cheap, commodity x86 hardware to scale on top of the open source Linux OS, I also <a href="http://blog.codinghorror.com/building-servers-for-fun-and-prof-ok-maybe-just-for-fun/">built our own servers</a>.  When I get stressed out, when I feel the world weighing heavy on my shoulders and I don't know where to turn &hellip; <em>I build servers</em>. It's therapeutic. </p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I like to give servers a little pep talk while I build them. &quot;Who&#39;s the best server! Who&#39;s the fastest server!&quot;</p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/status/666062934171189249">November 16, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Don't judge me, man.</p>
+
+<p>But more seriously, with the release of Intel's latest Skylake architecture, it's finally time to upgrade our 2013 era Discourse servers to the latest and greatest, something reflective of 2016 &ndash; which means building even more servers.</p>
+
+<p>Discourse <a href="http://blog.codinghorror.com/why-ruby/">runs on a Ruby stack</a> and one thing we learned early on is that <strong>Ruby demands exceptional single threaded performance</strong>, aka, a CPU running as fast as possible. Throwing umptazillion CPU cores at Ruby doesn't buy you a whole lot other than being able to handle more requests at the same time. Which is nice, but doesn't get you <em>speed</em> per se. Someone made a helpful technical video to illustrate exactly how this all works:</p>
+
+<video poster="/content/images/2015/11/javascript-python-ruby-apps.jpg" width="100%" preload="none" controls><source src="http://discourse-cdn.codinghorror.com/uploads/default/original/3X/1/0/1049b1846f0cfa65ed0a9b4ab970d57d6dc0bd5a.mp4"></video>
+
+<p>This is by no means exclusive to Ruby; other languages like JavaScript and Python also share this trait. And Discourse itself is a JavaScript application delivered through the browser, which exercises the mobile / laptop / desktop client CPU. Mobile devices reaching near-parity with desktop performance in single threaded performance is something we're betting on in a big way with Discourse.</p>
+
+<p>So, good news! Although PC performance has been <a href="http://blog.codinghorror.com/the-pc-is-over/">incremental at best in the last 5 years</a>, between Haswell and Skylake, Intel managed to deliver a respectable per-thread performance bump. Since we are upgrading our servers from Ivy Bridge (very similar to the i7-3770k), the generation before Haswell, I'd <a href="http://www.anandtech.com/show/9483/intel-skylake-review-6700k-6600k-ddr4-ddr3-ipc-6th-generation/11">expect</a> a solid 33% performance improvement at minimum.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/skylake-javascript-performance-boost-1.png" alt=""></p>
+
+<p>Even worse, the more cores they pack on a single chip, the slower they all go. From Intel's current Xeon E5 lineup:</p>
+
+<ul>
+<li>E5-1680 &rarr; 8 cores, 3.2 Ghz</li>
+<li>E5-1650 &rarr; 6 cores, 3.5 Ghz</li>
+<li>E5-1630 &rarr; 4 cores, 3.7 Ghz</li>
+</ul>
+
+<p>Sad, isn't it? Which brings me to the following build for our core web tiers, which optimizes for "lots of inexpensive, fast boxes"</p>
+
+<table width="100%">  
+<tr>  
+<td><b>2013</b></td>  
+<td><b>2016</b></td>  
+</tr>  
+<tr>  
+<td valign="top">  
+Xeon E3-1280 V2 Ivy Bridge 3.6 Ghz / 4.0 Ghz quad-core ($640)<br>  
+SuperMicro X9SCM-F-O mobo ($190)<br>  
+32 GB DDR3-1600 ECC ($292)<br>  
+SC111LT-330CB 1U chassis ($200)<br>  
+Samsung 830 512GB SSD &times;2 ($1080)<br>  
+1U Heatsink ($25)<br>  
+</td>  
+<td valign="top">  
+i7-6700k Skylake 4.0 Ghz / 4.2 Ghz quad-core ($370)<br>  
+SuperMicro X11SSZ-QF-O mobo ($230)<br>  
+64 GB DDR4-2133 ($520)<br>  
+CSE-111LT-330CB 1U chassis ($215)<br>  
+Samsung 850 Pro 1TB SSD &times;2 ($886)<br>  
+1U Heatsink ($20)<br>  
+</td>  
+</tr>  
+<tr>  
+<td>$2,427</td>  
+<td>$2,241</td>  
+</tr>  
+<tr>  
+<td>  
+31w idle, 87w BurnP6 load  
+</td>  
+<td>  
+14w idle, 81w BurnP6 load  
+</td>  
+</tr>  
+</table>
+
+<p>So, about 10% cheaper than what we spent in 2013, with 2&times; the memory, 2&times; the storage (probably 50-100% faster too), and at least ~33% faster CPU. With lower power draw, to boot! Pretty good. Pretty, pretty, pretty, <em>pretty</em> good.</p>
+
+<p>(Note that the memory bump is only possible thanks to Intel finally relaxing their iron fist of maximum allowed RAM at the low end; that's new to the Skylake generation.)</p>
+
+<p>One thing is conspicuously missing in our 2016 build: Xeons, and <strong>ECC Ram</strong>. In my defense, this isn't intentional &ndash; we wanted the fastest per-thread performance and no Intel Xeon, either currently available or announced, goes to 4.0 GHz with Skylake. Paying half the price for a CPU with better per-thread performance than any Xeon, well, I'm not going to kid you, that's kind of a nice perk too.</p>
+
+<p>So <a href="https://en.wikipedia.org/wiki/ECC_memory">what is ECC all about</a>?</p>
+
+<blockquote>
+  <p>Error-correcting code memory (ECC memory) is a type of computer data storage that can detect and correct the most common kinds of internal data corruption. ECC memory is used in most computers where data corruption cannot be tolerated under any circumstances, such as for scientific or financial computing.</p>
+  
+  <p>Typically, ECC memory maintains a memory system immune to single-bit errors: the data that is read from each word is always the same as the data that had been written to it, even if one or more bits actually stored have been flipped to the wrong state. Most non-ECC memory cannot detect errors although some non-ECC memory with parity support allows detection but not correction.</p>
+</blockquote>
+
+<p>It's <strong>received wisdom in the sysadmin community that you <em>always</em> build servers with ECC RAM</strong> because, well, you build servers to be reliable, right? Why would anyone intentionally build a server that isn't reliable? <em>Are you crazy, man?</em> Well, looking at that cobbled together Google 1999 server rack, which also utterly lacked any form of ECC RAM, I'm inclined to think that reliability measured by "lots of redundant boxes" is more worthwhile and easier to achieve than the platonic ideal of making every individual server bulletproof.</p>
+
+<p>Being the type of guy who likes to question stuff&hellip; I began to question. Why is it that ECC is so essential anyway? If ECC was so important, so critical to the reliable function of computers, why isn't it built in to every desktop, laptop, and smartphone in the world by now? Why is it optional? This smells awfully&hellip; <em>enterprisey</em> to me.</p>
+
+<p>Now, before everyone stops reading and I get permanently branded as "that crazy guy who hates ECC", I think ECC RAM is fine:</p>
+
+<ul>
+<li>The cost difference between ECC and not-ECC is minimal these days.</li>
+<li>The performance difference between ECC and not-ECC is minimal these days.</li>
+<li>Even if ECC only protects you from rare 1% hardware error cases that you may never hit until you literally build hundreds or thousands of servers, it's cheap insurance.</li>
+</ul>
+
+<p>I am not anti-insurance, nor am I anti-ECC. But I do seriously question whether ECC is as operationally critical as we have been led to believe, and I think the data shows modern, non-ECC RAM is already extremely reliable.</p>
+
+<p>First, let's look at the <a href="https://www.pugetsystems.com/labs/articles/Most-Reliable-Hardware-of-2014-616/">Puget Systems reliability stats</a>. These guys build lots of commodity x86 gamer PCs, burn them in, and ship them. They helpfully track statistics on how many parts fail either from burn-in or later in customer use. Go ahead and read through the stats.</p>
+
+<blockquote>
+  <p>For the last two years, CPU reliability has dramatically improved. What is interesting is that this lines up with the launch of the Intel Haswell CPUs which was when the CPU voltage regulation was moved from the motherboard to the CPU itself. At the time we theorized that this should raise CPU failure rates (since there are more components on the CPU to break) but the data shows that it has actually increased reliability instead.</p>
+  
+  <p>Even though DDR4 is very new, reliability so far has been excellent. Where DDR3 desktop RAM had an overall failure rate in 2014 of ~0.6%, DDR4 desktop RAM had absolutely no failures.</p>
+  
+  <p>SSD reliability has dramatically improved recently. This year Samsung and Intel SSDs only had a 0.2% overall failure rate compared to 0.8% in 2013.</p>
+</blockquote>
+
+<p>Modern commodity computer parts from reputable vendors are amazingly reliable. And their trends show from 2012 onward essential PC parts have gotten <em>more</em> reliable, not less. (I can also vouch for the improvement in SSD reliability as we have had zero server SSD failures in 3 years across our 12 servers with 24+ drives, whereas in 2011 I was writing about <a href="http://blog.codinghorror.com/the-hot-crazy-solid-state-drive-scale/">the Hot/Crazy SSD Scale</a>.) And doesn't this make sense from a financial standpoint? How does it benefit you as a company to ship <em>unreliable</em> parts? That's money right out of your pocket and the reseller's pocket, plus time spent dealing with returns.</p>
+
+<p>We had a, uh, "spirited" discussion about this internally on our private Discourse instance.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/11/discourse-2016-server-discussion.png" alt=""></p>
+
+<p>This is <a href="http://blog.brianmoses.net/2014/03/why-i-chose-non-ecc-ram-for-my-freenas.html">not a new debate</a> by any means, but I was frustrated by the lack of data out there. In particular, I'm really questioning <a href="https://storagemojo.com/2012/10/23/dram-errors-soft-and-hard/">the difference between "soft" and "hard" memory errors</a>:</p>
+
+<blockquote>
+  <p>But what is the nature of those errors? Are they soft errors – as is commonly believed – where a stray Alpha particle flips a bit? Or are they hard errors, where a bit gets stuck?</p>
+</blockquote>
+
+<p><strong>I absolutely believe that hard errors are reasonably common.</strong> RAM DIMMS can have bugs, or the chips on the DIMM can fail, or there's a design flaw in circuitry on the DIMM that only manifests in certain corner cases or under extreme loads. I've seen it plenty. But <a href="https://en.wikipedia.org/wiki/Soft_error">a soft error</a> where a bit of memory randomly flips?</p>
+
+<blockquote>
+  <p>There are two types of soft errors, chip-level soft error and system-level soft error. Chip-level soft errors occur when the radioactive atoms in the chip's material decay and release alpha particles into the chip. Because an alpha particle contains a positive charge and kinetic energy, the particle can hit a memory cell and cause the cell to change state to a different value. The atomic reaction is so tiny that it does not damage the actual structure of the chip.</p>
+</blockquote>
+
+<p>Outside of airplanes and spacecraft, I have a difficult time believing that soft errors happen with any frequency, otherwise most of the computing devices on the planet would be crashing left and right. I deeply distrust the anecdotal voodoo behind "but one of your computer's memory bits could flip, you'd never know, and corrupted data would be written!" It'd be one thing if we observed this regularly, but I've been unhealthily obsessed with computers since birth and I have never found random memory corruption to be a real, actual problem on any computers I have either owned or had access to.</p>
+
+<p>But who gives a damn what I think. <em>What does the data say?</em></p>
+
+<p>A <a href="http://www.ece.rochester.edu/~xinli/usenix07/">2007 study</a> found that the observed soft error rate in live servers was <em>two orders of magnitude</em> lower than previously predicted:</p>
+
+<blockquote>
+  <p>Our preliminary result suggests that <strong>the memory soft error rate in two real production systems (a rack-mounted server environment and a desktop PC environment) is much lower than what the previous studies concluded.</strong> Particularly in the server environment, with high probability, the soft error rate is at least two orders of magnitude lower than those reported previously. We discuss several potential causes for this result.</p>
+</blockquote>
+
+<p>A <a href="http://www.cs.toronto.edu/~bianca/papers/sigmetrics09.pdf">2009 study on Google's server farm</a> notes that soft errors were difficult to find:</p>
+
+<blockquote>
+  <p>We provide <strong>strong evidence that memory errors are dominated by hard errors, rather than soft errors</strong>, which previous work suspects to be the dominant error mode.</p>
+</blockquote>
+
+<p>Yet another <a href="http://selse.org//images/selse_2012/Papers/selse2012_submission_4.pdf">large scale study from 2012</a> discovered that RAM errors were dominated by permanent failure modes typical of hard errors:</p>
+
+<blockquote>
+  <p>Our study has several main findings. First, we find that approximately <strong>70% of DRAM faults are recurring (e.g., permanent) faults, while only 30% are transient faults.</strong> Second, we find that large multi-bit faults, such as faults that affects an entire row, column, or bank, constitute over 40% of all DRAM faults. Third, we find that almost 5% of DRAM failures affect board-level circuitry such as data (DQ) or strobe (DQS) wires. Finally, we find that chipkill functionality reduced the system failure rate from DRAM faults by 36x.</p>
+</blockquote>
+
+<p>In the end, we decided the non-ECC RAM risk was acceptable for every tier of service except our databases. Which is kind of a bummer since <a href="http://www.itworld.com/article/2985214/hardware/intels-xeon-roadmap-for-2016-leaks.html">higher end Skylake Xeons got pushed back to the big Purley platform upgrade in 2017</a>. Regardless, we burn in every server we build with a complete run of memtestx86 and overnight prime95/mprime, and you should too. There's one whirring away through endless memory tests right behind me as I write this.</p>
+
+<p>I find it very, very suspicious that ECC &ndash; if it is so critical to preventing these random, memory corrupting bit flips &ndash; <strong>has not already been built into every type of RAM that we ship in the ubiquitous computing devices all around the world as a cost of doing business.</strong> But I am by no means opposed to paying a small insurance premium for server farms, either. You'll have to look at the data and decide for yourself. Mostly I wanted to collect all this information in one place so people who are also evaluating the cost/benefit of ECC RAM for themselves can read the studies and decide what they want to do.</p>
+
+<p>Please feel free to leave comments if you have other studies to cite, or significant measured data to share.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] At Stack Overflow, we put developers first. We already help you find answers to your tough coding questions; now let us help you <a href="http://careers.stackoverflow.com" rel="nofollow">find your next job</a>.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Building a PC, Part VIII: Iterating]]></title><description><![CDATA[<p>The last time I seriously upgraded my PC was in 2011, because <a href="http://blog.codinghorror.com/the-pc-is-over/">the PC is over</a>. And in some ways, it truly is &ndash; they can slap a ton more CPU cores on a die, for sure, but the overall single core performance increase from a 2011 high end Intel</p>]]></description><link>http://blog.codinghorror.com/building-a-pc-part-viii-iterating/</link><guid isPermaLink="false">0b7d8df0-9757-4662-adab-983144c7d549</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Thu, 17 Sep 2015 22:55:00 GMT</pubDate><content:encoded><![CDATA[<p>The last time I seriously upgraded my PC was in 2011, because <a href="http://blog.codinghorror.com/the-pc-is-over/">the PC is over</a>. And in some ways, it truly is &ndash; they can slap a ton more CPU cores on a die, for sure, but the overall single core performance increase from a 2011 high end Intel CPU to today's high end Intel CPU is &hellip; really quite modest, on the order of maybe 30% to 40%.</p>
+
+<p>In that same timespan, mobile and tablet CPU performance has continued to just about double every year. Which means the forthcoming iPhone 6s <a href="http://www.techtimes.com/articles/77083/20150818/alleged-iphone-6s-geekbench-3-results-show-2gb-ram-and-tri-core-1-5-ghz-cpu.htm">will be</a> almost <strong>10 times faster</strong> than the iPhone 4 was.</p>
+
+<p><a href="https://browser.primatelabs.com/ios-benchmarks"><img src="http://blog.codinghorror.com/content/images/2015/09/geekbench-single-core-iphone-results.png" alt="iPhone single core geekbench results" title=""></a></p>
+
+<p>Remember, that's only single core CPU performance &ndash; I'm not even factoring in the move from single, to dual, to triple core as well as generally faster memory and storage. This stuff is old hat on desktop, where we've had mainstream dual cores for a decade now, but they are <em>huge</em> improvements for mobile.</p>
+
+<p>When your mobile devices get 10 times faster in the span of four years, it's hard to muster much enthusiasm for a modest 1.3 &times; or 1.4 &times; iterative improvement in your PC's performance over the same time.</p>
+
+<p>I've been slogging away at this for a while; my current PC build series spans 7 years:</p>
+
+<ul>
+<li><a href="http://blog.codinghorror.com/building-a-pc-part-vii-rebooting/">Building a PC, Part VII: Rebooting</a></li>
+<li><a href="http://www.codinghorror.com/blog/2009/12/building-a-pc-part-vi-rebuilding.html">Building a PC, Part VI: Rebuilding</a></li>
+<li><a href="http://www.codinghorror.com/blog/2008/04/building-a-pc-part-v-upgrading.html">Building a PC, Part V: Upgrading</a></li>
+<li><a href="http://www.codinghorror.com/blog/2007/07/building-a-pc-part-iv-now-its-your-turn.html">Building a PC, Part IV: Now It&#39;s Your Turn</a></li>
+<li><a href="http://www.codinghorror.com/blog/2007/07/building-a-pc-part-iii-overclocking.html">Building a PC, Part III: Overclocking</a></li>
+<li><a href="http://www.codinghorror.com/blog/2007/07/building-a-pc-part-ii.html">Building a PC, Part II: Burn in</a></li>
+<li><a href="http://www.codinghorror.com/blog/2007/07/building-a-pc-part-i.html">Building a PC, Part I: Minimal boot</a></li>
+</ul>
+
+<p>The fun part of building a PC is that it's relatively easy to swap out the guts when something compelling comes along. CPU performance improvements may be modest these days, but there are still bright spots where performance is increasing more dramatically. Mainly in graphics hardware and, in this case, <strong>storage</strong>.</p>
+
+<p>The current latest-and-greatest Intel CPU is Skylake. Like Sandy Bridge in 2011, which brought us much faster 6 Gbps SSD-friendly drive connectors (although only two of them), the Skylake platform brings us another key storage improvement &ndash; the ability to connect hard drives directly to the PCI Express lanes. Which looks like this:</p>
+
+<p><a href="http://techreport.com/review/28446/samsung-sm951-pcie-ssd-reviewed"><img src="http://blog.codinghorror.com/content/images/2015/09/m2-drive-on-mobo.jpg" alt="" title=""></a></p>
+
+<p>&hellip; and performs like this:</p>
+
+<p><a href="http://arstechnica.com/gadgets/2015/08/intel-skylake-core-i7-6700k-reviewed/"><img src="http://blog.codinghorror.com/content/images/2015/09/Ars-Technica-Skylake-Review-Charts-012.png" alt="" title=""></a></p>
+
+<p><strong>Now <em>there's</em> the 3&times; performance increase we've been itching for!</strong> To be fair, a raw increase of 3&times; in drive performance doesn't necessarily equate to a computer that boots in one third the time. But here's why disk speed matters:</p>
+
+<blockquote>
+  <p>If the CPU registers are how long it takes you to fetch data from your brain, then <a href="http://blog.codinghorror.com/the-infinite-space-between-words/">going to disk is the equivalent of fetching data from Pluto</a>.</p>
+</blockquote>
+
+<p>What I've always loved about SSDs is that they attack the <strong>PC's worst-case performance scenario</strong>, when information has to come off the slowest device inside your computer &ndash; the hard drive. SSDs massively reduced the variability of requests for data. Let's compare L1 cache access time to minimum disk access time:</p>
+
+<blockquote>
+  <p>Traditional hard drive <br>
+  0.9 ns &rarr; 10 ms (variability of 11,111,111× )</p>
+  
+  <p>SSD <br>
+  0.9 ns &rarr; 150 µs (variability of 166,667× )</p>
+</blockquote>
+
+<p>SSDs provide a reduction in overall performance variability of 66×! And when comparing latency:</p>
+
+<blockquote>
+  <p><a href="http://storagereview.com/toshiba_sata_hdd_enterprise_35_review_mg03acax00">7200rpm HDD</a> &mdash;  1800ms <br>
+  <a href="http://storagereview.com/intel_ssd_dc_s3500_enterprise_review">SATA SSD</a> &mdash; 4ms <br>
+  <a href="http://storagereview.com/huawei_tecal_es3000_application_accelerator_review">PCIe SSD</a> &mdash; 0.34ms  </p>
+</blockquote>
+
+<p>Even going from a fast SATA SSD to a PCI Express SSD, you're looking at a 10x reduction in drive latency.</p>
+
+<p>Here's what you need:</p>
+
+<ul>
+<li><a href="http://www.amazon.com/dp/B01639696U/?tag=codihorr-20">256GB Samsung 950 Pro NVMe M.2 drive</a> $198</li>
+<li><a href="http://www.amazon.com/dp/B012NH05UW/?tag=codihorr-20">Asus Z170-A motherboard</a> $165</li>
+<li><a href="http://www.amazon.com/dp/B012M8M7TY/?tag=codihorr-20">Intel i5-i6600k Skylake CPU</a> $270</li>
+<li><a href="http://www.amazon.com/dp/B00TPQPOIS/?tag=codihorr-20">16GB DDR4 memory</a> $134</li>
+</ul>
+
+<p>These are the basics. It's best to use the M.2 connection as a fast boot / system drive, so I scaled it back to the smaller 256 GB version. I also had a lot of trouble getting my hands on the faster i7-6700k CPU, which appears supply constrained and is currently overpriced as a result.</p>
+
+<p>(Also, be careful, as some older M.2 drives can use the older ACPI connection type. Make sure yours is NVMe.)</p>
+
+<p>Even though the days of doubling (or even 1.5&times;-ing) CPU performance are long gone for PCs, there are still some key iterative performance milestones to hit. Like <a href="http://blog.codinghorror.com/our-brave-new-world-of-4k-displays/">mainstream 4k displays</a>, I believe mainstream PCI express SSDs are another important step in the overall evolution of desktop computing. Or <a href="http://blog.codinghorror.com/the-pc-is-over/">its corpse</a>, anyway.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] <a href="http://careers.stackoverflow.com" rel="nofollow">Find a better job the Stack Overflow way</a> - what you need when you need it, no spam, and no scams.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Our Brave New World of 4K Displays]]></title><description><![CDATA[<p>It's been three years since I last upgraded monitors. Those <a href="http://blog.codinghorror.com/the-ips-lcd-revolution/">inexpensive Korean 27" IPS panels</a>, with a resolution of 2560&times;1440 &ndash; also known as 1440p &ndash; have served me well. You have no idea how many people I've witnessed being Wrong On The Internet on these babies.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/read-what-the-smart-people-are-saying.png" alt=""></p>
+
+<p>I</p>]]></description><link>http://blog.codinghorror.com/our-brave-new-world-of-4k-displays/</link><guid isPermaLink="false">7428a4d7-66c3-48c9-9ca3-18f25bff96cf</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Tue, 18 Aug 2015 09:39:44 GMT</pubDate><content:encoded><![CDATA[<p>It's been three years since I last upgraded monitors. Those <a href="http://blog.codinghorror.com/the-ips-lcd-revolution/">inexpensive Korean 27" IPS panels</a>, with a resolution of 2560&times;1440 &ndash; also known as 1440p &ndash; have served me well. You have no idea how many people I've witnessed being Wrong On The Internet on these babies.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/read-what-the-smart-people-are-saying.png" alt=""></p>
+
+<p>I recently got the upgrade itch real bad:</p>
+
+<ul>
+<li><p>4K monitors have stabilized as a category, from super bleeding edge "I'm probably going to regret buying this" early adopter stuff, and beginning to approach mainstream maturity.</p></li>
+<li><p>Windows 10, with its <a href="https://www.thurrott.com/windows/windows-10/4597/windows-10-feature-focus-display-scaling">promise of better high DPI handling</a>, was released. I know, I know, we've been promised reasonable DPI handling in Windows for the last five years, but hope springs eternal. This time will be different!&trade;</p></li>
+<li><p>I needed a reason to buy a new high end video card, which I was also itching to upgrade, and simplify from a <a href="http://blog.codinghorror.com/multiple-video-cards/">dual card config</a> back to a (very powerful) single card config.</p></li>
+<li><p>I wanted to rid myself of the monitor power bricks and USB powered DVI to DisplayPort converters that those Korean monitors required. I covet simple, modern DisplayPort connectors. I was beginning to feel like a bad person because I had never even <em>owned</em> a display that had a DisplayPort connector. First world problems, man.</p></li>
+<li><p>1440p at 27" is decent, but it's also &hellip; sort of an awkward no-man's land. Nowhere near high enough resolution to be retina, but it <em>is</em> high enough that you probably want to scale things a bit. After living with this for a few years, I think it's better to just suck it up and deal with giant pixels (34" at 1440p, say), or go with something <em>much</em> more high resolution and trust that everyone is getting their collective act together by now on software support for high DPI.</p></li>
+</ul>
+
+<p>Given my great experiences with modern high DPI smartphone and tablet displays (are there any other kind these days?), <strong>I want those same beautiful high resolution displays on my desktop, too.</strong> I'm good enough, I'm smart enough, and <a href="https://www.youtube.com/watch?v=-DIETlxquzY">doggone it, people like me</a>.</p>
+
+<p>I was excited, then, to discover some <a href="https://pcmonitors.info/reviews/asus-pb279q/">strong recommendations</a> for <a href="http://www.amazon.com/dp/B00YWCYKQM/?tag=codihorr-20">the Asus PB279Q</a>.</p>
+
+<p><a href="http://www.amazon.com/dp/B00YWCYKQM/?tag=codihorr-20"><img src="http://blog.codinghorror.com/content/images/2015/08/asus-PB279Q.jpg" alt="" title=""></a></p>
+
+<p>The <a href="http://www.amazon.com/dp/B00YWCYKQM/?tag=codihorr-20">Asus PB279Q</a> is a 27" panel, same size as my previous cheap Korean IPS monitors, but it is more premium in every regard:</p>
+
+<ul>
+<li>3840&times;2160</li>
+<li>"professional grade" color reproduction</li>
+<li>thinner bezel</li>
+<li>lighter weight</li>
+<li>semi-matte (not super glossy)</li>
+<li>integrated power (no external power brick)</li>
+<li>DisplayPort 1.2 and HDMI 1.4 support built in</li>
+</ul>
+
+<p>It is also a more premium monitor in price, at <strong>around $700</strong>, whereas I got my super-cheap no-frills Korean IPS 1440p monitors for roughly half that price. But when I say no-frills, I mean it &ndash; these Korean monitors didn't even have on-screen controls! </p>
+
+<p>4K is a surprisingly big bump in resolution over 1440p &mdash; we go from 3.7 to <strong>8.3 megapixels</strong>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/common-hd-resolutions-compared.png" alt=""></p>
+
+<p>But, is it &hellip; <em>retina?</em></p>
+
+<p>It depends how you define that term, and from what distance you're viewing the screen. Per <a href="http://isthisretina.com/">Is This Retina</a>:</p>
+
+<table width="600">  
+<tr>  
+<td>27" 3840&times;2160</td>  
+<td>'retina' at a viewing distance of <b>21"</b></td>  
+</tr>  
+<tr>  
+<td>27" 2560&times;1440</td>  
+<td>'retina' at a viewing distance of <b>32"</b></td>  
+</tr>  
+</table>
+
+<p>With <a href="http://blog.codinghorror.com/computer-workstation-ergonomics/">proper computer desk ergonomics</a> you should be sitting with the top of your monitor at eye level, at about an arm's length in front of you. I just measured my arm and, fully extended, it's about 26". Sitting at <a href="http://blog.codinghorror.com/the-ideal-computer-desk/">my desk</a>, I'm probably about that distance from my monitor or a bit closer, but certainly beyond the 21" necessary to call this monitor 'retina' despite being 163 PPI. It definitely looks that way to my eye.</p>
+
+<p>I have more words to write here, but let's cut to the chase for the impatient and the TL;DR crowd. <strong>This 4K monitor is totally amazing and <a href="http://www.amazon.com/dp/B00YWCYKQM/?tag=codihorr-20">you should buy one</a>.</strong> It feels exactly like going from the non-retina iPad 2 to the retina iPad 3 did, except on the desktop. It makes all the text on your screen look beautiful. There is almost no downside.</p>
+
+<p>There are a few caveats, though:</p>
+
+<ul>
+<li><p>You will need a beefy video card to drive a 4K monitor. I personally <a href="http://www.amazon.com/dp/B00YU72IS6/?tag=codihorr-20">went all out for the GeForce 980 Ti</a>, because I might want to actually game at this native resolution, and the 980 Ti is the undisputed fastest single video card in the world at the moment. If you're not a gamer, any midrange video card should do fine.</p></li>
+<li><p>Display scaling is definitely still a problem at times with a 4K monitor. You <em>will</em> run into apps that don't respect DPI settings and end up magnifying-glass tiny. Scott Hanselman provided <a href="http://www.hanselman.com/blog/LivingAHighDPIDesktopLifestyleCanBePainful.aspx">many examples in January 2014</a>, and although stuff has improved since then with Windows 10, it's far from perfect.</p>
+
+<p>Browsers scale great, and the OS does too, but if you use any desktop apps built by careless developers, you'll run into this. The only good long term solution is to spread the gospel of 4K and shame them into submission with me. <a href="http://blog.codinghorror.com/are-you-an-evangelist-too/">Preach it</a>, brothers and sisters!</p></li>
+<li><p><strong>Enable DisplayPort 1.2</strong> in the monitor settings so you can turn on 60Hz. Trust me, you <em>do not</em> want to experience a 30Hz LCD display. It is unspeakably bad, enough to put one off computer screens forever. For people who tell you <a href="http://30vs60.com/">they can't see the difference between 30fps and 60fps</a>, just switch their monitors to 30hz and watch them squirm in pain.</p>
+
+<video controls loop width="460" height="358"><source src="http://discourse-cdn.codinghorror.com/uploads/default/original/3X/e/6/e6652f5e30a675ee52bc3e0ccd062f4e9978e09d.mp4"></video>
+
+<p>Viewing those comparison videos, I begin to understand why gamers want 90Hz, 120Hz or even 144Hz monitors. 60fps / 60 Hz should be the <em>absolute minimum</em>, no matter what resolution you're running. Luckily DisplayPort 1.2 enables 60 Hz at 4K, but only just. You'll need DisplayPort 1.3+ <a href="http://www.extremetech.com/extreme/199128-vesa-steams-ahead-with-displayport-1-4a-allows-for-8k-scaling">to do better than that</a>.</p></li>
+<li><p>Disable the crappy built in monitor speakers. <a href="http://blog.codinghorror.com/headphone-snobbery/">Headphones or bust</a>, baby!</p></li>
+<li><p>Turn down the brightness from the standard factory default of <a href="http://blog.codinghorror.com/bias-lighting/">retina scorching 100%</a> to something saner like 50%. Why do manufacturers do this? Is it because they hate eyeballs? While you're there, you might mess around with some <a href="http://blog.codinghorror.com/computer-display-calibration-101/">basic display calibration</a>, too.</p></li>
+</ul>
+
+<p>This <a href="http://www.amazon.com/dp/B00YWCYKQM/?tag=codihorr-20">Asus PB279Q 4K monitor</a> is the <strong>best thing I've upgraded on my computer in years</strong>. Well, actually, thing(s) I've upgraded, because <a href="http://www.theonion.com/article/coworker-with-two-computer-screens-not-fucking-aro-29151">I am not f**ing around over here</a>. </p>
+
+<p><a href="http://www.colebrookbossonsaunders.com/products/monitor-arm-stand/flo"><img src="http://blog.codinghorror.com/content/images/2015/08/unnamed.jpg" alt="Flo monitor arms, front view, triple monitors" title=""></a></p>
+
+<p>I'm a <a href="http://blog.codinghorror.com/three-monitors-for-every-user/">long time proponent of the triple monitor lifestyle</a>, and the only thing better than a 4K display is <em>three 4K displays!</em> That's 11,520&times;2,160 pixels to you, or 6,480&times;3,840 if rotated.</p>
+
+<p>(Good luck attempting to game on this configuration with all three monitors active, though. <a href="http://www.tweaktown.com/tweakipedia/88/nvidia-geforce-gtx-980-ti-4k-surround-6480x3840/index.html">You're gonna need it</a>. Some newer games are too demanding to run on "High" settings on a <em>single</em> 4K monitor, even with the mighty <a href="http://www.amazon.com/dp/B00YU72IS6/?tag=codihorr-20">Nvidia 980 Ti</a>.)</p>
+
+<p>I've also been experimenting with <a href="http://www.colebrookbossonsaunders.com/products/monitor-arm-stand/flo">better LCD monitor arms</a> that properly support my preferred triple monitor configurations. Here's a picture from the back, where all the action is:</p>
+
+<p><a href="http://www.colebrookbossonsaunders.com/products/monitor-arm-stand/flo"><img src="http://blog.codinghorror.com/content/images/2015/08/monitors-rear.jpg" alt="Flo monitor arms, triple monitors, rear view" title=""></a></p>
+
+<p>These are the <a href="http://www.colebrookbossonsaunders.com/products/monitor-arm-stand/flo">Flo Monitor Supports</a>, and they free up a ton of desk space in a triple monitor configuration while also looking quite snazzy. I'm fond of putting my keyboard <em>just</em> under the center monitor, which isn't possible with any monitor stand.</p>
+
+<p><a href="http://www.colebrookbossonsaunders.com/products/monitor-arm-stand/flo"><img src="http://blog.codinghorror.com/content/images/2015/08/flo-monitor-arm-suggested-setups.png" alt="Flo monitor arm suggested multi-monitor setups" title=""></a></p>
+
+<p>With these Flo arms you can "scale up" your configuration from dual to triple or even quad (!) monitor later.</p>
+
+<p>4K monitors are here, they're not that expensive, the desktop operating systems and video hardware are in place to properly support them, and in the appropriate size (27") we can finally have <strong>an amazing retina display experience at typical desktop viewing distances</strong>. Choose the <a href="http://www.amazon.com/dp/B00YWCYKQM/?tag=codihorr-20">Asus PB279Q 4K monitor</a>, or whatever 4K monitor you prefer, but take the plunge.</p>
+
+<p>In 2007, I asked <a href="http://blog.codinghorror.com/where-are-the-high-resolution-displays/">Where Are The High Resolution Displays</a>, and now, 8 years later, they've finally, <em>finally</em> arrived on my desktop. Praise the lord and pass the pixels!</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/common-hd-resolutions-compared-8k.png" alt=""></p>
+
+<p>Oh, and gird your loins for 8K one day. It, too, <a href="https://www.youtube.com/watch?v=sLprVF6d7Ug">is coming</a>.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] Building out your tech team? <a href="http://careers.stackoverflow.com/products" rel="nofollow">Stack Overflow Careers</a> helps you hire from the largest community for programmers on the planet.  We built our site with developers like you in mind.
+</td></tr>  
+</table> ]]></content:encoded></item><item><title><![CDATA[Welcome to The Internet of Compromised Things]]></title><description><![CDATA[<p>This post is a bit of a public service announcement, so I'll get right to the point:</p>
+
+<blockquote>
+  <p>Every time you use WiFi, ask yourself: <strong>could I be connecting to the Internet through a compromised router with malware?</strong></p>
+</blockquote>
+
+<p>It's becoming more and more common to see malware installed not at the</p>]]></description><link>http://blog.codinghorror.com/welcome-to-the-internet-of-compromised-things/</link><guid isPermaLink="false">7138d43c-1c01-4df4-ad38-bb816f19f1e0</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Sat, 08 Aug 2015 10:59:26 GMT</pubDate><content:encoded><![CDATA[<p>This post is a bit of a public service announcement, so I'll get right to the point:</p>
+
+<blockquote>
+  <p>Every time you use WiFi, ask yourself: <strong>could I be connecting to the Internet through a compromised router with malware?</strong></p>
+</blockquote>
+
+<p>It's becoming more and more common to see malware installed not at the server, desktop, laptop, or smartphone level, but at the <em>router</em> level. Routers have become quite capable, powerful little computers in their own right over the last 5 years, and that means they can, unfortunately, be harnessed to work against you.</p>
+
+<p>I write about this because <strong>it recently happened to two people I know.</strong></p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/jchris">@jchris</a> A friend got hit by this on newly paved win8.1 computer. Downloaded Chrome, instantly infected with malware. Very spooky.</p>&mdash; not THE Damien Katz (@damienkatz) <a href="https://twitter.com/damienkatz/status/601169882122584065">May 20, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/codinghorror">@codinghorror</a> *no* idea and there’s almost ZERO info out there. Essentially malicious JS adware embedded in every in-app browser</p>&mdash; John O&#39;Nolan (@JohnONolan) <a href="https://twitter.com/JohnONolan/status/629510925389856768">August 7, 2015</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>In both cases, they eventually determined the source of the problem was that <strong>the router they were connecting to the Internet through had been compromised</strong>.</p>
+
+<p>This is way more evil genius than infecting a mere <em>computer</em>. If you can manage to systematically infect common home and business routers, you can potentially compromise <strong>every computer connected to them.</strong></p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/muahahaha.jpg" alt=""></p>
+
+<p>Hilarious meme images I am contractually obligated to add to each blog post aside, this is scary stuff and you should be scared.</p>
+
+<p>Router malware is the ultimate man-in-the-middle attack. For all meaningful traffic sent through a compromised router <a href="http://blog.codinghorror.com/should-all-web-traffic-be-encrypted/">that isn't HTTPS encrypted</a>, it is 100% game over. The attacker will certainly be sending all that traffic somewhere they can sniff it for anything important: logins, passwords, credit card info, other personal or financial information. And they can direct you to <a href="http://blog.codinghorror.com/phishing-the-forever-hack/">phishing websites</a> at will &ndash; if you think you're on the "real" login page for the banking site you use, think again.</p>
+
+<p>Heck, even if you completely trust the person whose router you are using, they could be technically be doing this to you. But they probably aren't.</p>
+
+<p>Probably.</p>
+
+<p>In John's case, the attackers inserted annoying ads in all unencrypted web traffic, which is an obvious tell to a sophisticated user. But how exactly would the average user figure out where this junk is coming from (or worse, assume the regular web is just full of ad junk all the time), when even a technical guy like John &ndash; founder of the <a href="https://ghost.org/">open source Ghost blogging software</a> used on this very blog &ndash; was flummoxed?</p>
+
+<p>But that's OK, we're smart users who would <em>only</em> access public WiFi using HTTPS websites, right? Sadly, <strong>even if the traffic <em>is</em> HTTPS encrypted, it can still be subverted!</strong> There's an <a href="https://cryptostorm.org/viewtopic.php?f=67&amp;t=8713">extremely technical blow-by-blow analysis at Cryptostorm</a>, but the TL;DR is this:</p>
+
+<blockquote>
+  <p>Compromised router answers DNS req for *.google.com to 3rd party with faked HTTPS cert, you download malware Chrome. Game over.</p>
+</blockquote>
+
+<p>HTTPS certificate shenanigans. DNS and BGP manipulation. Very hairy stuff.</p>
+
+<p>How is this possible? Let's start with the weakest link, your router. Or more specifically, <strong>the programmers responsible for coding the admin interface to your router</strong>. </p>
+
+<p>They must be terribly incompetent coders to let your router get compromised over the Internet, since one of the major selling points of a router is to act as a basic firewall layer between the Internet and you&hellip; right? </p>
+
+<p>In their defense, that part of a router generally works as advertised. More commonly, you <em>aren't</em> being attacked from the hardened outside. <strong>You're being attacked from the soft, creamy inside.</strong></p>
+
+<p><a href="http://arstechnica.com/security/2014/03/hackers-hijack-300000-plus-wireless-routers-make-malicious-changes/"><img src="http://blog.codinghorror.com/content/images/2015/08/csrf-soho-router-attack-1.png" alt="" title=""></a></p>
+
+<p>That's right, <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/TheCallsAreComingFromInsideTheHouse"><em>the calls are coming from inside your house!</em></a></p>
+
+<p>By that I mean you'll visit a malicious website that <strong>scripts your own browser to access the web-based admin pages of your router, and reset (or use the default) admin passwords to reconfigure it.</strong></p>
+
+<p>Nasty, isn't it? They <a href="http://arstechnica.com/security/2014/03/hackers-hijack-300000-plus-wireless-routers-make-malicious-changes/">attack from the inside using your own browser</a>. But that's not the only way.</p>
+
+<ul>
+<li><p>Maybe you accidentally turned on remote administration, so your router can be modified from the outside. </p></li>
+<li><p>Maybe you left your router's admin passwords at default. </p></li>
+<li><p>Maybe there is a legitimate external exploit for your router and you're running a very old version of firmware.</p></li>
+<li><p>Maybe your ISP provided your router and made a security error in the configuration of the device.</p></li>
+</ul>
+
+<p>In addition to being kind of terrifying, this does not bode well for the Internet of Things. </p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/internet-of-compromised-things.png" alt=""></p>
+
+<p>Internet of <em>Compromised</em> Things, more like.</p>
+
+<p>OK, so what can we do about this? There's no perfect answer; I think it has to be a defense in depth strategy.</p>
+
+<h3 id="insideyourhome">Inside Your Home</h3>
+
+<p><strong>Buy a new, quality router.</strong> You don't want a router that's years old and hasn't been updated. But on the other hand you also don't want something <em>too</em> new that hasn't been vetted for firmware and/or security issues in the real world.</p>
+
+<p>Also, any router your ISP provides is going to be about as crappy and "recent" as the awful stereo system you get in a new car. So I say stick with well known consumer brands. There are some hardcore folks who think <a href="http://routersecurity.org/">all consumer routers are trash</a>, so YMMV.</p>
+
+<p>I can recommend the <a href="http://www.amazon.com/dp/B00MPI5N7U/?tag=codihorr-20">Asus RT-AC87U</a> &ndash; it did <a href="http://www.smallnetbuilder.com/tools/rankers/router/result/1689-asus-rtac87u">very well in the SmallNetBuilder tests</a>, Asus is a respectable brand, it's been out a year, and for most people, this is <em>probably</em> an upgrade over what you currently have without being totally bleeding edge overkill. I know it is an upgrade for me.</p>
+
+<p><a href="http://www.amazon.com/dp/B00MPI5N7U/?tag=codihorr-20"><img src="http://blog.codinghorror.com/content/images/2015/08/RT-AC87U-03.jpg" alt="" title=""></a></p>
+
+<p>(I am also <a href="http://eero.com/">eagerly awaiting Eero</a> as a domestic best of breed device with amazing custom firmware, and have one pre-ordered, but it hasn't shipped yet.)</p>
+
+<p><strong>Download and install the latest firmware</strong>. Ideally, do this before connecting the device to the Internet. But if you connect and then immediately use the firmware auto-update feature, who am I to judge you.</p>
+
+<p><strong>Change the default admin passwords</strong>. Don't leave it at the documented defaults, because then it could be potentially scripted and accessed.</p>
+
+<p><strong>Turn off WPS</strong>. Turns out the Wi-Fi Protected Setup feature intended to make it "easy" to connect to a router by pressing a button or entering a PIN made it &hellip; <a href="https://nakedsecurity.sophos.com/2014/09/02/using-wps-may-be-even-more-dangerous/">a bit too easy</a>. This is <em>always</em> on by default, so be sure to disable it.</p>
+
+<p><strong>Turn off uPNP</strong>. Since we're talking about attacks that come from "inside your house", uPNP offers <a href="http://security.stackexchange.com/questions/38631/what-are-the-security-implications-of-enabling-upnp-in-my-home-router">zero protection as it has no method of authentication</a>. If you need it for specific apps, you'll find out, and you can forward those ports manually as needed.</p>
+
+<p><strong>Make sure remote administration is turned off.</strong> I've <em>never</em> owned a router that had this on by default, but check just to be double plus sure.</p>
+
+<p><strong>For Wifi, turn on WPA2+AES and use a long, strong password.</strong>  Again, I feel most modern routers get the defaults right these days, but just check. The password is your responsibility, and <a href="http://blog.codinghorror.com/open-wireless-and-the-illusion-of-security/">password strength matters tremendously</a> for wireless security, so be sure to make it a long one &ndash; at least 20 characters with all the variability you can muster.</p>
+
+<p><strong>Pick a unique SSID.</strong> Default SSIDs just scream <em>hack me, for I have all defaults and a clueless owner</em>. And no, don't bother "hiding" your SSID, <a href="http://www.howtogeek.com/howto/28653/debunking-myths-is-hiding-your-wireless-ssid-really-more-secure/">it's a waste of time</a>.</p>
+
+<p><strong>Optional: use less congested channels for WiFi.</strong> The default is "auto", but you can sometimes get better performance by picking less used frequencies at the ends of the spectrum. As summarized by official ASUS support reps:</p>
+
+<ul>
+<li><p>Set 2.4 GHz channel bandwidth to 40 MHz, and change the control channel to 1, 6 or 11. </p></li>
+<li><p>Set 5 GHz channel bandwidth to 80 MHz, and change the control channel to 165 or 161. </p></li>
+</ul>
+
+<p><strong>Experts only: install an open source firmware.</strong> I discussed this a fair bit in <a href="http://blog.codinghorror.com/because-everyone-still-needs-a-router/">Everyone Needs a Router</a>, but you have to be very careful which router model you buy, and you'll probably need to stick with older models. There are several which are specifically sold to be friendly to open source firmware.</p>
+
+<h3 id="outsideyourhome">Outside Your Home</h3>
+
+<p>Well, this one is simple. Assume everything you do outside your home, on a remote network or over WiFi is being monitored by <strong>IBGs</strong>: Internet Bad Guys.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/internet-bad-guy.jpg" alt=""></p>
+
+<p>I know, kind of an oppressive way to voyage out into the world, but it's better to start out with a defensive mindset, because you could be connecting to anyone's compromised router or network out there. </p>
+
+<p>But, good news. There are only two key things you need to remember once you're outside, facing down that fiery ball of hell in the sky and armies of IBGs.</p>
+
+<ol>
+<li><p><strong>Never access anything but HTTPS websites.</strong></p>
+
+<p>If it isn't available over HTTPS, <em>don't go there!</em> </p>
+
+<p>You might be OK with HTTP if you are not logging in to the website, just browsing it, but even then IBGs could inject malware in the page and potentially compromise your device. And never, ever enter anything over HTTP you aren't 100% comfortable with bad guys seeing and using against you somehow.</p>
+
+<p>We've made <a href="http://blog.codinghorror.com/should-all-web-traffic-be-encrypted/">tremendous progress in HTTPS Everywhere over the last 5 years</a>, and these days most major websites offer (or even better, force) HTTPS access. So if you just want to quickly check your GMail or Facebook or Twitter, you will be fine, because those services all force HTTPS.</p></li>
+<li><p><strong>If you must access non-HTTPS websites, or you are not sure, <em>always</em> use a VPN</strong>. </p>
+
+<p>A VPN encrypts all your traffic, so you no longer have to worry about using HTTPS. You do have to worry about <a href="https://torrentfreak.com/can-you-trust-your-vpn-provider-130929/">whether or not you trust your VPN provider</a>, but that's a much longer discussion than I want to get into right now.</p>
+
+<p>It's a good idea to pick a go-to VPN provider so you have one ready and get used to how it works over time. Initially it will feel like a bunch of extra work, and it kinda is, but if you care about your security an encrypt-everything VPN is bedrock. And if you don't care about your security, well, why are you even reading this?</p></li>
+</ol>
+
+<p>If it feels like these are both variants of the same rule, <em>always strongly encrypt everything</em>, you aren't wrong. <a href="https://letsencrypt.org/">That's the way things are headed</a>. The math is as sound as it ever was &ndash; but unfortunately the people and devices, less so.</p>
+
+<h3 id="besafeoutthere">Be Safe Out There</h3>
+
+<p>Until I heard Damien's story and John's story, I had no idea router hardware could be such a huge point of compromise. I didn't realize that you could be innocently visiting a friend's house, and because he happens to be the parent of three teenage boys and the owner of an old, unsecured router that you connect to via WiFi &hellip; <em>your</em> life will suddenly get a lot more complicated.</p>
+
+<p>As the amount of stuff we connect to the Internet grows, we have to understand that <strong>the Internet of Things is a bunch of tiny, powerful computers, too</strong> &ndash; and they need the same strong attention to security that our smartphones, laptops, and servers already enjoy.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] At Stack Overflow, we help developers learn, share, and grow. Whether you’re looking for your next dream job or looking to build out your team, <a href="http://careers.stackoverflow.com" rel="nofollow">we've got your back</a>.
+</td></tr>  
+</table> ]]></content:encoded></item><item><title><![CDATA[I Tried VR and It Was Just OK]]></title><description><![CDATA[<p>It's been about a year and a half since I wrote <a href="http://blog.codinghorror.com/the-road-to-vr/">The Road to VR</a>, and a &hellip; few &hellip; things have happened since then.</p>
+
+<ul>
+<li><p>Facebook bought Oculus for a skadillion dollars</p></li>
+<li><p>I have to continually read thinkpieces describing how the mere act of strapping a VR headset on your</p></li></ul>]]></description><link>http://blog.codinghorror.com/i-tried-vr-and-it-was-just-ok/</link><guid isPermaLink="false">2357229d-0e1d-4291-bf9f-a99d490c6180</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Wed, 05 Aug 2015 11:28:50 GMT</pubDate><content:encoded><![CDATA[<p>It's been about a year and a half since I wrote <a href="http://blog.codinghorror.com/the-road-to-vr/">The Road to VR</a>, and a &hellip; few &hellip; things have happened since then.</p>
+
+<ul>
+<li><p>Facebook bought Oculus for a skadillion dollars</p></li>
+<li><p>I have to continually read thinkpieces describing how the mere act of strapping a VR headset on your face is such a transformative, disruptive, rapturous experience that you'll never look at the world the same way again.</p></li>
+</ul>
+
+<p>I am somewhat OK with the former, although the idea of my heroes John Carmack and Michael Abrash as Facebook employees still raises my hackles. But the latter is more difficult to stomach. And it just doesn't <em>stop</em>.</p>
+
+<p>For example, <a href="https://www.google.com/search?ie=UTF-8&amp;oe=UTF-8&amp;sourceid=navclient&amp;gfns=1&amp;q=%22Virtual+Reality+Isn%E2%80%99t+Just+About+Games%22">this recent WSJ piece</a>. (I can't link directly to it, you have to click through from Google search results to get past the paywall).</p>
+
+<blockquote>
+  <p>I’ll spare you the rapturous account of the time I sculpted in three dimensions with light, fire, leaves and rainbows inside what felt like a real-life version of a holodeck from “Star Trek.” Writing about VR is like fiction about sex—seldom believable and never up to the task.</p>
+  
+  <p>If you really want to understand how compelling VR is, you just have to try it. And I guarantee you will. At some point in the next couple of years, one of your already-converted friends will insist you experience it, the same way someone gave you your first turn at a keyboard or with a touch screen. And it will be no less a transformative experience.</p>
+</blockquote>
+
+<p>I don't mean to call out the author here. There are a dozen other similarly breathless VR articles I could cite, where an amazing VR wonderland is looming right around the corner for all of us, any day now. And if you haven't tried it, boy, you just don't know! <em>It can't be explained, it must be experienced!</em> There are people who honestly believe that in 5 years nobody will make non-VR games any more. The hype levels are off the charts.</p>
+
+<p>Well, I <em>have</em> experienced modern VR. A lot. I've tried both the Oculus DK1, the Oculus DK2, and a 360&deg; backpack-and-controllers Survios rig, which looks something like this:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N4leQRF3v4g" frameborder="0" allowfullscreen></iframe>
+
+<p>Based on those experiences, I can't reconcile these hype levels with what I felt. At all. Right now, <strong>VR is not something I'd unconditionally recommend to a fellow avid gamer, much less a casual gamer</strong>.</p>
+
+<p>To be honest, when I tried the DK1 and DK2, after a few hours of demos and exploration, I couldn't wait to get the headset off. Not because I was motion sick &ndash; I don't get motion sick, and never have &ndash; but because I was <em>bored</em>. And a little frustrated by control limitations. Not exactly the stuff transformative world-changing disruption is made of.</p>
+
+<p>Here's what that experience looks like, by the way. You can practically taste the gaming excitement dripping off me.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/jeff_oculus.jpg" alt=""></p>
+
+<p>And if you don't find watching me experience my virtual world fascinating (although I can't imagine why) I suppose you can enjoy what's on my screen:</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/vr-screenshot.jpg" alt=""></p>
+
+<p>Chroma-shifted, stereographic, fisheye VR gibberish.</p>
+
+<p>I've always been the first kid on my block to recommend an awesome, transformative gaming experience, from the Atari 2600 to the Kinect. I mean, that's kind of who I am, isn't it? The alpha geek, the guy who owned a Vectrex and thought vector graphics were the cat's pajamas, the guy who bought one of the <a href="http://blog.codinghorror.com/guitar-hero-are-you-ready-to-rock/">first copies of Guitar Hero</a> in 2005 and <a href="http://blog.codinghorror.com/living-the-dream-rock-band/">would not shut up about it</a>. For that matter I dragged my buddies to a VR storefront in Boulder, Colorado circa 1993 <a href="http://blog.codinghorror.com/the-road-to-vr/">so we could play Dactyl Nightmare</a>. And I have to say, in my alpha geek opinion, <strong>modern VR has a <em>long</em> way to go before it'll be ready for the rapturous smartphone levels of adoption that media pundits imply is a few months away.</strong> </p>
+
+<p>I apologize if this comes off as negative, and no, I haven't tried the <a href="https://www.oculus.com/en-us/rift/">magical new VR headset models that are Just Around The Corner and Will Change Everything</a>. I'll absolutely try them when they are available. Let me be clear that <strong>I think the technical challenges around VR are deep, hard, and fascinating</strong>, and I could not be happier that some of the best programmers of our generation are working on this stuff. But from what I've seen and experienced to date, there is just no way that VR is going to be remotely mainstream in 5 years. I'm doubtful that can happen in a decade or even two decades, to be honest, but a smart person always hedges their bets when trying to predict the future.</p>
+
+<p>I think the current state of VR, or at least the "strap a nice smartphone or two on your face" version of it, has quite a few fundamental physical problems to deal with before it has any chance of being mainstream.</p>
+
+<h4 id="itshouldbeasconvenientasapairofglasses">It should be as convenient as a pair of glasses</h4>
+
+<p>Nobody "enjoys" strapping two pounds of stuff on their face unless they are in a hazardous materials situation. We can barely get people to wear bicycle helmets, and yet they are going to be lining up around the block to slap this awkward, gangly VR contraption on their head? Existing VR headsets get awfully sweaty after 30 minutes of use, and they're also difficult to fit over glasses. The idea of gaming with a heavy, sweaty, uncomfortable headset on for hours at a time isn't too appealing &ndash; and that's coming from a guy who thinks nothing of spending 6 hours in a gaming jag with headphones on.</p>
+
+<p>For VR to be quick and easy and pervasive, the headset would need to be so miniaturized as to be basically invisible &ndash; akin to putting on a cool pair of sunglasses.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JI8AMRbqY6w" frameborder="0" allowfullscreen></iframe>
+
+<p>Maybe current VR headsets are like the <a href="https://en.wikipedia.org/wiki/Motorola_DynaTAC">old brick cellphones</a> from the 90's. The question is, how quickly can they get from 1990 to 2007?</p>
+
+<h4 id="itshouldbewireless">It should be wireless</h4>
+
+<p>The world has been inexorably moving towards wireless everything, but in this regard VR headsets are a glorious throwback to science fiction movies from the 1970s. Your VR headset and everything else on it will be physically wired, in multiple ways, to a powerful computer. Wires, wires, everywhere, as far as your eyes &hellip; can't see.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/brainstorm-Walken.jpg" alt=""></p>
+
+<p>Even the cheaper VR headsets that let you drop a high end smartphone in for a limited VR experience have to be wired to power, as phone batteries are not built for the continuous heavy-duty CPU and GPU rendering that VR requires. Overheating is a very real problem, too.</p>
+
+<p>Wireless video is hard to do well, particularly at the 1440p resolutions that are the absolute minimum for practical VR. On top of that, good VR requires much higher framerates, ideally 120fps. That kind of ultra low latency, super high resolution video delivered wirelessly, is quite far off.</p>
+
+<h4 id="itshouldhave4kresolution">It should have 4k resolution</h4>
+
+<p>Since the VR device you're looking at is inches from your eyes &ndash; and the resolution is effectively divided in half for each eye (there are a few emerging VR headsets that use two smartphones here instead of one) &ndash; an <em>extremely</em> high resolution screen is needed to achieve effective visual resolutions that are ancient by modern computer standards.</p>
+
+<p>The Oculus DK1 at 720p was so low resolution that I consider it borderline unusable even as a demo unit. I'd estimate that it felt roughly DOOM resolution, or <strong>320&times;240</strong>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/doom-screenshot-2x.png" alt=""></p>
+
+<p>The DK2 at 1080p was marginally better, but the pixelation and shimmer was quite bad, a serious distraction from immersion. It felt roughly Quake resolution, or <strong>640&times;480</strong>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/quake-1-640x480.jpg" alt=""></p>
+
+<p>I know many upcoming VR devices are 1440p or 2560&times;1440. I strongly suspect that, in practice, is going to feel like yet another mild bump to effective <strong>1024&times;768</strong> resolution.</p>
+
+<p>I'm used to modern games and modern graphics resolutions. Putting on a VR headset shouldn't be a one-way ticket to jarring, grainy, pixelated graphics the like of which I haven't seen since 1999. There are definitely <a href="http://www.techradar.com/us/news/phone-and-communications/mobile-phones/is-this-the-world-s-first-4k-smartphone--1296316">4k smartphones out there</a> on the horizon which could solve this problem, but the power required to drive them, by that I mean the CPU, GPU, and literal battery power &ndash; is far from trivial.</p>
+
+<p>(And did I mention it needs to be a minimum of 60fps, ideally 120fps for the best VR experience? I'm pretty sure I mentioned that.)</p>
+
+<p>Still, the 4k resolution problem is probably the closest to being reasonably solved on current hardware trajectories in about five years or so, albeit driven by very high end hardware, not a typical smartphone, which brings me to &hellip;</p>
+
+<h4 id="itshouldnotrequireahighendgamingpcorfuturegenconsole">It should not require a high end gaming PC or future gen console</h4>
+
+<p>VR has <em>massive</em> CPU and GPU system requirements, somewhat beyond what you'd need for the latest videogames running at 4k resolutions. Which means by definition cutting edge VR is developed with, and best experienced on, a high end Windows PC.</p>
+
+<p>Imagine the venture capitalists who invested in Oculus, who have probably been Mac-only since the early aughts, trying to scrounge together a gaming PC so they can try this crazy new VR thing they just invested in. That's some culture shock.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/ugly-gaming-pc.jpeg" alt=""></p>
+
+<p>Current generation consoles such as the Xbox One and PS4 may be fine with (most) games running at 1080p, on the PS4 at least, but they are both <em>woefully</em> under-specced to do VR in both GPU and CPU power. That's bad news if you expect VR to be mainstream in the lifetime of these new consoles over the next 5-8 years, and were counting on the console market to get there.</p>
+
+<p>VR on current generation consoles will be a slow, crippled, low resolution affair, about on the level of the Oculus DK2 at best. You'll be waiting quite a while for the next generation of consoles beyond these to deliver decent VR.</p>
+
+<h4 id="handsglovesmustbesupported">Hands (Gloves?) must be supported</h4>
+
+<p>I was extremely frustrated by the lack of control options in the Oculus DK1 and DK2. Here I was looking around and exploring this nifty VR world, but to do <em>anything</em> I had to tap a key on my keyboard, or move and click my mouse. Talk about breaking immersion. They bundle an Xbox controller with the upcoming Rift, which is no better. Experiencing VR with a mouse is like playing Guitar Hero with a controller.</p>
+
+<p>The most striking thing about <a href="https://www.youtube.com/embed/N4leQRF3v4g">the Survios demo rig I tried</a> was the way I could use my hands to manipulate things in the VR world. <strong>Adding hands to VR was revelatory, the one bit of VR I've experienced to date that I can honestly say I was blown away by.</strong> I could reach out and grab objects, rotate things in my hands and move them close to my face to look at them, hold a shotgun and cock it with two hands, and so forth. With my hands, it was <em>amazing</em>.  The primary controllers you should need in VR are the ones you were born with: your hands.</p>
+
+<p><strong>A virtual world experienced with just your head is quite disappointing and passive, like a movie or an on-rails ride.</strong> But add hands, and suddenly <em>you are there</em> because you can now <em>interact</em> with that VR world in a profoundly human way: by touching it. I could see myself playing story exploration games like <a href="http://www.gonehomegame.com/">Gone Home</a> in VR, if I can use my hands &ndash; to manipulate things, to look at them and open them and turn them in my hands and check them out. It was incredible. Manipulating that world with my hands made it infinitely more real.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/oculus-touch1.jpg" alt=""></p>
+
+<p>The good news is that there are solutions like <a href="http://gizmodo.com/oculus-touch-hands-on-so-damn-good-1712031397">Oculus Touch</a>. The bad news is that's it's not bundled by default, but should be. This device tracks hand position, plus rotation, and adds some buttons for interaction. Even better would be simple gloves you could wear that visually tracked each finger &ndash; but sometimes you do need a button, because if you are holding a gun (or a flashlight) you need to indicate that you fired a gun (or turned on the flashlight) which would be quite hairy to track via finger movement alone.</p>
+
+<p>I'm optimistic that VR and hand control will hopefully become synonymous, otherwise we're locking ourselves into a "just look around you" mindset, which leads to crappy, passive VR that's little more than a different kind of IMAX 3D movie.</p>
+
+<h4 id="itmustcompetewithmature2dentertainment">It must compete with mature 2D entertainment</h4>
+
+<p>I get frustrated talking to people who act like VR exists in a vacuum, that there are suddenly no other experiences worth having unless they happen in glorious stereo 3D.</p>
+
+<p>I've experimented with stereo 3D on computers since the days of junky battery powered LCD shutter glasses. And we all know the world has experienced the glory of 3D television &hellip; and collectively turned its head and said <em>meh</em>.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/08/3D-Technology.png" alt=""></p>
+
+<p><strong>Experiencing something in 3D, in and of itself, is just not that compelling.</strong> If it was, people would have scarfed up 3D TVs, see only 3D movies, and play only 3D video games on their PCs and consoles regularly. The technology to do it is there, battle tested, and completely mature. I know because I saw Captain EO at Epcot Center in 3D way back in 1985, and it was amazing <em>thirty years ago!</em></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MCXgORuMvyw" frameborder="0" allowfullscreen></iframe>
+
+<p>I recently saw Gravity in IMAX 3D and I liked it, but it didn't transform my moviegoing experience such that I could never imagine seeing another boring flat 2D movie ever again.</p>
+
+<p>People have so many wonderful social experiences gathered around common 2D screens. Watching a movie, watching a TV show, watching someone play a game. These are fundamentally joyous, shared human experiences. For this to work with VR is kinda-sorta possible, but difficult, because:</p>
+
+<ul>
+<li><p>You need a proper flat 2D representation of what the VR user is seeing</p></li>
+<li><p>That 2D representation must be broadcast on the primary display device</p></li>
+</ul>
+
+<p>VR is ultra resource intensive already, so rendering yet another copy of the scene at reasonable framerates (say, constant 60fps) isn't going to be easy. Or free.</p>
+
+<p>On top of that, the VR user is probably wearing headphones, holding a pair of hand controllers, and can't see anything, so they can't interact with anyone who is physically there very well.</p>
+
+<p>I've had <em>incredible</em> gaming experiences on 2D screens. I recently played <a href="http://www.alienisolation.com/">Alien: Isolation</a>, or as I like to call it, Pants Crapping Simulator 3000, and I thought it was one of the most beautiful, immersive, and downright goddamn terrifying gameplay experiences I've had in years. I was starring in a survival horror movie &ndash; it felt like I was <em>there</em> in every sense of the word. </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NPqtu_pJl1Q" frameborder="0" allowfullscreen></iframe>
+
+<p>At no point did I think to myself "this would be better in 3D". In many ways, it would have been <em>worse</em>.</p>
+
+<h4 id="goodgodmandoyouevershutup">Good God man, do you ever shut up?</h4>
+
+<p>Sorry. I had some things to get off my chest with regards to VR. I'll wrap it up.</p>
+
+<p>I apologize, again, if this post seems negative. Writing this, I actually got a little more excited about VR. I can see how far it has to come to match its potential, because the technical problems it presents are quite hard &ndash; and those are the most fun problems to attack.</p>
+
+<p>I guess I might be the only person left on Earth who said, hey, <strong>I tried VR and it was just OK</strong>. I think VR ought to be a hell of a lot better, and <em>has</em> to be if it wants to be truly pervasive. </p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] At Stack Overflow, we put developers first. We already help you find answers to your tough coding questions; now let us help you <a href="http://careers.stackoverflow.com" rel="nofollow">find your next job</a>.
+</td></tr>  
+</table> ]]></content:encoded></item><item><title><![CDATA[Doing Terrible Things To Your Code]]></title><description><![CDATA[<p>In 1992, I thought <a href="http://blog.codinghorror.com/why-im-the-best-programmer-in-the-world/">I was the best programmer in the world</a>. In my defense, I had just graduated from college, this was pre-Internet, and I lived in Boulder, Colorado working in small business jobs where I was lucky to even <em>hear</em> about other programmers much less meet them.</p>
+
+<p>I</p>]]></description><link>http://blog.codinghorror.com/doing-terrible-things-to-your-code/</link><guid isPermaLink="false">a5cc81de-63b4-4fe9-b1bb-efe19acbeed6</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Thu, 30 Jul 2015 09:31:49 GMT</pubDate><content:encoded><![CDATA[<p>In 1992, I thought <a href="http://blog.codinghorror.com/why-im-the-best-programmer-in-the-world/">I was the best programmer in the world</a>. In my defense, I had just graduated from college, this was pre-Internet, and I lived in Boulder, Colorado working in small business jobs where I was lucky to even <em>hear</em> about other programmers much less meet them.</p>
+
+<p>I eventually fell in with a guy named Bill O'Neil, who hired me to do contract programming. He formed a company with the regrettably generic name of <em>Computer Research &amp; Technologies</em>, and we proceeded to work on various gigs together, building line of business CRUD apps in Visual Basic or FoxPro running on Windows 3.1 (and sometimes DOS, though we had a sense by then that this new-fangled GUI thing was here to stay).</p>
+
+<p>Bill was the first professional programmer I had ever worked with. Heck, for that matter, he was the first <em>programmer</em> I ever worked with. He'd spec out some work with me, I'd build it in Visual Basic, and then I'd hand it over to him for review. He'd then calmly proceed to utterly <em>demolish</em> my code:</p>
+
+<ul>
+<li>Tab order? Wrong.</li>
+<li>Entering a number instead of a string? Crash.</li>
+<li>Entering a date in the past? Crash.</li>
+<li>Entering too many characters? Crash.</li>
+<li>UI element alignment? Off.</li>
+<li>Does it work with unusual characters in names like, say, <code>O'Neil</code>? Nope.</li>
+</ul>
+
+<p>One thing that surprised me was that the code itself was rarely the problem. He occasionally had some comments about the way I wrote or structured the code, but <strong>what I clearly had no idea about is <em>testing</em> my code.</strong></p>
+
+<p>I dreaded handing my work over to him for inspection. I slowly, painfully learned that the truly difficult part of coding is dealing with the thousands of ways things can go wrong with your application at any given time &ndash; most of them user related.</p>
+
+<p><a href="http://www.mrlovenstein.com/comic/364"><img src="http://blog.codinghorror.com/content/images/2015/07/364_placebo_effective.png" alt="" title=""></a></p>
+
+<p>That was my first experience with <a href="http://blog.codinghorror.com/whos-your-coding-buddy/">the buddy system</a>, and thanks to Bill, I came out of that relationship with a deep respect for software craftsmanship. I have no idea what Bill is up to these days, but I tip my hat to him, wherever he is. I didn't always enjoy it, but learning to develop discipline around testing (and breaking) my own stuff unquestionably made me a better programmer.</p>
+
+<p>It's tempting to lay all this responsibility at the feet of the mythical QA engineer. </p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="nl" dir="ltr">QA Engineer walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers. Orders a sfdeljknesv.</p>&mdash; Bill Sempf (@sempf) <a href="https://twitter.com/sempf/status/514473420277694465">September 23, 2014</a></blockquote>  
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>If you are ever lucky enough to work with one, <a href="http://blog.codinghorror.com/making-developers-cry-since-1995/">you should have a very, <em>very</em> healthy fear of professional testers</a>. They are terrifying. Just scan this <a href="http://blogs.msdn.com/b/micahel/archive/2004/07/07/did-i-remember-to.aspx">"Did I remember to test" list</a> and you'll be having the worst kind of flashbacks in no time. And that's the <em>abbreviated</em> version of his list.</p>
+
+<p>I believe a key turning point in every professional programmer's working life is when you realize <a href="http://blog.codinghorror.com/on-the-meaning-of-coding-horror/">you are your own worst enemy</a>, and the only way to mitigate that threat is to embrace it. <em>Act</em> like your own worst enemy. <strong>Break your UI. Break your code. Do <em>terrible</em> things to your software.</strong> </p>
+
+<p>This means programmers need a good working knowledge of at least the <em>common</em> mistakes, the frequent cases that average programmers tend to miss, to work against. You are tester zero. This is your responsibility.</p>
+
+<p>Let's start with Patrick McKenzie's classic <a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">Falsehoods Programmers Believe about Names</a>:</p>
+
+<ol>
+<li>People have exactly one canonical full name.  </li>
+<li>People have exactly one full name which they go by.  </li>
+<li>People have, at this point in time, exactly one canonical full name.  </li>
+<li>People have, at this point in time, one full name which they go by.  </li>
+<li>People have exactly N names, for any value of N.  </li>
+<li>People’s names fit within a certain defined amount of space.  </li>
+<li>People’s names do not change.  </li>
+<li>People’s names change, but only at a certain enumerated set of events.  </li>
+<li>People’s names are written in ASCII.  </li>
+<li>People’s names are written in any single character set.</li>
+</ol>
+
+<p>That's just the first 10. There are <a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">thirty more</a>. Plus a lot in the comments if you're in the mood for extra credit. Or, how does <a href="http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">Falsehoods Programmers Believe About Time</a> grab you?</p>
+
+<ol>
+<li>There are always 24 hours in a day.  </li>
+<li>Months have either 30 or 31 days.  </li>
+<li>Years have 365 days.  </li>
+<li>February is always 28 days long.  </li>
+<li>Any 24-hour period will always begin and end in the same day (or week, or month).  </li>
+<li>A week always begins and ends in the same month.  </li>
+<li>A week (or a month) always begins and ends in the same year.  </li>
+<li>The machine that a program runs on will always be in the GMT time zone.  </li>
+<li>Ok, that’s not true. But at least the time zone in which a program has to run will never change.  </li>
+<li>Well, surely there will never be a change to the time zone in which a program has to run in production.  </li>
+<li>The system clock will always be set to the correct local time.  </li>
+<li>The system clock will always be set to a time that is not wildly different from the correct local time.  </li>
+<li>If the system clock is incorrect, it will at least always be off by a consistent number of seconds.  </li>
+<li>The server clock and the client clock will always be set to the same time.  </li>
+<li>The server clock and the client clock will always be set to around the same time.</li>
+</ol>
+
+<p>Are there more? Of <a href="http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">course there are</a>! There's even <a href="http://infiniteundo.com/post/25509354022/more-falsehoods-programmers-believe-about-time">a whole additional list of stuff <em>he</em> forgot</a> when he put that giant list together. </p>
+
+<p><a href="http://www.stilldrinking.org/programming-sucks"><img src="http://blog.codinghorror.com/content/images/2015/07/code-horror-1.png" alt="Catastrophic Error - User attempted to use program in the manner program was meant to be used" title=""></a></p>
+
+<p>I think you can see where this is going. This is programming. <a href="http://www.stilldrinking.org/programming-sucks">We do this stuff for fun, remember?</a></p>
+
+<p>But in true made-for-TV fashion, wait, there's more! Seriously, guys, where are you going? Get back here. We have more awesome failure states to learn about:</p>
+
+<ul>
+<li><p><a href="http://wiesmann.codiferes.net/wordpress/?p=15187&amp;lang=en">Falsehoods Programmers Believe About Geography</a></p></li>
+<li><p><a href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/">Falsehoods Programmers Believe About Addresses</a></p></li>
+<li><p><a href="http://www.cscyphers.com/blog/2012/06/28/falsehoods-programmers-believe-about-gender/">Falsehoods Programmers Believe About Gender</a></p></li>
+</ul>
+
+<p>At this point I wouldn't blame you if you decided to <a href="http://blog.codinghorror.com/so-you-dont-want-to-be-a-programmer-after-all/">quit programming altogether</a>. But I think it's better if we learn to do for each other what Bill did for me, twenty years ago &mdash; teach less experienced developers that <strong>a good programmer knows they <em>have</em> to do terrible things to their code</strong>. Do it because if you don't, I guarantee you other people will, and when they do, they will either walk away or create a support ticket. I'm not sure which is worse.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] <a href="http://careers.stackoverflow.com" rel="nofollow">Find a better job the Stack Overflow way</a> - what you need when you need it, no spam, and no scams.
+</td></tr>  
+</table> ]]></content:encoded></item><item><title><![CDATA[What is Trolling?]]></title><description><![CDATA[<p>If you engage in discussion on the Internet long enough, you're bound to encounter it: someone calling someone else a troll. </p>
+
+<p>The common interpretation of Troll is the Grimms' Fairy Tales, Lord of the Rings, "hangs out under a bridge" type of troll.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/obvious-troll-is-obvious.jpg" alt=""></p>
+
+<p>Thus, a troll is someone who exists</p>]]></description><link>http://blog.codinghorror.com/what-is-trolling/</link><guid isPermaLink="false">ae43f3d5-c295-4ed7-a54e-5c4427a6b690</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Thu, 30 Apr 2015 09:11:15 GMT</pubDate><content:encoded><![CDATA[<p>If you engage in discussion on the Internet long enough, you're bound to encounter it: someone calling someone else a troll. </p>
+
+<p>The common interpretation of Troll is the Grimms' Fairy Tales, Lord of the Rings, "hangs out under a bridge" type of troll.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/obvious-troll-is-obvious.jpg" alt=""></p>
+
+<p>Thus, a troll is someone who exists to hurt people, cause harm, and break a bunch of stuff because that's something brutish trolls just &hellip; do, isn't it?</p>
+
+<p>In that sense, calling someone a Troll is not so different from the pre-Internet tactic of calling someone a monster &ndash; implying that they lack all the self-control and self-awareness a normal human being would have.</p>
+
+<p>Pretty harsh.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/no-trolls.png" alt=""></p>
+
+<p>That might be what the term is evolving to mean, but it's not the original intent.</p>
+
+<p>The <em>original</em> definition of troll was <a href="http://www.merriam-webster.com/dictionary/troll">not a beast, but a fisherman</a>:</p>
+
+<blockquote>
+  <p><strong>Troll</strong></p>
+  
+  <p><em>verb</em> \ˈtrōl\</p>
+  
+  <ol>
+  <li><p>to fish with a hook and line that you pull through the water</p></li>
+  <li><p>to search for or try to get (something)</p></li>
+  <li><p>to search through (something)</p></li>
+  </ol>
+</blockquote>
+
+<p>If you're curious why the fishing metaphor is so apt, check out this interview:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GrsJDy8VjZk" frameborder="0" allowfullscreen></iframe>
+
+<p>There's so much fishing going on here someone should have probably applied for a permit first.</p>
+
+<ul>
+<li><p><strong>He engages in the interview just enough to get the other person to argue.</strong> From there, he fishes for anything that can nudge the argument into some kind of car wreck that everyone can gawk at, generating lots of views and publicity.</p></li>
+<li><p><strong>He isn't interested in learning anything about the movie</strong>, or getting any insight, however fleeting, into this celebrity and how they approached acting or directing. Those are perfunctory concerns, quickly discarded on the way to their true goal: generating controversy, the more the better.</p></li>
+</ul>
+
+<p>I almost feel sorry for Quentin Tarantino, who is so obviously passionate about what he does, because this guy is a classic troll.</p>
+
+<ol>
+<li>He came to generate argument.  </li>
+<li>He doesn't truly care about the topic.</li>
+</ol>
+
+<p>Some trolls can <em>seem</em> to care about a topic, because they hold extreme views on it, and will hold forth at great length on said topic, in excruciating detail, to anyone who will listen. For days. Weeks. Months. But this is an illusion.</p>
+
+<p>The most striking characteristic of the worst trolls is that their position on a given topic is absolutely written in stone, immutable, and they will defend said position to the death in the face of any criticism, evidence, or reason. </p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/are-you-not-entertained.jpg" alt=""></p>
+
+<p>Look. I'm not new to the Internet. I know nobody has ever convinced anybody to change their mind about anything through mere online discussion before. It's unpossible. </p>
+
+<p>But I love discussion. And in any discussion that has a purpose other than gladiatorial opinion bloodsport, the most telling question you can ask of anyone is this:</p>
+
+<blockquote>
+  <p><em>Why are you here?</em></p>
+</blockquote>
+
+<p>Did you join this discussion to learn? To listen? To understand other perspectives? Or are you here to berate us and recite your talking points over and over? Are you more interested in fighting over who is right than actually communicating? </p>
+
+<p>If you <em>really</em> care about a topic, you should want to learn as much as you can about it, to understand its boundaries, and the endless perspectives and details that make up any interesting topic. Heck, I don't even <em>want</em> anyone to change your mind. But you do have to demonstrate to us that you are at least <em>somewhat</em> willing to entertain other people's perspectives, and potentially evolve your position on the topic to a more nuanced, complex one over time.</p>
+
+<p>In other words, <strong>are you here in good faith?</strong> </p>
+
+<p>People whose actions demonstrate that they are participating in bad faith &ndash; whether they are on the "right" side of the debate or not &ndash; <a href="http://blog.codinghorror.com/your-community-door/">need to be shown the door</a>.</p>
+
+<p>So now you know how to identify a troll, at least by the classic definition. But how do you handle a troll? </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gYrporR9hHE" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>You walk away.</strong></p>
+
+<p>I'm afraid I don't have anything uniquely insightful to offer over that old chestnut, "Don't feed the trolls." Responding to a troll just gives them evidence of their success for others to enjoy, and powerful incentive to try it again to get a rise out of the next sucker and satiate their perverse desire for opinion bloodsport. Someone has to break the chain.</p>
+
+<p>I'm all for giving people the benefit of the doubt. Just because someone has a controversial opinion, or seems kind of argumentative (<a href="http://blog.codinghorror.com/in-defense-of-the-smackdown-learning-model/">guilty</a>, by the way), doesn't automatically make them a troll. But their actions over time <em>might</em>.</p>
+
+<p>(I also recognize that in matters of social justice, <a href="http://www.dailydot.com/opinion/phillips-dont-feed-trolls-antisocial-web/">there is sometimes value in speaking out and speaking up</a>, versus walking away.) </p>
+
+<p>So the next time you encounter someone who can't stop arguing, who seems unable to generate anything other than heat and friction, whose actions amply demonstrate that they are no longer participating in the conversation in good faith &hellip; just walk away. Don't take the bait.</p>
+
+<p>Even if sometimes, that troll is you.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] How are you showing off your awesome? Create a <a href="http://careers.stackoverflow.com/cv" rel="nofollow">Stack Overflow Careers profile</a> and show off all of your hard work from Stack Overflow, Github, and virtually every other coding site. Who knows, you might even get recruited for a great <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">new position</a>!
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Your Password is Too Damn Short]]></title><description><![CDATA[<p>I'm a <a href="https://www.google.com/webhp?ie=UTF-8#q=site:codinghorror.com+passwords">little tired of writing about passwords</a>. But like taxes, email, and pinkeye, they're not going away any time soon. Here's what I know to be true, and backed up by plenty of empirical data:</p>
+
+<ul>
+<li><p>No matter what you tell them, users will always choose simple passwords.</p></li>
+<li><p>No matter</p></li></ul>]]></description><link>http://blog.codinghorror.com/your-password-is-too-damn-short/</link><guid isPermaLink="false">9336518b-fc9a-4c82-a5f0-335c659ef5d4</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Thu, 23 Apr 2015 22:30:54 GMT</pubDate><content:encoded><![CDATA[<p>I'm a <a href="https://www.google.com/webhp?ie=UTF-8#q=site:codinghorror.com+passwords">little tired of writing about passwords</a>. But like taxes, email, and pinkeye, they're not going away any time soon. Here's what I know to be true, and backed up by plenty of empirical data:</p>
+
+<ul>
+<li><p>No matter what you tell them, users will always choose simple passwords.</p></li>
+<li><p>No matter what you tell them, users will re-use the same password over and over on multiple devices, apps, and websites. If you are lucky they might use a couple passwords instead of the same one.</p></li>
+</ul>
+
+<p>What can we do about this as developers?</p>
+
+<ul>
+<li><p><strong>Stop requiring passwords altogether</strong>, and let people log in with Google, Facebook, Twitter, Yahoo, or any other valid form of <a href="http://blog.codinghorror.com/your-internet-drivers-license/">Internet driver's license</a> that you're comfortable supporting. The best password is <a href="http://blog.codinghorror.com/the-god-login/">one you don't have to store</a>.</p></li>
+<li><p>Urge browsers to support <a href="http://blog.codinghorror.com/cutting-the-gordian-knot-of-web-identity/">automatic, built-in password generation and management</a>. Ideally supported by the OS as well, but this requires cloud storage and everyone on the same page, and that seems most likely to me per-browser. Chrome, at least, is <a href="https://www.chromium.org/developers/design-documents/password-generation">moving in this direction</a>. </p></li>
+<li><p>Nag users at the time of signup when they enter passwords that are &hellip;</p>
+
+<ul><li><p>Too short: <code>UY7dFd</code></p></li>
+<li><p>Lack sufficient entropy: <code>aaaaaaaaa</code></p></li>
+<li><p>Match common dictionary words: <code>anteaters1</code></p></li></ul></li>
+</ul>
+
+<p>This is commonly done with <a href="https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/">an ambient password strength meter</a>, which provides real time feedback as you type.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/password-strength-meters.png" alt=""></p>
+
+<p>If you can't avoid storing the password &ndash; the first two items I listed above are both about <strong>avoiding the need for the user to select a 'new' password altogether</strong> &ndash; then showing an estimation of password strength as the user types is about as good as it gets.</p>
+
+<p>The easiest way to build a safe password is to make it long. All other things being equal, the law of exponential growth means a longer password is a better password. That's why I was <a href="http://blog.codinghorror.com/passphrase-evangelism/">always a fan of passphrases</a>, though they are exceptionally painful to enter via touchscreen in our brave new world of mobile &ndash; and that is an increasingly critical flaw. <strong>But how short is too short?</strong> </p>
+
+<p>When we built <a href="http://www.discourse.org">Discourse</a>, I had to select an absolute minimum password length that we would accept. I chose a default of 8, based on what I knew from my <a href="http://blog.codinghorror.com/speed-hashing/">speed hashing research</a>. An eight character password isn't <em>great</em>, but as long as you use a reasonable variety of characters, it should be sufficiently resistant to attack.</p>
+
+<p>By attack, I don't mean an attacker automating a web page or app to repeatedly enter passwords. There is some of this, for <a href="http://arstechnica.com/security/2015/01/yes-123456-is-the-most-common-password-but-heres-why-thats-misleading/">extremely common passwords</a>, but that's unlikely to be a practical attack on many sites or apps, as they tend to have rate limits on how often and how rapidly you can try different passwords.</p>
+
+<p>What I mean by attack is <strong>a high speed offline attack on the hash of your password</strong>, where an attacker gains access to a database of leaked user data. This kind of leak happens all the time. And it will continue to happen forever.</p>
+
+<p>If you're really unlucky, the developers behind that app, service, or website stored the password in plain text. This thankfully doesn't happen too often any more, <a href="http://plaintextoffenders.com/">thanks to education efforts</a>. Progress! But even if the developers did properly store a hash of your password instead of the actual password, you better pray they used a really slow, complex, memory hungry hash algorithm, <a href="http://codahale.com/how-to-safely-store-a-password/">like bcrypt</a>. And that they selected a <a href="http://security.stackexchange.com/questions/3959/recommended-of-iterations-when-using-pkbdf2-sha256/3993">high number of iterations</a>. Oops, sorry, that was written in the dark ages of 2010 and is now out of date. I <a href="http://chargen.matasano.com/chargen/2015/3/26/enough-with-the-salts-updates-on-secure-password-schemes.html">meant to say scrypt</a>. Yeah, <a href="http://en.wikipedia.org/wiki/Scrypt">scrypt</a>, that's the ticket. </p>
+
+<p>Then we're safe? Right? Let's see.</p>
+
+<ul>
+<li><p>Start with a <a href="https://www.random.org/passwords/">a truly random 8 character password</a>. Note that 8 characters is the default size of the generator, too. I got <code>U6zruRWL</code>.</p></li>
+<li><p>Plug it into the <a href="https://www.grc.com/haystack.htm">GRC password crack checker</a>.</p></li>
+<li><p>Read the "Massive Cracking Array" result, which is <strong>2.2 seconds</strong>.</p></li>
+<li><p>Go lay down and put a warm towel over your face.</p></li>
+</ul>
+
+<p>You might read this and think that a massive cracking array is something that's hard to achieve. I regret to inform you that building an array of, say, 24 consumer grade GPUs that are optimized for speed hashing, is <em>well</em> within the reach of the average law enforcement agency and pretty much any small business that can afford a $40k equipment charge. No need to buy when you can rent &ndash; plenty of GPU equipped cloud servers these days. Beyond that, imagine what a motivated nation-state could bring to bear. The mind boggles.</p>
+
+<p><a href="https://fsfe.org/contribute/spreadtheword.html"><img src="http://blog.codinghorror.com/content/images/2015/04/there-is-no-cloud.png" alt="" title=""></a></p>
+
+<p>Even if you don't believe me, <em>but you should</em>, the offline fast attack scenario, much easier to achieve, was hardly any better at <strong>37 minutes</strong>. </p>
+
+<p>Perhaps you're a skeptic. That's great, <a href="http://skeptics.stackexchange.com/">me too</a>. What happens when we try a longer random.org password on the massive cracking array?</p>
+
+<table width="300px">  
+<tr><td>9 characters</td><td>2 minutes</td></tr>  
+<tr><td>10 characters</td><td>2 hours</td></tr>  
+<tr><td>11 characters</td><td>6 days</td></tr>  
+<tr><td>12 characters</td><td>1 year</td></tr>  
+<tr><td>13 characters</td><td>64 years</td></tr>  
+</table>
+
+<p>The random.org generator is "only" uppercase, lowercase, and number. What if we add special characters, to <a href="http://blog.codinghorror.com/regex-use-vs-regex-abuse/">keep Q*Bert happy</a>?</p>
+
+<table width="300px">  
+<tr><td>8 characters</td><td>1 minute</td></tr>  
+<tr><td>9 characters</td><td>2 hours</td></tr>  
+<tr><td>10 characters</td><td>1 week</td></tr>  
+<tr><td>11 characters</td><td>2 years</td></tr>  
+<tr><td>12 characters</td><td>2 centuries</td></tr>  
+</table>
+
+<p>That's a bit better, but you can't really feel safe until the 12 character mark even with a full complement of uppercase, lowercase, numbers, <em>and</em> special characters.</p>
+
+<p>It's unlikely that massive cracking scenarios will get any slower. While there is definitely a password length where all cracking attempts fall off an exponential cliff that is effectively unsurmountable, these numbers will only get <em>worse</em> over time, not better.</p>
+
+<p>So after all that, here's what I came to tell you, the poor, beleagured user:</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/your-password-is-too-damn-short.jpg" alt=""></p>
+
+<p><strong>Unless your password is at <em>least</em> 12 characters, you are vulnerable.</strong></p>
+
+<p>That should be the minimum password size you use on any service. Generate your password with some kind of offline generator, <a href="http://world.std.com/~reinhold/diceware.html">with diceware</a>, or your own home-grown method of adding words and numbers and characters together &ndash; whatever it takes, but <em>make sure your passwords are all at least 12 characters</em>.</p>
+
+<p>Now, to be fair, as I alluded to earlier all of this does <a href="http://chargen.matasano.com/chargen/2015/3/26/enough-with-the-salts-updates-on-secure-password-schemes.html">depend heavily on the hashing algorithm that was selected</a>. But you have to assume that every password you use will be hashed with the lamest, fastest hash out there. One that is <a href="https://hashcat.net/forum/thread-3687.html">easy for GPUs to calculate</a>. There's a <em>lot</em> of old software and systems out there, and will be for a long, long time.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/gpu-tries-per-sec.png" alt=""></p>
+
+<p>And for developers:</p>
+
+<ol>
+<li><p>Pick your new password hash algorithms carefully, and move all your old password hashing systems to much harder to calculate hashes. <strong>You need hashes that are <em>specifically designed to be hard to calculate on GPUs</em>, like scrypt.</strong></p></li>
+<li><p>Even if you pick the "right" hash, you may be vulnerable if your work factor isn't high enough. Matsano recommends the following:</p>
+
+<ul><li><p>scrypt: <code>N=2^14, r=8, p=1</code></p></li>
+<li><p>bcrypt: <code>cost=11</code></p></li>
+<li><p>PBKDF2 with SHA256: <code>iterations=86,000</code></p></li></ul>
+
+<p>But those are just guidelines; <strong>you have to scale the hashing work to what's available and reasonable on <em>your</em> servers or devices.</strong> For example, we had a minor denial of service bug in Discourse where we allowed people to enter up to 20,000 character passwords in the login form, and calculating the hash on that took, uh &hellip; several seconds.</p></li>
+</ol>
+
+<p>Now if you'll excuse me, I need to go change my PayPal password. </p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] What's your next career move? <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> has the best job listings from great companies, whether you're looking for opportunities at a startup or Fortune 500. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and let employers find you.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Given Enough Money, All Bugs Are Shallow]]></title><description><![CDATA[<p>Eric Raymond, in <a href="http://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar">The Cathedral and the Bazaar</a>, famously wrote</p>
+
+<blockquote>
+  <p>Given enough eyeballs, all bugs are shallow.</p>
+</blockquote>
+
+<p>The idea is that open source software, by virtue of allowing anyone and everyone to view the source code, is inherently less buggy than closed source software. He dubbed this "Linus's Law".</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/eyeballs.jpg" alt=""></p>
+
+<p>Insofar</p>]]></description><link>http://blog.codinghorror.com/given-enough-money-all-bugs-are-shallow/</link><guid isPermaLink="false">5c259eb6-2908-411c-99c6-5d7bdb9482c2</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Fri, 03 Apr 2015 23:58:20 GMT</pubDate><content:encoded><![CDATA[<p>Eric Raymond, in <a href="http://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar">The Cathedral and the Bazaar</a>, famously wrote</p>
+
+<blockquote>
+  <p>Given enough eyeballs, all bugs are shallow.</p>
+</blockquote>
+
+<p>The idea is that open source software, by virtue of allowing anyone and everyone to view the source code, is inherently less buggy than closed source software. He dubbed this "Linus's Law".</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/eyeballs.jpg" alt=""></p>
+
+<p>Insofar as it goes, I believe this is true. When only the 10 programmers who happen to work at your company today can look at your codebase, it's unlikely to be as well reviewed as a codebase that's public to the world's scrutiny on GitHub. </p>
+
+<p>However, the <a href="http://en.wikipedia.org/wiki/Heartbleed">Heartbleed SSL vulnerability</a> was a turning point for Linus's Law, a catastrophic exploit based on <a href="http://www.theregister.co.uk/2014/04/09/heartbleed_explained/">a severe bug in open source software</a>. How catastrophic? It affected about 18% of all the HTTPS websites in the world, and allowed attackers to view all traffic to these websites, unencrypted... <em>for two years</em>.</p>
+
+<p>All those websites you thought were secure? Nope. This bug went unnoticed for two full years.</p>
+
+<p><em>Two years!</em></p>
+
+<p>OpenSSL, the library with this bug, is <strong>one of the most critical bits of Internet infrastructure the world has</strong> &ndash; relied on by major companies to encrypt the private information of their customers as it travels across the Internet. OpenSSL was used on millions of servers and devices to protect the kind of important stuff you want encrypted, and hidden away from prying eyes, like passwords, bank accounts, and credit card information.</p>
+
+<p>This should be some of the most well-reviewed code in the world. What happened to our eyeballs, man?</p>
+
+<blockquote>
+  <p>In reality, it's generally very, very difficult to fix real bugs in anything but the most trivial Open Source software. I know that I have rarely done it, and I am an experienced developer. Most of the time, what really happens is that you tell the actual programmer about the problem and wait and see if he/she fixes it &ndash; <a href="https://www.neilgunton.com/doc/?o=Sh&amp;doc_id=8585">Neil Gunton</a></p>
+  
+  <p>Even if a brave hacker communities to read the code, they're not terribly likely to spot one of the hard-to-spot problems. Why? Few open source hackers are security experts. &ndash; <a href="http://jeremy.zawodny.com/blog/archives/000028.html">Jeremy Zawodny</a></p>
+  
+  <p>The fact that many eyeballs are looking at a piece of software is not likely to make it more secure. It is likely, however, to make people believe that it is secure. The result is an open source community that is probably far too trusting when it comes to security. &ndash; <a href="http://www.developer.com/tech/article.php/626641/The-Myth-of-Open-Source-Security.htm">John Viega</a></p>
+</blockquote>
+
+<p>I think there are a couple problems with Linus's Law:</p>
+
+<ol>
+<li><p>There's a big difference between <em>usage</em> eyeballs and <em>development</em> eyeballs. Just because you pull down some binaries in a RPM, or compile something in Linux, or even report bugs back to the developers via their bug tracker, doesn't mean you're doing anything at all to contribute to the review of the underlying code. Most eyeballs are looking at the outside of the code, not the inside. And while you can discover bugs, even important security bugs, through usage, the hairiest security bugs require inside knowledge of how the code works.</p></li>
+<li><p>The act of <em>writing</em> (or cut-and-pasting) your own code is easier than understanding and <em>peer reviewing</em> someone else's code. There is a fundamental, unavoidable asymmetry of work here. The amount of code being churned out today &ndash; even if you assume only a small fraction of it is "important" enough to require serious review &ndash; far outstrips the number of eyeballs available to look at the code. (Yes, this is another argument in favor of <a href="http://blog.codinghorror.com/the-best-code-is-no-code-at-all/">writing less code</a>.)</p></li>
+<li><p>There are not enough <em>qualified</em> eyeballs to look at the code. Sure, the overall number of programmers is slowly growing, but what percent of those programmers are skilled enough, and have the right security background, to be able to audit someone else's code effectively? A tiny fraction.</p></li>
+</ol>
+
+<p>Even if the code is 100% open source, utterly mission critical, and used by major companies in virtually every public facing webserver for customer security purposes, we end up with critical bugs that compromise everyone. For <em>two years!</em></p>
+
+<p>That's the lesson. If we <strong>can't naturally get enough eyeballs on OpenSSL</strong>, how does any other code stand a chance? What do we do? How do we get more eyeballs?</p>
+
+<p>The short term answer was:</p>
+
+<ul>
+<li><p>Create <a href="http://www.libressl.org/">more alternatives to OpenSSL</a> for ecosystem diversity.</p></li>
+<li><p>Improve <a href="http://arstechnica.com/information-technology/2014/04/tech-giants-chastened-by-heartbleed-finally-agree-to-fund-openssl/">support and funding for OpenSSL</a>. </p></li>
+</ul>
+
+<p>These are both very good things and necessary outcomes. We should be doing this for all the critical parts of the open source ecosystem people rely on.</p>
+
+<p>But what's the long term answer to the general problem of not enough eyeballs on open source code? It's something that will sound very familar to you, though I suspect Eric Raymond won't be too happy about it.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/04/pile-of-money-1.jpg" alt=""></p>
+
+<p><em>Money.</em> Lots and lots of money.</p>
+
+<p>Increasingly, companies are turning to <strong>commercial bug bounty programs</strong>. Either ones they create themselves, or run through third party services like <a href="https://bugcrowd.com/">Bugcrowd</a>, <a href="https://www.synack.com/">Synack</a>, <a href="https://hackerone.com/">HackerOne</a>, and <a href="https://www.crowdcurity.com/">Crowdcurity</a>. This means you pay per bug, with a larger payout the bigger and badder the bug is.</p>
+
+<p>Or you can attend a yearly event like <a href="http://en.wikipedia.org/wiki/Pwn2Own">Pwn2Own</a>, where there's a yearly contest and massive prizes, as large as <a href="http://www.eweek.com/security/hp-awards-240k-for-firefox-ie-chrome-and-safari-exploits.html">hundreds of thousands of dollars</a>, for exploiting common software. Staging a big annual event means a lot of publicity and interest, attracting the biggest guns.</p>
+
+<p>That's the message. If you want to find bugs in your code, in your website, in your app, you do it the old fashioned way: by paying for them. You buy the eyeballs.</p>
+
+<p>While I applaud any effort to make things more secure, and I completely agree that security is a battle we should be fighting on multiple fronts, both commercial and non-commercial, <strong>I am uneasy about some aspects of paying for bugs becoming the new normal.</strong> What are we incentivizing, exactly?</p>
+
+<h3 id="moneymakessecuritybugsgounderground">Money makes security bugs go underground</h3>
+
+<p>There's now a price associated with exploits, and the deeper the exploit and the lesser known it is, the more incentive there is to not tell anyone about it until you can collect a major payout. So you might wait up to a year to report anything, and meanwhile this security bug is out there in the wild &ndash; who knows who else might have discovered it by then?</p>
+
+<p>If your focus is the payout, who is paying more? The good guys, or the bad guys? Should you hold out longer for a bigger payday, or build the exploit up into something even larger? I hope for our sake the good guys have the deeper pockets, otherwise we are all screwed.</p>
+
+<p>I like that Google <a href="http://blog.chromium.org/2015/02/pwnium-v-never-ending-pwnium.html">addressed a few of these concerns</a> by making Pwnium, their Chrome specific variant of Pwn2Own, a) no longer a yearly event but all day, every day and b) increasing the prize money to "infinite". I don't know if that's enough, but it's certainly going in the right direction.</p>
+
+<h3 id="moneyturnssecurityintoamegoalinsteadofanusgoal">Money turns security into a "me" goal instead of an "us" goal</h3>
+
+<p>I first noticed this trend when one or two people reported minor security bugs in Discourse, and then seemed to hold out their hand, expectantly. (At least, as much as you can do something like that in email.) It felt really odd, and it made me uncomfortable.</p>
+
+<p>Am I now obligated, on top of providing a completely free open source project to the world, to pay people for contributing information about security bugs that make this open source project better? Believe me, I was very appreciative of the security bug reporting, and I sent them whatever I could, stickers, t-shirts, effusive thank you emails, callouts in the code and checkins. But open source isn't supposed to be about the money&hellip; is it?</p>
+
+<p>Perhaps the landscape is different for closed-source, commercial products, where there's no expectation of quid pro quo, and everybody already pays for the service directly or indirectly anyway.</p>
+
+<h3 id="nomoneynosecurity">No Money? No Security.</h3>
+
+<p>If all the best security researchers are working on ever larger bug bounties, and every major company adopts these sorts of bug bounty programs, what does that do to the software industry? </p>
+
+<p>It implies that unless you have a big budget, you can't expect to have great security, because nobody will want to report security bugs to you. Why would they? They won't get a payday. They'll be looking elsewhere.</p>
+
+<p>A ransomware culture of "pay me or I won't tell you about your terrible security bug" does not feel very far off, either. We've had mails like that already.</p>
+
+<h3 id="easymoneyattractsallskilllevels">Easy money attracts all skill levels</h3>
+
+<p>One unfortunate side effect of this bug bounty trend is that it attracts not just bona fide programmers interested in security, but anyone interested in <em>easy money</em>.</p>
+
+<p>We've gotten too many "serious" security bug reports that were extremely low value. And we have to follow up on these, because they are "serious", right? Unfortunately, many of them are a waste of time, because &hellip;</p>
+
+<ul>
+<li><p>The submitter is more interested in scaring you about the massive, critical security implications of this bug than actually providing a decent explanation of the bug, so you'll end up doing all the work.</p></li>
+<li><p>The submitter doesn't understand what is and isn't an exploit, but knows there is value in anything <em>resembling</em> an exploit, so submits everything they can find.</p></li>
+<li><p>The submitter can't share notes with other security researchers to verify that the bug is indeed an exploit, because they might "steal" their exploit and get paid for it before they do.</p></li>
+<li><p>The submitter needs to convince you that this is an exploit in order to get paid, so they will argue with you about this. At length.</p></li>
+</ul>
+
+<p>The incentives feel really wrong to me. As much as I know security is incredibly important, I view these interactions with an increasing sense of dread because they generate work for me and the returns are low.</p>
+
+<h3 id="whatcanwedo">What can we do?</h3>
+
+<p>Fortunately, we all have the same goal: <strong>make software more secure</strong>.</p>
+
+<p>So we should view bug bounty programs as an additional angle of attack, another aspect of "defense in depth", perhaps optimized a bit more for commercial projects where there is ample money. And that's OK.</p>
+
+<p>But I have some advice for bug bounty programs, too:</p>
+
+<ul>
+<li><p>You should have someone vetting these bug reports, and making sure they are credible, have clear reproduction steps, and are repeatable, before we ever see them.</p></li>
+<li><p>You should build additional incentives in your community for some kind of collaborative work towards bigger, better exploits. These researchers need to be working together in public, not in secret against each other.</p></li>
+<li><p>You should have a reputation system that builds up so that only the better, proven contributors are making it through and submitting reports.</p></li>
+<li><p>Encourage larger orgs to fund bug bounties for common open source projects, not just their own closed source apps and websites. At Stack Exchange, we donated to open source projects we used every year. Donating a bug bounty could be a big bump in eyeballs on that code.</p></li>
+</ul>
+
+<p>I am concerned that we may be slowly moving toward a world where <strong>given enough money, all bugs are shallow</strong>. Money does introduce some perverse incentives for software security, and those incentives should be watched closely.</p>
+
+<p>But I still believe that the people who will freely report security bugs in open source software because</p>
+
+<ul>
+<li>It is the right thing to do&trade;</li>
+</ul>
+
+<p>and</p>
+
+<ul>
+<li>They want to contribute back to open source projects that have helped them, and the world</li>
+</ul>
+
+<p>&hellip; will hopefully not be going away any time soon.</p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] How are you showing off your awesome? Create a <a href="http://careers.stackoverflow.com/cv" rel="nofollow">Stack Overflow Careers profile</a> and show off all of your hard work from Stack Overflow, Github, and virtually every other coding site. Who knows, you might even get recruited for a great <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">new position</a>!
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Toward a Better Markdown Tutorial]]></title><description><![CDATA[<p>It's always surprised me when people, especially technical people, say they don't know <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>. Do you not use GitHub? Stack Overflow? Reddit?</p>
+
+<p>I get that an average person may not understand how Markdown is based on simple old-school plaintext ASCII typing conventions. Like when you're *really* excited about something, you</p>]]></description><link>http://blog.codinghorror.com/toward-a-better-markdown-tutorial/</link><guid isPermaLink="false">e8914f89-9708-49ae-a324-3b574debeb72</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Sat, 28 Mar 2015 00:19:48 GMT</pubDate><content:encoded><![CDATA[<p>It's always surprised me when people, especially technical people, say they don't know <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>. Do you not use GitHub? Stack Overflow? Reddit?</p>
+
+<p>I get that an average person may not understand how Markdown is based on simple old-school plaintext ASCII typing conventions. Like when you're *really* excited about something, you naturally put asterisks around it, and Markdown makes that automagically italic.</p>
+
+<p>But how can we expect them to know that, if they grew up with wizzy-wig editors where the only way to make italic is to click a toolbar button, like an animal?</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/03/classic-wysiwyg-toolbar.png" alt=""></p>
+
+<p>I am not advocating for WYSIWYG here. While there's certainly more than one way to make italic, I personally <a href="http://blog.codinghorror.com/invisible-formatting-tags-are-evil/">don't like invisible formatting tags</a> and I find that WYSIWYG is more like <a href="http://blog.codinghorror.com/what-you-cant-see-you-cant-get/">WYCSYCG</a> in practice. It's dangerous to be dependent on these invisible formatting codes you can't control. And they're especially bad if you ever plan to care about differences, revisions, and edit history. That's why I like to teach people simple, <em>visible</em> formatting codes.</p>
+
+<p>We can certainly debate <a href="http://blog.codinghorror.com/is-html-a-humane-markup-language/">which markup language is superior</a>, but in Discourse we tried to build a rainbow tool that satisifies everyone. We support:</p>
+
+<ul>
+<li>HTML (safe subset)</li>
+<li>BBCode (basic subset)</li>
+<li>Markdown (full)</li>
+</ul>
+
+<p>This makes coding our editor kind of hellishly complex, but it means that for you, the user, whatever markup language you're used to will probably "just work" on any Discourse site you happen to encounter in the future. But BBCode and HTML are supported mostly as bridges. What we view as our primary markup format, and what we want people to learn to use, is Markdown.</p>
+
+<p>However, one thing I have really struggled with is that <strong>there isn't any single great place to refer people to with a simple walkthrough and explanation of Markdown.</strong></p>
+
+<p>When we built Stack Overflow circa 2008-2009, I put together my best effort at the time which became <a href="http://www.stackoverflow.com/editing-help">the "editing help" page</a>:</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/03/markdown-help.png" alt=""></p>
+
+<p>It's just OK. And GitHub has their <a href="https://help.github.com/articles/markdown-basics/">Markdown Basics</a>, and <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub Flavored Markdown</a> help pages. They're OK. </p>
+
+<p>The <a href="https://ghost.org/">Ghost</a> editor I am typing this in has an OK Markdown help page too.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/03/ghost-markdown-help.png" alt=""></p>
+
+<p>But none of these are <em>great</em>.</p>
+
+<p><strong>What we really need is a <em>great</em> Markdown tutorial and reference page</strong>, one that we can refer anyone to, anywhere in the world, from someone who barely touches computers to the hardest of hard-core coders. I don't want to build another one for these kinds of help pages for Discourse, I want to build one for everyone. Since it is for everyone, I want to involve everyone. And by everyone, I mean you. </p>
+
+<p>After writing about <a href="http://blog.codinghorror.com/our-programs-are-fun-to-use/">Our Programs Are Fun To Use</a> &ndash; which I just updated with a bunch of great examples contributed in the comments, so go check that out even if you read it already &ndash; I am inspired by the idea that <strong>we can make a fun, <em>interactive</em> Markdown tutorial together.</strong></p>
+
+<p>So here's what I propose: <strong>a small contest</strong> to build an interactive Markdown tutorial and reference, which we will eventually host at the home page of <a href="http://commonmark.org/">commonmark.org</a>, and can be freely mirrored anywhere in the world.</p>
+
+<p>Some ground rules:</p>
+
+<ul>
+<li><p>It should be <em>primarily</em> in JavaScript and HTML. Ideally entirely so. If you need to use a server-side scripting language, that's fine, but try to keep it simple, and make sure it's something that is reasonable to deploy on a generic Linux server anywhere.</p></li>
+<li><p>You can pick any approach you want, but it should be <a href="http://blog.codinghorror.com/our-programs-are-fun-to-use/">highly interactive</a>, and I suggest that you at minimum provide two tracks:</p>
+
+<ul><li><p>A gentle, interactive tutorial for absolute beginners who are asking "what the heck does Markdown even mean?"</p></li>
+<li><p>A dynamic, interactive reference for intermediates and experts who are asking more advanced usage questions, like "how do I make code inside a list, or a list inside a list?"</p></li></ul></li>
+<li><p>There's a lot of variance in Markdown implementations, so teach the most common parts of Markdown, and cover the optional / less common variations either in the advanced reference areas or in extra bonus sections. People do love their tables and footnotes! We recommend using a <a href="http://talk.commonmark.org/c/implementation">CommonMark compatible implementation</a>, but it is not a requirement.</p></li>
+<li><p>Your code must be MIT licensed. </p></li>
+<li><p>Judging will be completely at the whim of myself and John MacFarlane. Our decisions will be capricious, arbitrary, probably nonsensical, and above all, final.</p></li>
+<li><p>We'll run this contest for a period of one month, from today until April 28th, 2015.</p></li>
+<li><p>If I have hastily left out any clarifying rules I should have had, they will go here.</p></li>
+</ul>
+
+<p>Of course, the real reward for building is the admiration of your peers, and the knowledge that an entire generation of people will grow up learning basic Markdown skills through your contribution to a global open source project.</p>
+
+<p>But on top of that, I am offering &hellip; <em>fabulous prizes!</em></p>
+
+<ol>
+<li><p>Let's start with my <a href="http://blog.codinghorror.com/recommended-reading-for-developers/">Recommended Reading List</a>. I count sixteen books on it. As long as you live in a place Amazon can ship to, I'll send you all the books on that list. (Or the equivalent value in an Amazon gift certificate, if you happen to have a lot of these books already, or prefer that.)</p></li>
+<li><p>Second prize is a <a href="http://blog.codinghorror.com/the-code-keyboard/">CODE Keyboard</a>. This can be shipped worldwide.</p></li>
+<li><p>Third prize is <em>you're fired</em>. Just kidding. Third prize is your choice of any three books on my reading list. (Same caveats around Amazon apply.)</p></li>
+</ol>
+
+<p>Looking for a place to get started? Check out:</p>
+
+<ul>
+<li><p><a href="https://github.com/gjtorikian/markdowntutorial.com">https://github.com/gjtorikian/markdowntutorial.com</a> and <a href="http://markdowntutorial.com/">http://markdowntutorial.com/</a> by Garen Torikian</p></li>
+<li><p><a href="https://github.com/chrisalley/commonmark-website">https://github.com/chrisalley/commonmark-website</a> and <a href="http://chrisalley.github.io/commonmark-website/">http://chrisalley.github.io/commonmark-website/</a> by Chris Alley</p></li>
+</ul>
+
+<p>If you want privacy, you can mail your entries to me directly (see the about page here for my email address), or if you are comfortable with posting your contest entry in public, I'll create a topic on <a href="http://talk.commonmark.org">talk.commonmark</a> for you to post links and gather feedback. Leaving your entry in the comments on this article is also OK.</p>
+
+<p>We desperately need a <em>great</em> place that we can send everyone to learn Markdown, and we need your help to build it. Let's give this a shot. Surprise and amaze us!</p>
+
+<blockquote>
+  <p>Update: we selected <a href="http://talk.commonmark.org/t/markdown-tutorial-contest-feedback/1149/19?u=codinghorror">winners</a> in June 2015 and the final result is now permanently located at <a href="http://commonmark.org/help"><strong>commonmark.org/help</strong></a> &ndash; enjoy!</p>
+</blockquote>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> matches the best developers (you!) with the best employers. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and even let employers find you.
+</td></tr>  
+</table>]]></content:encoded></item><item><title><![CDATA[Our Programs Are Fun To Use]]></title><description><![CDATA[<p>These <a href="http://en.wikipedia.org/wiki/Beagle_Bros">two imaginary guys</a> influenced me heavily as a programmer.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Beagle_Bros"><img src="http://blog.codinghorror.com/content/images/2015/03/beagle_bros_micro_software_.png" alt="" title=""></a></p>
+
+<p>Instead of guaranteeing fancy features or compatibility or error free operation, Beagle Bros software promised something else altogether: <strong>fun</strong>.</p>
+
+<p><a href="http://stevenf.com/beagle-collection/"><img src="http://blog.codinghorror.com/content/images/2015/03/beagle-bros-statement-of-quality.png" alt="" title=""></a></p>
+
+<p>Playing with the Beagle Bros quirky Apple II floppies in middle school and high school, and the smorgasboard of oddball hobbyist</p>]]></description><link>http://blog.codinghorror.com/our-programs-are-fun-to-use/</link><guid isPermaLink="false">ff33b259-6e6b-453e-8d31-4dd86f9fd312</guid><dc:creator><![CDATA[Jeff Atwood]]></dc:creator><pubDate>Mon, 09 Mar 2015 10:49:39 GMT</pubDate><content:encoded><![CDATA[<p>These <a href="http://en.wikipedia.org/wiki/Beagle_Bros">two imaginary guys</a> influenced me heavily as a programmer.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Beagle_Bros"><img src="http://blog.codinghorror.com/content/images/2015/03/beagle_bros_micro_software_.png" alt="" title=""></a></p>
+
+<p>Instead of guaranteeing fancy features or compatibility or error free operation, Beagle Bros software promised something else altogether: <strong>fun</strong>.</p>
+
+<p><a href="http://stevenf.com/beagle-collection/"><img src="http://blog.codinghorror.com/content/images/2015/03/beagle-bros-statement-of-quality.png" alt="" title=""></a></p>
+
+<p>Playing with the Beagle Bros quirky Apple II floppies in middle school and high school, and the smorgasboard of oddball hobbyist ephemera collected on them, was a rite of passage for me.</p>
+
+<p><a href="http://beagle.applearchives.com/the_graphics/beagle_bros_graphics_1/disk_warnings_10.html"><img src="http://blog.codinghorror.com/content/images/2015/03/beagle-bros-disk-donts.png" alt="" title=""></a></p>
+
+<p>Here were a bunch of goofballs writing terrible AppleSoft BASIC code like me, but doing it for a living &ndash; and clearly having fun in the process. Apparently, the best way to create fun programs for users is to <a href="http://blog.codinghorror.com/remember-this-stuff-is-supposed-to-be-fun/">make sure you had fun writing them in the first place</a>. </p>
+
+<p>But more than that, they taught me <strong>how much more fun it was to learn by playing with an interactive, dynamic program</strong> instead of passively reading about concepts in a book.</p>
+
+<p><a href="https://archive.org/details/SiliconSalad"><img src="http://blog.codinghorror.com/content/images/2015/03/beagle-bros-silicon-salad-menu.png" alt="" title=""></a></p>
+
+<p>That experience is another reason I've <a href="http://blog.codinghorror.com/level-one-the-intro-stage/">always resisted</a> calls to add "intro videos", external documentation, walkthroughs and so forth. </p>
+
+<p>One of the programs on these Beagle Bros floppies, and I can't for the life of me remember which one, or in what context this happened, printed the following on the screen:</p>
+
+<blockquote>
+  <p>One day, all books will be interactive and animated.</p>
+</blockquote>
+
+<p>I thought, wow. That's it. <em>That's</em> what these floppies were trying to be! Interactive, animated textbooks that taught you about programming and the Apple II! Incredible.</p>
+
+<p>This idea has been burned into my brain for twenty years, ever since I originally read it on that monochrome Apple //c screen. Imagine a world where textbooks didn't just present a wall of text to you, the learner, but actually engaged you, played with you, and invited experimentation. <em>Right there on the page.</em></p>
+
+<p>(Also, if you can find and screenshot the specific Beagle Bros program that I'm thinking of here, I'd be very grateful: there's a free <a href="http://blog.codinghorror.com/the-code-keyboard/">CODE Keyboard</a> with your name on it.)</p>
+
+<p>Between the maturity of JavaScript, HTML 5, and the latest web browsers, you can deliver exactly the kind of <strong>interactive, animated textbook experience</strong> the Beagle Bros dreamed about in 1985 to billions of people with nothing more than access to the Internet and a modern web browser.</p>
+
+<p>Here are a few great examples I've collected. Screenshots don't tell the full story, so click through and experiment. </p>
+
+<ul>
+<li><p><a href="http://bost.ocks.org/mike/algorithms/">Visualizing Algorithms</a> &ndash; amazing dynamic visualizations of several interesting and popular algorithms.</p></li>
+<li><p><a href="http://ncase.me/polygons/">Parable of the Polygons</a> &ndash; a playable post on the shape of society.</p></li>
+<li><p><a href="http://ncase.me/sight-and-light/">Sight and Light</a> &ndash; interactive explanation of 2D visibility calculations.</p></li>
+<li><p><a href="http://jasmcole.com/2014/10/12/rolling-shutters/">Rolling Shutters</a> &ndash; an animated explanation of the visual glitches introduced in digital cameras by CMOS sensors when taking pictures of fast moving objects.</p></li>
+<li><p><a href="http://sorting.at/">Sorting.at</a> &ndash; a live visualization of common sorting algorithms.</p></li>
+<li><p><a href="http://www.polygon.com/2015/3/6/8158649/games-history-workplace-theft-internet-archive">The future of games history is workplace theft</a> &ndash; illustrates software history by embedding an emulated, fully playable version of Wolfenstein 3D right in the page.</p></li>
+</ul>
+
+<p>As suggested in the comments, and also excellent:</p>
+
+<ul>
+<li><p><a href="http://www.redblobgames.com/">Red Blob Games</a> &ndash; Fun, live demonstrations of computer game algorithm mechanics.</p></li>
+<li><p><a href="http://flukeout.github.io/">CSS Diner</a> &ndash; Learn about CSS by interactively playing a game.</p></li>
+<li><p><a href="https://scratch.mit.edu/">MIT's Scratch</a> &ndash;  A popular visual programming language for kids.</p></li>
+<li><p><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> &ndash; This looks like a regular online book, but click the examples to activate a live sandbox! Type and use the little menu at the upper right (or control-enter) to run the code.</p></li>
+<li><p><a href="http://jackschaedler.github.io/circles-sines-signals/aliasing.html">Interpreting Discrete Signals</a> &ndash; Nice example of a signal processing textbook with interactive graphs.</p></li>
+<li><p><a href="http://maxgoldste.in/melkman/">Melkman's Algorithm</a> &ndash; Another approach at a textbook where you must interact to proceed to the next page.</p></li>
+<li><p><a href="https://tour.golang.org/welcome/1">A Tour of Go</a> &ndash; Places a live console side by side with examples of each concept in the Go programming language.</p></li>
+<li><p><a href="http://acko.net/blog/how-to-fold-a-julia-fractal/">How to Fold a Julia Fractal</a> &ndash; Another textbook, but this time using lots of detailed JavaScript animations that you can step through forward and back.</p></li>
+<li><p><a href="http://animagraffs.com/how-a-handgun-works-1911-45/">How a Handgun Works</a> &ndash; Visual explanations using a bunch of giant, traditional GIF animations.</p></li>
+<li><p><a href="http://507movements.com/">507 Mechanical Movements</a> &ndash; A 1908 primer on mechanical movements, animated for the Internet.</p></li>
+<li><p><a href="http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/">Here’s Waldo: Computing the optimal search strategy for finding Waldo</a> &ndash; Good example of explaining a visual search algorithm in a blog post with animated GIFs and graphcs.</p></li>
+</ul>
+
+<p>(There are also native apps that do similar things; the well reviewed <a href="http://www.earthprimer.com/">Earth Primer</a>, for example. But when it comes to education, I'm not too keen on platform specific apps which seem replicable in common JavaScript and HTML.)</p>
+
+<p>In the bad old days, we learned programming by reading books. But instead of reading <a href="http://www.amazon.com/Learning-Ruby-Michael-James-Fitzgerald/dp/0596529864?tag=codihorr-20">this dry old text</a>:</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/03/learning-ruby-excerpt.png" alt=""></p>
+
+<p>Now we can <a href="http://www.codecademy.com/en/tracks/ruby">learn the same concepts interactively</a>, by reading a bit, then experimenting with live code on the same page as the book, and watching the results as we type.</p>
+
+<p><img src="http://blog.codinghorror.com/content/images/2015/03/codecademy-ruby.png" alt=""></p>
+
+<p>C'mon. Type something. <a href="http://blog.codinghorror.com/a-scripter-at-heart/">See what happens.</a> </p>
+
+<p>I certainly want my three children to learn from other kids and their teachers, as humans have since time began. But I also want them to have access to a better class of books than I did. Books that are effectively <em>programs</em>. Interactive, animated books that let them play and experiment and create, not just passively read. </p>
+
+<p>I want them to learn, as I did, that <strong>our programs are fun to use.</strong></p>
+
+<table>  
+<tr><td class="welovecodinghorror">  
+[advertisement] <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> matches the best developers (you!) with the best employers. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and even let employers find you.
+</td></tr>  
+</table>]]></content:encoded></item></channel></rss>

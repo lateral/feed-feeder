@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>Andreessen Horowitz</title>
+	<atom:link href="http://a16z.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://a16z.com</link>
+	<description>Software Is Eating the World</description>
+	<lastBuildDate>Sun, 07 Feb 2016 19:47:23 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+<cloud domain='a16z.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<image>
+		<url>http://0.gravatar.com/blavatar/028155d40793d8c2f7fd77a3b55ac924?s=96&#038;d=http%3A%2F%2Fs2.wp.com%2Fi%2Fbuttonw-com.png</url>
+		<title>Andreessen Horowitz</title>
+		<link>http://a16z.com</link>
+	</image>
+	<atom:link rel="search" type="application/opensearchdescription+xml" href="http://a16z.com/osd.xml" title="Andreessen Horowitz" />
+	<atom:link rel='hub' href='http://a16z.com/?pushpress=hub'/>
+	<item>
+		<title>a16z Podcast: Breaking the Barriers of Human Potential</title>
+		<link>http://a16z.com/2016/02/06/a16z-podcast-breaking-the-barriers-of-human-potential/</link>
+		<pubDate>Sat, 06 Feb 2016 22:30:51 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[performance science & tech]]></category>
+		<category><![CDATA[sports x tech]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13583</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245793308&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>During his “Stratos” jump Felix Baumgartner fell faster than the speed of sound, reaching an estimated speed of 833.9 mph plummeting from the edge of space. Baumgartner’s return trip to earth lasted just over nine minutes, but there was seven &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13583&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245793308&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>During his “Stratos” jump Felix Baumgartner fell faster than the speed of sound, reaching an estimated speed of 833.9 mph plummeting from the edge of space. Baumgartner’s return trip to earth lasted just over nine minutes, but there was seven years of preparation that came before the record-setting mission. Equipment had to be tested and pushed beyond its limit, and so did Baumgartner.</p>
+<p>It was the task of Red Bull’s director of high performance Andy Walshe to help train Baumgartner physically and psychologically to do what had never been done before. That’s Walshe’s job &#8212; to work with Red Bull’s athletes and artists to get them to places they’ve never been before. Walshe joins the pod, along with a16z’s Jordan Stankowski, to discuss the methods, technologies, and tools he uses to help get people past seemingly unbreakable barriers. The good news is it isn’t just world-class athletes or your favorite pop-star that can benefit from Walshe’s research and work &#8212; it’s all of us.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13583&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Super Bowl 50: Are You Ready for Some Platform? -  How the NFL, like many other businesses, is really a platform</title>
+		<link>http://a16z.com/2016/02/06/super-bowl-50-are-you-ready-for-some-platform/</link>
+		<pubDate>Sat, 06 Feb 2016 14:00:03 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[I see platforms]]></category>
+		<category><![CDATA[NFL]]></category>
+		<category><![CDATA[platform plays]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13576</guid>
+		<description><![CDATA[<p>The chili is cooking. The beer is chilling. The humiliating terms of bets are being finalized. Everyone’s geared up to watch the Denver Broncos and Carolina Panthers collide in Silicon Valley’s Levi’s Stadium for Super Bowl 50. So are we, &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13576&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>The chili is cooking. The beer is chilling. The humiliating terms of bets are being finalized. Everyone’s geared up to watch the Denver Broncos and Carolina Panthers collide in Silicon Valley’s Levi’s Stadium for Super Bowl 50. So are we, but not in the same way as most people.</p>
+<p>When most people think of the NFL, images of incredible athletes making extraordinary plays come to mind, as they should. But when we think of the NFL, we think – now <em>that’s a great example of a platform business.</em> (Sad I know, but that is what over a decade of working at eBay for one of us will do to you!)</p>
+<p>Because the NFL is a platform. And it’s not that different from the other top platform businesses out there – Amazon, Apple, Google, eBay, Facebook – in complexity and success. So in honor of the Super Bowl being played in the tech industry’s backyard, let’s set aside point spreads and playmakers for a moment and examine the NFL, Silicon Valley-style: as a platform. Which could help answer why – for the nearly 100 years it’s been in business – the NFL itself has performed so well.</p>
+<h5><strong>But first, a little platform 101</strong></h5>
+<p>Simply put, a platform is a place that engages multiple constituents, each with their own agenda and motivations, in the same place or arena<em>.</em> At eBay, the platform constituents are buyers and sellers. At Facebook, it’s users, advertisers, and developers. For the NFL, the major constituents in its platform are fans, players, owners, broadcasters, and sponsors.</p>
+<p>The key to the success of any platform – whether eBay, Facebook, NFL, or something else – is that someone <em>manages</em> <em>the evolving needs of constituents and makes changes accordingly</em>.</p>
+<p>Through that lens, the NFL actually has a long history of actively (not just passively) managing its platform, in the form of rule changes that dial up engagement around the game and further the needs of constituents. For example, the NFL made a rule change in 2015 that increased the point-after-touchdown (PAT) distance, which brought fans to their feet more often. After all, scoring plays in football are what the game is all about.</p>
+<p>You call that exciting. We call that good platform management.</p>
+<p>Before we share more about why this rule change was so impactful, it’s useful to look at a far simpler platform than the NFL to make the whole concept of platform management clear. Especially because in many cases people don’t know they are really managing a platform.</p>
+<p>In the old-school taxi ecosystem, the primary constituents are drivers and passengers (and local governments). But the motivations of the primary constituents aren’t always aligned: Drivers want to make as much money in as little time as possible, while passengers want to get to their destination in as little time and money as possible. And of course, as safely and cleanly as possible as well (without having to pick gum – or worse – out of their clothes afterwards).</p>
+<p>No wonder ride-sharing platforms like Lyft and Uber drove away with the business; they put in place incentives and penalties to optimize the experience and align incentives for <em>both</em> drivers and passengers. For example, both parties are penalized with a cancellation fee or similar if they cancel a ride after making or accepting the request. And then there are the ratings of course, on both sides; if someone falls below a threshold they can be kicked off the platform.</p>
+<p>The byproduct of all this is that the relationship among constituents shifts from a very short-term, transitory transaction between just drivers and passengers to a much longer-term<em>relationship </em>between drivers/passengers and the platform. So far, the resulting platform dynamics have led to lower prices for passengers, more business for drivers, and better service.</p>
+<p>So what does this have to do with the NFL as a platform? As with the traditional taxi model, the first step is not only identifying the key constituents, but understanding their motivations and rationale for using the “platform” … even if their constituents don’t know that’s what it really is. Knowing this can help explain – and predict – constituent behaviors when changes come to the platform.</p>
+<h5><strong>More than just the rules of the game, but the rules of the platform</strong></h5>
+<p>The table below lays out the five key constituents that operate within the NFL platform, as well as their motivations. The most important one is clearly the fans; it’s their money (directly) and their eyeballs (indirectly) that power the economics of the platform. Keeping them engaged and attracted to the game is the primary goal of the platform.</p>
+<p><span class="KonaFilter image-container display-table float_right"><span class="image on-image"><img class="alignnone" src="http://static1.businessinsider.com/image/56b3e77f2e526554008b5067-325-218/a16z-superbowl1-revised.png" alt="a16z superbowl1 revised" width="462" height="310" /></span></span></p>
+<p>Fans want more excitement; players want to get paid to play while avoiding career-ending injuries; broadcasters and sponsors want attention; and owners want to balance the motivations of those groups, obviously while also making money.</p>
+<p>You can see how NFL leadership has managed its platform by tracking rule changes over time and what constituents it’s targeting with each change. Here are a few examples:</p>
+<ul>
+<li><strong>For the fans</strong>: At one point in time-forward passes had to be thrown from five yards or more behind the line of scrimmage, offensively restricting and making it harder to put up points.</li>
+<li><strong>For the players</strong>: The goal posts were once located at the front of the end zone, which was dangerous for players when making or defending against a touchdown play. So the NFL moved them past the rear of the end zone and just beyond the field of play.</li>
+<li><strong>For the fans and the players</strong>: The NFL has adjusted the kickoff point three times since 1974. Initially it was moved back to increase the excitement of potential kickoff returns, and then it was moved up in order to avoid the incidence of bone crushing and increase player safety. This is an example of balancing needs of constituents as awareness of issues on the platform evolves.</li>
+<li><strong>For owners and sponsors</strong>: Once, getting “good seats” meant just getting a seat, period. There were no such thing as “luxury boxes” before. Now, however, you can imagine the margin on corporate-sponsored skyboxes and the joy sponsors feel in being able to access them. They’re also popular ways of bringing in friends-of-friend networks, thus growing the reach of the game.</li>
+<li><strong>For owners</strong>: The NFL began “rewarding” owners and cities that built new stadiums by bringing the Super Bowl to their shiny new venue (hello, Levi’s Stadium!). Officially speaking, this is more of a League practice than it is a rule. But it’s a very smart move regardless since it encourages stadium upgrades all around.</li>
+<li><strong>For all</strong>: By changing the sudden-death rules – in effect making death not quite so sudden – the NFL increased the fairness (and perception of fairness) of the game. This was a positive change since previously, it felt as random as a coin flip. Fans hated it, players hated it.</li>
+</ul>
+<p>Which brings us back to the NFL’s most recent rule change – the distance of the extra point kick – and why, according to good platform management it was inevitable. Let’s break the rule change down…</p>
+<p>After scoring a touchdown, teams typically lined up for the extra point – or PAT – where kicking it through the goal posts would give them a total of seven points on the drive. But let’s take a look back at the previous five seasons: Something that should have been exciting was actually not very exciting at all; there’s a reason there’s no such thing as an extra-point dance:</p>
+<p><span class="KonaFilter image-container display-table"><span class="image on-image"><img class="alignnone" src="http://static4.businessinsider.com/image/56b3e8286e97c61f048b50b8-311-246/a16z-superbowl2-revised.png" alt="a16z superbowl2 revised" width="409" height="324" /><br />
+Source: Sportingcharts.com<br />
+</span></span></p>
+<p>The 2014 regular season saw only eight misses in 1,230 PAT attempts, and 26 of the 32 teams did not miss a PAT throughout the whole season. The New England Patriots hadn’t missed a PAT since the 2010 season! Patriots head coach<a href="http://articles.chicagotribune.com/2014-03-25/sports/chi-bill-belichick-extra-points-20140325_1_bill-belichick-added-belichick-rich-mckay" rel="nofollow"> Bill Belichick</a> even referred to them as a &#8220;non-play&#8221; (after this year’s AFC Championship I bet he’s changed his tune).</p>
+<p>For comparison, the league-wide free-throw percentage of the National Basketball Association (NBA) for the 2014-15 season was 75%. Even the game’s best shooter, Stephen Curry, clocks in at 91% from the charity stripe, far from the near-perfect conversion of the NFL PAT.</p>
+<p>With near-perfect predictability in the PAT, the drama and engagement in the game was falling after touchdowns were scored – in other words, it was boring. Broadcasters sometimes didn’t even show those extra points, and when they did, announcers would often talk over it.</p>
+<p>And if broadcasters cared so little, fans cared even less. For fans the PAT amounted to the ideal time to take a bathroom break or grab a beer. And if fans – the platform’s most important constituent– aren’t looking at the TV because extra points are essentially gimmes, then<em>everyone </em>loses.</p>
+<h5><strong>The new game plan</strong></h5>
+<p>All well-managed platforms (Apple, eBay, Facebook, etc.) have oversight by a person or group that monitors the evolving needs of their constituents and makes changes accordingly. The NFL’s version is the Competition Committee – composed of head coaches and league managers  – who evaluate proposals and make recommendations to NFL owners to make the game fairer, safer, and more entertaining. With the PAT the Competition Committee saw an entertainment problem, or rather, lack of entertainment.</p>
+<p>So this season, based on the committee’s recommendation, the league moved the PAT attempt back from the two-yard-line (the spot where the ball gets snapped) to the 15-yard-line. That 13-yard change turned an automatic chip shot into a more challenging 33-yard attempt.</p>
+<p>The first-order effect was to lower the PAT conversion rate. In 2015, there were 1,217 PATs attempted with a 94.2% conversion rate. That’s 71 misses on the season; nearly a 9x increase from the prior year. What’s more, all but five teams missed at least one PAT this season.</p>
+<p>Moving from a 99.3% rate to a 94.2% rate objectively is a 5% increase in drama/engagement. Since kickers now stood a chance of missing it, you could also argue this rule change made 100% of PAT attempts more dramatic – and that’s a win for all of the constituents.</p>
+<p>Beyond the increased PAT drama, however, there was a second-order effect of the rule change – it motivated coaches to go for the two-point conversion more often, which is even more exciting. If there was already some risk your kicker might blow it, why not add a bit more risk for twice the points?</p>
+<p>In 2014, NFL teams attempted the two-point conversion 4.6% of the time (59 attempts). In 2015 that number increased to 7.2% (94 attempts), an increase of 57%. This increase in engagement is an even bigger win for fans and other constituents of the NFL.</p>
+<p>Another way to view the change is that today’s two-point conversion now has a higher expected value than the PAT. In 2015, teams successfully completed 47.8% of two-point attempts. With the PAT rate falling to 94.2%, the expected value now favors teams who go for two after a touchdown. It wouldn’t be surprising if we see the number of two-point attempts increase as a result in the coming years.</p>
+<p><span class="KonaFilter image-container display-table"><span class="image on-image"><img class="" src="http://static1.businessinsider.com/image/56b3e8852e5265b8008b5093-853-111/a16z-superbowl3.png" alt="a16z superbowl3" width="1390" height="181" />Source: Sportingcharts.com</span></span></p>
+<p>*  *  *</p>
+<p>The PAT change is only the most recent by the NFL. As with any well-managed platform, change is continuous. So what might we see the NFL do next?</p>
+<p>Since the PAT move was positive for all constituents at zero cost, the league would do well to consider pushing it back even further.</p>
+<p>Meanwhile, there has been a lot of focus on advancing player safety in recent years, and we expect this trend to accelerate (the game loses appeal if your heroes are constantly nursing injuries on the sidelines or retiring from the game at a young age). Finally, the NFL will obviously go deep with fantasy football, which may represent the NFL’s most engaged users.</p>
+<p>What the NFL <em>won’t</em> do is introduce some version of basketball’s three-point shot – say, a 10-point play. Ultimately, platform management – especially management of a nearly century-old platform like the NFL – is about tweaks. The game needs to evolve in a way that is recognizable as the thing that fans love, but not in a way that changes the definition of the game itself. It’s about balancing necessary evolution against the tradition of football.</p>
+<p>And the tradition is all about watching it. So enjoy the big game.  Who knows, it could be determined by a platform management decision – I mean Point-After-Touchdown – the AFC Championship certainly was.</p>
+<p><em>This post originally appeared in <a href="http://www.businessinsider.com/">Business Insider</a>.</em></p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13576&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+
+		<media:content url="http://static1.businessinsider.com/image/56b3e77f2e526554008b5067-325-218/a16z-superbowl1-revised.png" medium="image">
+			<media:title type="html">a16z superbowl1 revised</media:title>
+		</media:content>
+
+		<media:content url="http://static4.businessinsider.com/image/56b3e8286e97c61f048b50b8-311-246/a16z-superbowl2-revised.png" medium="image">
+			<media:title type="html">a16z superbowl2 revised</media:title>
+		</media:content>
+
+		<media:content url="http://static1.businessinsider.com/image/56b3e8852e5265b8008b5093-853-111/a16z-superbowl3.png" medium="image">
+			<media:title type="html">a16z superbowl3</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Football Meets Venture Capital</title>
+		<link>http://a16z.com/2016/02/05/hall-of-fame-football-meets-venture-capital/</link>
+		<pubDate>Fri, 05 Feb 2016 22:28:40 +0000</pubDate>
+		<dc:creator><![CDATA[jeffjordana16z]]></dc:creator>
+				<category><![CDATA[investing]]></category>
+		<category><![CDATA[NFL]]></category>
+		<category><![CDATA[Raiders need some help]]></category>
+		<category><![CDATA[sports x tech]]></category>
+		<category><![CDATA[Super Bowl]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13572</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245646576&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>The NFL has descended upon Silicon Valley for Superbowl 50, and a16z was fortunate to have 30 of the world’s best football players post-up at the firm to talk about the intersection between the world of professional sports and venture &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13572&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245646576&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>The NFL has descended upon Silicon Valley for Superbowl 50, and a16z was fortunate to have 30 of the world’s best football players post-up at the firm to talk about the intersection between the world of professional sports and venture capital.</p>
+<p>Joe Montana &#8212; yes, the Hall of Fame 49ers quarterback &#8212; joins a discussion with a16z’s Jeff Jordan and Ben Horowitz about their approaches to tech investing and the startup ecosystem, how they manage the risk involved (there’s plenty), and whether athletes and other high-profile folks can and should get involved.</p>
+<p>Here’s one piece of common ground: The hardest thing for NFL legends and VC’s alike? Losing.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13572&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/36ac1f3571234dc11d9d20c3aa1e6b79?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">jeffjordana16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Building Affirm, and Why Max Levchin Has Watched Seven Samurai 100-Plus Times</title>
+		<link>http://a16z.com/2016/02/04/a16z-podcast-building-affirm-and-why-max-levchin-has-watched-seven-samurai-100-plus-times/</link>
+		<pubDate>Fri, 05 Feb 2016 01:00:52 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[financial services]]></category>
+		<category><![CDATA[banking]]></category>
+		<category><![CDATA[fintech]]></category>
+		<category><![CDATA[judgment decision making risk]]></category>
+		<category><![CDATA[payments]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13568</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245503500&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>Max Levchin helped build PayPal. Then he went onto tackle gaming at Slide. Now he’s back in the world of payments and finance with his latest startup Affirm. a16z’s Angela Strange talks with Levchin about Affirm’s opportunity in the world &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13568&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245503500&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>Max Levchin helped build PayPal. Then he went onto tackle gaming at Slide. Now he’s back in the world of payments and finance with his latest startup Affirm. a16z’s Angela Strange talks with Levchin about Affirm’s opportunity in the world of finance, and how it aims to build trust among a customer base that doesn’t trust banks. Why building models around loans requires making bad loans, and finally, why everyone should start watching Kurosawa’s Seven Samurai &#8212; over and over.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13568&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: The Future of Money and Monetization</title>
+		<link>http://a16z.com/2016/02/03/the-future-of-money-and-monetization/</link>
+		<pubDate>Wed, 03 Feb 2016 20:56:44 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[financial services]]></category>
+		<category><![CDATA[banking]]></category>
+		<category><![CDATA[fintech]]></category>
+		<category><![CDATA[no more fees please?]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13562</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245296292&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>Technology companies are running hard at almost every part of the traditional banking business &#8212; from raising funds to moving money from one person to another. And as you would expect, that has meant change, both in terms of the &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13562&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245296292&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>Technology companies are running hard at almost every part of the traditional banking business &#8212; from raising funds to moving money from one person to another. And as you would expect, that has meant change, both in terms of the banking services that are available to all of us, and the pricing of those services.</p>
+<p>It begs the question of what role banks play going forward, and whether tech companies are partners or competitors (or some combination) to the players in the traditional banking business? And finally, if banking gets unbundled by tech –- if there is a choice of services &#8212; what fees, and at what price will consumers be willing to pay? a16z’s Alex Rampell leads a discussion with TransferWise Executive Founder Kristo Käärmann and Tilt founder and CEO James Beshara on the future of money and monetization. The discussion occurred as part of the firm’s U.K. Tech Summit.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13562&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: How to Be Original and Make Big Ideas Happen</title>
+		<link>http://a16z.com/2016/02/02/originals/</link>
+		<pubDate>Tue, 02 Feb 2016 22:58:54 +0000</pubDate>
+		<dc:creator><![CDATA[sonala16z]]></dc:creator>
+				<category><![CDATA[education]]></category>
+		<category><![CDATA[book launches]]></category>
+		<category><![CDATA[entrepreneurship]]></category>
+		<category><![CDATA[judgment decision making risk]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13552</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245099055&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>From Aaron Sorkin to Steve Jobs to Meredith Perry and Elon Musk, &#8220;original&#8221; thinkers &#8212; such as entrepreneurs &#8212; do a lot of different things to move the world to their visions. And many of those things (and traits) are &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13552&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F245099055&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>From Aaron Sorkin to Steve Jobs to Meredith Perry and Elon Musk, &#8220;original&#8221; thinkers &#8212; such as entrepreneurs &#8212; do a lot of different things to move the world to their visions. And many of those things (and traits) are counterintuitive, such as &#8230; Embracing procrastination. But there&#8217;s a catch: It&#8217;s about being the <em>just-right</em> amount of procrastinator, expert, or confident. There&#8217;s a curvilinear relationship between too much and too little.</p>
+<p>There&#8217;s also some surprising findings about why NOT to &#8220;<a href="https://youtu.be/IPYeCltXpxw" target="_blank">start with the why</a>&#8221; but with the <em>how</em>. Because sometimes the how is much more believable than the why. Especially when it comes to getting people to engineer things from ubeam to SpaceX. Or to really being able to tell the difference between communication vs. confidence vs. competence.</p>
+<p>Ultimately, it&#8217;s all about being flexible, argues top Wharton management professor and <em>New York Times</em> columnist Adam Grant in his <a href="http://www.adamgrant.net/#!originals/c1ckh" target="_blank">new book Originals</a>. So how do we strike the just-right balance &#8212; whether making an <a href="http://a16z.com/2015/07/17/great-leaders-arent-born-but-theyre-not-made-either/" target="_blank">entrepreneur</a> or just trying to raise more creative, productive kids? Is the answer perhaps to immerse them in sci-fi books and video games? Well, J.K. Rowling could be the most influential &#8220;original&#8221; alive, argues Grant in this podcast&#8230; but not for the reasons you think.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13552&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/0a6cea5804bdc50314d9adf7c8a2ad0e?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">sonala16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Lists Are the New Search</title>
+		<link>http://a16z.com/2016/02/01/lists-are-the-new-search/</link>
+		<pubDate>Mon, 01 Feb 2016 14:30:06 +0000</pubDate>
+		<dc:creator><![CDATA[sonala16z]]></dc:creator>
+				<category><![CDATA[curation]]></category>
+		<category><![CDATA[discovery]]></category>
+		<category><![CDATA[unbundling/bundling]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13549</guid>
+		<description><![CDATA[<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13549&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" /><p>&#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13549&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13549&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/0a6cea5804bdc50314d9adf7c8a2ad0e?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">sonala16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Reinventing Insurance</title>
+		<link>http://a16z.com/2016/01/30/reinventing-insurance/</link>
+		<pubDate>Sat, 30 Jan 2016 16:47:01 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[financial services]]></category>
+		<category><![CDATA[driverless cars]]></category>
+		<category><![CDATA[insurance]]></category>
+		<category><![CDATA[judgment decision making risk]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13540</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F244467335&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>Your homeowner’s insurance didn’t anticipate Airbnb. Your car insurance certainly didn’t see Lyft and Uber coming. And when your car drives itself, it’s anyone’s guess how the insurance industry will wrap its collective head around that one.</p>
+<p>a16z’s Frank Chen &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13540&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F244467335&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>Your homeowner’s insurance didn’t anticipate Airbnb. Your car insurance certainly didn’t see Lyft and Uber coming. And when your car drives itself, it’s anyone’s guess how the insurance industry will wrap its collective head around that one.</p>
+<p>a16z’s Frank Chen and Mike Paulus talk insurance on this segment of the pod. Yes, insurance.</p>
+<p>Insurance may not be the sexiest part of your life (hopefully), but because of the changes in how we move through the world &#8212; literally and figuratively &#8212; insurance is due for a reinvention. What are the possibilities for new and better insurance, and which technologies and trends are driving it.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13540&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: When Banking Works Like My Smartphone</title>
+		<link>http://a16z.com/2016/01/29/a16z-podcast-when-banking-works-like-my-smartphone/</link>
+		<pubDate>Fri, 29 Jan 2016 20:48:54 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[financial services]]></category>
+		<category><![CDATA[banking]]></category>
+		<category><![CDATA[finance]]></category>
+		<category><![CDATA[fintech]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13534</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F244457907&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>There are fewer and fewer parts of our lives that don&#8217;t feel like an extension of our smartphones. Any song you might want to hear. Any place you might want to go. And a ride to get there. All served &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13534&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F244457907&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>There are fewer and fewer parts of our lives that don&#8217;t feel like an extension of our smartphones. Any song you might want to hear. Any place you might want to go. And a ride to get there. All served up simply, quickly, at the right price, and with an experience that is actually enjoyable.</p>
+<p>And then there is the world of banking.</p>
+<p>Taavet Hinrikus, CEO and co-founder of money transfer company TransferWise, and a16z&#8217;s Angela Strange discuss why and how banking and finance &#8212; from paying back a friend to refinancing a mortgage &#8212; is about to catch up to the rest of our technology-enabled lives.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13534&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Ways Big Companies Can Overcome the &#8216;Stack Fallacy&#8217;</title>
+		<link>http://a16z.com/2016/01/28/stack-fallacy/</link>
+		<pubDate>Fri, 29 Jan 2016 04:00:10 +0000</pubDate>
+		<dc:creator><![CDATA[sonala16z]]></dc:creator>
+				<category><![CDATA[big company innovation]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13532</guid>
+		<description><![CDATA[<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13532&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" /><p>&#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13532&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13532&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/0a6cea5804bdc50314d9adf7c8a2ad0e?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">sonala16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Things Come Together &#8212; Truths about Tech in Africa</title>
+		<link>http://a16z.com/2016/01/25/africa-tech-context/</link>
+		<pubDate>Mon, 25 Jan 2016 19:49:10 +0000</pubDate>
+		<dc:creator><![CDATA[sonala16z]]></dc:creator>
+				<category><![CDATA[coding literacy]]></category>
+		<category><![CDATA[innovation clusters]]></category>
+		<category><![CDATA[messaging]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[Africa]]></category>
+		<category><![CDATA[coding literacy & access]]></category>
+		<category><![CDATA[podcasts]]></category>
+		<category><![CDATA[tech is global]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13503</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F243640100&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>We often hear stats like &#8220;more people have mobile phones than toilets&#8221; about places like Africa, but what does that actually <em>mean</em> for people? &#8220;It is b.s.,&#8221; (no pun intended!), argues one of the guests on this episode.</p>
+<p><img class="alignright size-medium wp-image-13504" src="https://a16z.files.wordpress.com/2016/01/wifi.png?w=300&#038;h=279" alt="connectivity" width="300" height="279" />Then there &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13503&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F243640100&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>We often hear stats like &#8220;more people have mobile phones than toilets&#8221; about places like Africa, but what does that actually <em>mean</em> for people? &#8220;It is b.s.,&#8221; (no pun intended!), argues one of the guests on this episode.</p>
+<p><img class="alignright size-medium wp-image-13504" src="https://a16z.files.wordpress.com/2016/01/wifi.png?w=300&#038;h=279" alt="connectivity" width="300" height="279" />Then there are statistical predictions about mobile penetration and usage &#8212; for example, that there <a href="http://www.economist.com/news/middle-east-and-africa/21649516-innovation-increasingly-local-pioneering-continent" target="_blank">will be</a> one mobile phone per African within just three years. But how do we make sense of such stats, in context? It may make more sense to measure household per device(s) not just per person &#8230; and whether women, too, truly have such access given power structures. Finally, since access is mainly about affordability, what good is a smartphone with an internet connection if data plans are prohibitively expensive? Watching just one 7-second YouTube video could cost a low-income African family an entire month of groceries. Yet mobile and wi-fi may be collapsing and renegotiating Maslow&#8217;s famous hierarchy of needs. Perhaps the truth is at the heart of these contradictions&#8230;</p>
+<p>With three experts from various backgrounds and regions of Africa &#8212; Nkiru Balonwu of international music media company <a href="https://spinlet.com/" target="_blank">Spinlet</a>; Alan Knott-Craig of free wi-fi non-profit <a href="http://projectisizwe.org/" target="_blank">Project Isiszwe</a>; and Nanjira Sambuli of Kenyan startup incubator <a href="http://ihub.co.ke/" target="_blank">iHub</a> &#8212; we explore the nuances of what connectivity in Africa really means. How does this change app design? What does it mean for doing business with Africa? What does it mean for businesses <em>in</em> Africa trying to compete with Silicon Valley (is there really local advantage)? All this and more in this episode of the a16z Podcast.</p>
+<p><em><a href="https://www.flickr.com/photos/au_unistphotostream/11946757075/" target="_blank">photo</a>: David Mutua</em></p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13503&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/0a6cea5804bdc50314d9adf7c8a2ad0e?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">sonala16z</media:title>
+		</media:content>
+
+		<media:content url="https://a16z.files.wordpress.com/2016/01/wifi.png?w=300" medium="image">
+			<media:title type="html">connectivity</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>An Update</title>
+		<link>http://a16z.com/2016/01/21/weiss-update/</link>
+		<pubDate>Thu, 21 Jan 2016 19:15:58 +0000</pubDate>
+		<dc:creator><![CDATA[scottweissa16z]]></dc:creator>
+				<category><![CDATA[announcements]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13482</guid>
+		<description><![CDATA[Like many people, over the course of my career I’ve struggled to find the right balance between work and the rest of my life, and, despite my best intentions, too often my family has gotten shortchanged. I’ve now reached a point where I’ve decided to shift the equation. I’m not leaving the firm; instead, I’ll focus the majority of my work hours on my existing board seats. The rest of my time will belong to my family. MORE<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13482&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Like many people, over the course of my career I’ve struggled to find the right balance between work and the rest of my life, and, despite my best intentions, too often my <a href="https://medium.com/working-parents-in-america/success-at-work-failure-at-home-f1d6f5d8d92f" target="_blank">family</a> has gotten shortchanged. I’ve now reached a point where I’ve decided to shift the equation. I’m not leaving the firm; instead, I’ll focus the majority of my work hours on my existing board seats. The rest of my time will belong to my family.</p>
+<p>In many ways, this was an easy decision. I have three kids who are gearing up for college, and in less than five years, they will all be out of the house. The time with them is very precious, and it doesn’t escape me how lucky I am to be able to choose to be with them while I can.</p>
+<p>I’m grateful that my partners have embraced my desire to refocus my priorities right now. I’m excited that I work with a group of such generous team players whom I deeply respect.</p>
+<p>Andreessen Horowitz started as an audacious blueprint for a new type of venture capital firm. I’m proud of what we’ve achieved so far and am excited to continue building the vision that Marc and Ben, as former founders, had to create the firm “that we would want to raise money from”.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13482&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/910507e38c48b38b13b32f62bdadfe2f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">scottweissa16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: The Fundamentals of Security and the Story of Tanium’s Growth</title>
+		<link>http://a16z.com/2016/01/20/a16z-podcast-the-fundamentals-of-security-and-the-story-of-taniums-growth/</link>
+		<pubDate>Wed, 20 Jan 2016 22:04:39 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[security & privacy]]></category>
+		<category><![CDATA[enterprise]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13484</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F242959744&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>The thing about enterprise security, from the outside at least, is it reads like a Hollywood thriller. Nation states are after your company’s most valuable assets and they must be stopped at all costs. And yes, some nation state-sponsored hacks &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13484&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F242959744&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>The thing about enterprise security, from the outside at least, is it reads like a Hollywood thriller. Nation states are after your company’s most valuable assets and they must be stopped at all costs. And yes, some nation state-sponsored hacks have caused tremendous damage. But the best course for most companies isn’t to focus on combatting Mission Impossible-like come through the vent break-ins, says Tanium co-founder Orion Hindawi. It’s the far less sexy practice of simply keeping the virtual windows and doors to your company locked. “It is the thing that will fix you,” Hindawi says.</p>
+<p>In a conversation from the firm’s Capital Summit event, Ben Horowitz and Orion discuss the state of enterprise security, and how Tanium’s block and tackle &#8212; not cloak and dagger &#8212; approach has defined the company’s technology and also led to its tremendous growth.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13484&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Software is What Distinguishes the Hardware Winners</title>
+		<link>http://a16z.com/2016/01/15/a16z-podcast-software-is-what-distinguishes-the-hardware-winners/</link>
+		<pubDate>Fri, 15 Jan 2016 19:57:02 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[mobile]]></category>
+		<category><![CDATA[consumer electronics]]></category>
+		<category><![CDATA[software]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13469</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F242118822&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>Smartphone components have become a kind of Lego kit for all kinds of consumer technology. Cameras, sensors, and batteries all get mixed and matched in different permutations to create different gadgets. It might be something that enables your connected home, &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13469&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F242118822&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>Smartphone components have become a kind of Lego kit for all kinds of consumer technology. Cameras, sensors, and batteries all get mixed and matched in different permutations to create different gadgets. It might be something that enables your connected home, offers a video capture system for cops, or powers a remote video chat/treat machine for your dog (I know, we all need that). But since practically every component is now available to everyone &#8212; and the manufacturing expertise to tie it all together as well &#8212; it becomes very hard to distinguish via hardware alone.</p>
+<p>Software is the key to breaking from the pack, say Benedict Evans and Steven Sinofsky in this post-2016 CES podcast. What Benedict and Steven saw and learned from this year’s gathering of the consumer electronics industry in this segment of the a16z Podcast.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13469&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Everlaw</title>
+		<link>http://a16z.com/2016/01/14/everlaw/</link>
+		<pubDate>Thu, 14 Jan 2016 12:00:30 +0000</pubDate>
+		<dc:creator><![CDATA[sonala16z]]></dc:creator>
+				<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[announcements]]></category>
+		<category><![CDATA[natural language]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13459</guid>
+		<description><![CDATA[<p>AJ Shankar was busy working on his PhD thesis at the University of California, Berkeley in the prestigious Programming Systems Lab, where he published a number of important papers in OOPSLA and PLDI. As a big fan of side projects, &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13459&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>AJ Shankar was busy working on his PhD thesis at the University of California, Berkeley in the prestigious Programming Systems Lab, where he published a number of important papers in OOPSLA and PLDI. As a big fan of side projects, he also caught the <em>maker bug.</em></p>
+<p>One of those projects was working as a technical expert for a leading Seattle-based law firm. It led AJ to ask what every entrepreneur asks, “How can this be improved with software?” That’s where Everlaw got started, in 2011.</p>
+<h5>The problem: A world of legacy software for lawyers</h5>
+<p>The legal profession &#8212; particularly the area of litigation and trials &#8212; is a costly, complex, labor-intensive, and, frankly, error-prone process. Beyond that, it is steeped in the complexities of individual courts and jurisdictions dictating, sometimes at the trial level, how technology can be used. Having personally worked through the transition from WordPerfect to Windows over the better part of a decade, I know the challenges of bringing technology to this highly knowledge- and people-intensive process are significant.</p>
+<p>AJ and his co-founder, practicing lawyer Jeff Friedman, a former U.S. Attorney and corporate counsel, know these challenges well from their experiences. They set out to invent something that meets both the demanding technical needs of litigation along with the unique business requirements of law firms, which often do not have the resources or skills required to manage complex software deployments.</p>
+<p>In fact, complex deployments of on-premises software defines the current state-of-the-art in litigation support software. Anyone familiar with modern software would look at this “state-of-the-art” and see architecture from another era. That’s not to say those solutions do not provide value and make money, but AJ and Jeff see a far better way.</p>
+<p>There is also a need for modern solutions to deeply technical problems &#8212; such as searching terabyte corpora for relevant documents (the state-of-the-art is mostly keyword search) or identifying clusters of relevant documents based on machine learning techniques (versus relying on humans to manually sift through and connect millions of documents). Historically, an industry vertical with such a legacy business model and architecture (i.e., very slow to change) would have a very hard time attracting top computer science talent to improve the space.</p>
+<p>Law firms also need software to solve the modern problem of “big data.” In this context, big data can mean millions of email messages, chat transcripts, voice mail recordings, scanned documents, entire data sets and social media feeds, and much more. Those are the artifacts of the legal discovery process that flow across both sides of the aisle in ever-increasing volumes. These volumes are beyond what many law firms can deal with, and as some might know, producing large amounts of data can often be part of a legal strategy used against smaller firms.</p>
+<p>Finally, the pace of change for software in the litigation industry needs to increase. The model of one-time, slowly updated on-premises software simply isn’t compatible with the fast-paced changes in technologies that can help legal. Part of the legacy world the legal profession faces is the same that any enterprise faces: A desire to move away from high, up-front product costs and transition to a cloud and software-as-a-service (SaaS) model.</p>
+<h5>The solution: Bringing cloud innovation to lawyers</h5>
+<p>Everlaw architected a solution that starts from customers: attorneys at small firms, large firms, state offices, and on both the defense and plaintiff side of cases. AJ’s technical background and Jeff’s real-world experience as an attorney proved to be a great place to start. To begin the journey, Everlaw assembled an engineering team of hard-core computer scientists, many from UC Berkeley.</p>
+<p>In the Andreessen Horowitz pitch meeting, it turns out a lot of the former CEOs, execs, and founders have been involved in litigation. Our collective experience, especially as defendants, led to an immediate bond with AJ as he detailed the Everlaw solution. Many of us have been through the boxes of documents and questions from counsel about “discovered” documents. We knew how difficult the process was and we loved when AJ detailed Everlaw’s approach:</p>
+<p style="padding-left:30px;">1. Bring together core computer science experts from natural language, machine learning, and full-stack development to architect the system.</p>
+<p style="padding-left:30px;">2. Build innovative experiences that start with the process of <em>ediscovery</em> and provide a platform for an end-to-end solution for attorneys to collaborate as a case is developed.</p>
+<p style="padding-left:30px;">3. Deliver Everlaw as an incredibly secure, highly reliable, totally scaleable cloud-based SaaS service.</p>
+<p>So far, their experience with customers has been amazing. Since most attorneys are part of the world of mobile and cloud experiences, as soon as they see Everlaw, they see how much easier, faster, and higher quality their trial preparation and work can be. In fact, customers usually say “why did it take so long” or “this is how it should work”. AJ has written <a href="http://blog.everlaw.com/2016/01/14/everlaws-big-news" target="_blank">a post</a> that includes more details on the company’s vision and the success to date.</p>
+<p>At Andreessen Horowitz, we are always incredibly excited to see technology founders taking on the hard work of reimagining an industry. It is clear that mobile, machine learning, and cloud delivered via SaaS will revolutionize every vertical, including legal. We love the work that AJ, Jeff and the Everlaw team have done to bring such high-powered efforts to an incredibly important part of the economy.</p>
+<p>For those reasons, we could not be more excited to be partnering with Everlaw and leading their Series A funding round, joining the existing investors. I am super excited to be joining the Everlaw board to support their ongoing work. <em>Software eats legal.</em></p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13459&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/0a6cea5804bdc50314d9adf7c8a2ad0e?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">sonala16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Nobody Discusses Work Software Outside of Work &#8212; and Then There’s Slack</title>
+		<link>http://a16z.com/2016/01/13/nobody-discusses-work-software-outside-of-work-and-then-theres-slack/</link>
+		<pubDate>Wed, 13 Jan 2016 19:36:52 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[messaging]]></category>
+		<category><![CDATA[building companies]]></category>
+		<category><![CDATA[founders]]></category>
+		<category><![CDATA[future of work]]></category>
+		<category><![CDATA[software]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13456</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F241806089&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>For as long as there has been software we have had this collective hope &#8212; maybe more of a desire &#8212; that software will make all kinds of work easier, more productive, and more creative.  Spreadsheets, computer-aided design tools, digital &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13456&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F241806089&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>For as long as there has been software we have had this collective hope &#8212; maybe more of a desire &#8212; that software will make all kinds of work easier, more productive, and more creative.  Spreadsheets, computer-aided design tools, digital publishing platforms, though never perfect, are examples of software that have definitely changed how we work and what is possible. Still, you find very few people enthusing about Excel over cocktails.</p>
+<p>So what is going on with Slack? The messaging app crops up in conversation at dinner parties. It’s become a kind of cultural signifier of a tech savvy workforce that is always looking for better ways to connect &#8212; inside and outside of work. </p>
+<p>In this segment of the podcast we discuss Slack with its founder Stewart Butterfield. Why Slack has resonated so well across all types of people, from engineers at NASA’s Jet Propulsion Lab to dentists, and what that says about how we work today and about our ongoing quest for the perfect tools and services to get the job done.</p>
+<p><em>The conversation happened as part of a16z’s Capital Summit.</em></p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13456&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>CES 2016: Observations for Product People</title>
+		<link>http://a16z.com/2016/01/11/ces-2016-observations-for-product-people/</link>
+		<pubDate>Mon, 11 Jan 2016 21:00:37 +0000</pubDate>
+		<dc:creator><![CDATA[sonala16z]]></dc:creator>
+				<category><![CDATA[CES]]></category>
+		<category><![CDATA[design]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13449</guid>
+		<description><![CDATA[CES is the best place to go to see and learn about making products. In one place you can see the technology ingredients available to product makers along with how those ingredients are being put together and how they are interacted with and connected to customers.
+
+As much as I love attending, I also love taking a step back and thinking (and writing) about what I learned. Doing so provides great context for me in working with startups on their products, talking with enterprise customers about their needs, and partnering with bigger companies to enhance their go to markets. 
+
+As a reminder, CES is not a big electronics store nor is it a research lab. It is somewhere in between. MORE<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13449&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13449&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://0.gravatar.com/avatar/0a6cea5804bdc50314d9adf7c8a2ad0e?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">sonala16z</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Harnessing the DevOps Movement &#8212; Don’t Go Chasing Waterfalls</title>
+		<link>http://a16z.com/2016/01/08/a16z-podcast-harnessing-the-devops-movement-dont-go-chasing-waterfalls/</link>
+		<pubDate>Fri, 08 Jan 2016 18:46:52 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[cloud infrastructure]]></category>
+		<category><![CDATA[a focus on developers]]></category>
+		<category><![CDATA[devops]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13444</guid>
+		<description><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F241003479&#038;visual=true&#038;color=ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>In this, world of massive cloud-based applications and services, rolling out software has moved from an episodic event to an almost continuous release cycle. In that environment, software products aren’t as “done” as they used to be &#8212; they can’t &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13444&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F241003479&visual=true&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>In this, world of massive cloud-based applications and services, rolling out software has moved from an episodic event to an almost continuous release cycle. In that environment, software products aren’t as “done” as they used to be &#8212; they can’t be &#8212; so the focus has shifted to reversibility. Building a development organization with the design tools and processes that can aggressively iterate while also creating safety nets. So if things do get screwy they can be fixed before customers even notice.</p>
+<p>Call it DevOps or application operations, Steven Sinofsky leads a discussion with Karthik Rau from SignalFx and Alex Solomon from PagerDuty about the evolution of I.T. operations – and the requirements and challenges that modern distributed applications pose for a development organization.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13444&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: Making the Most of the Data That Matters</title>
+		<link>http://a16z.com/2016/01/07/a16z-podcast-making-the-most-of-the-data-that-matters/</link>
+		<pubDate>Thu, 07 Jan 2016 22:28:31 +0000</pubDate>
+		<dc:creator><![CDATA[mvcopeland]]></dc:creator>
+				<category><![CDATA[big data]]></category>
+		<category><![CDATA[cloud infrastructure]]></category>
+		<category><![CDATA[predictive analytics]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13440</guid>
+		<description><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F240874178&#038;visual=true&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>Every organization these days is clear about the need to get its data act together. But that doesn’t mean the path toward data bliss is clear. Data has gravity. It resides in different places at different organizations &#8212; on premise, &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13440&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F240874178&visual=true&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>Every organization these days is clear about the need to get its data act together. But that doesn’t mean the path toward data bliss is clear. Data has gravity. It resides in different places at different organizations &#8212; on premise, in the cloud, and flowing from external sources. And the rate of change within organizations is always different. So an approach towards handling data that works for one company may be the exact wrong thing for yours.</p>
+<p>Steven Sinofsky leads a conversation with three founders &#8212; Prat Moghe, from Cazena; Gaurav Dhillon from SnapLogic, and Roman Stanek from GoodData – about the opportunity and variety of ways forward for companies looking to make the most of the data that matters.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13440&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/e78c2824471cc3da14e7eca1de3fac51?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">mvcopeland</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>a16z Podcast: What Software Developers (and Therefore Every Company) Need</title>
+		<link>http://a16z.com/2016/01/06/a16z-podcast-what-software-developers-and-therefore-every-company-need-2/</link>
+		<pubDate>Wed, 06 Jan 2016 21:05:18 +0000</pubDate>
+		<dc:creator><![CDATA[peterlevinea16z]]></dc:creator>
+				<category><![CDATA[big data]]></category>
+		<category><![CDATA[cloud infrastructure]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[a focus on developers]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[software development]]></category>
+
+		<guid isPermaLink="false">http://a16z.com/?p=13432</guid>
+		<description><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F240698026&#038;visual=true&#038;color=ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false"></iframe>
+<p>The old constraint when it came to technology was hardware &#8212; how many CPUs can I get my hands on. Today, spinning up compute can be done from any smartphone with an AWS account or something similar. The current constraint &#8230;</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13432&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F240698026&visual=true&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+<p>The old constraint when it came to technology was hardware &#8212; how many CPUs can I get my hands on. Today, spinning up compute can be done from any smartphone with an AWS account or something similar. The current constraint is software. And since software is written and operated by people, tackling that constraint comes down to making people as informed, enabled, and efficient as possible.</p>
+<p>Three CEOs and co-founders of three companies that serve software developers &#8212; Chris Wanstrath from GitHub, Jeff Lawson from Twilio, and Ben Uretsky of Digital Ocean &#8212; take part in a conversation with a16z’s Peter Levine about the needs of software developers. What are the emerging platforms, ecosystems, and tools that help developers succeed at what is increasingly the most important job in any company – writing and running software.</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=a16z.com&#038;blog=14215595&#038;post=13432&#038;subd=a16z&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:content url="http://2.gravatar.com/avatar/b83c8bbc5298f76f33fa5b352041c199?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">peterlevinea16z</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>

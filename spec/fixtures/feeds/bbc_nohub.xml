@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Business</title>  
+    <link>http://www.bbc.co.uk/news/business/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Business section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Thu, 11 Feb 2016 10:42:49 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Business</title>  
+      <link>http://www.bbc.co.uk/news/business/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/business/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Anxiety drags down European markets</title>  
+      <description>London's top shares fall nearly 3%, while other European markets see even bigger falls, amid anxiety about the health of the global economy.</description>  
+      <link>http://www.bbc.co.uk/news/business-35548117#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35548117</guid>  
+      <pubDate>Thu, 11 Feb 2016 10:35:22 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>British Gas and EDF cut gas prices</title>  
+      <description>British Gas and EDF Energy announce they are cutting their gas prices, the last of the big six energy suppliers to do so.</description>  
+      <link>http://www.bbc.co.uk/news/business-35547391#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35547391</guid>  
+      <pubDate>Thu, 11 Feb 2016 10:13:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Buy-to-let surge 'raising house prices'</title>  
+      <description>Surveyors are witnessing a surge of demand from buy-to-let investors which they expect to push up house prices.</description>  
+      <link>http://www.bbc.co.uk/news/business-35540513#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35540513</guid>  
+      <pubDate>Thu, 11 Feb 2016 00:10:32 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Rio Tinto reports slump in profits</title>  
+      <description>Rio Tinto reports a slump in net profits and drops its progressive dividend policy, hit by the fall in commodity prices.</description>  
+      <link>http://www.bbc.co.uk/news/business-35547388#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35547388</guid>  
+      <pubDate>Thu, 11 Feb 2016 08:50:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/157CB/production/_88211088_88210949.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/17EDB/production/_88211089_88210949.jpg"/> 
+    </item>  
+    <item> 
+      <title>Johnston Press in talks to buy i paper</title>  
+      <description>Johnston Press confirms it is in advanced talks to buy the cut-price national daily newspaper - the i - for about £24m.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-35547464#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-35547464</guid>  
+      <pubDate>Thu, 11 Feb 2016 08:43:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/16135/production/_88212409_184459775.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/058D/production/_88212410_184459775.jpg"/> 
+    </item>  
+    <item> 
+      <title>Twitter hit by faltering user growth</title>  
+      <description>Shares of Twitter fall in after-hours trading as the companies earnings announcement shows growth faltering.</description>  
+      <link>http://www.bbc.co.uk/news/business-35544165#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35544165</guid>  
+      <pubDate>Wed, 10 Feb 2016 23:26:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Shoppers 'fail to spot cheapest deals'</title>  
+      <description>Most grocery shoppers are unable to identify the cheapest deals when faced with a blizzard of "special offers" in stores, financial experts say.</description>  
+      <link>http://www.bbc.co.uk/news/business-35539416#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35539416</guid>  
+      <pubDate>Thu, 11 Feb 2016 00:11:35 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Total's profits rise 20% to $5.1bn</title>  
+      <description>French oil major Total reports a 20% increase in annual net profit to $5.1bn, compared with $4.2bn a year earlier.</description>  
+      <link>http://www.bbc.co.uk/news/business-35547366#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35547366</guid>  
+      <pubDate>Thu, 11 Feb 2016 08:10:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>N Korea to cut hotlines with South</title>  
+      <description>North Korea vows to cut two crucial military communication hotlines with the South, as tension rises after the North's recent rocket and nuclear tests.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-35547145#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-35547145</guid>  
+      <pubDate>Thu, 11 Feb 2016 10:47:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Hong Kong shares sink nearly 4%</title>  
+      <description>Hong Kong shares join the regional downward trend, falling nearly 4%, as trading resumes after the Lunar New Year break.</description>  
+      <link>http://www.bbc.co.uk/news/business-35547042#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35547042</guid>  
+      <pubDate>Thu, 11 Feb 2016 08:17:49 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Dallas Buyers Club drops piracy case</title>  
+      <description>The Hollywood studio behind the US film Dallas Buyers Club is no longer pursuing its piracy case against Australians accused of illegally downloading the movie.</description>  
+      <link>http://www.bbc.co.uk/news/business-35547045#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35547045</guid>  
+      <pubDate>Thu, 11 Feb 2016 06:55:12 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Facebook ‘colonialism' row stokes distrust</title>  
+      <description>Comments by a Facebook board member could put Mark Zuckerberg's global plans on the back foot.</description>  
+      <link>http://www.bbc.co.uk/news/technology-35547416#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-35547416</guid>  
+      <pubDate>Thu, 11 Feb 2016 08:26:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/42D7/production/_88211171_88211107.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/69E7/production/_88211172_88211107.jpg"/> 
+    </item>  
+    <item> 
+      <title>Burger King expands menu with hot dogs</title>  
+      <description>Burger King announces that hot dogs will be the newest addition to its menus in the US.</description>  
+      <link>http://www.bbc.co.uk/news/business-35545389#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35545389</guid>  
+      <pubDate>Wed, 10 Feb 2016 19:42:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/2094/production/_88204380_84518091.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/47A4/production/_88204381_84518091.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Apprenticeships boost the workforce</title>  
+      <description>Germany has Europe's lowest rates of youth unemployment, partly because of its traditional apprenticeship system, which allows young Germans who don't go to university to train and qualify in companies.</description>  
+      <link>http://www.bbc.co.uk/news/business-35532713#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35532713</guid>  
+      <pubDate>Wed, 10 Feb 2016 12:54:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/BB19/production/_88179874_germanapprentice.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/E229/production/_88179875_germanapprentice.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Feeding Hong Kong's poor and hungry</title>  
+      <description>Hong Kong's Chan Cheuk Ming has kept his eatery going through hard times, feeding people who cannot pay.</description>  
+      <link>http://www.bbc.co.uk/news/business-35537711#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35537711</guid>  
+      <pubDate>Wed, 10 Feb 2016 01:21:27 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: Artificial intelligence buys stocks</title>  
+      <description>Hedge funds are increasingly turning to artificial intelligence in order to spot trends to try to make money for their customers</description>  
+      <link>http://www.bbc.co.uk/news/technology-35405336#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-35405336</guid>  
+      <pubDate>Wed, 10 Feb 2016 00:03:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/0894/production/_88169120_gettyimages-187250301.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/2FA4/production/_88169121_gettyimages-187250301.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Entrepreneurship in village schools</title>  
+      <description>India has become a hub for start-ups in recent years. Most investment has been focused on cities, but as a majority of Indians live in rural areas, what difference would teaching entrepreneurial skills to village students make?</description>  
+      <link>http://www.bbc.co.uk/news/business-35532712#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35532712</guid>  
+      <pubDate>Tue, 09 Feb 2016 11:49:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/10A5B/production/_88178186_de26.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/1316B/production/_88178187_de26.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Is self-publishing hot right now?</title>  
+      <description>As more and more writers choose to self-publish, how are these author-entrepreneurs changing the bookselling industry?</description>  
+      <link>http://www.bbc.co.uk/news/business-35482351#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35482351</guid>  
+      <pubDate>Tue, 09 Feb 2016 00:02:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/39E2/production/_88081841_authors_royal.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/60F2/production/_88081842_authors_royal.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Hope for typhoon-hit rice farmers</title>  
+      <description>Technology being developed in the Philippines could give hope to thousands of farmers affected by storms and natural disasters.</description>  
+      <link>http://www.bbc.co.uk/news/business-35528236#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35528236</guid>  
+      <pubDate>Tue, 09 Feb 2016 00:47:23 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: How to become a better boss</title>  
+      <description>Top chief executives share their tips on how to become a better boss.</description>  
+      <link>http://www.bbc.co.uk/news/business-35522520#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35522520</guid>  
+      <pubDate>Tue, 09 Feb 2016 00:05:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/1312E/production/_88162187_bossschool.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/1583E/production/_88162188_bossschool.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Challenges facing new gas plant</title>  
+      <description>Shetland's new gas plant has "pushed the boundaries" of what is technically possible, says the BBC's Lorna Gordon.</description>  
+      <link>http://www.bbc.co.uk/news/business-35523717#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35523717</guid>  
+      <pubDate>Mon, 08 Feb 2016 18:01:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/6C94/production/_88169772_de27.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/93A4/production/_88169773_de27.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is the tax tide beginning to turn?</title>  
+      <description>Is it becoming harder for international firms to avoid tax?</description>  
+      <link>http://www.bbc.co.uk/news/business-35483600#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35483600</guid>  
+      <pubDate>Thu, 11 Feb 2016 00:01:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/12AB6/production/_88207467_taxmontage_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/151C6/production/_88207468_taxmontage_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>The entrepreneurs rebuilding East Timor</title>  
+      <description>The young entrepreneurs helping to rebuild their country</description>  
+      <link>http://www.bbc.co.uk/news/business-35522521#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35522521</guid>  
+      <pubDate>Thu, 11 Feb 2016 00:01:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/9862/production/_88201093_cesargaio_dilicioustimor2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/BF72/production/_88201094_cesargaio_dilicioustimor2.jpg"/> 
+    </item>  
+    <item> 
+      <title>How did Iceland clean up its banks?</title>  
+      <description>How Iceland cleaned up its banks</description>  
+      <link>http://www.bbc.co.uk/news/business-35485876#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35485876</guid>  
+      <pubDate>Wed, 10 Feb 2016 00:06:54 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Norway seeks to move away from oil</title>  
+      <description>Norway seeks to diversify its economy as oil earnings plunge</description>  
+      <link>http://www.bbc.co.uk/news/business-35318236#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35318236</guid>  
+      <pubDate>Wed, 10 Feb 2016 00:12:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/82F8/production/_88182533_gettyimages-156661060.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/AA08/production/_88182534_gettyimages-156661060.jpg"/> 
+    </item>  
+    <item> 
+      <title>Migrants ‘more motivated to learn’, says OECD</title>  
+      <description>Migrant children 'may be the highest achievers'</description>  
+      <link>http://www.bbc.co.uk/news/business-35492437#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35492437</guid>  
+      <pubDate>Wed, 10 Feb 2016 10:57:37 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Why more Americans are giving up their passports</title>  
+      <description>Why expats are handing back their passports</description>  
+      <link>http://www.bbc.co.uk/news/35383435#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/35383435</guid>  
+      <pubDate>Tue, 09 Feb 2016 08:35:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/DA9E/production/_88166955_gettyimages-600893.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/101AE/production/_88166956_gettyimages-600893.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is self-publishing coming of age?</title>  
+      <description>How easy is it for authors to self-publish?</description>  
+      <link>http://www.bbc.co.uk/news/business-35482345#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35482345</guid>  
+      <pubDate>Tue, 09 Feb 2016 00:03:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/484E/production/_88101581_bookmoney.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/6F5E/production/_88101582_bookmoney.jpg"/> 
+    </item>  
+    <item> 
+      <title>Will not criticising make you a better boss?</title>  
+      <description>Will not criticising make you a better boss?</description>  
+      <link>http://www.bbc.co.uk/news/business-35522516#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35522516</guid>  
+      <pubDate>Tue, 09 Feb 2016 00:05:34 GMT</pubDate> 
+    </item> 
+  </channel> 
+</rss>

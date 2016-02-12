@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.arstechnica.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+
+<channel>
+	<title>Ars Technica</title>
+	
+	<link>http://arstechnica.com</link>
+	<description>The Art of Technology</description>
+	<lastBuildDate>Thu, 11 Feb 2016 08:27:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.1</generator>
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.arstechnica.com/arstechnica/index" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="arstechnica/index" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><item>
+		<title>1,500 Windows 3.1 shareware apps are now free, immortalized on your browser</title>
+		<link>http://arstechnica.com/information-technology/2016/02/over-1500-windows-3-1-shareware-apps-now-free-immortalized-on-your-browser/</link>
+		<pubDate>Thu, 11 Feb 2016 04:55:57 +0000</pubDate>
+		<dc:creator><![CDATA[Sam Machkovech]]></dc:creator>
+				<category><![CDATA[Technology Lab]]></category>
+		<category><![CDATA[archive.org]]></category>
+		<category><![CDATA[shareware]]></category>
+		<category><![CDATA[skifree]]></category>
+		<category><![CDATA[windows 3.1]]></category>
+		<category><![CDATA[windows 3.x]]></category>
+		<category><![CDATA[windows 95]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824437</guid>
+		<description><![CDATA[Warp back to 1992 with Ross Perot, Saddam Hussein, hundreds of shareware nag notices.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Earlier this week, Internet Archive software collector and historian Jason Scott answered our phone call to talk about one of his latest efforts: <a href="http://arstechnica.com/security/2016/02/relive-your-worst-ms-dos-file-deletion-memories-at-the-malware-museum/">the Malware Museum</a>, which offered online passersby a glimpse at how nearly 80 classic viruses worked once they infected an MS-DOS computer. We enjoyed picking his brain about the collection and told him so, at which point he stopped us from hanging up the phone.</p>
+<p>"I have one more drop for you," Scott said. "On Thursday, we're going to put up a <em>bunch</em> of Windows 3.1 software. What we did for MS-DOS, we're doing for Windows 3.1."</p>
+<p>We were immediately intrigued, remembering exactly what Scott and his slew of Archive.org volunteers did <a href="http://arstechnica.com/gaming/2013/12/internet-archive-releases-hundreds-of-classic-game-console-roms/">for MS-DOS and other computing and gaming platforms</a>. Thanks to that team's efforts, thousands of seemingly lost pieces of software had found new life, all brought back to life with free downloads and a mighty fine Web-browser emulation solution. From beloved classics like <em>Oregon Trail</em> to <a href="http://arstechnica.com/gaming/2013/10/playing-apple-iic-games-30-years-late-through-an-online-emulator-museum/">cult hits like <em>Karateka</em></a>, the collection's thousands of titles seemed to have it all.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/02/over-1500-windows-3-1-shareware-apps-now-free-immortalized-on-your-browser/#p3">Read 13 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/02/over-1500-windows-3-1-shareware-apps-now-free-immortalized-on-your-browser/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=CCOs_MDaOFU:wZM3fMNppZY:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=CCOs_MDaOFU:wZM3fMNppZY:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=CCOs_MDaOFU:wZM3fMNppZY:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=CCOs_MDaOFU:wZM3fMNppZY:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=CCOs_MDaOFU:wZM3fMNppZY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=CCOs_MDaOFU:wZM3fMNppZY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Twitter’s Monthly Active User base shrank in Q4</title>
+		<link>http://arstechnica.com/business/2016/02/twitters-monthly-active-user-base-shrunk-in-q4/</link>
+		<pubDate>Thu, 11 Feb 2016 01:34:51 +0000</pubDate>
+		<dc:creator><![CDATA[Megan Geuss]]></dc:creator>
+				<category><![CDATA[Ministry of Innovation]]></category>
+		<category><![CDATA[financials]]></category>
+		<category><![CDATA[Twitter]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=824477</guid>
+		<description><![CDATA[CEO Jack Dorsey says Twitter is focusing on what it does best: Live interaction.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2014/08/twitter-sketch-640x426.jpg"><p class="caption" style="font-size:0.8em">(credit: Shawn Campbell)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Although Twitter <a href="http://files.shareholder.com/downloads/AMDA-2F526X/1490873882x0x874459/8A4D1A1D-D184-4AFE-9AC1-F880C5EA06F1/Q415_Shareholder_Letter.pdf">posted revenue of $710.5 million</a> (PDF) in the fourth quarter of 2015—a result that narrowly surpassed the company’s high-bar projection from the previous quarter—the social media company posted a net loss of $90 million for the fourth quarter.</p>
+<p>Worse, however, were the company’s user base statistics. Twitter reported that its Monthly Average Users (MAU) essentially remained flat from Q3 to Q4, but if Twitter subtracted its SMS-only customers (who are largely based in India and Brazil and don’t see ads the way mobile customers do), that MAU number fell to 305 million per year, down from 307 in the previous quarter.</p>
+<p>Twitter executives were quick to point out, however, that the monthly active user base had increased in January to Q3 levels. On the call, a Twitter executive attributed the rebound to the first quarter being a historically strong quarter for Twitter given the number of live events like award shows, sporting events, and other big celebrations that fall in that time period.</p>
+</div><p><a href="http://arstechnica.com/business/2016/02/twitters-monthly-active-user-base-shrunk-in-q4/#p3">Read 5 remaining paragraphs</a> | <a href="http://arstechnica.com/business/2016/02/twitters-monthly-active-user-base-shrunk-in-q4/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=hwV-mfyRiOE:ip_O9yKrDfY:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=hwV-mfyRiOE:ip_O9yKrDfY:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=hwV-mfyRiOE:ip_O9yKrDfY:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=hwV-mfyRiOE:ip_O9yKrDfY:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=hwV-mfyRiOE:ip_O9yKrDfY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=hwV-mfyRiOE:ip_O9yKrDfY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Moore’s law really is dead this time</title>
+		<link>http://arstechnica.com/information-technology/2016/02/moores-law-really-is-dead-this-time/</link>
+		<pubDate>Thu, 11 Feb 2016 01:22:30 +0000</pubDate>
+		<dc:creator><![CDATA[Peter Bright]]></dc:creator>
+				<category><![CDATA[Gear & Gadgets]]></category>
+		<category><![CDATA[Technology Lab]]></category>
+		<category><![CDATA[chips]]></category>
+		<category><![CDATA[Intel]]></category>
+		<category><![CDATA[Moore's Law]]></category>
+		<category><![CDATA[processors]]></category>
+		<category><![CDATA[semiconductors]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=824227</guid>
+		<description><![CDATA[The chip industry is no longer going to treat Gordon Moore's law as the target to aim for.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2015/04/imrs.php_-640x668.jpeg"><p class="caption" style="font-size:0.8em">Gordon Moore's original graph, showing projected transistor counts, long before the term "Moore's law" was coined. (credit: Intel)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Moore's law has died at the age of 51 after an extended illness.</p>
+<p>In 1965, Intel co-founder Gordon Moore made an observation that the number of components in integrated circuits was doubling every 12 months or so. Moreover, <a href="http://arstechnica.com/gadgets/2008/09/moore/1/">as this site wrote extensively about in 2003</a>, that the number of transistors per chip that resulted in the lowest price per transistor was doubling every 12 months. In 1965, this meant that 50 transistors per chip offered the lowest per-transistor cost; Moore predicted that by 1970, this would rise to 1,000 components per chip, and that the price per transistor would drop by 90 percent.</p>
+<p>With a little more data and some simplification, this observation became "Moore's law": the number of transistors per chip would double every 12 months.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/02/moores-law-really-is-dead-this-time/#p3">Read 16 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/02/moores-law-really-is-dead-this-time/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=gpLhXmejpUo:rsyX75mVqdg:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=gpLhXmejpUo:rsyX75mVqdg:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=gpLhXmejpUo:rsyX75mVqdg:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=gpLhXmejpUo:rsyX75mVqdg:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=gpLhXmejpUo:rsyX75mVqdg:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=gpLhXmejpUo:rsyX75mVqdg:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Tesla posts loss in Q4 but expects to be in the black “starting next month”</title>
+		<link>http://arstechnica.com/cars/2016/02/tesla-posts-loss-in-q4-but-expects-to-be-in-the-black-starting-next-month/</link>
+		<pubDate>Thu, 11 Feb 2016 00:32:10 +0000</pubDate>
+		<dc:creator><![CDATA[Megan Geuss]]></dc:creator>
+				<category><![CDATA[Cars Technica]]></category>
+		<category><![CDATA[Ministry of Innovation]]></category>
+		<category><![CDATA[earnings]]></category>
+		<category><![CDATA[Tesla]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=824441</guid>
+		<description><![CDATA[With 107,000 vehicles on the road, electric automaker needs to push into wider market.
+]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2015/06/tesla-model-3-concept-art-640x480.jpg"><p class="caption" style="font-size:0.8em">Model 3 concept art. </p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>On Wednesday afternoon, Tesla Motors <a href="http://files.shareholder.com/downloads/ABEA-4CW8X0/1421313020x0x874449/945B9CF5-86DA-4C35-B03C-4892824F058D/Q4_15_Tesla_Update_Letter.pdf">posted a 4<sup>th</sup> quarter net loss</a> (PDF), but the company’s CEO Elon Musk assured investors that Tesla expects to see "positive cash flow starting next month" and to be profitable again by Generally Accepted Accounting Principles (GAAP) standards in Q4 2016. Although the company's <a href="http://finance.yahoo.com/q?s=TSLA">stock was down 3 percent at close of market</a>, after-hours trading favored the stock price by 9.5 percent.</p>
+<p>The company also confirmed that it would officially announce the highly anticipated Model 3 on March 31. Tesla added that it was on track for production and delivery of the budget-oriented car by late 2017.</p>
+<p>According to the company’s quarterly financial statement, it made $1.75 billion in revenue in Q4 2015 (or $1.21 billion according to GAAP standards, which treat leased vehicles differently), and $5.29 billion (or $405 billion, GAAP) for the 2015 year as a whole. Still, the company posted a net loss of $114 million in Q4 (or $320 million, GAAP).</p>
+</div><p><a href="http://arstechnica.com/cars/2016/02/tesla-posts-loss-in-q4-but-expects-to-be-in-the-black-starting-next-month/#p3">Read 7 remaining paragraphs</a> | <a href="http://arstechnica.com/cars/2016/02/tesla-posts-loss-in-q4-but-expects-to-be-in-the-black-starting-next-month/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=zCI-X_vG_AY:ZG6QBWcSk0I:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=zCI-X_vG_AY:ZG6QBWcSk0I:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=zCI-X_vG_AY:ZG6QBWcSk0I:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=zCI-X_vG_AY:ZG6QBWcSk0I:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=zCI-X_vG_AY:ZG6QBWcSk0I:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=zCI-X_vG_AY:ZG6QBWcSk0I:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Mississippi lawmaker admits his education bill is to protect creationism</title>
+		<link>http://arstechnica.com/science/2016/02/mississippi-lawmaker-admits-his-education-bill-is-to-protect-creationism/</link>
+		<pubDate>Thu, 11 Feb 2016 00:17:34 +0000</pubDate>
+		<dc:creator><![CDATA[John Timmer]]></dc:creator>
+				<category><![CDATA[Law & Disorder]]></category>
+		<category><![CDATA[Scientific Method]]></category>
+		<category><![CDATA[Creationism]]></category>
+		<category><![CDATA[evolution]]></category>
+		<category><![CDATA[science education]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=824401</guid>
+		<description><![CDATA[“I just don’t want my teachers punished... for bringing creationism into the debate."]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Mississippi is the latest US state to see a bill introduced that would protect teachers who injected bogus information into science classes. In that regard, there's nothing new; South Dakota <a href="http://arstechnica.com/science/2014/01/south-dakota-bill-would-protect-teachers-who-promote-intelligent-design/">beat it to the punch</a> this year. The <a href="http://billstatus.ls.state.ms.us/documents/2016/html/HB/0001-0099/HB0050IN.htm">text of the bill</a> is also unremarkable, fitting right in to the family tree of similar legislation that's been introduced over the years (see sidebar).</p>
+<p>What is unusual in this case is that the lawmaker behind the bill is being very upfront about his purposes. “I just don’t want my teachers punished in any form or fashion for bringing creationism into the debate," Representative Mark Formby told <em>The Clarion-Ledger</em>. "Lots of us believe in creationism.” The bill he introduced would protect teachers from any disciplinary actions triggered by their discussion of it into the classroom.</p>
+
+<p>In most cases, the people behind these bills avoid publicly admitting their intentions. In that way, they can pretend that the language of the bill (which ostensibly protects scientific information) has a purely secular purpose. By giving the game away—the language is a sham, and the bill is meant to allow proselytizing in the science classroom—Formby has created a record that will undoubtedly resurface should his bill pass and trigger a lawsuit.</p>
+</div><p><a href="http://arstechnica.com/science/2016/02/mississippi-lawmaker-admits-his-education-bill-is-to-protect-creationism/#p3">Read 2 remaining paragraphs</a> | <a href="http://arstechnica.com/science/2016/02/mississippi-lawmaker-admits-his-education-bill-is-to-protect-creationism/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=x1Q8AXDfGM4:q7B0bAcksPo:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=x1Q8AXDfGM4:q7B0bAcksPo:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=x1Q8AXDfGM4:q7B0bAcksPo:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=x1Q8AXDfGM4:q7B0bAcksPo:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=x1Q8AXDfGM4:q7B0bAcksPo:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=x1Q8AXDfGM4:q7B0bAcksPo:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Feds nail webcam on utility pole for 10 weeks to spy on suspect</title>
+		<link>http://arstechnica.com/tech-policy/2016/02/feds-nail-webcam-on-utility-pole-for-10-weeks-to-spy-on-suspect/</link>
+		<pubDate>Wed, 10 Feb 2016 23:47:10 +0000</pubDate>
+		<dc:creator><![CDATA[David Kravets]]></dc:creator>
+				<category><![CDATA[Law & Disorder]]></category>
+		<category><![CDATA[6th US Circuit Court of Appeals]]></category>
+		<category><![CDATA[domestic surveillance]]></category>
+		<category><![CDATA[Fourth Amendment]]></category>
+		<category><![CDATA[second amendment]]></category>
+		<category><![CDATA[the ridiculous]]></category>
+		<category><![CDATA[warrantless spying]]></category>
+		<category><![CDATA[webcam spying]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824335</guid>
+		<description><![CDATA[Court says warrants not needed. Footage revealed what passersby could see.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/utility-pole-640x426.jpg"><p class="caption" style="font-size:0.8em">(credit: <a rel="nofollow" class="caption-link" href="https://secure.flickr.com/photos/maelick/15089161838/in/photolist-oZnU7J-dSSLcW-7sgFD-fkPU8L-Bb9A5t-bEFjCF-bYBRvm-BshWQp-ee1hHU-BfUxcU-kkdFd-yagp4r-e6GBP7-ts8XZ2-AnmJe-8w7oFy-Bb9Bpn-smJyA-jJugVZ-d9BHo9-2xgytW-NAmWv-rcDRai-qV4MUN-nuEEpD-8FxsDv-qYuwnd-bEFnHp-bEFnkr-bEFknP-bEFo9a-bEFm3X-bEFmGp-brLvSm-bEFoup-3yJX2-fCTm4-6qKpSu-7xBNJn-sij57g-7menZG-dMhskt-46cNvv-nkDeJz-Doev42-9ts5x3-4zVUr3-dM7LRf-6dAogA-ezMRDA">Maëlick</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>A federal appeals court is upholding the firearms conviction of a Tennessee man whose brother's rural farm was monitored for 10 weeks straight by a remote-controlled camera the authorities installed on a utility pole 200 yards away—without a warrant.</p>
+<p>The <a href="http://rutherford.org/files_images/general/02-10-2016_US-v-Houston_Sixth-Circuit-Ruling.pdf">decision</a> (PDF) by the 6th US Circuit Court of Appeals affirms the nine-year sentence of a man named Rocky Houston, who was caught by the camera as being a felon in possession of a gun. The man was on a Roane County Sheriff's Office watch list after he was cleared of murder charges following a gun battle that left a Roane County law enforcement official dead in 2006.</p>
+<p>"There is no Fourth Amendment violation, because Houston had no reasonable expectation of privacy in video footage recorded by a camera that was located on top of a public utility pole and that captured the same views enjoyed by passersby on public roads," Judge John Rogers wrote for the unanimous court, which ruled 3-0 to uphold Houston's 2014 conviction. "The ATF agents only observed what Houston made public to any person traveling on the roads surrounding the farm. Additionally, the length of the surveillance did not render the use of the pole camera unconstitutional, because the Fourth Amendment does not punish law enforcement for using technology to more efficiently conduct their investigations. While the ATF agents could have stationed agents round-the-clock to observe Houston’s farm in person, the fact that they instead used a camera to conduct the surveillance does not make the surveillance unconstitutional."</p>
+</div><p><a href="http://arstechnica.com/tech-policy/2016/02/feds-nail-webcam-on-utility-pole-for-10-weeks-to-spy-on-suspect/#p3">Read 9 remaining paragraphs</a> | <a href="http://arstechnica.com/tech-policy/2016/02/feds-nail-webcam-on-utility-pole-for-10-weeks-to-spy-on-suspect/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=6c7MP2zZO4s:uTCmjHm4hRs:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=6c7MP2zZO4s:uTCmjHm4hRs:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=6c7MP2zZO4s:uTCmjHm4hRs:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=6c7MP2zZO4s:uTCmjHm4hRs:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=6c7MP2zZO4s:uTCmjHm4hRs:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=6c7MP2zZO4s:uTCmjHm4hRs:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>The Earth cracked apart in a forest, and it made a sound</title>
+		<link>http://arstechnica.com/science/2016/02/the-earth-cracked-apart-in-a-forest-and-it-made-a-sound/</link>
+		<pubDate>Wed, 10 Feb 2016 22:32:07 +0000</pubDate>
+		<dc:creator><![CDATA[Scott K. Johnson]]></dc:creator>
+				<category><![CDATA[Scientific Method]]></category>
+		<category><![CDATA[geology]]></category>
+		<category><![CDATA[seismology]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824309</guid>
+		<description><![CDATA[It didn’t swallow anybody, but it's pretty weird and we don't know what caused it.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/menominee_pennington-640x853.jpg"><p class="caption" style="font-size:0.8em">(credit: Wayne Pennington/Michigan Technological University)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>With no warning, a hellish rumble announces a crack in the ground, opening to a yawning chasm as the walls spread, crumble, and disappear into the abyss—fortunately, this particular seismic disaster occurs only in cartoons. (And <a href="http://www.imdb.com/title/tt2126355/">ridiculous movies</a>.) But tone down the special effects a bit and then try to put yourselves in the shoes of some residents of Michigan’s Upper Peninsula in October 2010.</p>
+<p>Early in the morning, folks just north of Menominee, Michigan, heard a loud noise and felt a shake. In that part of the country, a grain elevator explosion is more likely than an earthquake. But when someone went out to finish cutting up a large tree that had come down in a storm two weeks previous, they found a huge crack had opened up in the Earth. It wasn’t going to swallow anybody whole, but you could probably have lost a cell phone in there.</p>
+<p>The “Menominee Crack” was a little longer than a football field, over half a meter wide in places, and approached 1.7m deep. It ran through a forested area that had previously been flat. The crack actually sat atop what was now a six-foot-high ridge, with trees on either side now tipping slightly away from vertical. If you look carefully, you can actually <a href="https://www.google.com/maps/place/45%C2%B012'48.6%22N+87%C2%B035'15.7%22W/@45.213512,-87.5882448,188m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">see it</a> in satellite imagery.</p>
+</div><p><a href="http://arstechnica.com/science/2016/02/the-earth-cracked-apart-in-a-forest-and-it-made-a-sound/#p3">Read 7 remaining paragraphs</a> | <a href="http://arstechnica.com/science/2016/02/the-earth-cracked-apart-in-a-forest-and-it-made-a-sound/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=a3t-vXuAQe4:kX8VINM7TNw:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=a3t-vXuAQe4:kX8VINM7TNw:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=a3t-vXuAQe4:kX8VINM7TNw:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=a3t-vXuAQe4:kX8VINM7TNw:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=a3t-vXuAQe4:kX8VINM7TNw:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=a3t-vXuAQe4:kX8VINM7TNw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>NASA’s asteroid mission isn’t dead—yet</title>
+		<link>http://arstechnica.com/science/2016/02/nasas-asteroid-mission-isnt-deadyet/</link>
+		<pubDate>Wed, 10 Feb 2016 22:16:44 +0000</pubDate>
+		<dc:creator><![CDATA[Eric Berger]]></dc:creator>
+				<category><![CDATA[Scientific Method]]></category>
+		<category><![CDATA[ARM]]></category>
+		<category><![CDATA[ARRM]]></category>
+		<category><![CDATA[asteroid retrieval mission]]></category>
+		<category><![CDATA[NASA]]></category>
+		<category><![CDATA[President Obama]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824111</guid>
+		<description><![CDATA[Agency delays initial launch date to 2023, program may never fly at all.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/arm-optionb-carrying-asteroid-640x360.jpg"><p class="caption" style="font-size:0.8em">NASA's asteroid mission calls for a robotic spacecraft to grab a boulder from an asteroid and return it to cislunar space. </p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>It seemed like a good idea at the time. Back in 2010 President Obama wanted to distance himself from the space exploration programs of George W. Bush and his predecessors. Humans had been to the Moon, and while they would one day go to Mars, the president reasoned, they needed a more realistic near-term destination. He chose an asteroid.</p>
+<p>“By 2025 we expect new spacecraft designed for long journeys to allow us to begin the first-ever crewed missions beyond the Moon into deep space,” Obama <a href="http://www.nasa.gov/news/media/trans/obama_ksc_trans.html">said</a> at Florida’s Kennedy Space Center, during the one space policy speech he has given as president. “So we’ll start by sending astronauts to an asteroid for the first time in history.”</p>
+
+<p>An asteroid offered a couple of key benefits. It was new—no human had visited one before. And with a shallow gravity well, it didn’t require expensive landers and ascent vehicles to get onto and off its surface. But there were also problems. Even after searching for a couple of years, scientists couldn’t find a suitable asteroid that came close enough to Earth for astronauts to reach it in a timely manner, and the Orion vehicle NASA was building could only support a crew for 21 days in deep space.</p>
+</div><p><a href="http://arstechnica.com/science/2016/02/nasas-asteroid-mission-isnt-deadyet/#p3">Read 13 remaining paragraphs</a> | <a href="http://arstechnica.com/science/2016/02/nasas-asteroid-mission-isnt-deadyet/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=o98enEJLKr4:lHf5u8btg6Q:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=o98enEJLKr4:lHf5u8btg6Q:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=o98enEJLKr4:lHf5u8btg6Q:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=o98enEJLKr4:lHf5u8btg6Q:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=o98enEJLKr4:lHf5u8btg6Q:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=o98enEJLKr4:lHf5u8btg6Q:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Oculus Rift will ship with four-month Unity Pro trial</title>
+		<link>http://arstechnica.com/gaming/2016/02/oculus-rift-will-ship-with-four-month-unity-pro-trial/</link>
+		<pubDate>Wed, 10 Feb 2016 21:30:30 +0000</pubDate>
+		<dc:creator><![CDATA[Sam Machkovech]]></dc:creator>
+				<category><![CDATA[Opposable Thumbs]]></category>
+		<category><![CDATA[google cardboard]]></category>
+		<category><![CDATA[htc vive]]></category>
+		<category><![CDATA[oculus rift]]></category>
+		<category><![CDATA[playstation VR]]></category>
+		<category><![CDATA[steamvr]]></category>
+		<category><![CDATA[virtual reality]]></category>
+		<category><![CDATA[VR]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824243</guid>
+		<description><![CDATA[VR-minded Vision Summit 2016 kicks off with other freebies, news announcements.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2015/12/Oculus-Rift-3-640x360.jpg"><p class="caption" style="font-size:0.8em"><a href="http://cdn.arstechnica.net/wp-content/uploads/2015/12/Oculus-Rift-3.jpg" class="enlarge" data-height="2160" data-width="3840">Enlarge</a> <span class="sep">/</span> Another Oculus bundled product: four months of Unity Pro. (credit: Oculus)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>The creators of the Unity game engine kicked off a virtual reality focused event in Los Angeles on Wednesday, and it began with a wave of freebie announcements—perhaps most notably, the news that all Oculus Rift buyers will get four months of free, unfettered access to Unity Pro.</p>
+<p>Oculus founder Palmer Luckey was on hand at the <a href="http://visionsummit2016.com/">Vision Summit 2016</a> to confirm the news, pointing back to Oculus' original decision to offer shorter free trials to the VR headset maker's dev kit products. "For virtual reality, we knew a lot of the best ideas and applications weren't going to come from people that you could predict," Luckey told the Vision Summit crowd. "It was gonna come from people who would create things you wouldn't expect."</p>
+<p>This news follows prior bundled-software announcements, including a copy of <em><a href="http://arstechnica.com/gaming/2015/12/eve-valkyrie-no-its-not-just-a-tech-demo/">Eve: Valkyrie</a></em> for every headset pre-order and a copy of the cute platformer <em>Lucky's Tale</em> with all headsets, which may help the slightest bit with <a href="http://arstechnica.com/gaming/2016/01/oculus-founder-apologizes-for-messaging-poorly-on-599-rift-price/">the $600 headset's sticker shock</a>.</p>
+</div><p><a href="http://arstechnica.com/gaming/2016/02/oculus-rift-will-ship-with-four-month-unity-pro-trial/#p3">Read 3 remaining paragraphs</a> | <a href="http://arstechnica.com/gaming/2016/02/oculus-rift-will-ship-with-four-month-unity-pro-trial/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=J3cO2UtmXG4:PjHwAKCBg9k:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=J3cO2UtmXG4:PjHwAKCBg9k:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=J3cO2UtmXG4:PjHwAKCBg9k:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=J3cO2UtmXG4:PjHwAKCBg9k:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=J3cO2UtmXG4:PjHwAKCBg9k:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=J3cO2UtmXG4:PjHwAKCBg9k:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>“Happy Birthday” is public domain, former owner Warner/Chapell to pay $14M</title>
+		<link>http://arstechnica.com/tech-policy/2016/02/happy-birthday-is-public-domain-former-owner-warnerchapell-to-pay-14m/</link>
+		<pubDate>Wed, 10 Feb 2016 21:19:34 +0000</pubDate>
+		<dc:creator><![CDATA[Joe Mullin]]></dc:creator>
+				<category><![CDATA[Law & Disorder]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=823857</guid>
+		<description><![CDATA[Winning lawyer says more bogus copyrights may come under legal attack.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2015/07/Birthday.Song_.png"><p class="caption" style="font-size:0.8em">(credit: From court records in Good Morning to You v. Warner/Chappell)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>The public will soon be free to sing the world's most famous song.</p>
+<p>Music publisher Warner/Chappell will no longer be allowed to collect licensing royalties on those who sing "Happy Birthday" in public and will pay back $14 million to those who have paid for licensing in the past, according to court settlement papers filed late Monday night.</p>
+<p>The settlement is a result of a <a href="http://arstechnica.com/tech-policy/2013/06/filmmaker-picks-a-copyright-fight-with-happy-birthday/">lawsuit originally filed in 2013</a> by filmmaker Jennifer Nelson, who challenged the "Happy Birthday" copyright. "Happy Birthday" has the same melody as "Good Morning to You," a children's song dating to the 19th Century. But despite the song's murky early history, music publisher Warner/Chappell has stuck to its story that the song was copyrighted in 1935, and a royalty had to be paid for any public use of it—until now.</p>
+</div><p><a href="http://arstechnica.com/tech-policy/2016/02/happy-birthday-is-public-domain-former-owner-warnerchapell-to-pay-14m/#p3">Read 9 remaining paragraphs</a> | <a href="http://arstechnica.com/tech-policy/2016/02/happy-birthday-is-public-domain-former-owner-warnerchapell-to-pay-14m/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=5eSUeeNgakk:fF-HbGyYd58:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=5eSUeeNgakk:fF-HbGyYd58:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=5eSUeeNgakk:fF-HbGyYd58:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=5eSUeeNgakk:fF-HbGyYd58:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=5eSUeeNgakk:fF-HbGyYd58:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=5eSUeeNgakk:fF-HbGyYd58:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Yes, you can rely on Amazon’s new game engine during the zombie apocalypse</title>
+		<link>http://arstechnica.com/gaming/2016/02/yes-you-can-rely-on-amazons-new-game-engine-during-the-zombie-apocalypse/</link>
+		<pubDate>Wed, 10 Feb 2016 20:48:46 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle Orland]]></dc:creator>
+				<category><![CDATA[Opposable Thumbs]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[apocalypse]]></category>
+		<category><![CDATA[lumberyard]]></category>
+		<category><![CDATA[zombie]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824253</guid>
+		<description><![CDATA[Lumberyard terms of service features a carve-out in case of reanimated human corpses.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2013/06/IMG_6035-640x426.jpg"><p class="caption" style="font-size:0.8em">BRAAAAIIINNNNS! (credit: Andrew Cunningham)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Since Amazon <a href="http://arstechnica.com/gaming/2016/02/amazon-games-launches-free-game-engine-with-native-twitch-integration/">launched its free Lumberyard game engine yesterday</a>, the world has been united in a single question: are we legally allowed to use the engine to operate life-saving infrastructure during the zombie apocalypse? After digging through Amazon's updated terms of service for the new engine, we can now confirm that the answer is a definitive "yes."</p>
+<p>Don't believe us? Go to <a href="https://aws.amazon.com/service-terms/">the Amazon Web Services TOS</a> and scroll down to rule 57.10. There you'll see the following (emphasis added):</p>
+<blockquote><p>57.10 Acceptable Use; Safety-Critical Systems. Your use of the Lumberyard Materials must comply with the AWS Acceptable Use Policy. The Lumberyard Materials are not intended for use with life-critical or safety-critical systems, such as use in operation of medical equipment, automated transportation systems, autonomous vehicles, aircraft or air traffic control, nuclear facilities, manned spacecraft, or military use in connection with live combat. <b>However, this restriction will not apply in the event of the occurrence (certified by the United States Centers for Disease Control or successor body) of a widespread viral infection transmitted via bites or contact with bodily fluids that causes human corpses to reanimate and seek to consume living human flesh, blood, brain or nerve tissue and is likely to result in the fall of organized civilization.</b></p></blockquote>
+<p>As obvious jokes hidden in legal boilerplate go, Amazon's efforts fall a little short of the <em>Divinity: Original Sin</em> EULA, which <a href="http://arstechnica.com/gaming/2015/10/divinty-original-sin-developer-hides-giveaway-in-eula-fine-print/">gave out rewards</a> to the first 100 people who bothered reading through the boring language. And the humorous clause diverts attention away from other, potentially more worrying clauses therein, like the engine's collection of "information about system and server resources, features used in the integrated development environment, frequency and duration of use, geographic and network locations, and error and information messages."</p>
+</div><p><a href="http://arstechnica.com/gaming/2016/02/yes-you-can-rely-on-amazons-new-game-engine-during-the-zombie-apocalypse/#p3">Read 1 remaining paragraphs</a> | <a href="http://arstechnica.com/gaming/2016/02/yes-you-can-rely-on-amazons-new-game-engine-during-the-zombie-apocalypse/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=BT-AH3g1sXA:jUz0uw0qSXY:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=BT-AH3g1sXA:jUz0uw0qSXY:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=BT-AH3g1sXA:jUz0uw0qSXY:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=BT-AH3g1sXA:jUz0uw0qSXY:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=BT-AH3g1sXA:jUz0uw0qSXY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=BT-AH3g1sXA:jUz0uw0qSXY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Your brain operates differently depending on the time of year</title>
+		<link>http://arstechnica.com/science/2016/02/your-brain-operates-differently-depending-on-the-time-of-year/</link>
+		<pubDate>Wed, 10 Feb 2016 20:13:25 +0000</pubDate>
+		<dc:creator><![CDATA[Beth Mole]]></dc:creator>
+				<category><![CDATA[Scientific Method]]></category>
+		<category><![CDATA[brain]]></category>
+		<category><![CDATA[cognition]]></category>
+		<category><![CDATA[seasons]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824213</guid>
+		<description><![CDATA[Working memory activity may peak in the fall, while attention tops out in summer.
+]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/4556201613_db104fd80d_z-640x480.jpg"><p class="caption" style="font-size:0.8em">(credit: <a rel="nofollow" class="caption-link" href="https://www.flickr.com/photos/dlemieux/4556201613/in/photolist-7WBJ1e-6dtycC-bzc2ub-4zEqqs-9ntM7b-bpp96G-88SL7A-9tcfC1-9qxq5C-82PUJB-xWS6BJ-cYkcDL-qWAstq-9qZvsg-dZDGqt-9qxNkq-7PwZ6p-KgEBZ-4Pw1Uv-6dQfiP-8pxj91-crkLHJ-9qdJwK-rZbpwZ-9ose3A-c4M1fd-zT3BJV-4x4iMs-mpsKX-unmcZs-4qfPfx-nCmJVz-nyHFLY-bJDMhk-4waStR-7HJYy6-5KnVgW-7UcsTP-68TVnZ-82oi75-ezwcWy-7XntYE-87NTyq-9r6xd9-vaR2Hh-9opbdc-bvDb1s-ebr3Ec-9PJLG-njxZSN">Diana/Flickr</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Winter gloom and springtime glee are common seasonal swings. But beyond swaying how you feel, yearly cycles may also shift the way you think, according to a new study in the <em>Proceedings of the National Academy of Sciences</em>.</p>
+<p>Comparing the cognitive function of 28 volunteers tested at different points in the year, researchers noted pronounced <a href="http://dx.doi.org/10.1073/pnas.1518129113">seasonal patterns in brain region activity</a>. Namely, areas involved in working memory hit peak performance around the autumn equinox, and areas dealing with sustained attention crested around the summer solstice. Though it’s still early in the research to understand the significance of possible annual mental oscillations, the study hints at a previously unappreciated seasonal rhythm of the human brain that could affect learning and behavior.</p>
+<p>For the study, researchers led by Pierre Maquet and Gilles Vandewalle at the University of Liège in Belgium recruited 28 healthy volunteers, split evenly by gender and all around 21 years old. To rule out the influence of daily rhythms and environmental factors, the researchers prepared the volunteers for the study by having them stay in the lab for 4.5 days. During this time, participants endured a 42-hour sleep deprivation routine in a dimly lit sound-proof room with no time cues.</p>
+</div><p><a href="http://arstechnica.com/science/2016/02/your-brain-operates-differently-depending-on-the-time-of-year/#p3">Read 5 remaining paragraphs</a> | <a href="http://arstechnica.com/science/2016/02/your-brain-operates-differently-depending-on-the-time-of-year/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=Js5hNNSDJBo:yEejSf4VToU:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=Js5hNNSDJBo:yEejSf4VToU:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=Js5hNNSDJBo:yEejSf4VToU:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=Js5hNNSDJBo:yEejSf4VToU:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=Js5hNNSDJBo:yEejSf4VToU:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=Js5hNNSDJBo:yEejSf4VToU:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Original Descent creators jump into the Kickstarter arena with Overload</title>
+		<link>http://arstechnica.com/gaming/2016/02/original-descent-creators-jump-into-the-kickstarter-arena-with-overload/</link>
+		<pubDate>Wed, 10 Feb 2016 19:00:12 +0000</pubDate>
+		<dc:creator><![CDATA[Lee Hutchinson]]></dc:creator>
+				<category><![CDATA[Opposable Thumbs]]></category>
+		<category><![CDATA[6-dof]]></category>
+		<category><![CDATA[6dof]]></category>
+		<category><![CDATA[descent]]></category>
+		<category><![CDATA[fps]]></category>
+		<category><![CDATA[gaming]]></category>
+		<category><![CDATA[overload]]></category>
+		<category><![CDATA[PC gaming]]></category>
+		<category><![CDATA[shooter]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824115</guid>
+		<description><![CDATA[Kulas, Toschlog, and crew aiming to make new single-player tunnel shooter.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/KS_noFooter_01-640x360.jpg"><p class="caption" style="font-size:0.8em"><a href="http://cdn.arstechnica.net/wp-content/uploads/2016/02/KS_noFooter_01.jpg" class="enlarge" data-height="675" data-width="1200">Enlarge</a> <span class="sep">/</span> Blasting bots in the mines, just like old times. (credit: <a rel="nofollow" class="caption-link" href="http://playoverload.com/media/">Revival Productions</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p><em>Descent</em>-style "six degrees of freedom" tunnel shooters are undergoing a mini-renaissance. First, some of the Austin-based <em>Star Citizen</em> team jumped ship and started working on <em><a href="http://arstechnica.com/gaming/2015/10/descent-underground-recaptures-that-descent-multiplayer-magic/">Descent: Underground</a>,</em> a multiplayer-focused prequel to the original game using the "Descent" name on license from Interplay. Next, UK indie studio Sigtrap Games announced <em>Sublevel Zero,</em> another <em>Descent</em>-like tunnel shooter—this one with blocky, retro-styled graphics and a focus on single-player.</p>
+<p>We’ve played both, but as good as <em>Descent: Underground</em> and <em>Sublevel Zero</em> are shaping up to be, they’re missing something: the original development crew from Parallax Studios that worked on the original <em>Descent</em> and its sequels. We’ve been wondering since last year if Mike Kulas, Matt Toschlog, and the rest of the folks behind <em>Descent</em> were going to throw their virtual hats into the ring—and, as of this morning, they have. They’ve started a new company called Revival Productions LLC and launched <a href="https://www.kickstarter.com/projects/2010925172/overload-the-ultimate-six-degree-of-freedom-shoote">a $300,000 crowdfunding campaign for a game called <em>Overload.</em></a></p>
+<div class="centered-figure-container"><div class="video center" style="width:640px">
+<iframe style="display:block" src="http://player.vimeo.com/video/154360174?color=ff9933" width="640" height="450" frameborder="0"></iframe><p class="caption" style="font-size:0.8em">Kickstarter trailer for Revival Productions' <em>Overload.</em> </p>
+</div></div>
+
+<h2>Defending materials</h2>
+<p>The <em>Overload</em> Kickstarter, along with <a href="http://playoverload.com/">the game’s website</a>, paints a pretty detailed picture of the kind of game Revival is developing. The game is not a sequel or prequel to <em>Descent</em>—Eric Peterson and Descendent Studios have the right to use the <em>Descent</em> name and are doing that with <em>Descent: Underground</em>—but is instead a new game in a new universe (Revival told Ars that its own attempts to license the <em>Descent</em> name from Interplay were unsuccessful). However, <em>Overload</em> will feature gameplay mechanisms that are undeniably <em>Descent</em>-y: zipping through underground mines in a small spacecraft, finding keys, opening secret doors, fragging robots, rescuing hostages, and finally blowing up a reactor and escaping the level before it collapses around your ears.</p>
+</div><p><a href="http://arstechnica.com/gaming/2016/02/original-descent-creators-jump-into-the-kickstarter-arena-with-overload/#p3">Read 10 remaining paragraphs</a> | <a href="http://arstechnica.com/gaming/2016/02/original-descent-creators-jump-into-the-kickstarter-arena-with-overload/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=VdS3OX24EtI:1cq7xQUBg_4:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=VdS3OX24EtI:1cq7xQUBg_4:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=VdS3OX24EtI:1cq7xQUBg_4:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=VdS3OX24EtI:1cq7xQUBg_4:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=VdS3OX24EtI:1cq7xQUBg_4:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=VdS3OX24EtI:1cq7xQUBg_4:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Liveblog: Scientists to announce major gravitational wave finding</title>
+		<link>http://arstechnica.com/science/2016/02/liveblog-scientists-announce-major-gravitational-wave-finding/</link>
+		<pubDate>Wed, 10 Feb 2016 18:38:13 +0000</pubDate>
+		<dc:creator><![CDATA[Eric Berger]]></dc:creator>
+				<category><![CDATA[Scientific Method]]></category>
+		<category><![CDATA[gravitational waves]]></category>
+		<category><![CDATA[LIGO]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824135</guid>
+		<description><![CDATA[Ars goes to the source of gravitational wave science, a large detector in Louisiana.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/IMG_0304-640x427.jpg"><p class="caption" style="font-size:0.8em">Inside the main control room at the gravitational wave detector facility in Livingston, Louisiana. (credit: Eric Berger)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<a href="http://live.arstechnica.com/have-scientists-directly-observed-gravitational-waves/" target="_blank" class="liveblog-button">View Liveblog</a><div class="countdown">2016-02-11T09:15:00-06:00</div>
+<p>On Thursday morning (10:30 EST, 15:30 GMT) scientists will make what they are calling a major gravitational wave <a href="http://www.ligo.org/news/media-advisory.php">announcement</a>.</p>
+
+<p>The scientists are being pretty coy about it, and after a century of looking for gravitational waves, you can understand their caution about not wanting the cat to slip out of the bag.</p>
+<p>However, credible rumors have been swirling about the discovery of gravitational waves emanating from a binary black hole, and physicists associated with the National Science Foundation-funded project are expected to discuss this new research during their presentation.</p>
+</div><p><a href="http://arstechnica.com/science/2016/02/liveblog-scientists-announce-major-gravitational-wave-finding/#p3">Read 1 remaining paragraphs</a> | <a href="http://arstechnica.com/science/2016/02/liveblog-scientists-announce-major-gravitational-wave-finding/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=koZE33wM5Rk:M6TPJ5wODgg:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=koZE33wM5Rk:M6TPJ5wODgg:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=koZE33wM5Rk:M6TPJ5wODgg:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=koZE33wM5Rk:M6TPJ5wODgg:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=koZE33wM5Rk:M6TPJ5wODgg:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=koZE33wM5Rk:M6TPJ5wODgg:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Internet of Things to be used as spy tool by governments: US intel chief</title>
+		<link>http://arstechnica.com/tech-policy/2016/02/us-intelligence-chief-says-iot-climate-change-add-to-global-instability/</link>
+		<pubDate>Wed, 10 Feb 2016 18:26:25 +0000</pubDate>
+		<dc:creator><![CDATA[David Kravets]]></dc:creator>
+				<category><![CDATA[Law & Disorder]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=823935</guid>
+		<description><![CDATA[Clapper says spy agencies "might" use IoT for surveillance, location tracking.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/Screen-Shot-2016-02-10-at-6.57.14-AM-640x441.png"><p class="caption" style="font-size:0.8em">Director of National Intelligence James Clapper testifies Tuesday before the Senate Armed Services Committee. (credit: <a rel="nofollow" class="caption-link" href="http://www.c-span.org/video/?404436-1/james-clapper-testimony-global-threats">CSPAN</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>James Clapper, the US director of national intelligence, told lawmakers Tuesday that governments across the globe are likely to employ the Internet of Things as a spy tool, which will add to global instability already being caused by infectious disease, hunger, climate change, and artificial intelligence.</p>
+<p>Clapper addressed two different committees on Tuesday—the Senate Armed Services Committee and the Senate Select Committee on Intelligence Committee—and for the first time suggested that the Internet of Things could be weaponized by governments. He did not name any countries or agencies in regard to the IoT, but a recent Harvard <a href="http://arstechnica.com/tech-policy/2016/02/feds-dont-need-crypto-backdoors-to-spy-your-tv-and-toothbrush-will-do/">study</a> suggested US authorities could harvest the IoT for spying purposes.</p>
+<p>"Smart devices incorporated into the electric grid, vehicles—including autonomous vehicles—and household appliances are improving efficiency, energy conservation, and convenience. However, security industry analysts have demonstrated that many of these new systems can threaten data privacy, data integrity, or continuity of services. In the future, intelligence services might use the loT for identification, surveillance, monitoring, location tracking, and targeting for recruitment, or to gain access to networks or user credentials," Clapper <a href="/wp-content/uploads/2016/02/clappertestimony.pdf">said</a> (PDF), according to his prepared testimony before the Senate Select Committee on Intelligence.</p>
+</div><p><a href="http://arstechnica.com/tech-policy/2016/02/us-intelligence-chief-says-iot-climate-change-add-to-global-instability/#p3">Read 7 remaining paragraphs</a> | <a href="http://arstechnica.com/tech-policy/2016/02/us-intelligence-chief-says-iot-climate-change-add-to-global-instability/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=LkPlfuN98yg:jzpkRgEU-a0:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=LkPlfuN98yg:jzpkRgEU-a0:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=LkPlfuN98yg:jzpkRgEU-a0:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=LkPlfuN98yg:jzpkRgEU-a0:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=LkPlfuN98yg:jzpkRgEU-a0:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=LkPlfuN98yg:jzpkRgEU-a0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Slow start for HBO Now with just 800,000 subscribers</title>
+		<link>http://arstechnica.com/business/2016/02/slow-start-for-hbo-now-with-just-800000-subscribers/</link>
+		<pubDate>Wed, 10 Feb 2016 17:41:33 +0000</pubDate>
+		<dc:creator><![CDATA[Megan Geuss]]></dc:creator>
+				<category><![CDATA[Ministry of Innovation]]></category>
+		<category><![CDATA[HBO]]></category>
+		<category><![CDATA[HBO NOw]]></category>
+		<category><![CDATA[time warner]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=824053</guid>
+		<description><![CDATA[The standalone streaming service has yet to hit Playstation, Xbox platforms.
+]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/17068174061_6d285b95c2_z-640x427.jpg"><p class="caption" style="font-size:0.8em">(credit: <a rel="nofollow" class="caption-link" href="https://www.flickr.com/photos/harrisonweber/17068174061/">Harrison Weber</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Time Warner had its <a href="http://ir.timewarner.com/phoenix.zhtml?c=70972&amp;p=quarterlyearnings">fourth-quarter earnings call</a> on Wednesday morning, and HBO, a subsidiary of the network, revealed some interesting information about its new standalone streaming service, HBO Now. The highly anticipated launch of HBO Now was expected to draw a huge following from cord-cutters. But Richard Plepler, the CEO of HBO, told investors and journalists that HBO Now had only attracted about 800,000 subscribers since the service launched in April.</p>
+<p>Plepler said he was pleased with the growth, especially considering that HBO Now hasn’t yet been released on Playstation and Xbox platforms. He added that HBO Now also hasn’t yet released content from Jon Stewart, Bill Simmons, and the <em>Vice Daily News Show</em>, which he said was certain to drive subscriptions. Still, 800,000 subscribers could be seen as a slow start, especially considering that <a href="http://nypost.com/2015/09/16/jeff-bewkes-hbo-now-is-living-up-to-our-expectations/">Plepler told investors in November 2014</a> that he was hoping to draw in four or five million new subscribers with HBO Now.</p>
+<p>”We’re learning all the time… We see an enormous amount of subscribers ahead,” Plepler said on the call today, adding that, "HBO Now is an additive part of our growth strategy… We’re going to work in a multifaceted way to expand our sub[scriber] base.”</p>
+</div><p><a href="http://arstechnica.com/business/2016/02/slow-start-for-hbo-now-with-just-800000-subscribers/#p3">Read 6 remaining paragraphs</a> | <a href="http://arstechnica.com/business/2016/02/slow-start-for-hbo-now-with-just-800000-subscribers/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=HE9gx9dvq0E:JbSIJ-0AN2Y:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=HE9gx9dvq0E:JbSIJ-0AN2Y:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=HE9gx9dvq0E:JbSIJ-0AN2Y:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=HE9gx9dvq0E:JbSIJ-0AN2Y:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=HE9gx9dvq0E:JbSIJ-0AN2Y:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=HE9gx9dvq0E:JbSIJ-0AN2Y:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Android app helps Iranians avoid morality police checkpoints</title>
+		<link>http://arstechnica.com/information-technology/2016/02/android-app-helps-iranians-avoid-morality-police-checkpoints/</link>
+		<pubDate>Wed, 10 Feb 2016 17:24:11 +0000</pubDate>
+		<dc:creator><![CDATA[Sean Gallagher]]></dc:creator>
+				<category><![CDATA[Technology Lab]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=824031</guid>
+		<description><![CDATA[Gershad crowdsources intelligence on routes around potential public humiliation.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/gershad2-640x433.png"><p class="caption" style="font-size:0.8em">Morals checkpoints reported in Tehran by users of Gershad. (credit: <a rel="nofollow" class="caption-link" href="https://play.google.com/store/apps/details?id=gerd.app.gershad">Gershad</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Community mapping applications come in all shapes and sizes. There are apps to help drivers avoid speed traps, maneuver around traffic jams, and find cheap gas. And now there's one that helps people avoid being pulled from their car by the Ershad—Iran's morals police.</p>
+<p>Anonymous developers in Iran recently released an Android app that is intended to help young Iranians share intelligence about Ershad checkpoints. Called "<a href="https://play.google.com/store/apps/details?id=gerd.app.gershad">Gershad</a>," the app depends on crowdsourced reports from users to help others avoid being stopped, harassed, or even possibly beaten or arrested for failing to adhere to the Ershad interpretations of Islamic morality.</p>
+<p>The app was highlighted by Nima Akbarpour, the presenter of Persian Click (a technology show on BBC's Persian service).</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/02/android-app-helps-iranians-avoid-morality-police-checkpoints/#p3">Read 3 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/02/android-app-helps-iranians-avoid-morality-police-checkpoints/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=V1aW22MnNRI:0KebMpCYMUQ:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=V1aW22MnNRI:0KebMpCYMUQ:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=V1aW22MnNRI:0KebMpCYMUQ:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=V1aW22MnNRI:0KebMpCYMUQ:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=V1aW22MnNRI:0KebMpCYMUQ:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=V1aW22MnNRI:0KebMpCYMUQ:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Comcast begs Atlanta customers not to switch to Google Fiber</title>
+		<link>http://arstechnica.com/business/2016/02/as-google-fiber-hits-atlanta-comcast-says-dont-fall-for-the-hype/</link>
+		<pubDate>Wed, 10 Feb 2016 17:04:38 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Brodkin]]></dc:creator>
+				<category><![CDATA[Ministry of Innovation]]></category>
+		<category><![CDATA[Comcast]]></category>
+		<category><![CDATA[Google Fiber]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=823927</guid>
+		<description><![CDATA[Comcast touts more on-demand video, voice remote; leaves out price and data caps.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/comcast-google-fiber-hype-640x813.jpg"><p class="caption" style="font-size:0.8em">(credit: <a rel="nofollow" class="caption-link" href="https://www.reddit.com/r/googlefiber/comments/44td97/so_i_got_this_in_the_mail_today_i_think_someone/">TheBen91</a>)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Google Fiber recently <a href="https://plus.google.com/+GoogleFiber/posts/dpnmJhAQQAm">went live</a> in apartments and condos in Atlanta, making it the fourth metro area to get Google's gigabit Internet service. Perhaps not coincidentally, Reddit user TheBen91 yesterday <a href="https://www.reddit.com/r/googlefiber/comments/44td97/so_i_got_this_in_the_mail_today_i_think_someone/">posted</a> the above photo of a mailing from Comcast, in which the nation's largest cable company tries to convince customers that it offers a better deal than Google Fiber.</p>
+<p>"So I got this in the mail today. I think someone is scared of Fiber coming to Atlanta," the user wrote.</p>
+<p>Comcast's mailing touts "The fastest in-home Wi-Fi," "9X more FREE TV shows and movies On Demand," "DVR recordings to go," and the "X1 voice remote" as features that Google Fiber doesn't offer. Notably absent from the Comcast/Google Fiber comparison are prices and data caps. Google Fiber offers gigabit downloads and uploads for <a href="https://fiber.google.com/cities/atlanta/">$70 a month</a>, without any monthly data caps. "Basic Internet" of 100Mbps costs $50 for Google customers in Atlanta.</p>
+</div><p><a href="http://arstechnica.com/business/2016/02/as-google-fiber-hits-atlanta-comcast-says-dont-fall-for-the-hype/#p3">Read 7 remaining paragraphs</a> | <a href="http://arstechnica.com/business/2016/02/as-google-fiber-hits-atlanta-comcast-says-dont-fall-for-the-hype/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=G5G5V_co5EE:sw47Q9xJkmI:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=G5G5V_co5EE:sw47Q9xJkmI:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=G5G5V_co5EE:sw47Q9xJkmI:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=G5G5V_co5EE:sw47Q9xJkmI:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=G5G5V_co5EE:sw47Q9xJkmI:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=G5G5V_co5EE:sw47Q9xJkmI:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Rock Band 4 can’t save a struggling Mad Catz</title>
+		<link>http://arstechnica.com/gaming/2016/02/rock-band-4-cant-save-a-struggling-mad-catz/</link>
+		<pubDate>Wed, 10 Feb 2016 16:45:23 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle Orland]]></dc:creator>
+				<category><![CDATA[Opposable Thumbs]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[controllers]]></category>
+		<category><![CDATA[Harmonix]]></category>
+		<category><![CDATA[Mad Catz]]></category>
+		<category><![CDATA[rock band 4]]></category>
+
+		<guid isPermaLink="false">http://arstechnica.com/?p=823977</guid>
+		<description><![CDATA[Gaming accessory maker sees massive layoffs, restructuring amid losses.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/rb4band-640x638.jpg"><p class="caption" style="font-size:0.8em">Mad Catz was counting on these plastic instruments to save its business. They didn't. </p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Things are looking mighty grim for long-lived gaming accessory maker Mad Catz this week, the company perhaps best known for making <a href="http://www.amazon.com/Catz-Officially-Licensed-Controller-Xbox-360/dp/B002MX6TEE">those cheap off-brand controllers you forced your younger sibling to use</a>. Despite seeing significant sales from a publishing deal for Harmonix's <i>Rock Band 4</i>, Mad Catz announced that it is laying off 37 percent of its staff amid massive financial losses and a significant executive restructuring.</p>
+<p>There were hints of trouble earlier in the week, when Mad Catz <a href="http://phx.corporate-ir.net/phoenix.zhtml?c=69024&amp;p=irol-newsArticle&amp;ID=2136454">announced</a> that longtime President and CEO Darren Richardson was resigning, alongside SVP of Business Affairs Whitney Peterson. Then the real bad news came down last night in the form of the company's <a href="http://phx.corporate-ir.net/phoenix.zhtml?c=69024&amp;p=irol-newsArticle&amp;id=2136954">quarterly earnings report</a>: a $4.36 million (£3 million) loss for the last nine months of 2015, up from an $809,000 (£560,000) loss from a year before.</p>
+<p>Mad Catz has been in dire financial straits since last summer, when the company notified investors that it was at risk of defaulting on its debt. At the time, Mad Catz executives <a href="http://www.gameinformer.com/b/news/archive/2015/07/02/mad-catz-reports-debt-warning-and-additional-credit-to-ship-rock-band.asp">said</a> they were counting on a <i>Rock Band 4</i> publishing deal to lead to "significant growth in sales and gross profit."</p>
+</div><p><a href="http://arstechnica.com/gaming/2016/02/rock-band-4-cant-save-a-struggling-mad-catz/#p3">Read 2 remaining paragraphs</a> | <a href="http://arstechnica.com/gaming/2016/02/rock-band-4-cant-save-a-struggling-mad-catz/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=S9zrV3pl5pQ:bMCO_DGq7zg:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=S9zrV3pl5pQ:bMCO_DGq7zg:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=S9zrV3pl5pQ:bMCO_DGq7zg:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=S9zrV3pl5pQ:bMCO_DGq7zg:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=S9zrV3pl5pQ:bMCO_DGq7zg:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=S9zrV3pl5pQ:bMCO_DGq7zg:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+		<item>
+		<title>No, the EPA isn’t making it illegal to turn an old car into a race car</title>
+		<link>http://arstechnica.com/cars/2016/02/no-the-epa-isnt-making-it-illegal-to-turn-an-old-car-into-a-race-car/</link>
+		<pubDate>Wed, 10 Feb 2016 16:20:02 +0000</pubDate>
+		<dc:creator><![CDATA[Jonathan M. Gitlin]]></dc:creator>
+				<category><![CDATA[Cars Technica]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=823941</guid>
+		<description><![CDATA[Buried in a 629-page report, the EPA raises dander, but racers need not worry.]]></description>
+				<content:encoded><![CDATA[<div id="rss-wrap">
+<div>
+      <img src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/AZB_2266-640x425.jpg"><p class="caption" style="font-size:0.8em">Rest assured, the EPA is not coming for your racing car. Besides, it was already illegal to remove the emissions equipment in the first place. (credit: Alex Bellus)</p>
+</div>
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>The Environmental Protection Agency is at the center of another controversy, this time with automotive racers and enthusiasts. At issue is a proposed rule that sounds to some like the EPA wants to ban anyone from turning a road car into a track-only toy or race car.</p>
+<p>Last July, the EPA published a lengthy 629-page proposed rule called "<a href="http://www.regulations.gov/#!documentDetail;D=EPA-HQ-OAR-2014-0827-0002">Greenhouse Gas Emissions and Fuel Efficiency Standards for Medium- and Heavy-Duty Engines and Vehicles—Phase 2</a>." Buried within the text was an amendment to an existing federal rule that reiterated Clean Air Act policy on road vehicles equipped with emissions controls. According to that rule, owners, operators, aftermarket companies, and service businesses may not tamper with or remove emissions equipment on vehicles so fitted, be they dedicated race cars or not.</p>
+<p>The two-month window for public comments on the proposed rule came and went (closing on September 11, 2015) with little notice or fuss. But earlier this week, the Specialty Equipment Manufacturer's Association (SEMA) circulated a press release claiming that the "EPA Seeks to Prohibit Conversion of Vehicles Into Racecars." While this headline correctly assesses the EPA's position, it overstates the notion that anything has changed. Regardless, it inflamed passions in the racing and car enthusiast world in no time.</p>
+</div><p><a href="http://arstechnica.com/cars/2016/02/no-the-epa-isnt-making-it-illegal-to-turn-an-old-car-into-a-race-car/#p3">Read 9 remaining paragraphs</a> | <a href="http://arstechnica.com/cars/2016/02/no-the-epa-isnt-making-it-illegal-to-turn-an-old-car-into-a-race-car/?comments=1">Comments</a></p><div class="feedflare">
+<a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=tjD0O-h695o:U9jxvZuA7eY:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=tjD0O-h695o:U9jxvZuA7eY:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=tjD0O-h695o:U9jxvZuA7eY:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?i=tjD0O-h695o:U9jxvZuA7eY:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=tjD0O-h695o:U9jxvZuA7eY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=qj6IDK7rITs" border="0"></img></a> <a href="http://feeds.arstechnica.com/~ff/arstechnica/index?a=tjD0O-h695o:U9jxvZuA7eY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/arstechnica/index?d=yIl2AUoC8zA" border="0"></img></a>
+</div>]]></content:encoded>
+			</item>
+	</channel>
+</rss>

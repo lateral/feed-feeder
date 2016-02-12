@@ -23,6 +23,7 @@ gem 'resque-loner'
 gem 'resque-scheduler'
 gem 'rest-client'
 gem 'simple-rss'
+gem 'feedjira'
 
 group :development do
   gem 'awesome_print'

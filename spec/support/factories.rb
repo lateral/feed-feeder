@@ -1,10 +1,10 @@
 FactoryGirl.define do
   factory :feed_source do
-    url 'https://superfeedr-blog-feed.herokuapp.com/'
+    url Faker::Internet.url
   end
 
   factory :feed do
-    url 'https://superfeedr-blog-feed.herokuapp.com/'
+    url Faker::Internet.url
     feed_source
   end
 end

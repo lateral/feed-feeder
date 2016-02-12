@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?> <rss version="2.0" xml:base="http://www.nasa.gov/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/"> <channel> <title>NASA Breaking News</title>
+ <description>A RSS news feed containing the latest NASA news articles and press releases.</description>
+ <link>http://www.nasa.gov/</link>
+ <atom:link rel="self" href="http://www.nasa.gov/rss/dyn/breaking_news.rss" />
+ <language>en-us</language>
+ <managingEditor>jim.wilson@nasa.gov</managingEditor>
+ <webMaster>brian.dunbar@nasa.gov</webMaster>
+ <docs>http://blogs.harvard.edu/tech/rss</docs>
+ <item> <title>NASA Administrator Remembers Apollo-Era Astronaut Edgar Mitchell</title>
+ <link>http://www.nasa.gov/press-release/nasa-administrator-remembers-apollo-era-astronaut-edgar-mitchell</link>
+ <description>The following is a statement from NASA Administrator Charles Bolden on the passing of NASA astronaut Edgar Mitchell:</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/s70-55388.jpg?itok=bws_lOvc" length="6923984" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/nasa-administrator-remembers-apollo-era-astronaut-edgar-mitchell</guid>
+ <pubDate>Fri, 05 Feb 2016 16:52 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>NASA&#039;s James Webb Space Telescope Primary Mirror Fully Assembled</title>
+ <link>http://www.nasa.gov/press-release/nasas-james-webb-space-telescope-primary-mirror-fully-assembled</link>
+ <description>The 18th and final primary mirror segment is installed on what will be the biggest and most powerful space telescope ever launched. The final mirror installation Wednesday at NASA’s Goddard Space Flight Center in Greenbelt, Maryland marks an important milestone in the assembly of the agency’s James Webb Space Telescope.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/16-013a.jpg?itok=KTr6Vkk5" length="1195767" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/nasas-james-webb-space-telescope-primary-mirror-fully-assembled</guid>
+ <pubDate>Thu, 04 Feb 2016 10:48 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>Bolden Speech Highlights “State of NASA” Events at Agency Centers Feb. 9</title>
+ <link>http://www.nasa.gov/press-release/bolden-speech-highlights-state-of-nasa-events-at-agency-centers-feb-9</link>
+ <description>NASA centers across the country are opening their doors Tuesday, Feb. 9 to media and social media for “State of NASA” events, including a speech from NASA Administrator Charles Bolden, and unique opportunities for a behind-the-scenes look at the agency’s progress on its journey to Mars. These events follow President Obama’s Fiscal Year 2017 budget</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/fy2017_budget_cover_we_notext.jpg?itok=p1QKvhCJ" length="2876739" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/bolden-speech-highlights-state-of-nasa-events-at-agency-centers-feb-9</guid>
+ <pubDate>Tue, 02 Feb 2016 15:37 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>Colorado Students to Speak Live with Space Station Commander</title>
+ <link>http://www.nasa.gov/press-release/colorado-students-to-speak-live-with-space-station-commander</link>
+ <description>Students from five elementary schools and five middle schools in Colorado will have the opportunity to speak with a NASA astronaut living and working on the International Space Station at 12:35 p.m. EST on Thursday, Feb. 4. The 20-minute, Earth-to-space call will air live on NASA Television and the agency’s website.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/17011994325_9f576380e0_o.jpg?itok=fjuqE1Yh" length="1899124" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/colorado-students-to-speak-live-with-space-station-commander</guid>
+ <pubDate>Tue, 02 Feb 2016 12:53 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>NASA Space Launch System’s First Flight to Send Small Sci-Tech Satellites Into Space</title>
+ <link>http://www.nasa.gov/press-release/nasa-space-launch-system-s-first-flight-to-send-small-sci-tech-satellites-into-space</link>
+ <description>The first flight of NASA’s new rocket, the Space Launch System (SLS), will carry 13 CubeSats to test innovative ideas along with an uncrewed Orion spacecraft in 2018.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/22365637226_4e7b086d36_k.jpg?itok=Dba8i6pZ" length="717733" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/nasa-space-launch-system-s-first-flight-to-send-small-sci-tech-satellites-into-space</guid>
+ <pubDate>Tue, 02 Feb 2016 11:04 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>Todd May Named Marshall Space Flight Center Director</title>
+ <link>http://www.nasa.gov/press-release/todd-may-named-marshall-space-flight-center-director</link>
+ <description>NASA Administrator Charles Bolden has named Todd May director of the agency’s Marshall Space Flight Center in Huntsville, Alabama. May was appointed Marshall deputy director in August 2015 and has been serving as acting director since the Nov. 13, 2015 retirement of Patrick Scheuermann.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/todd_may_160126.jpg?itok=-oDvJZxe" length="296297" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/todd-may-named-marshall-space-flight-center-director</guid>
+ <pubDate>Mon, 01 Feb 2016 16:17 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>NASA Awards Contract for Information Technology, Multimedia Services at Johnson Space Center</title>
+ <link>http://www.nasa.gov/press-release/nasa-awards-contract-for-information-technology-multimedia-services-at-johnson-space</link>
+ <description>NASA has awarded a contract to MORI Associates, Inc. of Rockville, Maryland, for information technology and external communications services at the agency’s Johnson Space Center in Houston.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/nasa-logo.png?itok=ndrfbxz-" length="29220" type="image/png" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/nasa-awards-contract-for-information-technology-multimedia-services-at-johnson-space</guid>
+ <pubDate>Mon, 01 Feb 2016 16:09 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>Media Accreditation Open for Next Commercial Space Station Cargo Mission</title>
+ <link>http://www.nasa.gov/press-release/media-accreditation-open-for-next-commercial-space-station-cargo-mission</link>
+ <description>NASA has opened media accreditation for the next launch of a commercial resupply mission to the International Space Station. The launch of Orbital ATK’s Cygnus spacecraft is scheduled for Thursday, March 10, during a 30-minute window that opens at approximately 3 a.m. EST.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/m16-007.jpg?itok=K4M3BVAM" length="3395269" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/media-accreditation-open-for-next-commercial-space-station-cargo-mission</guid>
+ <pubDate>Fri, 29 Jan 2016 17:19 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>NASA Television to Air Russian Spacewalk</title>
+ <link>http://www.nasa.gov/press-release/nasa-television-to-air-russian-spacewalk</link>
+ <description>NASA Television will broadcast live coverage of a 5.5-hour spacewalk by two Russian cosmonauts aboard the International Space Station beginning at 7:30 a.m. EST Wednesday, Feb. 3.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/m16-009.jpg?itok=mX96pZ65" length="1631974" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/nasa-television-to-air-russian-spacewalk</guid>
+ <pubDate>Fri, 29 Jan 2016 11:07 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+ <item> <title>NASA to Announce Science, Technology Missions for First Flight of Space Launch System</title>
+ <link>http://www.nasa.gov/press-release/nasa-to-announce-science-technology-missions-for-first-flight-of-space-launch-system</link>
+ <description>NASA Television will air the announcement of the selection of a fleet of small satellites to launch on the inaugural flight of the agency’s Space Launch System (SLS). The event is at 11 a.m. EST (10 a.m. CST) Tuesday, Feb. 2, from NASA’s Marshall Space Flight Center in Huntsville, Alabama.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/sls-70mt-dac3org-launch-cam-top_view-uhr2.jpg?itok=O22yX8Wb" length="2437038" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/press-release/nasa-to-announce-science-technology-missions-for-first-flight-of-space-launch-system</guid>
+ <pubDate>Thu, 28 Jan 2016 12:39 EST</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+</item>
+</channel>
+</rss>
