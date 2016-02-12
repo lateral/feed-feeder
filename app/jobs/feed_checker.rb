@@ -10,7 +10,7 @@ class FeedChecker
       next if feed.status == 'error'
 
       # Get the feeds content
-      feed_content = open(feed.url)
+      feed_content = RestClient.get(feed.url).body
 
       # Detect the hub and rel="self" nodes
       doc = Nokogiri::XML feed_content
@@ -62,7 +62,7 @@ class FeedChecker
         logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}" unless feed.save
 
         # Process the feeds contents
-        feed.process_feed_contents(feed_content)
+        feed.process_feed_contents
       end
     end
   end

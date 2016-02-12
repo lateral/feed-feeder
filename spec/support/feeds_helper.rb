@@ -12,8 +12,30 @@ module FeedsHelper
       file = Dir.glob(Rails.root.join("spec/fixtures/feeds/#{type}.xml")).sample
     end
     content = IO.read(file)
-    feed = Feedjira::Feed.parse content
-    OpenStruct.new url: feed.url, hub: feed.hubs.first, content: content
+    doc = Nokogiri::XML content
+    hub = doc.xpath("//*[@rel='hub']/@href")
+    hub = hub[0] && hub[0].value.present? ? hub[0].value : nil
+    rel_self = doc.xpath("//*[@rel='self']/@href")
+    rel_self = rel_self[0] && rel_self[0].value.present? ? rel_self[0].value : nil
+    OpenStruct.new url: rel_self, hub: hub, content: content
+  end
+
+  # Stubs the private run_python method of Feed model
+  # Normally this would call a python script and parse the URL but
+  # instead we just want to hijack it and return some random data
+  def stub_feed_run_python_method
+    allow_any_instance_of(Feed).to receive(:run_python) {
+      {
+        author: Faker::Name.name,
+        body: Faker::Lorem.paragraph(3),
+        image: Faker::Internet.url,
+        keywords: Faker::Lorem.words(5),
+        published: '',
+        summary: Faker::Lorem.paragraph,
+        title: Faker::Lorem.sentence,
+        videos: [Faker::Internet.url]
+      }
+    }
   end
 end
 

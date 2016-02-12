@@ -9,21 +9,17 @@ RSpec.describe FeedChecker do
       before(:each) do
         Feed.destroy_all
         # Get the feeds contents
-        @feed_content = IO.read(feed_path)
-
-        # Parse the feed to get the hub
-        feed = Feedjira::Feed.parse @feed_content
-        @hub = feed.hubs.first
+        @feed_content = feed_content(feed_filename)
 
         # Create the model and set the URL if present in the feed
         @feed = FactoryGirl.create :feed
-        @feed.update(url: feed.url) if feed.url.present?
+        @feed.update(url: @feed_content.url) if @feed_content.url.present?
       end
 
       it 'successfully adds' do
         # Stub feed and hub requests
-        stub_request(:any, @feed.url).to_return body: @feed_content
-        stub_request(:any, @hub)
+        stub_request(:any, @feed.url).to_return body: @feed_content.content
+        stub_request(:any, @feed_content.hub)
 
         # Run the job
         with_resque do
@@ -37,7 +33,7 @@ RSpec.describe FeedChecker do
             'hub.callback' => ENV['FEED_FEEDER_DOMAIN'] + 'feeds/' + @feed.id.to_s,
             'hub.verify' => 'sync'
           }
-          expect(a_request(:post, @hub).with(body: params)).to have_been_made
+          expect(a_request(:post, @feed_content.hub).with(body: params)).to have_been_made
 
           # Feed model should be updated
           @feed.reload
@@ -48,8 +44,8 @@ RSpec.describe FeedChecker do
 
       it 'catches subscription request error' do
         # Stub feed and hub requests - hub now errors
-        stub_request(:any, @feed.url).to_return body: @feed_content
-        stub_request(:any, @hub).to_return body: 'err', status: 422
+        stub_request(:any, @feed.url).to_return body: @feed_content.content
+        stub_request(:any, @feed_content.hub).to_return body: 'err', status: 422
 
         # Run the job
         with_resque do
@@ -57,7 +53,7 @@ RSpec.describe FeedChecker do
 
           # Check that the feed and the hub are requested
           expect(a_request(:get, @feed.url)).to have_been_made
-          expect(a_request(:post, @hub)).to have_been_made
+          expect(a_request(:post, @feed_content.hub)).to have_been_made
 
           # Feed model should be updated
           @feed.reload
@@ -74,23 +70,17 @@ RSpec.describe FeedChecker do
     describe "Feed without hub: #{feed_filename}.xml" do
       before(:each) do
         Feed.destroy_all
-        @feed_content = IO.read(feed_path)
+        # Get the feeds contents
+        @feed_content = feed_content(feed_filename)
+
+        # Create the model and set the URL if present in the feed
         @feed = FactoryGirl.create :feed
+        @feed.update(url: @feed_content.url) if @feed_content.url.present?
       end
 
       it 'successfully adds' do
-        stub_request(:any, @feed.url).to_return body: @feed_content
-        doc = {
-          author: Faker::Name.name,
-          body: Faker::Lorem.paragraph(3),
-          image: Faker::Internet.url,
-          keywords: Faker::Lorem.words(5),
-          published: '',
-          summary: Faker::Lorem.paragraph,
-          title: Faker::Lorem.sentence,
-          videos: [Faker::Internet.url]
-        }
-        allow_any_instance_of(Feed).to receive(:run_python).and_return(doc)
+        stub_request(:any, @feed.url).to_return body: @feed_content.content
+        stub_feed_run_python_method
 
         with_resque do
           Resque.enqueue(FeedChecker)

@@ -5,20 +5,11 @@ class Feed < ActiveRecord::Base
 
   enum status: [:unsubscribed, :manually_processed, :subscription_requested, :subscribed, :error]
 
-  def process_feed_contents(feed)
-    feed = Feedjira::Feed.parse feed
-    # if object.class == Feed
-    #   urls = SimpleRSS.parse(open(object.url))
-    # else
-    #   urls = SimpleRSS.parse(object.raw_post)
-    # end
-
-    # ap object.asP=
-
-    urls = feed.entries.map { |e| e.url }
+  def process_feed_contents
+    feed = Feedjira::Feed.fetch_and_parse url
 
     # check each url
-    urls.each do |url|
+    feed.entries.map(&:url).each do |url|
       # check if the link is new or has already been processed
       next if Item.find_by_url(url).present?
 
