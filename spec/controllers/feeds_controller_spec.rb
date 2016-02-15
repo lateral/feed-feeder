@@ -46,13 +46,15 @@ RSpec.describe FeedsController, type: :controller do
     end
 
     it 'should process contents of feed to database' do
-      stub_request(:any, @feed.url).to_return body: @feed_content.content
-      stub_feed_run_python_method
+      with_resque do
+        stub_request(:any, @feed.url).to_return body: @feed_content.content
+        stub_feed_run_python_method
 
-      post :webhook_update, id: @feed.id
-      items = @feed.feed_source.items
-      expect(items.size).to be > 0
-      expect(items.first.title.class).to eq(String)
+        post :webhook_update, id: @feed.id
+        items = @feed.feed_source.items
+        expect(items.size).to be > 0
+        expect(items.first.title.class).to eq(String)
+      end
     end
   end
 end

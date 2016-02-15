@@ -1,7 +1,7 @@
 # app/jobs/feed_checker.rb
-require 'open-uri'
-
 class FeedChecker
+  extend ResquePostgresDisconnect
+  include Resque::Plugins::UniqueJob
   @queue = :feed_checker
 
   def self.perform
@@ -10,7 +10,16 @@ class FeedChecker
       next if feed.status == 'error'
 
       # Get the feeds content
-      feed_content = RestClient.get(feed.url).body
+      begin
+        feed_content = RestClient.get(feed.url).body
+
+      # Skip if there is a 404
+      rescue RestClient::ResourceNotFound
+        feed.status = 'error'
+        feed.error_msg = 'Feed returned 404 on initial fetch'
+        feed.save
+        next
+      end
 
       # Detect the hub and rel="self" nodes
       doc = Nokogiri::XML feed_content
@@ -20,7 +29,7 @@ class FeedChecker
       # Check if feed was previously detected as pubsubhubbub or if it supports it
       if feed.is_pubsubhubbub_supported ||
          (feed.status.present? && feed.status != 'manually_processed') ||
-         (hub[0] && hub[0].value.present? && rel_self[0] && rel_self[0].value.present?)
+         (hub[0].present? && hub[0].value.present? && rel_self[0].present? && rel_self[0].value.present?)
 
         # Update the feeds PubSubHubbub status
         feed.is_pubsubhubbub_supported = true unless feed.is_pubsubhubbub_supported
@@ -62,7 +71,7 @@ class FeedChecker
         logger.error "FEED SAVE TO DB ERROR:#{feed.inspect}" unless feed.save
 
         # Process the feeds contents
-        feed.process_feed_contents
+        Resque.enqueue(FeedParser, feed.id, feed.url)
       end
     end
   end

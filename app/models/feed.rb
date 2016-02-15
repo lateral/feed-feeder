@@ -7,7 +7,14 @@ class Feed < ActiveRecord::Base
   enum status: [:unsubscribed, :manually_processed, :subscription_requested, :subscribed, :error]
 
   def process_feed_contents
-    feed = Feedjira::Feed.fetch_and_parse url
+    begin
+      feed = Feedjira::Feed.fetch_and_parse url
+    rescue Feedjira::NoParserAvailable => e
+      self.status = 'error'
+      self.error_msg = e.message
+      save
+      return
+    end
 
     # check each url
     feed.entries.each do |entry|

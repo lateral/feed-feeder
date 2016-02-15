@@ -8,10 +8,10 @@ class FeedsController < ApplicationController
     # verify the string parameters
     if params['hub.mode'] == 'subscribe' &&
        params['hub.topic'] == @feed.url &&
-       !params['hub.challenge'].empty?
+       params['hub.challenge'].present?
 
       @feed.status = 'subscription_requested' # 17 mins
-      if !params['hub.lease_seconds'].nil? && params['hub.lease_seconds'].to_i > 0
+      if params['hub.lease_seconds'].present? && params['hub.lease_seconds'].to_i > 0
         @feed.expiration_date = DateTime.now + Rational(params['hub.lease_seconds'].to_i, 86_400)
         unless @feed.save
           # log error
@@ -29,7 +29,7 @@ class FeedsController < ApplicationController
   # also used for subscription confirmation
   def webhook_update
     @feed = Feed.find(params[:id])
-    @feed.process_feed_contents
+    Resque.enqueue(FeedParser, @feed.id, @feed.url)
     render status: 200, plain: ''
   end
 
