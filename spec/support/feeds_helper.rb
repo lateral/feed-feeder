@@ -8,6 +8,10 @@ module FeedsHelper
       file = Dir.glob(Rails.root.join('spec/fixtures/feeds/*_nohub.xml')).sample
     elsif type == :random
       file = Dir.glob(Rails.root.join('spec/fixtures/feeds/*.xml')).sample
+    elsif type == :with_relative_urls
+      file = Dir.glob(Rails.root.join('spec/fixtures/feed-with-relative-urls.xml')).sample
+    elsif type == :with_duplicates
+      file = Dir.glob(Rails.root.join('spec/fixtures/feed-with-duplicates.xml')).sample
     else
       file = Dir.glob(Rails.root.join("spec/fixtures/feeds/#{type}.xml")).sample
     end
@@ -23,9 +27,9 @@ module FeedsHelper
   # Stubs the private run_python method of Feed model
   # Normally this would call a python script and parse the URL but
   # instead we just want to hijack it and return some random data
-  def stub_feed_run_python_method
+  def stub_feed_run_python_method(object = nil)
     allow_any_instance_of(Feed).to receive(:run_python) {
-      {
+      object || {
         author: Faker::Name.name,
         body: Faker::Lorem.paragraph(3),
         image: Faker::Internet.url,
