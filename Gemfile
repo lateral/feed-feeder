@@ -39,14 +39,12 @@ end
 gem 'rspec-rails', groups: [:development, :test]
 
 group :test do
-  gem 'capybara'
+  # gem 'capybara'
+  # gem 'poltergeist'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'poltergeist'
   gem 'resque_spec'
-  gem 'thin'
-  gem 'vcr'
-  # gem 'web-console'
+  gem 'simplecov'
   gem 'webmock'
 end

@@ -18,3 +18,6 @@ node_modules
 
 # Deployment
 bin/deploy
+
+# simplecov
+coverage
