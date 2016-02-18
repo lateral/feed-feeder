@@ -1,7 +1,9 @@
 # app/jobs/feed_parser.rb
+require 'resque/plugins/lock'
+
 class FeedParser
   extend ResquePostgresDisconnect
-  include Resque::Plugins::UniqueJob
+  extend Resque::Plugins::Lock
   @queue = :feed_parser
 
   def self.perform(id, url)

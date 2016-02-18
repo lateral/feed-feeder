@@ -3,4 +3,10 @@ check_feeds:
   class: FeedChecker
   args:
   queue: feed_checker
-  description: "This job checks all the feeds every 15 minutes"
+  description: "Checks all the feeds every 15 minutes and add new items"
+send_items:
+  cron: "*/15 * * * *"
+  class: ItemsToApi
+  args:
+  queue: items_to_api
+  description: "Check for items that need to be sent to the API and send them"

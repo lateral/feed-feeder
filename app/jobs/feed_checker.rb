@@ -1,7 +1,9 @@
 # app/jobs/feed_checker.rb
+require 'resque/plugins/lock'
+
 class FeedChecker
   extend ResquePostgresDisconnect
-  include Resque::Plugins::UniqueJob
+  extend Resque::Plugins::Lock
   @queue = :feed_checker
 
   def self.perform

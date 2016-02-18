@@ -11,24 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160215160335) do
+ActiveRecord::Schema.define(version: 20160218132508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "feed_sources", force: :cascade do |t|
-    t.string "name", limit: 255
-    t.text   "url"
-    t.string "slug"
-  end
-
-  create_table "feed_sources_keys", id: false, force: :cascade do |t|
-    t.integer "feed_source_id"
+    t.string  "name",   limit: 255
+    t.text    "url"
+    t.string  "slug"
     t.integer "key_id"
   end
 
-  add_index "feed_sources_keys", ["feed_source_id"], name: "index_feed_sources_keys_on_feed_source_id", using: :btree
-  add_index "feed_sources_keys", ["key_id"], name: "index_feed_sources_keys_on_key_id", using: :btree
+  add_index "feed_sources", ["key_id"], name: "index_feed_sources_on_key_id", using: :btree
 
   create_table "feeds", force: :cascade do |t|
     t.integer  "feed_source_id"
@@ -51,11 +46,13 @@ ActiveRecord::Schema.define(version: 20160215160335) do
     t.datetime "published"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "rejected_from_api", default: false
-    t.json     "api_response"
+    t.boolean  "rejected_by_api",   default: false
+    t.json     "error"
     t.boolean  "image_thumbnail",   default: false, null: false
     t.text     "body"
     t.integer  "feed_id"
+    t.boolean  "from_initial_sync", default: false, null: false
+    t.integer  "lateral_id"
   end
 
   add_index "items", ["feed_id"], name: "index_items_on_feed_id", using: :btree
@@ -69,5 +66,6 @@ ActiveRecord::Schema.define(version: 20160215160335) do
     t.string "purpose"
   end
 
+  add_foreign_key "feed_sources", "keys"
   add_foreign_key "items", "feeds"
 end
