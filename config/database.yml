@@ -18,7 +18,7 @@ production:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  host: ec2-54-171-84-122.eu-west-1.compute.amazonaws.com
-  database: rssdocs
-  username: postgres
+  host: <%= ENV['DB_HOST'] %>
+  database: <%= ENV['DB_DATABASE'] %>
+  username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PW'] %>
