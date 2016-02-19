@@ -1,11 +1,11 @@
 # http://git.io/beNi
 rails_env   = ENV['RAILS_ENV']  || 'production'
-rails_root  = ENV['RAILS_ROOT'] || '/var/app/current'
+rails_root  = ENV['RAILS_ROOT'] || '/home/ubuntu/app'
 num_workers = 5
 
 num_workers.times do |num|
   God.watch do |w|
-    pid_file   = "/var/app/containerfiles/pids/resque-#{num}.pid"
+    pid_file   = "#{rails_root}/tmp/pids/resque-#{num}.pid"
     w.dir      = "#{rails_root}"
     w.name     = "resque-#{num}"
     w.group    = 'resque'
