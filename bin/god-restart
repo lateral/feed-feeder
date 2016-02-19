@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# This file ensures god is terminated and starts god
+HOME=/home/ubuntu
+APP_DIR=$HOME/app
+
+# Init rbenv
+if [ -d $HOME/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
+cd $APP_DIR
+
+god terminate
+for f in $APP_DIR/tmp/pids/*; do
+  kill -QUIT `cat $f`
+  rm $f
+done
+
+# Start god
+god -c config/god.rb -l log/god.log RAILS_ENV=production

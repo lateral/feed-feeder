@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# This file sits on the remote server and is called to pull in remote changes,
+# get dependencies, migrations and to restart the app
+HOME=/home/ubuntu
+APP_DIR=$HOME/app
+
+# Init rbenv
+if [ -d $HOME/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
+cd $APP_DIR
+
+# Fetch all changes
+git fetch --all
+git reset --hard origin/master
+
+# Install dependencies
+bundle install
+
+# Migrate DB
+rake db:migrate RAILS_ENV=production
+
+# Terminate god and restart
+./bin/god-restart
+
+# Restart rails app
+touch tmp/restart.txt
