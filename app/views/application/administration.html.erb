@@ -15,7 +15,7 @@
       <td><a href="/administration/<%= feed.id %>" style="color: #000;"><%= feed.name %></a></td>
       <td><%= feed.feeds.count %></td>
       <td><%= feed.items.count %></td>
-      <td><%= feed.items.last ? feed.items.last.created_at : '' %></td>
+      <td><%= feed.items.order(id: :desc).first ? feed.items.order(id: :desc).first.created_at : '' %></td>
     </tr>
 <% end %>
   </tbody>
