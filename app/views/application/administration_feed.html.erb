@@ -1,0 +1,28 @@
+<h1><a href="/administration">Feed Sources</a> &raquo; <%= @feed_source.name %></h1>
+
+<table class="sortable-theme-bootstrap" data-sortable>
+  <thead>
+    <tr>
+      <th>URL</th>
+      <th>Status</th>
+      <th>Error</th>
+      <th>Expiry</th>
+      <th>Is PubSubHubbub?</th>
+      <th># Items</th>
+      <th>Last item added</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @feeds.each do |feed| %>
+    <tr>
+      <td><%= feed.url %></td>
+      <td><%= feed.status %></td>
+      <td><%= feed.error_msg %></td>
+      <td><%= feed.expiration_date %></td>
+      <td><%= feed.is_pubsubhubbub_supported %></td>
+      <td><%= feed.items.count %></td>
+      <td><%= feed.items.last ? feed.items.last.created_at : '' %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
