@@ -15,7 +15,8 @@
       <td><a href="/administration/<%= feed.id %>" style="color: #000;"><%= feed.name %></a></td>
       <td><%= feed.feeds.count %></td>
       <td><%= feed.items.count %></td>
-      <td><%= feed.items.order(id: :desc).first ? feed.items.order(id: :desc).first.created_at : '' %></td>
+      <td><% latest = feed.items.where(sent_to_api: true, rejected_by_api: false).order(id: :desc).first
+      concat latest ? latest.created_at : '' %></td>
     </tr>
 <% end %>
   </tbody>
