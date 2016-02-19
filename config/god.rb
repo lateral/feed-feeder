@@ -1,2 +1,2 @@
 # load in all god configs
-God.load '/var/app/current/config/god/*.god'
+God.load '/home/ubuntu/app/config/god/*.god'
