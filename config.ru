@@ -5,7 +5,7 @@ require ::File.expand_path('../config/environment', __FILE__)
 class AdministrationAuth < Rack::Auth::Basic
   def call(env)
     case Rack::Request.new(env).path
-    when %r{^\/administration\/}
+    when %r{^\/administration}
       super
     else
       @app.call(env)
