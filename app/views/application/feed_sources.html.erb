@@ -1,13 +1,10 @@
-<h1><a href="/administration">Feed Sources</a> &raquo; <%= @feed_source.name %></h1>
+<h1><a href="/administration">Keys</a> &raquo; <%= @key.purpose %> Feed Sources</h1>
 
 <table class="sortable-theme-bootstrap" data-sortable>
   <thead>
     <tr>
-      <th>URL</th>
-      <th>Status</th>
-      <th>Error</th>
-      <th>Expiry</th>
-      <th>Is PubSubHubbub?</th>
+      <th>Name</th>
+      <th># Feeds</th>
       <th># Items Parsed</th>
       <th># Items in API</th>
       <th>Last item added</th>
@@ -16,11 +13,8 @@
   <tbody>
 <% @feeds.each do |feed| %>
     <tr>
-      <td><%= feed.url %></td>
-      <td><%= feed.status %></td>
-      <td><%= feed.error_msg %></td>
-      <td><%= feed.expiration_date %></td>
-      <td><%= feed.is_pubsubhubbub_supported %></td>
+      <td><a href="/administration/<%= @key.id %>/feed-source/<%= feed.id %>" style="color: #000;"><%= feed.name %></a></td>
+      <td><%= feed.feeds.count %></td>
       <td><%= feed.items.count %></td>
       <td><%= feed.items.where(sent_to_api: true, rejected_by_api: false).count %></td>
       <td><% latest = feed.items.where(sent_to_api: true, rejected_by_api: false).order(id: :desc).first

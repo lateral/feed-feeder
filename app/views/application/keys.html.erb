@@ -1,0 +1,20 @@
+<h1>Keys</h1>
+
+<table class="sortable-theme-bootstrap" data-sortable>
+  <thead>
+    <tr>
+      <th>Purpose</th>
+      <th>Key</th>
+      <th>Endpoint</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @keys.each do |key| %>
+    <tr>
+      <td><a href="/administration/<%= key.id %>" style="color: #000;"><%= key.purpose %></a></td>
+      <td><%= key.key %></td>
+      <td><%= key.endpoint %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
