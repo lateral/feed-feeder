@@ -4,6 +4,10 @@ RSpec.describe Feed, type: :model do
   describe '#process_feed_contents' do
     before(:each) do
       Feed.destroy_all
+
+      # Stub head requests so they return 200 and text/html
+      stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/html; utf-8' }
+
       # Get the feeds contents and create the model
       @feed_content = feed_content(:random)
       @feed = FactoryGirl.create :feed
@@ -67,6 +71,22 @@ RSpec.describe Feed, type: :model do
         expect(item.from_initial_sync).to eq(false)
       end
     end
+
+    it 'skips items that return a status other than 200' do
+      stub_request(:head, /.*/).to_return status: 400, headers: { 'Content-Type' => 'text/html; utf-8' }
+      stub_request(:any, @feed.url).to_return body: @feed_content.content
+      stub_feed_run_python_method
+      @feed.process_feed_contents
+      expect(@feed.feed_source.items.count).to eq(0)
+    end
+
+    it 'skips items that return a content type other than text/html*' do
+      stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/plain' }
+      stub_request(:any, @feed.url).to_return body: @feed_content.content
+      stub_feed_run_python_method
+      @feed.process_feed_contents
+      expect(@feed.feed_source.items.count).to eq(0)
+    end
   end
 
   Dir.glob(Rails.root.join('spec/fixtures/feeds/*.xml')).sort.each do |feed_path|
@@ -74,6 +94,10 @@ RSpec.describe Feed, type: :model do
     describe "#process_feed_contents with feed #{feed_filename}.xml" do
       before(:each) do
         Feed.destroy_all
+
+        # Stub head requests so they return 200 and text/html
+        stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/html; utf-8' }
+
         # Get the feeds contents and create the model
         @feed_content = feed_content(feed_filename)
         @feed = FactoryGirl.create :feed

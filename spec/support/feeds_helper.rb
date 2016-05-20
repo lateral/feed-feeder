@@ -12,6 +12,8 @@ module FeedsHelper
       file = Dir.glob(Rails.root.join('spec/fixtures/feed-with-relative-urls.xml')).sample
     elsif type == :with_duplicates
       file = Dir.glob(Rails.root.join('spec/fixtures/feed-with-duplicates.xml')).sample
+    elsif type == :with_plain_text_urls
+      file = Dir.glob(Rails.root.join('spec/fixtures/feed-with-plain-text-urls.xml')).sample
     else
       file = Dir.glob(Rails.root.join("spec/fixtures/feeds/#{type}.xml")).sample
     end

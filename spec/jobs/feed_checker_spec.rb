@@ -11,6 +11,9 @@ RSpec.describe FeedChecker do
         # Get the feeds contents
         @feed_content = feed_content(feed_filename)
 
+        # Stub head requests so they return 200 and text/html
+        stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/html; utf-8' }
+
         # Create the model and set the URL if present in the feed
         @feed = FactoryGirl.create :feed
         @feed.update(url: @feed_content.url) if @feed_content.url.present?
@@ -72,6 +75,9 @@ RSpec.describe FeedChecker do
         Feed.destroy_all
         # Get the feeds contents
         @feed_content = feed_content(feed_filename)
+
+        # Stub head requests so they return 200 and text/html
+        stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/html; utf-8' }
 
         # Create the model and set the URL if present in the feed
         @feed = FactoryGirl.create :feed

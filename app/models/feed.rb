@@ -31,7 +31,20 @@ class Feed < ActiveRecord::Base
   end
 
   def add_feed_item(entry, initial_sync = false)
+    entry.url.strip!
     fix_relative_path(entry) if entry.url.start_with?('/')
+
+    # Do some checks on the URL to make sure it should be added
+    begin
+      head = RestClient.head(entry.url)
+      return unless head.headers[:content_type].start_with?('text/html')
+    rescue URI::InvalidURIError, SocketError, RestClient::Exception => e
+      return logger.error "#{e.class}: #{entry.url}"
+    rescue RestClient::Exception => e
+      return logger.error "RestClient::Exception #{e.http_code} loading #{entry.url}"
+    end
+
+    # Parse the URL
     entry_hash = run_python('recommend-by-url.py', entry.url)
     item_hash = {
       author: entry_hash[:author],
