@@ -47,7 +47,6 @@ class Feed < ActiveRecord::Base
     # Parse the URL
     entry_hash = run_python('recommend-by-url.py', entry.url)
     item_hash = {
-      author: entry_hash[:author],
       body: entry_hash[:body],
       feed_id: self.id,
       feed_source_id: self.feed_source_id,
@@ -64,6 +63,15 @@ class Feed < ActiveRecord::Base
     item = Item.new(item_hash)
     begin
       logger.error "ITEM SAVE TO DB ERROR: #{item.inspect}" unless item.save
+
+      # Save the authors
+      entry_hash[:author].split(',').map(&:strip).each do |author|
+        hash_id = Author.generate_hash(author)
+        item.authors << Author.where(hash_id: hash_id).first_or_initialize do |a|
+          a.name = author
+        end
+      end
+
     rescue ActiveRecord::RecordNotUnique
       logger.error "Tried to add duplicate: #{item.guid}"
     end

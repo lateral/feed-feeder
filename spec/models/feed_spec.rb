@@ -89,6 +89,82 @@ RSpec.describe Feed, type: :model do
     end
   end
 
+  describe '#add_feed_item' do
+    before(:each) do
+      Feed.destroy_all
+      stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/html; utf-8' }
+      @feed = FactoryGirl.create :feed
+    end
+
+    it 'saves a single author' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'a name', body: '', image: '', summary: '', title: '')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first.name).to eq('a name')
+      expect(item.authors.first.hash_id).to eq('e31052641f40d49d87c369b4b8655403')
+    end
+
+    it 'strips whitespace from authors' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'a name  ', body: '', image: '', summary: '', title: '')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first.name).to eq('a name')
+      expect(item.authors.first.hash_id).to eq('e31052641f40d49d87c369b4b8655403')
+    end
+
+    it 'strips special characters from authors' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'M. Novakovic', body: '', image: '', summary: '', title: '')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first.name).to eq('M. Novakovic')
+      expect(item.authors.first.hash_id).to eq('20d3a0fe0c6a52998f64d7dbfe6ea70f')
+    end
+
+    it 'ignores case from authors' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'm novakovic', body: '', image: '', summary: '', title: '')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first.hash_id).to eq('20d3a0fe0c6a52998f64d7dbfe6ea70f')
+    end
+
+    it 'saves multiple authors' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'a name, a second name')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first.name).to eq('a name')
+      expect(item.authors.first.hash_id).to eq('e31052641f40d49d87c369b4b8655403')
+      expect(item.authors.second.name).to eq('a second name')
+      expect(item.authors.second.hash_id).to eq('f79d1b8f3a2a7b4ed82b34cd5b6cc301')
+    end
+
+    it 'reuses authors' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'a name')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      author = item.authors.first
+      expect(author.name).to eq('a name')
+      expect(author.hash_id).to eq('e31052641f40d49d87c369b4b8655403')
+
+      entry = OpenStruct.new(entry_id: '101', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'a name')
+      @feed.add_feed_item entry
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first.id).to eq(author.id)
+    end
+  end
+
   Dir.glob(Rails.root.join('spec/fixtures/feeds/*.xml')).sort.each do |feed_path|
     feed_filename = File.basename(feed_path, '.xml')
     describe "#process_feed_contents with feed #{feed_filename}.xml" do

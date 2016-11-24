@@ -31,7 +31,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'launchy'
-  gem 'pry-byebug'
   gem 'spring'
   gem 'spring-commands-rspec'
 end
