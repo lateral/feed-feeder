@@ -13,17 +13,22 @@ RSpec.describe Author, type: :model do
       author_1 = Author.create(name: 'Guardian Sport')
       author_2 = Author.create(name: 'Source Reuters')
       author_3 = Author.create(name: 'Allowed')
+      author_4 = Author.create(name: 'photograph test')
       item_1 = FactoryGirl.create(:item)
       item_2 = FactoryGirl.create(:item)
+      item_3 = FactoryGirl.create(:item)
       item_1.authors << author_1
       item_1.authors << author_2
       item_2.authors << author_1
       item_2.authors << author_3
+      item_3.authors << author_4
       expect(item_1.authors.count).to eq(2)
       expect(item_2.authors.count).to eq(2)
+      expect(item_3.authors.count).to eq(1)
       Author.clean_up_blacklist
       expect(item_1.authors.count).to eq(0)
       expect(item_2.authors.count).to eq(1)
+      expect(item_3.authors.count).to eq(0)
     end
   end
 end

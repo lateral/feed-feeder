@@ -66,8 +66,9 @@ class Feed < ActiveRecord::Base
 
       # Save the authors
       entry_hash[:author].split(',').map(&:strip).each do |author|
+        next if author.start_with?(*AUTHORS_BLACKLIST['name_start_match'])
         hash_id = Author.generate_hash(author)
-        next if AUTHORS_BLACKLIST.include? hash_id
+        next if AUTHORS_BLACKLIST['hash_ids'].include? hash_id
         item.authors << Author.where(hash_id: hash_id).first_or_initialize do |a|
           a.name = author
         end
