@@ -135,6 +135,15 @@ RSpec.describe Feed, type: :model do
       expect(item.authors.first.hash_id).to eq('20d3a0fe0c6a52998f64d7dbfe6ea70f')
     end
 
+    it 'ignores author from the AUTHORS_BLACKLIST' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
+      stub_feed_run_python_method(author: 'Great Speculations', body: '', image: '', summary: '', title: '')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.authors.first).to eq(nil)
+    end
+
     it 'saves multiple authors' do
       entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
       stub_feed_run_python_method(author: 'a name, a second name')

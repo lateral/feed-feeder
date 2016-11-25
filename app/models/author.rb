@@ -10,6 +10,12 @@ class Author < ActiveRecord::Base
     Digest::MD5.hexdigest("news-#{Author.sanitise_name(name)}")
   end
 
+  def self.clean_up_blacklist
+    AUTHORS_BLACKLIST.each do |hash_id|
+      Author.where(hash_id: hash_id).delete_all
+    end
+  end
+
   private
 
   def update_hash_id
