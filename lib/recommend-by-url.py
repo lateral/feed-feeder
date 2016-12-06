@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
 from newspaper import Article
 from goose import Goose
+import requests
 import json
 import sys
 
 article = Article(sys.argv[1])
 
 article.download()
+if not article.html:
+  r = requests.get(sys.argv[1], verify=False, headers={ 'User-Agent': 'Mozilla/5.0' })
+  article.set_html(r.text)
+
 article.parse()
 article.nlp()
 
