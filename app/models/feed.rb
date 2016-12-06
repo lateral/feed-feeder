@@ -56,7 +56,8 @@ class Feed < ActiveRecord::Base
       summary: entry_hash[:summary],
       title: entry_hash[:title],
       url: entry.url,
-      from_initial_sync: initial_sync
+      from_initial_sync: initial_sync,
+      key_id: self.feed_source.key.id
     }
 
     # Save item, log if fails

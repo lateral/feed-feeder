@@ -19,6 +19,7 @@ RSpec.describe Feed, type: :model do
       stub_feed_run_python_method
       @feed.process_feed_contents
       @feed.feed_source.items.each do |item|
+        expect(item.key_id).to eq(@feed.feed_source.key.id)
         expect(item.feed_id).to eq(@feed.id)
         expect(item.body).to_not eq(nil)
       end

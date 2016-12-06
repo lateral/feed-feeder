@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161125104043) do
+ActiveRecord::Schema.define(version: 20161206110319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,11 +68,13 @@ ActiveRecord::Schema.define(version: 20161125104043) do
     t.integer  "feed_id"
     t.boolean  "from_initial_sync", default: false, null: false
     t.integer  "lateral_id"
+    t.integer  "key_id"
   end
 
   add_index "items", ["feed_id"], name: "index_items_on_feed_id", using: :btree
   add_index "items", ["feed_source_id", "guid"], name: "index_items_on_feed_source_id_and_guid", unique: true, using: :btree
   add_index "items", ["feed_source_id"], name: "index_items_on_feed_source_id", using: :btree
+  add_index "items", ["key_id"], name: "index_items_on_key_id", using: :btree
   add_index "items", ["lateral_id"], name: "index_items_on_lateral_id", using: :btree
   add_index "items", ["updated_at"], name: "items_updated_at_idx", using: :btree
 
@@ -84,4 +86,5 @@ ActiveRecord::Schema.define(version: 20161125104043) do
 
   add_foreign_key "feed_sources", "keys"
   add_foreign_key "items", "feeds"
+  add_foreign_key "items", "keys"
 end
