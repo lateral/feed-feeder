@@ -37,4 +37,19 @@ FactoryGirl.define do
     sent_to_api false
     body Faker::Lorem.paragraph(3)
   end
+
+  trait :with_authors do
+    transient do
+      number_of_authors 2
+    end
+
+    after :create do |item, evaluator|
+      FactoryGirl.create_list :author, evaluator.number_of_authors, items: [item]
+    end
+  end
+
+
+  factory :author do
+    name { Faker::Name.name }
+  end
 end

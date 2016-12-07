@@ -19,13 +19,16 @@ class FakeLateral < Sinatra::Base
     @documents = []
   end
 
-  post '/documents/?' do
-    content_type :json
-    status 200
-    params = JSON.parse(request.env['rack.input'].read)
-    params[:id] = rand(0...100_000_000)
-    @documents << params
-    params.to_json
+  ['/documents/?', '/documents/:id/?'].each do |path|
+    post path do
+      content_type :json
+      status 200
+      id = params[:id]
+      params = JSON.parse(request.env['rack.input'].read)
+      params[:id] = id
+      @documents << params
+      params.to_json
+    end
   end
 
   put '/documents/:id/?' do
@@ -46,6 +49,12 @@ class FakeLateral < Sinatra::Base
     content_type :json
     status 200
     @documents.find { |doc| doc[:id] == params['id'].to_i }.to_json
+  end
+
+  get '/documents/:id/tags/:tag_id?' do
+    content_type :json
+    status 204
+    ''
   end
 
   post '/documents/similar-to-text/?' do

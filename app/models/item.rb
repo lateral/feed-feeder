@@ -21,9 +21,16 @@ class Item < ActiveRecord::Base
 
     data = { text: body }.to_json
     headers = { content_type: :json, 'Subscription-Key' => key.key }
-    response = JSON.parse RestClient.post("#{key.endpoint}/documents", data, headers)
+    response = JSON.parse RestClient.post("#{key.endpoint}/documents/#{id}", data, headers)
 
     update_attributes(sent_to_api: true, lateral_id: response['id'])
+
+    # Add authors as tags
+    authors.each do |author|
+      begin
+        RestClient.post("#{key.endpoint}/documents/#{id}/tags/#{author.hash_id}", data, headers)
+      rescue RestClient::Exception => e; end
+    end
 
   # Ignore this type of error, wait until next time
   rescue Errno::EHOSTUNREACH

@@ -12,14 +12,14 @@ RSpec.describe Item, type: :model do
 
       # Call the method and check that it sent 1 + 250 requests to Lateral API
       Item.send_missing_to_api
-      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents$}).times(251)
+      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents/\d+$}).times(251)
 
       # Reset webmock counting
       WebMock.reset! && init_fake_lateral!
 
       # Call the method again and check the remaining item was sent
       Item.send_missing_to_api
-      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents$}).times(1)
+      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents/\d+$}).times(1)
     end
 
     it "doesn't send items published over a week old" do
@@ -32,7 +32,7 @@ RSpec.describe Item, type: :model do
 
       # Call the method and check that it sent 1 request to Lateral API
       Item.send_missing_to_api
-      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents$}).times(1)
+      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents/\d+$}).times(1)
     end
 
     it "doesn't send items that were already sent to the api" do
@@ -45,7 +45,7 @@ RSpec.describe Item, type: :model do
 
       # Call the method and check that it sent 5 requests to Lateral API
       Item.send_missing_to_api
-      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents$}).times(5)
+      expect(WebMock).to have_requested(:post, %r{api.lateral.io/documents/\d+$}).times(5)
     end
   end
 
@@ -79,8 +79,18 @@ RSpec.describe Item, type: :model do
       expect(@item.error).to eq('message' => 'Invalid body')
     end
 
+    it 'creates tags in the api from authors' do
+      item = FactoryGirl.create :item, :with_authors
+      stub_request(:any, %r{api.lateral.io/documents/#{item.id}/tags/.*$}).to_return body: ''
+      item.send_to_api(@key)
+      item.authors.each do |author|
+        url = %r{api.lateral.io/documents/#{item.id}/tags/#{author.hash_id}$}
+        expect(WebMock).to have_requested(:post, url)
+      end
+    end
+
     it 'handles an error from the API' do
-      stub_request(:any, %r{api.lateral.io/documents$}).to_return body: '{ "message": "less than 4 words recognized" }',
+      stub_request(:any, %r{api.lateral.io/documents/\d+$}).to_return body: '{ "message": "less than 4 words recognized" }',
                                                                   status: 406
       @item.send_to_api(@key)
       @item.reload
