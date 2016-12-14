@@ -16,9 +16,9 @@ class FeedChecker
         feed_content = RestClient::Request.execute(method: :get, url: feed.url, verify_ssl: false).body
 
       # Skip if there is a 404
-      rescue RestClient::ResourceNotFound
+      rescue RestClient::Exception => e
         feed.status = 'error'
-        feed.error_msg = 'Feed returned 404 on initial fetch'
+        feed.error_msg = "Feed returned #{e.http_code} on initial fetch"
         feed.save
         next
       end
