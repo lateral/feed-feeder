@@ -1,152 +1,1279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xml:base="http://www.economist.com/sections/business-finance/rss.xml"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xml:base="http://www.economist.com"  xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
- <title>Business and finance</title>
- <link>http://www.economist.com/sections/business-finance/rss.xml</link>
- <description></description>
+ <title>Chinese Economy</title>
+ <link>http://www.economist.com/topics/chinese-economy</link>
+ <description>RSS feed for topic: Chinese Economy</description>
  <language>en</language>
- <image> <url>http://cdn.static-economist.com/sites/default/files/economist_logo_gn.png</url>
- <title>The Economist online</title>
- <link>http://www.economist.com</link>
-</image>
 <item>
- <title><![CDATA[How European banks are scaring away their investors]]></title>
- <link>http://www.economist.com/news/business-and-finance/21692863-european-banks-are-eye-new-financial-storm-tempest-fear?fsrc=rss</link>
- <description><![CDATA[<div class="esi-generated pullquote"><p>&nbsp;</p><p>&nbsp;</p><p><p>&nbsp;</p><p>&nbsp;</p></div><p><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/articles/main/20160213_fnp503.jpg" alt="" title=""  width="595" height="335" /></div></p><p>IF THE start of the year has been desperate for the world’s stockmarkets, it has been downright disastrous for shares in banks. Financial stocks are down by 19% in America. The declines have been even steeper elsewhere. Japanese banks’ shares have plunged by 36% since January 1st; Italian banks’ by 31% and Greek banks’ by a horrifying 60% (see chart). The fall in the overall European banking index of 24% has brought it close to the lows it plumbed in the summer of 2012, when the euro zone seemed on the verge of disintegration until Mario Draghi, the president of the European Central Bank (ECB), promised to do “whatever it takes” to save it.</p><p><div class="content-image-float-290 retina-290"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/original-size/images/2016/02/articles/body/20160213_fnc405_0.png" alt="" title=""  width="580" height="670" /></div></p><p>The distress in Europe encompasses big banks as well as smaller ones. It has affected behemoths within the euro area such as Société Générale and Deutsche Bank...<a href="http://www.economist.com/news/business-and-finance/21692863-european-banks-are-eye-new-financial-storm-tempest-fear?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/news/business-and-finance/21692863-european-banks-are-eye-new-financial-storm-tempest-fear#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/topics/approved">Approved</category>
- <category domain="http://www.economist.com/category/web-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/print-sections/finance-and-economics">Finance and economics</category>
- <pubDate>Thu, 11 Feb 2016 05:30:39 +0000</pubDate>
- <guid isPermaLink="false">21692863 at http://www.economist.com</guid>
+ <title><![CDATA[World GDP]]></title>
+ <link>http://www.economist.com/news/economic-and-financial-indicators/21711870-world-gdp?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+      Print Headline:&amp;nbsp;
+
+
+                    World GDP
+
+
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    The lessons from Aleppo’s tragic fate
+
+
+
+
+
+
+
+
+
+
+
+
+The world economy grew by 2.7% in the third quarter of 2016 compared with a year earlier, down from 2.8% the previous quarter. Growth remains steady in India and China: together they accounted for 65% of world growth. Other emerging markets struggled: they contributed 16%, down from 21% in the previous quarter, their lowest share since 2008. In particular, falling smartphone exports took a heavy toll on South Korea. Norway was the only rich country in our sample whose economy contracted, partly because of a decline in oil-related activities. The United States was a bright spot: the economy expanded faster than it did in the second quarter, boosted by exports and federal government spending.
+
+
+      Article body images:&amp;nbsp;
+
+
+                    20161217_inc467.png
+
+
+
+
+      Published:&amp;nbsp;
+
+
+                    20161217
+
+
+
+
+
+      Source:&amp;nbsp;
+
+
+                    The Economist Newspaper
+
+
+
+
+
+      ...]]></description>
+ <pubDate>Wed, 14 Dec 2016 22:48:20 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21711870 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[Would a dating app just for economists work? ]]></title>
- <link>http://www.economist.com/blogs/freeexchange/2016/02/valentine-s-day-economics?fsrc=rss</link>
- <description><![CDATA[<p><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/blogs/free-exchange/20160213_blp525.jpg" alt="" title=""  width="595" height="335" /></div></p><p>YOUR usually dedicated economics correspondent has recently been considering ditching the world of journalism to start a new app: "Economistr". Like Tinder, but for economists.&nbsp;Your correspondent is very excited by this idea. The world of dating is rife with inefficiency—and we all know how economists hate inefficiency. Apps that reduce congestion in the dating market by filtering out princes-not-so-charming have huge value—just look at JSwipe, which matches Jewish couples, or&nbsp;<a href="http://glutenfreesingles.com/" target="_blank">glutenfreesingles.com</a>, which...just guess.</p><p>But before I get as carried away as a game theorist with two newly caught prisoners, a quick reality check is in order. For a dating app to work, the market for singletons must be "thick" enough. It must establish a network large enough to benefit from "network externalities", where all the single economists flock to where the other single economists are. Just think of Amazon and eBay—buyers want to be where there are lots of sellers, and vice versa.&nbsp;</p><p></p><p>To generate such a thick market, economists have to want to date other economists. The...<a href="http://www.economist.com/blogs/freeexchange/2016/02/valentine-s-day-economics?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/freeexchange/2016/02/valentine-s-day-economics#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/free-exchange">Free exchange</category>
- <pubDate>Wed, 10 Feb 2016 17:31:28 +0000</pubDate>
- <guid isPermaLink="false">21692822 at http://www.economist.com</guid>
+ <title><![CDATA[The collapse of TPP: Trading down]]></title>
+ <link>http://www.economist.com/news/asia/21710287-big-free-trade-deals-demise-leaves-worrying-void-asia-trading-down?fsrc=rss</link>
+ <description><![CDATA[Print section
+      Print Rubric:&amp;nbsp;
+
+
+                    A big free-trade deal’s demise leaves a worrying void in Asia
+
+
+
+
+      Print Headline:&amp;nbsp;
+
+
+                    Trading down
+
+
+
+
+      Print Fly Title:&amp;nbsp;
+
+
+                    The collapse of TPP
+
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    The new nationalism
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    The collapse of TPP
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    SHANGHAI
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20161119_ASP001_0.jpg
+
+
+
+
+
+
+
+
+DEPENDING on who is talking, the Trans-Pacific Partnership (TPP) is either the world’s most ambitious trade deal or the most dangerous. But these days a simpler description suffices: it is dead. With Donald Trump’s victory, America has abandoned TPP, in effect killing the trade pact that was a decade in the works and nearly complete. Amid all the unknowns about what Mr Trump’s presidency might mean, this is one of the few certainties.
+The consequences are far-reaching. TPP’s collapse removes ...]]></description>
+ <pubDate>Thu, 17 Nov 2016 15:48:37 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21710287 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[Firms are not yet sure how the Zika virus should affect their business-travel policies]]></title>
- <link>http://www.economist.com/blogs/gulliver/2016/02/should-i-stay-or-should-i-go?fsrc=rss</link>
- <description><![CDATA[<p dir="ltr"><span><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/blogs/gulliver/20160213_blp523.jpg" alt="" title=""  width="595" height="335" /></div></span></p><p dir="ltr"><span>READING official advice, it is difficult to know how seriously business travellers should treat the Zika virus. Health agencies in Britain and America, for example, have hedged their advisories. Britain’s </span><a href="https://www.gov.uk/government/news/zika-virus-travel-advice-for-pregnant-women"><span>National Travel Health Network and Centre</span></a><span> is urging&nbsp;“pregnant women to consider avoiding travel to areas reporting active Zika transmission”. The American </span><a href="http://wwwnc.cdc.gov/travel/notices"><span>Centers for Disease Control</span></a><span>, meanwhile, suggests travellers “practice enhanced precautions” in more than 20 countries. Others have taken it a step further. India’s Health Ministry has </span><a href="http://www.thehindubusinessline.com/news/national/india-issues-travel-advisory-to-zikahit-countries/article8184286.ece"><span>told Indians</span></a><span> to defer or cancel all “non-essential travel” to affected countries.</span></p><p dir="ltr">So should businesses scrap any planned work trips to the parts of Central and South America that are most...<a href="http://www.economist.com/blogs/gulliver/2016/02/should-i-stay-or-should-i-go?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/gulliver/2016/02/should-i-stay-or-should-i-go#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/gulliver">Gulliver</category>
- <pubDate>Wed, 10 Feb 2016 16:00:24 +0000</pubDate>
- <guid isPermaLink="false">21692817 at http://www.economist.com</guid>
+ <title><![CDATA[Daily chart: China’s stable growth raises doubts]]></title>
+ <link>http://www.economist.com/blogs/graphicdetail/2016/11/daily-chart-0?fsrc=rss</link>
+ <description><![CDATA[Main image:&amp;nbsp;
+
+
+
+
+
+
+
+
+
+
+ON OCTOBER 19th China reported that its economy grew by 6.7% in the third quarter. It would have been an unsurprising, reassuring headline, except that China had reported exactly the same figure for the previous quarter—and for the quarter before that. This freakish consistency invited the scorn of China’s many “data doubters”, who have long argued that it fudges its figures. China has expanded at the same pace from one quarter to the next on numerous occasions. But it has never before claimed to grow at exactly the same rate for three quarters in a row. This growth “three-peat” is not entirely without precedent. Seven other countries have reported the same growth rate for three quarters in a row, according to a database spanning 83 countries since 1993, compiled by the Economist Intelligence Unit, our sister company.And contrary to popular belief, China’s GDP statistics have not always been unusually smooth. Since 1993, the average gap between one quarter’s growth and the next has been 0.77 percentage points. Fourteen countries have reported a smaller average gap. Either China’s policymakers are newly successful at stabilising growth or its statisticians are newly determined to smooth the data. But if the number-crunchers are to blame, one wonders why they do not try harder to hide ...]]></description>
+ <pubDate>Tue, 01 Nov 2016 17:53:05 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21709421 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[February 9th 2016]]></title>
- <link>http://www.economist.com/blogs/freeexchange/2016/02/money-talks-banks-and-bear-markets?fsrc=rss</link>
- <description><![CDATA[<p><span>Our correspondents discuss sharp falls in the value of bank stocks and evaluate the parallels with the 2007-08 financial crisis</span></p><p><object id="myExperience_1425961410001_4746985594001" class="BrightcoveExperience"><param name="bgcolor" value="#FFFFFF" /><param name="isUI" value="true" /><param name="isVid" value="true" /><param name="dynamicStreaming" value="true" /><param name="autoStart" value="true" /><param name="wmode" value="opaque" /><param name="templateLoadHandler" value="ECOmnitureBrightCoveHandlers5ea02316ff626c3b1ddb49e917ddcd63.omnitureBCTemplateLoaded" /><param name="handlerID" value="ECOmnitureBrightCoveHandlers5ea02316ff626c3b1ddb49e917ddcd63" /><param name="includeAPI" value="true" /><param name="linkBaseURL" value="http://www.economist.com/sections/business-finance/rss.xml" /><param name="iid" value="104270" /><param name="vid" value="4746985594001" /><param name="pid" value="1425961410001" /><param name="key" value="AQ~~,AAABDH-R__E~,dB4S9tmhdOo20g03jDsDgNBGDcclfHEU" /><param name="cssclass" value="" /><param name="width" value="595" /><param name="height" value="400" /><param name="labels" value="http://cdn.static-economist.com/sites/all/modules/custom/ec_brightcove/EcBcLables.xml" /><param name="playerID" value="1425961410001" /><param name="playerKey" value="AQ~~,AAABDH-R__E~,dB4S9tmhdOo20g03jDsDgNBGDcclfHEU" /><param name="@videoPlayer"...<a href="http://www.economist.com/blogs/freeexchange/2016/02/money-talks-banks-and-bear-markets?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/freeexchange/2016/02/money-talks-banks-and-bear-markets#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/free-exchange">Free exchange</category>
- <pubDate>Tue, 09 Feb 2016 19:21:44 +0000</pubDate>
- <guid isPermaLink="false">21692779 at http://www.economist.com</guid>
+ <title><![CDATA[Rooms for growth: Chinese firms are investing heavily in American hotels]]></title>
+ <link>http://www.economist.com/blogs/gulliver/2016/10/rooms-growth?fsrc=rss</link>
+ <description><![CDATA[CHINESE tourists are an increasingly common sight in America’s cities, from New York to Honolulu. About 2m Chinese visit the country each year; that figure is expected to rise to over 3m by the end of the decade. But it is not just Chinese tourists who have been enjoying American hospitality; it’s Chinese investors, too.This week HNA Group, a Chinese firm that began life as an aviation company, announced that it is to buy a 25% stake in Hilton Worldwide Holdings. It will be the largest shareholder in the hotelier whose brands also include Embassy Suites, Hampton Inn and Conrad.The deal is the latest in a year that has already seen substantial Chinese investment in American hotels. In April, an HNA division announced it was buying Carlson Hotels, which owns Radisson and several other brands. Last month, Anbang Insurance Group completed the purchase of 15 American hotels in a deal worth more than $5bn, including the JW Marriott Essex House in New York, the Westin St. Francis in San Francisco, the InterContinental in Chicago, a Four Seasons in Washington, DC, and two Ritz-Carlton resorts. And just last week came the news that China Life Insurance Co. is leading an investment group that is buying a $2bn stake in a collection of 280 American establishments.All of this follows Anbang’s purchase last year of the iconic Waldorf Astoria in New York for nearly $2bn, the highest ...]]></description>
+ <pubDate>Fri, 28 Oct 2016 13:49:31 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21709397 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[Building more houses is only part of the remedy for high prices]]></title>
- <link>http://www.economist.com/blogs/freeexchange/2016/02/can-we-fix-it?fsrc=rss</link>
- <description><![CDATA[<p>I WANT to hammer home a point that we made in a <a href="http://www.economist.com/news/britain/21688352-building-more-houses-only-part-remedy-high-prices-unlocking-britains-16m-empty">piece</a> a few weeks ago. Whenever economists talk about the British housing market (which by some measures is the world's most expensive except Monaco) they will have a simple solution to bubbly prices: build more houses. The logic is impeccable: there is high demand for housing, but not enough supply. That leads to high house prices. Increase the supply of housing, and prices will fall. Simple.</p><p>This explains why successive governments have had a housebuilding target of around 200,000-250,000 a year (in the last decade Britain has built on average about 160,000 houses a year).&nbsp;</p><p></p><p>I think economists' obsession with building new houses misses the point. For one, it's not immediately obvious that Britain is suffering from woefully inadequate undersupply of housing, at least at the national level. In the EU there are on average <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/File:Average_household_size,_2014_(average_number_of_persons_in_private_households).png">2.3 people per private house</a>, the same figure as found in Britain.&nbsp;</p><p>If overall supply is not a problem, then what is? Think about what determines house prices in a given year: the...<a href="http://www.economist.com/blogs/freeexchange/2016/02/can-we-fix-it?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/freeexchange/2016/02/can-we-fix-it#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/free-exchange">Free exchange</category>
- <pubDate>Wed, 10 Feb 2016 10:10:33 +0000</pubDate>
- <guid isPermaLink="false">21690248 at http://www.economist.com</guid>
+ <title><![CDATA[China’s growth: The greatest moderation]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21709328-has-any-country-ever-grown-repetitively-china-greatest-moderation?fsrc=rss</link>
+ <description><![CDATA[Print section
+      Print Rubric:&amp;nbsp;
+
+
+                    Has any country ever grown as repetitively as China?
+
+
+
+
+      Print Headline:&amp;nbsp;
+
+
+                    The greatest moderation
+
+
+
+
+      Print Fly Title:&amp;nbsp;
+
+
+                    China’s growth
+
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Liberty moves north
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    China’s growth
+
+
+
+
+
+
+
+
+
+
+
+ON OCTOBER 19th China reported that its economy grew by 6.7% in the third quarter. It would have been an unsurprising, reassuring headline, except that China had reported exactly the same figure for the previous quarter—and for the quarter before that. This freakish consistency invited the scorn of China’s many “data doubters”, who have long argued that it fudges its figures. China has expanded at the same pace from one quarter to the next on numerous occasions. But it has never before claimed to grow at exactly the same rate for three quarters in a row.
+Has anywhere? This growth “three-peat” is not entirely without precedent. Seven other countries have reported the same growth rate for ...]]></description>
+ <pubDate>Thu, 27 Oct 2016 14:48:06 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21709328 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[The troubling case of the bomb on a flight from Mogadishu]]></title>
- <link>http://www.economist.com/blogs/gulliver/2016/02/more-african-problem?fsrc=rss</link>
- <description><![CDATA[<p dir="ltr"><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/blogs/gulliver/20160213_blp508.jpg" alt="" title=""  width="595" height="335" /></div></p><p dir="ltr"><span>THE extraordinary events that unfolded over the skies of Somalia on February 2nd have now become clearer. About 15 minutes after Daallo Airlines Flight 159 departed from Aden Adde International Airport in Mogadishu, the Somali capital, an explosive device carried by Abdullahi Abdisalam Borleh, one of the passengers, blew a gaping hole just above the right wing of the plane (a spot identified in al-Qaeda literature as being the most effective place to detonate a bomb). Mr Borleh, who is suspected of being a suicide bomber, was sucked out of the aircraft and fell to his death. Everyone else survived. Had the incident occurred minutes later, once the plane reached cruising altitude, the resultant explosive decompression would almost certainly have killed all aboard. To say that the 73 innocent passengers on Flight 159 had a lucky escape is an understatement.</span></p><p dir="ltr">Last October, the 224 souls aboard Metrojet Flight 9268 were not so fortunate. A bomb detonated on the Russian charter flight about 20 minutes after its departure from Sharm el Sheikh International Airport on Egypt's Sinai Peninsula. A local affiliate of...<a href="http://www.economist.com/blogs/gulliver/2016/02/more-african-problem?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/gulliver/2016/02/more-african-problem#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/gulliver">Gulliver</category>
- <pubDate>Tue, 09 Feb 2016 05:05:26 +0000</pubDate>
- <guid isPermaLink="false">21690198 at http://www.economist.com</guid>
+ <title><![CDATA[Asian deflation: Steel trap]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21709351-producer-prices-perk-up-asia-steel-trap?fsrc=rss</link>
+ <description><![CDATA[Print section
+      Print Rubric:&amp;nbsp;
+
+
+                    Producer prices perk up in Asia
+
+
+
+
+      Print Headline:&amp;nbsp;
+
+
+                    Steel trap
+
+
+
+
+      Print Fly Title:&amp;nbsp;
+
+
+                    Asian deflation
+
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Liberty moves north
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Asian deflation
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    SHANGHAI
+
+
+
+
+
+
+
+
+
+BESIDES being dirty and dangerous, making steel in China has been a good way to burn through money over the past few years. But in recent months, the fires from the country’s blast-furnaces have started to emit the warm glow of profits. Steel prices have risen by nearly 50% this year. Production, which fell in 2015 for the first time in decades, is also up. Smelters are set for a strong recovery after losing $10bn last year. And it is not just the steelmakers who will be pleased. Asia’s central bankers can also take some comfort in the rising prices: they suggest that the threat of deflation might be receding.
+Once seen in Asia as a ...]]></description>
+ <pubDate>Thu, 27 Oct 2016 14:48:06 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21709351 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[Turning drone races into a money-spinner]]></title>
- <link>http://www.economist.com/news/business-and-finance/21692774-if-video-games-can-be-spectator-sport-why-not-racing-drones-turning-drone-races?fsrc=rss</link>
- <description><![CDATA[<p><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/articles/main/20160213_wbp501.jpg" alt="" title=""  width="595" height="335" /></div></p><p>SOME sports, such as wrestling and sprinting, claim long histories. They were portrayed in cave paintings thousands of years ago. Others are just lifting off. The racing of drones is, thus far, a niche activity, but several firms are betting on it. “Every person under the age of 13 either has a drone or wants one,” says Nick Horbaczewski of the Drone Racing League (DRL), a startup. “We are going to raise a generation of pilots.” The DRL has raised $8m from investors, including Stephen Ross, the owner of the Miami Dolphins, an American-football team, and CAA, a big agency that represents film and sports stars.</p><p>Drone-racing began as an amateur sport in Australia only a couple of years ago, and spread with the aid of social media, as pilots shared videos of their contests. Racers navigate at speeds of up to 100mph (160kph) through a course of illuminated checkpoints, getting a drone’s-eye view of their aircraft’s position through video goggles.</p><p></p><p>The sport has had to work out some technological kinks, such as eliminating the “latency” that delays the live video feed to the pilot, which could cause a drone to miss a turn and...<a href="http://www.economist.com/news/business-and-finance/21692774-if-video-games-can-be-spectator-sport-why-not-racing-drones-turning-drone-races?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/news/business-and-finance/21692774-if-video-games-can-be-spectator-sport-why-not-racing-drones-turning-drone-races#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/web-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/print-sections/business">Business</category>
- <pubDate>Tue, 09 Feb 2016 16:55:22 +0000</pubDate>
- <guid isPermaLink="false">21692774 at http://www.economist.com</guid>
+ <title><![CDATA[The Economist explains: Why some Indians want to boycott Chinese goods ]]></title>
+ <link>http://www.economist.com/blogs/economist-explains/2016/10/economist-explains-18?fsrc=rss</link>
+ <description><![CDATA[Main image:&amp;nbsp;
+
+
+
+
+
+
+
+
+
+
+ON OCTOBER 30th India celebrates Diwali, the most important festival in the Hindu calendar. Over five days, millions of lamps and candles will be placed on doorsteps and rooftops; prayers will be offered to Lakshmi, the goddess of prosperity; and fireworks will go off in the skies over the streets of nearly every town and village. A festival that celebrates the victory of light over darkness, Diwali has in recent years brightened the mood of Chinese exporters as well: many Indian households favour cheaper, electric decorations made in China over the traditional earthen&amp;nbsp;diyas&amp;nbsp;(pictured). But this year’s edition could take a dark turn. The country’s noisy social media are cluttered with posts calling for Indians to shun Chinese goods. A fake letter championing the boycott, ostensibly signed Narendra Modi, the prime minister, has gone viral. Politicians from India’s ruling Hindu-nationalist Bharatiya Janata Party (BJP) have endorsed the cause. What is going on?The economic roots of the boycott are not new. China is India’s largest trading partner, with $71bn worth of goods exchanged between them in the past financial year. But China is also the nation with which India has its largest trade deficit, an imbalance that rose 9% to $53bn in 2015-2016. In contrast, China’s trade surplus ...]]></description>
+ <pubDate>Thu, 27 Oct 2016 04:39:12 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21708959 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[What does the rise of adult-only hotels mean for business travellers?]]></title>
- <link>http://www.economist.com/blogs/gulliver/2016/02/kids-arent-alright?fsrc=rss</link>
- <description><![CDATA[<p dir="ltr"><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/blogs/gulliver/20160206_blp535.jpg" alt="" title=""  width="595" height="335" /></div></p><p dir="ltr">WHEN it comes to young children and&nbsp;travelling, people divide into two camps. You either have kids, in which case you bemoan every restriction placed upon them, or you don't, in which case you tut at every concession they enjoy. Adults happily ditch one camp for the other as soon as they begin a family, seemingly losing all sense of comradeship with former allies.&nbsp;This writer remembers cursing screaming children on flights before he had them himself. Now the sound of a child's crying on take-off elicits feelings of sympathy rather than irritation.</p><p dir="ltr"><span>Nowhere are the dividing lines deeper, it seems, than in Germany. It is a nation that treasures silence more than most; the place that invented earplugs and where even school playgrounds are subject to noise-pollution measures. It also has one of the lowest birth rates in the world (8.2 per 1,000 inhabitants). No surprise, then, that according to a recent piece in the <em>Wall Street Journal</em>, the country is in the midst of a craze for hotels that </span><span><a...<a href="http://www.economist.com/blogs/gulliver/2016/02/kids-arent-alright?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/gulliver/2016/02/kids-arent-alright#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/gulliver">Gulliver</category>
- <pubDate>Mon, 08 Feb 2016 16:45:46 +0000</pubDate>
- <guid isPermaLink="false">21690195 at http://www.economist.com</guid>
+ <title><![CDATA[Glut punch: Global imbalances, a pre-crisis scourge, are back]]></title>
+ <link>http://www.economist.com/blogs/freeexchange/2016/10/glut-punch?fsrc=rss</link>
+ <description><![CDATA[Main image:&amp;nbsp;
+
+
+
+
+
+
+
+
+
+
+BRAD SETSER, an economist at the Council on Foreign Relations, is the author of a new discussion paper looking at &quot;the return of the East Asian savings glut&quot;. A summary of his paper begins in arresting fashion:The combined savings of China, Japan, Korea, Taiwan, and the two city-states of Hong Kong and Singapore is about 40 percent of their collective GDP, a thirty-five-year high.Prior to the financial crisis, many economists fretted about the problem of global imbalances. Measurement error aside, global trade balances; surpluses in some countries offset deficits in others. Yet the magnitudes of those surpluses and deficits can be small or large. In the early 1990s, surpluses and deficits were each around 0.5% of global GDP. They expanded rapidly therefore, to about 2% of global GDP on the eve of the crisis. After shrinking dramatically during the crisis and global recession, imbalances have begun to rebound and are now back to about 1.5% of GDP.Why do such imbalances matter? They can create problems in a few ways. Large surpluses can be a side effect of very high savings rates, for example. The large imbalances of the 2000s seemed to reflect unnaturally high savings, which contributed to a &quot;global savings glut&quot; that depressed interest rates and encouraged reckless borrowing. Large ...]]></description>
+ <pubDate>Wed, 26 Oct 2016 20:16:17 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21709284 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[Falling bank shares: a bad omen?]]></title>
- <link>http://www.economist.com/blogs/buttonwood/2016/02/markets-and-economics?fsrc=rss</link>
- <description><![CDATA[<p><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/blogs/buttonwoods-notebook/20160213_fnp502.jpg" alt="" title=""  width="595" height="335" /></div></p><p>ANOTHER worry has been added to the long list plaguing equity markets this year. Bank shares have been falling fast, particularly those in Europe, which in morning trading, were <a href="http://uk.reuters.com/article/uk-europe-stocks-idUKKCN0VH0JZ">down 22% so far </a>this year. The collapse of 2007 and 2008 was all about the banking sector. If European banks are in trouble, then comparisons with that period are bound to mount; earlier worries, notably the slowdown in Chinese growth and the fall in commodity prices, had more <a href="http://www.economist.com/blogs/buttonwood/2016/01/markets">parallels with the Asian crisis of 1997-98</a>.</p><p>A number of factors are hurting bank shares. First, the sluggish performance of European economies over several years means there are worries about bad debts on bank balance sheets; Heartwood Investment Management reckons that 16.7% of Italian bank loans are non-performing, against a European average of 5.6%. Italian banks have been amongst the hardest hit. More generally, however, the recent results season for Europe's banks was disappointing with the CreditSights research team describing them...<a href="http://www.economist.com/blogs/buttonwood/2016/02/markets-and-economics?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/buttonwood/2016/02/markets-and-economics#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/buttonwoods-notebook">Buttonwood&#039;s notebook</category>
- <pubDate>Mon, 08 Feb 2016 15:21:53 +0000</pubDate>
- <guid isPermaLink="false">21690193 at http://www.economist.com</guid>
+ <title><![CDATA[The Economist explains: Why is world trade growth slowing? ]]></title>
+ <link>http://www.economist.com/blogs/economist-explains/2016/10/economist-explains-5?fsrc=rss</link>
+ <description><![CDATA[Main image:&amp;nbsp;
+
+
+
+
+
+
+
+
+
+
+GLOBAL trade is in a grim state. Between 1985 and 2007 trade volumes shot up at around twice the rate of global GDP; since 2012 the rate of growth has barely kept pace. Things appear to be getting worse. On September 27th the World Trade Organisation slashed its forecast for growth in trade of goods&amp;nbsp;from 2.8% in 2016 to just 1.7%, implicitly predicting that for the first time in 15 years, trade would grow more slowly than GDP. Trade lets countries specialise, it allows ideas to spread and it promotes healthy competition. Policymakers interested in economic growth should be asking why it is so weak.&amp;nbsp;Trade depends on a mix of demand and supply in different countries. It can be bunged up by protectionism, and deflated by depressed economies (exports and imports depend on demand). It also depends on more benign factors; the rapid&amp;nbsp;growth of the 1990s and early 2000s was itself unnaturally high. Two forces added momentum to trade over that period: the falling costs of doing business across borders&amp;nbsp;and China’s entry into the global economy. Lower costs encouraged a web of supply chains to form, so that parts that were previously manufactured domestically could be shipped and assembled in foreign countries. Now that costs are not falling as quickly, the process may have run ...]]></description>
+ <pubDate>Wed, 12 Oct 2016 06:33:30 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21708309 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[Get ready for dividend cuts]]></title>
- <link>http://www.economist.com/blogs/buttonwood/2016/02/equities?fsrc=rss</link>
- <description><![CDATA[<p><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2016/02/blogs/buttonwoods-notebook/20160206_blp544.jpg" alt="" title=""  width="595" height="335" /></div></p><p>REINVESTED dividends are the main source of long-term equity returns. And a high divdend yield is a big argument for buying equities. But <em>caveat emptor</em>. When an individual stock has a high yield, that is a sign that the market expects the future dividend will be cut. The same can be true of the overall market.</p><p>That looks to be true for Britain's FTSE 100 at the moment. The dividend yield on the FTSE 100 is 4.2%. That makes equities look a bargain compared with the 1.57% payable on 10-year gilts. But that yield is at risk. A <a href="http://www.economist.com/news/finance-and-economics/21688933-dividend-income-has-become-harder-find-watch-what-they-pay">recent column</a>&nbsp;showed that around 70% of all the dividends paid in the British market came from just 20 stocks.&nbsp;<div class="content-image-float-290 retina-290"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/original-size/images/2016/02/blogs/buttonwoods-notebook/20160213_woc362.png" alt="" title=""  width="580" height="598" /></div></p><p>The best measure for working out whether divdends are at risk is to look at the cover; this compares...<a href="http://www.economist.com/blogs/buttonwood/2016/02/equities?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/blogs/buttonwood/2016/02/equities#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/category/blog-sites/buttonwoods-notebook">Buttonwood&#039;s notebook</category>
- <pubDate>Sat, 06 Feb 2016 08:16:34 +0000</pubDate>
- <guid isPermaLink="false">21690166 at http://www.economist.com</guid>
+ <title><![CDATA[Free trade: Coming and going]]></title>
+ <link>http://www.economist.com/news/special-report/21707834-truth-and-myth-about-effects-openness-trade-coming-and-going?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    An open and shut case
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Free trade
+
+
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20161001_SRD002_0.jpg
+
+
+
+
+
+
+
+
+IN MARCH 2000, two months before a crucial vote in America’s Congress on whether to make normal trading relations with China permanent, Bill Clinton gave a press conference. In the first year of his presidency, 1993, he had made a bold case for the North Atlantic Free Trade Agreement (NAFTA) with Canada and Mexico, claiming it would create 200,000 jobs in America. Now, in the final year of his second term, he was even more bullish about a trade pact with China, which would allow that country to join the WTO. It would require China quickly to cut its average import tariff from 24% to 9%, to abolish import quotas and licences and to open up some industries to American investment. America, for its part, would not have to do anything. “This is a hundred-to-nothing deal for America when it comes to the economic consequences,” said Mr Clinton.
+
+
+
+
+
+Sixteen years on the mood is rather different. Job losses in manufacturing states such ...]]></description>
+ <pubDate>Thu, 29 Sep 2016 14:42:47 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707834 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[East is Eden]]></title>
- <link>http://www.economist.com/news/finance-and-economics/21690101-bankings-longest-and-most-successful-identity-crisis-east-eden?fsrc=rss</link>
- <description><![CDATA[<p><div class="content-image-full"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/print-edition/20160206_FNP008_0.jpg" alt="" title=""  width="595" height="335" /></div></p><p>HSBC—one of the two most pivotal banks in the global financial system, according to regulators, alongside JPMorgan Chase—exudes permanence. Its buildings are guarded by lions cast in bronze which passers-by touch for luck. HSBC has never been bailed out, nationalised or bought, a claim no other mega-bank can make. It has not made a yearly loss since its foundation in 1865. While its peers took emergency loans from central banks in the crisis of 2008-10, HSBC, long on cash, supplied liquidity to the financial system.</p><p>Yet behind that invincible aura lurks an insecurity: where is home? When Western and Indian merchants founded the bank in Asia in 1865, they considered basing it in Shanghai before settling on Hong Kong. Faced with wars, revolutions and the threat of nationalisation, the bank has chosen or been compelled to move its headquarters, or debated it, in 1941, 1946, 1981, 1986, 1990, 1993, 2008 and 2009.</p><p></p><p>HSBC believes its itinerancy explains its survival. Countries and regimes come and go. The bank endures. Now it’s decision time again. The results of a ten-month review of its domicile are likely to be announced on February 22nd....<a href="http://www.economist.com/news/finance-and-economics/21690101-bankings-longest-and-most-successful-identity-crisis-east-eden?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/news/finance-and-economics/21690101-bankings-longest-and-most-successful-identity-crisis-east-eden#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/topics/approved">Approved</category>
- <category domain="http://www.economist.com/category/print-sections/finance-and-economics">Finance and economics</category>
- <category domain="http://www.economist.com/category/web-sections/finance">FINANCE</category>
- <pubDate>Thu, 04 Feb 2016 11:33:10 +0000</pubDate>
- <guid isPermaLink="false">21690101 at http://www.economist.com</guid>
+ <title><![CDATA[The world economy: An open and shut case]]></title>
+ <link>http://www.economist.com/news/special-report/21707833-consensus-favour-open-economies-cracking-says-john-osullivan?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    An open and shut case
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    The world economy
+
+
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20161001_SRD001_0.jpg
+
+
+
+
+
+
+
+
+THERE IS NOTHING dark, still less satanic, about the Revolution Mill in Greensboro, North Carolina. The tall yellow-brick chimney stack, with red bricks spelling “Revolution” down its length, was built a few years after the mill was established in 1900. It was a booming time for local enterprise. America’s cotton industry was moving south from New England to take advantage of lower wages. The number of mills in the South more than doubled between 1890 and 1900, to 542. By 1938 Revolution Mill was the world’s largest factory exclusively making flannel, producing 50m yards of cloth a year.
+The main mill building still has the springy hardwood floors and original wooden joists installed in its heyday, but no clacking of looms has been heard here for over three decades. The mill ceased production in 1982, an early warning of another revolution on a global scale. The textile industry was starting a fresh migration in search of ...]]></description>
+ <pubDate>Thu, 29 Sep 2016 14:42:47 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707833 at http://www.economist.com</guid>
 </item>
 <item>
- <title><![CDATA[False comfort]]></title>
- <link>http://www.economist.com/news/finance-and-economics/21690104-low-bond-yields-dont-always-help-equity-returns-false-comfort?fsrc=rss</link>
- <description><![CDATA[<p><div class="content-image-full retina-595"><img src="http://cdn.static-economist.com/sites/default/files/imagecache/original-size/images/print-edition/20160206_FNC308.png" alt="" title=""  width="1190" height="588" /></div></p><p>MANY a gloomy pundit, Buttonwood included, has been tut-tutting about equity valuations in America for the past year or two. After all, by historical standards, they are high. Yet there is no shortage of cheerleaders to explain why equities are not such a bad deal after all. A notable one now is Olivier Blanchard, until recently the chief economist of the IMF. He and Joseph Gagnon, a colleague at the Peterson Institute for International Economics, a think-tank, have published a <a href="http://blogs.piie.com/realtime/?p=5367">blog post*</a> arguing that American equities are not overvalued, in particular compared with the values seen ten years ago.</p><p>Alas, there is reason to quibble with the data underpinning the post. It refers to the cyclically adjusted price-earnings ratio compiled by Robert Shiller of Yale University, which averages profits over ten years. Mr Shiller has calculated the ratio back to 1881. The average since then is 16.7, so the current ratio, 24, suggests shares are 44% overvalued by historical standards. But the Peterson post compares current valuations with the 60-year average of 20, arguing that accounting and tax changes...<a href="http://www.economist.com/news/finance-and-economics/21690104-low-bond-yields-dont-always-help-equity-returns-false-comfort?fsrc=rss">Continue reading</a>]]></description>
- <author>The Economist online</author>
- <comments>http://www.economist.com/news/finance-and-economics/21690104-low-bond-yields-dont-always-help-equity-returns-false-comfort#comments</comments>
- <category domain="http://www.economist.com/category/site-sections/business-and-finance">Business and finance</category>
- <category domain="http://www.economist.com/topics/approved">Approved</category>
- <category domain="http://www.economist.com/category/print-sections/finance-and-economics">Finance and economics</category>
- <category domain="http://www.economist.com/category/web-sections/finance">FINANCE</category>
- <pubDate>Thu, 04 Feb 2016 15:43:38 +0000</pubDate>
- <guid isPermaLink="false">21690104 at http://www.economist.com</guid>
+ <title><![CDATA[Trade deals: Hard bargain]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21707940-lacking-clear-american-leadership-global-trade-agenda-floundering-hard?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Why they’re wrong
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Trade deals
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    GENEVA
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20161001_FND001_0.jpg
+
+
+
+
+
+
+
+
+ROBERTO AZEVEDO, the head of the World Trade Organisation (WTO), is not the architect of grand global trade deals that his title suggests. Sitting in his Geneva headquarters, he remembers only too well how the WTO’s Doha round collapsed under the weight of its own ambition. “Let’s do the trade deals that are in reach,” he says. Overambition is not the only problem. “Anti-trade rhetoric is catchy,” sighs Mr Azevedo. So catchy that it has infected deals beyond the WTO. The world’s most trumpeted regional trade deals are drifting out of grasp just when pep is most needed: on September 27th the WTO forecast that for the first time in 15 years, global trade growth this year, at just 1.7%, would not keep pace with global GDP.&amp;nbsp;
+The Trans-Pacific Partnership (TPP), a deal between America, Japan and ten other countries around the Pacific, was signed ...]]></description>
+ <pubDate>Thu, 29 Sep 2016 09:18:21 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707940 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Chinese investment in Britain: Hinkley hangover?]]></title>
+ <link>http://www.economist.com/news/britain/21707579-ding-dong-over-nuclear-plant-should-not-deter-chinese-investors-hinkley-hangover?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    The low-rate world
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Chinese investment in Britain
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    GLASGOW
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    Raising some red flags
+
+
+
+
+
+
+Raising some red flags
+
+RESPLENDENT in a pinstriped suit, Sun Lizhi talks of the opportunities for his waste-recycling company, Linyi Tianwei, in Britain. From Shandong province in eastern China, Mr Sun was in a large delegation of Chinese businessmen visiting Scotland this week. He is looking for business partners and hopes that British investors will be attracted by the 20 patents he has developed. Asked why he is in Britain rather than Germany, Italy or anywhere else, he answers with one word: “trust”. Mr Sun, like many Chinese investors, perceives Britain to be a fair and honest place to do business.
+If he had been a government official, his answer may have been a little more cautious, following a summer of back-and-forth between the two governments over proposals to build a new nuclear plant at Hinkley Point in Somerset. ...]]></description>
+ <pubDate>Thu, 22 Sep 2016 14:44:22 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707579 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Asian markets: Chinese sneezes]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21707534-financial-contagion-china-now-rivals-america-chinese-sneezes?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    The low-rate world
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Asian markets
+
+
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20160924_FNP003_0.jpg
+
+
+
+
+
+
+
+
+INVESTORS have long been wary of America’s sneezes, knowing they can give the world a cold. In Asia they now also fret about Chinese rhinitis, which is proving just as contagious. For financial epidemiologists, this is something of a puzzle. It is to be expected that germs can spread from China, Asia’s biggest economy, to others in the region. But it is surprising quite how infectious they are proving. Unlike America, enmeshed in global markets, China’s economy is in self-imposed quarantine, protected by capital controls that limit its interactions with others.
+Yet China’s impact on Asian stockmarkets is now nearly as potent as America’s. Two recent papers, one from the IMF and one from the Bank for International Settlements (BIS), a forum for central banks, reveal the extent of the change over the past decade. The IMF estimates that the correlation between the Chinese stockmarket and those in other Asian countries has risen to ...]]></description>
+ <pubDate>Thu, 22 Sep 2016 14:44:14 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707534 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[The fall in interest rates: Low pressure]]></title>
+ <link>http://www.economist.com/news/briefing/21707553-interest-rates-are-persistently-low-our-first-article-we-ask-who-or-what-blame?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    The low-rate world
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    The fall in interest rates
+
+
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20160924_FBD001_0.jpg
+
+
+
+
+
+
+
+
+THE story of rich-world central banks and their protracted entanglement with near-zero interest rates was given another twist this week. One of their number gamely announced it still hoped for a more distant relationship, even if it couldn’t bring itself to turn its back on them yet. Another renewed its vows to stick with them.
+On September 21st the Federal Reserve kept its target for overnight interest rates at 0.25-0.5% but indicated that, after raising the target for the first time in a decade last year, it hoped to raise it for a second time soon—possibly in December, after America’s presidential elections. Its rate-setting committee said the case for an increase had “strengthened” since its meeting in June, but it decided to wait for more convincing evidence. Earlier that day, the Bank of Japan (BoJ) said it was staying with its target of raising inflation to 2%. Indeed it went further. The bank said it would ...]]></description>
+ <pubDate>Thu, 22 Sep 2016 09:18:15 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707553 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[World GDP]]></title>
+ <link>http://www.economist.com/news/economic-and-financial-indicators/21707196-world-gdp?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Britain’s one-party state
+
+
+
+
+
+
+
+
+
+
+
+
+The world economy grew by 2.7% in the second quarter of 2016 compared with a year earlier, according to our estimates. China’s second-quarter GDP grew at an annual rate of 6.7%, largely because of government stimulus that helped shore up demand. Growth slowed in India, but a 7.1% expansion was still the fastest of any big economy. Together, China and India accounted for 63% of global growth. The United States also saw its growth slow, to a year-on-year rate of 1.2%, after business inventories fell for the first time in nearly five years. Britain’s GDP grew by 2.2%, up from 2% in the prior quarter, suggesting that uncertainty in the run-up to the Brexit referendum in June did not much affect the economy.
+
+
+      Article body images:&amp;nbsp;
+
+
+                    20160917_INC573.png
+
+
+
+
+      Published:&amp;nbsp;
+
+
+                    20160917
+
+
+
+
+
+      Source:&amp;nbsp;
+
+
+                    The Economist Newspaper
+
+
+
+
+
+      Version:&amp;nbsp;
+
+
+                    6
+
+
+
+
+      Historic ID:&amp;nbsp;
+
+  ...]]></description>
+ <pubDate>Wed, 14 Sep 2016 21:18:16 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21707196 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[The G20 and the world economy: Agreeing to disagree]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21706514-global-economy-has-many-ailments-and-few-easy-remedies-agreeing-disagree?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Art of the lie
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    The G20 and the world economy
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    HANGZHOU
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    Great show, shame about the substance
+
+
+
+
+
+
+Great show, shame about the substance
+
+AT ITS first leaders’ summit, the Group of 20’s raison d’être was clear. Held shortly after the collapse of Lehman Brothers in late 2008, the forum of big economies reassured a worried world simply by putting on a show of unity. But as the worst ravages of the financial crisis have faded, the G20 has struggled to find the same sense of purpose. This year’s summit in Hangzhou, in eastern China, which ended on September 5th, pulled leaders’ attention in many different directions.
+It was preceded by another display of co-operation: America and China ratified the Paris climate-change agreement. Then work began on a long list of problems, including simmering trade disputes, overstretched central banks, corporate tax avoidance and a populist backlash in several countries against ...]]></description>
+ <pubDate>Thu, 08 Sep 2016 14:47:42 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21706514 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Correction: Own goal]]></title>
+ <link>http://www.economist.com/news/business/21706339-correction-own-goal?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Uberworld
+
+
+
+
+
+
+
+In our story on Chinese investment in football, of August 27th, we exaggerated the valuations of two clubs, Aston Villa and Granada, by a factor of ten. Sorry.
+
+
+
+      Published:&amp;nbsp;
+
+
+                    20160903
+
+
+
+
+
+      Source:&amp;nbsp;
+
+
+                    The Economist Newspaper
+
+
+
+
+
+      Version:&amp;nbsp;
+
+
+                    6
+
+
+
+
+      Historic ID:&amp;nbsp;
+
+
+                    SQ6249D]]></description>
+ <pubDate>Thu, 01 Sep 2016 15:26:58 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21706339 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Business this week]]></title>
+ <link>http://www.economist.com/news/world-week/21706323-business-week?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Uberworld
+
+
+
+
+
+
+
+The European Commission found that the tax advantages offered by Ireland to Apple broke EU rules on state aid and ordered it to recover €13 billion ($14.5 billion) in taxes from the company, by far the highest penalty the commission has imposed in its crackdown on corporate tax avoidance. But the decision was criticised for intervening in an arrangement struck with Irish authorities 25 years ago, and which the government still supports. Tim Cook, Apple’s chief executive, said the company had never sought any special favours from Ireland, and is being asked to pay taxes to a government that insists it is not owed any money. See here&amp;nbsp;and here.&amp;nbsp;
+
+Activist shareholders in Germany claimed a rare victory in toppling the chairman of Stada, a drug company. Active Ownership Capital, an investment firm, said Stada was being managed mostly by pharmacists and doctors with little global ambition. It ran a campaign to install a new slate of shareholder representatives on the supervisory board made up of executives who have worked in some of Germany’s biggest corporations. See article.&amp;nbsp;
+In the crosshairs
+The argument over sharp rises ...]]></description>
+ <pubDate>Thu, 01 Sep 2016 15:26:55 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21706323 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Australia’s economy: Good on you]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21706262-australia-has-weathered-china-slowdown-and-commodities-slump-well-what-has-it?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Uberworld
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Australia’s economy
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    SYDNEY
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    Girder on you, too
+
+
+
+
+
+
+Girder on you, too
+
+THE last time Australia was in recession, Mikhail Gorbachev led the Soviet Union and Donald Trump had filed for Chapter 11 only once. Barring unforeseen catastrophe, late next year Australia will pass the Netherlands’ modern record of 26 years of consecutive growth—despite the slowdown of its biggest trading partner, China. Unlike most of the rich world, it sailed through the global financial crisis, and unlike most commodity exporters, it has weathered the raw-materials price slump. Its GDP growth rate of 3.1% dwarfs that of America and the euro zone.
+Australia is often called “the lucky country”, and luck, particularly in geology and geography, has played a part in its success. But it has deftly played both sides of the China boom: the surging demand for raw-material imports while that lasted; more recently, the desire of the ...]]></description>
+ <pubDate>Thu, 01 Sep 2016 15:26:54 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21706262 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[China’s data: Superstition ain’t the way]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21706272-why-do-people-still-pay-rapt-attention-chinas-unsatisfactory-growth-statistics?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Uberworld
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    China’s data
+
+
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    20160903_FND001_0.jpg
+
+
+
+
+
+
+
+
+CHINA’S official statisticians attract plenty of criticism from baffled outsiders. In recent months, however, they have also endured attacks from party colleagues. On August 26th China’s corruption watchdog, the Central Commission for Discipline Inspection, charged Wang Baoan, head of the National Bureau of Statistics (NBS) from April 2015 to January 2016, with a variety of sins, including moral decay and “superstitious activities”. Earlier this year, the commission also paid a visit to Liaoning province in China’s industrial north-east, where it urged local officials to stamp out widespread data fraud.
+These exhortations may be having some effect. The recent collapse in Liaoning’s economic indicators (fixed-asset investment fell by 58% in the first half of the year, compared with a year earlier) may partly reflect efforts to wring the “water” out of fraud-soaked figures, according to Liu Liu and Hong Liang of China International Capital ...]]></description>
+ <pubDate>Thu, 01 Sep 2016 15:26:54 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21706272 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Economics and markets: Have investors stopped worrying about China and oil?]]></title>
+ <link>http://www.economist.com/blogs/buttonwood/2016/08/economics-and-markets?fsrc=rss</link>
+ <description><![CDATA[IN THESE days of 24/7 news channels, attention spans have become shorter. So I ask readers to cast their minds all the way back to ancient history—January and February this year in those innocent days when Britain had yet to vote to leave the EU and the Republicans had yet to settle on Donald Trump as their nominee.Back then, the markets began the year in wobbly mood, worrying about the fall in the oil price (as indicating weakness in global demand) and a weaker renminbi, on the grounds that lower Chinese prices might send a deflationary shiver round the world. As the year has worn on, investors have recovered their nerve, with the S&amp;amp;P 500 managing repeated intra-day record highs in recent weeks.&amp;nbsp;
+
+
+
+But as the chart shows, the renminbi is weaker than it was at the start of the year and oil is rapidly heading lower once more. On China, the good news is that the authorities have not allowed the currency to fall precipitately and the figures suggests the economy is slowing gently, rather than abruptly. Oil is more concerning. More supply is coming on to the market, with post-sanctions Iran stepping up production, the US adding drill rigs in each of the last five weeks and Libya hoping to boost exports by 900,000 barrels a day by the end of the year.What explains this insouciance? Central banks must be a significant part of the explanation. Back in January, the ...]]></description>
+ <pubDate>Tue, 02 Aug 2016 13:32:34 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21703291 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[Free exchange: Econometrics]]></title>
+ <link>http://www.economist.com/news/finance-and-economics/21702184-it-not-easy-compare-size-economieseven-across-channel-econometrics?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Maytime
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    Free exchange
+
+
+
+
+
+
+&amp;nbsp;
+
+
+
+
+FRANCE is renowned, fairly or not, for its long holidays and short working weeks, subsidised farmers and unionised workers, high culture and higher taxes. Less than two-thirds (64%) of its working-age population was employed last year, according to the OECD, compared with almost three-quarters (73%) in Britain. But is France’s well-lunched workforce of 26.4m now producing more than Britain’s harried 31.1m employees?
+Many people seem to think so. France’s GDP in 2015 was about €2.18 trillion. Britain’s was a little over £1.86 trillion. On July 6th the pound fell below €1.17 on the currency markets, rattled by Britain’s vote to leave the European Union (EU). Since 1.86 multiplied by the exchange rate of July 6th is less than 2.18, many commentators jumped to the conclusion that Britain’s economy had slipped overnight from fifth-biggest in the world to sixth. It was one more humiliation among many.
+
+Comparing the size of national economies can be a frustrating exercise. The measuring tape is not always consistent from place to place or ...]]></description>
+ <pubDate>Thu, 14 Jul 2016 14:44:27 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21702184 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[The economic fallout: Managing chaos]]></title>
+ <link>http://www.economist.com/news/briefing/21701539-how-brexit-will-affect-growth-britain-europe-and-wider-world-managing-chaos?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Anarchy in the UK
+
+
+
+
+      Fly Title:&amp;nbsp;
+
+
+                    The economic fallout
+
+
+
+
+
+      Location:&amp;nbsp;
+
+
+                    LONDON AND WASHINGTON, DC
+
+
+
+
+      Main image:&amp;nbsp;
+
+
+                    Carney, calming
+
+
+
+
+
+
+Carney, calming
+
+BUSINESSES and financial markets hate uncertainty. The vote for Brexit gives rise to a surfeit of it. Ahead of the referendum, most economists agreed that leaving the EU would be costly for Britain’s economy in the longer term. Now that the result is in, analysis has shifted to gauging how the economy will react in the immediate future. Forecasts for economic growth are being revised down—markedly for Britain, materially for Europe, and modestly for the world.
+A lot depends on the kind of trade deal Britain can negotiate with the EU and how quickly its outline will emerge. The longer this takes, the worse will be the economic impact. No single narrative can hope to do justice to the many permutations that are possible. But three broad scenarios cover most of the terrain.
+
+Begin with the most benign of possible ...]]></description>
+ <pubDate>Thu, 30 Jun 2016 14:59:27 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21701539 at http://www.economist.com</guid>
+</item>
+<item>
+ <title><![CDATA[World&#039;s biggest banks]]></title>
+ <link>http://www.economist.com/news/economic-and-financial-indicators/21701473-worlds-biggest-banks?fsrc=rss</link>
+ <description><![CDATA[Print section
+
+
+
+
+
+
+
+              UK Only Article:&amp;nbsp;
+                    standard article
+
+
+
+
+      Issue:&amp;nbsp;
+
+
+                    Anarchy in the UK
+
+
+
+
+
+
+
+
+
+
+
+
+Industrial and Commercial Bank of China (ICBC) was the biggest bank in the world at the end of last year, according to The Banker, which ranks the top 1,000 banks by Tier-1 capital holdings (mostly common stock and retained earnings). Chinese banks now occupy four of the top five places, as Agricultural Bank of China displaced Bank of America to become the world’s fifth-biggest bank on this measure. That was the only change to the top ten ranking from the previous year. Although Chinese banks were more profitable than those of any other country last year, accounting for 32% of the total profit pool, performance has peaked. Profits fell by 3.5%, the first drop since 2004, and bad loans are rising.
+
+
+      Article body images:&amp;nbsp;
+
+
+                    20160702_inc809.png
+
+
+
+
+      Published:&amp;nbsp;
+
+
+                    20160702
+
+
+
+
+
+      Source:&amp;nbsp;
+
+
+                    The Economist Newspaper
+
+
+
+
+
+      Version:&amp;nbsp;
+
+
+                    6
+
+
+
+
+      Historic ID:&amp;nbsp;
+
+
+    ...]]></description>
+ <pubDate>Wed, 29 Jun 2016 22:18:17 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false">21701473 at http://www.economist.com</guid>
 </item>
 </channel>
 </rss>

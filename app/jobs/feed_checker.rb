@@ -9,8 +9,6 @@ class FeedChecker
   def self.perform
     # check all the feeds
     Feed.find_each do |feed|
-      next if feed.status == 'error'
-
       # Get the feeds content
       begin
         feed_content = RestClient::Request.execute(method: :get, url: feed.url, verify_ssl: false).body
