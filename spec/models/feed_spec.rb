@@ -34,6 +34,13 @@ RSpec.describe Feed, type: :model do
       expect(@feed.feed_source.items.count).to eq(1)
     end
 
+    it 'handles XML error' do
+      stub_request(:any, @feed.url).to_return body: 'content'
+      stub_feed_run_python_method
+      @feed.process_feed_contents
+      expect(@feed.error_msg).to eq('No valid parser for XML.')
+    end
+
     it 'prepends the feed domain if the URL starts with /' do
       # Use feed content that doesn't have relative URLs
       stub_request(:any, @feed.url).to_return body: feed_content(:with_relative_urls).content
