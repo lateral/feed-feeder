@@ -56,6 +56,11 @@ class FeedChecker
           rescue RestClient::Exception => e
             feed.status = 'error'
             feed.error_msg = e.response
+
+          # If the feed is malformed and for some reason doesn't have the hub
+          rescue NoMethodError => e
+            feed.status = 'manually_processed'
+            feed.is_pubsubhubbub_supported = false
           end
         end
 
