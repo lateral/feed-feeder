@@ -38,7 +38,13 @@ class FeedChecker
         if feed.expiration_date.nil? || feed.expiration_date < DateTime.now
 
           # Set the feed URL to the rel="self" href
-          feed.url = rel_self[0].value
+          begin
+            feed.url = rel_self[0].value
+          rescue NoMethodError => e
+            feed.status = 'manually_processed'
+            feed.is_pubsubhubbub_supported = false
+            next
+          end
 
           params = {
             'hub.mode' => 'subscribe',
