@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161206110319) do
+ActiveRecord::Schema.define(version: 20170119143605) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 20161206110319) do
   add_index "items", ["feed_source_id"], name: "index_items_on_feed_source_id", using: :btree
   add_index "items", ["key_id"], name: "index_items_on_key_id", using: :btree
   add_index "items", ["lateral_id"], name: "index_items_on_lateral_id", using: :btree
+  add_index "items", ["published"], name: "index_items_on_published", using: :btree
   add_index "items", ["updated_at"], name: "items_updated_at_idx", using: :btree
 
   create_table "keys", force: :cascade do |t|
