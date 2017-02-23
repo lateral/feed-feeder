@@ -19,6 +19,11 @@ class FeedChecker
         feed.error_msg = "Feed returned #{e.http_code} on initial fetch"
         feed.save
         next
+      rescue SocketError => e
+        feed.status = 'error'
+        feed.error_msg = "Feed triggered SocketError on initial fetch"
+        feed.save
+        next
       end
 
       # Detect the hub and rel="self" nodes
