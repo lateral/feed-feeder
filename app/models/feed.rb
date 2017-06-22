@@ -23,7 +23,7 @@ class Feed < ActiveRecord::Base
     # check each url
     feed.entries.each do |entry|
       # check if the link is new or has already been processed
-      next if Item.find_by(feed_source: feed_source, guid: entry.entry_id)
+      next if Item.find_by(feed_source: feed_source, guid: entry_guid(entry))
 
       # Otherwise add it
       add_feed_item(entry, initial_sync)
@@ -50,7 +50,7 @@ class Feed < ActiveRecord::Base
       body: entry_hash[:body],
       feed_id: self.id,
       feed_source_id: self.feed_source_id,
-      guid: entry.entry_id,
+      guid: entry_guid(entry),
       image: entry_hash[:image],
       published: entry.published,
       summary: entry_hash[:summary],
@@ -81,6 +81,10 @@ class Feed < ActiveRecord::Base
   end
 
   private
+
+  def entry_guid(entry)
+    entry.entry_id.blank? ? Digest::SHA1.hexdigest(entry.url) : entry.entry_id
+  end
 
   # Takes the feed URL and extracts the scheme and host, then prepends the
   # assembled elements before the entry path. It's by no means fool proof but
