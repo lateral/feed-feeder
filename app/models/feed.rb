@@ -36,7 +36,7 @@ class Feed < ActiveRecord::Base
 
     # Do some checks on the URL to make sure it should be added
     begin
-      head = RestClient.head(entry.url)
+      head = RestClient::Request.execute(method: :head, url: entry.url, verify_ssl: false)
       return unless head.headers[:content_type] && head.headers[:content_type].start_with?('text/html')
     rescue URI::InvalidURIError, SocketError, RestClient::Exception => e
       return logger.error "#{e.class}: #{entry.url}"
