@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170124115301) do
+ActiveRecord::Schema.define(version: 20170623105238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,10 +29,12 @@ ActiveRecord::Schema.define(version: 20170124115301) do
   create_table "authors_items", id: false, force: :cascade do |t|
     t.integer "item_id"
     t.integer "author_id"
+    t.integer "key_id"
   end
 
   add_index "authors_items", ["author_id"], name: "index_authors_items_on_author_id", using: :btree
   add_index "authors_items", ["item_id"], name: "index_authors_items_on_item_id", using: :btree
+  add_index "authors_items", ["key_id"], name: "index_authors_items_on_key_id", using: :btree
 
   create_table "feed_sources", force: :cascade do |t|
     t.string  "name",   limit: 255
@@ -88,6 +90,9 @@ ActiveRecord::Schema.define(version: 20170124115301) do
     t.string "purpose"
   end
 
+  add_foreign_key "authors_items", "authors"
+  add_foreign_key "authors_items", "items"
+  add_foreign_key "authors_items", "keys"
   add_foreign_key "feed_sources", "keys"
   add_foreign_key "items", "feeds"
   add_foreign_key "items", "keys"
