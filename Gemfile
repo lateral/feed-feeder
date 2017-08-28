@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails'
 
-gem 'rails', '4.2.5'
+gem 'rails', '5.0.5'
 gem 'pg'
 
 gem 'god'

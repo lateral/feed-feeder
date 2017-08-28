@@ -1,6 +1,6 @@
 require 'date'
 class FeedsController < ApplicationController
-  before_filter :set_feed
+  before_action :set_feed
   skip_before_action :verify_authenticity_token
 
   # GET PubSubHubbub callback after you subscribe

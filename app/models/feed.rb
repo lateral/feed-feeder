@@ -49,7 +49,7 @@ class Feed < ActiveRecord::Base
     # Parse the URL
     entry_hash = run_python('recommend-by-url.py', entry.url)
     item_hash = {
-      body: entry_hash[:body],
+      body: entry_hash[:body].present? ? entry_hash[:body] : entry.summary,
       feed_id: self.id,
       feed_source_id: self.feed_source_id,
       guid: entry_guid(entry),

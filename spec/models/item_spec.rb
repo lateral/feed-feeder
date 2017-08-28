@@ -68,7 +68,7 @@ RSpec.describe Item, type: :model do
       @item.send_to_api(@key)
       @item.reload
       expect(@item.sent_to_api).to eq(true)
-      expect(@item.error).to eq('message' => 'Duplicate')
+      expect(@item.error).to eq("{\"message\":\"Duplicate\"}")
     end
 
     it "doesn't add if the body is invalid" do
@@ -76,7 +76,7 @@ RSpec.describe Item, type: :model do
       @item.send_to_api(@key)
       @item.reload
       expect(@item.sent_to_api).to eq(true)
-      expect(@item.error).to eq('message' => 'Invalid body')
+      expect(@item.error).to eq("{\"message\":\"Invalid body\"}")
     end
 
     it 'creates tags in the api from authors' do
@@ -96,7 +96,7 @@ RSpec.describe Item, type: :model do
       @item.reload
       expect(@item.sent_to_api).to eq(true)
       expect(@item.rejected_by_api).to eq(true)
-      expect(@item.error).to eq('message' => 'less than 4 words recognized')
+      expect(@item.error).to eq("{ \"message\": \"less than 4 words recognized\" }")
     end
   end
 

@@ -114,6 +114,17 @@ RSpec.describe Feed, type: :model do
       expect(item.authors.first.hash_id).to eq('e31052641f40d49d87c369b4b8655403')
     end
 
+    it 'saves the summary if the body is empty' do
+      entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url, summary: 'testing')
+      stub_feed_run_python_method(author: 'a name', body: '', image: '', summary: '', title: '')
+      @feed.add_feed_item entry
+
+      item = Item.find_by(guid: entry.entry_id)
+      expect(item.body).to eq('testing')
+      expect(item.authors.first.name).to eq('a name')
+      expect(item.authors.first.hash_id).to eq('e31052641f40d49d87c369b4b8655403')
+    end
+
     it 'strips whitespace from authors' do
       entry = OpenStruct.new(entry_id: '100', published: 'date', url: @feed.url)
       stub_feed_run_python_method(author: 'a name  ', body: '', image: '', summary: '', title: '')

@@ -12,10 +12,14 @@ class Author < ActiveRecord::Base
 
   def self.clean_up_blacklist
     AUTHORS_BLACKLIST['hash_ids'].each do |hash_id|
-      Author.where(hash_id: hash_id).delete_all
+      authors = Author.where(hash_id: hash_id)
+      AuthorItem.where(author_id: authors.map(&:id)).delete_all
+      authors.delete_all
     end
     AUTHORS_BLACKLIST['name_start_match'].each do |prefix|
-      Author.where("name LIKE :prefix", prefix: "#{prefix}%").delete_all
+      authors = Author.where("name LIKE :prefix", prefix: "#{prefix}%")
+      AuthorItem.where(author_id: authors.map(&:id)).delete_all
+      authors.delete_all
     end
   end
 

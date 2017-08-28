@@ -4,6 +4,7 @@ class Item < ActiveRecord::Base
   belongs_to :feed
   has_and_belongs_to_many :authors
   include ActionView::Helpers::SanitizeHelper
+
   def self.send_missing_to_api
     Key.all.each do |key|
       key.feed_sources.each do |feed_source|
