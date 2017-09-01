@@ -27,7 +27,7 @@ class Item < ActiveRecord::Base
     return mark_error('Invalid body') if body && body.empty?
     return mark_error('Duplicate') if duplicate?(key)
 
-    meta = { feed_source_id: feed_source.id, title: title, url: url, image: image, summary: summary, guid: guid }
+    meta = { feed_source_id: feed_source.id, title: title, url: url, image: image, summary: summary, guid: guid }.to_json
     data = { text: body, meta: meta }.to_json
     headers = { content_type: :json, 'Subscription-Key' => key.key }
     response = JSON.parse RestClient.post("#{key.endpoint}/documents/#{id}", data, headers)
@@ -37,14 +37,14 @@ class Item < ActiveRecord::Base
     # Add authors as tags
     authors.each do |author|
       begin
-        meta = { id: author.id, name: author.name }
+        meta = { id: author.id, name: author.name }.to_json
         RestClient.post("#{key.endpoint}/documents/#{id}/tags/#{author.hash_id}", { type: 'authors', meta: meta }.to_json, headers)
       rescue RestClient::Exception => e; end
     end
 
     # Add feeds as tags
     begin
-      meta = { id: feed_source.id, name: feed_source.name }
+      meta = { id: feed_source.id, name: feed_source.name }.to_json
       RestClient.post("#{key.endpoint}/documents/#{id}/tags/feed_sources_#{feed_source.id}", { type: 'sources', meta: meta }.to_json, headers)
     rescue RestClient::Exception => e; end
 
