@@ -28,7 +28,8 @@ class Item < ActiveRecord::Base
     return mark_error('Duplicate') if duplicate?(key)
 
     meta = { feed_source_id: feed_source.id, title: title, url: url, image: image, summary: summary, guid: guid }.to_json
-    data = { text: body, meta: meta }.to_json
+    date = published.present? ? published : created_at
+    data = { text: body, meta: meta, published_at: date.to_datetime.rfc3339 }.to_json
     headers = { content_type: :json, 'Subscription-Key' => key.key }
     response = JSON.parse RestClient.post("#{key.endpoint}/documents/#{id}", data, headers)
 
