@@ -57,10 +57,16 @@ RSpec.describe Item, type: :model do
     end
 
     it 'adds an item' do
+      stub_request(:any, %r{api.lateral.io/documents/.*}).to_return body: { id: @item.id }.to_json
       @item.send_to_api(@key)
       @item.reload
       expect(@item.sent_to_api).to eq(true)
       expect(@item.lateral_id).to_not eq(nil)
+      meta = { feed_source_id: @item.feed_source.id, title: @item.title, url: @item.url, image: @item.image,
+               summary: @item.summary, guid: @item.guid }
+      expected_request = { body: hash_including(text: @item.body, meta: meta) }
+      url = %r{api.lateral.io/documents/#{@item.id}$}
+      expect(WebMock).to have_requested(:post, url).with(expected_request)
     end
 
     it "doesn't add if is duplicate in API" do
@@ -84,9 +90,20 @@ RSpec.describe Item, type: :model do
       stub_request(:any, %r{api.lateral.io/documents/#{item.id}/tags/.*$}).to_return body: ''
       item.send_to_api(@key)
       item.authors.each do |author|
+        expected_request = { body: hash_including(type: 'authors', meta: { id: author.id, name: author.name }) }
         url = %r{api.lateral.io/documents/#{item.id}/tags/#{author.hash_id}$}
-        expect(WebMock).to have_requested(:post, url)
+        expect(WebMock).to have_requested(:post, url).with(expected_request)
       end
+    end
+
+    it 'creates tag in the api from category' do
+      item = FactoryGirl.create :item
+      stub_request(:any, %r{api.lateral.io/documents/#{item.id}/tags/feed_sources_.*$}).to_return body: ''
+      item.send_to_api(@key)
+      feed_source = item.feed_source
+      url = %r{api.lateral.io/documents/#{item.id}/tags/feed_sources_#{feed_source.id}$}
+      expected_request = { body: hash_including(type: 'sources', meta: { id: feed_source.id, name: feed_source.name }) }
+      expect(WebMock).to have_requested(:post, url).with(expected_request)
     end
 
     it 'handles an error from the API' do

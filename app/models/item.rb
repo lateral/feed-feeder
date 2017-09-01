@@ -11,7 +11,14 @@ class Item < ActiveRecord::Base
         items = feed_source.items.where(sent_to_api: false, rejected_by_api: false)
                            .where("published >= NOW() - '7 days'::INTERVAL")
                            .order('id DESC').limit(250)
-        items.each { |item| item.send_to_api(key) }
+        items.each do |item|
+          item.send_to_api(key)
+
+          # TEMPORARY HACK FIX WHILE MIGRATING!
+          if key.id == 1
+            item.send_to_api(OpenStruct.new(key: key.key, endpoint: 'https://api-v6.lateral.io'))
+          end
+        end
       end
     end
   end
@@ -20,7 +27,8 @@ class Item < ActiveRecord::Base
     return mark_error('Invalid body') if body && body.empty?
     return mark_error('Duplicate') if duplicate?(key)
 
-    data = { text: body }.to_json
+    meta = { feed_source_id: feed_source.id, title: title, url: url, image: image, summary: summary, guid: guid }
+    data = { text: body, meta: meta }.to_json
     headers = { content_type: :json, 'Subscription-Key' => key.key }
     response = JSON.parse RestClient.post("#{key.endpoint}/documents/#{id}", data, headers)
 
@@ -29,9 +37,16 @@ class Item < ActiveRecord::Base
     # Add authors as tags
     authors.each do |author|
       begin
-        RestClient.post("#{key.endpoint}/documents/#{id}/tags/#{author.hash_id}", data, headers)
+        meta = { id: author.id, name: author.name }
+        RestClient.post("#{key.endpoint}/documents/#{id}/tags/#{author.hash_id}", { type: 'authors', meta: meta }.to_json, headers)
       rescue RestClient::Exception => e; end
     end
+
+    # Add feeds as tags
+    begin
+      meta = { id: feed_source.id, name: feed_source.name }
+      RestClient.post("#{key.endpoint}/documents/#{id}/tags/feed_sources_#{feed_source.id}", { type: 'sources', meta: meta }.to_json, headers)
+    rescue RestClient::Exception => e; end
 
   # Ignore this type of error, wait until next time
   rescue Errno::EHOSTUNREACH
