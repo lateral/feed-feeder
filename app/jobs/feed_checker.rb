@@ -91,8 +91,8 @@ class FeedChecker
           Resque.enqueue(FeedParser, feed.id, feed.url)
         end
       rescue StandardError => e
-        ap e.message
-        ap e.backtrace
+        # ap e.message
+        # ap e.backtrace
         feed.status = 'error'
         feed.error_msg = "StandardError rescued #{e.message}"
         feed.save
