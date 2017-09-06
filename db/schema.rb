@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170623105238) do
+ActiveRecord::Schema.define(version: 20170906155035) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,29 +20,26 @@ ActiveRecord::Schema.define(version: 20170623105238) do
     t.string   "hash_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["hash_id"], name: "index_authors_on_hash_id", unique: true, using: :btree
+    t.index ["name"], name: "index_authors_on_name", unique: true, using: :btree
   end
-
-  add_index "authors", ["hash_id"], name: "index_authors_on_hash_id", unique: true, using: :btree
-  add_index "authors", ["name"], name: "index_authors_on_name", unique: true, using: :btree
 
   create_table "authors_items", id: false, force: :cascade do |t|
     t.integer "item_id"
     t.integer "author_id"
     t.integer "key_id"
+    t.index ["author_id"], name: "index_authors_items_on_author_id", using: :btree
+    t.index ["item_id"], name: "index_authors_items_on_item_id", using: :btree
+    t.index ["key_id"], name: "index_authors_items_on_key_id", using: :btree
   end
-
-  add_index "authors_items", ["author_id"], name: "index_authors_items_on_author_id", using: :btree
-  add_index "authors_items", ["item_id"], name: "index_authors_items_on_item_id", using: :btree
-  add_index "authors_items", ["key_id"], name: "index_authors_items_on_key_id", using: :btree
 
   create_table "feed_sources", force: :cascade do |t|
     t.string  "name",   limit: 255
     t.text    "url"
     t.string  "slug"
     t.integer "key_id"
+    t.index ["key_id"], name: "index_feed_sources_on_key_id", using: :btree
   end
-
-  add_index "feed_sources", ["key_id"], name: "index_feed_sources_on_key_id", using: :btree
 
   create_table "feeds", force: :cascade do |t|
     t.integer  "feed_source_id"
@@ -74,15 +70,14 @@ ActiveRecord::Schema.define(version: 20170623105238) do
     t.boolean  "from_initial_sync", default: false, null: false
     t.integer  "lateral_id"
     t.integer  "key_id"
+    t.index ["feed_id"], name: "index_items_on_feed_id", using: :btree
+    t.index ["feed_source_id", "guid"], name: "index_items_on_feed_source_id_and_guid", unique: true, using: :btree
+    t.index ["feed_source_id"], name: "index_items_on_feed_source_id", using: :btree
+    t.index ["key_id"], name: "index_items_on_key_id", using: :btree
+    t.index ["lateral_id"], name: "index_items_on_lateral_id", using: :btree
+    t.index ["published"], name: "index_items_on_published", using: :btree
+    t.index ["updated_at"], name: "items_updated_at_idx", using: :btree
   end
-
-  add_index "items", ["feed_id"], name: "index_items_on_feed_id", using: :btree
-  add_index "items", ["feed_source_id", "guid"], name: "index_items_on_feed_source_id_and_guid", unique: true, using: :btree
-  add_index "items", ["feed_source_id"], name: "index_items_on_feed_source_id", using: :btree
-  add_index "items", ["key_id"], name: "index_items_on_key_id", using: :btree
-  add_index "items", ["lateral_id"], name: "index_items_on_lateral_id", using: :btree
-  add_index "items", ["published"], name: "index_items_on_published", using: :btree
-  add_index "items", ["updated_at"], name: "items_updated_at_idx", using: :btree
 
   create_table "keys", force: :cascade do |t|
     t.string "key"
@@ -94,6 +89,7 @@ ActiveRecord::Schema.define(version: 20170623105238) do
   add_foreign_key "authors_items", "items"
   add_foreign_key "authors_items", "keys"
   add_foreign_key "feed_sources", "keys"
+  add_foreign_key "feeds", "feed_sources"
   add_foreign_key "items", "feeds"
   add_foreign_key "items", "keys"
 end
