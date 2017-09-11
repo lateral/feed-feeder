@@ -13,14 +13,6 @@ class Item < ActiveRecord::Base
                            .order('id DESC').limit(250)
         items.each do |item|
           item.send_to_api(key)
-
-          # TEMPORARY HACK FIX WHILE MIGRATING!
-          if key.id == 1
-            item.send_to_api(OpenStruct.new(key: key.key, endpoint: 'https://api-v6.lateral.io'))
-          end
-          if key.id == 2
-            item.send_to_api(OpenStruct.new(key: key.key, endpoint: 'https://api-v6-de.lateral.io'))
-          end
         end
       end
     end
