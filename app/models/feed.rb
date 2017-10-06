@@ -12,7 +12,16 @@ class Feed < ActiveRecord::Base
     initial_sync = (is_pubsubhubbub_supported != true && items.count == 0)
 
     begin
-      feed = Feedjira::Feed.fetch_and_parse url
+      feed_content = RestClient::Request.execute(method: :get, url: url, verify_ssl: false, user_agent: UA).body
+      feed = Feedjira::Feed.parse feed_content
+
+    # Skip if there is a 404
+    rescue RestClient::Exception => e
+      self.error_msg = "Feed returned #{e.http_code} on initial fetch"
+      save
+      return
+
+    # No parser valid
     rescue Feedjira::NoParserAvailable => e
       self.status = 'error'
       self.error_msg = e.message
@@ -36,7 +45,7 @@ class Feed < ActiveRecord::Base
 
     # Do some checks on the URL to make sure it should be added
     begin
-      head = RestClient::Request.execute(method: :head, url: entry.url, verify_ssl: false)
+      head = RestClient::Request.execute(method: :head, url: entry.url, verify_ssl: false, user_agent: UA)
       return unless head.headers[:content_type] && head.headers[:content_type].start_with?('text/html')
     rescue RestClient::ServerBrokeConnection
       # Ignore this

@@ -12,7 +12,7 @@ class FeedChecker
       begin
         # Get the feeds content
         begin
-          feed_content = RestClient::Request.execute(method: :get, url: feed.url, verify_ssl: false).body
+          feed_content = RestClient::Request.execute(method: :get, url: feed.url, verify_ssl: false, user_agent: UA).body
 
         # Skip if there is a 404
         rescue RestClient::Exception => e
