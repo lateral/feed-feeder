@@ -16,12 +16,10 @@ class FeedChecker
 
         # Skip if there is a 404
         rescue RestClient::Exception => e
-          feed.status = 'error'
           feed.error_msg = "Feed returned #{e.http_code} on initial fetch"
           feed.save
           next
         rescue SocketError
-          feed.status = 'error'
           feed.error_msg = 'Feed triggered SocketError on initial fetch'
           feed.save
           next
