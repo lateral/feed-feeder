@@ -32,7 +32,6 @@ class FeedChecker
 
         # Check if feed was previously detected as pubsubhubbub or if it supports it
         if feed.is_pubsubhubbub_supported ||
-           (feed.status.present? && feed.status != 'manually_processed') ||
            (hub[0].present? && hub[0].value.present? && rel_self[0].present? && rel_self[0].value.present?)
 
           # Update the feeds PubSubHubbub status
