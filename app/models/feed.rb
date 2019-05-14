@@ -111,7 +111,7 @@ class Feed < ActiveRecord::Base
   def run_python(script, arg)
     begin
       script = Rails.root.join('lib', script)
-      output = `PYTHONIOENCODING=utf-8 python #{script} '#{arg}' 2>&1`
+      output = `PYTHONIOENCODING=utf-8 python3 #{script} '#{arg}' 2>&1`
       JSON.parse(output, symbolize_names: true)
     rescue
       # return empty metadata hash

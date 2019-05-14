@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 from newspaper import Article
-from goose import Goose
+from goose3 import Goose
 import requests
 import json
 import sys
+import urllib3
+urllib3.disable_warnings()
 
 ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36'
 

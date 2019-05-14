@@ -1,5 +1,5 @@
 # This file is used by Rack-based servers to start the application.
-
+require 'resque/server'
 require ::File.expand_path('../config/environment', __FILE__)
 
 class AdministrationAuth < Rack::Auth::Basic
@@ -17,4 +17,6 @@ use AdministrationAuth, 'lateral' do |u, p|
   u == 'lateral' && p == ENV['HTTP_AUTH_PASSWORD']
 end if Rails.env.production?
 
-run Rails.application
+run Rack::URLMap.new \
+	"/" => Rails.application,
+ 	"/administration/resque" => Resque::Server.new

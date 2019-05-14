@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails'
 
-gem 'rails', '5.0.5'
+gem 'rails', '5.2.3'
 gem 'pg'
 
 gem 'god'
@@ -15,6 +15,8 @@ gem 'resque-scheduler'
 gem 'rest-client'
 gem 'simple-rss'
 gem 'feedjira'
+gem 'puma'
+gem 'tzinfo-data'
 
 group :development do
   gem 'awesome_print'
@@ -22,8 +24,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'launchy'
-  gem 'spring'
-  gem 'spring-commands-rspec'
 end
 
 gem 'rspec-rails', groups: [:development, :test]
