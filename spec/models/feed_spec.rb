@@ -10,7 +10,7 @@ RSpec.describe Feed, type: :model do
 
       # Get the feeds contents and create the model
       @feed_content = feed_content(:random)
-      @feed = FactoryGirl.create :feed
+      @feed = FactoryBot.create :feed
       @feed.update(url: @feed_content.url) if @feed_content.url.present?
     end
 
@@ -61,7 +61,7 @@ RSpec.describe Feed, type: :model do
     end
 
     it 'adds items with from_initial_sync=false if items already exist' do
-      FactoryGirl.create_list :item, 10, feed: @feed, feed_source: @feed.feed_source, from_initial_sync: true
+      FactoryBot.create_list :item, 10, feed: @feed, feed_source: @feed.feed_source, from_initial_sync: true
       stub_request(:any, @feed.url).to_return body: @feed_content.content
       stub_feed_run_python_method
       @feed.process_feed_contents
@@ -101,7 +101,7 @@ RSpec.describe Feed, type: :model do
     before(:each) do
       Feed.destroy_all
       stub_request(:head, /.*/).to_return status: 200, headers: { 'Content-Type' => 'text/html; utf-8' }
-      @feed = FactoryGirl.create :feed
+      @feed = FactoryBot.create :feed
     end
 
     it 'saves a single author' do
@@ -231,7 +231,7 @@ RSpec.describe Feed, type: :model do
 
         # Get the feeds contents and create the model
         @feed_content = feed_content(feed_filename)
-        @feed = FactoryGirl.create :feed
+        @feed = FactoryBot.create :feed
         @feed.update(url: @feed_content.url) if @feed_content.url.present?
       end
 

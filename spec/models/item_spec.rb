@@ -7,8 +7,8 @@ RSpec.describe Item, type: :model do
       init_fake_lateral!
 
       # This creates two feed sources, the first with 1 item, the other with 251 items
-      FactoryGirl.create :item
-      FactoryGirl.create_list :item, 251, feed_source: FactoryGirl.create(:feed_source, :with_feeds)
+      FactoryBot.create :item
+      FactoryBot.create_list :item, 251, feed_source: FactoryBot.create(:feed_source, :with_feeds)
 
       # Call the method and check that it sent 1 + 250 requests to Lateral API
       Item.send_missing_to_api
@@ -27,8 +27,8 @@ RSpec.describe Item, type: :model do
       init_fake_lateral!
 
       # Create a 1 day old item and 5 2 week old items
-      FactoryGirl.create :item, published: 1.day.ago
-      FactoryGirl.create_list :item, 5, published: 2.weeks.ago
+      FactoryBot.create :item, published: 1.day.ago
+      FactoryBot.create_list :item, 5, published: 2.weeks.ago
 
       # Call the method and check that it sent 1 request to Lateral API
       Item.send_missing_to_api
@@ -40,8 +40,8 @@ RSpec.describe Item, type: :model do
       init_fake_lateral!
 
       # Create an item that was sent to the api and 5 that weren't
-      FactoryGirl.create :item, sent_to_api: true
-      FactoryGirl.create_list :item, 5, sent_to_api: false
+      FactoryBot.create :item, sent_to_api: true
+      FactoryBot.create_list :item, 5, sent_to_api: false
 
       # Call the method and check that it sent 5 requests to Lateral API
       Item.send_missing_to_api
@@ -52,8 +52,8 @@ RSpec.describe Item, type: :model do
   describe '#send_to_api' do
     before(:each) do
       init_fake_lateral!
-      @key = FactoryGirl.create :key
-      @item = FactoryGirl.create :item
+      @key = FactoryBot.create :key
+      @item = FactoryBot.create :item
     end
 
     it 'adds an item' do
@@ -64,13 +64,14 @@ RSpec.describe Item, type: :model do
       expect(@item.lateral_id).to_not eq(nil)
       meta = { feed_source_id: @item.feed_source.id, title: @item.title, url: @item.url, image: @item.image,
                summary: @item.summary, guid: @item.guid }
-      expected_request = { body: hash_including(text: @item.body, meta: meta.to_json, published_at: @item.published.to_datetime.rfc3339) }
+      expected_request = { body: hash_including(text: @item.body, meta: meta.to_json,
+                                                published_at: @item.published.to_datetime.rfc3339) }
       url = %r{api.lateral.io/documents/#{@item.id}$}
       expect(WebMock).to have_requested(:post, url).with(expected_request)
     end
 
     it 'sends created_at if published missing' do
-      @item.update_attributes(published: nil)
+      @item.update_columns(published: nil)
       stub_request(:any, %r{api.lateral.io/documents/.*}).to_return body: { id: @item.id }.to_json
       @item.send_to_api(@key)
       expected_request = { body: hash_including(published_at: @item.created_at.to_datetime.rfc3339) }
@@ -83,19 +84,19 @@ RSpec.describe Item, type: :model do
       @item.send_to_api(@key)
       @item.reload
       expect(@item.sent_to_api).to eq(true)
-      expect(@item.error).to eq("{\"message\":\"Duplicate\"}")
+      expect(@item.error).to eq('{"message":"Duplicate"}')
     end
 
     it "doesn't add if the body is invalid" do
-      @item.update_attributes(body: '')
+      @item.update_columns(body: '')
       @item.send_to_api(@key)
       @item.reload
       expect(@item.sent_to_api).to eq(true)
-      expect(@item.error).to eq("{\"message\":\"Invalid body\"}")
+      expect(@item.error).to eq('{"message":"Invalid body"}')
     end
 
     it 'creates tags in the api from authors' do
-      item = FactoryGirl.create :item, :with_authors
+      item = FactoryBot.create :item, :with_authors
       stub_request(:any, %r{api.lateral.io/documents/#{item.id}/tags/.*$}).to_return body: ''
       item.send_to_api(@key)
       item.authors.each do |author|
@@ -106,31 +107,32 @@ RSpec.describe Item, type: :model do
     end
 
     it 'creates tag in the api from category' do
-      item = FactoryGirl.create :item
+      item = FactoryBot.create :item
       stub_request(:any, %r{api.lateral.io/documents/#{item.id}/tags/feed_sources_.*$}).to_return body: ''
       item.send_to_api(@key)
       feed_source = item.feed_source
       url = %r{api.lateral.io/documents/#{item.id}/tags/feed_sources_#{feed_source.id}$}
-      expected_request = { body: hash_including(type: 'sources', meta: { id: feed_source.id, name: feed_source.name }.to_json) }
+      expected_request = { body: hash_including(type: 'sources',
+                                                meta: { id: feed_source.id, name: feed_source.name }.to_json) }
       expect(WebMock).to have_requested(:post, url).with(expected_request)
     end
 
     it 'handles an error from the API' do
       stub_request(:any, %r{api.lateral.io/documents/\d+$}).to_return body: '{ "message": "less than 4 words recognized" }',
-                                                                  status: 406
+                                                                      status: 406
       @item.send_to_api(@key)
       @item.reload
       expect(@item.sent_to_api).to eq(true)
       expect(@item.rejected_by_api).to eq(true)
-      expect(@item.error).to eq("{ \"message\": \"less than 4 words recognized\" }")
+      expect(@item.error).to eq('{ "message": "less than 4 words recognized" }')
     end
   end
 
   describe '#create' do
     it 'errors if creating a duplicate' do
-      item = FactoryGirl.create :item
+      item = FactoryBot.create :item
       expect do
-        FactoryGirl.create :item, feed_source: item.feed_source, guid: item.guid
+        FactoryBot.create :item, feed_source: item.feed_source, guid: item.guid
       end.to raise_exception(ActiveRecord::RecordNotUnique)
     end
   end

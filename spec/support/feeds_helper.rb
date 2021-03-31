@@ -33,9 +33,9 @@ module FeedsHelper
     allow_any_instance_of(Feed).to receive(:run_python) {
       object || {
         author: Faker::Name.name,
-        body: Faker::Lorem.paragraph(3),
+        body: Faker::Lorem.paragraph(sentence_count: 3),
         image: Faker::Internet.url,
-        keywords: Faker::Lorem.words(5),
+        keywords: Faker::Lorem.words(number: 5),
         published: '',
         summary: Faker::Lorem.paragraph,
         title: Faker::Lorem.sentence,

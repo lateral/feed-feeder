@@ -14,9 +14,9 @@ RSpec.describe Author, type: :model do
       author_2 = Author.create(name: 'Source Reuters')
       author_3 = Author.create(name: 'Allowed')
       author_4 = Author.create(name: 'photograph test')
-      item_1 = FactoryGirl.create(:item)
-      item_2 = FactoryGirl.create(:item)
-      item_3 = FactoryGirl.create(:item)
+      item_1 = FactoryBot.create(:item)
+      item_2 = FactoryBot.create(:item)
+      item_3 = FactoryBot.create(:item)
       item_1.authors << author_1
       item_1.authors << author_2
       item_2.authors << author_1

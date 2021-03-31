@@ -1,5 +1,5 @@
 Resque.redis = "127.0.0.1:6379"
-Resque.redis.namespace = "resque:#{Rails.application.class.parent_name}"
+Resque.redis.namespace = "resque:#{Rails.application.class.module_parent.name}"
 
 Dir["#{Rails.root}/app/jobs/*.rb"].each { |file| require file }
 

@@ -19,6 +19,8 @@ class FakeLateral < Sinatra::Base
     @documents = []
   end
 
+  set :reload_templates, false
+
   ['/documents/?', '/documents/:id/?'].each do |path|
     post path do
       content_type :json

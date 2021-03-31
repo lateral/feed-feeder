@@ -18,32 +18,33 @@ class Item < ActiveRecord::Base
     end
   end
 
-  def send_to_api(key, from_initial_sync = false)
+  def send_to_api(key, _from_initial_sync = false)
     return mark_error('Invalid body') if body && body.empty?
     return mark_error('Duplicate') if duplicate?(key)
 
-    meta = { feed_source_id: feed_source.id, title: title, url: url, image: image, summary: summary, guid: guid }.to_json
+    meta = { feed_source_id: feed_source.id, title: title, url: url, image: image, summary: summary,
+             guid: guid }.to_json
     date = published.present? ? published : created_at
     data = { text: body, meta: meta, published_at: date.to_datetime.rfc3339 }.to_json
     headers = { content_type: :json, 'Subscription-Key' => key.key }
     response = JSON.parse RestClient.post("#{key.endpoint}/documents/#{id}", data, headers)
 
-    update_attributes(sent_to_api: true, lateral_id: response['id'])
+    update(sent_to_api: true, lateral_id: response['id'])
 
     # Add authors as tags
     authors.each do |author|
-      begin
-        meta = { id: author.id, name: author.name }.to_json
-        RestClient.post("#{key.endpoint}/documents/#{id}/tags/#{author.hash_id}", { type: 'authors', meta: meta }.to_json, headers)
-      rescue RestClient::Exception => e; end
+      meta = { id: author.id, name: author.name }.to_json
+      RestClient.post("#{key.endpoint}/documents/#{id}/tags/#{author.hash_id}",
+                      { type: 'authors', meta: meta }.to_json, headers)
+    rescue RestClient::Exception => e
     end
 
     # Add feeds as tags
     begin
       meta = { id: feed_source.id, name: feed_source.name }.to_json
-      RestClient.post("#{key.endpoint}/documents/#{id}/tags/feed_sources_#{feed_source.id}", { type: 'sources', meta: meta }.to_json, headers)
+      RestClient.post("#{key.endpoint}/documents/#{id}/tags/feed_sources_#{feed_source.id}",
+                      { type: 'sources', meta: meta }.to_json, headers)
     rescue RestClient::Exception => e; end
-
   # Ignore this type of error, wait until next time
   rescue Errno::EHOSTUNREACH
     false
@@ -70,6 +71,6 @@ class Item < ActiveRecord::Base
       error = { message: error }.to_json
     end
 
-    update_attributes(sent_to_api: true, error: error)
+    update(sent_to_api: true, error: error)
   end
 end

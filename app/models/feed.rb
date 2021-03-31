@@ -13,7 +13,7 @@ class Feed < ActiveRecord::Base
 
     begin
       feed_content = RestClient::Request.execute(method: :get, url: url, verify_ssl: false, user_agent: UA).body
-      feed = Feedjira::Feed.parse feed_content
+      feed = Feedjira.parse feed_content
 
     # Skip if there is a 404
     rescue RestClient::Exception => e
@@ -80,14 +80,15 @@ class Feed < ActiveRecord::Base
       if entry_hash[:author].present?
         entry_hash[:author].split(',').map(&:strip).each do |author|
           next if author.start_with?(*AUTHORS_BLACKLIST['name_start_match'])
+
           hash_id = Author.generate_hash(author)
           next if AUTHORS_BLACKLIST['hash_ids'].include? hash_id
+
           item.authors << Author.where(hash_id: hash_id).first_or_initialize do |a|
             a.name = author
           end
         end
       end
-
     rescue ActiveRecord::RecordNotUnique
       logger.error "Tried to add duplicate: #{item.guid}"
     end
