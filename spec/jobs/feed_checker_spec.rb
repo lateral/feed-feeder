@@ -33,7 +33,7 @@ RSpec.describe FeedChecker do
           params = {
             'hub.mode' => 'subscribe',
             'hub.topic' => @feed.url,
-            'hub.callback' => ENV['FEED_FEEDER_DOMAIN'] + 'feeds/' + @feed.id.to_s,
+            'hub.callback' => ENV['FEED_FEEDER_DOMAIN'] || '' + 'feeds/' + @feed.id.to_s,
             'hub.verify' => 'sync'
           }
           expect(a_request(:post, @feed_content.hub).with(body: params)).to have_been_made
