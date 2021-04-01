@@ -1,11 +1,11 @@
 check_feeds:
-  cron: "*/15 * * * *"
+  cron: "*/30 * * * *"
   class: FeedChecker
   args:
   queue: feed_checker
-  description: "Checks all the feeds every 15 minutes and add new items"
+  description: "Checks all the feeds every 30 minutes and add new items"
 send_items:
-  cron: "*/15 * * * *"
+  cron: "*/30 * * * *"
   class: ItemsToApi
   args:
   queue: items_to_api

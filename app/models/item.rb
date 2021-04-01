@@ -67,7 +67,7 @@ class Item < ActiveRecord::Base
   def mark_error(error)
     begin
       JSON.parse(error)
-    rescue JSON::ParserError, Oj::ParseError => e
+    rescue JSON::ParserError => e
       error = { message: error }.to_json
     end
 

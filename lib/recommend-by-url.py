@@ -4,6 +4,11 @@ from goose3 import Goose
 import requests
 import json
 import sys
+
+# Fix timezone warning
+import warnings
+warnings.filterwarnings("ignore")
+
 import urllib3
 urllib3.disable_warnings()
 
