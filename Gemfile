@@ -17,6 +17,7 @@ gem 'puma', '5.2.2'
 gem 'tzinfo-data', '1.2021.1'
 gem 'sentry-ruby', '4.3.1'
 gem 'sentry-rails', '4.3.3'
+gem 'resque-sentry', '1.2.0'
 
 group :development do
   gem 'awesome_print', '1.9.2'
