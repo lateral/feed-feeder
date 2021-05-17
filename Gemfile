@@ -6,7 +6,7 @@ gem 'rails', '6.1.3.1'
 gem 'pg', '1.2.3'
 
 gem 'god', '0.13.7'
-gem 'nokogiri', '1.11.2'
+gem 'nokogiri', '1.11.4'
 gem 'resque', '2.0.0'
 gem 'resque-lock', '1.1.0'
 gem 'resque-scheduler', '4.4.0'
