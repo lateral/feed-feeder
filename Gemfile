@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails', '2.7.6'
 
-gem 'rails', '6.1.3.1'
+gem 'rails', '6.1.3.2'
 gem 'pg', '1.2.3'
 
 gem 'god', '0.13.7'
