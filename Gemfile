@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails', '2.7.6'
 
-gem 'rails', '6.1.3.2'
+gem 'rails', '6.1.4.1'
 gem 'pg', '1.2.3'
 
 gem 'god', '0.13.7'
@@ -15,9 +15,8 @@ gem 'simple-rss', '1.3.3'
 gem 'feedjira', '3.1.2'
 gem 'puma', '5.3.1'
 gem 'tzinfo-data', '1.2021.1'
-gem 'sentry-ruby', '4.3.1'
-gem 'sentry-rails', '4.3.3'
-gem 'resque-sentry', '1.2.0'
+gem 'sentry-rails', '4.7.3'
+gem 'sentry-resque', '4.7.3'
 
 group :development do
   gem 'awesome_print', '1.9.2'
