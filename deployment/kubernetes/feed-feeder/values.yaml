@@ -1,0 +1,81 @@
+feedFeeder:
+  registry: "ghcr.io"
+  image: "lateral/feed-feeder"
+  tag: "master"
+  imagePullPolicy: Always
+  # Please uncomment and refer secret name with registry access credentials
+  imagePullSecrets: []
+  #  - name: regcred
+  sentry:
+    dsn: ""
+
+  # Storage Class for Persistent Volume Claims
+  storageClass: standard
+  nodeSelector: {}
+    #node-type: "test-and-local"
+
+  # Use `rake secret` to generate.
+  secretKeyBase: "123456789"
+
+  database:
+    host: "postgres-feed-feeder"
+    port: "5432"
+    name: "feed_feeder"
+    user: "feed_feeder"
+    password: "test"
+
+  dns:
+    ingressClassName: "nginx"
+    hostname: ""
+    certSecret: ""
+
+  replicas: 2
+  resources:
+    limits:
+      cpu: "1000m"
+      memory: "2Gi"
+    requests:
+      cpu: "50m"
+      memory: "256Mi"
+
+  resque:
+    replicas: 2
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2Gi"
+      requests:
+        cpu: "50m"
+        memory: "256Mi"
+
+  resqueScheduler:
+    replicas: 2
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2Gi"
+      requests:
+        cpu: "50m"
+        memory: "256Mi"
+
+  redis:
+    url: "redis://redis-feed-feeder:6379"
+    replicas: 2
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2Gi"
+      requests:
+        cpu: "50m"
+        memory: "256Mi"
+
+  postgres:
+    external: true
+    storage: "5Gi"
+    resources:
+      limits:
+        cpu: "200m"
+        memory: "1Gi"
+      requests:
+        cpu: "50m"
+        memory: "128Mi"

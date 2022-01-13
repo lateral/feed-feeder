@@ -9,6 +9,7 @@ x-environment-dp: &ff-env
     DB_DATABASE: "feed_feeder"
     DB_USERNAME: "feed_feeder"
     DB_PW: "test"
+    REDIS_URL: "redis://redis:6379"
 
 services:
   postgres-ff:
@@ -45,7 +46,7 @@ services:
     build:
       context: ../../
       dockerfile: ./deployment/docker/Dockerfile
-    command: [ "bin/rake", "-f", "Rakefile", "environment", "resque:work"]
+    command: ["bin/rake", "-f", "Rakefile", "environment", "resque:work"]
     environment:
       QUEUE: '*'
     <<: *ff-env
@@ -54,12 +55,15 @@ services:
     build:
       context: ../../
       dockerfile: ./deployment/docker/Dockerfile
-    command: [ "bin/rake", "-f", "Rakefile", "environment", "resque:scheduler"]
+    command: ["bin/rake", "-f", "Rakefile", "environment", "resque:scheduler"]
     <<: *ff-env
   redis:
     image: redis:alpine
     ports:
       - "6379:6379"
+    volumes:
+      - "redis_ff_data:/data"
 
 volumes:
   pg_ff_data:
+  redis_ff_data:

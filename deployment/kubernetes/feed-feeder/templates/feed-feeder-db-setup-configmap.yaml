@@ -1,0 +1,14 @@
+# configMap for DAT db migration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: feed-feeder-db-setup
+  labels:
+    app: dat
+    role: feed-feeder-db-setup
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-weight": "-5"
+data:
+  {{- template "feed-feeder.config_map_data" . }}

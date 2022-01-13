@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feed-feeder-resque
+  labels:
+    app: feed-feeder-resque
+    role: feed-feeder-resque
+  namespace: {{ .Release.Namespace }}
+spec:
+  replicas: {{ .Values.feedFeeder.resque.replicas }}
+  selector:
+    matchLabels:
+      role: feed-feeder-resque
+  template:
+    metadata:
+      labels:
+        app: feed-feeder-resque
+        role: feed-feeder-resque
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/feed-feeder-configmap.yaml") . | sha256sum }}
+        checksum/secret: {{ include (print $.Template.BasePath "/feed-feeder-secret.yaml") . | sha256sum }}
+    spec:
+      nodeSelector:
+      {{ toYaml .Values.feedFeeder.nodeSelector | indent 8 }}
+      securityContext:
+        runAsUser: 10009
+      {{- if .Values.feedFeeder.imagePullSecrets }}
+      imagePullSecrets:
+      {{ toYaml .Values.feedFeeder.imagePullSecrets | indent 8 }}
+      {{- end }}
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                topologyKey: "kubernetes.io/hostname"
+                labelSelector:
+                  matchExpressions:
+                  - key: app
+                    operator: In
+                    values:
+                    - feed-feeder-resque
+                  - key: role
+                    operator: In
+                    values:
+                    - feed-feeder-resque
+      initContainers:
+        - name: wait-for-pg
+          image: busybox:1.31
+          securityContext:
+            allowPrivilegeEscalation: false
+          command: ['sh', '-c', 'until nc -z {{ .Values.feedFeeder.database.host }} {{ .Values.feedFeeder.database.port }} > /dev/null 2>&1 ; do echo "Postgres is unavailable - sleeping"; sleep 1; done']
+      containers:
+        - name: resque
+          image: "{{ .Values.feedFeeder.registry }}/{{ .Values.feedFeeder.image }}:{{ .Values.feedFeeder.tag }}"
+          imagePullPolicy: {{ .Values.feedFeeder.imagePullPolicy }}
+          securityContext:
+            allowPrivilegeEscalation: false
+          {{- with .Values.feedFeeder.resources }}
+          resources:
+            limits:
+              cpu: {{ .limits.cpu }}
+              memory: {{ .limits.memory }}
+            requests:
+              cpu: {{ .requests.cpu }}
+              memory: {{ .requests.memory }}
+          {{- end }}
+          command: ["bin/rake", "-f", "Rakefile", "environment", "resque:work"]
+          env:
+            - name: QUEUE
+              value: '*'
+          envFrom:
+            - configMapRef:
+                name: feed-feeder
+            - secretRef:
+                name: feed-feeder

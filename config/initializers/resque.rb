@@ -1,8 +1,13 @@
 require 'resque/failure/multiple'
 require 'resque/failure/redis'
 
-REDIS_HOST = ENV['REDIS_HOST']  || 'redis:6379'
-Resque.redis = REDIS_HOST
+
+if Rails.env.production?
+  uri = URI.parse(ENV["REDIS_URL"])
+else
+  uri = URI.parse("redis://localhost:6379")
+end
+Resque.redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 Resque.redis.namespace = "resque:#{Rails.application.class.module_parent.name}"
 
 Dir["#{Rails.root}/app/jobs/*.rb"].each { |file| require file }

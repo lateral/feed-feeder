@@ -33,8 +33,6 @@ jobs:
     strategy:
       matrix:
         ruby-version: [2.7.2]
-    env:
-      REDIS_HOST: "127.0.0.1:6379"
     steps:
       - uses: actions/checkout@v2
       - name: Set up Ruby ${{ matrix.ruby-version }}
@@ -53,7 +51,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    if: ${{ ! github.head_ref  }}
+#    if: ${{ ! github.head_ref  }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -64,5 +62,5 @@ jobs:
         uses: docker/setup-buildx-action@v1
       - name: Docker build & push
         run: |
-          docker build -t ghcr.io/lateral/feed-feeder:${github.ref_name} -f deployment/docker/Dockerfile .
-          docker push ghcr.io/lateral/feed-feeder:${github.ref_name}
+          docker build -t ghcr.io/lateral/feed-feeder:dev -f deployment/docker/Dockerfile .
+          docker push ghcr.io/lateral/feed-feeder:dev

@@ -1,0 +1,17 @@
+# service that routes to database
+{{- if not .Values.feedFeeder.postgres.external }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-feed-feeder
+  labels:
+    app: feed-feeder
+    role: postgres-feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  type: NodePort
+  ports:
+    - port: 5432
+  selector:
+    role: postgres-feed-feeder
+{{- end }}
