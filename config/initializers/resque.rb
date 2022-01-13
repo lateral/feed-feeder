@@ -1,7 +1,8 @@
 require 'resque/failure/multiple'
 require 'resque/failure/redis'
 
-Resque.redis = "127.0.0.1:6379"
+REDIS_HOST = ENV['REDIS_HOST']  || 'redis:6379'
+Resque.redis = REDIS_HOST
 Resque.redis.namespace = "resque:#{Rails.application.class.module_parent.name}"
 
 Dir["#{Rails.root}/app/jobs/*.rb"].each { |file| require file }

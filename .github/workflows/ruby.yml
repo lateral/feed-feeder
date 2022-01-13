@@ -3,6 +3,8 @@ name: Ruby
 on:
   push:
     branches: [master]
+    tags:
+      - v*
   pull_request:
     branches: [master]
 
@@ -30,8 +32,9 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: [2.7.2, 2.5.1]
-
+        ruby-version: [2.7.2]
+    env:
+      REDIS_HOST: "127.0.0.1:6379"
     steps:
       - uses: actions/checkout@v2
       - name: Set up Ruby ${{ matrix.ruby-version }}
@@ -47,3 +50,19 @@ jobs:
         run: |
           bundle exec rails db:setup --trace
           bundle exec rspec
+
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ ! github.head_ref  }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Docker Login
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${GITHUB_ACTOR} --password-stdin
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Docker build & push
+        run: |
+          docker build -t ghcr.io/lateral/feed-feeder:${github.ref_name} -f deployment/docker/Dockerfile .
+          docker push ghcr.io/lateral/feed-feeder:${github.ref_name}
