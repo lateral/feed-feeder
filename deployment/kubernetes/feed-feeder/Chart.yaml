@@ -1,0 +1,11 @@
+apiVersion: v1
+name: Feed Feeder
+version: 1.0.0
+icon: https://lateral.io/images/logo-text.png
+description: Helm Chart for Feed Feeder
+keywords:
+  - Helm Chart
+  - Feed Feeder
+maintainers:
+  - name: Lateral GmbH
+    email: hello@lateral.io

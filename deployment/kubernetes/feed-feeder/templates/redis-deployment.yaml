@@ -1,0 +1,56 @@
+# Redis deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-feed-feeder
+  labels:
+    app: feed-feeder
+    role: redis-feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  strategy:
+    type: Recreate
+  replicas: {{ .Values.feedFeeder.redis.replicas }}
+  selector:
+    matchLabels:
+      app: feed-feeder
+      role: redis-feed-feeder
+  template:
+    metadata:
+      labels:
+        app: feed-feeder
+        role: redis-feed-feeder
+    spec:
+      {{- if .Values.feedFeeder.nodeSelector }}
+      nodeSelector:
+      {{ toYaml .Values.feedFeeder.nodeSelector | indent 8 }}
+      {{- end }}
+      automountServiceAccountToken: false
+      {{- if .Values.feedFeeder.imagePullSecrets }}
+      imagePullSecrets:
+      {{ toYaml .Values.feedFeeder.imagePullSecrets | indent 8 }}
+      {{- end }}
+      containers:
+        - name: redis-feed-feeder
+          image: "redis:alpine"
+          imagePullPolicy: {{ .Values.feedFeeder.imagePullPolicy }}
+          securityContext:
+            allowPrivilegeEscalation: false
+          {{- with .Values.feedFeeder.redis.resources }}
+          resources:
+            limits:
+              cpu: {{ .limits.cpu }}
+              memory: {{ .limits.memory }}
+            requests:
+              cpu: {{ .requests.cpu }}
+              memory: {{ .requests.memory }}
+          {{- end }}
+          ports:
+            - containerPort: 6379
+          volumeMounts:
+            - mountPath: /data
+              name: redis-data
+      volumes:
+        - name: redis-data
+          persistentVolumeClaim:
+            claimName: redis-feed-feeder-pvc-{{ .Release.Namespace }}

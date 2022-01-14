@@ -1,0 +1,15 @@
+# service that routes to feed-feeder (cluster-internal)
+apiVersion: v1
+kind: Service
+metadata:
+  name: feed-feeder
+  labels:
+    app: feed-feeder
+    role: feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  ports:
+    - port: 9292
+      protocol: TCP
+  selector:
+    role: feed-feeder

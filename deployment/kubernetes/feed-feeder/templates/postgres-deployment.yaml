@@ -1,0 +1,67 @@
+# Postgres deployment
+{{- if not .Values.feedFeeder.postgres.external }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-feed-feeder
+  labels:
+    app: feed-feeder
+    role: postgres-feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  strategy:
+    type: Recreate
+  replicas: 1
+  selector:
+    matchLabels:
+      app: feed-feeder
+      role: postgres-feed-feeder
+  template:
+    metadata:
+      labels:
+        app: feed-feeder
+        role: postgres-feed-feeder
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/postgres-configmap.yaml") . | sha256sum }}
+        checksum/secret: {{ include (print $.Template.BasePath "/postgres-secret.yaml") . | sha256sum }}
+    spec:
+      {{- if .Values.feedFeeder.nodeSelector }}
+      nodeSelector:
+      {{ toYaml .Values.feedFeeder.nodeSelector | indent 8 }}
+      {{- end }}
+      automountServiceAccountToken: false
+      {{- if .Values.feedFeeder.imagePullSecrets }}
+      imagePullSecrets:
+      {{ toYaml .Values.feedFeeder.imagePullSecrets | indent 8 }}
+      {{- end }}
+      containers:
+        - name: postgres-feed-feeder
+          image: "postgres:9.5-alpine"
+          imagePullPolicy: {{ .Values.feedFeeder.imagePullPolicy }}
+          securityContext:
+            allowPrivilegeEscalation: false
+          {{- with .Values.feedFeeder.postgres.resources }}
+          resources:
+            limits:
+              cpu: {{ .limits.cpu }}
+              memory: {{ .limits.memory }}
+            requests:
+              cpu: {{ .requests.cpu }}
+              memory: {{ .requests.memory }}
+          {{- end }}
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - configMapRef:
+                name: postgres-feed-feeder
+            - secretRef:
+                name: postgres-feed-feeder
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgresdb
+              subPath: postgres-feed-feeder
+      volumes:
+        - name: postgresdb
+          persistentVolumeClaim:
+            claimName: postgres-feed-feeder-pvc-{{ .Release.Namespace }}
+{{- end }}

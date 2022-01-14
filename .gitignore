@@ -24,3 +24,9 @@ coverage
 
 # Ignore .env*
 /.env*
+
+# Ignore deployment specific Helm values
+/deployment/kubernetes/values/*
+
+# Ignore PyCharm Settings
+.idea

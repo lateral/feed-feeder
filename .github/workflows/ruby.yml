@@ -3,6 +3,8 @@ name: Ruby
 on:
   push:
     branches: [master]
+    tags:
+      - v*
   pull_request:
     branches: [master]
 
@@ -30,8 +32,7 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: [2.7.2, 2.5.1]
-
+        ruby-version: [2.7.2]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Ruby ${{ matrix.ruby-version }}
@@ -47,3 +48,42 @@ jobs:
         run: |
           bundle exec rails db:setup --trace
           bundle exec rspec
+
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' || github.ref_type == 'tag' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Docker Login
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${GITHUB_ACTOR} --password-stdin
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Docker build & push Feed Feeder
+        run: |
+          docker build -t ghcr.io/lateral/feed-feeder:${github.ref.name} -f deployment/docker/feed-feeder/Dockerfile .
+          docker push ghcr.io/lateral/feed-feeder:${github.ref.name}
+      - name: Docker build & push Images
+        run: |
+          docker build -t ghcr.io/lateral/images:${github.ref.name} -f deployment/docker/images/Dockerfile images/
+          docker push ghcr.io/lateral/images:${github.ref.name}
+
+  build-tmp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Docker Login
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${GITHUB_ACTOR} --password-stdin
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Docker build & push Feed Feeder
+        run: |
+          docker build -t ghcr.io/lateral/feed-feeder:dev -f deployment/docker/feed-feeder/Dockerfile .
+          docker push ghcr.io/lateral/feed-feeder:dev
+      - name: Docker build & push Images
+        run: |
+          docker build -t ghcr.io/lateral/images:dev -f deployment/docker/images/Dockerfile images/
+          docker push ghcr.io/lateral/images:dev

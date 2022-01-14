@@ -1,0 +1,69 @@
+version: "3.7"
+
+x-environment-dp: &ff-env
+  environment:
+    RAILS_ENV: "production"
+    SECRET_KEY_BASE: "123456789"
+    DB_HOST: "postgres-ff"
+    DB_PORT: "5432"
+    DB_DATABASE: "feed_feeder"
+    DB_USERNAME: "feed_feeder"
+    DB_PW: "test"
+    REDIS_URL: "redis://redis:6379"
+
+services:
+  postgres-ff:
+    image: postgres:9.5-alpine
+    environment:
+      POSTGRES_PASSWORD: "test"
+      POSTGRES_USER: "feed_feeder"
+      POSTGRES_DB: "feed_feeder"
+      PGDATA: "/pg_ff/data"
+    volumes:
+      - "pg_ff_data:/pg_ff/data"
+  setup-db:
+    image: "feed-feeder:latest"
+    build:
+      context: ../../
+      dockerfile: ./deployment/docker/feed-feeder/Dockerfile
+      labels:
+        - "io.lateral.commit-info=${CI_COMMIT_REF_SLUG:-dev}-${CI_COMMIT_SHORT_SHA:-latest}"
+    command: [ "sh", "-c", "sleep 10; RAILS_ENV=production bin/rake db:setup || RAILS_ENV=production bin/rake db:migrate" ]
+    <<: *ff-env
+  feed-feeder:
+    image: "feed-feeder:latest"
+    build:
+      context: ../../
+      dockerfile: ./deployment/docker/feed-feeder/Dockerfile
+      labels:
+        - "io.lateral.commit-info=${CI_COMMIT_REF_SLUG:-dev}-${CI_COMMIT_SHORT_SHA:-latest}"
+    command: [ "/usr/local/bundle/bin/puma", "--tag", "feed-feeder", "-e", "production", "-b", "tcp://0.0.0.0:9292"]
+    <<: *ff-env
+    ports:
+      - "9292:9292"
+  feed-feeder-resque:
+    image: "feed-feeder:latest"
+    build:
+      context: ../../
+      dockerfile: ./deployment/docker/feed-feeder/Dockerfile
+    command: ["bin/rake", "-f", "Rakefile", "environment", "resque:work"]
+    environment:
+      QUEUE: '*'
+    <<: *ff-env
+  feed-feeder-resque-scheduler:
+    image: "feed-feeder:latest"
+    build:
+      context: ../../
+      dockerfile: ./deployment/docker/feed-feeder/Dockerfile
+    command: ["bin/rake", "-f", "Rakefile", "environment", "resque:scheduler"]
+    <<: *ff-env
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - "redis_ff_data:/data"
+
+volumes:
+  pg_ff_data:
+  redis_ff_data:

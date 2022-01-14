@@ -1,0 +1,49 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: images
+  namespace: {{ .Release.Namespace }}
+spec:
+  schedule: {{ .Values.feedFeeder.images.cronSchedule | quote }}
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 300
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: images
+          labels:
+            app: feed-feeder
+        spec:
+          {{- if .Values.feedFeeder.nodeSelector }}
+          nodeSelector:
+          {{ toYaml .Values.feedFeeder.nodeSelector | indent 8 }}
+          {{- end }}
+          automountServiceAccountToken: false
+          securityContext:
+            runAsUser: 10011
+          restartPolicy: OnFailure
+          {{- if .Values.feedFeeder.images.imagePullSecrets }}
+          imagePullSecrets:
+          {{ toYaml .Values.feedFeeder.images.imagePullSecrets | indent 8 }}
+          {{- end }}
+          containers:
+            - name: generate-images
+              image: "{{ .Values.feedFeeder.images.registry }}/{{ .Values.feedFeeder.images.image }}:{{ .Values.feedFeeder.images.tag }}"
+              imagePullPolicy: {{ .Values.feedFeeder.images.imagePullPolicy }}
+              securityContext:
+                allowPrivilegeEscalation: false
+              command: ["ruby", "generate.rb"]
+              envFrom:
+                - configMapRef:
+                    name: images
+                - secretRef:
+                    name: images
+              volumeMounts:
+                - mountPath: /app/images_storage_creds.json
+                  name: google-creds
+                  subPath: images_storage_creds.json
+          volumes:
+            - name: google-creds
+              secret:
+                secretName: images-storage
