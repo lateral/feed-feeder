@@ -1,0 +1,14 @@
+# configMap for Postgres
+{{- if not .Values.feedFeeder.postgres.external }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-feed-feeder
+  labels:
+    app: feed-feeder
+    role: postgres-feed-feeder
+  namespace: {{ .Release.Namespace }}
+data:
+  POSTGRES_USER: {{ .Values.feedFeeder.database.user | quote }}
+  POSTGRES_DB: {{ .Values.feedFeeder.database.name | quote }}
+{{- end }}

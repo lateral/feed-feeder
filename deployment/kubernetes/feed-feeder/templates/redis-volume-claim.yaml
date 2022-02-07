@@ -1,0 +1,15 @@
+# Postgres storage
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: redis-feed-feeder-pvc-{{ .Release.Namespace }}
+  labels:
+    app: feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  storageClassName: {{ .Values.feedFeeder.storageClass }}
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.feedFeeder.redis.storage }}

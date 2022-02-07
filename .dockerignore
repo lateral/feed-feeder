@@ -1,0 +1,6 @@
+.editorconfig
+.gitignore
+.github
+
+deployment/kubernetes
+images

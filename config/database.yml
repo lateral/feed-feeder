@@ -19,6 +19,7 @@ production:
   encoding: utf8
   reconnect: false
   host: <%= ENV['DB_HOST'] %>
+  port: <%= ENV['DB_PORT'] %>
   database: <%= ENV['DB_DATABASE'] %>
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PW'] %>

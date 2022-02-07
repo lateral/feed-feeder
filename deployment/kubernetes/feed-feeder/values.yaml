@@ -1,0 +1,98 @@
+feedFeeder:
+  registry: "ghcr.io"
+  image: "lateral/feed-feeder"
+  tag: "dev"
+  imagePullPolicy: Always
+  # Please uncomment and refer secret name with registry access credentials
+  imagePullSecrets: []
+  #  - name: regcred
+  sentry:
+    dsn: ""
+
+  # Storage Class for Persistent Volume Claims
+  storageClass: standard
+  nodeSelector: {}
+    #node-type: "test-and-local"
+
+  # Use `rake secret` to generate.
+  secretKeyBase: "123456789"
+
+  httpAuthPassword: ""
+
+  database:
+    host: "postgres-feed-feeder"
+    port: "5432"
+    name: "feed_feeder"
+    user: "feed_feeder"
+    password: "test"
+
+  dns:
+    ingressClassName: "nginx"
+    hostname: ""
+    certSecret: ""
+
+  replicas: 1
+  resources:
+    limits:
+      cpu: "1000m"
+      memory: "2Gi"
+    requests:
+      cpu: "50m"
+      memory: "256Mi"
+
+  resque:
+    replicas: 2
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2Gi"
+      requests:
+        cpu: "50m"
+        memory: "256Mi"
+
+  resqueScheduler:
+    replicas: 1
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2Gi"
+      requests:
+        cpu: "50m"
+        memory: "256Mi"
+
+  redis:
+    url: "redis://redis-feed-feeder:6379"
+    replicas: 1
+    storage: "5Gi"
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2Gi"
+      requests:
+        cpu: "50m"
+        memory: "256Mi"
+
+  postgres:
+    external: true
+    storage: "5Gi"
+    resources:
+      limits:
+        cpu: "200m"
+        memory: "1Gi"
+      requests:
+        cpu: "50m"
+        memory: "128Mi"
+
+  images:
+    registry: "ghcr.io"
+    image: "lateral/images"
+    tag: "dev"
+    imagePullPolicy: Always
+    # Please uncomment and refer secret name with registry access credentials
+    imagePullSecrets: [ ]
+    #  - name: regcred
+    cronSchedule: "*/5 * * * *"
+    # Pass Google Cloud json credentials file with '--set-file=feedFeeder.images.googleJsonKey=<PATH_TO_FILE>'
+    googleJsonKey: ""
+    googleProject: "lateral-prod"
+    googleBucket: "images-new.getnewsbot.com"

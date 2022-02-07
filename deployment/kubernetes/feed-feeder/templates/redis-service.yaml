@@ -1,0 +1,15 @@
+# service that routes to redis
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-feed-feeder
+  labels:
+    app: feed-feeder
+    role: redis-feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: 6379
+  selector:
+    role: redis-feed-feeder

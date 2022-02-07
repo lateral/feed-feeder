@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: feed-feeder-ingress
+  namespace: {{ .Release.Namespace }}
+spec:
+  ingressClassName: {{ .Values.feedFeeder.dns.ingressClassName }}
+  rules:
+  - host: {{ .Values.feedFeeder.dns.hostname }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: feed-feeder
+            port:
+              number: 9292
+        path: /
+        pathType: Prefix
+  tls:
+    - hosts:
+      - {{ required "A valid hostname is required!" .Values.feedFeeder.dns.hostname }}
+      {{- if .Values.feedFeeder.dns.certSecret }}
+      secretName: {{ .Values.feedFeeder.dns.certSecret }}
+      {{- end }}

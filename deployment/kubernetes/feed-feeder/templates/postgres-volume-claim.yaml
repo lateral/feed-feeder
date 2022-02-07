@@ -1,0 +1,17 @@
+# Postgres storage
+{{- if not .Values.feedFeeder.postgres.external }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: postgres-feed-feeder-pvc-{{ .Release.Namespace }}
+  labels:
+    app: feed-feeder
+  namespace: {{ .Release.Namespace }}
+spec:
+  storageClassName: {{ .Values.feedFeeder.storageClass }}
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.feedFeeder.postgres.storage }}
+{{- end }}
