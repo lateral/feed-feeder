@@ -26,10 +26,12 @@ feedFeeder:
     user: "feed_feeder"
     password: "test"
 
-  dns:
+  ingress:
     ingressClassName: "nginx"
-    hostname: ""
-    certSecret: ""
+    hostname: "feed-feeder.getnewsbot.com"
+    certSecret: "feed-feeder-cert"
+    # add annotations if necessary
+    annotations: {}
 
   replicas: 1
   resources:
