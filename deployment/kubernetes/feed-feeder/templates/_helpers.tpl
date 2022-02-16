@@ -6,7 +6,7 @@
   DB_USERNAME: {{ .Values.feedFeeder.database.user | quote }}
   RAILS_ENV: "production"
   REDIS_URL: {{ .Values.feedFeeder.redis.url | quote }}
-  FEED_FEEDER_DOMAIN: {{ .Values.feedFeeder.dns.hostname }}
+  FEED_FEEDER_DOMAIN: {{ .Values.feedFeeder.ingress.hostname }}
 {{- end }}
 
 # Data for secret

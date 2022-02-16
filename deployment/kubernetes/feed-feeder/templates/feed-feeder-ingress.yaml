@@ -3,10 +3,13 @@ kind: Ingress
 metadata:
   name: feed-feeder-ingress
   namespace: {{ .Release.Namespace }}
+  {{- if .Values.feedFeeder.ingress.annotations }}
+  annotations: {{ toYaml .Values.feedFeeder.ingress.annotations | nindent 4 }}
+  {{- end }}
 spec:
-  ingressClassName: {{ .Values.feedFeeder.dns.ingressClassName }}
+  ingressClassName: {{ .Values.feedFeeder.ingress.ingressClassName }}
   rules:
-  - host: {{ .Values.feedFeeder.dns.hostname }}
+  - host: {{ .Values.feedFeeder.ingress.hostname }}
     http:
       paths:
       - backend:
@@ -18,7 +21,7 @@ spec:
         pathType: Prefix
   tls:
     - hosts:
-      - {{ required "A valid hostname is required!" .Values.feedFeeder.dns.hostname }}
-      {{- if .Values.feedFeeder.dns.certSecret }}
-      secretName: {{ .Values.feedFeeder.dns.certSecret }}
+      - {{ required "A valid hostname is required!" .Values.feedFeeder.ingress.hostname }}
+      {{- if .Values.feedFeeder.ingress.certSecret }}
+      secretName: {{ .Values.feedFeeder.ingress.certSecret }}
       {{- end }}
