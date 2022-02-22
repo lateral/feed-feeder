@@ -1,6 +1,6 @@
 # http://git.io/bvIb
 rails_env   = ENV['RAILS_ENV']  || 'production'
-rails_root  = ENV['RAILS_ROOT'] || '/home/ubuntu/app'
+rails_root  = ENV['RAILS_ROOT'] || '/app'
 
 God.watch do |w|
   pid_file   = "#{rails_root}/tmp/pids/resque-scheduler.pid"

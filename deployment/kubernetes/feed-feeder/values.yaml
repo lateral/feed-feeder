@@ -94,7 +94,7 @@ feedFeeder:
     imagePullSecrets: [ ]
     #  - name: regcred
     cronSchedule: "*/5 * * * *"
-    # Pass Google Cloud json credentials file with '--set-file=feedFeeder.images.googleJsonKey=<PATH_TO_FILE>'
+    # Google Cloud json credentials file as base64 encoded string
     googleJsonKey: ""
     googleProject: "lateral-prod"
     googleBucket: "images-new.getnewsbot.com"
