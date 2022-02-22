@@ -7,7 +7,7 @@ metadata:
     role: feed-feeder-resque-scheduler
   namespace: {{ .Release.Namespace }}
 spec:
-  replicas: {{ .Values.feedFeeder.resque.replicas }}
+  replicas: {{ .Values.feedFeeder.resqueScheduler.replicas }}
   selector:
     matchLabels:
       role: feed-feeder-resque-scheduler

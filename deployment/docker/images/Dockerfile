@@ -6,6 +6,7 @@ RUN apt-get -y update && \
     software-properties-common \
     build-essential \
     bundler \
+    jpegoptim \
     libmagick++-dev \
     libpq-dev \
     libcurl4-openssl-dev && \
