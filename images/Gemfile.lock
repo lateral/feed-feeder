@@ -123,9 +123,8 @@ GEM
       faraday (~> 0.9)
       jwt (>= 1.5, < 3.0)
       multi_json (~> 1.10)
-    slack-notifier (2.3.2)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uber (0.1.0)
     vcr (4.0.0)
@@ -156,7 +155,6 @@ DEPENDENCIES
   piet
   rmagick
   rspec
-  slack-notifier
   vcr
   webmock
 
